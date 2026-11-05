@@ -17,14 +17,24 @@ patches:
     patch: |-
       - op: replace
         path: /spec/rules/0/host
-        value: study.example.com
+        value: studyfree.xyz
       - op: replace
         path: /spec/tls/0/hosts/0
-        value: study.example.com
+        value: studyfree.xyz
+  - target:
+      kind: Ingress
+      name: china-study-free-web-admin
+    patch: |-
+      - op: replace
+        path: /spec/rules/0/host
+        value: studyfree.xyz
+      - op: replace
+        path: /spec/tls/0/hosts/0
+        value: studyfree.xyz
   - target:
       kind: Ingress
       name: china-study-free-admin
     patch: |-
       - op: replace
         path: /spec/rules/0/host
-        value: study-admin.internal
+        value: admin.studyfree.xyz

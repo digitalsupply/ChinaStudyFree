@@ -6,7 +6,7 @@ data:
   HOST: "0.0.0.0"
   PORT: "8787"
   STATIC_DIR: /app/apps/web/out
-  CORS_ORIGIN: "https://study.example.com"
+  CORS_ORIGIN: "https://studyfree.xyz"
   REPORT_UPLOAD_ENABLED: "true"
   REPORT_DIR: /app/data/reports
   EDGE_TTS_ENABLED: "true"

@@ -4,8 +4,8 @@
 
 1. `kustomization.yaml` 的 `newTag`（手动部署时）或由 CI 自动写入。
 2. 两个 Ingress 的 host：
-   - `study.example.com` → 你的正式域名
-   - `study-admin.internal` → 内网域名
+   - `studyfree.xyz` → 你的正式域名
+   - `admin.studyfree.xyz` → 内网域名
 3. `pvc-patch.yaml` 的 `storageClassName`（DeepTutor 集群通常是 `nfs-sc`）。
 4. `configmap-patch.yaml` 的 `CORS_ORIGIN`。
 5. 在 `china-study-free` namespace 创建 Secret：

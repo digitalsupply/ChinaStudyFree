@@ -3,26 +3,45 @@ kind: Ingress
 metadata:
   name: china-study-free-web
   annotations:
-    nginx.ingress.kubernetes.io/proxy-body-size: "4m"
-    nginx.ingress.kubernetes.io/proxy-read-timeout: "120"
-    nginx.ingress.kubernetes.io/proxy-send-timeout: "120"
-    # 管理接口只允许走内部 admin Ingress；公网 host 直接拒绝。
-    # 如果集群禁用了 server-snippet，请改用网络策略/网关 IP 白名单。
-    nginx.ingress.kubernetes.io/server-snippet: |
-      location ~ ^/api/admin/ {
-        deny all;
-      }
+    traefik.ingress.kubernetes.io/router.entrypoints: web,websecure
 spec:
-  ingressClassName: nginx
+  ingressClassName: traefik
   tls:
     - hosts:
-        - study.example.com
-      secretName: china-study-free-tls
+        - studyfree.xyz
+      secretName: studyfree-xyz-tls
   rules:
-    - host: study.example.com
+    - host: studyfree.xyz
       http:
         paths:
           - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: china-study-free
+                port:
+                  name: http
+---
+# 公网 host 上的 /api/admin 也必须受内网白名单保护。
+# Traefik 会把更长的 PathPrefix 路由优先匹配。
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: china-study-free-web-admin
+  annotations:
+    traefik.ingress.kubernetes.io/router.entrypoints: web,websecure
+    traefik.ingress.kubernetes.io/router.middlewares: china-study-free-china-study-free-admin-allow@kubernetescrd
+spec:
+  ingressClassName: traefik
+  tls:
+    - hosts:
+        - studyfree.xyz
+      secretName: studyfree-xyz-tls
+  rules:
+    - host: studyfree.xyz
+      http:
+        paths:
+          - path: /api/admin
             pathType: Prefix
             backend:
               service:

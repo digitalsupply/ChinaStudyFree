@@ -56,7 +56,7 @@ GitLab push
 | BuildKit | `buildkitd.cicd.svc.cluster.local:1234` | 无特权构建 |
 | Argo CD | `argocd` namespace | 同步 GitOps |
 | StorageClass | `nfs-sc` | 反馈 PVC |
-| Ingress | `nginx` | 外部入口 |
+| Ingress | `traefik` | 外部入口 |
 | imagePullSecret | `harbor-auth` | 拉 Harbor 镜像 |
 
 如果名称不同，改 `deploy/tekton/*.yaml` 和 `deploy/k8s/overlays/prod/*`。
@@ -105,15 +105,28 @@ Git 里只有 `secret.example.yaml`。
 
 ### 3.4 管理接口隔离
 
-- 公网 Ingress 用 `server-snippet` 拒绝 `/api/admin/`
-- 内部 admin Ingress 使用 `whitelist-source-range`
+- 公网 host `studyfree.xyz` 上的 `/api/admin` 单独建一条更长 PathPrefix 路由，
+  绑定 Traefik `Middleware`（IPAllowList）
+- 内部 `admin.studyfree.xyz` 同样绑定 IPAllowList
 - 再加 `ADMIN_TOKEN` 二次保护
 
-如果集群禁用 nginx snippet：
+Traefik Middleware：
 
-- 至少保留 `ADMIN_TOKEN`
-- 在网关/防火墙层限制 `/api/admin`
-- 不要给 admin host 配公网 DNS
+```yaml
+apiVersion: traefik.io/v1alpha1
+kind: Middleware
+metadata:
+  name: china-study-free-admin-allow
+spec:
+  ipAllowList:
+    sourceRange:
+      - 10.0.0.0/8
+      - 172.16.0.0/12
+      - 192.168.0.0/16
+```
+
+如果集群是 Traefik v2，把 API group 改为 `traefik.containo.us/v1alpha1`，
+`ipAllowList` 改为 `ipWhiteList`。
 
 ### 3.5 AI 出网
 
@@ -125,6 +138,39 @@ Pod 需要访问：
 - Microsoft EdgeTTS（`speech.platform.bing.com:443`）
 
 `NetworkPolicy` 默认只放行 TCP 443 和 DNS。若用内网 HTTP LLM，需要自行加规则。
+
+### 3.6 Traefik 路由
+
+集群使用 Traefik（`ingressClass=traefik`，LB `10.0.0.252`）：
+
+```text
+https://studyfree.xyz          → Web
+https://admin.studyfree.xyz    → 管理接口
+```
+
+TLS Secret：
+
+```text
+studyfree-xyz-tls
+```
+
+证书必须同时包含：
+
+```text
+DNS:studyfree.xyz
+DNS:admin.studyfree.xyz
+```
+
+或分别签发两个 Secret 并改 Ingress。
+
+标准 Ingress 注解：
+
+```yaml
+traefik.ingress.kubernetes.io/router.entrypoints: web,websecure
+```
+
+管理接口通过 Traefik Middleware 的 `ipAllowList` 限制内网；公网 host 的
+`/api/admin` 也单独绑定同一个 Middleware。
 
 ## 4. GitOps 仓库初始化
 
@@ -365,14 +411,14 @@ curl -s http://127.0.0.1:8787/api/health
 Web：
 
 ```bash
-curl -I https://study.example.com/
-curl -s https://study.example.com/api/health
+curl -I https://studyfree.xyz/
+curl -s https://studyfree.xyz/api/health
 ```
 
 反馈接口：
 
 ```bash
-curl -s -X POST https://study.example.com/api/reports \
+curl -s -X POST https://studyfree.xyz/api/reports \
   -H 'Content-Type: application/json' \
   -d '{"id":"probe","lessonId":"l","questionId":1,"questionText":"probe","kind":"formula_issue"}'
 ```
@@ -381,7 +427,7 @@ curl -s -X POST https://study.example.com/api/reports \
 
 ```bash
 curl -s -H "x-admin-token: $ADMIN_TOKEN" \
-  https://study-admin.internal/api/admin/reports/summary
+  https://admin.studyfree.xyz/api/admin/reports/summary
 ```
 
 ## 11. 已知限制
@@ -391,7 +437,7 @@ curl -s -H "x-admin-token: $ADMIN_TOKEN" \
 - 大资源（音频/课本页/故事图）没有进 Git：完整离线内容需要额外对象存储或镜像构建阶段拉取
 - AI 接口质量和成本取决于外部供应商
 - EdgeTTS 是外部非官方端点，可能失效
-- admin Ingress 依赖 nginx snippet/whitelist，换网关要重做等价策略
+- admin 路由依赖 Traefik Middleware；换网关要重做等价 IP 白名单
 
 ## 12. 本地校验
 

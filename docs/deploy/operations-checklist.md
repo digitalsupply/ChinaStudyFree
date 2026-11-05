@@ -8,8 +8,8 @@
 - [ ] `harbor-auth` imagePullSecret 可用
 - [ ] `china-study-free-secrets` 已创建，`ADMIN_TOKEN` 是长随机串
 - [ ] `china-study-free-tls` 证书已创建，或 cert-manager 已配置
-- [ ] `study.example.com` DNS 指向 ingress-nginx
-- [ ] `study-admin.internal` 仅内网可达
+- [ ] `studyfree.xyz` DNS 指向 Traefik
+- [ ] `admin.studyfree.xyz` 仅内网可达
 - [ ] `pvc-patch.yaml` 的 StorageClass 正确
 - [ ] `CORS_ORIGIN` 与正式域名一致
 - [ ] Pod 可出网访问 LLM/TTS/Gemini（如启用）
@@ -23,7 +23,7 @@
 ```bash
 kubectl -n china-study-free get pods
 kubectl -n china-study-free rollout status deploy/china-study-free
-curl -fsS https://study.example.com/api/health
+curl -fsS https://studyfree.xyz/api/health
 ```
 
 关注：
@@ -110,7 +110,7 @@ kubectl -n china-study-free get deploy -o jsonpath='{.items[0].spec.template.spe
 ```bash
 kubectl -n china-study-free rollout status deploy/china-study-free --timeout=180s
 kubectl -n china-study-free get pods
-curl -fsS https://study.example.com/api/health
+curl -fsS https://studyfree.xyz/api/health
 ```
 
 ### 发布后
@@ -164,7 +164,7 @@ curl -v http://127.0.0.1:8787/api/health
 
 - Pod 内正常、外部 502 → Ingress/Service/NetworkPolicy
 - 504 → AI 请求超时；调大 Ingress timeout 或检查供应商
-- NetworkPolicy 是否只允许 ingress-nginx
+- NetworkPolicy 是否只允许 Traefik
 
 ### 7.3 反馈写失败
 
@@ -181,7 +181,7 @@ kubectl -n china-study-free exec deploy/china-study-free -- \
 ### 7.4 AI 不工作
 
 ```bash
-curl -s https://study.example.com/api/health
+curl -s https://studyfree.xyz/api/health
 ```
 
 - `llm:false` → Secret 没有 `LLM_API_KEY`
@@ -282,12 +282,12 @@ kubectl -n china-study-free logs deploy/china-study-free -f
 kubectl -n china-study-free rollout restart deploy/china-study-free
 
 # 健康
-curl -fsS https://study.example.com/api/health
+curl -fsS https://studyfree.xyz/api/health
 
 # 反馈
 kubectl -n china-study-free exec deploy/china-study-free -- \
   tail -20 /app/data/reports/reports.jsonl
 
 # 管理汇总
-ADMIN_TOKEN=... npm run k12:reports -- --url https://study-admin.internal
+ADMIN_TOKEN=... npm run k12:reports -- --url https://admin.studyfree.xyz
 ```

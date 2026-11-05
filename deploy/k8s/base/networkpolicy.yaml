@@ -10,11 +10,14 @@ spec:
     - Ingress
     - Egress
   ingress:
-    # 只允许 ingress-nginx 访问应用端口。
+    # 只允许 Traefik 访问应用端口。
     - from:
         - namespaceSelector:
             matchLabels:
-              kubernetes.io/metadata.name: ingress-nginx
+              kubernetes.io/metadata.name: traefik
+        - namespaceSelector:
+            matchLabels:
+              kubernetes.io/metadata.name: kube-system
       ports:
         - protocol: TCP
           port: 8787

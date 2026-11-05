@@ -1,0 +1,13 @@
+# 管理接口只允许内网网段访问。按你的办公网/跳板机网段调整。
+# Traefik v3 使用 traefik.io/v1alpha1 + ipAllowList；
+# 若集群是 Traefik v2，改成 traefik.containo.us/v1alpha1 + ipWhiteList。
+apiVersion: traefik.io/v1alpha1
+kind: Middleware
+metadata:
+  name: china-study-free-admin-allow
+spec:
+  ipAllowList:
+    sourceRange:
+      - 10.0.0.0/8
+      - 172.16.0.0/12
+      - 192.168.0.0/16

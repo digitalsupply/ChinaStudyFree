@@ -8,6 +8,7 @@ resources:
   - pvc.yaml
   - deployment.yaml
   - service.yaml
+  - traefik-middleware.yaml
   - ingress-web.yaml
   - ingress-admin.yaml
   - networkpolicy.yaml

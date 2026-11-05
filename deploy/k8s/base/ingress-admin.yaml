@@ -3,15 +3,16 @@ kind: Ingress
 metadata:
   name: china-study-free-admin
   annotations:
-    nginx.ingress.kubernetes.io/proxy-body-size: "4m"
-    nginx.ingress.kubernetes.io/proxy-read-timeout: "120"
-    nginx.ingress.kubernetes.io/proxy-send-timeout: "120"
-    # 只允许内网访问；按你的办公网/跳板机网段调整。
-    nginx.ingress.kubernetes.io/whitelist-source-range: "10.0.0.0/8,172.16.0.0/12,192.168.0.0/16"
+    traefik.ingress.kubernetes.io/router.entrypoints: web,websecure
+    traefik.ingress.kubernetes.io/router.middlewares: china-study-free-china-study-free-admin-allow@kubernetescrd
 spec:
-  ingressClassName: nginx
+  ingressClassName: traefik
+  tls:
+    - hosts:
+        - admin.studyfree.xyz
+      secretName: studyfree-xyz-tls
   rules:
-    - host: study-admin.internal
+    - host: admin.studyfree.xyz
       http:
         paths:
           - path: /api/admin

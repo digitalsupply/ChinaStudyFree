@@ -11,8 +11,8 @@ export PROJECT=china-study-free
 export IMAGE=$REGISTRY/$PROJECT/web
 export TAG=$(git rev-parse --short HEAD)
 export NS=china-study-free
-export DOMAIN=study.example.com
-export ADMIN_DOMAIN=study-admin.internal
+export DOMAIN=studyfree.xyz
+export ADMIN_DOMAIN=admin.studyfree.xyz
 ```
 
 下文命令默认在仓库根目录执行。
@@ -151,8 +151,8 @@ deploy/k8s/overlays/prod/kustomization.yaml 里的 Ingress patch
 默认：
 
 ```text
-study.example.com
-study-admin.internal
+studyfree.xyz
+admin.studyfree.xyz
 ```
 
 编辑 StorageClass：
@@ -212,29 +212,49 @@ kubectl -n $NS rollout status deploy/china-study-free --timeout=180s
 
 ## 7. TLS
 
-如果还没有证书 Secret：
+清单默认使用 Traefik + TLS Secret：
+
+```text
+studyfree-xyz-tls
+```
+
+证书必须同时包含：
+
+```text
+DNS:studyfree.xyz
+DNS:admin.studyfree.xyz
+```
+
+自签证书示例：
 
 ```bash
-kubectl -n $NS create secret tls china-study-free-tls \
-  --cert=fullchain.pem \
-  --key=privkey.pem \
+openssl req -x509 -nodes -days 825 \
+  -newkey rsa:2048 \
+  -keyout studyfree.key \
+  -out studyfree.crt \
+  -subj "/CN=studyfree.xyz" \
+  -addext "subjectAltName=DNS:studyfree.xyz,DNS:admin.studyfree.xyz,IP:10.0.0.252"
+
+kubectl -n $NS create secret tls studyfree-xyz-tls \
+  --cert=studyfree.crt \
+  --key=studyfree.key \
   --dry-run=client -o yaml | kubectl apply -f -
 ```
 
-如果用 cert-manager，把 Ingress 注解改成：
+如果用 cert-manager，给 Ingress 加：
 
 ```yaml
 cert-manager.io/cluster-issuer: letsencrypt-prod
 ```
 
-并删除手动 TLS Secret 依赖。
+并让 `spec.tls.secretName` 指向 cert-manager 生成的 Secret。
 
 ## 8. DNS / Ingress
 
 确认：
 
-- `study.example.com` → ingress-nginx 的 EXTERNAL-IP / LB
-- `study-admin.internal` → 内网 DNS 或 hosts
+- `studyfree.xyz` → Traefik 的 EXTERNAL-IP / LB
+- `admin.studyfree.xyz` → 内网 DNS 或 hosts
 
 查看 Ingress：
 

@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: china-study-free-config
 data:
-  CORS_ORIGIN: "https://study.example.com"
+  CORS_ORIGIN: "https://studyfree.xyz"
