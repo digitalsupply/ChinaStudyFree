@@ -7,6 +7,8 @@
 
 :root {
   --font-sans: "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", ui-sans-serif, system-ui, sans-serif;
+  /* 本地打包的 Nunito（@fontsource），避免 next/font/google 在构建期联网。 */
+  --font-display: "Nunito";
 
   /* 美妆主题色（ThemeProvider 会在 hydrate 后覆盖；这是 SSR 默认值） */
   --theme-primary: #58CC02;

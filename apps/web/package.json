@@ -11,29 +11,30 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
+    "@cstf/core": "*",
+    "@fontsource/nunito": "^5.3.0",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.18.0",
+    "katex": "^0.16.21",
+    "lucide-react": "^0.471.1",
     "next": "^15.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "@cstf/core": "*",
-    "zustand": "^5.0.3",
-    "framer-motion": "^11.18.0",
-    "lucide-react": "^0.471.1",
-    "katex": "^0.16.21",
     "react-katex": "^3.0.1",
-    "clsx": "^2.1.1",
-    "tailwind-merge": "^2.6.0"
+    "tailwind-merge": "^2.6.0",
+    "zustand": "^5.0.3"
   },
   "devDependencies": {
     "@types/node": "^22.10.7",
     "@types/react": "^19.0.7",
     "@types/react-dom": "^19.0.3",
     "@types/react-katex": "^3.0.4",
-    "typescript": "^5.7.3",
-    "tailwindcss": "^3.4.17",
-    "postcss": "^8.5.1",
     "autoprefixer": "^10.4.20",
-    "tsx": "^4.19.2",
     "eslint": "^9.18.0",
-    "eslint-config-next": "^15.1.6"
+    "eslint-config-next": "^15.1.6",
+    "postcss": "^8.5.1",
+    "tailwindcss": "^3.4.17",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
   }
 }
