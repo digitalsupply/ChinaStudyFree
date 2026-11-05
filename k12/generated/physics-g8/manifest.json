@@ -1,0 +1,36 @@
+{
+  "generatedAt": "2026-11-05T12:54:55.362Z",
+  "model": "deepseek-v4.1-flash",
+  "base": "https://opencode.ai/inference/go/openai/v1",
+  "knowledgePoints": 36,
+  "questions": 144,
+  "byType": {
+    "choice": 73,
+    "fill_blank": 14,
+    "calculation": 24,
+    "fill_blank_text": 7,
+    "true_false": 26
+  },
+  "byDifficulty": {
+    "1": 36,
+    "2": 36,
+    "3": 36,
+    "4": 36,
+    "5": 0
+  },
+  "errors": 0,
+  "warnings": 0,
+  "note": "轻量版本：仅提交 36 个知识点 × 4 题及审核材料；完整 dataset/curated 与 prompts 保留在本地 data/。",
+  "status": "staging-pending-teacher-review",
+  "stage": "middle",
+  "subject": "physics",
+  "grade": 8,
+  "source": "k12-knowledge-points confidence>=0.8",
+  "files": [
+    "questions.jsonl",
+    "review.csv",
+    "plan.json",
+    "validation.json",
+    "REPORT.md"
+  ]
+}

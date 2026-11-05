@@ -1,0 +1,1028 @@
+{
+  "generatedAt": "2026-11-05T12:39:11.749Z",
+  "filters": {
+    "stage": "middle",
+    "subject": "physics",
+    "grade": "8",
+    "minConfidence": 0.8,
+    "minAssessability": 0.6,
+    "perChapter": 3,
+    "includeMisc": false
+  },
+  "totals": {
+    "knowledgePoints": 351,
+    "chapters": 16,
+    "recommended": 36
+  },
+  "chapters": [
+    {
+      "chapter": "第八章 运动和力",
+      "count": 23,
+      "avgConfidence": 0.943,
+      "avgAssessability": 0.867,
+      "difficulty": {
+        "2": 9,
+        "3": 14
+      }
+    },
+    {
+      "chapter": "第二章 声现象",
+      "count": 24,
+      "avgConfidence": 0.949,
+      "avgAssessability": 0.881,
+      "difficulty": {
+        "2": 24
+      }
+    },
+    {
+      "chapter": "第九章 压强",
+      "count": 28,
+      "avgConfidence": 0.939,
+      "avgAssessability": 0.845,
+      "difficulty": {
+        "2": 8,
+        "3": 20
+      }
+    },
+    {
+      "chapter": "第六章 质量与密度",
+      "count": 34,
+      "avgConfidence": 0.948,
+      "avgAssessability": 0.899,
+      "difficulty": {
+        "2": 20,
+        "3": 14
+      }
+    },
+    {
+      "chapter": "第七章 力",
+      "count": 23,
+      "avgConfidence": 0.954,
+      "avgAssessability": 0.875,
+      "difficulty": {
+        "2": 17,
+        "3": 6
+      }
+    },
+    {
+      "chapter": "第三章 物态变化",
+      "count": 29,
+      "avgConfidence": 0.937,
+      "avgAssessability": 0.862,
+      "difficulty": {
+        "2": 16,
+        "3": 13
+      }
+    },
+    {
+      "chapter": "第十二章 简单机械",
+      "count": 17,
+      "avgConfidence": 0.942,
+      "avgAssessability": 0.875,
+      "difficulty": {
+        "3": 14,
+        "4": 3
+      }
+    },
+    {
+      "chapter": "第十一章 功和机械能",
+      "count": 25,
+      "avgConfidence": 0.95,
+      "avgAssessability": 0.866,
+      "difficulty": {
+        "2": 14,
+        "3": 11
+      }
+    },
+    {
+      "chapter": "第十章 浮力",
+      "count": 33,
+      "avgConfidence": 0.938,
+      "avgAssessability": 0.861,
+      "difficulty": {
+        "2": 1,
+        "3": 30,
+        "4": 2
+      }
+    },
+    {
+      "chapter": "第四章 光现象",
+      "count": 38,
+      "avgConfidence": 0.943,
+      "avgAssessability": 0.863,
+      "difficulty": {
+        "2": 31,
+        "3": 7
+      }
+    },
+    {
+      "chapter": "第五章 透镜及其应用",
+      "count": 32,
+      "avgConfidence": 0.938,
+      "avgAssessability": 0.838,
+      "difficulty": {
+        "2": 15,
+        "3": 17
+      }
+    },
+    {
+      "chapter": "第一章 机械运动",
+      "count": 25,
+      "avgConfidence": 0.95,
+      "avgAssessability": 0.863,
+      "difficulty": {
+        "2": 21,
+        "3": 4
+      }
+    },
+    {
+      "chapter": "科学之旅",
+      "count": 5,
+      "avgConfidence": 0.928,
+      "avgAssessability": 0.77,
+      "difficulty": {
+        "2": 4,
+        "3": 1
+      }
+    },
+    {
+      "chapter": "其他",
+      "count": 9,
+      "avgConfidence": 0.886,
+      "avgAssessability": 0.797,
+      "difficulty": {
+        "2": 6,
+        "3": 3
+      }
+    },
+    {
+      "chapter": "绪言",
+      "count": 5,
+      "avgConfidence": 0.94,
+      "avgAssessability": 0.788,
+      "difficulty": {
+        "1": 5
+      }
+    },
+    {
+      "chapter": "中考复习",
+      "count": 1,
+      "avgConfidence": 0.95,
+      "avgAssessability": 0.92,
+      "difficulty": {
+        "3": 1
+      }
+    }
+  ],
+  "recommendedBatch": [
+    {
+      "id": "48d2f3f5-e3f4-473d-8db3-61299b686230",
+      "canonicalName": "运用二力平衡求解未知力",
+      "chapter": "第八章 运动和力",
+      "gradeNumbers": [
+        8
+      ],
+      "confidence": 0.98,
+      "assessability": 0.98,
+      "difficultyBand": 3,
+      "knowledgeType": "procedural",
+      "learningObjectives": [
+        "能在物体静止或匀速直线运动的情境中，根据已知力反推另一平衡力的大小和方向",
+        "能规范画出受力示意图（作用点在重心、箭头表方向、标力符号）",
+        "能结合g=10 N/kg进行简单重力计算并用于平衡求解"
+      ],
+      "misconceptions": [
+        "在非平衡情境（如加速推车）错误套用二力平衡求力",
+        "忽略力的方向性，仅计算大小",
+        "将阻力方向画成与运动方向相同"
+      ]
+    },
+    {
+      "id": "5031d1e7-efe9-48c5-b2da-b6660cab0e4c",
+      "canonicalName": "二力平衡的四个条件",
+      "chapter": "第八章 运动和力",
+      "gradeNumbers": [
+        8
+      ],
+      "confidence": 0.97,
+      "assessability": 0.96,
+      "difficultyBand": 3,
+      "knowledgeType": "procedural",
+      "learningObjectives": [
+        "能复述二力平衡的四个条件：作用在同一物体上、大小相等、方向相反、作用在同一直线上",
+        "能在实验现象（图8.2-3及表格）中对应验证每个条件缺失时小车运动状态改变",
+        "能逐条核查给定两个力是否满足全部四个条件"
+      ],
+      "misconceptions": [
+        "忽略‘同体’条件，误将作用于不同物体的力当作平衡力",
+        "认为只要合力为零就满足二力平衡（未限定仅两个力）",
+        "将‘共线’等同于‘平行’，忽视必须在同一直线上"
+      ]
+    },
+    {
+      "id": "a3746154-e265-496c-9f91-28a60217d0de",
+      "canonicalName": "平衡力与相互作用力的辨析",
+      "chapter": "第八章 运动和力",
+      "gradeNumbers": [
+        8
+      ],
+      "confidence": 0.96,
+      "assessability": 0.94,
+      "difficultyBand": 3,
+      "knowledgeType": "conceptual",
+      "learningObjectives": [
+        "能指出平衡力与相互作用力在作用对象（同一物体vs两个物体）上的根本区别",
+        "能区分二者在力的性质（可不同vs必相同）和依存关系（可独立存在vs同时产生同时消失）上的差异",
+        "能在弹簧测力计测重力、跳伞匀速下落等实例中准确标注平衡力对，并与重力-支持力等相互作用力对对比"
+      ],
+      "misconceptions": [
+        "认为平衡力一定是同种性质的力（如都是弹力）",
+        "误将绳对灯的拉力与灯对绳的拉力当作一对平衡力",
+        "认为相互作用力可以平衡，因二者等大反向"
+      ]
+    },
+    {
+      "id": "c5053e9a-6d63-4d39-a90a-9b11ba83b5cc",
+      "canonicalName": "频率单位赫兹与人耳可听范围",
+      "chapter": "第二章 声现象",
+      "gradeNumbers": [
+        8
+      ],
+      "confidence": 0.96,
+      "assessability": 0.95,
+      "difficultyBand": 2,
+      "knowledgeType": "factual",
+      "learningObjectives": [
+        "能准确说出频率单位名称、符号及定义（1Hz=1次/秒）",
+        "能背诵人耳可听频率范围20~20000Hz",
+        "能依据频率数值判断是否属于可听声、超声波或次声波",
+        "能比较猫、狗、蝙蝠等动物听觉范围与人的差异",
+        "能解释超声波/次声波命名的物理依据（相对人耳上限/下限）"
+      ],
+      "misconceptions": [
+        "认为Hz是速度单位",
+        "误记人耳范围为0~20000Hz或20~2000Hz",
+        "将超声波/次声波误解为‘人耳听不到的任何声音’而非特指频率边界"
+      ]
+    },
+    {
+      "id": "2353cd6b-5094-4be4-aa53-3ba61baf84af",
+      "canonicalName": "声音传播需要介质（固液气可传声，真空不传声）",
+      "chapter": "第二章 声现象",
+      "gradeNumbers": [
+        8
+      ],
+      "confidence": 0.96,
+      "assessability": 0.94,
+      "difficultyBand": 2,
+      "knowledgeType": "conceptual",
+      "learningObjectives": [
+        "能描述玻璃罩抽气实验的现象与结论",
+        "能列举固体（桌子）、液体（水）、气体（空气）传声的实例",
+        "能解释太空中需无线电交流的原因"
+      ],
+      "misconceptions": [
+        "声音传播靠空气‘流动’而非介质振动",
+        "真空里声音会变小但不会消失",
+        "只有空气能传声"
+      ]
+    },
+    {
+      "id": "a26929f3-2764-4640-b416-805ac0bf8072",
+      "canonicalName": "声音传播需要介质（固液气均可，真空不传声）",
+      "chapter": "第二章 声现象",
+      "gradeNumbers": [
+        8
+      ],
+      "confidence": 0.97,
+      "assessability": 0.92,
+      "difficultyBand": 2,
+      "knowledgeType": "conceptual",
+      "learningObjectives": [
+        "能描述玻璃罩抽气实验的现象与结论（空气减少→声音减弱→真空不传声）",
+        "能通过桌面传声、水中听音等实验证据，归纳出固体、液体、气体均可作为传声介质",
+        "能解释太空中需无线电交流的原因"
+      ],
+      "misconceptions": [
+        "声音传播不需要物质，可以在真空中自然传播",
+        "只有空气能传声，其他物质不能有效传声"
+      ]
+    },
+    {
+      "id": "024c1b44-89d0-4bb9-866b-d2520424aed0",
+      "canonicalName": "增大与减小压强的方法及实例",
+      "chapter": "第九章 压强",
+      "gradeNumbers": [
+        8
+      ],
+      "confidence": 0.96,
+      "assessability": 0.95,
+      "difficultyBand": 2,
+      "knowledgeType": "procedural",
+      "learningObjectives": [
+        "能复述增大压强的两种方法：增大压力、减小受力面积",
+        "能复述减小压强的两种方法：减小压力、增大受力面积",
+        "能从图9.1-4四幅图中准确分类增大/减小压强的实例",
+        "能结合菜刀磨刃、宽背带、履带拖拉机等实例解释原理",
+        "能针对新情境（如练习④骆驼脚掌）提出合理的压强调控解释"
+      ],
+      "misconceptions": [
+        "认为增大压力是增大重力",
+        "将'减小受力面积'误解为'减小物体体积'",
+        "忽视方法实施的可行性约束（如不能随意减小重力）"
+      ]
+    },
+    {
+      "id": "bc8cd77d-f490-4f1e-b7b7-b92bfaf608db",
+      "canonicalName": "压强公式 p=F/S 及帕斯卡单位",
+      "chapter": "第九章 压强",
+      "gradeNumbers": [
+        8
+      ],
+      "confidence": 0.97,
+      "assessability": 0.92,
+      "difficultyBand": 2,
+      "knowledgeType": "procedural",
+      "learningObjectives": [
+        "会写出压强定义式p=F/S，并说明各物理量含义及国际单位",
+        "能将面积单位统一为平方米后代入公式进行简单计算",
+        "能说出1 Pa = 1 N/m²，并解释其物理意义"
+      ],
+      "misconceptions": [
+        "认为面积可用cm²直接代入公式而不换算",
+        "误将压强单位写成N/cm²并视为标准单位",
+        "忽略公式中F必须是垂直于受力面的压力"
+      ]
+    },
+    {
+      "id": "c021bf04-b778-49f9-89a9-2024ed844c3b",
+      "canonicalName": "液体压强公式 p=ρgh 及定量计算",
+      "chapter": "第九章 压强",
+      "gradeNumbers": [
+        8
+      ],
+      "confidence": 0.98,
+      "assessability": 0.9,
+      "difficultyBand": 3,
+      "knowledgeType": "procedural",
+      "learningObjectives": [
+        "能复述p=ρgh公式的推导逻辑：以液柱为模型→F=G=ρShg→p=F/S=ρgh",
+        "能正确代入ρ（kg/m³）、h（m）、g（N/kg）进行计算并得Pa单位",
+        "能用该公式解释潜水服、潜艇抗压设计等实例（如奋斗者号例题）"
+      ],
+      "misconceptions": [
+        "p=ρgh中的h是从容器底起算的深度",
+        "公式适用于所有流体（未限定静止、均匀、不可压缩）",
+        "认为公式中S（面积）参与最终压强计算"
+      ]
+    },
+    {
+      "id": "1831f576-d18c-46f6-bb30-7303a5cd2ba5",
+      "canonicalName": "质量单位与进率换算",
+      "chapter": "第六章 质量与密度",
+      "gradeNumbers": [
+        8
+      ],
+      "confidence": 0.97,
+      "assessability": 0.96,
+      "difficultyBand": 2,
+      "knowledgeType": "factual",
+      "learningObjectives": [
+        "熟记国际单位制中质量基本单位为千克（kg）",
+        "掌握t→kg→g→mg相邻单位间1000进率",
+        "能进行单向及双向单位换算（如1.5t=1500kg，2500g=2.5kg）"
+      ],
+      "misconceptions": [
+        "1kg=100g",
+        "mg是比g更大的单位",
+        "换算时忽略指数符号导致数量级错误"
+      ]
+    },
+    {
+      "id": "e65391e4-b726-4af5-8e37-98e4399af90c",
+      "canonicalName": "密度的单位及换算（kg/m³与g/cm³）",
+      "chapter": "第六章 质量与密度",
+      "gradeNumbers": [
+        8
+      ],
+      "confidence": 0.97,
+      "assessability": 0.95,
+      "difficultyBand": 2,
+      "knowledgeType": "procedural",
+      "learningObjectives": [
+        "能正确书写密度国际单位kg/m³及其符号",
+        "能正确书写常用单位g/cm³及其符号",
+        "会进行kg/m³与g/cm³之间的数值换算（含系数10³）",
+        "能在计算中统一单位并完成代入求解"
+      ],
+      "misconceptions": [
+        "认为1 g/cm³ = 1 kg/m³",
+        "忽略单位换算中的立方关系导致系数误为10²或10⁶",
+        "在公式计算中不进行单位统一直接代入数值"
+      ]
+    },
+    {
+      "id": "fd51efe6-709b-4879-90f5-d227659b8c04",
+      "canonicalName": "天平调零与操作步骤规范",
+      "chapter": "第六章 质量与密度",
+      "gradeNumbers": [
+        8
+      ],
+      "confidence": 0.95,
+      "assessability": 0.97,
+      "difficultyBand": 2,
+      "knowledgeType": "procedural",
+      "learningObjectives": [
+        "能按三步法完成调零（水平放置→游码归零→调平衡螺母）",
+        "能严格执行左盘放物、右盘放砝码规则",
+        "能正确读取游码左端对应标尺刻度并加至砝码总和"
+      ],
+      "misconceptions": [
+        "调零只需移动游码",
+        "砝码可用手拿取",
+        "游码读数看右端或中间"
+      ]
+    },
+    {
+      "id": "29a43a78-26df-4176-ad82-202cbc70983b",
+      "canonicalName": "力的三要素及作用效果",
+      "chapter": "第七章 力",
+      "gradeNumbers": [
+        8
+      ],
+      "confidence": 0.96,
+      "assessability": 0.95,
+      "difficultyBand": 2,
+      "knowledgeType": "conceptual",
+      "learningObjectives": [
+        "能列举力的三要素：大小、方向、作用点",
+        "能通过实验现象归纳力的两类作用效果：改变运动状态、使物体发生形变",
+        "能举例说明三要素中任一要素改变会导致作用效果不同"
+      ],
+      "misconceptions": [
+        "力的作用效果只有‘让物体动起来’一种",
+        "形变仅指明显可见的弯曲（忽略压缩、拉伸、扭转）",
+        "运动状态改变仅指速度大小变化（忽略方向变化）"
+      ]
+    },
+    {
+      "id": "1c39316a-0d0e-49b1-aaac-f7e91390eb1b",
+      "canonicalName": "力的示意图规范画法",
+      "chapter": "第七章 力",
+      "gradeNumbers": [
+        8
+      ],
+      "confidence": 0.96,
+      "assessability": 0.95,
+      "difficultyBand": 2,
+      "knowledgeType": "procedural",
+      "learningObjectives": [
+        "能在受力物体上正确标出力的作用点",
+        "能沿力的方向画带箭头的线段表示力的方向",
+        "能依据力的大小按比例调整线段长度",
+        "能在图中标注力的符号与数值（如F=4N）"
+      ],
+      "misconceptions": [
+        "箭头画在中间也可表示方向",
+        "作用点必须画在物体几何中心",
+        "线段长度无需反映相对大小"
+      ]
+    },
+    {
+      "id": "e79a1e01-614c-455a-9e68-0d9446940ab1",
+      "canonicalName": "重力大小计算（G = mg）",
+      "chapter": "第七章 力",
+      "gradeNumbers": [
+        8
+      ],
+      "confidence": 0.98,
+      "assessability": 0.92,
+      "difficultyBand": 2,
+      "knowledgeType": "procedural",
+      "learningObjectives": [
+        "会用G = mg进行正向计算（已知m求G）",
+        "会用m = G/g进行逆向计算（已知G求m）",
+        "能根据题意选择g = 9.8 N/kg或粗略取10 N/kg",
+        "能识别并使用国际单位制（kg、N）"
+      ],
+      "misconceptions": [
+        "g是重力，单位是N",
+        "g随物体质量变化",
+        "公式中G和m可任意代入非标准单位"
+      ]
+    },
+    {
+      "id": "875684a1-60ad-47b4-a32b-806d1a4940af",
+      "canonicalName": "熔化/凝固温度-时间图像分析",
+      "chapter": "第三章 物态变化",
+      "gradeNumbers": [
+        8
+      ],
+      "confidence": 0.97,
+      "assessability": 0.96,
+      "difficultyBand": 3,
+      "knowledgeType": "procedural",
+      "learningObjectives": [
+        "能根据图像横纵轴识别熔化/凝固过程的时间与温度变量",
+        "能在图像中标出熔化开始点、结束点、平台段（固液共存）及各状态区间",
+        "能判断某段图像对应固态/液态/固液共存态及吸放热情况",
+        "能从图像读取熔点、熔化持续时间、初温与末温",
+        "能对比分析晶体与非晶体图像的核心差异（有无水平段）"
+      ],
+      "misconceptions": [
+        "图像水平段表示停止加热",
+        "平台段长度代表物质质量大小",
+        "凝固图像只是熔化图像的简单倒置（忽略过冷等实际偏差）",
+        "图像中温度下降段一定在放热（未考虑环境热交换干扰）"
+      ]
+    },
+    {
+      "id": "c5bf2439-6ed8-484d-9a8a-08b674c227d9",
+      "canonicalName": "汽化吸热与液化放热的能量特征",
+      "chapter": "第三章 物态变化",
+      "gradeNumbers": [
+        8
+      ],
+      "confidence": 0.97,
+      "assessability": 0.94,
+      "difficultyBand": 3,
+      "knowledgeType": "conceptual",
+      "learningObjectives": [
+        "能概括汽化过程吸热、液化过程放热",
+        "能用该原理解释酒精擦手发凉、水蒸气烫伤更严重、夏天洒水降温等现象",
+        "能关联电冰箱制冷循环中制冷剂汽化吸热与液化放热的协同作用"
+      ],
+      "misconceptions": [
+        "认为只有温度变化才伴随吸放热",
+        "误以为液化放热会使环境明显升温（忽略散热效率）",
+        "将'汽化吸热'等同于'物体变冷'，忽视系统边界（如酒精蒸发带走皮肤热量）"
+      ]
+    },
+    {
+      "id": "8554355b-4f32-4d48-99c4-15aa7b3c2a42",
+      "canonicalName": "水沸腾实验的图像特征与物理解释",
+      "chapter": "第三章 物态变化",
+      "gradeNumbers": [
+        8
+      ],
+      "confidence": 0.97,
+      "assessability": 0.92,
+      "difficultyBand": 3,
+      "knowledgeType": "procedural",
+      "learningObjectives": [
+        "能根据实验数据绘制水沸腾前后温度-时间图像",
+        "能从图像识别沸腾前升温、沸腾时温度不变的特征",
+        "能结合图像解释‘沸腾需持续吸热但温度不变’的热学本质"
+      ],
+      "misconceptions": [
+        "认为图像中平台段表示热量停止传递",
+        "误将气泡变大归因于水温继续升高",
+        "忽略酒精灯持续加热与温度不变的矛盾需用吸热相变解释"
+      ]
+    },
+    {
+      "id": "282913ab-1859-4868-af84-a727863f814c",
+      "canonicalName": "杠杆平衡条件推导与定量计算",
+      "chapter": "第十二章 简单机械",
+      "gradeNumbers": [
+        8
+      ],
+      "confidence": 0.97,
+      "assessability": 0.95,
+      "difficultyBand": 3,
+      "knowledgeType": "conceptual",
+      "learningObjectives": [
+        "能复述杠杆平衡的实验探究思路（控制变量法）",
+        "能根据实验数据归纳得出F₁l₁＝F₂l₂",
+        "能用F₁l₁＝F₂l₂进行单步定量计算（含单位换算）",
+        "能解释阿基米德杠杆原理的物理含义：力与力臂的乘积守恒",
+        "能辨析‘平衡’指静止或匀速转动状态"
+      ],
+      "misconceptions": [
+        "认为只要F₁＝F₂杠杆就平衡",
+        "忽略力臂是点到线的距离，直接套用杠杆长度",
+        "在计算中混淆l₁与l₂的物理意义导致公式倒置",
+        "误以为杠杆平衡时动力一定小于阻力"
+      ]
+    },
+    {
+      "id": "c68716ee-2697-4827-b5fe-cda6eba66f11",
+      "canonicalName": "杠杆平衡条件推导与应用",
+      "chapter": "第十二章 简单机械",
+      "gradeNumbers": [
+        8
+      ],
+      "confidence": 0.96,
+      "assessability": 0.95,
+      "difficultyBand": 3,
+      "knowledgeType": "conceptual",
+      "learningObjectives": [
+        "理解杠杆平衡指静止或匀速转动状态",
+        "能复述实验探究思路（控制变量法）",
+        "能根据实验数据归纳得出F₁l₁ = F₂l₂",
+        "能用该公式求解动力、阻力、动力臂、阻力臂中的任一未知量"
+      ],
+      "misconceptions": [
+        "认为平衡只需F₁ = F₂",
+        "忽略力臂参与平衡，仅比较力大小",
+        "误将公式写成F₁/l₁ = F₂/l₂"
+      ]
+    },
+    {
+      "id": "257626c9-365d-4f4c-bac9-d2a06f9ac8eb",
+      "canonicalName": "机械效率的定义与计算",
+      "chapter": "第十二章 简单机械",
+      "gradeNumbers": [
+        8
+      ],
+      "confidence": 0.97,
+      "assessability": 0.92,
+      "difficultyBand": 4,
+      "knowledgeType": "procedural",
+      "learningObjectives": [
+        "能复述机械效率的定义并写出公式η=W有用/W总",
+        "能结合具体情境（如起重机、滑轮组）代入数据完成两步以上计算",
+        "能将结果规范表达为百分数并理解其物理含义（<1）",
+        "能基于计算结果判断机械性能优劣"
+      ],
+      "misconceptions": [
+        "认为机械效率可大于1或等于1",
+        "将机械效率与省力程度直接等同",
+        "忽略单位统一或数值代入错误导致η>1的伪结果"
+      ]
+    },
+    {
+      "id": "0942b9b2-b23d-4599-a787-e73de2f40cd1",
+      "canonicalName": "功的计算公式 W=Fs",
+      "chapter": "第十一章 功和机械能",
+      "gradeNumbers": [
+        8
+      ],
+      "confidence": 0.98,
+      "assessability": 0.97,
+      "difficultyBand": 2,
+      "knowledgeType": "procedural",
+      "learningObjectives": [
+        "能写出功的公式W=Fs并说明各物理量含义及单位",
+        "能根据已知力F和沿力方向的位移s代入公式计算功",
+        "能识别并排除非沿力方向的位移干扰（如例题2中s'=0）"
+      ],
+      "misconceptions": [
+        "只要知道F和s就能套用W=Fs，不检查方向一致性",
+        "s可以是任意路径长度，不必限定在力的方向上"
+      ]
+    },
+    {
+      "id": "fb8d097a-9b23-4d96-8c61-2dd52e697e67",
+      "canonicalName": "功的计算（W=Fs）与单位",
+      "chapter": "第十一章 功和机械能",
+      "gradeNumbers": [
+        8
+      ],
+      "confidence": 0.97,
+      "assessability": 0.95,
+      "difficultyBand": 2,
+      "knowledgeType": "procedural",
+      "learningObjectives": [
+        "会用W=Fs进行功的定量计算",
+        "能正确代入力F（单位：N）和沿力方向位移s（单位：m）",
+        "能将计算结果规范表达为焦耳（J），理解1 J = 1 N·m",
+        "能处理含单位换算的简单情境（如吨→kg）"
+      ],
+      "misconceptions": [
+        "W=Fs中s可取任意方向的位移",
+        "单位用错（如写成N/m或J/s）",
+        "忽略力与位移方向一致性而直接套公式"
+      ]
+    },
+    {
+      "id": "e6d69556-6a53-40df-8c43-3893a430461c",
+      "canonicalName": "功率的定义与计算（P=W/t）",
+      "chapter": "第十一章 功和机械能",
+      "gradeNumbers": [
+        8
+      ],
+      "confidence": 0.98,
+      "assessability": 0.92,
+      "difficultyBand": 3,
+      "knowledgeType": "conceptual",
+      "learningObjectives": [
+        "理解功率是描述做功快慢的物理量",
+        "能用P=W/t进行定量计算",
+        "能根据功和时间的相对大小比较不同情境下功率的大小",
+        "能识别并排除'力大则功率大'等常见错误直觉"
+      ],
+      "misconceptions": [
+        "认为施加的力越大，功率就一定越大",
+        "混淆功率与功的概念，误以为做功多就一定功率大",
+        "忽略时间因素，仅凭做功多少判断做功快慢"
+      ]
+    },
+    {
+      "id": "e17c5243-96d8-475c-a054-d0788f6f9734",
+      "canonicalName": "浮力综合计算（多物理量联立）",
+      "chapter": "第十章 浮力",
+      "gradeNumbers": [
+        8
+      ],
+      "confidence": 0.97,
+      "assessability": 0.95,
+      "difficultyBand": 4,
+      "knowledgeType": "procedural",
+      "learningObjectives": [
+        "能综合运用G=mg、F浮=ρ液gV排、F浮=G（漂浮/悬浮）等公式求解未知量",
+        "能根据浮沉状态选择恰当平衡方程（如漂浮用F浮=G，下沉用F浮<G+支持力）",
+        "能处理含排水量、密度、体积、重力等多单位换算的复合问题"
+      ],
+      "misconceptions": [
+        "未判断状态即盲目套用F浮=G",
+        "混淆排水量（质量）与排开体积，漏乘ρ液",
+        "忽略支持力存在导致下沉物体受力分析错误"
+      ]
+    },
+    {
+      "id": "5829bb0c-1504-4d51-8322-f535bab88692",
+      "canonicalName": "基于阿基米德原理的浮力定量计算",
+      "chapter": "第十章 浮力",
+      "gradeNumbers": [
+        8
+      ],
+      "confidence": 0.98,
+      "assessability": 0.92,
+      "difficultyBand": 3,
+      "knowledgeType": "procedural",
+      "learningObjectives": [
+        "能按步骤完成F_浮=ρ液gV排的数值计算（含单位统一、科学记数法）",
+        "能结合称重法（F_浮=G−F_拉）与阿基米德原理联立求解未知量（如练习题3、4）",
+        "能处理V排需间接求解的情形（如由漂浮条件反推V排）",
+        "能对同一物体在不同液体中所受浮力进行比较计算"
+      ],
+      "misconceptions": [
+        "在计算中遗漏g或错误代入g=9.8N/kg而题干指定g=10N/kg",
+        "未统一单位（如ρ用g/cm³、V用cm³却未换算）",
+        "将F_浮=G_排机械套用，忽视G_排需通过ρ液gV排计算"
+      ]
+    },
+    {
+      "id": "20e2869f-9193-4d87-95a9-c93b16567f5d",
+      "canonicalName": "称重法测浮力",
+      "chapter": "第十章 浮力",
+      "gradeNumbers": [
+        8
+      ],
+      "confidence": 0.97,
+      "assessability": 0.92,
+      "difficultyBand": 3,
+      "knowledgeType": "procedural",
+      "learningObjectives": [
+        "会用弹簧测力计分步测量物体重力G和浸没时拉力F拉",
+        "能根据F浮 = G - F拉计算浮力大小",
+        "能解释示数减小即浮力存在的证据",
+        "能说明浸没深度变化时示数不变，推断浮力与深度无关"
+      ],
+      "misconceptions": [
+        "浮力等于物体在水中的视重（F拉）",
+        "F浮 = G + F拉",
+        "浸没越深浮力越大"
+      ]
+    },
+    {
+      "id": "f4d01b0c-fbf0-4f90-a8ed-f2eeaa8c9cc7",
+      "canonicalName": "光速数值与光年概念",
+      "chapter": "第四章 光现象",
+      "gradeNumbers": [
+        8
+      ],
+      "confidence": 0.98,
+      "assessability": 0.95,
+      "difficultyBand": 2,
+      "knowledgeType": "factual",
+      "learningObjectives": [
+        "记住真空中的光速近似值c=3×10⁸ m/s",
+        "理解光年是长度单位，等于光在真空中1年传播的距离",
+        "能进行简单光年换算（如16光年→时间意义）",
+        "知道光在不同介质中速度关系：v_空气≈c > v_水 > v_玻璃"
+      ],
+      "misconceptions": [
+        "光年是时间单位",
+        "光速在所有介质中都相同",
+        "光年仅用于科幻，非科学单位"
+      ]
+    },
+    {
+      "id": "e6d9aa8c-4a43-45d8-be26-303cb9888ae5",
+      "canonicalName": "反射光路作图",
+      "chapter": "第四章 光现象",
+      "gradeNumbers": [
+        8
+      ],
+      "confidence": 0.96,
+      "assessability": 0.95,
+      "difficultyBand": 2,
+      "knowledgeType": "procedural",
+      "learningObjectives": [
+        "能规范画出法线（过入射点且垂直于界面）",
+        "能依据反射定律准确作出反射光线（保证∠r = ∠i）",
+        "能在给定入射光或反射光条件下补全另一条光线并标注角度",
+        "能完成井中竖直入光、自行车尾灯、黑板反光等真实情境作图"
+      ],
+      "misconceptions": [
+        "作图时未画法线或法线不垂直界面",
+        "用量角器测量时误以界面为基准而非法线",
+        "忽略光路可逆性导致多步反射作图错误"
+      ]
+    },
+    {
+      "id": "a5c354fb-5020-4e92-a440-22a95436b30b",
+      "canonicalName": "平面镜成像对称作图法",
+      "chapter": "第四章 光现象",
+      "gradeNumbers": [
+        8
+      ],
+      "confidence": 0.94,
+      "assessability": 0.96,
+      "difficultyBand": 2,
+      "knowledgeType": "procedural",
+      "learningObjectives": [
+        "能依据物点和镜面位置，用尺规作图法作出对应像点",
+        "能在给定物与镜面时，准确画出像的位置和大小",
+        "能根据像点和镜面反推物点位置（如图4.3-10）",
+        "能绘制双平面镜潜望镜中的两次反射光路"
+      ],
+      "misconceptions": [
+        "作图时以界面为对称轴而非镜面所在直线",
+        "误将入射角/反射角测量基准设为镜面而非法线",
+        "忽略虚像点必须标为虚线或带撇符号"
+      ]
+    },
+    {
+      "id": "b6632942-22ba-4d65-88f5-b449c5065dd8",
+      "canonicalName": "凸透镜成像五种物距情形的规律归纳",
+      "chapter": "第五章 透镜及其应用",
+      "gradeNumbers": [
+        8
+      ],
+      "confidence": 0.98,
+      "assessability": 0.92,
+      "difficultyBand": 3,
+      "knowledgeType": "conceptual",
+      "learningObjectives": [
+        "能准确复述u>2f时成倒立缩小实像",
+        "能准确复述u=2f时成倒立等大实像",
+        "能准确复述f<u<2f时成倒立放大实像",
+        "能准确复述u=f时不成像",
+        "能准确复述u<f时成正立放大虚像"
+      ],
+      "misconceptions": [
+        "认为u=2f是虚像分界点",
+        "混淆u=f与u<f的成像性质，误以为u=f可成虚像",
+        "将'正立'等同于'虚像'而忽略u<f是唯一正立成像情形"
+      ]
+    },
+    {
+      "id": "fa36538c-15c1-45e7-94d9-a322ba42142f",
+      "canonicalName": "实像与虚像的判断依据",
+      "chapter": "第五章 透镜及其应用",
+      "gradeNumbers": [
+        8
+      ],
+      "confidence": 0.98,
+      "assessability": 0.9,
+      "difficultyBand": 2,
+      "knowledgeType": "conceptual",
+      "learningObjectives": [
+        "能用'是否能在光屏上承接'判断实像或虚像",
+        "能用'光线是否实际会聚'解释成像本质",
+        "能根据物体与像相对于透镜的位置（异侧/同侧）辅助判断",
+        "能举例说明生活中的实像（如电影幕布）与虚像（如平面镜）"
+      ],
+      "misconceptions": [
+        "实像一定倒立、虚像一定正立（忽略凹透镜成像情形，但本节不涉及故暂不列）",
+        "眼睛看到的就是实像"
+      ]
+    },
+    {
+      "id": "f6f1efeb-d685-4eb7-bdae-3c8932b84901",
+      "canonicalName": "凸透镜会聚作用与凹透镜发散作用的实验现象归纳",
+      "chapter": "第五章 透镜及其应用",
+      "gradeNumbers": [
+        8
+      ],
+      "confidence": 0.96,
+      "assessability": 0.92,
+      "difficultyBand": 2,
+      "knowledgeType": "procedural",
+      "learningObjectives": [
+        "能描述图5.1-5中凸透镜使平行光会聚于一点的现象",
+        "能描述图5.1-6中凹透镜使平行光向外发散的现象",
+        "能基于实验得出‘凸透镜=会聚透镜，凹透镜=发散透镜’的结论"
+      ],
+      "misconceptions": [
+        "认为凹透镜也能会聚光（仅因看到光斑变大）",
+        "将‘发散’误解为光线消失或减弱"
+      ]
+    },
+    {
+      "id": "acf6f887-9f22-44e0-aea3-c4f60f2fe221",
+      "canonicalName": "测量误差与精确度",
+      "chapter": "第一章 机械运动",
+      "gradeNumbers": [
+        8
+      ],
+      "confidence": 0.98,
+      "assessability": 0.9,
+      "difficultyBand": 2,
+      "knowledgeType": "conceptual",
+      "learningObjectives": [
+        "能区分误差（不可避免）与错误（可避免）的本质差异",
+        "能举例说明误差来源（仪器限制、方法局限）",
+        "理解‘精确度’由分度值决定，与‘准确度’概念初步分离"
+      ],
+      "misconceptions": [
+        "认为多次测量取平均值可消除误差",
+        "将‘读数偏大’等操作失误归类为误差而非错误"
+      ]
+    },
+    {
+      "id": "16ca7d52-3c96-409a-89fc-939436df3c96",
+      "canonicalName": "运动与静止的相对性",
+      "chapter": "第一章 机械运动",
+      "gradeNumbers": [
+        8
+      ],
+      "confidence": 0.96,
+      "assessability": 0.93,
+      "difficultyBand": 2,
+      "knowledgeType": "conceptual",
+      "learningObjectives": [
+        "理解‘运动与静止取决于参照物选择’这一核心结论",
+        "能解释‘同向同速两物体互为静止’等相对性现象",
+        "能用相对性原理解释鲁迅《社戏》等文学描述中的运动表述"
+      ],
+      "misconceptions": [
+        "认为运动状态是物体固有属性，与参照物无关",
+        "误以为‘相对静止’意味着绝对不动"
+      ]
+    },
+    {
+      "id": "898a5f97-307b-4ee8-99a3-691af95b2c8d",
+      "canonicalName": "参照物的选取与判断",
+      "chapter": "第一章 机械运动",
+      "gradeNumbers": [
+        8
+      ],
+      "confidence": 0.97,
+      "assessability": 0.91,
+      "difficultyBand": 2,
+      "knowledgeType": "procedural",
+      "learningObjectives": [
+        "能在具体情境中明确指出所选参照物",
+        "能根据给定参照物判断某物体是运动还是静止",
+        "能依据题干描述反推隐含参照物"
+      ],
+      "misconceptions": [
+        "认为参照物必须是静止的物体",
+        "默认地面是唯一合法参照物",
+        "混淆参照物与观察者位置"
+      ]
+    }
+  ],
+  "ids": [
+    "48d2f3f5-e3f4-473d-8db3-61299b686230",
+    "5031d1e7-efe9-48c5-b2da-b6660cab0e4c",
+    "a3746154-e265-496c-9f91-28a60217d0de",
+    "c5053e9a-6d63-4d39-a90a-9b11ba83b5cc",
+    "2353cd6b-5094-4be4-aa53-3ba61baf84af",
+    "a26929f3-2764-4640-b416-805ac0bf8072",
+    "024c1b44-89d0-4bb9-866b-d2520424aed0",
+    "bc8cd77d-f490-4f1e-b7b7-b92bfaf608db",
+    "c021bf04-b778-49f9-89a9-2024ed844c3b",
+    "1831f576-d18c-46f6-bb30-7303a5cd2ba5",
+    "e65391e4-b726-4af5-8e37-98e4399af90c",
+    "fd51efe6-709b-4879-90f5-d227659b8c04",
+    "29a43a78-26df-4176-ad82-202cbc70983b",
+    "1c39316a-0d0e-49b1-aaac-f7e91390eb1b",
+    "e79a1e01-614c-455a-9e68-0d9446940ab1",
+    "875684a1-60ad-47b4-a32b-806d1a4940af",
+    "c5bf2439-6ed8-484d-9a8a-08b674c227d9",
+    "8554355b-4f32-4d48-99c4-15aa7b3c2a42",
+    "282913ab-1859-4868-af84-a727863f814c",
+    "c68716ee-2697-4827-b5fe-cda6eba66f11",
+    "257626c9-365d-4f4c-bac9-d2a06f9ac8eb",
+    "0942b9b2-b23d-4599-a787-e73de2f40cd1",
+    "fb8d097a-9b23-4d96-8c61-2dd52e697e67",
+    "e6d69556-6a53-40df-8c43-3893a430461c",
+    "e17c5243-96d8-475c-a054-d0788f6f9734",
+    "5829bb0c-1504-4d51-8322-f535bab88692",
+    "20e2869f-9193-4d87-95a9-c93b16567f5d",
+    "f4d01b0c-fbf0-4f90-a8ed-f2eeaa8c9cc7",
+    "e6d9aa8c-4a43-45d8-be26-303cb9888ae5",
+    "a5c354fb-5020-4e92-a440-22a95436b30b",
+    "b6632942-22ba-4d65-88f5-b449c5065dd8",
+    "fa36538c-15c1-45e7-94d9-a322ba42142f",
+    "f6f1efeb-d685-4eb7-bdae-3c8932b84901",
+    "acf6f887-9f22-44e0-aea3-c4f60f2fe221",
+    "16ca7d52-3c96-409a-89fc-939436df3c96",
+    "898a5f97-307b-4ee8-99a3-691af95b2c8d"
+  ]
+}

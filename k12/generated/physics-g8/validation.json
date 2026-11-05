@@ -1,0 +1,27 @@
+{
+  "file": "k12/generated/physics-g8/questions.jsonl",
+  "checkedAt": "2026-11-05T12:54:38.989Z",
+  "stats": {
+    "batches": 36,
+    "questions": 144,
+    "byType": {
+      "choice": 73,
+      "fill_blank": 14,
+      "calculation": 24,
+      "fill_blank_text": 7,
+      "true_false": 26
+    },
+    "byDifficulty": {
+      "1": 36,
+      "2": 36,
+      "3": 36,
+      "4": 36
+    },
+    "bySubject": {
+      "physics": 144
+    },
+    "errors": 0,
+    "warnings": 0
+  },
+  "issues": []
+}
