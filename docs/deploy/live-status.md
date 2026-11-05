@@ -12,8 +12,8 @@
 | Argo CD Application | `argocd/china-study-free` |
 | Argo 状态 | `Synced / Healthy` |
 | GitOps 仓库 | `http://192.168.67.201/digitalsupply/china-study-free-gitops.git` |
-| GitOps revision | `f996b4a66e5e9b7084e102a42823e04beb73864f` |
-| 镜像 | `192.168.67.202:8443/china-study-free/web:e24769aca884dfa1514e6f5d5b7b857d64070d70` |
+| GitOps revision | `68eaf5a91541583c018b5c0aed2621511b2ff402` |
+| 镜像 | `192.168.67.202:8443/china-study-free/web:8ca29b1287eafd87b4b48f5e92669c59b0e981c6` |
 | Deployment | `china-study-free`，1 副本 |
 | Service | `china-study-free`，ClusterIP 80 → 8787 |
 | IngressClass | `traefik` |
