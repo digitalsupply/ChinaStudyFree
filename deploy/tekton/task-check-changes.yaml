@@ -1,0 +1,101 @@
+# 只改文档/部署清单时跳过镜像构建，避免无意义的 6 分钟构建和 Argo 滚动重启。
+# 任何一步失败都 fail-open(need-build=true)。
+apiVersion: tekton.dev/v1
+kind: Task
+metadata:
+  name: china-study-free-check-changes
+  labels:
+    app.kubernetes.io/part-of: china-study-free-cicd
+spec:
+  params:
+    - name: url
+      type: string
+    - name: before
+      type: string
+    - name: after
+      type: string
+    - name: subdirectory
+      type: string
+      default: source
+    - name: docs-patterns
+      type: string
+      default: "*.md docs/* openwiki/* deploy/* .github/* AGENTS.md k12/*"
+  results:
+    - name: need-build
+    - name: reason
+  workspaces:
+    - name: source
+  steps:
+    - name: check
+      image: alpine/git:v2.45.2
+      env:
+        - name: GIT_USERNAME
+          valueFrom:
+            secretKeyRef:
+              name: china-study-free-gitlab-auth
+              key: username
+        - name: GIT_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: china-study-free-gitlab-auth
+              key: password
+        - name: GIT_URL
+          value: $(params.url)
+        - name: BEFORE
+          value: $(params.before)
+        - name: AFTER
+          value: $(params.after)
+        - name: SUBDIR
+          value: $(params.subdirectory)
+        - name: DOCS_PATTERNS
+          value: $(params.docs-patterns)
+      script: |
+        #!/bin/sh
+        set -eu
+        NEED="$(results.need-build.path)"
+        REASON="$(results.reason.path)"
+        finish() { printf '%s' "$1" > "$NEED"; printf '%s' "$2" > "$REASON"; echo "[check-changes] $1: $2"; exit 0; }
+        build() { finish "true" "$1"; }
+        [ -n "$AFTER" ] || build "webhook 未提供 after"
+        SRC="$(workspaces.source.path)/$SUBDIR"
+        NO_SCHEME="${GIT_URL#*://}"
+        HOST_PART="${NO_SCHEME%%/*}"
+        PATH_PART="${NO_SCHEME#*/}"
+        AUTH_URL="http://${GIT_USERNAME}:${GIT_PASSWORD}@${HOST_PART}/${PATH_PART}"
+        if [ ! -d "$SRC/.git" ]; then
+          build "workspace 中没有 git 仓库"
+        fi
+        cd "$SRC"
+        set -f
+        case "$BEFORE" in
+          ""|0000000000000000000000000000000000000000) build "无可比较的 before" ;;
+        esac
+        has_commit() { git cat-file -e "$1^{commit}" 2>/dev/null; }
+        if ! has_commit "$BEFORE"; then
+          git remote set-url origin "$AUTH_URL" 2>/dev/null || true
+          git fetch --depth 1 origin "$BEFORE" >/dev/null 2>&1 || true
+        fi
+        if ! has_commit "$BEFORE"; then
+          git fetch --deepen=20 origin >/dev/null 2>&1 || true
+        fi
+        if ! has_commit "$BEFORE"; then
+          build "无法解析 before=$BEFORE"
+        fi
+        CHANGED="$(git diff --name-only "$BEFORE" "$AFTER" 2>/dev/null || true)"
+        [ -n "$CHANGED" ] || build "diff 为空或失败"
+        NON_DOCS=""
+        COUNT=0
+        printf '%s\n' "$CHANGED" > /tmp/changed.txt
+        while IFS= read -r f; do
+          [ -n "$f" ] || continue
+          COUNT=$((COUNT + 1))
+          HIT="false"
+          for pat in $DOCS_PATTERNS; do
+            case "$f" in $pat) HIT="true"; break ;; esac
+          done
+          [ "$HIT" = "true" ] || NON_DOCS="$NON_DOCS $f"
+        done < /tmp/changed.txt
+        if [ -z "$NON_DOCS" ]; then
+          finish "false" "仅文档/部署改动($COUNT 个文件)，跳过构建"
+        fi
+        build "包含运行时改动:$(echo "$NON_DOCS" | cut -c1-500)"

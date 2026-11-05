@@ -10,6 +10,8 @@ spec:
       value: $(body.repository.git_http_url)
     - name: gitrevision
       value: $(body.after)
+    - name: gitbefore
+      value: $(body.before)
 ---
 apiVersion: triggers.tekton.dev/v1beta1
 kind: TriggerTemplate
@@ -21,6 +23,7 @@ spec:
   params:
     - name: gitrepositoryurl
     - name: gitrevision
+    - name: gitbefore
   resourcetemplates:
     - apiVersion: tekton.dev/v1
       kind: PipelineRun
@@ -32,6 +35,8 @@ spec:
             value: $(tt.params.gitrepositoryurl)
           - name: git-revision
             value: $(tt.params.gitrevision)
+          - name: git-before
+            value: $(tt.params.gitbefore)
           - name: image-tag
             value: $(tt.params.gitrevision)
         pipelineRef:
