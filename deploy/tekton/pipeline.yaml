@@ -22,7 +22,7 @@ spec:
       default: http://192.168.67.201/digitalsupply/china-study-free-gitops.git
     - name: node-image
       type: string
-      default: node:20-slim
+      default: 192.168.67.202:8443/deeptutor/node:22-slim
     - name: npm-registry
       type: string
       default: https://registry.npmmirror.com
@@ -54,7 +54,7 @@ spec:
         - name: image
           value: $(params.image-repository):$(params.image-tag)
         - name: context
-          value: "."
+          value: source
         - name: dockerfile
           value: docker/Dockerfile
         - name: node-image

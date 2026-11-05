@@ -1,0 +1,21 @@
+# 给 GitLab webhook 用的内部入口。
+# 如果集群内 DNS 能解析 el-china-study-free.internal，可以加 host 规则；
+# 这里用 10.0.0.252 + 唯一 path，避免额外 DNS。
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: china-study-free-el
+  annotations:
+    traefik.ingress.kubernetes.io/router.entrypoints: web
+spec:
+  ingressClassName: traefik
+  rules:
+    - http:
+        paths:
+          - path: /china-study-free-hook
+            pathType: Prefix
+            backend:
+              service:
+                name: el-china-study-free-listener
+                port:
+                  number: 8080

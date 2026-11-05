@@ -24,6 +24,7 @@ ChinaStudyFree 适合部署到 K8s：
 | [GitOps / K8s 自动发布](gitops-k8s.md) | GitLab → Tekton → Harbor → GitOps → Argo CD 全链路 |
 | [手动部署](manual-deploy.md) | 不用 GitOps，从构建镜像到 apply 的完整步骤 |
 | [运维清单](operations-checklist.md) | 日常/周/月检查、告警、故障处理、回滚 |
+| [当前部署状态](live-status.md) | 已部署对象、地址、DNS/TLS/AI 状态、未完成项 |
 
 ## 仓库内文件
 
