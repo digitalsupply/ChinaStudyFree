@@ -1,5 +1,7 @@
 # GitOps / K8s 自动发布
 
+> 当前集群已实际部署，实际对象/地址/状态见 [live-status.md](live-status.md)。
+
 本文描述与 DeepTutor 类似的链路：
 
 ```text
