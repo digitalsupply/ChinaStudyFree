@@ -215,6 +215,21 @@ npm run dev:server          # http://localhost:8787
   （`$\frac12\times\frac12$`）清理成"1 除以 2 乘以 1 除以 2"再送合成，
   **但哈希仍用原文**，保证路径对得上。
 
+### K8s / GitOps 部署
+
+仓库内提供 `deploy/`：
+
+- `deploy/k8s/base` + `overlays/prod`：Deployment / Service / Ingress / PVC / NetworkPolicy
+- `deploy/tekton`：GitLab push → BuildKit → Harbor → 更新 GitOps
+- `deploy/gitops`：GitOps 仓库模板 + Argo CD Application
+- `docs/deploy/`：详细配置、手动部署、运维清单
+
+```bash
+kubectl kustomize deploy/k8s/overlays/prod >/tmp/china-study-free.yaml
+```
+
+详细文档见 [docs/deploy/README.md](docs/deploy/README.md)。
+
 ---
 
 ## 六、AI 后端环境变量（`apps/server/.env`）

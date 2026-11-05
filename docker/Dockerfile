@@ -5,12 +5,17 @@
 #       需自行放入 output/ 后重跑 build:data。教材中心(textbook-catalog.json)由 sync:textbooks 自动生成。
 # 音频/课本原页等大资源如需离线打包，可在 build:data 前执行 npm run download-assets（约 2GB）。
 
-FROM node:20-slim AS build
+# 基础镜像可用 --build-arg 指向内网 Harbor 镜像；默认保持官方 node:20-slim。
+ARG NODE_IMAGE=node:20-slim
+ARG NPM_REGISTRY=
+
+FROM ${NODE_IMAGE} AS build
 WORKDIR /app
 
 # 安装全部 workspace 依赖（含 web / server / core；忽略 tauri/capacitor 的 postinstall 下载，容器内用不到）
 COPY . .
-RUN npm install --ignore-scripts
+RUN if [ -n "$NPM_REGISTRY" ]; then npm config set registry "$NPM_REGISTRY"; fi \
+ && npm install --ignore-scripts
 
 # 生成数据并构建前端静态导出 + AI 后端
 RUN npm run build:data || true
@@ -19,7 +24,7 @@ RUN npm run build:web
 RUN npm run build:server
 
 # ---- 运行时 ----
-FROM node:20-slim AS runtime
+FROM ${NODE_IMAGE} AS runtime
 WORKDIR /app
 ENV NODE_ENV=production
 ENV PORT=8787

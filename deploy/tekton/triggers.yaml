@@ -1,0 +1,87 @@
+apiVersion: triggers.tekton.dev/v1beta1
+kind: TriggerBinding
+metadata:
+  name: china-study-free-binding
+  labels:
+    app.kubernetes.io/part-of: china-study-free-cicd
+spec:
+  params:
+    - name: gitrepositoryurl
+      value: $(body.repository.git_http_url)
+    - name: gitrevision
+      value: $(body.after)
+---
+apiVersion: triggers.tekton.dev/v1beta1
+kind: TriggerTemplate
+metadata:
+  name: china-study-free-template
+  labels:
+    app.kubernetes.io/part-of: china-study-free-cicd
+spec:
+  params:
+    - name: gitrepositoryurl
+    - name: gitrevision
+  resourcetemplates:
+    - apiVersion: tekton.dev/v1
+      kind: PipelineRun
+      metadata:
+        generateName: china-study-free-cicd-
+      spec:
+        params:
+          - name: git-url
+            value: $(tt.params.gitrepositoryurl)
+          - name: git-revision
+            value: $(tt.params.gitrevision)
+          - name: image-tag
+            value: $(tt.params.gitrevision)
+        pipelineRef:
+          name: china-study-free-cicd
+        taskRunTemplate:
+          serviceAccountName: pipeline
+          podTemplate:
+            imagePullSecrets:
+              - name: harbor-auth
+        workspaces:
+          - name: shared-workspace
+            volumeClaimTemplate:
+              spec:
+                accessModes:
+                  - ReadWriteOnce
+                resources:
+                  requests:
+                    storage: 2Gi
+                storageClassName: nfs-sc
+---
+apiVersion: triggers.tekton.dev/v1beta1
+kind: EventListener
+metadata:
+  name: china-study-free-listener
+  labels:
+    app.kubernetes.io/part-of: china-study-free-cicd
+spec:
+  serviceAccountName: pipeline
+  triggers:
+    - name: gitlab-push
+      bindings:
+        - kind: TriggerBinding
+          ref: china-study-free-binding
+      interceptors:
+        - ref:
+            kind: ClusterInterceptor
+            name: gitlab
+          params:
+            - name: secretRef
+              value:
+                secretName: china-study-free-webhook-secret
+                secretKey: secretToken
+            - name: eventTypes
+              value:
+                - Push Hook
+        - ref:
+            kind: ClusterInterceptor
+            name: cel
+          params:
+            - name: filter
+              value: body.object_kind == 'push' && body.ref == 'refs/heads/main'
+      template:
+        ref: china-study-free-template

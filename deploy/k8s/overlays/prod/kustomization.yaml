@@ -1,0 +1,30 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: china-study-free
+resources:
+  - ../../base
+images:
+  - name: 192.168.67.202:8443/china-study-free/web
+    newName: 192.168.67.202:8443/china-study-free/web
+    # CI 会把它改成 git sha；手动部署时也要改这里。
+    newTag: REPLACE_ME
+patches:
+  - path: pvc-patch.yaml
+  - path: configmap-patch.yaml
+  - target:
+      kind: Ingress
+      name: china-study-free-web
+    patch: |-
+      - op: replace
+        path: /spec/rules/0/host
+        value: study.example.com
+      - op: replace
+        path: /spec/tls/0/hosts/0
+        value: study.example.com
+  - target:
+      kind: Ingress
+      name: china-study-free-admin
+    patch: |-
+      - op: replace
+        path: /spec/rules/0/host
+        value: study-admin.internal

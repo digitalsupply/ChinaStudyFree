@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: china-study-free-reports
+spec:
+  # 按集群实际 StorageClass 修改；DeepTutor 集群使用 nfs-sc。
+  storageClassName: nfs-sc

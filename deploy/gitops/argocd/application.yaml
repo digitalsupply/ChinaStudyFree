@@ -1,0 +1,29 @@
+# 由集群管理员在 argocd namespace apply 一次。
+# Argo CD 只监听 GitOps 仓库，不直接监听源码仓库。
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: china-study-free
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: http://192.168.67.201/digitalsupply/china-study-free-gitops.git
+    targetRevision: main
+    path: overlays/prod
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: china-study-free
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+      - ServerSideApply=true
+    retry:
+      limit: 5
+      backoff:
+        duration: 10s
+        factor: 2
+        maxDuration: 3m

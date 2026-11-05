@@ -1,0 +1,91 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: china-study-free
+  labels:
+    app: china-study-free
+spec:
+  # 反馈 JSONL 是单机文件；第一版固定 1 副本。
+  # 要做多副本/HPA，必须先把 reports 迁移到 Postgres 或对象存储。
+  replicas: 1
+  strategy:
+    type: Recreate
+  revisionHistoryLimit: 3
+  minReadySeconds: 5
+  progressDeadlineSeconds: 300
+  selector:
+    matchLabels:
+      app: china-study-free
+  template:
+    metadata:
+      labels:
+        app: china-study-free
+    spec:
+      serviceAccountName: china-study-free
+      automountServiceAccountToken: false
+      imagePullSecrets:
+        - name: harbor-auth
+      terminationGracePeriodSeconds: 30
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 1000
+        runAsGroup: 1000
+        fsGroup: 1000
+        seccompProfile:
+          type: RuntimeDefault
+      containers:
+        - name: app
+          image: 192.168.67.202:8443/china-study-free/web:bootstrap
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: http
+              containerPort: 8787
+          envFrom:
+            - configMapRef:
+                name: china-study-free-config
+            - secretRef:
+                name: china-study-free-secrets
+                optional: true
+          volumeMounts:
+            - name: reports
+              mountPath: /app/data/reports
+          startupProbe:
+            httpGet:
+              path: /api/health
+              port: http
+            periodSeconds: 2
+            failureThreshold: 30
+          readinessProbe:
+            httpGet:
+              path: /api/health
+              port: http
+            initialDelaySeconds: 5
+            periodSeconds: 5
+            failureThreshold: 3
+          livenessProbe:
+            httpGet:
+              path: /api/health
+              port: http
+            initialDelaySeconds: 15
+            periodSeconds: 10
+            failureThreshold: 3
+          lifecycle:
+            preStop:
+              exec:
+                command: ["/bin/sh", "-c", "sleep 5"]
+          resources:
+            requests:
+              cpu: 100m
+              memory: 256Mi
+            limits:
+              cpu: "1"
+              memory: 1Gi
+          securityContext:
+            allowPrivilegeEscalation: false
+            capabilities:
+              drop: ["ALL"]
+            readOnlyRootFilesystem: false
+      volumes:
+        - name: reports
+          persistentVolumeClaim:
+            claimName: china-study-free-reports

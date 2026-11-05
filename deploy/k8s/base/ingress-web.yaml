@@ -1,0 +1,31 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: china-study-free-web
+  annotations:
+    nginx.ingress.kubernetes.io/proxy-body-size: "4m"
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "120"
+    nginx.ingress.kubernetes.io/proxy-send-timeout: "120"
+    # 管理接口只允许走内部 admin Ingress；公网 host 直接拒绝。
+    # 如果集群禁用了 server-snippet，请改用网络策略/网关 IP 白名单。
+    nginx.ingress.kubernetes.io/server-snippet: |
+      location ~ ^/api/admin/ {
+        deny all;
+      }
+spec:
+  ingressClassName: nginx
+  tls:
+    - hosts:
+        - study.example.com
+      secretName: china-study-free-tls
+  rules:
+    - host: study.example.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: china-study-free
+                port:
+                  name: http

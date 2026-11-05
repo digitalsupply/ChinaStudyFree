@@ -1,0 +1,80 @@
+# 把新镜像 tag 写进 GitOps 仓库并 push；Argo CD 自动同步。
+apiVersion: tekton.dev/v1
+kind: Task
+metadata:
+  name: china-study-free-update-gitops
+  labels:
+    app.kubernetes.io/part-of: china-study-free-cicd
+spec:
+  description: Update the image newTag in china-study-free-gitops and push.
+  params:
+    - name: image-tag
+      type: string
+    - name: gitops-url
+      type: string
+      default: http://192.168.67.201/digitalsupply/china-study-free-gitops.git
+    - name: kustomize-path
+      type: string
+      default: overlays/prod/kustomization.yaml
+    - name: gitops-subdir
+      type: string
+      default: gitops
+  steps:
+    - name: patch-and-commit
+      image: alpine/git:2.45.2
+      env:
+        - name: GIT_USERNAME
+          valueFrom:
+            secretKeyRef:
+              name: china-study-free-gitlab-auth
+              key: username
+        - name: GIT_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: china-study-free-gitlab-auth
+              key: password
+        - name: GITOPS_URL
+          value: $(params.gitops-url)
+        - name: IMAGE_TAG
+          value: $(params.image-tag)
+        - name: KUSTOMIZE_PATH
+          value: $(params.kustomize-path)
+        - name: GITOPS_SUBDIR
+          value: $(params.gitops-subdir)
+      script: |
+        #!/bin/sh
+        set -eu
+        cd "$(workspaces.source.path)"
+        DIR="${GITOPS_SUBDIR}"
+
+        NO_SCHEME="${GITOPS_URL#*://}"
+        HOST_PART="${NO_SCHEME%%/*}"
+        PATH_PART="${NO_SCHEME#*/}"
+        AUTH_URL="http://${GIT_USERNAME}:${GIT_PASSWORD}@${HOST_PART}/${PATH_PART}"
+
+        if [ ! -d "$DIR" ]; then
+          git clone "$AUTH_URL" "$DIR"
+        else
+          cd "$DIR"
+          git remote set-url origin "$AUTH_URL"
+          git pull --ff-only origin main
+        fi
+
+        cd "$DIR"
+        git config user.name "china-study-free-cicd-bot"
+        git config user.email "china-study-free-cicd-bot@users.noreply.local"
+        sed -i "s#^\( *newTag:\).*#\1 ${IMAGE_TAG}#" "$KUSTOMIZE_PATH"
+
+        if git diff --quiet -- "$KUSTOMIZE_PATH"; then
+          echo "No change needed: already ${IMAGE_TAG}"
+          exit 0
+        fi
+        echo "--- diff ---"
+        git --no-pager diff -- "$KUSTOMIZE_PATH"
+        git add "$KUSTOMIZE_PATH"
+        git commit -m "ci: promote china-study-free image ${IMAGE_TAG}"
+        git push origin HEAD:main
+        echo "GitOps updated to ${IMAGE_TAG}; Argo CD will sync."
+      workingDir: $(workspaces.source.path)
+  workspaces:
+    - name: source

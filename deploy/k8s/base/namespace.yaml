@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: china-study-free
+  labels:
+    app.kubernetes.io/name: china-study-free
+    pod-security.kubernetes.io/enforce: baseline

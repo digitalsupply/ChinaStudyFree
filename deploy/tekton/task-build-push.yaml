@@ -1,0 +1,69 @@
+# 构建并推送 ChinaStudyFree 镜像到 Harbor。
+# 复用 DeepTutor 集群已有的 buildkitd.cicd + harbor-auth + harbor-ca。
+apiVersion: tekton.dev/v1
+kind: Task
+metadata:
+  name: china-study-free-build-push
+  labels:
+    app.kubernetes.io/part-of: china-study-free-cicd
+spec:
+  description: Build the all-in-one web+AI image with BuildKit and push to Harbor.
+  params:
+    - name: image
+      type: string
+      description: Fully-qualified destination image (registry/project/name:tag)
+    - name: context
+      type: string
+      default: ""
+    - name: dockerfile
+      type: string
+      default: docker/Dockerfile
+    - name: node-image
+      type: string
+      default: node:20-slim
+    - name: npm-registry
+      type: string
+      default: https://registry.npmmirror.com
+  steps:
+    - name: build
+      image: 192.168.67.202:8443/compassio/buildkit:v0.20.2-rootless
+      env:
+        - name: DOCKER_CONFIG
+          value: /home/user/.docker
+        - name: BUILDKIT_HOST
+          value: tcp://buildkitd.cicd.svc.cluster.local:1234
+      script: |
+        #!/bin/sh
+        set -eu
+        cat /etc/ssl/certs/ca-certificates.crt /etc/harbor-ca/ca.crt > /tmp/ca-bundle.crt
+        export SSL_CERT_FILE=/tmp/ca-bundle.crt
+        buildctl build \
+          --frontend dockerfile.v0 \
+          --local "context=$(pwd)/$(params.context)" \
+          --local "dockerfile=$(pwd)/$(params.context)" \
+          --opt "filename=$(params.dockerfile)" \
+          --opt "target=runtime" \
+          --opt "build-arg:NODE_IMAGE=$(params.node-image)" \
+          --opt "build-arg:NPM_REGISTRY=$(params.npm-registry)" \
+          --output "type=image,name=$(params.image),push=true" \
+          --export-cache type=inline
+        echo "Pushed image: $(params.image)"
+      workingDir: $(workspaces.source.path)
+      volumeMounts:
+        - name: docker-config
+          mountPath: /home/user/.docker
+        - name: harbor-ca
+          mountPath: /etc/harbor-ca
+          readOnly: true
+  volumes:
+    - name: docker-config
+      secret:
+        secretName: harbor-auth
+        items:
+          - key: .dockerconfigjson
+            path: config.json
+    - name: harbor-ca
+      configMap:
+        name: harbor-ca
+  workspaces:
+    - name: source

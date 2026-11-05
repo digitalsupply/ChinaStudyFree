@@ -1,0 +1,81 @@
+apiVersion: tekton.dev/v1
+kind: Pipeline
+metadata:
+  name: china-study-free-cicd
+  labels:
+    app.kubernetes.io/part-of: china-study-free-cicd
+spec:
+  description: GitLab push -> build/push Harbor -> update GitOps -> Argo CD.
+  params:
+    - name: git-url
+      type: string
+      default: http://192.168.67.201/digitalsupply/ChinaStudyFree.git
+    - name: git-revision
+      type: string
+    - name: image-repository
+      type: string
+      default: 192.168.67.202:8443/china-study-free/web
+    - name: image-tag
+      type: string
+    - name: gitops-url
+      type: string
+      default: http://192.168.67.201/digitalsupply/china-study-free-gitops.git
+    - name: node-image
+      type: string
+      default: node:20-slim
+    - name: npm-registry
+      type: string
+      default: https://registry.npmmirror.com
+  workspaces:
+    - name: shared-workspace
+  tasks:
+    - name: clone
+      taskRef:
+        kind: Task
+        name: git-clone
+      params:
+        - name: url
+          value: $(params.git-url)
+        - name: revision
+          value: $(params.git-revision)
+        - name: depth
+          value: "1"
+      workspaces:
+        - name: output
+          workspace: shared-workspace
+
+    - name: build-push
+      runAfter:
+        - clone
+      taskRef:
+        kind: Task
+        name: china-study-free-build-push
+      params:
+        - name: image
+          value: $(params.image-repository):$(params.image-tag)
+        - name: context
+          value: "."
+        - name: dockerfile
+          value: docker/Dockerfile
+        - name: node-image
+          value: $(params.node-image)
+        - name: npm-registry
+          value: $(params.npm-registry)
+      workspaces:
+        - name: source
+          workspace: shared-workspace
+
+    - name: update-gitops
+      runAfter:
+        - build-push
+      taskRef:
+        kind: Task
+        name: china-study-free-update-gitops
+      params:
+        - name: image-tag
+          value: $(params.image-tag)
+        - name: gitops-url
+          value: $(params.gitops-url)
+      workspaces:
+        - name: source
+          workspace: shared-workspace
