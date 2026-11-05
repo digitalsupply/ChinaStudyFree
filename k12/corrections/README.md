@@ -5,7 +5,9 @@
 
 ## 流程
 
-1. 学习者在「我的 → 已报告的问题」导出 `cstf-reports-*.json`。
+1. 学习者点小旗子后，报告先写本机队列；在线时自动提交到 `POST /api/reports`，
+   离线则保留重试。也可在「我的 → 已报告的问题」导出 `cstf-reports-*.json`。
+   管理员用 `npm run k12:reports` 查看汇总。
 2. 根据报告里的 `sourceKey` 定位题目。
 3. 编辑 `k12/corrections/physics-g8.json`。
 4. 先 dry-run：

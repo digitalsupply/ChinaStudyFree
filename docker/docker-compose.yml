@@ -26,4 +26,9 @@ services:
       CORS_ORIGIN: ${CORS_ORIGIN:-*}
       STATIC_DIR: /app/apps/web/out
       PORT: "8787"
+      REPORT_UPLOAD_ENABLED: ${REPORT_UPLOAD_ENABLED:-true}
+      REPORT_DIR: /app/data/reports
+      ADMIN_TOKEN: ${ADMIN_TOKEN:-}
+    volumes:
+      - ../data/reports:/app/data/reports
     restart: unless-stopped

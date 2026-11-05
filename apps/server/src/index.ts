@@ -20,10 +20,12 @@ import express, { type Request, type Response, type NextFunction } from "express
 import { chatLLM, parseJSON, LLMNotConfigured, type ChatMessage } from "./llm.js";
 import { dashscopeTTS, TTSNotConfigured, synthesize } from "./tts.js";
 import { geminiImage, ImageNotConfigured } from "./image.js";
+import { addReport, listReports, summarizeReports, REPORTS_ENABLED } from "./reports.js";
 
 const HOST = process.env.HOST || "0.0.0.0";
 const PORT = Number(process.env.PORT || 8787);
 const CORS_ORIGIN = process.env.CORS_ORIGIN || "*";
+const ADMIN_TOKEN = process.env.ADMIN_TOKEN || process.env.K12_ADMIN_TOKEN || "";
 
 /**
  * 解析静态站点目录（Next.js `output:"export"` 产物 web/out）。
@@ -77,7 +79,7 @@ app.use(express.json({ limit: "2mb" }));
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", CORS_ORIGIN);
   res.header("Access-Control-Allow-Methods", "GET,POST,OPTIONS");
-  res.header("Access-Control-Allow-Headers", "Content-Type,Authorization");
+  res.header("Access-Control-Allow-Headers", "Content-Type,Authorization,X-Admin-Token");
   if (req.method === "OPTIONS") return res.sendStatus(204);
   next();
 });
@@ -119,6 +121,28 @@ function fail(res: Response, status: number, message: string, code?: string) {
   res.status(status).json({ ok: false, error: message, code });
 }
 
+/**
+ * 管理员鉴权：只保护反馈查看接口，不涉及学生学习数据。
+ * 未配置 ADMIN_TOKEN 时直接关闭管理接口，避免默认开放。
+ */
+function requireAdmin(
+  req: Request,
+  res: Response,
+  next: NextFunction,
+): void {
+  if (!ADMIN_TOKEN) {
+    fail(res, 503, "管理接口未启用（缺少 ADMIN_TOKEN）", "ADMIN_NOT_CONFIGURED");
+    return;
+  }
+  const header = req.header("x-admin-token") || "";
+  const bearer = req.header("authorization")?.replace(/^Bearer\s+/i, "") || "";
+  if (header !== ADMIN_TOKEN && bearer !== ADMIN_TOKEN) {
+    fail(res, 401, "管理员令牌无效", "ADMIN_UNAUTHORIZED");
+    return;
+  }
+  next();
+}
+
 app.use((err: unknown, _req: Request, res: Response, _next: NextFunction) => {
   log("error", "未捕获的中间件错误", { err: String((err as Error)?.stack || err) });
   fail(res, 500, "服务器内部错误");
@@ -134,7 +158,33 @@ app.get("/api/health", (_req, res) => {
     tts: !!process.env.DASHSCOPE_API_KEY || edgeEnabled,
     ttsBackend: process.env.DASHSCOPE_API_KEY ? "dashscope" : edgeEnabled ? "edge" : "none",
     image: !!process.env.GEMINI_API_KEY,
+    reports: REPORTS_ENABLED,
   });
+});
+
+// ===== 学生题目反馈（可选的轻量回收）=====
+// 客户端在本地先入队；在线时 POST 到这里，离线失败会保留重试。
+app.post("/api/reports", (req: Request, res: Response) => {
+  if (!REPORTS_ENABLED) {
+    return fail(res, 503, "反馈回收未启用", "REPORTS_DISABLED");
+  }
+  const result = addReport(req.body);
+  if (!result.ok) return fail(res, 400, result.error, "REPORT_INVALID");
+  res.status(result.duplicate ? 200 : 201).json({
+    ok: true,
+    id: result.id,
+    duplicate: result.duplicate,
+  });
+});
+
+// 管理接口只读：汇总原始反馈；修正/删除仍走 k12/corrections + CLI。
+app.get("/api/admin/reports", requireAdmin, (req: Request, res: Response) => {
+  const limit = Number(req.query.limit || 200);
+  res.json({ ok: true, reports: listReports(limit) });
+});
+
+app.get("/api/admin/reports/summary", requireAdmin, (_req: Request, res: Response) => {
+  res.json({ ok: true, ...summarizeReports() });
 });
 
 // ===== 1. 单元小测出题 =====
@@ -293,6 +343,7 @@ app.listen(PORT, HOST, () => {
   console.log(
     `   LLM=${process.env.LLM_API_KEY ? "已配置" : "未配置"}  ` +
       `TTS=${process.env.DASHSCOPE_API_KEY ? "DashScope" : process.env.EDGE_TTS_ENABLED !== "false" ? "Edge(免费)" : "未配置"}  ` +
-      `Image=${process.env.GEMINI_API_KEY ? "已配置" : "未配置"}`,
+      `Image=${process.env.GEMINI_API_KEY ? "已配置" : "未配置"}  ` +
+      `Reports=${REPORTS_ENABLED ? "已启用" : "已禁用"}  Admin=${ADMIN_TOKEN ? "已配置" : "未配置"}`,
   );
 });

@@ -483,6 +483,9 @@ function BackupSection() {
 function ReportsSection() {
   const toast = useToast();
   const reports = useProgressStore(s => s.reports);
+  const reportQueue = useProgressStore(s => s.reportQueue);
+  const pendingCount = reportQueue.length;
+  const pendingIds = new Set(reportQueue.map(r => r.id));
   // 最近的排最前
   const sorted = [...reports].reverse();
   const shown = sorted.slice(0, 20);
@@ -514,7 +517,10 @@ function ReportsSection() {
         )}
       </div>
       <div className="text-xs text-ink-light mb-3">
-        答题时点小旗子 🚩 报告的题目问题都在这里 · 只保存在本机，不会上传
+        答题时点小旗子 🚩 报告的题目问题都在这里。
+        {pendingCount > 0
+          ? ` 当前有 ${pendingCount} 条待上传，联网后会自动补传。`
+          : " 已上传的反馈会显示“已同步”。"}
       </div>
 
       {reports.length === 0 ? (
@@ -542,6 +548,11 @@ function ReportsSection() {
               <div className="text-[10px] text-ink-softer mt-1">
                 课程 {r.lessonId} · 题目 #{r.questionId}
                 {r.sourceKey ? ` · 来源 ${r.sourceKey}` : ""}
+                {pendingIds.has(r.id)
+                  ? " · 待上传"
+                  : r.syncedAt
+                    ? " · 已同步"
+                    : " · 仅本机"}
                 {r.answerGiven ? ` · 当时作答：${r.answerGiven.slice(0, 24)}` : ""}
               </div>
             </li>

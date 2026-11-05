@@ -78,8 +78,27 @@ npm run validate:quizzes
 - 公式/符号有问题
 - 图示/表格有问题
 
-报告保存在本机，可在「我的 → 已报告的问题」导出。每条 K12 题目报告带有
+报告先写入本机队列，在线时自动提交到 `POST /api/reports`；离线失败会保留，
+下次联网或启动时补传。也可在「我的 → 已报告的问题」导出。每条 K12 题目报告带有
 `sourceKey`（如 `{source_kp_id}#q1`），用于定位正式题库中的题目。
+
+服务端配置（`apps/server/.env`）：
+
+```bash
+REPORT_UPLOAD_ENABLED=true
+REPORT_DIR=                # 留空 = <repo>/data/reports
+ADMIN_TOKEN=change-me-to-a-long-random-token
+```
+
+查看反馈：
+
+```bash
+# 同机直接读 JSONL
+npm run k12:reports -- --file data/reports/reports.jsonl
+
+# 远程管理 API
+ADMIN_TOKEN=xxx npm run k12:reports -- --url http://127.0.0.1:8787
+```
 
 后台处理：
 

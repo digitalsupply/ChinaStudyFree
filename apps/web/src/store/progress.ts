@@ -57,6 +57,7 @@ import {
   type BackupLessonResult,
   type BackupMistake,
 } from "@cstf/core/backup";
+import { aiUrl } from "@/lib/ai";
 
 /**
  * 错题条目，含 SRS（间隔重复）字段。
@@ -138,6 +139,12 @@ export interface QuestionReport {
    * 后台 scripts/k12/apply-corrections.mjs 用它定位并修正/删除题目。
    */
   sourceKey?: string;
+  /** 成功上传到 /api/reports 的时间；缺省 = 还在本机队列 */
+  syncedAt?: string;
+  /** 上传尝试次数 */
+  uploadAttempts?: number;
+  /** 最近一次上传失败原因（仅本机排障用） */
+  lastUploadError?: string;
 }
 
 /**
@@ -307,8 +314,10 @@ interface ProgressState {
   /** 待展示的上周结算幕（LeagueWatcher 消费后清空） */
   pendingLeagueResult: PendingLeagueResult | null;
 
-  // 🚩 v11：题目报错（本地列表，不上传）
+  // 🚩 v11：题目报错（本地历史；在线时尝试上传，失败留在 reportQueue）
   reports: QuestionReport[];
+  /** 待上传的反馈队列（持久化，离线可重试） */
+  reportQueue: QuestionReport[];
 
   // actions
   setSelectedGrade: (grade: number | null) => void;
@@ -471,8 +480,10 @@ interface ProgressState {
   importBackup: (envelope: BackupEnvelope) => void;
 
   // 🚩 题目报错
-  /** 写入一条本地报错记录（列表封顶 200 条，超出丢最旧） */
+  /** 写入一条本地报错记录，并尝试上传（列表封顶 200 条） */
   addReport: (input: Omit<QuestionReport, "id" | "createdAt">) => void;
+  /** 把本地待上传队列按顺序提交到 /api/reports；离线失败保留重试 */
+  flushReportQueue: () => Promise<void>;
 }
 
 /** 每多少课出现一个宝箱节点（真值在 @cstf/core/chestLogic 中，这里 re-export 保持向后兼容） */
@@ -649,6 +660,15 @@ export function weekXpFromHistory(
 // Store
 // ============================================================
 
+/** 防止多个报告同时触发并发上传。 */
+let reportFlushPromise: Promise<void> | null = null;
+/** 静态站/未启用后端时，避免每次渲染都打 404；online 事件会重置。 */
+let reportUploadDisabled = false;
+
+export function resetReportUpload(): void {
+  reportUploadDisabled = false;
+}
+
 export const useProgressStore = create<ProgressState>()(
   persist(
     (set, get) => ({
@@ -750,6 +770,7 @@ export const useProgressStore = create<ProgressState>()(
 
       // v11：题目报错
       reports: [],
+      reportQueue: [],
 
       leagueUnlocked: () =>
         Object.keys(get().completedLessons).length >= UNLOCK_LESSONS,
@@ -1048,7 +1069,7 @@ export const useProgressStore = create<ProgressState>()(
       },
 
       // --------------------------------------------------------
-      // 🚩 题目报错（本地列表，不上传）
+      // 🚩 题目报错（本地历史 + 可选在线回收）
       // --------------------------------------------------------
 
       addReport: input => {
@@ -1059,7 +1080,61 @@ export const useProgressStore = create<ProgressState>()(
         };
         set(state => ({
           reports: [...state.reports, report].slice(-200),
+          reportQueue: [...state.reportQueue, report].slice(-200),
         }));
+        // 不阻塞答题：在线就异步上传，失败留在队列里下次再试。
+        void get().flushReportQueue();
+      },
+
+      flushReportQueue: async () => {
+        if (reportUploadDisabled || typeof fetch !== "function") return;
+        if (reportFlushPromise) return reportFlushPromise;
+
+        reportFlushPromise = (async () => {
+          const queue = get().reportQueue;
+          for (const report of queue) {
+            try {
+              const res = await fetch(aiUrl("/api/reports"), {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(report),
+              });
+              // 静态站没有后端 / 后端关闭回收：本次会话不再重试，online 事件再重置。
+              if (res.status === 404 || res.status === 503) {
+                reportUploadDisabled = true;
+                return;
+              }
+              if (!res.ok) {
+                throw new Error(`HTTP ${res.status}`);
+              }
+              set(state => ({
+                reportQueue: state.reportQueue.filter(r => r.id !== report.id),
+                reports: state.reports.map(r =>
+                  r.id === report.id
+                    ? { ...r, syncedAt: new Date().toISOString(), lastUploadError: undefined }
+                    : r,
+                ),
+              }));
+            } catch (e) {
+              set(state => ({
+                reports: state.reports.map(r =>
+                  r.id === report.id
+                    ? {
+                        ...r,
+                        uploadAttempts: (r.uploadAttempts ?? 0) + 1,
+                        lastUploadError: String((e as Error)?.message || e),
+                      }
+                    : r,
+                ),
+              }));
+              break;
+            }
+          }
+        })().finally(() => {
+          reportFlushPromise = null;
+        });
+
+        return reportFlushPromise;
       },
 
       recordLessonComplete: (lessonId, lessonTitle, accuracy, xpGained) => {
@@ -1858,8 +1933,9 @@ export const useProgressStore = create<ProgressState>()(
           leagueTier: state.leagueTier ?? "bronze",
           leagueWeekKey: state.leagueWeekKey ?? "",
           pendingLeagueResult: state.pendingLeagueResult ?? null,
-          // v11：题目报错列表
+          // v11：题目报错列表 + 待上传队列
           reports: state.reports ?? [],
+          reportQueue: state.reportQueue ?? [],
           // v13：学段（默认未选，回到学段引导）
           selectedStage: state.selectedStage ?? null,
           // v15：学段历史 —— 老档回填优先级：

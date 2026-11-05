@@ -321,7 +321,53 @@ data/k12-generated/latest/questions.jsonl
 
 这一步建议单独写 `import-generated-to-output.mjs`，在审核通过后再执行。
 
-## 8. 质量与成本建议
+## 8. 学生反馈回收（轻量后端）
+
+`apps/server` 提供可选的反馈回收，不需要账号/数据库：
+
+```text
+POST /api/reports                 学生提交（前端离线时先入队）
+GET  /api/admin/reports           管理员查看（x-admin-token）
+GET  /api/admin/reports/summary   按类型 / sourceKey 聚合
+```
+
+服务端环境变量：
+
+```bash
+REPORT_UPLOAD_ENABLED=true
+REPORT_DIR=                # 留空 = <repo>/data/reports
+ADMIN_TOKEN=change-me
+```
+
+前端行为：
+
+- 点小旗子后先写本机 `reports` / `reportQueue`
+- 在线时异步 `POST /api/reports`
+- 离线/失败保留队列，`online` 事件或下次启动自动重试
+- 静态站没有 `/api/reports` 时本次会话自动停用，不会反复打 404
+
+查看/导出：
+
+```bash
+# 本机文件
+node scripts/k12/reports.mjs --file data/reports/reports.jsonl
+
+# 远程管理 API
+ADMIN_TOKEN=xxx node scripts/k12/reports.mjs --url http://127.0.0.1:8787
+
+# 导出汇总
+ADMIN_TOKEN=xxx node scripts/k12/reports.mjs --export data/reports/summary.json
+```
+
+处理流程仍是：
+
+```text
+反馈汇总 → 定位 sourceKey → 编辑 k12/corrections/<batch>.json
+→ npm run k12:apply-corrections -- --write
+→ npm run build:data
+```
+
+## 9. 质量与成本建议
 
 - 先做 1 个学科、1 个年级的 20–50 个知识点试点。
 - 每个知识点 4–6 题，先人工审核 20–30 道，确认提示词和难度分布。
