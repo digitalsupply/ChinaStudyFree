@@ -68,3 +68,5 @@ kubectl kustomize deploy/k8s/overlays/prod >/tmp/china-study-free.yaml
 6. 首次同步
 7. 验证 `/api/health`、静态站、AI、反馈
 8. 按运维清单建立例行检查
+
+> 集群入口：Traefik（LB 10.0.0.252），域名 `studyfree.xyz` / `admin.studyfree.xyz`。
