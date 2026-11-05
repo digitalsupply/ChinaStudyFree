@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:edb2890f06d74e1d7b2636f556fd0bc8dc06c1f46e6dad0b3c4416e303132bc0",
+  "claims": [
+    {
+      "id": "claim_a298819757a94d48bba57f8d27f43eaf",
+      "statement": "The publisher registry defines id, display label, ASCII slug, theme color, and filename patterns for each publisher, including specific patterns that must precede broader ones during matching.",
+      "evidence": [
+        {
+          "resource": "repo://packages/core/src/publishers.ts#L16-L63",
+          "version": "repo-lines-v1:sha256:f1a1ec5f8bd7602d4ee932f96a3836af2a8de47ca6e85ec43e623b0ff3b6a24f:eyJzZWxlY3RlZExpbmVDb3VudCI6NDgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFkMjc0MTUyNzU5ZjdjZGNmYjA4MmZkMDY4OTc2NWNlMDFlNGIyYzU5ZGJhYjk0ZjhjMDI2Y2E5OWY0M2E3Y2QiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQzZDg4NjljYmEyMjJlMDAwM2IwZjI1YmExODMxM2I1Nzc3YTU1MDkxZDdmZjE4NjA5OTZkODg3NzY1OTI0ODgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImM1NzgzMWQ0Y2U2MzM0ZWFiZDgzODM0MTc1MTA2NjY4NDEzYjViNGY0MTc4ODBlNDVlOGU0MGZkOTk0ZGM2MjYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjM3OTI5ZTkxZTBmOTljM2U4MjVkZTY5YjQzNWZiNjQ4NGQxYjBhMWRmMmY0NjU2MWFiZjFhMjlmMDQxODhiODgifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_6801645c585f442db0332c8f390dcdf4",
+      "statement": "Book ids keep the legacy short form for default editions, prefix non-default editions with the subject and ASCII publisher slug, and use ASCII college course slugs so Chinese characters never enter URL or file paths.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/scripts/build-data.ts#L560-L601",
+          "version": "repo-lines-v1:sha256:1f8c33d0d2ff3279304525f2d9a188b4159cc043167ac6647813851957e2fd3b:eyJzZWxlY3RlZExpbmVDb3VudCI6NDIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQyZmY3ZWQ2YWZjOWY1YTQ5ZmY4NGU0ZWNhMjNhYmE1YjBjZjdhYTBhMGQwMjk0MTg3NjMxZjU2ODMwNThlN2EiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImE4ODZmOGE3MGZiOGVhYTFlYjU5MDM0MDljMWY2ZjdkNTViMzhmNjliNjY5NWUxMGM3NDEwYjAwODdmZDZhYmEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU5ZjQ1OGM4MDkxODMzOTlkMzA1YzdhMzJjYzFjZWQ3M2IwMDYwNTRkNTM1NDdmMDdlZDExMGQ3OGM1MWMxYmQifQ"
+        },
+        {
+          "resource": "repo://apps/web/scripts/build-data.ts#L614-L644",
+          "version": "repo-lines-v1:sha256:51340619549c5396f6fcb94d8fc41a34e7f6f6c6493d9851972ce7d49400222d:eyJzZWxlY3RlZExpbmVDb3VudCI6MzEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJmYjNjMjVjZDQwODhhY2U4NWE1ZjE1YzY5ODg3NWUxMzJhZTczMTBjYzEzMjc5YzU2ODU2MTgyYzc3ZWE5MjMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijc4MWE3NmRkMDE5NTk2ZDVkMmRjMWU4MjNhMTYzNjBhZDRhOGQ3OWIzY2RhMmEwM2EwN2FhODk2MzE5Mzc2N2YiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjBjZDkyZTI3ZjVkZTg3NzM4NzQ1YjBhOTc3NWMyNzYzYjZiOTY2NDVkNTM3Y2E3NGU4Njc1Nzc3ZmVjZmUyNGEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_19a9b35b0bf740e89d3afb715cd216c6",
+      "statement": "publisherOfPath extracts a display version from the third catalog path segment, strips publisher suffixes and editor notes, and marks paths whose third segment is a filename as unlabeled.",
+      "evidence": [
+        {
+          "resource": "repo://packages/core/src/publishers.ts#L66-L84",
+          "version": "repo-lines-v1:sha256:933bffbb5a6827ab91daa11cd287438f80494f206dad1355673421da8369f95b:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImU5ZjFiZmNiZGUyMzdhMTIxNDEyMDUyNDRhOWNhNDAzM2I4OGVkYzAwNTlmNmQ1YzAzM2U0MTcxMmRhYTEyMWIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_e2e04d0585a54dc7bbd96699452da6aa",
+      "statement": "The textbook catalog sync fetches the ChinaTextbook GitHub tree recursively, falls back to per-stage folder requests if the root tree is truncated, retains only PDF blobs, and writes a sorted catalog with provenance metadata.",
+      "evidence": [
+        {
+          "resource": "repo://scripts/sync-textbooks.mjs#L103-L173",
+          "version": "repo-lines-v1:sha256:c2995432c1da2daf8d0ab4c5f0cce6cbe66d0103dd256ed481d451deb010ebc1:eyJzZWxlY3RlZExpbmVDb3VudCI6NzEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNlODIwMGViZDE3MDliNmE2NzViZWNiM2JlOWYzOWU1M2JiYWMwMmNjOTI3MjM0NjJjMDU0NjhlYjBkYTZhMTYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdkOTMyZTRkZmNjNzc2YmVlZjAxZmY3OTQxODcyMjY1NmMzMzYxMDBjOWQ5MTRiNjZmNTZhYTIzOWYxM2EyZmQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjkyMDQwZTA5NWE5NGUyYWRhNzRlNDIxZjM3MTg3NTFhOTFhODEwYmZkNjZmNDhmNGU5MzljN2I3NDgwZWI2NzAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc4ZDAyYjVjNDFjOTliZmYzZjNkMGU3YWE1NGI0MTc2ZDcxNjRhZDdlZDJiN2U0MzE2YmY1MTg2YjVlNWVmY2UifQ"
+        },
+        {
+          "resource": "repo://scripts/sync-textbooks.mjs#L21-L35",
+          "version": "repo-lines-v1:sha256:3299499ef0c5d6924bba231878abe79143d98c063d4b18c84b336cec11aa92cc:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVkNjYyN2Y0YzBhNzM5NDM1ODY1ZjFlNTE2OTljZGZhOGJiNDVkOGQ3ODY4MWQzM2UxOTkwNWIyZWUyZWZkYzUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE5NjMzYWI5ZGYyZDc5MWQ2ZDUwMTVjZjNmYzc4ZjY0Mzk1NzM2NTNiYTk2Nzc2NzQzMjA3MTgxNjc5OWMxMTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImViNGJjNDNmZTkxYzliYzRhODc1NmQzMmVmMWUzMDY1OTM1MjMzODNhYWQxYjJjYTBiZDJjYzVhNzE4MDg1YmUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjBiMjQ5NWJkOTM2ZjQzMmNjYTk3MTQ5MTQ5YjE2Mjg3NGFhNTFjYjk4MzBkY2ExNzkwMzZmOTFhYmQyZGUyNDIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_b5b973ccda3a4b0e8fa3397ba2a0a931",
+      "statement": "The catalog sync infers grade labels from filename and folder tokens and does not download or bundle the PDFs, which remain external GitHub links.",
+      "evidence": [
+        {
+          "resource": "repo://scripts/sync-textbooks.mjs#L155-L161",
+          "version": "repo-lines-v1:sha256:30533cef20e65ec2f2987caadabd1e312233743afb8d2baab3cecd8ebb112d7a:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOWVlZjE1ODc4ZTg2NjA4OTQ3YWMzMTUyZWQzZjEyYThhYWZmMmY2MGY4ZDFmN2U4ZDJiZDE1ZWJkZWQzN2YzOCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNDJhMmNiMjVhMTIyYjQ0MjIxYTYyMzRlYzY2MGE3YjVmYjdmOWJkZTdiM2I5ZTJiM2M1NTlhMGQ5NmZhYzczOSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZGQ5OTZkZDNjYzY3ZTA1MDAxOTI1ZGZkZTc1OWYwOWE1ZWUzMGEwNWVkNGI5ZTljMmEwYmVmMzQ0MjMxNWE3MCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODljZWY4NzRiYjIzMjE5NTJlNTYyMDkwOWNhM2UyM2RiOGU0ZWVmOWUzOGUyYmZhNjFkM2Y1NDMwZDRjNjNiOCJ9"
+        },
+        {
+          "resource": "repo://scripts/sync-textbooks.mjs#L53-L100",
+          "version": "repo-lines-v1:sha256:e11a2ada42af0b6dd851e662d9fb647a3ecd4bed981d364b7276294d405d9200:eyJzZWxlY3RlZExpbmVDb3VudCI6NDgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQyYTJjYjI1YTEyMmI0NDIyMWE2MjM0ZWM2NjBhN2I1ZmI3ZjliZGU3YjNiOWUyYjNjNTU5YTBkOTZmYWM3MzkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjFhNTBkY2ZiOTlmNzA5NzhkYmIzM2MyZjI4OTNlMTJkZmQzMjhkNzQ4NzBlZTBlYjVmNGJjYmY1YWNmZDU1MWEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU4MzY3NjdhY2EzMGI4MmU5ZDYxYTA2NzQ3OTM2MDY5Y2EwZDI4NzUzZGRiMTQ0ZGFhODk2ZTg2NTYyNDRlNmIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_e3f28c2ca38e4f0491c535faa2d693c3",
+      "statement": "The textbook center fetches the catalog at runtime, filters by stage, publisher, and keyword, groups by subject then grade, previews twelve publishers with expansion, and treats fetch failure as an empty catalog.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/app/textbooks/TextbooksClient.tsx#L30-L138",
+          "version": "repo-lines-v1:sha256:5c35d2f02178c343e74d01dfe43399db170a96220370e6a69c29cdd71ddb600b:eyJzZWxlY3RlZExpbmVDb3VudCI6MTA5LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIzNzk5OGUwN2M1YjNlMTIyOTMxMTA3ODc1MDY0YmY3YWY1NmFhZmNjNWQwYjRjNDdiMTk5OWJlZWFiYTIzNTc2IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJlYzI0M2Y5NjY1NWU5ZmY4MjNmZjM3ZDFmZDExZDViYjg3NzNhOTcyNDQzN2MyNTg0MTAwNTZhNmFmZGI1ZmYyIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJiN2M1OGM2ODg1NjZmOGUyZTEwYWRlNjYxNWIxMTJiOGJlMjA0ZGQyYjQzYjcxM2YyOWNkOGJjNDZjZTE4N2I1IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI5Mzk4NWQzMzJlN2FkODk0OTRiYzhkMDlmZTUwOGFmMTc3ZGQ5YTkxMTg3YTQ2MzAyNzc5MzVmZDJiYzk3MWFlIn0"
+        }
+      ]
+    },
+    {
+      "id": "claim_14481c1918694244975928e082a2b8f1",
+      "statement": "Version selection only offers publishers that have generated interactive books, prefers the subject's default publisher, validates a stored preference against available books, and sorts rather than hides other editions.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/lib/versions.ts#L16-L132",
+          "version": "repo-lines-v1:sha256:576dc7204b10818a7ec95957a18304543b14f7ae74e4a652a11cfba2fdd11f9e:eyJzZWxlY3RlZExpbmVDb3VudCI6MTE3LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJjNzI2ZGU1NjU5MDkwYWEyYjgyNTk4NmUyOTg1OTEzM2EwMDU1YWM4NjBjODA1OTU0ZmJkNjg2OTU1MjgxMzNmIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI0MTJjYTM0NWNjZjc1YmY5YzA4MDZiY2U2OTViZThkZTgwOGI3OTk4NDI1MWE3YTU0ZDIwMmNmNjEwMWRkNDUxIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI0MGY5MGJhYzBhZWJlZTU0ZTFkNDZkODJhNmE3OWRmMGVjYzMwMGM3ODg0MDczZTYwMzE1NDI0MGE1MmNjYmM2IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_a238262ce5fe4bdb9d06c401c82c25e8",
+      "statement": "Primary English defaults to 人教版PEP while middle and high school English default to 人教版, matching the different textbook series and preserving legacy book ids.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/lib/versions.ts#L32-L41",
+          "version": "repo-lines-v1:sha256:3f926bd85b0041cef6641adfff27f034360bfce0a29221b7cc4fdaeb026fa285:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImY2Y2Q0ZWQ3Mjc5M2JhMmVmMjUwMmIwYjQyZGZhMmUwYjhlZmM3ZTljZjMwMzVlZDgxYzcyMTllYjc1MTUxZmMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRhYWJhZjA1NWI3YzI3NmZmNjY1NDM4NmU1YWUxZjA5NmYzZjYyZjUwZjU0YzJiODg1NDc3YTI1Mjk4MTQyYzAifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_cf8b469118494b7da01e192c613596c7",
+      "statement": "The coverage report reads the built index and prints a stage-by-grade-by-subject presence matrix plus a detailed publisher and lesson-count listing for every book.",
+      "evidence": [
+        {
+          "resource": "repo://scripts/coverage-report.mjs#L10-L58",
+          "version": "repo-lines-v1:sha256:36a685681190c3431e76b4732ebeb2d8b139d427d825c9fa660e04138e319e09:eyJzZWxlY3RlZExpbmVDb3VudCI6NDksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVmYjQ4NTA3YTRiOWNkNmFlMTBkNGRjZWM1NGJhYjI5NWUyM2UwNWUwOGZmNjk5ZWIxOWNjYWM3NDRkMTBlMDkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ4Mjk1OTIzYjI5NTBkZDBhNTMwY2MxMDMzYzc2OTc3ZTAyMGI3Mzk1NDA0YzI2YWRiOTY4OThhNDc5MTNjYTciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.7.2",
+    "at": "2026-11-04T02:58:40.844Z"
+  }
+}

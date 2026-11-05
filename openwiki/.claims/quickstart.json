@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:53426ae60701d7d129093b83ea03846c7640de2b8b5e869609e0545fe80bda56",
+  "claims": [
+    {
+      "id": "claim_64456100272443f19319508b4be285c5",
+      "statement": "The repository is a single npm workspace product whose frontend is a Next.js static export reused by web, Tauri desktop, Capacitor mobile, Docker, and offline bundles, with a shared pure TypeScript core.",
+      "evidence": [
+        {
+          "resource": "repo://README.md#L5-L11",
+          "version": "repo-lines-v1:sha256:d01426dc2d06721151e0d9ed6ae5f77de58ae66d00e82852a41bba7c7ced3332:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMzU2NjUzNjc3OWY2NWIyM2ZmNDI1MWEzYTJjYjNlOTAyNTZhNjU1ZTA5ZDVkZTczNmNhYmM1Nzg2NGFjYmQ1MSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMTRiZjI4YzMwYTE1N2Y2YWIyYjcyMTczMDMzOTdlY2IwZGVhN2I1MzQ5ZTE1NmYyMjczZWM2NTFkMTRkNzY4MiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMDRiZTY1MjQyNzMxY2Y2MzY1ZDU0MjFkZTRiYjNhYmRiMjE3NDljZWZlZDg4ZjJjYzFiNWZjODUyMmU1ZWVhMyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYjk2ZmExN2MzNmU1NmEzZWFiZDY4MGFhMDc3YzFjZjI0M2Y4ZTE3ODIwMjM2NGJlODg0NTkyZGQyMjRhMDc1YyJ9"
+        },
+        {
+          "resource": "repo://README.md#L57-L76",
+          "version": "repo-lines-v1:sha256:725421714bb449e8b990b6eef8b9e3589bd3a1b2b9ce30845f83d2c20518cbba:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI3OWZiMjA5NWFmYzk1ZGE3OGQxZDdkMzY1NmNkMmI4ODY5ODI3MDVhODUzMjdiZTk5MmFmYzNiYWQ0ZDIxMzciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ3YTQ1Y2ViNzU1OWEyNmM0ZjU1YTgyOGZjMmRjOTljYWMyMzNhZjlkYmQ5YzI4MmFiZDVjMTA0ZmUyZmNkOGEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjAwMWYyZWMxNzU5M2MxMDU0ZWI0NjM2N2Q4NDUzZWYyNGExNzNjZTk2YjcxMTdkOTFmOWE2OGQ0NGZlZjhiMDEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjAwMWYyZWMxNzU5M2MxMDU0ZWI0NjM2N2Q4NDUzZWYyNGExNzNjZTk2YjcxMTdkOTFmOWE2OGQ0NGZlZjhiMDEifQ"
+        },
+        {
+          "resource": "repo://package.json#L5-L9",
+          "version": "repo-lines-v1:sha256:734b9abc79693e77ea3f15aa0af9835b05aae40a85c5539771940e476aa7a9ff:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZDAwMzBhY2JkNDc2Y2IyMjA4MTlmMmE1MzQ5ZWMxOGMzMjE0ZGM4MGI1ZjQzNGFiNDdjMzBkZjRiZmY2MDc5OCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOTY0ZDhjMDczNDI5ODkzMTAxNTc2ZDg4ZDk5MTI3ZTg5ZDY4OTFkM2IxN2U4OWRmMDJlYzlhZTcwNzA1ZDhiZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTZmMTRhYjYwOTE1MDk0ODdiZDJiYzcyMGY5YzhiNDBmODkzYmZlNjViYjliNmRjYmZmZTQyODM3MmI3Mzg1OSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTVlZjY3MjIwMTYzYjVmNjAwMjE4M2Q5YTUxZTUyNWIwY2FmMWQ5NTEwMjVhNzNmZmE3NzY3YjA4NzA1NjBiYiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_60cf0d3da1e741eeb4f8a08001bdbde2",
+      "statement": "The project targets Node.js 22 and uses build:data before dev or web builds, with optional textbook sync and AI server setup.",
+      "evidence": [
+        {
+          "resource": "repo://CONTRIBUTING.md#L7-L27",
+          "version": "repo-lines-v1:sha256:35611238edff453719454ae8f47c25c6ea5e21c58d3c45f35368fbed7ac0c60a:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImUzNWI4OGJjMTk3ZDg0MWNkZTQ3YWI5Yjg0MTA4YWIyYzkxZDNhY2JjODA3Y2Y0NTc3NmI0NmEyZmI2YjNlMDQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ3YzA2YzU2MWQ1YzMyNzM0MzY4NTI2OGE0NmIzMzkxZjM5OThlZWU4OTBkMmJlNTFmMGQyMWNjNGE1M2FlNmQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjAwMWYyZWMxNzU5M2MxMDU0ZWI0NjM2N2Q4NDUzZWYyNGExNzNjZTk2YjcxMTdkOTFmOWE2OGQ0NGZlZjhiMDEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjYwYmVjYmQ5NGRjMDYzN2QxYjM2Y2NkZjY5NTA0MmExMDUwMDQ1NjAzYzg1NmRhY2RmMTBmMjcxNmIzM2FjMWUifQ"
+        },
+        {
+          "resource": "repo://package.json#L10-L29",
+          "version": "repo-lines-v1:sha256:16b3503f5b0e371ea142c87196c3e3686bef2180df1ea558ea1f6aaeb267f1c2:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM0ODMzZDU5NDljMDNhNDBjYTk1MjQ5MTYxMGE2NjU5NjQ0YjNhYTQ2NjM2MmY3OTkwMjBkYmYxOTgxNTQ3ZGIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJiZWViMjFkMWE0NmM0YWE5YTY2YTcxYzIxNWEwMjc0YzZkN2MxZjA3NTdlNmQ1MjA2MmI0MTlkZWQ1Y2I0YTgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjdjYmQyNjY1MjlkNTc1N2Y3ZjdlYjFmNGVlMzQ2ZDBhOWU3NGNkZGY0NjkyMDAwNzMzY2EyMmU2ZWQ2YThmZmYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjdlOWZlYzhlYjg1NGUxMTkyZWJjMmZiMjZkMTRkN2NhY2QxYjM5YWI5NTNiNDM1NzA5NGU2OTg3M2YxMzgwMWUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_1fb2b813c86b494aaafecbdb22b882a4",
+      "statement": "The build:data command converts output/ into apps/web/public/data, and build:web then produces the static apps/web/out export.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/package.json#L5-L11",
+          "version": "repo-lines-v1:sha256:b6632924d40c101e707e910e77d9f7a8a87d520d96bc7da06e789d22f77b3fe3:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMzQ4MzNkNTk0OWMwM2E0MGNhOTUyNDkxNjEwYTY2NTk2NDRiM2FhNDY2MzYyZjc5OTAyMGRiZjE5ODE1NDdkYiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOTNlODk5ZTM4N2UxNDI5Zjc5MGEzODY2M2MzMTk3YmU5MTIzYTQxY2ZiMTQ4MDdlNThhMzc2MjAwNjhlZjBhYiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYjQyZjc3ODhjNWNhNDFiNWEzYWU3Y2MzZGI2OGVjNzAyZmE3OGYzMTZhZjI4NzBmM2FmNjAxOWRjNjAzN2RhOCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOTdkYWMzNzk1NmQ5ZTgxMWQ4YWE5NWJjMTllMTdmMGZjMDAzYTI2M2I4YzBhOGRlZDZkZDQ3MDQ2ZTExY2QyNSJ9"
+        },
+        {
+          "resource": "repo://apps/web/scripts/build-data.ts#L830-L840",
+          "version": "repo-lines-v1:sha256:14539fe9db24392d099b1dd4f0adbf60bf842fa6c1a8de43f9bc74c73b852a96:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNlODIwMGViZDE3MDliNmE2NzViZWNiM2JlOWYzOWU1M2JiYWMwMmNjOTI3MjM0NjJjMDU0NjhlYjBkYTZhMTYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZhYmI0ODcxNTg0MDE0NTY2ZDhmYmJmYjNiYjc5ODdiZTUwZDMwNGE1ZThjZmZjMTM3YzRhNGNjOGJkYjdjMjgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImJjMTUyOTE3ZDI5MzhhNzE2M2Y2YjhmZjNmZDM2ZGI2Yzg0MDAzN2M3MjgxYzc1NTViOGQ1ZmFhNmVlODlhNmQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_5fafec7418a74f89acfdefcce4dd1cf5",
+      "statement": "The AI server can be run separately for live generation and speech, while the frontend remains usable offline with pre-generated content when keys are absent.",
+      "evidence": [
+        {
+          "resource": "repo://README.md#L124-L133",
+          "version": "repo-lines-v1:sha256:599d150290b0624c3e28cf9a462ffa77f84a4d4074c22ebd6aeacbad840bacda:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM3NzRiZjRlNGExMzYwMTQzZDE1ZjZjY2M2YTdhMDNlNjBhMWE2ZDU4MmY1ZTM1YTBkZGU4OWVlZWU2MzM0NGYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVmMTljNmIwMTA1MWUwYTE2YWYyZWYxMWViYmJlNTRiZGFhMzBhNDFmMzMzMDQzOGFlYTQ0NWY1ZWM1MjFiZjIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZiNTJiNTdmZDQ1ZmI3M2ZmZjViZjcxZTU3YzhmN2ZlMWVmYTlhZDNmNmQzOTVmODE0NTBmZWI3ZTBkNDU3OGMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjAwMWYyZWMxNzU5M2MxMDU0ZWI0NjM2N2Q4NDUzZWYyNGExNzNjZTk2YjcxMTdkOTFmOWE2OGQ0NGZlZjhiMDEifQ"
+        },
+        {
+          "resource": "repo://apps/server/.env.example#L1-L29",
+          "version": "repo-lines-v1:sha256:33b2c7219cbc5a0875f726451186984d9a791654bed9a4c00b88f6c83da79c71:eyJzZWxlY3RlZExpbmVDb3VudCI6MjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJkM2YxOGE5MmFiMDc2Yjg4NzllYzlhNzJhZWE4MGJjYTUzOGNhZjhiYWVkMjhjMTdiNTIzZmUxYjUwMDVlMGMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjgwYTE1YWUxMjc4YjcxZTA3NDA0YjllMjI3YjhhZThmMGQ0ZWE0ZTVmZTk0YjU1NzYyZTc0ZTk3NTliYTFhZmUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_c3291d9ecb6147c087feb9308c5108b9",
+      "statement": "Book and lesson ids are persistence keys, and default editions deliberately keep legacy short ids to preserve learner progress.",
+      "evidence": [
+        {
+          "resource": "repo://CONTRIBUTING.md#L50-L65",
+          "version": "repo-lines-v1:sha256:9c689d11978bf5363a62ef55d3fc4794b7ede61c6f30378c47ad254c043e4734:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU5ZGNmMzNkMWU1NjI0MDM2YTE2YWZhMjhiNTBjMGE5MjUyMzgwMWZhMzU3YzYwMzVhNGVjNzNhNWRmNGJjOGMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJhMzhhMzQ4MWJhOTE0NzUzOTY1MmU2YWI0NTE1OThhODFlNDllMDY2NmQ2NjA0MWI2MGM2MGFkY2Q3NGFiYjgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImY5OTQ2MDFlYzRmYmUyYWFjNzYyYWQ1OTc4ZjRkM2ZhZjFlN2YxZWE5NGFkMDNkZWM5YThhZTA0MDRiNTE2NTkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjNmYzkxZWQ1MDhjNTg5NjBkNTJmMDYxMGFiY2U1YWM5MDFiODcyNWQzNDgxYjMwZWZiZTY2OWNjMjM2MmI3NTEifQ"
+        },
+        {
+          "resource": "repo://apps/web/scripts/build-data.ts#L633-L640",
+          "version": "repo-lines-v1:sha256:9cb1a9deff4d3daebfde2d1cb8a0c609914b97b60ed892ff03828ad5295cefa7:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZWY2ZTFjYmQ5NTQxOWY3YjczNDgwY2JlYjg5MWUxMTRkYjYwNjcyZDk5NmUxNDg0NTQyYTAxYzYyYzVjMzMyYyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiY2Q2NDcyZjMwYzU2MjE4MDIzZDc4OTNiZTBiOTViOTBjYjU3MjlkMWUxYzFlMzU2NDI0ZDRiZmE2ZDM0ZDFjZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMGIzMzgzN2FhMGVmNDdkOWZiODg4NWEzNGI4ZjVkZjA4OGY3YTQ4NTRiZmU4ZmNhZjUwODAxMjdmYWEyZDgzYiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZjJhNmU2M2ViNWNjNDk5NjA3M2RkZDVlMzZkMTMzYmFjOTAxMzBlMzQ2ZTdlYTRkZWE4NmIyODUxODdlODRiMyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_be2583312870496b9da67db92567f9c9",
+      "statement": "Core economy, league, quests, reading, SRS, and backup behavior is cross-platform protocol pinned by golden vectors, so changes require updating the shared spec and both implementations.",
+      "evidence": [
+        {
+          "resource": "repo://CONTRIBUTING.md#L50-L54",
+          "version": "repo-lines-v1:sha256:9fff12e1b423ec3343250da30d1409ec3f7c7415272f37a0eb1f245ccd3211f6:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZTlkY2YzM2QxZTU2MjQwMzZhMTZhZmEyOGI1MGMwYTkyNTIzODAxZmEzNTdjNjAzNWE0ZWM3M2E1ZGY0YmM4YyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZjk5NDYwMWVjNGZiZTJhYWM3NjJhZDU5NzhmNGQzZmFmMWU3ZjFlYTk0YWQwM2RlYzlhOGFlMDQwNGI1MTY1OSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZjE4NTYyZTRiYmQwMTQ0MTc5NGY3MTE1M2IwMDYwNTVkMDA5YzAzNzZkNDJiOWM5M2FhOTg3MmVkMmMzNmUxNiJ9"
+        },
+        {
+          "resource": "repo://packages/core/spec/golden-vectors.json#L1-L5",
+          "version": "repo-lines-v1:sha256:99537df8c0450f830b9717ec928e1377333816e98ed6167e9240c027025adc3e:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYTZmYjA4ZmRhMWFjYjk1N2I2MTE2YmQzNzgxMWExZmU0MWEwMTYxMWMwNjMxZWRiZjc4NmQ2ODg5YTI3YTU1YyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZDc2NDU0Njk2OWI5NWQ4OTk0YjgwNDliODA0NzNjMzAwNWU5Mzk0MjgzNjBmNDRkYThhZmVhZTNhNTA0MzVlZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTEyZGE5ZDM5MjhhYjUyNjI1NmY5MDgzMmI5Yjg2ZTE5NzFkYjBhYTkxM2YzZTBmZGU0OTJiZmMwODFlOGVlNiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_7ae4d7546daf47f989234e3d95a25199",
+      "statement": "Content generators are incremental and overwrite-oriented and must not delete output, because that would discard upstream original question banks.",
+      "evidence": [
+        {
+          "resource": "repo://CONTRIBUTING.md#L67-L72",
+          "version": "repo-lines-v1:sha256:c1a172cb4d190099c2e2e9f97870086b2c3857f064e38638737bb74efed19149:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZDhmZmY2ODBjYTEyY2I3MTFmNjNjZGQ4MjljNGM1MzkyMTg4MzNiMjY2NGExOWQwZDk0N2FjN2I1Y2MyZTlmZSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNzU4ZDJjZGNkMTA4YTcyNDgwMDkzZTlkNDg3Y2YyZjNmYzJiMGM2YTNiZWZmODNjM2Y2YzMyYzYwNjc0ODE5YiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYWIyNDBkY2QyMjZkNWQzZDM1OGY3YjllYzE4MzlmN2U5ZmI2ZTNlMWRmOTU4NTRkNWEwOTI0MGUyZGFmN2RiMyJ9"
+        },
+        {
+          "resource": "repo://scripts/gen-coverage-content.mjs#L1-L27",
+          "version": "repo-lines-v1:sha256:15805e11da7ffa955d371994b8cac29382cf29435b468ef66aa08cd3e63ae554:eyJzZWxlY3RlZExpbmVDb3VudCI6MjcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk3MmE0MjkzODJiMmUxNDcxOGUwZTM3YjA1NzBhOGExNzAyOTkxZmNkODQ5OGNkODQwNjBhOGJmNGYwNTAxN2IiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImM3YTRkMjgzMWRjNzVjNmQzNGRmM2I2ODk3ZDc3OGY0OThlOTljMjJjYzgyYWNiMTJmMDA3ZDQ0NThmMjRjMzkifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_dab7e2fdb55646d199b2b7e61d5eb28b",
+      "statement": "The quiz validation contract requires choice answers to be present in unique options, true/false answers to be 对/错, and questions to include explanations.",
+      "evidence": [
+        {
+          "resource": "repo://CONTRIBUTING.md#L61-L65",
+          "version": "repo-lines-v1:sha256:ceae696139845ca20f81cff75d46c51028dd302902e0c658d8a85801d92e493d:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZTdkZmYyYTE4YzQ1ZjhhZjU3N2Q0MWUxM2MwMTUwYTM5MjM0ZjE5ZGY3MTNhNzA0MDI2MDZjMTM0YTc3ZTU4MSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMmEzOGEzNDgxYmE5MTQ3NTM5NjUyZTZhYjQ1MTU5OGE4MWU0OWUwNjY2ZDY2MDQxYjYwYzYwYWRjZDc0YWJiOCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNGE1MWE5OTVhNDNkN2UwZTQzODdlOGM2ZjllNjgzNDBhMzFiYzQ2NDFiOWUyNjljODRhYmZkMDAwNzVkZTM4MiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiM2ZjOTFlZDUwOGM1ODk2MGQ1MmYwNjEwYWJjZTVhYzkwMWI4NzI1ZDM0ODFiMzBlZmJlNjY5Y2MyMzYyYjc1MSJ9"
+        },
+        {
+          "resource": "repo://scripts/validate-quizzes.mjs#L19-L59",
+          "version": "repo-lines-v1:sha256:b90a37cabc953c3c6cc80619bd23ab08c7ab119006b9d02dca79028e40a2490e:eyJzZWxlY3RlZExpbmVDb3VudCI6NDEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM4NDFkZjhiY2MxMDY5N2MxYTZiMmExMDIyNDk4ZWEyMjc3MjFlMjc5ZDU5ZmM5OGQzNDAzMTMyN2EzYzlhNjEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZlYTY0NDUwYTI3YzdjYjFiOTVjYWI0ODhlYmFmYTY4MWM1ZjkzNzRhZmY1MDk5OWI2NDMxNDNiYmFhNGY5ZWIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_47e02215c4154238895c8c303b239dbc",
+      "statement": "The product is local-first: progress stays on the device, there are no accounts or analytics, and cross-device sync is not implemented.",
+      "evidence": [
+        {
+          "resource": "repo://SECURITY.md#L23-L32",
+          "version": "repo-lines-v1:sha256:3570bbc9e50a21fb7bbf732e319d43426d7eb1d78a42ea00a68c33fe29bf8606:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU1ODMxMzhmNzgxYzJjZjczODI2NWZjZDI3OWNjMzdlODFjNzM0ODcxNGQ3ZGE1MzM0N2Y0NjQ1MzBhZTA3NjkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjczMmJiYWY1NjQ2ZWRjMmUyZjhjOTEwMWJiOWUzZGZhZTY0ZDdmMDgzMzQwMWUyMWMwMTgwNWM5YmNjMDViYTgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjAwMWYyZWMxNzU5M2MxMDU0ZWI0NjM2N2Q4NDUzZWYyNGExNzNjZTk2YjcxMTdkOTFmOWE2OGQ0NGZlZjhiMDEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjYzMTAyYTM2YzczNmRmM2NjNmMzMTIxNzM0OGVmNGQ4Nzk2NDVkOWM1ZDFiOWZiZDYxNTMzYmE1MjVlMmVmYWUifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.7.2",
+    "at": "2026-11-04T02:58:40.844Z"
+  }
+}

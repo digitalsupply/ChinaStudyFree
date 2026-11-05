@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "pages": {
+    "/openwiki/architecture/build-and-distribution.md": {
+      "pageVersion": "sha256:f168938ffa21b7a55023c3a0a52687c18428b33254eb07c131325167a2b3de87",
+      "completedBy": "opencode",
+      "completedRunId": "863fd250-45d8-4c00-a9d5-acf4983132f9",
+      "gitHead": "eb2b91afff69c7013351840226e7b18bbf220331",
+      "sourceFingerprint": "sha256:2c942d767ec549cfed154af2bb0bc0c6f48322509f9c08f81e63a5400fe1a224"
+    },
+    "/openwiki/architecture/data-and-content-pipeline.md": {
+      "pageVersion": "sha256:9557e55c9a6e9f6edfc48706627bc14d2b7197fa57f16de4c36026ebcb03dc58",
+      "completedBy": "opencode",
+      "completedRunId": "863fd250-45d8-4c00-a9d5-acf4983132f9",
+      "gitHead": "eb2b91afff69c7013351840226e7b18bbf220331",
+      "sourceFingerprint": "sha256:2c942d767ec549cfed154af2bb0bc0c6f48322509f9c08f81e63a5400fe1a224"
+    },
+    "/openwiki/architecture/system-overview.md": {
+      "pageVersion": "sha256:2404131a870acf7af155089c25b1eea6ab4dd16fe584a851f2a940e65f8d68a7",
+      "completedBy": "opencode",
+      "completedRunId": "863fd250-45d8-4c00-a9d5-acf4983132f9",
+      "gitHead": "eb2b91afff69c7013351840226e7b18bbf220331",
+      "sourceFingerprint": "sha256:2c942d767ec549cfed154af2bb0bc0c6f48322509f9c08f81e63a5400fe1a224"
+    },
+    "/openwiki/content/course-generation-pipelines.md": {
+      "pageVersion": "sha256:658c0c5aecfe9d81557671b0d5e4fb286b123f68c6a7c337393b66e21aeb87ab",
+      "completedBy": "opencode",
+      "completedRunId": "863fd250-45d8-4c00-a9d5-acf4983132f9",
+      "gitHead": "eb2b91afff69c7013351840226e7b18bbf220331",
+      "sourceFingerprint": "sha256:2c942d767ec549cfed154af2bb0bc0c6f48322509f9c08f81e63a5400fe1a224"
+    },
+    "/openwiki/content/textbook-catalog-and-publishers.md": {
+      "pageVersion": "sha256:edb2890f06d74e1d7b2636f556fd0bc8dc06c1f46e6dad0b3c4416e303132bc0",
+      "completedBy": "opencode",
+      "completedRunId": "863fd250-45d8-4c00-a9d5-acf4983132f9",
+      "gitHead": "eb2b91afff69c7013351840226e7b18bbf220331",
+      "sourceFingerprint": "sha256:2c942d767ec549cfed154af2bb0bc0c6f48322509f9c08f81e63a5400fe1a224"
+    },
+    "/openwiki/core/domain-model-and-contracts.md": {
+      "pageVersion": "sha256:7732d955ecc9f8da9e10b692d98802a1e631ad376a67bfa47053456676e5cd8b",
+      "completedBy": "opencode",
+      "completedRunId": "863fd250-45d8-4c00-a9d5-acf4983132f9",
+      "gitHead": "eb2b91afff69c7013351840226e7b18bbf220331",
+      "sourceFingerprint": "sha256:2c942d767ec549cfed154af2bb0bc0c6f48322509f9c08f81e63a5400fe1a224"
+    },
+    "/openwiki/core/learning-algorithms.md": {
+      "pageVersion": "sha256:8dc93ffbaefebc56a1d2f6940c65aedd8268111901e3662231ffc3415d0d8b21",
+      "completedBy": "opencode",
+      "completedRunId": "863fd250-45d8-4c00-a9d5-acf4983132f9",
+      "gitHead": "eb2b91afff69c7013351840226e7b18bbf220331",
+      "sourceFingerprint": "sha256:2c942d767ec549cfed154af2bb0bc0c6f48322509f9c08f81e63a5400fe1a224"
+    },
+    "/openwiki/core/review-and-cross-platform-state.md": {
+      "pageVersion": "sha256:3584d3e8ebebac90c9540dccef4fd8fdd746993c1f9b4aaf289e98dc51d47301",
+      "completedBy": "opencode",
+      "completedRunId": "863fd250-45d8-4c00-a9d5-acf4983132f9",
+      "gitHead": "eb2b91afff69c7013351840226e7b18bbf220331",
+      "sourceFingerprint": "sha256:2c942d767ec549cfed154af2bb0bc0c6f48322509f9c08f81e63a5400fe1a224"
+    },
+    "/openwiki/native/desktop-and-mobile-shells.md": {
+      "pageVersion": "sha256:a889af15244176ba33a163c8aa801175a5c12690a46da67526b0424a48b9ef43",
+      "completedBy": "opencode",
+      "completedRunId": "863fd250-45d8-4c00-a9d5-acf4983132f9",
+      "gitHead": "eb2b91afff69c7013351840226e7b18bbf220331",
+      "sourceFingerprint": "sha256:2c942d767ec549cfed154af2bb0bc0c6f48322509f9c08f81e63a5400fe1a224"
+    },
+    "/openwiki/operations/security-and-privacy.md": {
+      "pageVersion": "sha256:13e92828c61f7a81ef6367b30319db4f914d928a62f5049fea50aad3e56792f4",
+      "completedBy": "opencode",
+      "completedRunId": "863fd250-45d8-4c00-a9d5-acf4983132f9",
+      "gitHead": "eb2b91afff69c7013351840226e7b18bbf220331",
+      "sourceFingerprint": "sha256:2c942d767ec549cfed154af2bb0bc0c6f48322509f9c08f81e63a5400fe1a224"
+    },
+    "/openwiki/operations/testing-and-ci.md": {
+      "pageVersion": "sha256:65dbca4ce0aa1b0931c3af595b3073a0c6749b4a2945b919e0553bb28b0d3230",
+      "completedBy": "opencode",
+      "completedRunId": "863fd250-45d8-4c00-a9d5-acf4983132f9",
+      "gitHead": "eb2b91afff69c7013351840226e7b18bbf220331",
+      "sourceFingerprint": "sha256:2c942d767ec549cfed154af2bb0bc0c6f48322509f9c08f81e63a5400fe1a224"
+    },
+    "/openwiki/quickstart.md": {
+      "pageVersion": "sha256:53426ae60701d7d129093b83ea03846c7640de2b8b5e869609e0545fe80bda56",
+      "completedBy": "opencode",
+      "completedRunId": "863fd250-45d8-4c00-a9d5-acf4983132f9",
+      "gitHead": "eb2b91afff69c7013351840226e7b18bbf220331",
+      "sourceFingerprint": "sha256:2c942d767ec549cfed154af2bb0bc0c6f48322509f9c08f81e63a5400fe1a224"
+    },
+    "/openwiki/server/ai-backend.md": {
+      "pageVersion": "sha256:c25ccc8602b599c6f8069ce35d13db6e5495a46f04e62158c373038babb030b4",
+      "completedBy": "opencode",
+      "completedRunId": "863fd250-45d8-4c00-a9d5-acf4983132f9",
+      "gitHead": "eb2b91afff69c7013351840226e7b18bbf220331",
+      "sourceFingerprint": "sha256:2c942d767ec549cfed154af2bb0bc0c6f48322509f9c08f81e63a5400fe1a224"
+    },
+    "/openwiki/server/voice-synthesis.md": {
+      "pageVersion": "sha256:7aabd3226d1fb91f6a1a0622bcd3630eeee9ffb7543d2aef0c04ff102a199590",
+      "completedBy": "opencode",
+      "completedRunId": "863fd250-45d8-4c00-a9d5-acf4983132f9",
+      "gitHead": "eb2b91afff69c7013351840226e7b18bbf220331",
+      "sourceFingerprint": "sha256:2c942d767ec549cfed154af2bb0bc0c6f48322509f9c08f81e63a5400fe1a224"
+    },
+    "/openwiki/web/gamification-and-economy.md": {
+      "pageVersion": "sha256:c323e8f3c585c855ec8d2d52aca7cd618eee65262e18f25f47d7129200542c35",
+      "completedBy": "opencode",
+      "completedRunId": "863fd250-45d8-4c00-a9d5-acf4983132f9",
+      "gitHead": "eb2b91afff69c7013351840226e7b18bbf220331",
+      "sourceFingerprint": "sha256:2c942d767ec549cfed154af2bb0bc0c6f48322509f9c08f81e63a5400fe1a224"
+    },
+    "/openwiki/web/learning-path.md": {
+      "pageVersion": "sha256:4d327ec1fbbc009b4bed97a67b25f92aa4dffd92ef25fbd623d93ade15a7966f",
+      "completedBy": "opencode",
+      "completedRunId": "863fd250-45d8-4c00-a9d5-acf4983132f9",
+      "gitHead": "eb2b91afff69c7013351840226e7b18bbf220331",
+      "sourceFingerprint": "sha256:2c942d767ec549cfed154af2bb0bc0c6f48322509f9c08f81e63a5400fe1a224"
+    },
+    "/openwiki/web/lesson-runner.md": {
+      "pageVersion": "sha256:13d2d3c1471c2271f560351289aee2cb25599767b635b3304e63570ec0192b3e",
+      "completedBy": "opencode",
+      "completedRunId": "863fd250-45d8-4c00-a9d5-acf4983132f9",
+      "gitHead": "eb2b91afff69c7013351840226e7b18bbf220331",
+      "sourceFingerprint": "sha256:2c942d767ec549cfed154af2bb0bc0c6f48322509f9c08f81e63a5400fe1a224"
+    },
+    "/openwiki/web/progress-and-persistence.md": {
+      "pageVersion": "sha256:ac2296981b426e83c86eb1d09fdf17af235bd0b331f60b5cdff3f2643946fc5d",
+      "completedBy": "opencode",
+      "completedRunId": "863fd250-45d8-4c00-a9d5-acf4983132f9",
+      "gitHead": "eb2b91afff69c7013351840226e7b18bbf220331",
+      "sourceFingerprint": "sha256:2c942d767ec549cfed154af2bb0bc0c6f48322509f9c08f81e63a5400fe1a224"
+    },
+    "/openwiki/web/reading-stories-and-audio.md": {
+      "pageVersion": "sha256:4b221ab354621141506844b9b0bfc746dbe74020418971ed2b029c1b4c24e237",
+      "completedBy": "opencode",
+      "completedRunId": "863fd250-45d8-4c00-a9d5-acf4983132f9",
+      "gitHead": "eb2b91afff69c7013351840226e7b18bbf220331",
+      "sourceFingerprint": "sha256:2c942d767ec549cfed154af2bb0bc0c6f48322509f9c08f81e63a5400fe1a224"
+    },
+    "/openwiki/web/routing-and-app-shell.md": {
+      "pageVersion": "sha256:fcfa102a0568f3105a0563d8d715bd9a842840dfebf9b0ea283b31f78230c276",
+      "completedBy": "opencode",
+      "completedRunId": "863fd250-45d8-4c00-a9d5-acf4983132f9",
+      "gitHead": "eb2b91afff69c7013351840226e7b18bbf220331",
+      "sourceFingerprint": "sha256:2c942d767ec549cfed154af2bb0bc0c6f48322509f9c08f81e63a5400fe1a224"
+    }
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:13d2d3c1471c2271f560351289aee2cb25599767b635b3304e63570ec0192b3e",
+  "claims": [
+    {
+      "id": "claim_0acd27025db740248a8fe6c3e49cb427",
+      "statement": "The lesson route uses a composite bookId__lessonId key for static export, loads the lesson and outline, precomputes an optional chest slot, and renders the client-only runner.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/app/lesson/%5Blesson%5D/LessonPageClient.tsx#L1-L31",
+          "version": "repo-lines-v1:sha256:25ffe5312b1fd1798a4673b64136dfec50e8d53a3520b8df13bd991029535632:eyJzZWxlY3RlZExpbmVDb3VudCI6MzEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ1ZmYzZTg1ZDY3MTVhN2E5ZDBmNmMxYjMyZjMwY2Q4Y2IxNDRjYzc5YzhhYmFlOTUzZWExMzc4ODlmYWUyZGUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://apps/web/src/app/lesson/%5Blesson%5D/page.tsx#L29-L61",
+          "version": "repo-lines-v1:sha256:72758b308071d300c4e1303d7a8482b075cbf2ee7573760365dd6c3284a5be89:eyJzZWxlY3RlZExpbmVDb3VudCI6MzMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMwNTNmYmIxM2FlY2YzYjYwMjI2MWMxMzVkMDA0Mjg2ZDBiZTcyNTI4YzA1ZjMzNjJjNGUxZWYzNTNmNDY4OTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg0NThjYmE0OWM5YmY0MDQ5ZmI0MDMwODZmZjNiOTRiYjI5OGRjNzRiODViMWQxOWNlOGFiOGFiODgxODQzMjkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjUyZjA0YmUxY2ZkMTQ5ZGJiMWJlYmQyZWI4MDBmYWJmNjcwYTlkMjMzY2FmNjQwODhiM2U5MzJmYjdmNDg5NmQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_f5bb1da0507f457b84958a86e9a48398",
+      "statement": "The runner begins with a knowledge intro built only from existing core concept, formula, common-mistake, and tip fields, auto-narrates each page, and auto-starts if all fields are empty.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/components/LessonRunner.tsx#L2191-L2353",
+          "version": "repo-lines-v1:sha256:497d14e03548e3036f70b17e7a174c94e77bf1382bd948671305ecd69742a325:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYzLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIwM2Y3ZTQ4YTE2Yjg4ZDNkZDYyMjhhZWY1OTk4NDJkMDhhMjNlNjFhODQxZGU2NDBkN2I5YzkwOWNiMGM1YTJiIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJmZGM1MmYwOGIzOWIwOGIwMWM4ZDMwOGJmODgwYjBiZWYwMmZkMWRmY2M5ZDlhYTkzYTRkMWI1ZjRkNThiNmNiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIwOTRmYzBjMTczZDFlYzNmYzUwMWQ3ZGZhOTI4NTUwMWM1MjdjZmI0NzEyNTgzZGEzY2MzNjE4MDU2NmI0YmUzIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI4MzY1NDMzMDg5NGEzNmUzZTYzZmQxMzM0NjQ3MGI5ZTgzZDM3MWVkZWI4NDg3ZDdjNjQ1NDc5YzY3NzdiOGFjIn0"
+        }
+      ]
+    },
+    {
+      "id": "claim_2227c56240ec420aa64fae309400453c",
+      "statement": "The runner maintains a current question, a queue, solved ids, and an attempted set; correct answers leave the queue, wrong answers are appended to the tail, and the lesson finishes only when the queue empties.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/components/LessonRunner.tsx#L285-L305",
+          "version": "repo-lines-v1:sha256:ec87df8fbd7a96bb46469010f1a0251de12618cdde7a39ed68f7a63b3813158a:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZmMGEwMzQwOGY2NzE3MGY3ZWE3NjEwNDZhMDc5YmIzOWY1YjhhYzE4MThkZGJmZThhM2VhNjNkZGNjN2I4ODkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA0YzczZWJhMDk4NTRjZjU3M2I2MzA0MDM2ZjBmMzhjZDQ5ZTRhZjc3YWE3NjE1M2MzODFkMTNiOWJjM2YyYjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjM3ZTFlNjdiMTM3NWI5MWI1OTM1ZmY4ZGI3MjdmYmJlNTU4NTc3YWNiNzBiNjcwYjdjOGZlZWZiMzA0ZGNmNWUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjdmNmU4MDg0MTlkMzg5NGIxM2IyNjFmOGFkZGU3OWVmZDA0ZjdlOTRlOWUxNjBlOWVlYTc4NjE1NzkyZDU5ZDAifQ"
+        },
+        {
+          "resource": "repo://apps/web/src/components/LessonRunner.tsx#L577-L749",
+          "version": "repo-lines-v1:sha256:e5a9260bb3c363359b1ee2df2a4917d55f5160ba4e9dcf6041b7c56af77a2d71:eyJzZWxlY3RlZExpbmVDb3VudCI6MTczLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI0ZjJhMmY5OTZmMDhlNjgwYmQyOTIxMzVhNmZhNDk3OGJkYTI2ZTYwMmQ4NGYzM2NiMWQ1OTQ3NzVkNDMwNGI1IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIyN2U1Nzg4ZDVkOWQ3M2QyNGE4MWRiYzBhNWE3NGJmYTgyYzljM2IzYWY5OWU1MmFmNzk2ZTkwYjQ2OGE4YTNkIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI3NGMxYzY3NzJkYjVmNDg1YjQ1ZmM1Y2ExNWU5Mjk5ODdhODAxZmUyYzkzYjcxMTZjZDg0YWUyOTFiYTI2ZjQ5IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJjYWY2MDA4MTY5NzlkMDY0ZTczMzc4NzNkM2EzMTBjZjViOTc0ZmM1ODIzYzRmMTVkNjMwNThkZjllNTk1NTQ2In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_d0383f3de085490f99a15c7a2051123b",
+      "statement": "Only first attempts change correct/mistake counts, add mistakes to the bank, grant XP, and drive first-attempt accuracy; requeued re-answers do not change the score.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/components/LessonRunner.tsx#L582-L639",
+          "version": "repo-lines-v1:sha256:f60ba7761a2dda4653ac45650927b31848466464dfa5cec752e8507c22e393e5:eyJzZWxlY3RlZExpbmVDb3VudCI6NTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ1YTQ4NmU1OWZjOWVlYTkyZjRkZDMzYzc0YmUyOGEzNTkyODQ3MTViMzVjNzA2MDkwZjkxNGE2MjQ2YzkzNWYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjgyMjg0ZjQ3YWMyYzdjZmQ3ZTBlNmJlYmY0ODMzZWE2NTg3ODhlMTE0NDE4ZWRjNDc1YzMwYWFkODZiZTQ4ZmQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjI3ZmJlOTJiMTE1Y2QzMjFiYTVlNWU3NTQ2ZTc1N2ZhMTJlYjM0YzMyNzg1M2MyOGMxMDlhZTMzOWI4MjU2MDIifQ"
+        },
+        {
+          "resource": "repo://apps/web/src/components/LessonRunner.tsx#L652-L690",
+          "version": "repo-lines-v1:sha256:966ef7fffda71f2c0709746cbe20e636778da0e9062fb23c727aa3cc12a793cf:eyJzZWxlY3RlZExpbmVDb3VudCI6MzksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVjYmVjMzgwZDM1YTBjMjc4YjdmZWFhNzBjZGFmNGFmN2Y3YjUyY2Q0NDQ3YWYzOThhYWFjNjRlNjgwYTdhMzEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4OTNmNDBlMzc4MWViODk2YzgyZDA0NmEwODA2N2ExMWUzNWNkZjJmMWRmYWYyNmZlYTkwYjhkYjY2NzY0MTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImEzMTZjNGZlOWJlYWQ5ZjYzNDAxM2NkZjBjMmQ2MWUyZjI5YjFlZWU2M2E1ZWRiZjc0NjdlODA4MTEyYmZhYWYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImI5NDhhOWMzYWU3MDcyYWE0ZWIxYjY2MGZjYWI5ZmQ2YzYxODdiYThkMGQ1NjY1MTNlYzc4NmZkMjdmZWUwYzAifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_bde2b0a32abb4fe980fdd78468f74474",
+      "statement": "A zero-heart state opens a gate for resumable lessons or a failure screen for new lessons; the gate can refill hearts, go to review, or exit while preserving the session, and closes automatically when natural regeneration restores a heart.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/components/LessonRunner.tsx#L408-L417",
+          "version": "repo-lines-v1:sha256:c01a66d9e41c40f963a0110ba8b0470d81f35ddbdc62a5aacca694bca7025783:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVlN2VjNzgwNjhkYmFlYTUxYzUwNTU4MGJkYTRiMjVlYzA4NGMyZWQ4NDJmZGZjNjQ1ZDc1ZWNhYmM2NTRhNGIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4OTNmNDBlMzc4MWViODk2YzgyZDA0NmEwODA2N2ExMWUzNWNkZjJmMWRmYWYyNmZlYTkwYjhkYjY2NzY0MTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ2ZTc5NThlNDQzNGMxYTZlNmZiZjVlYmU2NjA3YzUyZWRiOTk3MGQxN2FmMzAzNTFjMDA3ZDY3OTk0OGQ0YjciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjI0NzNhMTg4YmNmY2RiODIyODZhYmE1YWY1ODAzNWM2Yzc3Zjg0YTQxZWJmMzk4ZjQ1NzZhZDNhYmMwY2QzMTEifQ"
+        },
+        {
+          "resource": "repo://apps/web/src/components/LessonRunner.tsx#L476-L484",
+          "version": "repo-lines-v1:sha256:0ad8e1af99bf32fe86aeba9d94415b535f971a24ad5c575034f45be8749dabbe:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZGZjMjhjOGRlYWNlNjZjNmQ3MTlkZTZiYjFlMjVkNTkwNzkzZDJkZDYxOGM1M2FlY2Y1YzgzZDg4ODE0ZTEzMyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMTYxMTkyMDU2MGFlMTI0ZTE0Y2NmN2JlNjYyNmMxOGU5NzAyODNkMjUwNzQzNjc4MjdkNTgwZGM5MWRjYjI0NiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNGQ5N2EwOTc4OTUyMjU4NjcxY2NmNWZiM2ZmMGYyZTEzMDdhZWRhODlmZDZlZDA4OTllZjcxMzY1ZjQyZWVlOCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNzE5ODBmZTUwNmJkYjU5NThlOTY4OWRjOWE5NjBkYjhkNGIzZDQwMWY5NWM1MzA3MjUzMTIwM2I2OWYwZjkzZiJ9"
+        },
+        {
+          "resource": "repo://apps/web/src/components/LessonRunner.tsx#L918-L948",
+          "version": "repo-lines-v1:sha256:b16bf2f842284297197e73e0d7ba03a1dbcac9359850cf285609016358120041:eyJzZWxlY3RlZExpbmVDb3VudCI6MzEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjIzNDExOTcwYjNmNjFlNWM5YTY3MWRmYTcwNzA0NjdhMzllYTIwNmYwZjg2YmFmYWMyYzY0ZDVkNDZkYTU1ZWUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNhNzE5MGEzZWIxNGRjMjQzMDFkNDE1ZGFjMmU4ZjQzODE1ZWE5YjljY2I3NDEyMzFmMDhiZTI1MGU0MTI5ODAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjM4OTUzMjIyZTMwYmI3NDc1MmQxOTI4NjRjMmYzMzdkMmZjODUzODEwNjk0MDMyZTlhYThhMWI4Mjc3NDYwMjIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_eaac3067f89542419cde51bbcdb2ca34",
+      "statement": "Session persistence is skipped before the intro, before any attempt, or when the pending queue is empty, preventing a false continue card and a final-answer progress wipe.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/components/LessonRunner.tsx#L422-L465",
+          "version": "repo-lines-v1:sha256:b1dcba095e6ce37f7408a6152cc49e9e31a43fc1b03c71a682b1cd3fd691b200:eyJzZWxlY3RlZExpbmVDb3VudCI6NDQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE4MTJiYmJiMWM4NWY2N2RkYTYzNzVhNTY3OTM3YTBmNmIwZDMxZWMyZmE2MjRiYmRmNGU1ZDI1NGEzZDJmMmEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFmOWRiYzdmMmYyNGI1Mjg0MzU3Zjk4NjMwNmZlZjA0MTdjYzZmODFhODNhMDJiZjgxNTBmNzExMmY4ODNiMDkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjY5MmI2ZDdiNWE1NzZlYzExMTlkNWQzNjUwM2YwOGIzYzc5ZTNmOTRhMGQ1MmI3ZWNhMDA4ZTM0NGI0Yjg5MjIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjEwOTEyMDhiZWVkN2M0YzdmN2ZkZmJiZWM2YzQ2YjhkNWVlMTVjYjczMWNiMGU1NjMxNDc2NjI5NTJjNmJlNGMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_6fb9cc61924549f89e94bfa1acf8c9ae",
+      "statement": "On mount the runner restores solved and queued ids filtered to the current lesson, appends newly added questions, falls back to legacy linear sessions, and skips the intro for a restored session.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/components/LessonRunner.tsx#L353-L420",
+          "version": "repo-lines-v1:sha256:93e36f78e22545f6f2233ea92828192aa2d3c10085a82c062de4768b9fe5d36c:eyJzZWxlY3RlZExpbmVDb3VudCI6NjgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc2OThhNzNhMDcxNjE0ODM2MmEwZmFmNmNkOTA1NGNmNDBmMzgyNjNmNmNkOWVmMzI1NTM4MjYyMzdhZWI1NzgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjExY2E2ODU2ZmI4NmRjMTIwMTg0NGNmNmVjMmY3ODQ2NmRiODk5YjNhZWNhNjUwYWUwZTIzMjJlOGNiZTU2NzYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImMxMDA4ZTQ1ZTU0ZmU2ZjAzZDEzM2Q5MjNlOWJmZDYxMzAxZGU4ZmUwNTlkODBjNmM2NDNhYjY5MGI5MmZkNTQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjJkMGM4MGUwZjliOTQ0MWFkYTJiN2FhYzY1MTEzZDY4ZGQxZmM5ZGZjOGZlNGRjN2E5NGM2NjUyMWI5ZjZjM2QifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_1b9b3bf82fbc4cf98bd311c2c5b703d0",
+      "statement": "Learning time is accumulated only while the document is visible, flushed every 30 seconds with a ten-minute per-flush cap, and flushed on hide and unmount.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/components/LessonRunner.tsx#L486-L531",
+          "version": "repo-lines-v1:sha256:066faaa2bd913ae5358d7633e322611f1ce61c88c7eb4b5710056a53b5bff0db:eyJzZWxlY3RlZExpbmVDb3VudCI6NDYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIyYThiMmZlN2ExNTVmOTlhNDYyNzk2NTUyODNlNjhkM2U2YTExZmNkOWVlZDc0NGU4NjRlYmI3MGVkYTNmYjMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY4ZmI5YTgzZTVjOGExNzUyMjlhYmI0ZTZlYTU5NGE0ZTk1NDg3ZTI4NjQzNjM3OGZjNDFlYzM1Mjc5OGNmNTkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg2YTlmNmQ4MTEwMGVhYmIwZDRmZjNmZjE3ODMzNjNiZThhZGI3ZjFiZmJjOGVlOWM2YjJlNTc3NGNlZGNiOTkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjJkOTExYWI1ZDNkMmQxMDI3YTBjNjg4YjllMTAxNDFiNmE5MzBiMjA2NGQ4NzM2ZjBkNGQzOTBmYmE0MDYwNjQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_fb6e9a93fdff4d2ea105398eb0b4757c",
+      "statement": "Completion settles accuracy, perfect status, first-ever three stars, XP with exam and weekend multipliers, optional chest gems, and an atomic recordLessonComplete call, then shows a multi-act celebration.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/components/LessonRunner.tsx#L1433-L1518",
+          "version": "repo-lines-v1:sha256:c2d2fff2013d080001a5407587cf03c47c4b9bdf4f916aaf78fe72052163ab0f:eyJzZWxlY3RlZExpbmVDb3VudCI6ODYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImI4MTA0YWE1NWQ0OWQxMjM1ZTJjODE0ZDBiMTViMWYxN2JhNzU0ZjQ5ODgzNjJlN2MxODkyYTQ0Yjk4YTkwMTciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjY1MzBlNGExNjVmYzc2MGJjZjNhNzBmYzViYjg4OTQ3YjlhNTViY2E0NzEzODFhMDc3MGJiY2E4M2VjZTkyZjYifQ"
+        },
+        {
+          "resource": "repo://apps/web/src/components/LessonRunner.tsx#L751-L807",
+          "version": "repo-lines-v1:sha256:5315b460a97d3a6cbd76777766cbe05da107bef8c9a653fb62a3ffd3610ac12d:eyJzZWxlY3RlZExpbmVDb3VudCI6NTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA4NGM2YzQ3YmI1MTEwZDc1NjJkYjU2M2NlZWRjZTE3NzQ3MmI3OTI3Zjc1MTAyMzc2ZTBjMTgxZDgzMzk4NjMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjRmZjYyZDI5MWM5MTc5MTczZjgwYzcxZmJlZDMzMjhlMjJmODU5NDJjNzM1M2EzMTE0NGFlZDRiNDRhM2JiMmEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjEyNWJlNDNhNjk2MmI3YmY4NTFjMzhmYzcxMDNhZjk2MWRkZDZiZGMxZjViNTM0ZTM3YjZiNWY0NTgwNTJlNGIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_def5bf96304a4666a1688d656b7d2fea",
+      "statement": "Exam lessons are identified by the -u{n}-exam suffix, skip the knowledge intro, double XP, stack with weekend double XP to ×4, and mark conquest at accuracy 0.8.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/components/LessonRunner.tsx#L270-L276",
+          "version": "repo-lines-v1:sha256:1ef5d89d8fb09c8a0f8984b0ad09a64aae12594dfcbfa92f76a798ca1d2feb66:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZTY1NTA0NzAwNWUxY2UzOTY3MDk3NzJkMjZiMzc2ZjFhMzE3OGRhZWIzNWZhNzA1MzI1ZTMzZmYyYjk0YTgxMiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOTViMjNmZGZkZDAxOTYwYjFiMDUxNzg1YzAwMzExM2ZkYTgzYzM5YTM0OTJmODRjZDVjOGE3ZTlhYzcxMjA5OCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNzhhZGYxMjcwZDBhM2Q1YmVlM2Q2ODNmMTk0MTZkODZkNGNlYWMzZmI0NWIzYjU0YmE2YTJkMDU3ZGFkN2EwOCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNzFlOTRkNjZmZmViNTg0Yzk2NDIzODlhMTJkMTE4NTkwNTk4MGE1NmFkMDE3Nzg4ZDgzMjA4NTQyZGQ5N2I0NiJ9"
+        },
+        {
+          "resource": "repo://apps/web/src/components/LessonRunner.tsx#L793-L805",
+          "version": "repo-lines-v1:sha256:47e534d02dccb0a8fd3da5502a49936ef11f267ee0cb53d63613ca1fad37f3f9:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM2YmY4NmE5ZDIwOGRmODI5MDJjOWU2Zjk1NWZkMzA2ZGVjMjk1Yjc1YzExYjEzODZhNzdjZTE5MjQ1MDZmYjgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjIyZDExY2FmNDNlOTdlZjM2OWU2YmVlZDFhMjY4YmQwNTgzOGYyOWI5ZGQyNTRiZjY5YmE2NDg4NDE0NzIzNGEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQ1NTJkNGViMWQxYzU5MWNlMGVkZmY1ZjA5ZmM4ZTNmODNmMzI5YTliMzE2ODA4Y2RkYmY1YmRiMGMzOWE3NmIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjdiM2VhZDRkZTdhNWM3NTYzMTVmZGRiYjk5MTliMmVmYjQ3YzhlMjZjMmU2YTJiMTkzN2QxMzk5YzdiMzE0NWMifQ"
+        },
+        {
+          "resource": "repo://apps/web/src/lib/exam.ts#L9-L14",
+          "version": "repo-lines-v1:sha256:f777e5357b0f0d84e6315e57148e52f8c2477682007f3ebe293cc3ecccb61f03:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZmQzODMxMDE5OWJhMWRhNGZmMzBjNWFlYzVjYjgyNGVjMmViMDlkMWQ0NGUzNGJiNGQ2MTk1ZjczYjI2MDFlNiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOGE1ODFjMzU0Mjg4MWMwMzQzMjIwMGFiNzlkMDJjOWMwNDViNDc5MDc2MzdlNjk1YTM5NDFkOWVjY2VmMTkzMSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZmIxMzMxNzkwNGM2NDY1ZmIxMGRkZGJhMzNmZDRhMzA2YTc0NmU1Y2Q3ZTcxZmQ3ODc1MDQzNDcwN2UwZGUwMCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjEsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNDEyY2EzNDVjY2Y3NWJmOWMwODA2YmNlNjk1YmU4ZGU4MDhiNzk5ODQyNTFhN2E1NGQyMDJjZjYxMDFkZDQ1MSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_c6729b23f4cf4e6987cc994046976f31",
+      "statement": "Explicit confirmed exit clears the session, while exiting through the heart gate preserves it; completion clears it and failure does not.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/components/LessonRunner.tsx#L466-L474",
+          "version": "repo-lines-v1:sha256:fbf63dd24aa21de7acfe09390d57dc39c4920c4037aaa4cadc700b9dea356450:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNDAxZDBiYWI0ZDI5YzZmY2UzMjQyMGQzNTIyNmZkYTQxNGQ4ZjQ3MTVkYjI4NjdjMDY2MDQ5YjhmMzUwMmRhOCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNzViNjA2MWU4N2I5MTA5OWNjMTM4NzQ3ZmVhNjYzNTc3MTE2NThiMmM1OGY5OTljZjY5OGUxM2Y4YTg4MDFhZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYzdhMDk0ODMxZTMyZTYzNzg3ZmUwNTc4YmE2NDMxMjY5YjU5MDBmNThiYjVlNmNjMjhjMzZkNWUwNzA5ZjRhZSJ9"
+        },
+        {
+          "resource": "repo://apps/web/src/components/LessonRunner.tsx#L896-L948",
+          "version": "repo-lines-v1:sha256:e2ae275aa60ff6d89c908cabec1c0f04e8878611e2a15fc2659fcbc214336332:eyJzZWxlY3RlZExpbmVDb3VudCI6NTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJkYjhhZDcyNzI2NDZmZjc5ZWZmNzJjYTZmMzg3MGM0Yzc3NmU3Zjg3NjBmNjYyZjE0YzU2YzBhZjI3YjAzMjkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImYyYzBkOTY2YzIzNzk2MTM4NGQ5ZDU5Mzk5MzVmYzZjZDMzYzg1NjMxYTczN2JmMjk5MDQ1ZjlmOWJiODYzYzIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjM4OTUzMjIyZTMwYmI3NDc1MmQxOTI4NjRjMmYzMzdkMmZjODUzODEwNjk0MDMyZTlhYThhMWI4Mjc3NDYwMjIifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.7.2",
+    "at": "2026-11-04T02:58:40.844Z"
+  }
+}

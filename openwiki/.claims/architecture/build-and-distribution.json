@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:f168938ffa21b7a55023c3a0a52687c18428b33254eb07c131325167a2b3de87",
+  "claims": [
+    {
+      "id": "claim_4800ba9a0cee453787aba3e2b62b9552",
+      "statement": "The root workspace scripts define the main build entry points: build:data, build:web, and build:server delegate to workspaces, while gen:content chains the stage, version, and coverage course generators.",
+      "evidence": [
+        {
+          "resource": "repo://package.json#L10-L29",
+          "version": "repo-lines-v1:sha256:16b3503f5b0e371ea142c87196c3e3686bef2180df1ea558ea1f6aaeb267f1c2:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM0ODMzZDU5NDljMDNhNDBjYTk1MjQ5MTYxMGE2NjU5NjQ0YjNhYTQ2NjM2MmY3OTkwMjBkYmYxOTgxNTQ3ZGIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJiZWViMjFkMWE0NmM0YWE5YTY2YTcxYzIxNWEwMjc0YzZkN2MxZjA3NTdlNmQ1MjA2MmI0MTlkZWQ1Y2I0YTgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjdjYmQyNjY1MjlkNTc1N2Y3ZjdlYjFmNGVlMzQ2ZDBhOWU3NGNkZGY0NjkyMDAwNzMzY2EyMmU2ZWQ2YThmZmYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjdlOWZlYzhlYjg1NGUxMTkyZWJjMmZiMjZkMTRkN2NhY2QxYjM5YWI5NTNiNDM1NzA5NGU2OTg3M2YxMzgwMWUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_6e823a0081f9464f9d1a898e461b0668",
+      "statement": "The web build always regenerates frontend data before running Next.js, and Next.js is configured for static export with trailing slashes and unoptimized images.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/next.config.mjs#L1-L9",
+          "version": "repo-lines-v1:sha256:9b834b3503a1e951e09135c9896d37f9724855926984d7aca294a27e9a8d9f5a:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNjNiMDA0MWYzYzUzZjIxYzljY2U5ZjBhYWM4YjU2N2Q4NjU2NzI0MDVmYjllOTYwNDVmZDljMmMxZWQ5MjI3ZiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNWNiYzE3Y2E4ZjczNTk0NzY3ODMwYTM2ZWVlYWM0Y2U1ZmVhNWRkMzg3ODU1ZWE3NGY0NTE5MTkxOTVkNWMxMyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        },
+        {
+          "resource": "repo://apps/web/package.json#L5-L11",
+          "version": "repo-lines-v1:sha256:b6632924d40c101e707e910e77d9f7a8a87d520d96bc7da06e789d22f77b3fe3:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMzQ4MzNkNTk0OWMwM2E0MGNhOTUyNDkxNjEwYTY2NTk2NDRiM2FhNDY2MzYyZjc5OTAyMGRiZjE5ODE1NDdkYiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOTNlODk5ZTM4N2UxNDI5Zjc5MGEzODY2M2MzMTk3YmU5MTIzYTQxY2ZiMTQ4MDdlNThhMzc2MjAwNjhlZjBhYiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYjQyZjc3ODhjNWNhNDFiNWEzYWU3Y2MzZGI2OGVjNzAyZmE3OGYzMTZhZjI4NzBmM2FmNjAxOWRjNjAzN2RhOCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOTdkYWMzNzk1NmQ5ZTgxMWQ4YWE5NWJjMTllMTdmMGZjMDAzYTI2M2I4YzBhOGRlZDZkZDQ3MDQ2ZTExY2QyNSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_2d98c1caf4c64448ab69f18f023c6c24",
+      "statement": "The AI server is bundled by esbuild into a single ESM file with express and dotenv inlined, optional ws native accelerators externalized, and a createRequire banner for inlined CommonJS dependencies.",
+      "evidence": [
+        {
+          "resource": "repo://apps/server/build.mjs#L14-L30",
+          "version": "repo-lines-v1:sha256:128c3841ff420adac8c3d109004ff4554245899c944c336f211b32664d479cd8:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZkOGYwOGEzZWI4ZmQ3NmU3NmE5OTFmNmIzYTFlNjRmMjAxMjNjNDJmMDU4NjNhNTJmOTcyYmExZGVlMzFmYTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRkNWNkMmZiNGYzZGY4ODQ1MTUyNTViMzk1MjNmMmY4YjU0NzJiZWVhOWY1NjZmZmNhMjA0ZGI4MDI1NjEwNDEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImM2YmNiNzhhZTQ5MDRjNDMzMTYyMTVkOTI5MGMxMTI3MTkwMThmYjcxNzYxNTFhZDNmZTNmMWQwM2Q0ZDE4YjIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImY2ZjViNDBiMTU4NDU3ZDE3ODY0ZjIxNzkwNzg2ZGQ1YTJlY2RiNjRiNjZhNjUxZjc4OGQ0ZTI1Y2QzMzAzZDIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_c3f268e5d1b04e9a8d94581639c7d53a",
+      "statement": "The Docker build runs data generation, textbook catalog sync, web export, and server bundling, while the runtime image copies only the server bundle, the static export, and generated public data and therefore needs no node_modules.",
+      "evidence": [
+        {
+          "resource": "repo://docker/Dockerfile#L8-L40",
+          "version": "repo-lines-v1:sha256:921cc38b2026d624b62c6ab72bb757ea3b8f866ef9047b8558837829063d65a5:eyJzZWxlY3RlZExpbmVDb3VudCI6MzMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJmYmNiODA1ZDE0N2JmNGU5ODA2YTA5MDAwMmMzZmQzOWVjNmRkYzU1NTBhZTg5MWQzMDRiMDEzNDlmYzE3YWEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNiNDRmOTRlZjg2ZDRjMzliYzE1YWUzMjE3YTg1NzQwNGMxZjc0ZDU2NDRmYjQxYzYyNGNjNGRjYTkzYjlmZTciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjM4YTNmZWQ3MjZkNDNiM2MzY2YzNjY3ZTM5YWJmNTU2MjkyYTRlZGIzMDNmOTY1MzNhNDZlOWFhZWI1ZGM4ZjciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_61cb0e8bba5b4921b1d8d9b06bae2f6d",
+      "statement": "Docker Compose exposes port 8787 and passes optional LLM, DashScope TTS, Gemini image, voice/model, CORS, and static-directory settings into the container.",
+      "evidence": [
+        {
+          "resource": "repo://docker/docker-compose.yml#L10-L29",
+          "version": "repo-lines-v1:sha256:bb778c6509b1babeb73572c95b5bd481c80afff2cb9d770ff019eca67c7d4043:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZhNzNmY2NkYzk5ZWE4MzU5NjdjN2RlZTdlZmJlZDFmM2NhODcyNjBkOTI5MzE4NTBmZGQ2NmRhOGNiMTJmMWQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE1MzFlMjYwMzk4YWQ2MTA5MTRkZmMyOGYwNDhkMzkyNjRiYTdkNTAzMjc4ZGQyZjhiYjFjNGMxNGI0OTlkOTgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjU1YWJlNDZiMmIzZDg1NzJmYmVhMTY5OGMyYTEzNDA0ODkyMzgzZmNhOTk5YzRjYjA0ODJkODc5MzYzMGM0Y2EiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_c31de4bf73b541a19ee1873936eb6bb4",
+      "statement": "The CI workflow runs core tests, workspace type-checking, web lint, a data-build plus quiz-validation smoke job, a non-blocking dependency audit, and a blocking secret scan on pushes and pull requests to main.",
+      "evidence": [
+        {
+          "resource": "repo://.github/workflows/ci.yml#L13-L74",
+          "version": "repo-lines-v1:sha256:62ceaa95f6d4d9044b7c9b8f404f886050f5ed95c3dec122a931040545af5b49:eyJzZWxlY3RlZExpbmVDb3VudCI6NjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjEwYTU5NGYzNGI3ZjBlYTU3M2RhNzg3MDNlMjc0OTMwZGI3MThjOTQyY2FmM2MwNDI1MTc1NWY2MjNjNjBkNWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI3NmMzZDI2OWY2NjU5NGJlZTNjMTA2MGFiY2I3MjA0YjY1YmI4MzFjNzhlNjY0NzliNzdiYmQ2YTIwZGI3MmEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImFlMmM3MjFiM2RjMjBmZjczNGQ5N2NmNWI5OWU1NWU4ZDRjNzJmOThiZWYzYjk5ZjkwM2NjMWYyYzRjZGM2ZGYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_d13a86b1695c4b79b44d82effc77019d",
+      "statement": "The release workflow is triggered by v* tags or manual dispatch, builds one shared web-out artifact, and fans out to Windows, Linux, Android, iOS, and Docker jobs on their native runners.",
+      "evidence": [
+        {
+          "resource": "repo://.github/workflows/build-installers.yml#L10-L38",
+          "version": "repo-lines-v1:sha256:ad8be4d43121ac82ed3ce362573ca3456cd6a0c421f63ab88720131d339e98ad:eyJzZWxlY3RlZExpbmVDb3VudCI6MjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU5NmRjNDgxNDlmNWE4M2QxZWQ2ZGJiMzliYmM3ZTJiOTAyYWEzZDM0ZDZiZDVhZTRiMjkxYjY4ZGYwY2E3OWEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI0NDgwZjZlNmJiYzI2ZWJmYjUzODhmYTVkOTBlNmQ5MTU1OTc0NmMxZjY5NGQ2MjEzZWE2MDQyYjc3ZDU3NjQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjVmNGVjZTRmNDk0MzlhMmFhZTg4ZDFkYzdiYzU4MWIwOWUzMWIwOTlmYjc1NmIxNDViYTI1MDBhNjQ2Y2JiY2IiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImMyMDMzM2ExNjZmYzA5NjUzZWExNThkNzJmYTIzMjZlMWRlZGMxZGU4ZDI2MTQxZjk1NGU5ODMyYTllMzY4Y2QifQ"
+        },
+        {
+          "resource": "repo://.github/workflows/build-installers.yml#L44-L231",
+          "version": "repo-lines-v1:sha256:1db9f73e44fe1c9fa2da33e00998d6d4b1f38da23dc948ee9c55a41d4b155938:eyJzZWxlY3RlZExpbmVDb3VudCI6MTg4LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJiZjFiNzJiNmIxNjcxZGZmOGRhYWU4MjRlMjA5ZGExYTU0ZTlhYTllYmFlNWIyYTEzMzk5NWZjOTQ4ZTJkYmQ5IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI4MDQ5NDY1OTViYzVjYjg5NmQxZThmOGMyMDUwODlhMzQyZDQ3MjA3NDJiYjBhNjI5MmNiMjYwMjNkNWViYTY5IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJlYWUzNTczYTgzZTc3YmFmM2MxZjFkNjg2OTJmZGViY2Y1MGYxYWZkZWM4ODljNDc5MWQ5NzM2NWJhOTJjYjVhIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MSwiZm9sbG93aW5nQ29udGV4dEhhc2giOiI4ZDMyYWMyMDgwYTEzNDVjNjQ2OGQwZTBlMDlhNDkzMjAxNTE3Njc0M2Y5MmE1MjUzNTVjZmRmZDU4OTdjZmQzIn0"
+        }
+      ]
+    },
+    {
+      "id": "claim_d032481a3b6f4da0809d5cd61b509a63",
+      "statement": "The Tauri bundle ships the web export, server bundle, server package.json, environment template, and bin directory as application resources, enabling the desktop executable to host the frontend and run the AI service locally.",
+      "evidence": [
+        {
+          "resource": "repo://apps/desktop/src-tauri/tauri.conf.json#L28-L38",
+          "version": "repo-lines-v1:sha256:387ab0bed79b6069de7cbed4ddb08af28504b196110488c737c3686ef2fae90a:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRjMDcyNDlhZjgzOGY5NDg0OTM5YjM3ZGE3OGQ3MTIxZGM0ZTVkNGFjNTI2N2JkNzIzMDkwMGU3NGE4NjMzZDkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFmMGNkYjk3MmE3YmZiN2VkMjQ2ZjlmZjY3MjM4NWU1NWY0OTY4ZmMxMTA0M2RjNWI2ODRkNTFkZmEzMWRiY2IiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNkNDQ4YjVhYTFiYmY4MTdkYzBlMzdiMDA4OGU2MmQwM2MyYWE4MmVmZTAyOTIxNzUyMzY0MDQ5NjNmZTZiNzMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU2NWQ0M2I4ZmQ1ZmVmOWE4OTM0ZjNhNWU4OGYxMmY1MTJlYTQ4OTExYWIyYjk1ZTUwMTk5MWY1NjI1YThkMWYifQ"
+        },
+        {
+          "resource": "repo://scripts/package-desktop.sh#L21-L43",
+          "version": "repo-lines-v1:sha256:5ffa4c466e8f43bf496b2217ec9dd9f6528fd4481c484143255c9a0a6ad1d793:eyJzZWxlY3RlZExpbmVDb3VudCI6MjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA2ZDA0MWZhYzE2NTRkNmE3MDNlZjg0OGFjM2UxOTY3Mzg0NjQwOTljZGZkNDFmZWZiNmE1ZGI0M2EyZTY0MTkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM3NjlkMjM3Y2Q0MjBiOWQzOGI5ODFhMGE0ZjY3NzAxOTBhNGE4M2RjYTFmZTU2YzRmNWJhMWUyY2JjMGVmNzYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjMxY2UxYWExMTY5NWQ5YjUxNTcwZGExNWYyMzlkNzBkMmY1Y2FkNThhNzg1MGQyYThkYTljZWQ1ODYxZDQ4MzIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRiZmFkZjBiMzYyNjljY2I4NmE2YTY2ZDFjODgwNGMyOTQ1MGRjYTQzOTFkZmZiYTY3N2FkMmU4MWZmZDNjYWEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_0d8c070014af45e89400a959a80e4a01",
+      "statement": "The offline packaging script composes the static export and server bundle into offline-bundle with start.sh and start.ps1 scripts that set PORT and STATIC_DIR.",
+      "evidence": [
+        {
+          "resource": "repo://scripts/package-offline.sh#L18-L57",
+          "version": "repo-lines-v1:sha256:53073d967a53c7bfcb77a5df13fde7be383e65285ce6d90a5077d8fca1036ff1:eyJzZWxlY3RlZExpbmVDb3VudCI6NDAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFhOTBhZmQ4ZjE2M2ZlMGJhODY1MTFlYjRhODA4OWMxNzIzNjk4ZGNhZGE4YTExMjc0N2UwZDdmNmQyNWUzYmYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJhMjFjNWIzYmZmMDI5OWMwMTYxNDcwNDY4ZjM1NWU1YjRhZmNmMTdhNWY1OTNhYjY4Mzk0ZWY3YWYzMTljZGMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjEzODFlYWY2OWM2YWRlYzUxYzgzYTgwYWYxYWQ4MTZmYjQ4NzRkOTcwYWNkNGUyNWU0MzU2MWIwNDZkN2M2Y2EiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjJmNjEyZGRlNjYwMjMwNTc0MjM2ZjFlZjllNWI4YTBjOTAwYWZhNzBlZmFlMzM4NzZmMTA5M2VlYmFjZGI5ODUifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.7.2",
+    "at": "2026-11-04T02:58:40.844Z"
+  }
+}

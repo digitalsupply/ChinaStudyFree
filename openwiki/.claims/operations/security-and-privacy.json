@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:13e92828c61f7a81ef6367b30319db4f914d928a62f5049fea50aad3e56792f4",
+  "claims": [
+    {
+      "id": "claim_afb6d63ebcdc48e987a26f0014a5f6b6",
+      "statement": "The project intentionally has no accounts, no cloud progress store, no analytics or advertising SDKs, and no collection of names, schools, phone numbers, or location.",
+      "evidence": [
+        {
+          "resource": "repo://SECURITY.md#L23-L32",
+          "version": "repo-lines-v1:sha256:3570bbc9e50a21fb7bbf732e319d43426d7eb1d78a42ea00a68c33fe29bf8606:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU1ODMxMzhmNzgxYzJjZjczODI2NWZjZDI3OWNjMzdlODFjNzM0ODcxNGQ3ZGE1MzM0N2Y0NjQ1MzBhZTA3NjkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjczMmJiYWY1NjQ2ZWRjMmUyZjhjOTEwMWJiOWUzZGZhZTY0ZDdmMDgzMzQwMWUyMWMwMTgwNWM5YmNjMDViYTgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjAwMWYyZWMxNzU5M2MxMDU0ZWI0NjM2N2Q4NDUzZWYyNGExNzNjZTk2YjcxMTdkOTFmOWE2OGQ0NGZlZjhiMDEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjYzMTAyYTM2YzczNmRmM2NjNmMzMTIxNzM0OGVmNGQ4Nzk2NDVkOWM1ZDFiOWZiZDYxNTMzYmE1MjVlMmVmYWUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_784ecc09cb944b108bfe005af3952739",
+      "statement": "Learning progress is stored locally on the device and is not uploaded or synchronized across devices in the current version.",
+      "evidence": [
+        {
+          "resource": "repo://SECURITY.md#L25-L32",
+          "version": "repo-lines-v1:sha256:61a7a28424d02fe684726866fa336c71fdf3379a84ee1b149bb69f2aab5c7123:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNjllMWY4ODIyZmY0MDdmNDVhNTZkNGJkN2M4NWFlMDE4ZmJkMzc0N2RkNTI2ZTJiYWE1ZTIzMGFkNWU5NmIwNSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNzMyYmJhZjU2NDZlZGMyZTJmOGM5MTAxYmI5ZTNkZmFlNjRkN2YwODMzNDAxZTIxYzAxODA1YzliY2MwNWJhOCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOTNmNmZkM2E0NjJjOTEwNDc0N2YwMDhhYmJkMTM2ZjUxMGI4MjZiNzY2YjlhNzQ1OTBhNzBlYTQ3Yjg1ZDI5NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNjMxMDJhMzZjNzM2ZGYzY2M2YzMxMjE3MzQ4ZWY0ZDg3OTY0NWQ5YzVkMWI5ZmJkNjE1MzNiYTUyNWUyZWZhZSJ9"
+        },
+        {
+          "resource": "repo://apps/web/src/store/progress.ts#L640-L648",
+          "version": "repo-lines-v1:sha256:16878dd7d3b51b7d16f4b52b83748f7f0e51128e3d08e3563591e436f8ab3182:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMmE1ZDcxOWJiNDdhNWRmODljMDdmYzJjYjZiYzdhZWExZmNlYTg2N2VjMjUwMGI3ZDgwMzQ3MzExNzhjNDZhZSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYzU4M2FjNjFmMTJkYzliZTU1YmM2NWYzN2EyYWRlNzMyZjJjOTAxNjIzZTMxNGVhNjQ5NTlmYTQ5NTdjYmU0YyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTgxMzMzNTY1NTJiN2JjODEzNTJiZmExMmViNTE5MmY4OTIwMjg1Mjc5MGNhNGE1ZDczMDY2YThiMjYxNTE2NCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOGJkNDk2OGY3MjI1NjlmYjg1ZWYyMjgwNDZmYzFmY2Y3Y2QxYWViNWM3MjBjMTYyODY5MWE0MWNlYTg2YmViOCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_a331934f41484dfdbf204261fd06710d",
+      "statement": "AI generation, speech synthesis, and story illustration are optional user-triggered calls that send grade/topic/content text to third-party providers only when the corresponding server keys are configured.",
+      "evidence": [
+        {
+          "resource": "repo://SECURITY.md#L29-L31",
+          "version": "repo-lines-v1:sha256:04d3df85fb138e7d453610ec6e3a2bf2f0364977529477b8af5cdbe1503ad692:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMjdiODczYjNlODFkYjM3Yzg4MDJjMjY4NzBlODRmZWZmZWM2NTg3ZjRhMzUwOTVjODQwMzgwMmY3NzMzZjNjYiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNjM4NGJlOGNiMjc2MmZhZWY2NTUyZGQ1Zjg2ZTljNTQ5MmY1YmQ5ZDJlYzlkYTYxODcxZDUzODQ2ZjQ2NTY1NyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNGE1MjFhOGUxN2FjMzI2MmE1YTU0YmExZjBlZWRmY2RkZTEzNWQwNGJjNGEzMDQ2MzI4MjBiOTE5ZTM0MTQ1OCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiM2FhMjgyOGZlMWQzMzA4OTU5YTNmNmE2NGNmYTYzYWU3NDNmN2Q3ZWQ3NDFlMTlkZjU1NjBjY2FhOWQyYzcyYiJ9"
+        },
+        {
+          "resource": "repo://apps/server/src/index.ts#L140-L265",
+          "version": "repo-lines-v1:sha256:9ee9e9142dee7cae8184a2ddf241838f3a7cfa5d6558e9e8858511eeabd37b85:eyJzZWxlY3RlZExpbmVDb3VudCI6MTI2LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI1YzcwMzE0OGY2MzRlMDg1OTVhM2IxOTFiN2Q5MWVlMWU2YmE3Zjg2MmRiZjRiMGVlNGQxODU1MzhiNTI4ZjgwIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJmNmY1YjQwYjE1ODQ1N2QxNzg2NGYyMTc5MDc4NmRkNWEyZWNkYjY0YjY2YTY1MWY3ODhkNGUyNWNkMzMwM2QyIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJiNzc5ZDExOGQ2ZTNjYmY0NTA1Mzk3NDhkZWU3YTQzMDdhY2JlNjQ0NmNiYTI5N2YyNzYwZmE1ZDBiYmExYmMyIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJhOWUyZjJkZDlhZmQyN2I0M2FmZjE1NTgxMWNjM2E1ZjdmNzZmNjEwNGQwYjMyNTY3MGRkZWFhNTUzZDAwMWU4In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_22df4d3af10d4378a17bfac91dd407af",
+      "statement": "Microphone recordings for shadowing use MediaRecorder and local blob URLs, are never uploaded, and are discarded on refresh.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/lib/useRecorder.ts#L3-L10",
+          "version": "repo-lines-v1:sha256:94d502a2a163ff6ed8af7773fb440699e50650b4f6447617c83a87aec60e0c32:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZWFmMjJjZjA3MzI1OTJjMjQ3MTQxY2JlNjFlZmExMTAxMjYxMmY1YTMxMjJiOWFmOWJiYWY1MmY1NzI0ZDE5NCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiN2ZkNzdjMmMzOGE3NzJkODlkYTZkMjM2MmQyYjBhYmM4MWRmN2QxNGZkNWVmZmJjYmIyMTQyNTUzNDQ5MjZiYiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjIsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMzFlOTgyMDZlMmJmMGJiNDMyZDE3OTc1NzlkOWNhNTkwODFmZmI2YzUwNGYxMjU2Mzc2ZTMyMDczODNlN2Q3OCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODQ5M2U5YmRiYjBhYjViNjkzYTI1ODdjNTBlMmFiNWJjNTFjNmI3MTRjYmNiNTU1YzQ0YjU4YWZjYjE4ODMwOSJ9"
+        },
+        {
+          "resource": "repo://apps/web/src/lib/useRecorder.ts#L38-L66",
+          "version": "repo-lines-v1:sha256:8d792d67648e8a1513d2e5ddc737c5690c61944ba933145b6eb8f36eefe434e9:eyJzZWxlY3RlZExpbmVDb3VudCI6MjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUwNGZmOTE1NmEzYzU4Y2FhYWYyMzM5MWFmNGYyNjI4MmIxZjhlNTVmY2RkYTdiNDQxYzAxZmM5MjM5YjczZTMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNmOGFiNmQ2M2IyZWRmYzZmMzZjYzAwZDI4OGZjOTM1MTIyODhkMmY1NzNiMDZiMDgzZTY1ZmEzYTk4M2ZlNmMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjhjYTRhZTljZDc3ZjgzYmQzZTEwNzZiMDk4MjhmNzdjNzM4N2QzOTQ5NTY1OGM5ODBkZWI4YTkzZmFiNmI3MTgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjMxNGUxZjE5ZWM3MWM2OTI1OGI0ZWZlNDljZTgxNjc3NmM5MTY2ZmJkOTk1ZDRhMjBhNTRiOGExZGNhOGI5ZTMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_6fdc35c39ffc45de8b2a30a148a218b0",
+      "statement": "Provider keys are supplied through environment variables or gitignored .env files, and example files contain placeholders rather than real credentials.",
+      "evidence": [
+        {
+          "resource": "repo://.env.example#L1-L20",
+          "version": "repo-lines-v1:sha256:614e8bb91cee44806b9b17b756a303d405c801f1d2253b931a5b3fadc85b7eea:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFiMTYyMmQzOTQ2OTM3ZDNkNTY5YmEyYzhmZjM5NDEwZjQ5ZTU3YzZlNTYyNzNiMjlkNjQ0NzYwMjgyOTNlNmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdiZjNmYjZkM2VlMjc3OGIzZDQ1NmQwM2FkNzFkOTM1OWUyMmM1MjgyN2FkZWYzZTMwZWFmNjFmNzM1MzkwMDQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://.gitignore#L1-L14",
+          "version": "repo-lines-v1:sha256:054685d43b98d5b0756588cd48fe50ff1c661bb5db5017fcb594d7244d113269:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU2MjliYTk1NGRjNzAyZGQwNjMxODY2MDQ5MjFlOTNhNmVkMjdkMjA1OGU2YjRjY2YzMWIyYTM3OGI5YWYyYzIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMwYjkyNjYwYzY4NDBkZWEyZjI3NWZhYTRkYWRjOGY4MTA5ZmU4NjFiMTM0MzQxYjVhOGUwOTllMzAwZWJhNGEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQ1ZGM2NjM2MzI2MTkyNzMyNDkwMDA2MzZkZmEwMmRjNzdhNmZhMmY0MzAzODhjMGUzYmUxOTcyYTQ1N2UwZjcifQ"
+        },
+        {
+          "resource": "repo://apps/server/.env.example#L1-L29",
+          "version": "repo-lines-v1:sha256:33b2c7219cbc5a0875f726451186984d9a791654bed9a4c00b88f6c83da79c71:eyJzZWxlY3RlZExpbmVDb3VudCI6MjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJkM2YxOGE5MmFiMDc2Yjg4NzllYzlhNzJhZWE4MGJjYTUzOGNhZjhiYWVkMjhjMTdiNTIzZmUxYjUwMDVlMGMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjgwYTE1YWUxMjc4YjcxZTA3NDA0YjllMjI3YjhhZThmMGQ0ZWE0ZTVmZTk0YjU1NzYyZTc0ZTk3NTliYTFhZmUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_faf758b756314c71805893ebf21f3f85",
+      "statement": "CI runs a blocking secret scan for common API-key and private-key patterns outside dependencies and environment examples.",
+      "evidence": [
+        {
+          "resource": "repo://.github/workflows/ci.yml#L62-L74",
+          "version": "repo-lines-v1:sha256:4a101e63ab4e162c7a1a2a5f741bf23e45dc5fe67564218484c29bdcb64139ab:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZjNjFmMzg4MDFiZWUyN2VhZDYzNzFhYjI5NWEyOGQxNGM2NWY4ZmI0ZWM4ZmVlYjQxMjQwMjBhMzhkYmUyOGIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI3NmMzZDI2OWY2NjU5NGJlZTNjMTA2MGFiY2I3MjA0YjY1YmI4MzFjNzhlNjY0NzliNzdiYmQ2YTIwZGI3MmEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ1ZWQ1ZTRkNDcyMjQxNWE0ODlmZGQwOWEzNjlmMjhmZjRiNmQyYTM4MzQxODkyYzgwY2E3YWU0ZGNjOGM5ZjAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_a0eb1c2b9fa542438faf8f59e753efa0",
+      "statement": "The server applies nosniff, same-origin framing, referrer, permissions, cross-origin opener, and CSP headers to API and static responses, with a deliberately permissive CSP that allows inline and eval scripts.",
+      "evidence": [
+        {
+          "resource": "repo://apps/server/src/index.ts#L85-L106",
+          "version": "repo-lines-v1:sha256:42ffda90963a88bd802397c286637f0617ae6737a7ae9a77bcf6f61d6f861e9c:eyJzZWxlY3RlZExpbmVDb3VudCI6MjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjhjODBlMGQ5ZmEyYTQwYzVmMTYwMjc2ZmQzOTQ4ZThlMWY4MTEyNTIyYTUyZWUwNDI2MGZiZmVjYjI1MGIzMWIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY2ZjViNDBiMTU4NDU3ZDE3ODY0ZjIxNzkwNzg2ZGQ1YTJlY2RiNjRiNjZhNjUxZjc4OGQ0ZTI1Y2QzMzAzZDIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjEwOTdjMjkzMDgyMGMxOGRkN2EwOGJmMTdkNTAwODIzYzAyZTcyNDcwMmViNDM1ZTgzNjRlOWFhNTdhNTk2MzYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImVmNWY5YjAxYTU2ZGI3MzY0NDM1Yzk2MTNhM2QxM2IxYjA0OWJhNDhhMTMxZmJjODEyYzVhYjYzZjM2YzFkYjYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_b07f86602e984f60b3405f38f18e2547",
+      "statement": "CORS defaults to a wildcard and is intended for self-hosted mobile and local testing, so production deployments should set CORS_ORIGIN to a specific frontend origin.",
+      "evidence": [
+        {
+          "resource": "repo://apps/server/.env.example#L28-L29",
+          "version": "repo-lines-v1:sha256:3356ebbafb860220c5effc7812b3219c4ce11ea6051f38a04018acfc2b88d13d:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZGYwZWUyYjNiMjVlOGRmYjE5MjZkZWM5ZmYwOWE0NjI1YTY4NjcwMDgxZTVkODcxY2QwMDY2MzdmMGRmNzIyMiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiODBhMTVhZTEyNzhiNzFlMDc0MDRiOWUyMjdiOGFlOGYwZDRlYTRlNWZlOTRiNTU3NjJlNzRlOTc1OWJhMWFmZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYThhY2RhMjVmNGNmMDcxZWM3YmVhN2IyNjMwZmRhMGY0MTMwMzIyZjNkYjk4ZGUwOGUwOWE5ZjE1NGNmYTU4NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        },
+        {
+          "resource": "repo://apps/server/src/index.ts#L76-L83",
+          "version": "repo-lines-v1:sha256:a5683250c1af1ff78276dfae30d40acffd8e381e44c7897fd34f920257636ddf:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYThiZmI3ZTZlMmJlOWRlMDIzNWVjNzc0ZmZhMGJiMGM4NTUzYTg5MmUxMzgwYjc3YzM2ZjdiMWM1MDdiZmJlMyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZjZmNWI0MGIxNTg0NTdkMTc4NjRmMjE3OTA3ODZkZDVhMmVjZGI2NGI2NmE2NTFmNzg4ZDRlMjVjZDMzMDNkMiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiODVhMDI5MWJlYTgzZWYxODlkNzVhODJkZGQ0YWY0MGM2ZGMxMGNjN2ViNjkyOTI3NmJjNjBjNDE3M2Y4OWFkNyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNGMyZWZiMGRiN2NhMDg4ZTA0ZDZkZmZmNzZhYmFhYTUxZjA1MzUwZDljMGEzYmU2ZjdiN2VkYzNkYTkyNTg2NSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_6ceef285a16546b58f0c06550f31dd55",
+      "statement": "The health endpoint exposes only version and configured-capability booleans, including the active TTS backend, and does not return keys or provider URLs.",
+      "evidence": [
+        {
+          "resource": "repo://apps/server/src/index.ts#L127-L138",
+          "version": "repo-lines-v1:sha256:eedff6f6d073171d245b2edbf3370f8f94eee0649a4b1f889a34e9a74a73670a:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM0YWIxYTI4NTVhMWVjOGY2MTU3ZmIwMGY2ZmNmZGI2ODk5ZDQ2YjhmOTM4MTJmYmFmMGJjMmI1M2RiNzAxYTUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY2ZjViNDBiMTU4NDU3ZDE3ODY0ZjIxNzkwNzg2ZGQ1YTJlY2RiNjRiNjZhNjUxZjc4OGQ0ZTI1Y2QzMzAzZDIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjY2MTdmYjYzYWU5YjFmYmY4OTI0OTUwMjkyYjRlMGIzZmMyOGQ3YjNmMmE2NzU5YzgyMDkxYmM4YTU5YjdmMzQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjM2OTkxZjNhNmYwYjFkNzg0YjUzZDI4MTM3MDdiMTYwZTk4NjRmM2ExNjk3MDFlYjg3MmIxNGFmYTkzMmZjNjMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_97fc34125b784d85b376c7746bfc3818",
+      "statement": "Android release builds fall back to a repository demo keystore when signing secrets are absent, which is suitable for testing but not for store distribution.",
+      "evidence": [
+        {
+          "resource": "repo://.github/workflows/build-installers.yml#L114-L126",
+          "version": "repo-lines-v1:sha256:ad44f8948088146240a181c523a3f52b6fe53a1e3bbf74b4b25d82b5337d1919:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg3MjRjZDc3YzE4MmMwNjdiOGVkOTkwMmY2YzFjNzgzZGU4ZGU1OWM1YjUyNDViYjJlNjU2MGJjZjAxZDI3ZGEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdkODdlNzFlZWEwNmRiOTE4NWNjYjVmYzY2M2RmZGZjMWRkYTU1NzM5NDkyNTdjNjYyZWJjMGNmMmI4NzZjMjAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImFhYjNmM2VkNjgwMTFmYjZiZmU5YmQxNDU1OTM5OTVhMzY5MzdiM2NlMGU2MzRlOTVlNDEwM2EzZTczNDMyZGYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRmZmQzNWEzYWY5N2FjNzg2OTc3YmM4YzEwNzYxMjQ5YjM0MmFjOGM2MzM2ZDJiZTc1ZmE4N2M1YjAzYmJlNGYifQ"
+        },
+        {
+          "resource": "repo://README.md#L165-L165",
+          "version": "repo-lines-v1:sha256:3a9ba3ca895904be4c9e070a1bf455ddd637a8cccc794843229aa627988a57e8:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiM2E5YmEzY2E4OTU5MDRiZTRjOWUwNzBhMWJmNDU1ZGRkNjM3YThjY2NjNzk0ODQzMjI5YWE2Mjc5ODhhNTdlOCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiM2E5YmEzY2E4OTU5MDRiZTRjOWUwNzBhMWJmNDU1ZGRkNjM3YThjY2NjNzk0ODQzMjI5YWE2Mjc5ODhhNTdlOCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMDg5YzIyMTMzZDE5ZDk2NjE2Y2MyODQ1YzYwYTc0NWY1YTUzN2UwZmM4MjY4NWM2NDAyMDQzY2NiODAzZmExMiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNTBlYmY4YjQ3NDc3ZGRiZjkxZTc0NTc0MTFjODc4YWViNzA4NGIwYWVhNTE5Yzk2MGI1ODE5MjdiNGYzZmVhNSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_65c2a6d335d94ec1a575141e12f26602",
+      "statement": "Dependabot opens weekly update pull requests for npm, GitHub Actions, and the Docker base image, while the dependency audit is non-blocking and requires human follow-up.",
+      "evidence": [
+        {
+          "resource": "repo://.github/dependabot.yml#L1-L25",
+          "version": "repo-lines-v1:sha256:b4bda20575e8d3ee8aa85c1516d4a3f320634fbbb2e784762efd59eb0be7b8da:eyJzZWxlY3RlZExpbmVDb3VudCI6MjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE2ZTBkMWFmZDZlOTYwMzZiNzc2YWIyMDY4NGRhMzVmMDc1YzUwZDZmM2MwZmQ1OTlkZGM4MjE4ZWJiZGZiNTYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYyNzhkY2YwMjEyZGE2OTU5NWRmNmU3MjdlNTgwMWFlYTMwNjhlZTQ4NDNjM2E4YzQzNTlkZWFlNzUxZThhZDYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://.github/workflows/ci.yml#L49-L60",
+          "version": "repo-lines-v1:sha256:e66b1243efcfd77ca3d663dd4b54ba2933e4aeadad39945d8bf631def55265ed:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJmMjkxMDNhOWJmOWIwNGE1ZmE2MTlkZTI1MjQ5YTI3M2Y0MDJjODZjMmZjMTIyMzBkMWZhY2JiZjgzZGNhNmYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU2YzVhMjQ1NTAyNzY3OTNjMDkwNzFlNmZhNWIyN2E3OGQ3ZmQxOTUxODg1ZjE3YzM5MjIzOTRkYWNlZDMzNjYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjY4NjYwZWFiMjI1ZGYyYjA2YmJkNmE3Y2ZmYTdiMzA3MzFjOTY1MGU3M2M5ZTcyMzA5YjgxZjFmZTkzYzA5NDYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImFmZDc4NWNlZjcyYWM0ODc0NmU3MjU3ODAwZmFjZjZiNTA0MWY5YzFkZmRkNThlMzEzYzNiYTg4NGQ1MTVlNjUifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.7.2",
+    "at": "2026-11-04T02:58:40.844Z"
+  }
+}

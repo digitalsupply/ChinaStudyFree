@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:c323e8f3c585c855ec8d2d52aca7cd618eee65262e18f25f47d7129200542c35",
+  "claims": [
+    {
+      "id": "claim_805d130f2cf64e2e8057db4c8d76f322",
+      "statement": "Stars use thresholds of 0.95 for three stars and 0.80 for two stars, and lesson XP combines 10 per first-attempt correct answer with perfect, first-perfect, exam ×2, and weekend ×2 multipliers.",
+      "evidence": [
+        {
+          "resource": "repo://packages/core/src/economy.ts#L21-L76",
+          "version": "repo-lines-v1:sha256:fc6d19ef0ae4bb6ccd7e80e094cc26781a82d7a66ce53118a56c0fe1abdb7855:eyJzZWxlY3RlZExpbmVDb3VudCI6NTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRlYzA3MGJjZWI3YWViM2M4NDUxYmJhMTAyY2ZmMGEwNWE5YWRiYzk0OWUxMTc0YTgwYWYzMzI3ZTc0YjQ2N2MiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjJjOWJhYzM0M2Y3ODk2YjBkZWIzMTI5MThkN2ZkYWNmNWJmN2UzZmFjMmRjZjQ4MTE3YzFhM2Q0NzVkZjJjMmUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjkxM2NlYWRmNmJiNjdhMDc4ODk3OTM0MDc2YTQ1MjU5Y2UxNzU3MTg5M2U1YmMzNGNhYTk3ZTBiMTBiYzhlOTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_883dccb8abc6450f8f6472e6f8e1a8b2",
+      "statement": "Lesson gem drip is base 3 plus a 2-star or 3-star tier bonus, a first-ever three-star bonus of 15, and a 20-gem first daily-goal crossing, without weekend or exam multiplication.",
+      "evidence": [
+        {
+          "resource": "repo://packages/core/src/economy.ts#L84-L118",
+          "version": "repo-lines-v1:sha256:b368518e0398c05e36cf9bd3ead45a5f29cbe89ff24e30fc1da638d9c20a6665:eyJzZWxlY3RlZExpbmVDb3VudCI6MzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAzZjdlNDhhMTZiODhkM2RkNjIyOGFlZjU5OTg0MmQwOGEyM2U2MWE4NDFkZTY0MGQ3YjljOTA5Y2IwYzVhMmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjhjZjM4YTk2OGJlOGMyOGM2NDlmOTkwNWQyODRiODczMWZjNDU5OTM0Yjc0ZWYyNmMyODdiMGU3MWUzZjU1MDUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImIyYTc0M2E4YzlkNWU1NTUxYzdhOWE1Mjc0MDhmZDAzNjNkNzhmMDMwZmFmZGYzNDA4Mzg3NDJiZTk5MzZlY2YifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_dd6e00b6e7af4b369f44e9f688f8eedb",
+      "statement": "Hearts cap at 5, regenerate one per 300 seconds, cost 350 gems to refill fully, and a review round can restore one heart when at least five first-attempt answers are correct, limited to once per day by a ledger.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/store/progress.ts#L1318-L1395",
+          "version": "repo-lines-v1:sha256:1289ae53d778256f1049482d4b332334cce3f4f8f606b5216b4dbc26bdac94f9:eyJzZWxlY3RlZExpbmVDb3VudCI6NzgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc1ZjgyMTE0MjNjYjMyM2JmNjdmZmRhZDM5ZTMwYjBlMmY2ODg2MmUwODQxMjhlNDFiNWQ0MGU4OTY5ODY5MjMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU4OTAwMDY2ZTZhMzI2YjE5ZTE5NGZkNWJjMmVhZTQ4ZTcwMjNmNTY3MWQ4M2M1NzA1YzA1YjRlZWU1OTdlN2MiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIwMWVjNzZhM2ZjNjc2YzdjZGY3MDA0ZmQzMTVhYmUxN2UyZTk5ZWVmY2I4Mzc3NDRhYjA2MWU5YjMzNjBlYjMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjA2YmFiNzAxNzRlZjQ0ZGUzMWMxMDc4NjFjZjUxZjFmMjgzYTYwNWQxMzA1MTkyMTY1OTU4ZjQ0NDIyMzk3OTAifQ"
+        },
+        {
+          "resource": "repo://packages/core/src/economy.ts#L120-L147",
+          "version": "repo-lines-v1:sha256:3e5f69233c376fcfec8b97be3521ead1508638543ac9e025b061b1c2a9c85920:eyJzZWxlY3RlZExpbmVDb3VudCI6MjgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAzZjdlNDhhMTZiODhkM2RkNjIyOGFlZjU5OTg0MmQwOGEyM2U2MWE4NDFkZTY0MGQ3YjljOTA5Y2IwYzVhMmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUxYTFjNjk0ZTNiMzY0OWRkZTM2Y2U5OWRhZjEyYjI0ODE2ZGQ3ODY4YTA3NmU4MDBlYTY1NTNjY2Q0NTViOTciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRhZDM5MzQxOTY5NDFlZTA4NjM1ZmJlMDc2OWUxYWQ4MWU3MzY2M2Q1YTAxZGMwMDI2YmM5M2ZhYmZkN2IyN2EifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_03b3f04f4745442c978dd0ffb2f477bf",
+      "statement": "Streak advancement handles same-day, next-day with Monday shield top-up, multi-day shield consumption, and reset; shields cost 200 gems, cap at 2, and streak make-up costs 50 gems.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/store/progress.ts#L1673-L1693",
+          "version": "repo-lines-v1:sha256:e6e91cf3388ccd84cef356478ab38e4f25be42c37336dfb53cbde90eca1e8fc9:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIwYmFjMDZhNDRjYzdkY2RjMjhhNDAyNzE3ZTE3YWQxMWI0ZmYzMzExMDRhZDZjMTk0NGQzYjZmNDFlZDlmODUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI5NzhlMjUwM2I4Y2YzN2EwNmY3ZDZmMGEzYTZiNmZlMzU2OTFmYmNhYjUwYjg3NzVjYWI2ZmFiYzcxYzU5MmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjEzNDZjYzc5MzU0OGJjNDQwYTE0OWQ1NDhlMzcyYzVjYWM4OWJjYWIzZWU5ZDAzMmEyZjU2ZDE3NzViY2FjM2MiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjliY2RjZGFlOGE0ZGRiMDZlM2Y1YTM5NTczZDQ0ZmRkZDYxMzUwNWRlYTIwNWQ0NGIxMDhiMWUyNDI3MmJhZGMifQ"
+        },
+        {
+          "resource": "repo://packages/core/src/economy.ts#L149-L202",
+          "version": "repo-lines-v1:sha256:3ff19050acbf45ad74d15aefdc5a61ce1cdd191570271bb462e2bef9635799c1:eyJzZWxlY3RlZExpbmVDb3VudCI6NTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAzZjdlNDhhMTZiODhkM2RkNjIyOGFlZjU5OTg0MmQwOGEyM2U2MWE4NDFkZTY0MGQ3YjljOTA5Y2IwYzVhMmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjUzMTdhODZhMzgyZGEzMjljZDQ4ZGE5ODY3NDY3YzRhYjlkZGQ3NmRkOWE5NzFiYWY4NDg4MWU5YTdjZDExYzAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjY3MmM0ODI0ZDcwMzUwOWU3YWE0ZDA2OWIwM2RlYWNiZTc5N2IzZmU5ZjNlZDJjNjUxYTU4MGJhNDk4ZjM0MmYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_47dfbcf73b9447e09dffece44b39b40e",
+      "statement": "Streak milestones at 3, 7, 14, 30, 60, and 100 days award gems once, and daily login rewards use a streak-indexed table with a once-per-day date ledger.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/store/progress.ts#L1641-L1667",
+          "version": "repo-lines-v1:sha256:d71336070a463bd9c9c729e948e5509d171cf1414ca4bdf46a56d59f61001275:eyJzZWxlY3RlZExpbmVDb3VudCI6MjcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc5MzJkY2JiZDAwZGU5ODAzNGM3NDIxNTkyNWM4NWNiNDM5MjBmNzFiOGUwZjI5MWRiOTM1OGY4ZjJkNGRkOGQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI5NzhlMjUwM2I4Y2YzN2EwNmY3ZDZmMGEzYTZiNmZlMzU2OTFmYmNhYjUwYjg3NzVjYWI2ZmFiYzcxYzU5MmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQwY2IyNzAyOWYyNTc3NjNhMTY2MDEzZmVhYzhlMTY3YWY5ZmM4MWQxMjdmNGY2NTAyZWQ2YTQxNmI1YjEzY2IiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImIxY2QzY2RlYTg3ZTcwNzdiYzMxZTcxY2NjZWJjN2FlZTNmZTQ1YzlhM2NhYjc2Mjg0NTJlM2U4NzUxM2QxMjYifQ"
+        },
+        {
+          "resource": "repo://packages/core/src/economy.ts#L204-L235",
+          "version": "repo-lines-v1:sha256:c911414f24bc344c66ef8cc8e04ed04840a119dd299ba3220a07446fea733e8b:eyJzZWxlY3RlZExpbmVDb3VudCI6MzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAzZjdlNDhhMTZiODhkM2RkNjIyOGFlZjU5OTg0MmQwOGEyM2U2MWE4NDFkZTY0MGQ3YjljOTA5Y2IwYzVhMmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjBmZDJkNDdiYzRlNjMxMTcxYjQ0MGU2N2JhYTg4ZjIwZGVmZjI1YTI2NTFlMTE4ZTA4N2QyYzY4ZGI1MjAyOTQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjE3NGU0NzNlMmUyZmNhZWZiZGE4ODk0MWM3NjQ5MjQ1YzNhNDY4Mjc2ZDUzMTQ5NmU5MmY4Yzk0MjRiMGQ4YmMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_92875ce8809e402db0b379ad288c511a",
+      "statement": "Daily quests deterministically generate three quests per date with an XP quest first and two distinct others, and claiming requires matching today's quest, meeting the target, and an unclaimed date-scoped ledger key.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/store/progress.ts#L1590-L1639",
+          "version": "repo-lines-v1:sha256:fc8eecf8580e5b0795e87ac0f351981566128dc6b03da834cfd42da60ab8c49b:eyJzZWxlY3RlZExpbmVDb3VudCI6NTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRlM2QzMGI3NTVhNmNlMmQ2NDc3ZDgwOTU4MTQ4ODMxNzU1Mjk2MTNhMmNkODRmOWZkM2Q1NjZiZTVjODExYTkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI5NzhlMjUwM2I4Y2YzN2EwNmY3ZDZmMGEzYTZiNmZlMzU2OTFmYmNhYjUwYjg3NzVjYWI2ZmFiYzcxYzU5MmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjBlMmRhOWJmYmIzNDRiNjM1MmI3MDIzM2Q4ZWNiZTAxMTFlMzVjMmU4ZWZjMGFiZDI0ZTA4ODhhNGEzZWU5ZDgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjZiMzQwYmZjZTJlNWI0NzI2ZDdjMDJiYTNkZDRkOTA2ZWUzMzVlODdkY2UyNzRjYTczMDVhNzlkYmJhZmRjYjYifQ"
+        },
+        {
+          "resource": "repo://packages/core/src/quests.ts#L43-L85",
+          "version": "repo-lines-v1:sha256:108d27b200fb71e8e05d172db2ae35212641c0f9b70be3e76f36bdd07180f2b3:eyJzZWxlY3RlZExpbmVDb3VudCI6NDMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZiNTgwZTk2NGY4M2E0NzNmNDNkNDQzODQ2Mjk0OWQ2OGI1NjAwZmRhNzg3ZjE2Mzc0NWQwMGRlODljYmYzNmEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_6ee25b598d3a442f84f457888e77d042",
+      "statement": "Achievements are defined as data with progress functions and gem rewards, and the watcher writes a permanent append-only ledger so achievements cannot re-lock and rewards are paid once.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/components/AchievementWatcher.tsx#L1-L81",
+          "version": "repo-lines-v1:sha256:9748bbc6b1d1b56ac8dc60946646ccfd6edff9eaf9bd21194048d7a23e33f70c:eyJzZWxlY3RlZExpbmVDb3VudCI6ODEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ1ZmYzZTg1ZDY3MTVhN2E5ZDBmNmMxYjMyZjMwY2Q4Y2IxNDRjYzc5YzhhYmFlOTUzZWExMzc4ODlmYWUyZGUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFmYmI5ZTAwYzBhODBjZDgzNTEzNmYzMTQ1MzFjMDQwM2I2ODdjNzBjOGE2NGMzMTJlMmNiNTE0MzgxMWI1OWYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRjOWFhMDQ2MmE5MjkxMTJmN2Y1ZDY5ZTE5MGFkYWIyNzM0YjExYzEwN2M4MTZkNjE2MmRiZGY5NGQ1MDU1ZDcifQ"
+        },
+        {
+          "resource": "repo://packages/core/src/achievements.ts#L50-L267",
+          "version": "repo-lines-v1:sha256:0a586d6e94c995a77a4172f1af498469a88334764f6102459ce4df0cd43baaa1:eyJzZWxlY3RlZExpbmVDb3VudCI6MjE4LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIzMjBiMmVkZTEyMGU3ZTUwNWIxOWQzOTFhZGNhMzk3NTY1NWRlNjAyNzcwMTI2NmUzYzlkMDNmNTdmZWI0MTBjIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI0MTJjYTM0NWNjZjc1YmY5YzA4MDZiY2U2OTViZThkZTgwOGI3OTk4NDI1MWE3YTU0ZDIwMmNmNjEwMWRkNDUxIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI3ZDUyNGQ5Njk2ZDQwMTU4OTEzNmZhOGM1ODMxYjZjMWQzNTc4OWFhMDBiYjhiOWNhMTQ4OGFjYTVjNWI4YTgxIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiIyY2NkZGNjZjQwZWYxMGEwOTg5YTM2N2YwNWMwODcxYzk1OTFiMzQxMzNmYTM5Yjg2ODNlNDIwN2NjMTIyYjhhIn0"
+        }
+      ]
+    },
+    {
+      "id": "claim_c8d50439577943a3b17512bec32e0530",
+      "statement": "The league unlocks after 10 lessons, places the learner with 15 deterministic bots in a 16-person weekly group seeded by week, tier, and device salt, and recomputes live standings from weekly XP.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/app/league/page.tsx#L157-L181",
+          "version": "repo-lines-v1:sha256:271e141197414e59697bba25b5a0f4902c15cbaf17b617c50321caa13eb733ae:eyJzZWxlY3RlZExpbmVDb3VudCI6MjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU4OGM5MjNjOGFjNWUxYTI3NTViYzg2M2RiZGU3ZTVjYjBmZjlkZmUwOTBjNTA1MjEyMzE0ZDhjODJjYWUzZjYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFlZmJmZjlhMDBkZDg1NTM1MGY2YTljN2Y0MzQ1YzczYWUzZWVmYTc3YzBiNDc0ZDY2YjljMWE1NDI5NDUxMWMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImRiMjY5ZDI4ODhjMGE4YTNlYjUwY2NhZjE4NzQ5MDJhYmRlYTc4MmJmNWMzMWYyZjhhNWRjMzc0NjVkN2FmODEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImFmOWQyNmM1NGQ2NTc0YTlmZWRhYWQ3MmE2NTE4NWIxY2U0N2M1MTFiNTk0YjYwYWMyNGU4ZTRkMzVkMDIwNzMifQ"
+        },
+        {
+          "resource": "repo://packages/core/src/league.ts#L70-L181",
+          "version": "repo-lines-v1:sha256:d02d916f402d9bc493043d5dc2b4c5f0a7cd9e07a1e0a2050de6767c164b711f:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEyLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI1OTRhNTU1YzU4ZmJhOGIyYjQ4Y2U0ZWVjY2EwNDBlOGJiMzc5ZDYwN2M3MWEzZDQ5MGM2ZTIwODUyODhiMDM4IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI2NDkyYTdhMDlkOTk4NDIzY2I4ZDQyOTNhMTk4OGM5ZjY4ZmM5NTZjZDEzMDhhZTJiMGMzYTc1OWEwZTFiZjc4IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI2ZjZjNGU5ODQ4ZjAwY2Q2ZTJhNzgxNGJjMDFmMjI1ZTRkNTYyNmJiYTJkNDEwNjg1MzlhNjg5MmZkMDBjNzFhIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiIzNDdmNDg0NDNmMjNjYjg1MjJlMTI1ZGE5ODhlMDdkMjllZWI5ZmRkMDk3NDk2ZTkzMDRmN2IwYjlmYTNkZjU1In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_049ad0b976224891b30362ab07a032cf",
+      "statement": "League settlement promotes the top 5, demotes the bottom 5 with tier caps, awards rank gems plus a promotion bonus, and surfaces the result as a pending weekly report modal.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/components/LeagueWatcher.tsx#L26-L54",
+          "version": "repo-lines-v1:sha256:08d4f34a844dd2158585d495b2811e70415b02f5f213824c41656576792492ea:eyJzZWxlY3RlZExpbmVDb3VudCI6MjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJjNmQ3YjBhZTU3MTIwOTlkNGExMDg5NzFjMDY4Y2NiYzAyN2FmZjQ2M2QwZjk0ODhlZWMxNGM5NWJlNmU2MjMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI2NDUyYzQ2YTg5YjEwNTI1MDBiOTZkODc2MmJkYTY3MjY3YjMzYWVkMWQxZWFlODIyZWNhYmMxMTFhM2M2NGIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImVhODI0NjUxZjMxMWZlZmUxZGVkZDE3ZjNlNjUxYzIxNzU2NWJmZmVkMjE5OThmMzYxZWJjYzEwYmZiZTk4NjQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg3MGIzMzljYTY5Yjg1ZTBhYjUxZTcxYjBkZjE3NzA0NGNhMWQ3NDI1YWQ2MDk5MzJhN2YxODY0OTdhZTZjYWMifQ"
+        },
+        {
+          "resource": "repo://apps/web/src/store/progress.ts#L745-L808",
+          "version": "repo-lines-v1:sha256:a9c62885fed0751d698f84a20ad009687112fc8cb91663a3e62b29d6d8fd1584:eyJzZWxlY3RlZExpbmVDb3VudCI6NjQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY4MWY4MDMzODM2Njg1NjU3M2JhOWIzYmQ0ZjNkNjA2YWQ5N2JlNzkxYjI2NzI1ODJhYTYwMWJhOThjMjc5ZTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI5NzhlMjUwM2I4Y2YzN2EwNmY3ZDZmMGEzYTZiNmZlMzU2OTFmYmNhYjUwYjg3NzVjYWI2ZmFiYzcxYzU5MmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUyZWE0NThmODY4NDQ4ZjFhZTJmNTJhMTM0NGFlMjBmZDQxOWY0MjUwNGQxN2Y4YjkyOWQ1OTRmZGM0YjBkMTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjBjZTRmNTcyNjU0ZTEwZjYxNWEzOWFiODUxNWY2NDVjYjkyYWIyYTY4Njg3MzI1ZDU2ZWViNmM2ODMwMjc4NTMifQ"
+        },
+        {
+          "resource": "repo://packages/core/src/league.ts#L249-L288",
+          "version": "repo-lines-v1:sha256:efe7c40a8a7ecbec6b72b08dbe65d6b1fbe4865552a39deaead197b92cd22d9c:eyJzZWxlY3RlZExpbmVDb3VudCI6NDAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAzZjdlNDhhMTZiODhkM2RkNjIyOGFlZjU5OTg0MmQwOGEyM2U2MWE4NDFkZTY0MGQ3YjljOTA5Y2IwYzVhMmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVmNTkwMDc3ZWZjZTM0MzI3ZTU4NWMzMDQ1ZDYxYWEzZTFkZTg4MTk0MmU3YmVlZjJmMjYwZDU4Y2ZlNzk4ZTAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjAxYjg0NjJlNjZiZGQ0ZGE0YTM5MGFjODg1ZTlmM2UzYTAxZWMyZDNlODBjNTgxZmNlZTFjMTU2MzQxZmRjZDMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_e05d0b75cecf41dbb76e10f5f783cda8",
+      "statement": "Cosmetics are purely aesthetic, all purchasable with gems, have no premium-only items or stat effects, and purchase automatically equips an owned item.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/app/shop/page.tsx#L1-L15",
+          "version": "repo-lines-v1:sha256:e9120ba7fd7c6f1aa7b0015b20657c73916336c357b6306af924337b226ed5b8:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ1ZmYzZTg1ZDY3MTVhN2E5ZDBmNmMxYjMyZjMwY2Q4Y2IxNDRjYzc5YzhhYmFlOTUzZWExMzc4ODlmYWUyZGUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk3MmE0MjkzODJiMmUxNDcxOGUwZTM3YjA1NzBhOGExNzAyOTkxZmNkODQ5OGNkODQwNjBhOGJmNGYwNTAxN2IiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU0MjBlNzBiZjllYjFlZTU4NTE3NWI0MDQxNjgzYjg1Yzk2ZTE2Zjk3ZjJmMzZkMDliYjRlMDZiMDY1M2M0MTAifQ"
+        },
+        {
+          "resource": "repo://apps/web/src/store/progress.ts#L1459-L1491",
+          "version": "repo-lines-v1:sha256:48273a82bc216c22d8f00be2228e61f6bc4128b5096dce4ed2c82d367d442271:eyJzZWxlY3RlZExpbmVDb3VudCI6MzMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQyOTMxZDg1ODZhYTlkNzdhNjEwZTQ5ZjM4NjRkYmVjZmVkODFkZTE3ZjI1MDc0ZDA1ZDdhMDIzNTU3OWNhMDIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI5NzhlMjUwM2I4Y2YzN2EwNmY3ZDZmMGEzYTZiNmZlMzU2OTFmYmNhYjUwYjg3NzVjYWI2ZmFiYzcxYzU5MmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjYxY2NkY2NiN2FhYTNkZGI1NWI1NWRhYjc2ZGI5ZDQ1NmUxYzM0YjYwNzIwN2UwMjcwZGE1NzU5MzExNGUxZTgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjkyZTQ2YTVlMDI4NzczNTNlZjkzODFhZGE3NWE0MWZhM2U3MjI2ZTNmZDA0NTM2ZjhmZGZmODc0ODc5ZGIzZDAifQ"
+        },
+        {
+          "resource": "repo://packages/core/src/cosmetics.ts#L1-L14",
+          "version": "repo-lines-v1:sha256:109482b45ba6c92eee43b7247ccbbf51717e5510bc0b0f806e7794702a05d928:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk3MmE0MjkzODJiMmUxNDcxOGUwZTM3YjA1NzBhOGExNzAyOTkxZmNkODQ5OGNkODQwNjBhOGJmNGYwNTAxN2IiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImY3NmYxZjQyNzBkYmE2MTRkOWMyYzU4OWM0NWU5YmE4NjVjZDJkMzg2MmZjMzk3OTQxOWUwMjZlMjAxNjU4NTYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_03d906e605cb40b099f020738bebc976",
+      "statement": "Parental time limits track only visible-page time with a 30-second flush and a ten-minute cap per flush, use a separate date field, and treat zero as unlimited.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/components/LessonRunner.tsx#L486-L531",
+          "version": "repo-lines-v1:sha256:066faaa2bd913ae5358d7633e322611f1ce61c88c7eb4b5710056a53b5bff0db:eyJzZWxlY3RlZExpbmVDb3VudCI6NDYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIyYThiMmZlN2ExNTVmOTlhNDYyNzk2NTUyODNlNjhkM2U2YTExZmNkOWVlZDc0NGU4NjRlYmI3MGVkYTNmYjMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY4ZmI5YTgzZTVjOGExNzUyMjlhYmI0ZTZlYTU5NGE0ZTk1NDg3ZTI4NjQzNjM3OGZjNDFlYzM1Mjc5OGNmNTkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg2YTlmNmQ4MTEwMGVhYmIwZDRmZjNmZjE3ODMzNjNiZThhZGI3ZjFiZmJjOGVlOWM2YjJlNTc3NGNlZGNiOTkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjJkOTExYWI1ZDNkMmQxMDI3YTBjNjg4YjllMTAxNDFiNmE5MzBiMjA2NGQ4NzM2ZjBkNGQzOTBmYmE0MDYwNjQifQ"
+        },
+        {
+          "resource": "repo://apps/web/src/store/progress.ts#L1497-L1528",
+          "version": "repo-lines-v1:sha256:19d09bdcd0db7f0f413467cab5de11e8ab59447a03a383364a37a849fa478317:eyJzZWxlY3RlZExpbmVDb3VudCI6MzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJmZWNkYmFjMGEwOTNlMmIxMjA5YTk2NTUzYjAyMmEyZmVmZDc4ODVhNjg0ZGY0OTgxNDk3NzJhZmI2MjEwOGUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI5NzhlMjUwM2I4Y2YzN2EwNmY3ZDZmMGEzYTZiNmZlMzU2OTFmYmNhYjUwYjg3NzVjYWI2ZmFiYzcxYzU5MmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIyNTg2NmQ1MTRmNzA1NTBiYWQ5ODc4MTQzMTE5YmE0M2ViYTgxODYyZjMyNDM1MjFkNmIxMGExZmVkNTc5NjMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjE3Y2E0MjIwN2Q0ZDk1ZGU3OTZhYThhODFlYmY3NjliMTJiYWRiNDA1NzQwYzlhYjdmMmZhNzU3MDc3NzQ5MTkifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_63f3a32588174bf1a5723ffbca6a09a0",
+      "statement": "Daily reward, achievement, and league watchers defer celebrations on immersive lesson, jump, review-runner, and reader routes while still updating state and rewards.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/components/AchievementWatcher.tsx#L12-L14",
+          "version": "repo-lines-v1:sha256:2bebc9a07f8ecea6414f7f57d62bf25bc5335a7df48eb08570188acd8eea56e9:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDVlMzIyODJmYjQ3YjZjNWIzMThkNDQ0ODA2NDJhOWRkNDAyZGYwMWYzN2Y2NjQ4ZmNmNWVhNmNmMWQ3Zjc5NyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYTc1OTNkZDM4NjkxMDkxYjc2ZTZhOTc1ZWZjZjQwY2RjYTkzZGFkMWQ0NjkxMzg2MGMxYzY5MWEwYjU1ZTk0MCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNmY3NWYyNmZiZDdmMDc0NDJiYjY0Mzk4NTMwYWE2YzgxNGE1NDZjMGVlNDA1YmEyNTYyODhiYjk3OGEwMTRiNSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMmFiZTdmYjA1MTA3YTk1OWZmMWQ3NThiOTY5Yzc1ZGNjOWY0ZWViOThhNTU2YTYwM2ZjYWE1NzI1MWUzY2U4MCJ9"
+        },
+        {
+          "resource": "repo://apps/web/src/components/DailyRewardWatcher.tsx#L83-L121",
+          "version": "repo-lines-v1:sha256:7fe7770891e1c1aa206f251749c6ea0db6f305e6f54b714ba40b415a7ad5428e:eyJzZWxlY3RlZExpbmVDb3VudCI6MzksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU5NjZmYmZhODg5OThkYTc0NjU2YzUwMTk0OTU2YzI1ZjA4NDk0NTc2NjBjMDA5ZmU2M2QxZTlmYTlkYzkzMWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRjNzhjODkzMWZjNjhhYWFhOTk2MmUzYjI3MmIzYzJhZTE4ZTU0MjQ5Y2I2ZWZkMjJkMjNmNzYyMjFhNGNmZjYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk3ZDg2MzJlNTRlOTI5OGFiYjk1ODcyN2UyZDUxNDA4YWJhZjEzNjYwMzUzNzkxMDE0MGFiZjY1YjMwYWI2MTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImY2MDJlZjM4NWJjZmFkZmVhYmFkMDU4ZjgyYzBlMGY4OWUyZDIzOTRjYTcwN2NmOGI4NWI5MjdmZTIwYjhmMGUifQ"
+        },
+        {
+          "resource": "repo://apps/web/src/lib/immersiveRoutes.ts#L1-L32",
+          "version": "repo-lines-v1:sha256:cdb7122e6ba92f70e1ebc6cb5dfa7475356c5877f4861c1989cde9cdcca99875:eyJzZWxlY3RlZExpbmVDb3VudCI6MzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.7.2",
+    "at": "2026-11-04T02:58:40.844Z"
+  }
+}

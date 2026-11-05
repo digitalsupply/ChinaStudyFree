@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:c25ccc8602b599c6f8069ce35d13db6e5495a46f04e62158c373038babb030b4",
+  "claims": [
+    {
+      "id": "claim_b5d3a6e0ff8a4837bf477903104fe3e4",
+      "statement": "The server reads host, port, CORS, LLM, DashScope TTS, Edge TTS, Gemini, and static-directory settings from environment variables and serves both AI endpoints and the static export.",
+      "evidence": [
+        {
+          "resource": "repo://apps/server/.env.example#L1-L29",
+          "version": "repo-lines-v1:sha256:33b2c7219cbc5a0875f726451186984d9a791654bed9a4c00b88f6c83da79c71:eyJzZWxlY3RlZExpbmVDb3VudCI6MjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJkM2YxOGE5MmFiMDc2Yjg4NzllYzlhNzJhZWE4MGJjYTUzOGNhZjhiYWVkMjhjMTdiNTIzZmUxYjUwMDVlMGMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjgwYTE1YWUxMjc4YjcxZTA3NDA0YjllMjI3YjhhZThmMGQ0ZWE0ZTVmZTk0YjU1NzYyZTc0ZTk3NTliYTFhZmUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://apps/server/src/index.ts#L24-L26",
+          "version": "repo-lines-v1:sha256:ff832e8482d9ce1e6b31fdf26d6e18d564c5029cc52d4588d46d78419a100491:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZDg3ZWU5ZmJkZDBjZDA2YzdhYzVjNTI4NTU2ZDY3MzU3NTQ3NDM4ZmZkMGNiM2IzOTBjOGM1Nzc5YjUzNTU2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNTdjNDNkM2QyMTUwN2NhMTE1MDNkNTkxNTcwMzk0ODk5MWQwYTRmMTkwMDE1ZGYxODI2NjM2ZTVmNTE4MWIyYiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiODQ4NWZiOWE3MjI2ZWQ2MzdjODMxNjAwNzVjNzM0OGFkOWIzYjc0MWIyMjAzNDQ0ZjRhZmRmODg2YTZlNzM0MCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNmJlYzUzODcwNzNiNjQxMjAzZWRiOTUzNzE5ZGRlNGM2ZmJiOWJkNmMxMTY2ZTFlMmY5ZWFmZDM0ZjU5ZmE2OCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_3d8eb96c78874baca5a58dafb2fbd6b3",
+      "statement": "The health endpoint reports ok, version, configured LLM/TTS/image capabilities, and the active TTS backend without exposing keys or provider URLs.",
+      "evidence": [
+        {
+          "resource": "repo://apps/server/src/index.ts#L127-L138",
+          "version": "repo-lines-v1:sha256:eedff6f6d073171d245b2edbf3370f8f94eee0649a4b1f889a34e9a74a73670a:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM0YWIxYTI4NTVhMWVjOGY2MTU3ZmIwMGY2ZmNmZGI2ODk5ZDQ2YjhmOTM4MTJmYmFmMGJjMmI1M2RiNzAxYTUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY2ZjViNDBiMTU4NDU3ZDE3ODY0ZjIxNzkwNzg2ZGQ1YTJlY2RiNjRiNjZhNjUxZjc4OGQ0ZTI1Y2QzMzAzZDIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjY2MTdmYjYzYWU5YjFmYmY4OTI0OTUwMjkyYjRlMGIzZmMyOGQ3YjNmMmE2NzU5YzgyMDkxYmM4YTU5YjdmMzQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjM2OTkxZjNhNmYwYjFkNzg0YjUzZDI4MTM3MDdiMTYwZTk4NjRmM2ExNjk3MDFlYjg3MmIxNGFmYTkzMmZjNjMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_129389afa2354bf78e417f5a0e7321bc",
+      "statement": "The quiz endpoint clamps count to 1-15, asks for JSON single-choice questions with four options and a zero-based answer index, and returns a questions array or a not-configured/provider error.",
+      "evidence": [
+        {
+          "resource": "repo://apps/server/src/index.ts#L140-L180",
+          "version": "repo-lines-v1:sha256:5f7b903e277390dfd4b276edac9cdf77f35dc2e5fbdebd55a8259bdd5b957f03:eyJzZWxlY3RlZExpbmVDb3VudCI6NDEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVjNzAzMTQ4ZjYzNGUwODU5NWEzYjE5MWI3ZDkxZWUxZTZiYTdmODYyZGJmNGIwZWU0ZDE4NTUzOGI1MjhmODAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY2ZjViNDBiMTU4NDU3ZDE3ODY0ZjIxNzkwNzg2ZGQ1YTJlY2RiNjRiNjZhNjUxZjc4OGQ0ZTI1Y2QzMzAzZDIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImI3NzlkMTE4ZDZlM2NiZjQ1MDUzOTc0OGRlZTdhNDMwN2FjYmU2NDQ2Y2JhMjk3ZjI3NjBmYTVkMGJiYTFiYzIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImIzODkxMTg4NTI2NTk1ODAxZjljNDg2MjM3YzI1Y2IwYWIyOTA0ODZmNzdlOTE4MDY5ODk1YjI5NTYxY2FhMTAifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_f3657f4ff02e44e1aa557154e509f575",
+      "statement": "The explain endpoint requires a question, builds a short child-friendly prompt, and returns explanation text with 400 for missing input and 501 when the LLM is unconfigured.",
+      "evidence": [
+        {
+          "resource": "repo://apps/server/src/index.ts#L182-L204",
+          "version": "repo-lines-v1:sha256:5ace10637fc713e1cf40eec12b4ac4e92ea69b2e913cca206f3e5a124a817268:eyJzZWxlY3RlZExpbmVDb3VudCI6MjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ1NjUzMGRhZGY4ZTljN2U0OTU4N2JjMTY2YzM4ZGFmNjVlOGVhYzdlOGJmN2M3YTc0MmRmZWE2Njc2NDdjM2YiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY2ZjViNDBiMTU4NDU3ZDE3ODY0ZjIxNzkwNzg2ZGQ1YTJlY2RiNjRiNjZhNjUxZjc4OGQ0ZTI1Y2QzMzAzZDIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImViMWVhMTVhMGY3YjFkNzc0MWMwOTJkZTgwMmQzOWZkYTQ0MzRlY2YwNWY5NDM1OGM2ZjM2OWNhOTExNmUyMmYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjFmMDM3YzEwMDhhZDQ4ZWIxOWQ4M2YyNzk1YWQ4YzE1MWUxOGVkYzJkYTMzNWM5ODc3MzQ4ZTMyZWI1ZjJlZjUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_cae7bafc8f704c33b9f6d18a8b23798a",
+      "statement": "The story endpoint clamps sentence count to 4-20, returns a JSON story with comprehension questions, and attempts a Gemini illustration that is omitted rather than fatal if unavailable.",
+      "evidence": [
+        {
+          "resource": "repo://apps/server/src/index.ts#L206-L249",
+          "version": "repo-lines-v1:sha256:2ef95a3123a31e5e9130c0e9e8436016910a656a120072406a819edfba2036af:eyJzZWxlY3RlZExpbmVDb3VudCI6NDQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY2MWUzOTg2MDNjYWJmYzE4ODExZTQ3YzAyZmFhMTQ2YjRhYmRlZDIwZjgxODEzZjIxMDhmNGY4YzljMTI1YzEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY2ZjViNDBiMTU4NDU3ZDE3ODY0ZjIxNzkwNzg2ZGQ1YTJlY2RiNjRiNjZhNjUxZjc4OGQ0ZTI1Y2QzMzAzZDIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImViMWVhMTVhMGY3YjFkNzc0MWMwOTJkZTgwMmQzOWZkYTQ0MzRlY2YwNWY5NDM1OGM2ZjM2OWNhOTExNmUyMmYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjY0YmI3MjI5ZThjODRkN2NmYmIxZDAyYmQ5NDY4YzQ0NTQyMDBhOTUwMjQxNDUxZWY1Njc0MDVjZDdiNzI4ZTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_452abb801adb4410a77edce829a0e0fb",
+      "statement": "The TTS endpoint requires non-empty text, returns raw audio with an immutable one-year cache header, and returns 501 when no TTS backend is configured.",
+      "evidence": [
+        {
+          "resource": "repo://apps/server/src/index.ts#L251-L265",
+          "version": "repo-lines-v1:sha256:4d5d93f3b132157d44a40a465e1b6171cf6b86a685471fdf320d484639bf6197:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRkMmJmMTI2N2I2YTRiYzc1MDcyNzNmN2UxYjliZDUxYzZjZjVkOTFiMDc2NTRmM2I2ZjRkYjNiYmVhNzYxY2QiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY2ZjViNDBiMTU4NDU3ZDE3ODY0ZjIxNzkwNzg2ZGQ1YTJlY2RiNjRiNjZhNjUxZjc4OGQ0ZTI1Y2QzMzAzZDIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImViMWVhMTVhMGY3YjFkNzc0MWMwOTJkZTgwMmQzOWZkYTQ0MzRlY2YwNWY5NDM1OGM2ZjM2OWNhOTExNmUyMmYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImE5ZTJmMmRkOWFmZDI3YjQzYWZmMTU1ODExY2MzYTVmN2Y3NmY2MTA0ZDBiMzI1NjcwZGRlYWE1NTNkMDAxZTgifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_2e88b541d9af401fa482be4d5faebc45",
+      "statement": "The LLM adapter is a minimal OpenAI-compatible chat-completions client with optional JSON response format and max tokens; it tolerates fenced JSON output and throws on non-2xx or empty content.",
+      "evidence": [
+        {
+          "resource": "repo://apps/server/src/llm.ts#L26-L68",
+          "version": "repo-lines-v1:sha256:72344b29db357c3190c623fc9a6fb158ae0e0804d6b978813c74ec24f8bb2ad2:eyJzZWxlY3RlZExpbmVDb3VudCI6NDMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhMTI2ZDZhOTY4NDVjYjBiNzE0ZGMxYjhhMjI2MTg3ODhjYzJmOGMzMDIzMGMwNmI4YTcxYTBmMzc5YzVkZGYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZiNTgwZTk2NGY4M2E0NzNmNDNkNDQzODQ2Mjk0OWQ2OGI1NjAwZmRhNzg3ZjE2Mzc0NWQwMGRlODljYmYzNmEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_c381a0d241c04b908913871b79dd6e25",
+      "statement": "Static hosting mounts the export with HTML extension fallback and a non-API catch-all that serves index.html for deep links, while an absent static directory leaves the server API-only.",
+      "evidence": [
+        {
+          "resource": "repo://apps/server/src/index.ts#L267-L278",
+          "version": "repo-lines-v1:sha256:0309892069f4a3a930913274f5a8cb82a2f66fb9e197feb34d476f154a40fe96:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImYwMTQ4YWY5MTM3YTAxZDYyYjBkNTRhY2E4OTU1N2E0MTY2YjAxZjMwNDZiOWE1Yjk4NmQxM2JlMTZlYTljYTYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImViMWVhMTVhMGY3YjFkNzc0MWMwOTJkZTgwMmQzOWZkYTQ0MzRlY2YwNWY5NDM1OGM2ZjM2OWNhOTExNmUyMmYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjA1NDU3ZGJlNTNmMTJlNTNjYzNiMGE1MjNmZWUxNjRmMTJmYWE2NjE5OTFiZDE4MzQ5OTAyZWM4MzgzYTIxYTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_492ab9f0e52a4b03a387f074b0a306cd",
+      "statement": "Static directory resolution prefers an explicit STATIC_DIR, then the path relative to the compiled file, then working-directory candidates, because the file-relative path is correct across development, portable, installed, and Docker layouts.",
+      "evidence": [
+        {
+          "resource": "repo://apps/server/src/index.ts#L28-L71",
+          "version": "repo-lines-v1:sha256:341fa540763e2e98bc76d3b5fb8715468533db59069be9d23bf0478c5e22bf49:eyJzZWxlY3RlZExpbmVDb3VudCI6NDQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjEzYTllNjlhMTQwMjlhYjU0ZGUzYjdhOTNmYzhlNTNkOTIwZjczNDcwYTQ0OTY1MmM0OTQ0ZTE1NjgxMTc1ODAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjdmNzY1ZDU3MzNiMzFkYTI0MzgxZWNmNWMwNjI0ZDQzMGFkZDAxMjY5OTBhYjRhMGNhNGUwY2ZhZGQyZTFjMWYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjJkMjYyYjY4NDU2N2I3MzViNTg2MmRjZDRjZjIwZGU4NWU1NjJhNTE0NmFmYzAzNjM4YThmZjNhNjkxODliNmEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_3afd5ed191fc4487b2c56d0f00a16ac3",
+      "statement": "The service uses a 2 MB JSON limit, CORS and security headers, structured JSON logging, and process-level rejection/exception logging that deliberately does not exit the long-lived local service.",
+      "evidence": [
+        {
+          "resource": "repo://apps/server/src/index.ts#L280-L288",
+          "version": "repo-lines-v1:sha256:8b1d67573023acf940fce9a4ef4668e703eaa4a6687cf0bfed36b1fb48c7cd19:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZWEwMGY0MWYwMDBhOGUzNmMyNmIzZTk4M2VlM2YwNjU5NDliNTMwNGY0YmMwZTZiYjIyODZmNGZlZmU5MTdjMiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZjZmNWI0MGIxNTg0NTdkMTc4NjRmMjE3OTA3ODZkZDVhMmVjZGI2NGI2NmE2NTFmNzg4ZDRlMjVjZDMzMDNkMiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMGRmNGVjYmEzNjMyMDFmZDA2MTU0ZmQyOWVkZTc5MzcwNzczOGQ1ZjhhNWE2YWZmYzRiM2JjM2MyZWUxNTc5NyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMDQwZWU3YzA3YTQ5MjQzOGQ1Mjg4ZDMyOTE5YmY5Yzk2NDdiZWZmZDU1OGYxOGM5ZTU2ZjM0NGRiY2Y5YTVmMiJ9"
+        },
+        {
+          "resource": "repo://apps/server/src/index.ts#L73-L125",
+          "version": "repo-lines-v1:sha256:19c33b6aa25934958e91838296f6958b334da97c92100e7ec31a5ee64b392f81:eyJzZWxlY3RlZExpbmVDb3VudCI6NTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY1YzYwZTM5MWM0YzFkYzU4OTI2MjMzNDE0Y2EzZWVjNzY3Mzg4MGM3OGY4MzZlMWU0M2I3MmNiYzY1MDkwOTMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY2ZjViNDBiMTU4NDU3ZDE3ODY0ZjIxNzkwNzg2ZGQ1YTJlY2RiNjRiNjZhNjUxZjc4OGQ0ZTI1Y2QzMzAzZDIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjNjZmViODgzYzJiZDk5MmU1MjcyNTk2N2YyOTE2NjY5NjEwNzAxNTFkMDA3MGI4MjM4NjhlZTA3N2I3MWRiNWQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU2NTNkOGYzNTAyNTFhYjcwMmRkMDk4YTYzYWUyOWZkZGJlNDU0M2ZhYTEwYWEyY2ZmYjI1MWM2YTE2MTllN2UifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_45ee040470da4937954215c150d5b82b",
+      "statement": "The frontend AI client selects localhost:8787 inside Tauri and NEXT_PUBLIC_AI_BASE elsewhere, checks HTTP status before JSON parsing, and preserves server error codes for graceful degradation.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/lib/ai.ts#L11-L91",
+          "version": "repo-lines-v1:sha256:f2969366f50fe4b514cf7801909d8050e920027055738632dee9bcc3dca20a31:eyJzZWxlY3RlZExpbmVDb3VudCI6ODEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjcwMDJhZTdhMTEyMjFmOGI2YmQ0Y2U1MDI1NGQ2NGZiMTliOTgzZmJlMmY4ZmQzZWFhYjY5ZTAwZThkNjZiMTUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjlhZmE3Y2M0NGM2OGVlZjU3Y2JmODA3NjNlOWQxMzNmZDU0ZjZlMTg0MmQ3NDMwMzZlNWVhMTQ2NDNmYWE3YzgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.7.2",
+    "at": "2026-11-04T02:58:40.844Z"
+  }
+}

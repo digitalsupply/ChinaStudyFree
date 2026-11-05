@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:4b221ab354621141506844b9b0bfc746dbe74020418971ed2b029c1b4c24e237",
+  "claims": [
+    {
+      "id": "claim_70355cb49e32497b8d8e767a53047ead",
+      "statement": "Passages and stories are built from optional data directories into per-book passages.json and stories.json, audio-decorated only when files exist, and flagged on books so entry points appear conditionally.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/scripts/build-data.ts#L247-L360",
+          "version": "repo-lines-v1:sha256:82b25cf901fec9217d750703203bff1a0fab1e399553a87aa27ff4a2d7d92871:eyJzZWxlY3RlZExpbmVDb3VudCI6MTE0LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJkMmMwNDJkYjA1OGE0MGYwNTM2MDhiMThjNTdhNzBiMWY4ZjMwYzc4Mzc5ODhiMmJiNzAyMGRlYjRjZDgyNWRlIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI0MTJjYTM0NWNjZjc1YmY5YzA4MDZiY2U2OTViZThkZTgwOGI3OTk4NDI1MWE3YTU0ZDIwMmNmNjEwMWRkNDUxIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJmYjU4MGU5NjRmODNhNDczZjQzZDQ0Mzg0NjI5NDlkNjhiNTYwMGZkYTc4N2YxNjM3NDVkMDBkZTg5Y2JmMzZhIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiIxMjU1YTVlNzFmMjBkNzgyMWEwOGIzZmM0Zjg1ZTU3ZjU5NDRkMDA4NmMwNWRiZTM4MDRjOTk3NTIwOWI4YzY3In0"
+        },
+        {
+          "resource": "repo://apps/web/scripts/build-data.ts#L382-L492",
+          "version": "repo-lines-v1:sha256:f937647c3bbcc601b242b8ad4414a9c3fad3ffc380aa2e2445e68f3f923b63a6:eyJzZWxlY3RlZExpbmVDb3VudCI6MTExLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI4MWYxYTc0ZGIxZTMwZWRiYTdmMzc3OTAzNDJjZmM3Nzk2MjNhMjkwMTBiYTY0N2ExNDQ3YjJhZWI3NzcwMzM1IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI0MTJjYTM0NWNjZjc1YmY5YzA4MDZiY2U2OTViZThkZTgwOGI3OTk4NDI1MWE3YTU0ZDIwMmNmNjEwMWRkNDUxIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI4NmExODQxNTNlYjFkZTA0YTQ1ZWM3YmQ3MTVhYjUyZTEyODg0YWY5NWYxYzgxOGU4NmVmNzliODcwMzIwNzlhIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJkNmY0MDVhZjhmMTkxYWU1YTJiMDdhMDEzNjVhNjRhOWYyMWFjMzU5NWJhNGU5NjdlYjZhNjBmYzllZmQxMzBlIn0"
+        },
+        {
+          "resource": "repo://apps/web/src/app/book/%5Bbook%5D/page.tsx#L64-L101",
+          "version": "repo-lines-v1:sha256:c475cc597214a33f4ba4c6bc589a42b52dcca922d12a22916078b0e2eef28e2c:eyJzZWxlY3RlZExpbmVDb3VudCI6MzgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY0ZDlkMmFhNjY5YTMwNDBlYjE5NjA2Yjg2ZGYwOWI3YWZkZTZlMTFmMDczMDA5ZjUwZDFhYzBjNTcwZmI0M2UiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFmMjE1ZmQwM2NmYzJiZWViZjgwNGExN2FjNWU5NDc5NTFmN2NkMmRjMDU2MDUyMjQ5OWM2MDZmZGJjZDcxODUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjczOWI4ODYyYjM0MDg4Njg4ZGFhZTFlYTcxMmYwN2ZmMDgwYjQ5ZTJiNjkxYmM0YTEyYzFjYzY3ZWExM2NmYzkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRlNDdmZTFiMjA3NzRhZmJmMWZhZjJlN2I5OTI0YmIyZWIwYTc1MzUxN2U5ZGEyZmQxODNhM2I1NGM0NTdhOWIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_db8aa7b714254622a88a1c64ea414542",
+      "statement": "Reading and story list routes pre-render only flagged books and inject a placeholder parameter when no books exist so static export remains valid.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/app/reading/%5Bbook%5D/page.tsx#L32-L39",
+          "version": "repo-lines-v1:sha256:a7cf8326859a6015e1d7470ea271d2d1f41c084d8d58beee2731f05d2459d6ae:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMTZhZTAwZDkwNWNiNDQ3MmY2N2YzMjM1ZmFhMWUwN2ZmN2EzZWMyMGE1ZTllYzBmNTdjOGE5MGE1YzQzYjhmMiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNDEyY2EzNDVjY2Y3NWJmOWMwODA2YmNlNjk1YmU4ZGU4MDhiNzk5ODQyNTFhN2E1NGQyMDJjZjYxMDFkZDQ1MSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZmI1ODBlOTY0ZjgzYTQ3M2Y0M2Q0NDM4NDYyOTQ5ZDY4YjU2MDBmZGE3ODdmMTYzNzQ1ZDAwZGU4OWNiZjM2YSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMDM5ZDJkYmFhNjBhYzUzOTExMTllYTIwYTQ0ZWE5MmVhN2NlMzU2YzhjNWE1MjZlOGMwZDdjZjg4MTU5NDMxYyJ9"
+        },
+        {
+          "resource": "repo://apps/web/src/app/stories/%5Bbook%5D/page.tsx#L31-L37",
+          "version": "repo-lines-v1:sha256:737718b9d883e670164651884fe0af0e665d5b4402a771b9f321803634d4a994:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMTZhZTAwZDkwNWNiNDQ3MmY2N2YzMjM1ZmFhMWUwN2ZmN2EzZWMyMGE1ZTllYzBmNTdjOGE5MGE1YzQzYjhmMiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNDEyY2EzNDVjY2Y3NWJmOWMwODA2YmNlNjk1YmU4ZGU4MDhiNzk5ODQyNTFhN2E1NGQyMDJjZjYxMDFkZDQ1MSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZmI1ODBlOTY0ZjgzYTQ3M2Y0M2Q0NDM4NDYyOTQ5ZDY4YjU2MDBmZGE3ODdmMTYzNzQ1ZDAwZGU4OWNiZjM2YSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOWRkNDcxNTFhM2M5MTAxYjFhYWFhNWEzYTc1YTEwMGEyN2JkZDZjYWE2MjU1YmM4MzQwMGQzNGFmMzRhMzM0YiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_6e0063d13b6640259f038bdd54d008bf",
+      "statement": "The passage reader supports listen-all, single-sentence playback, and shadowing; shadowing plays model audio, records the learner for 3-8 seconds, and allows replay without uploading or persisting recordings.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/components/PassageReader.tsx#L117-L218",
+          "version": "repo-lines-v1:sha256:f2fc975a8bba531553d1b8bf7c51874232fe22fd4e7a6c5febfe2d15a8f418ae:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAyLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI4YWU0MjlmNDVlMzc4Zjk4NjgwMGJkOTAyMGY5MjU5ZTAyYjY1MDE2ZjNkZmU0OTRkMGY1ODIzMmE3Y2JhNmZmIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI5OGE2MDJkZDNmZThiYjBmZDc0YmUzMTQ1MjdjMmQ1N2UyY2I1NGIzNjkzYWVjZjRiNjk4ODQxMDEwZGRkODFlIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI0NGUxNjU1NzRiMTQyZWQxYzlhMjM4ODMxMGFiNGM0ODA4OWY4NjBlZTdiNjg3YzIzOGY0OWYwZDUxMWM0NDgyIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI5YzBiODFjMThkY2RjOWM2ZTI2NWY2ODMwNzY4ZTQ3NjQyOWMxYTU1NmE2YWY2ZWFhNmQ0YmE0MTk2NGJkOTFhIn0"
+        },
+        {
+          "resource": "repo://apps/web/src/components/PassageReader.tsx#L45-L71",
+          "version": "repo-lines-v1:sha256:a2a97ffba5d9bedd22cab2c3aca1bd1aa286a8637a5e25e80aadd7685ec58109:eyJzZWxlY3RlZExpbmVDb3VudCI6MjcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBiMmFhYzY4ZWQzYTFlNGUwNzA5YmQzYWMyMTJhZDZjMjlhMDU2MDZmNDJjMTg2NjIyYWY4ZjBlOTFjYWQ2OTkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjViNjlkNzQ1ODcwMDRkMTcyYmI1ODgxZjRiYjZmYzgxNzAxNDgxNGRhYTE4MTc0MzRiYjQzNDdmMWJkZjRjNzUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjIxYTdjNWNiNTZjODBjN2E4NWE2NDQ2NjMyOTY5NzgxZDk2MDQ0YWU4OWYzODZkOThkNTljMjYzY2NlODRhYTUifQ"
+        },
+        {
+          "resource": "repo://apps/web/src/lib/useRecorder.ts#L3-L10",
+          "version": "repo-lines-v1:sha256:94d502a2a163ff6ed8af7773fb440699e50650b4f6447617c83a87aec60e0c32:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZWFmMjJjZjA3MzI1OTJjMjQ3MTQxY2JlNjFlZmExMTAxMjYxMmY1YTMxMjJiOWFmOWJiYWY1MmY1NzI0ZDE5NCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiN2ZkNzdjMmMzOGE3NzJkODlkYTZkMjM2MmQyYjBhYmM4MWRmN2QxNGZkNWVmZmJjYmIyMTQyNTUzNDQ5MjZiYiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjIsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMzFlOTgyMDZlMmJmMGJiNDMyZDE3OTc1NzlkOWNhNTkwODFmZmI2YzUwNGYxMjU2Mzc2ZTMyMDczODNlN2Q3OCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODQ5M2U5YmRiYjBhYjViNjkzYTI1ODdjNTBlMmFiNWJjNTFjNmI3MTRjYmNiNTU1YzQ0YjU4YWZjYjE4ODMwOSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_eff040cf3e0746a9818b5257c15d0bfc",
+      "statement": "Completing a full passage listen grants 5 XP once and completing shadowing grants 10 XP once, both through the progress store's canonical reading id check.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/components/PassageReader.tsx#L145-L149",
+          "version": "repo-lines-v1:sha256:5af630e76d52e75fb0085024fd0d01cf3a0b42a10576cddc703491b1383fc470:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZWY4ODQxNDA2NTY1YjA3ODgwZDA2YTMyMzcwZTI2YWQ0ZmJhYTY5ZmMzNGY0ZjUxZjAzMGM2ODJmOTgxMTk1ZSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZDM1ZWFjOWY3Njc4NGI4YjIyZjY0Yzc4NTIwMzI2ZjU1NjM1OTIwYWE1ZDIxYTlmY2IyNWE5ODk0YjdhZTJlNiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNGQ4NTEzY2NlNzc3Yjg5MzA1NzQ4ODY1MzNlYjA4ZmQwZTJlZmZiYzMyZDExYzM0ZWE3MDViMDk1YWU2YWM2ZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNmJjYzBmNGVlYmIxMTA0YjYyYjhjYzRiZDhmZTYzMTY0ZWY2ODg3ODJhYjA5MzhlNzU4NDA5MDI5OGMyNGQ5OSJ9"
+        },
+        {
+          "resource": "repo://apps/web/src/components/PassageReader.tsx#L204-L209",
+          "version": "repo-lines-v1:sha256:3c5f61767d87bd6ef10dd12bd4ac5527731ff57b8b68f61fcc59083af76c4a3b:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDU3NDZmNjQ3ZTAyYmM3ZDE1M2YyN2E4NmRiZmJhYmNhNjJiNDY1NmRiNDQ1NThmYWYwYmU2NzQ5NjU4YzZiOCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNDg5M2Y0MGUzNzgxZWI4OTZjODJkMDQ2YTA4MDY3YTExZTM1Y2RmMmYxZGZhZjI2ZmVhOTBiOGRiNjY3NjQxMyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYjdjYjAxMjRmYTYwMmRlOThjMWFiYWMwNGFjNDU1YWRhYmVlNDU3OGRiYzJiZDkyMmRiNjlkZmVlYzdmMDFhMSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZWE3MmRkNGZkZjQzYWExYjE0ZGYyN2EyODQ5YzY0NDIzNWUwZWJlNjA3MTIzY2RkMTA1MDBmY2UxZjlkYmMxOSJ9"
+        },
+        {
+          "resource": "repo://apps/web/src/components/PassageReader.tsx#L29-L71",
+          "version": "repo-lines-v1:sha256:ee6cda45ce731c8ec357a6fe64523b778bf680cdb0bfa02767edf229c2ee3a95:eyJzZWxlY3RlZExpbmVDb3VudCI6NDMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImI0MzY5MzdhNDZjYjFmNTQ5OTk1NmJmYjU2NmY0NzMyMWJkYmRlMjc5OGE2MGZjNzM1YzIzODRjYzdlZDYxYTYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjIxYTdjNWNiNTZjODBjN2E4NWE2NDQ2NjMyOTY5NzgxZDk2MDQ0YWU4OWYzODZkOThkNTljMjYzY2NlODRhYTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_45403c98cb2549c28b6b526a4958fe01",
+      "statement": "Story reading has reading, quiz, and result phases; the quiz renders shared question components and grades true/false, choice, and text answers before showing the explanation.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/app/story/%5Bstory%5D/StoryReaderClient.tsx#L259-L330",
+          "version": "repo-lines-v1:sha256:c196e81a7194950654d722ba7e406a6cb6bb185c76c4998c714ea724f3e8534e:eyJzZWxlY3RlZExpbmVDb3VudCI6NzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBlYjBkMDUxYjc1NjFhOTRlM2U2Y2Q1NDdiYzY5OTk1OGJiNWJlZDM1NGNhYmQ4ZThjNDRiYTFiNjUyZDJjMDAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM1ZDQ5YTJlODMyYWY4YzJiNTY0NWY2YTc4Njk1MGQ3ZjIwNzkzMGMzYTYzNjZiZjNhNDRjYzdiOWZiMGY0MjkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImY0MTM1Y2Y2OTJhMTM2NGIwZWM0YjIwOGExNjk0MTllZjllZmQ1Nzk2NWM5MDcyYmJhMzFkNTRjNDZjNTg2ZTYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQzZWUzYmY2MGJhOTI1NDUxNjY2YzE5ZDg3MmFlYzYyNzdlZTU5MmE5NGZlYzRkOGYyOGU2ODMwMjc4YWQxNjMifQ"
+        },
+        {
+          "resource": "repo://apps/web/src/app/story/%5Bstory%5D/StoryReaderClient.tsx#L44-L163",
+          "version": "repo-lines-v1:sha256:19b11ca0ad8c81fcdfbd88262e04f2ea87ffcc0ac134278eba09e25e83e43f73:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIwLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI3MjJkZTYzMWYwYzNkMzdmMTU2ZWFjZTJhYmUxZWE5M2JlNjg1MWZhOTdjZjFjMGIyMmQ5M2M5ZDhiYjBiNGYxIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJmMmM4Zjg4YTgyZmJhNTc2YWM4MzEyMjE3MzIwMzM5OGZmNjI1MmVhYTQwN2ExYTMwZGNkOGIzNWU3YTVlZWRjIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI0ODFlMjhhMTdiZmU5YjRiNDI3YzU3NjRmMzA3MmU2ZWJmN2YwOWI0NGVlNzI2NGU4ZWYwYTU5MjdkM2QyNDhhIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI0ZmJjMGQzMjZhMjhmMWRhNDExOGU3NWY3OWMyZDkxMmQ4NjU4NmZjN2U2ZThjMWY1Nzc4NWViMzE5YTgwMzEyIn0"
+        }
+      ]
+    },
+    {
+      "id": "claim_75769268fad54a629f6d0a8cebf322f3",
+      "statement": "Story completion grants 5 XP plus 10 more at 0.8 accuracy, with three-star presentation at 0.95 and two stars at 0.75, and the reward is idempotent through reading:story:{storyId}.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/app/story/%5Bstory%5D/StoryReaderClient.tsx#L144-L163",
+          "version": "repo-lines-v1:sha256:09897a3bb337e906add11b667956403c9fd59be259e92e133b3d8cd2a8fc2560:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU0MGNiNWZmZDE4NWMzYzY0ZDM1NjEzMjE0MDczMTc1NGNmZWQ3MjkwMTZmZjcwNjhmODZkMDkyYWUxYjliMGUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImYyYzhmODhhODJmYmE1NzZhYzgzMTIyMTczMjAzMzk4ZmY2MjUyZWFhNDA3YTFhMzBkY2Q4YjM1ZTdhNWVlZGMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjUxZTM3MjVkYTAwMmI0NmVkOGI0ZGU4ODAwM2FkOTcxMGRjYWYxOGQ1N2M0NzAxZGMzYmVmZjBiMmM1Y2IxM2YiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRmYmMwZDMyNmEyOGYxZGE0MTE4ZTc1Zjc5YzJkOTEyZDg2NTg2ZmM3ZTZlOGMxZjU3Nzg1ZWIzMTlhODAzMTIifQ"
+        },
+        {
+          "resource": "repo://apps/web/src/app/story/%5Bstory%5D/StoryReaderClient.tsx#L17-L19",
+          "version": "repo-lines-v1:sha256:3f1ef17e7ac1f7f9c67f005485ce675346fa086fb2a0671c180af82edc973ae9:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZDY1NmRlNDhhYTM0MmU5ZTRkZDQwZTg1ZDVjNjkzYzg4YjQyMWFlZTRlMzNlMDAyY2UwOTQzMDAzNWEzYmQxYyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYjNjNTNhYzZkMWEwOTFjMGM5MmY2NTllMGM5MzY1ODZmZjYyNTBmMDhlMDRiYjE0Zjg4MzI3M2UxZWExODJiYSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNmU5YjE5MzE1YTRlMjAyZTg4NWIxMDFlOTY2MmE0Y2ZjZjIxZjM1MDkyMjQ2ZjE3ZTBmYWEyMzlhMmFhMGQyYiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODVjZjk2NDdkZTExM2VkZTgzOWMxMzdmZTdhMTU5MTUyMjZjYjUxMDgyYjUzNTNkNWJhNjA5YmM5NTQ3OGY4NCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_ae08ccdeefc74962baba2b5abad8bc35",
+      "statement": "Canonical reading ids are reading:{kind}:{rawId} for listen, followup, and story, and the same helper is used for reward writes and list-card completion checks.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/app/stories/%5Bbook%5D/StoryCard.tsx#L16-L24",
+          "version": "repo-lines-v1:sha256:065a37869bc3110d14201341038b0f8ecffcbd21a1c1f534e0b9b2addbbf8c4d:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMjgzMGNmY2UwZjRkNjMwMjFhM2VlMjRkOTdhMGIxZGY2NDZkMTEwM2QyNTYzZDRiYTQ3YzQ2MjBlMmQwZDg3YyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNWEzOWMzNmFiOGI0OWQyMTA4M2ViZDEwMDdjZjNjOGNkMTg5NjQyMDc2NDYyMTU0YmUxODI0NWUyZWRhYjYyNiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOTEwNmE1Mjc1YjhkYTk4OTNiZjI0NDdkZWZhOTkwMzhiYzQzNTY5YTNmZGY1YTc4OTYxMGQ0YmQ3ZTNhMzllYyJ9"
+        },
+        {
+          "resource": "repo://packages/core/src/reading.ts#L22-L48",
+          "version": "repo-lines-v1:sha256:5c57084acb8196a9beaa764232ca0040d3d83f6832854516f28b801ca4a332cb:eyJzZWxlY3RlZExpbmVDb3VudCI6MjcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA4MzE4MjI3NGZkYjU5ZjQ0ZDIwNTI2MTQ5OTBjMmQxODI0ZjNjZGQxODcwNDZkZGUxYmRjNWIwNDQ0MDE1YTUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIxMDgyNDIyMjBmMmZiZDE2NWE5ZTMxNWU4MGQ2OTUwOTU1OTE0ZTc2MGUwZDVkYzk5ZjA4NGI0OTljZjFlNGQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU4ZTE1YzBlNWFiZGQ5ZDliMjI2ZWZlZWU0YWY2OWY3NWE2Y2ViNjg0MWU2ODNlNGY3NjkwNzY5NDdmMzNkOTMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_3c73ed3bd0344ee3a395c934fcf3748e",
+      "statement": "Reading completion grants XP and advances the reading counter and streak but does not grant lesson gems, write completedLessons, or increment lesson counts.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/store/progress.ts#L1185-L1221",
+          "version": "repo-lines-v1:sha256:98a12bfc45205935ddc730b72e463621a42fb54a4c210d48eaae7972aab0cfe0:eyJzZWxlY3RlZExpbmVDb3VudCI6MzcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM4ZWZkZmM4ODJmMmFhNTI0YmVjNWMzNDAzNjRkNDNhMmJjZTU1M2EzYjkzMzkzMjE1YTk1YmUxNGQ2NjUyZDUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNiMTY3YmE4YWNmYWJmZTE1M2I3MWNkNTA0M2Q0YjVlZWM1NzIzYjMyYzBkMzAzMTQwN2IyZGExNzcxNjU4ZDQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImU3NDY4NDI5ZmI2Y2I4YjFkMmQwOTFiZWNjZTFlMjc4OGMxNjkyNzVmNGEyNWMyYmFmMGUzZWY0NzNmZjI2ZGQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImJlNDRhNTE0YTQ5N2I5MmVlM2FjYjBlZjkwNDliNjJlM2YxZDMzNzEwYWEyMDFhNWJmZjhkMWYwMThmMjg1OGQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_7fb97effd8ce44769b259df4683c22aa",
+      "statement": "Passage page images come from a book-level pages.json offset mapping, prefer the physical page image, and are served as static assets so they work offline when bundled.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/scripts/build-data.ts#L210-L245",
+          "version": "repo-lines-v1:sha256:652e4af1d56c01e81f4e31c86270d651367132dc53214c59b2efb1df107cc6c2:eyJzZWxlY3RlZExpbmVDb3VudCI6MzYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjZjNDVmOTRiYTU5NmZhMjA0Njk3NDU1MzJlMzQ0NzY1ODM3NGQ2ODAxMWY3ZDJkNDBiMmVjNDcwOTdhYTYyZGUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc4Yzc1ZjMwMjE1YTU5NjlhOTA0MDEzZjMwZGNlMWFkNWU5MjRjZTQ3NjZlZjdiM2Q1Njk3ZDAyOGFkNDY4NDUifQ"
+        },
+        {
+          "resource": "repo://apps/web/src/app/reading/%5Bbook%5D/page.tsx#L50-L61",
+          "version": "repo-lines-v1:sha256:ff63d8afbb3c49cab6579f162ffcf0ea62150aa0427759cd0b482ae651aae21d:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg5MTdlNzIwM2U4NTE1ZTkyMTY2ZjM3OWNhYjA5ZmQ0ZWE0MDc0YmZiOWUwOWIzNDE4MGM2ZWE2OTM2ODNmNDUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImFhZjEzMDUxMDI2MmI1YTIwNWNlZGE0MjRlNzNjMTcyNGMwOGY1ODZhZWQ1NjQzM2Q1Yjg5NTU3N2EwNGFmZjciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjExOWI2ZTgwYzc5ZWFlYjdjZmFjOTJhN2E2MmUyNTViMDZkMjE1NWNmMDAwNDBhZDM2Y2FiOTYxYzkyNDc4NjUifQ"
+        },
+        {
+          "resource": "repo://apps/web/src/components/PassageReader.tsx#L73-L87",
+          "version": "repo-lines-v1:sha256:aaa4442c5e12ec664282fbe1475af5354ef776ed613d565bde6293ac20669078:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE0MTRjNDA3YWEzMTEwZmY0YTNlNzA2MDQ0MGQ4NGUxYTJkMTg1NDE2MWNhNTNmMGU0Nzk4NzYyNDBhZjJhYzMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijc0MTk2MzQ3MWRlOGM3MTZmODBkMDRhNzMzM2IwZTRjOTU2NzkyNjEyZTY3ZmQyZWMyNzExMmQyMjFmYzhkMWMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU0NzdiNmFiMWQ2MzA4NzcyZDE0MDI0Y2ZkMmI5ZTRiNjZiYjUxNGExMDk2NTU0NWNiZjFlYTdiNTFkMzA3ZTIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_aab69014e03d4b928e3f94dafc9ec4cc",
+      "statement": "The shared audio policy prefers pre-generated audio, falls back to the project TTS API on error or absence, and never falls back to browser speech synthesis; availability is probed once and failures stop further online attempts for the session.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/lib/tts.ts#L126-L192",
+          "version": "repo-lines-v1:sha256:f6a71ee5404118972defd2365c49f370b718feb3bbd19f90e0700f7fbdbdc90e:eyJzZWxlY3RlZExpbmVDb3VudCI6NjcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNkZDBkNDEzYmU0M2M0MTA4OWJmYTgwZDMyZDdiZDY1Y2Q1NTNlNGY2ZDE3ODZjNDc4ZTk3OWUxOTNmMGQwZWYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://apps/web/src/lib/tts.ts#L3-L21",
+          "version": "repo-lines-v1:sha256:96c3efe2b4a5785e0f0ff69116b607a7b9ddd63ff24b2b0f6c81a0827179471a:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk3MmE0MjkzODJiMmUxNDcxOGUwZTM3YjA1NzBhOGExNzAyOTkxZmNkODQ5OGNkODQwNjBhOGJmNGYwNTAxN2IiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjoyLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjMxZTk4MjA2ZTJiZjBiYjQzMmQxNzk3NTc5ZDljYTU5MDgxZmZiNmM1MDRmMTI1NjM3NmUzMjA3MzgzZTdkNzgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQ4NTZmNWEyZmJiZWQyOWYyMmRjNDMyZGJhZjE1ZjU5NTRlZWY1ZWJlYWFhNTcwMDk1YWQ5NmFlNzZmZWFhNmYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_059503e373eb449caac5d71eb48d2bb6",
+      "statement": "Passage playback passes both source and text and can therefore use online synthesis when pre-generated audio is absent, while story controls are enabled based on pre-generated sentence audio presence.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/app/story/%5Bstory%5D/StoryReaderClient.tsx#L64-L97",
+          "version": "repo-lines-v1:sha256:7d86c565ddab5b980abefe888429b23938387c368d67c48611fd793b915bf493:eyJzZWxlY3RlZExpbmVDb3VudCI6MzQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdjMzIwMTEzNTBlZWFmMzhlY2NkYmRhNWJkOWRhOGI4ODE4MTVjYTIzYTc4NzBmZWMzZWY2MTM5MzIwMzIwYzQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ2YWY4ZDg3ZjdiZTNiMjNiNmNiOGU0ZjY0ZTViYTY1YTAzOTgyMzVhNjkyNzVmOTdlZDg0OTIxY2Q5Y2NhZWQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImRlMWI3OTU2NDIyMTEwMmMxZjU3MTg5ZTA4NDIwNGEyZDM1OGFlZDVlMmU0NzliNDA2YWMyMGU0ZGM2M2IxMzYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImIxN2I4YjMzYmU3NGYwYmUwOWUxYjFkNDk1ZmI4NDM5ZTkxZWM2YjljNDc1ODZjYTNjYTRlOThkODdhNDllMGIifQ"
+        },
+        {
+          "resource": "repo://apps/web/src/components/PassageReader.tsx#L106-L115",
+          "version": "repo-lines-v1:sha256:9fd0e5d5794f2810da065480a2f8415a73367b85646381c7ffaf956ede24723c:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI1ZDM2NzkxOWNmZTRlMjY0Njk5NzdkYWFiMmFjNjlmOGQxMzk2ZTJkNjM0MzQxNjgxMTNlMjNjZmUwNzUxYmUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVjNDVmOTlkYjI0ZjQzYzk5YjdjZWE4NDM1MDMzY2VhMWZhNTZjOWI4OGNiYTcwOTA0OGQ4OTlhNWY5YzQ2YzEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImJlN2ZiNmU0NWI0OWViMzM5MDJjMzVkNDk2M2M0NTk3NTA5ODViMTkyMjg1YzIxOGIwNWQyOTAzZDk4MjYzYzkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjUyMTBkY2ZmY2ViYWExN2ZlZWZjOWI0MDdkMTkxYmNhODM5N2U0ZTBlODA2MmY3NTRkOGQ0YTg3NmJkYmYxY2QifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.7.2",
+    "at": "2026-11-04T02:58:40.844Z"
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:658c0c5aecfe9d81557671b0d5e4fb286b123f68c6a7c337393b66e21aeb87ab",
+  "claims": [
+    {
+      "id": "claim_ea546601369f4522a63e7549b3cce6a9",
+      "statement": "The deterministic generators share a writeBook routine that emits an outline plus one quiz file per unit, with knowledge summaries, unit-test questions, and an optional exam block of at least four questions.",
+      "evidence": [
+        {
+          "resource": "repo://scripts/gen-coverage-content.mjs#L81-L120",
+          "version": "repo-lines-v1:sha256:6587c5e8916c85ed4f24c5dd35b07dbed325c9ab834b2f3d20f256efdfb7ba89:eyJzZWxlY3RlZExpbmVDb3VudCI6NDAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU0NTQ4NjI2MmUxNGM0MDIxODgyYjRmNDM5NWRjNjNkMWZkNDQ5MmIzODI5NThhYzFmZjkzNTAwNWE3NWM2YjgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImU5ZmVjZTNmOWZkMzg3YjNkODFmZDc2ZjVmYzIxZmUwOGRlMzUyYmIzNzJkMzBhZTRiM2U0ZWExZmRkYjQwMGEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImNhYWZmZjJjOTkwMmYzNTVjNjdiYzBjZDk5ZDBkNjFhM2RiZGExZDFiYjM1ZDgwM2U5ZjlmYmY0ZDFjMzhhZTEifQ"
+        },
+        {
+          "resource": "repo://scripts/gen-stage-content.mjs#L55-L97",
+          "version": "repo-lines-v1:sha256:3617d7e0ea7457624281732ae2fd0d6c16d6379e873e14fbd80d284e8348f928:eyJzZWxlY3RlZExpbmVDb3VudCI6NDMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFlNjA3ZjI5NThiMjhiZGNhZjBjODM2ODliNzljM2Q1ZTgzMmUzMTc1OWRiNDAwOTg1NjUwMDJmMjk2MmQ1N2YiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImJkMGYyZDNhM2FhZGEyNzU4NjQ1NzhkMGE0MzkxNTYzOGQ1NDNmZWNhMmM5NDg1OGRiOTQxMjExZTg2Y2VmMmIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc1ZjUwNDJhOTg3NDk3NWJiMGI3NjdlNTk0ZTJkZjY2ZmE0OWNjMjIyOGM0ZTQ0NDUwNmMzNDk4MjA2MTdjNzQifQ"
+        },
+        {
+          "resource": "repo://scripts/gen-version-content.mjs#L91-L133",
+          "version": "repo-lines-v1:sha256:3617d7e0ea7457624281732ae2fd0d6c16d6379e873e14fbd80d284e8348f928:eyJzZWxlY3RlZExpbmVDb3VudCI6NDMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFlNjA3ZjI5NThiMjhiZGNhZjBjODM2ODliNzljM2Q1ZTgzMmUzMTc1OWRiNDAwOTg1NjUwMDJmMjk2MmQ1N2YiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA5NGZjMGMxNzNkMWVjM2ZjNTAxZDdkZmE5Mjg1NTAxYzUyN2NmYjQ3MTI1ODNkYTNjYzM2MTgwNTY2YjRiZTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU5NzczNGQ4YzgyNDkwZTQyMTg3ZDFkNzViN2E3NzUwM2Q5YmVhYjY3NGJkNThmYjk0YTFlM2I3OGViOTYzZDMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_6c02a70bbe6b46da9af3c5cd0f6dc403",
+      "statement": "gen-stage-content hand-authors knowledge points and conceptual questions while generating arithmetic and equation exercises programmatically so computational answers are calculated rather than asserted.",
+      "evidence": [
+        {
+          "resource": "repo://scripts/gen-stage-content.mjs#L1-L53",
+          "version": "repo-lines-v1:sha256:582b5628fe483aa1778d4b593589ff177b1ca1a07fca85f6c4be71761020e2d6:eyJzZWxlY3RlZExpbmVDb3VudCI6NTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQyMGRkOGIwZjgwNmRkMmQzNDA0ZjA2ODgwYjg1Mzk1NGI0N2E4NmY0ZTUzNjQ4Zjg4ZWQ3NTEzOGU4ZWE3MGYifQ"
+        },
+        {
+          "resource": "repo://scripts/gen-stage-content.mjs#L99-L159",
+          "version": "repo-lines-v1:sha256:cb19e7a5146cf3c2bd9769b98116e0bc135f22695613fb30d4033ce704096c19:eyJzZWxlY3RlZExpbmVDb3VudCI6NjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM3M2U5NmUzNDYwMjgxNDdiOTJhMGYyNjUwZjVhYjIwY2YzMDIyNjE1NTdmN2E2MDBhYjNlYjE1NjM3ZWVhMGQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU1ZTI2Y2Q5MjM2NmY2MGQ4ZWQ5MmQwMjM5ZjA3ZmVmNzRjYWMxNGFhNjlhZGRmOWMyY2MwZDExZWIwMGE0NjMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImVlNGFkZWI2MzdiY2M1YzI1ZWVkYzA2MmFiODZjNzMwNDJiYjBlYzdkMWQ4ZmJkYmVlOTUxYjhlMTc2N2NiYTYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjE4ODU5N2ZmYTM1OWYyM2NmM2UyMjU5ZWQyZDRlNWFhN2E0NDZhNTlhYTYyMWEzZDM1M2QwNGYyOWM4NzMxNjkifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_c15b75ed8b5f4f9589b49ed29f7c357d",
+      "statement": "gen-version-content generates different units for non-default publishers, and the publisher keywords in the filename drive the ASCII publisher slug that build-data inserts into the book id.",
+      "evidence": [
+        {
+          "resource": "repo://scripts/gen-version-content.mjs#L1-L35",
+          "version": "repo-lines-v1:sha256:02988580dea9cc3fca457adaa7101dfec12459efed591a6577e967709c9cc089:eyJzZWxlY3RlZExpbmVDb3VudCI6MzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk3MmE0MjkzODJiMmUxNDcxOGUwZTM3YjA1NzBhOGExNzAyOTkxZmNkODQ5OGNkODQwNjBhOGJmNGYwNTAxN2IiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImM3YTRkMjgzMWRjNzVjNmQzNGRmM2I2ODk3ZDc3OGY0OThlOTljMjJjYzgyYWNiMTJmMDA3ZDQ0NThmMjRjMzkifQ"
+        },
+        {
+          "resource": "repo://scripts/gen-version-content.mjs#L138-L160",
+          "version": "repo-lines-v1:sha256:2d74625d82b584372a18bef3ce0f274dc33ee85f3476a24fa39b9be03d786f66:eyJzZWxlY3RlZExpbmVDb3VudCI6MjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM2M2M4MTU1MzNiY2U1Zjc1OTExZDRlYzVkNGRkZjU4MTFhMDdiODk1YjFjNzcxNGE1ZTUxZmQzZWM3ZjY0YjciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg0NjVjY2RiYWFhNDFhYzBiZmVlZjgyMjUzYzAzOGY5Nzk4OWJjODg5YTA4NzNiZTk2ODg1MGM1MmJmMjZjNjciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQzNjljNTg2MjQ1YjAyMjI5NzlmNjU2OTE4NDEyY2MzOGZhOWRlZTMzODQzNDQ4ZjAzMTUxOWU4Nzk2OTEyMzQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQ5NzliYmU1ZGFmZTUwNTMxOGU5MGQyMGNmM2Y1NDIxNTVlYzcxOGFiNGJlYTRjYTQ5OTc2ZmNiNDA1ZGUyYWEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_886bd43674a64a5f9a1480d17a9822bc",
+      "statement": "gen-coverage-content can append units to an existing outline via extendBook while preserving the prior units and continuing unit numbering, and all generators are incremental and overwrite-oriented rather than deleting output.",
+      "evidence": [
+        {
+          "resource": "repo://scripts/gen-coverage-content.mjs#L1-L27",
+          "version": "repo-lines-v1:sha256:15805e11da7ffa955d371994b8cac29382cf29435b468ef66aa08cd3e63ae554:eyJzZWxlY3RlZExpbmVDb3VudCI6MjcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk3MmE0MjkzODJiMmUxNDcxOGUwZTM3YjA1NzBhOGExNzAyOTkxZmNkODQ5OGNkODQwNjBhOGJmNGYwNTAxN2IiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImM3YTRkMjgzMWRjNzVjNmQzNGRmM2I2ODk3ZDc3OGY0OThlOTljMjJjYzgyYWNiMTJmMDA3ZDQ0NThmMjRjMzkifQ"
+        },
+        {
+          "resource": "repo://scripts/gen-coverage-content.mjs#L125-L155",
+          "version": "repo-lines-v1:sha256:681e2348739718c437f598bc64e875f2a0130ff7c869c0333145c682aeb2cbbc:eyJzZWxlY3RlZExpbmVDb3VudCI6MzEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA4N2JhOGJmNmI5OGRlNzlhODk5ZGZlYjNlNGY5MjY4YTczMWZlMGNmY2U1OGQ1NDk1NTY3NjQxZThjOWZmYzciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjYxZmE4M2RlOTU5M2ZlMmQ3NWE0OWU2ZGMzYmYzOGY1YzBkMTExMTVjMzI4NzMwMDMwNjE3MzU4NTlmYTMwNzcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_8bb673d1625c4fb49c2df3ec1cd0c2ff",
+      "statement": "The Python quiz pipeline downloads textbook PDFs, splits them into page batches, reuses or extracts an outline, generates per-unit quiz JSON with a subject-specific schema, validates it, and writes both quiz JSON and knowledge markdown while skipping existing work.",
+      "evidence": [
+        {
+          "resource": "repo://scripts/scripts/quiz/pipeline.py#L527-L595",
+          "version": "repo-lines-v1:sha256:9d84255fa9ba41f93c5a767c1ec23fa6e36d609b109123d17f2dda391027b658:eyJzZWxlY3RlZExpbmVDb3VudCI6NjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ3MzM0NjYzNDVlYjU4OTFiMDg3ZmFjYWZlYWY1M2ZjY2IwMWMwN2EyY2E2YWJlMGEwOGQxY2NjODU1MjRiYmMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ0MGY0ODFmMTkzZTVmYjQxYWZkMmM5MWNhNTI1ZTQyOWQwODE4OWRhMDc0Zjk5ZWQ4ZGQ0YWFkMjA3NDkwZTciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImJjOGFjZjZmYWQ2MDY2NmFiMTFmODY2OGRhNDJhNjU0NjYwMGEwYmUxY2Q1NDc0ZDZhZDJlOGQwM2UwMWRhYjkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImExOGQ5MjhhNmQ5MGE3ZTRiYzIyYTcyMzAwNjc5Mjg1MDBhYTdlYzM5YWQyMDg2MjlhZDU4NGIyMjY0Njg4MjEifQ"
+        },
+        {
+          "resource": "repo://scripts/scripts/quiz/pipeline.py#L62-L88",
+          "version": "repo-lines-v1:sha256:ecc533e2fe66f304cfd3f57d8ed0d279c2aeee023e0024a79e663070ddbb970f:eyJzZWxlY3RlZExpbmVDb3VudCI6MjcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3MDg3M2VhMWNkMmQzZWUwMWNkZjk4ZmZlY2QxYTk3OTYwZGE0NDRmOTI0OWEzOWZkOWQxMzg4M2YxODcxNzAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMzY2YyNWU2ZGJkMjFmYmI5MmI0ZGZkMzFmNzU5Y2Y2NTk0YjVlMjkwY2QzZThjZDc3ZDM0N2I0NWNlNjY1NjciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImE5OGIwNjNkOWI0N2U2NTM3OTYyNTU3MmNjZTE5NzY2OWQ1NzY3ZTEyYzE4YmUwNzU2NTJiOGNkOTgxY2U4ZDUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImExOGQ5MjhhNmQ5MGE3ZTRiYzIyYTcyMzAwNjc5Mjg1MDBhYTdlYzM5YWQyMDg2MjlhZDU4NGIyMjY0Njg4MjEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_f7b9eee7956846ae90891e12d38b9ce9",
+      "statement": "The quiz pipeline validates score totals, difficulty range, allowed question types, option counts and answer membership, true/false values, numeric answers, matching and word-order structure, and non-empty answers and explanations.",
+      "evidence": [
+        {
+          "resource": "repo://scripts/scripts/quiz/pipeline.py#L426-L521",
+          "version": "repo-lines-v1:sha256:5787ea7dc488d5324060175bb13318a2e21ccfb353cb83716de322af0fe6c046:eyJzZWxlY3RlZExpbmVDb3VudCI6OTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3MDg3M2VhMWNkMmQzZWUwMWNkZjk4ZmZlY2QxYTk3OTYwZGE0NDRmOTI0OWEzOWZkOWQxMzg4M2YxODcxNzAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY1NWE3ZDI2OThhMWRjODkzZDg1ODNmMzk0ZjEzYTk4Y2Y1MTY5MGFjZTZhMTU4ZjhlYzZhNmNiZWY0MDIyZmMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjMxMWQ3YjQ3ODQ0NjA2YTI0OGYzOWE1Y2EwNzg4YTIzOTcyNmJhMzQ1ZTJlMWE1ZTUxYTBhYjllNWZmYjMyNDEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImExOGQ5MjhhNmQ5MGE3ZTRiYzIyYTcyMzAwNjc5Mjg1MDBhYTdlYzM5YWQyMDg2MjlhZDU4NGIyMjY0Njg4MjEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_4e2d694340b94f8f95812ed1c6c83dab",
+      "statement": "The story pipeline reads outlines and writes data/stories/{subject}/{bookId}.json, enforcing grade-level sentence counts, at least three questions per story, language-appropriate true/false answers, and the presence of all three required question types.",
+      "evidence": [
+        {
+          "resource": "repo://scripts/scripts/stories/pipeline.py#L190-L258",
+          "version": "repo-lines-v1:sha256:acfad5e1223094f35c382956fd14be4d09c39cf21c35b9bfac0d5cf43243c82c:eyJzZWxlY3RlZExpbmVDb3VudCI6NjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3MDg3M2VhMWNkMmQzZWUwMWNkZjk4ZmZlY2QxYTk3OTYwZGE0NDRmOTI0OWEzOWZkOWQxMzg4M2YxODcxNzAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY1NWE3ZDI2OThhMWRjODkzZDg1ODNmMzk0ZjEzYTk4Y2Y1MTY5MGFjZTZhMTU4ZjhlYzZhNmNiZWY0MDIyZmMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUyOTg0NTRmOGY0MWY4MmZhZGNmNTU2OTExNWZlZTJhNTkzM2U4OTFiYmE0ZGMwMjMyZDI5YzkxNzFiMzY2YzUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImExOGQ5MjhhNmQ5MGE3ZTRiYzIyYTcyMzAwNjc5Mjg1MDBhYTdlYzM5YWQyMDg2MjlhZDU4NGIyMjY0Njg4MjEifQ"
+        },
+        {
+          "resource": "repo://scripts/scripts/stories/pipeline.py#L264-L299",
+          "version": "repo-lines-v1:sha256:a4769cb62c472f7a398859cb8bf220802cb606375e57c06f987cd0f14f31ca80:eyJzZWxlY3RlZExpbmVDb3VudCI6MzYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImExODI5OTE1ZDQ3NzQ0N2JkZjUxZDdlNDgxMDA4NzI3ZDdhOGQ2NWU3OTEzNzliYzNmZWQ4N2E5MmNlNDYwZjEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImYyMzc0Yzg2YjBhNWQ0YTc5NTk2YzFhNTYyMjQ1ZDgyODU5OTY1NDZkZjlkMjkwOWZlMDA3NzgxOTc0MGUzZTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjgzODA0NWM0ZWM3ZGNkOTUyN2EzYjAzMTJkZDlmMmMyZmQ0YmQwOWQ0MmY5ZjMxYTQ0NjA1MDliZTI2NjRjNDQifQ"
+        },
+        {
+          "resource": "repo://scripts/scripts/stories/pipeline.py#L53-L76",
+          "version": "repo-lines-v1:sha256:d48aa1bf2f7d17d9a7e7283ed91ccd92815c9c529ba4f1d3509b5219f12a16b1:eyJzZWxlY3RlZExpbmVDb3VudCI6MjQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3MDg3M2VhMWNkMmQzZWUwMWNkZjk4ZmZlY2QxYTk3OTYwZGE0NDRmOTI0OWEzOWZkOWQxMzg4M2YxODcxNzAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ0YjU1MmZhZWI3N2IyMWEyMTUyZTUyZGJiY2RkMDhiN2E4ZTZlMmQwNGNmYWZjOWQ4MGRiNTU0YTUxNGRmMzMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjFhNGZkNGUzYWFlNWQwOTBkNWI2MzZkYmExMjFjZTFjMmU4MWU4YjBjNmE1MTFjNTBmYjAyODRjNGNhODMzMDkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRjZWEzZTU3Zjc1ZTZlZWY3MzM1MjNiM2NhNjJjNGQ1MDc1NzNkZjRhMTRjMTU0MWM1YmI5NzEzM2U5ZjAwNjAifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_06acbd142b544d7db1809740f1f32435",
+      "statement": "Passage extraction writes draft JSON that build-data ignores until a human reviews it, fixes unit metadata, and renames it from .draft.json to .json.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/scripts/build-data.ts#L270-L272",
+          "version": "repo-lines-v1:sha256:43a983c51ca479f7000ba7e3b97037a241913591125f841e289029e603448897:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNmYzOTQ3MzI2NjYxM2NmOTcyOTI5ZmQ2MzI0MWI0ZTFmY2MxNjU3ZjY5MDM0Y2JkNDU4ZTRjNGY5NWU2Y2U5MyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiODRlNDIwOGNkNmZmYjhjNGEzNTQ3YjJmNTRhZGExOTk3OGMzZjM2NWU3OGY5NTAyZWY1MTQ1Y2RkMmFhODU0MyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZjEzOTMzNDk2MmIxYjc1ZTcwNTEwYmIzNmI2YjM2YmZmZmE5NzZjOTdjNzYzZTU5MThjMDVmOTExM2UwZDBiYyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiY2NiM2M3MjE1YmZmYzI4YmQwYTRjOGU4MzQyOGMyNzEwODViOTEzZDQzNGM4ZTlmODFiNTUzNGNjNzU0YzhmMCJ9"
+        },
+        {
+          "resource": "repo://scripts/scripts/passages/extract_passages.py#L1-L18",
+          "version": "repo-lines-v1:sha256:98917c22fff1253f6ae5cc729cd7077b06108baf0186010faeefd3e9e4ef4f03:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ2ODJjYmRiNGM4YjA3NTE4YmY0ODZjNTg5OTBmYzM5MTc4M2FhMjBhOTE2YmZiMjdhZDIxMWViMWQ1YzM2NDIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI1M2U1YTUyODYxNzJmYjBhNDc3Mjg0M2JhM2VkNjIzMzE2ODdiY2I5OTM5ZWM5YzQ5ZTkwNjZkNGVlNDI3MmQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjI1YmI1MGIwZTRlYWY4MTM3MTAxYzJiNzkyZDQyZWU3NDgxYzJlNDllYTU2OTQ1ZmIzYzBiYmVlZDg5YmNkYTYifQ"
+        },
+        {
+          "resource": "repo://scripts/scripts/passages/extract_passages.py#L242-L342",
+          "version": "repo-lines-v1:sha256:280224ce0ee205c422ec167bfc9df7999ca919a051000bc2d55d31c588320767:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAxLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJhMzEzZDc0YmM1NGFkODExNTU2ZWJjYmEzY2I1NGFmZmNjMzIwYjZjMzI5ODVhNjRiNjhhZWJmYTU0NDIxYmYyIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJiNjg0MGYwOTJmYjEyYWJiMTMxZDI4NzdjNTRhM2Q3ODI5ODdmZmE2N2ExMWI3MzU0ZDAzNWM1ZmM1ZjAzOTAwIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIwNTUwYzE1NWZiYTIwZmExYTUyMGUxMTkxNWUyNGQ5ODEzNjk0OTI0NmU2NzdkNzFkMWQxYTU2NWI2YjEyMzlhIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI4OTNiZDY2ZTJiYjcxZjNiOGE5MjQwNjRiYmY3YjA3YzU5MDNhNzczZmE0ZjhjMzU0NjA2MDM4NjY3MWQzYTczIn0"
+        }
+      ]
+    },
+    {
+      "id": "claim_e12bf70bdc404f159ec8eb76cab987e9",
+      "statement": "render_pages.py estimates a per-book offset between printed page hints and physical PDF pages by searching passage anchors and taking the modal offset, then renders JPEG pages and a pages.json mapping.",
+      "evidence": [
+        {
+          "resource": "repo://scripts/scripts/passages/render_pages.py#L1-L18",
+          "version": "repo-lines-v1:sha256:b1c9967bbb7c19a37a90ccdb55ef9433a4930ab274ace5043bdcd80282f16b55:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ2ODJjYmRiNGM4YjA3NTE4YmY0ODZjNTg5OTBmYzM5MTc4M2FhMjBhOTE2YmZiMjdhZDIxMWViMWQ1YzM2NDIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZlOTM3ZDNjMmU2MDRlODg4ZTVkOGE3MjkzYzYzM2E0N2E1ZDg3MDZjMTcyN2U5NDI2ZjcyOGUwYWM2YTA5ZTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImJlY2U3ZjEzYjdiNmEzNTE2ZmNkNGI1NDMyZDg1OGU1ZjVhMjUyMDRlNjY3OGQ5MzEwZjA1MzNlOTU0NzlmNDUifQ"
+        },
+        {
+          "resource": "repo://scripts/scripts/passages/render_pages.py#L58-L108",
+          "version": "repo-lines-v1:sha256:c40b9de6f63722b903687e9e75e4555220f906ea6a0c3f7a44f7a14337d8d887:eyJzZWxlY3RlZExpbmVDb3VudCI6NTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY4NTdlZGI1MmMxYmQ5MTY1Mjg0ODMxYzEyYzQ1NmY4OWQxYWVlYjZiNzA2M2NkMjAzZTEzZjhlOWYzM2RjMzkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI4MTNjNDE2MjExMWU3ODkzMGE2Mzc5MTE0MWU2Y2U3ZWU2MThlNGMxNTk3NWM2OGIyNzRmNDY0MDJlMmJmODYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQ3MDE0OWUwNjlhZDY3ZWNjZjQ3MzY0NmZmMWM3NTAwNTBkMzI5ZDExMDAxOGRjNTc2Njg3OGVhZmExZDYwN2QiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjNiYzU2NGZlYWRhOGI2MzliYjM0MWJjMDU0MzE5N2U2NjYwYmQ1YzIwNjYxMDgxMzY0ODM5MjQ2MzRkNDRkNDIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_42f88092c1984bb9b2d7e4815e05572f",
+      "statement": "validate-quizzes enforces that choice answers are present in non-duplicated options, true/false answers are 对 or 错, and questions have text, explanations, and non-empty fill-in answers, exiting non-zero on failures.",
+      "evidence": [
+        {
+          "resource": "repo://scripts/validate-quizzes.mjs#L19-L59",
+          "version": "repo-lines-v1:sha256:b90a37cabc953c3c6cc80619bd23ab08c7ab119006b9d02dca79028e40a2490e:eyJzZWxlY3RlZExpbmVDb3VudCI6NDEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM4NDFkZjhiY2MxMDY5N2MxYTZiMmExMDIyNDk4ZWEyMjc3MjFlMjc5ZDU5ZmM5OGQzNDAzMTMyN2EzYzlhNjEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZlYTY0NDUwYTI3YzdjYjFiOTVjYWI0ODhlYmFmYTY4MWM1ZjkzNzRhZmY1MDk5OWI2NDMxNDNiYmFhNGY5ZWIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_1b3f1c23b5a241259a0ac0a054016d5d",
+      "statement": "The TTS generation script hashes the original normalized text to match build-data, cleans LaTeX separately for speech, skips existing non-empty audio files, and supports a no-key dry run that reports missing counts and sources.",
+      "evidence": [
+        {
+          "resource": "repo://scripts/tts/generate-audio.mjs#L182-L215",
+          "version": "repo-lines-v1:sha256:c0161cbb66f8743cffae7eeb1461104f5c0983dd8d64af38dbd2f7102a0b7761:eyJzZWxlY3RlZExpbmVDb3VudCI6MzQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZmMDE2Y2JkNGFlYmViNTQyYmI1OTQ4ZGFlMTE0ZTYwNjNiMWUwNGE1YjM5YjI2OWI5YmJmYjRhNjE5YjYzN2UiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjU5MzVmMTRmMjIxNTlhNDAwNzQzY2I5MGY4NzhlYjBiZTk4OWYyNTkzNjJlZDk2ODJhOTBiMzJhODY0NTNkYjgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImNjYjM3MWIxYzAzMTQ1YmZmNjYyNzQ1MWJjYjU3YTQ0YzlhNGFlMzE3MWZhNTAzM2FkN2MwNTVhYWE0NjBkODgifQ"
+        },
+        {
+          "resource": "repo://scripts/tts/generate-audio.mjs#L268-L363",
+          "version": "repo-lines-v1:sha256:08780b04f16302481817fdf197e05bb0ab97ac15af02854b848c84216cdd8855:eyJzZWxlY3RlZExpbmVDb3VudCI6OTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNlODIwMGViZDE3MDliNmE2NzViZWNiM2JlOWYzOWU1M2JiYWMwMmNjOTI3MjM0NjJjMDU0NjhlYjBkYTZhMTYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNiMTE1MWNjZWRkMzQ0ZTk3M2Q1NWQ0NTFmNjBlODZlMGQxYTU5YjgwOGQzODdkYjRhNzk4MTgxN2Q3MTkzYmUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjEwMzc1NDExZDBlNTU1YTdkYTRmZDcxNDM2Y2I0YmU5NGQyY2YzMWI2YzUzY2MzNGQxMThhNDNhNWNiYWNkODYifQ"
+        },
+        {
+          "resource": "repo://scripts/tts/generate-audio.mjs#L72-L78",
+          "version": "repo-lines-v1:sha256:ace3e2c20bca63b52a9202c974cbf37c45dd02ad70910a934d6c6342f8d61900:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNTdmZmMyMjUyNGMzNjZiZjQ0NWIwMGU1MGE1MzhjOTE0ZDIxZTE1MGYwMDAwZThhMGUyMTgyMzMzY2M4NTdlNSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNDEyY2EzNDVjY2Y3NWJmOWMwODA2YmNlNjk1YmU4ZGU4MDhiNzk5ODQyNTFhN2E1NGQyMDJjZjYxMDFkZDQ1MSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOGI0ODAxMTFlZWJiNmZkY2Y2N2UwYjJmMThlNDhlNWJjMzE5MTgyYzE2MmMwODQ2YTY2MWZhNDExYjQyZTQ0YyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYjVhMDdkZTZiZWUxZDRjN2I2MzU3MDY1MGQxYTY0OWIzMTI0OGUzYzg0OGIyZTcxNDllOGJkYmI2ZWFjZTIxOSJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.7.2",
+    "at": "2026-11-04T02:58:40.844Z"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:2404131a870acf7af155089c25b1eea6ab4dd16fe584a851f2a940e65f8d68a7",
+  "claims": [
+    {
+      "id": "claim_0088fdc22df344318750844b010e629f",
+      "statement": "The repository is an npm workspace covering apps and packages, with the web, AI server, desktop shell, mobile shell, and shared core as separate workspace packages.",
+      "evidence": [
+        {
+          "resource": "repo://package.json#L5-L9",
+          "version": "repo-lines-v1:sha256:734b9abc79693e77ea3f15aa0af9835b05aae40a85c5539771940e476aa7a9ff:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZDAwMzBhY2JkNDc2Y2IyMjA4MTlmMmE1MzQ5ZWMxOGMzMjE0ZGM4MGI1ZjQzNGFiNDdjMzBkZjRiZmY2MDc5OCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOTY0ZDhjMDczNDI5ODkzMTAxNTc2ZDg4ZDk5MTI3ZTg5ZDY4OTFkM2IxN2U4OWRmMDJlYzlhZTcwNzA1ZDhiZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTZmMTRhYjYwOTE1MDk0ODdiZDJiYzcyMGY5YzhiNDBmODkzYmZlNjViYjliNmRjYmZmZTQyODM3MmI3Mzg1OSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTVlZjY3MjIwMTYzYjVmNjAwMjE4M2Q5YTUxZTUyNWIwY2FmMWQ5NTEwMjVhNzNmZmE3NzY3YjA4NzA1NjBiYiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_04ecc09cd4c94652aea181af37cb4ddd",
+      "statement": "The web app is built as a static export with trailing slashes, unoptimized images, and core transpilation, producing a reusable out directory for every delivery target.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/next.config.mjs#L1-L9",
+          "version": "repo-lines-v1:sha256:9b834b3503a1e951e09135c9896d37f9724855926984d7aca294a27e9a8d9f5a:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNjNiMDA0MWYzYzUzZjIxYzljY2U5ZjBhYWM4YjU2N2Q4NjU2NzI0MDVmYjllOTYwNDVmZDljMmMxZWQ5MjI3ZiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNWNiYzE3Y2E4ZjczNTk0NzY3ODMwYTM2ZWVlYWM0Y2U1ZmVhNWRkMzg3ODU1ZWE3NGY0NTE5MTkxOTVkNWMxMyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_d804db6cb0e8406baade852de3987e4c",
+      "statement": "The frontend forces the AI base to localhost:8787 when running inside Tauri and otherwise uses NEXT_PUBLIC_AI_BASE, with an empty value meaning same-origin /api.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/lib/ai.ts#L13-L27",
+          "version": "repo-lines-v1:sha256:b0fe5ed0efc0e8007e3ff1637b9992fd8718d490c64338d50a6b0460fd972353:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk0YjdlNGYyMjM4MjdhMzMzMTc1YTIxNjA3ZTI3ZjAwNWY5ZTVkYjdhODE1MWFlODJlYjgwNjUyODFjZjZlOTEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk5NTI4ZjgzZmM3MzY2OTIwMTlkOTg1MDRhZmUyZGE1ZDcxMmZiMTRmMmRiYWI5YWNkZjBlNzUxOGI0ZmM5NjMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjEyNWY3ZTEwNzEzMTRhMjg3NzdiMDRhM2MyOTRlMTk2YTliMDFmMDI4MWJjZjdiNWNhMTcwMDcxNmM2Yjc1NDEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_97bc4363e0e245d2bd6e768736da9980",
+      "statement": "The desktop shell launches the bundled AI server with HOST=127.0.0.1, PORT=8787, and STATIC_DIR pointing at the packaged web export, and reuses an existing healthy server on that port instead of spawning a duplicate.",
+      "evidence": [
+        {
+          "resource": "repo://apps/desktop/src-tauri/src/main.rs#L139-L235",
+          "version": "repo-lines-v1:sha256:96800d89e4f5f1bf97bb5c936507477d9b0675fe144074f2c824788c1525e8ce:eyJzZWxlY3RlZExpbmVDb3VudCI6OTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE5NWRjOGZhMmZhMWUyNjkxZjFmZjEzN2Q2MjA3YjFiNjM2NDAyOTMyMjcwMjQxZjAyZDZiNjM2NjdjZDdmNTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjVkODhmMDk3ZWQzNzQyMjUxMmQ0ZmI1MTU5MzA5ZjMyNWQ1OTBiMzNjN2MyZjY5NWI1ZTdkNzhmZmM2Mzc0MjEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUxOGFmZGZhMjVkZmNhNjllNjY3MjIzMDk0YWIzOTZjZmNkNTYwYmNiNmFkYzllNDJiMDJkMDUyMjY4YThlMDkifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_68435574043949d697bacc1775b700e8",
+      "statement": "Capacitor is configured to package the shared ../web/out directory and use the https scheme on Android and iOS to avoid mixed-content restrictions.",
+      "evidence": [
+        {
+          "resource": "repo://apps/mobile/capacitor.config.ts#L16-L26",
+          "version": "repo-lines-v1:sha256:086e667ac60c706da3bdfa7b20ce0acc60b38e35599d0b39632762cf2e7ab18f:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxODFlMTk2ZWZhYjU2ODIyOTExZTIwNWU2ZmE5ZTJmMGM4YzNhODk0OTNiZmEwNzAyZDRkN2JmODgwNGQ5NGIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFhMWQxYTYzMzkwMjI5Yzc5ODM0N2U4M2EwNDA1NDQxYzk0MDAwMzUyODRhZDE2OGMxYmY2Y2RmMWQ3MGEzNzAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA2MGE2N2NjNmQzODY5NjVmZGUwZmJlZjlmNWQ1ZDc1ZGJkM2MxY2VhMTJkZmMyMjhjYTAzYjNhZmYxZWU3NTIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoyLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRhOTliNzQzMjBkYTRlYTRjODU0MjExMTJhN2RlNmZlM2JiMWIzNTRmN2FiMWNkODdiZTY4OGUxNzQ5YWEzNmQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_d557411b936b4a2e9ef19872127c983d",
+      "statement": "The Express service exposes quiz, explain, story, TTS, and health endpoints, applies CORS and security headers, and serves the exported site with a deep-link fallback when the static directory exists.",
+      "evidence": [
+        {
+          "resource": "repo://apps/server/src/index.ts#L140-L278",
+          "version": "repo-lines-v1:sha256:8d7c47f457081e6b3cb29e860b9ab698de601320b82ab9e00e2a1cdab47c5c57:eyJzZWxlY3RlZExpbmVDb3VudCI6MTM5LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI1YzcwMzE0OGY2MzRlMDg1OTVhM2IxOTFiN2Q5MWVlMWU2YmE3Zjg2MmRiZjRiMGVlNGQxODU1MzhiNTI4ZjgwIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI0MTJjYTM0NWNjZjc1YmY5YzA4MDZiY2U2OTViZThkZTgwOGI3OTk4NDI1MWE3YTU0ZDIwMmNmNjEwMWRkNDUxIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJiNzc5ZDExOGQ2ZTNjYmY0NTA1Mzk3NDhkZWU3YTQzMDdhY2JlNjQ0NmNiYTI5N2YyNzYwZmE1ZDBiYmExYmMyIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiIwNTQ1N2RiZTUzZjEyZTUzY2MzYjBhNTIzZmVlMTY0ZjEyZmFhNjYxOTkxYmQxODM0OTkwMmVjODM4M2EyMWE1In0"
+        },
+        {
+          "resource": "repo://apps/server/src/index.ts#L73-L138",
+          "version": "repo-lines-v1:sha256:571c58da08d5274a71766ba866751a881f5b8d81e8c98c5c157c274ccc440d24:eyJzZWxlY3RlZExpbmVDb3VudCI6NjYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY1YzYwZTM5MWM0YzFkYzU4OTI2MjMzNDE0Y2EzZWVjNzY3Mzg4MGM3OGY4MzZlMWU0M2I3MmNiYzY1MDkwOTMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY2ZjViNDBiMTU4NDU3ZDE3ODY0ZjIxNzkwNzg2ZGQ1YTJlY2RiNjRiNjZhNjUxZjc4OGQ0ZTI1Y2QzMzAzZDIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjNjZmViODgzYzJiZDk5MmU1MjcyNTk2N2YyOTE2NjY5NjEwNzAxNTFkMDA3MGI4MjM4NjhlZTA3N2I3MWRiNWQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjM2OTkxZjNhNmYwYjFkNzg0YjUzZDI4MTM3MDdiMTYwZTk4NjRmM2ExNjk3MDFlYjg3MmIxNGFmYTkzMmZjNjMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_bf0250e97d4a405c9861a7bafbbe864a",
+      "statement": "The server resolves the static directory primarily relative to the compiled file location, which keeps the same bundle correct in development, portable, installed, and Docker layouts, with environment and working-directory paths used only as fallbacks.",
+      "evidence": [
+        {
+          "resource": "repo://apps/server/src/index.ts#L28-L71",
+          "version": "repo-lines-v1:sha256:341fa540763e2e98bc76d3b5fb8715468533db59069be9d23bf0478c5e22bf49:eyJzZWxlY3RlZExpbmVDb3VudCI6NDQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjEzYTllNjlhMTQwMjlhYjU0ZGUzYjdhOTNmYzhlNTNkOTIwZjczNDcwYTQ0OTY1MmM0OTQ0ZTE1NjgxMTc1ODAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjdmNzY1ZDU3MzNiMzFkYTI0MzgxZWNmNWMwNjI0ZDQzMGFkZDAxMjY5OTBhYjRhMGNhNGUwY2ZhZGQyZTFjMWYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjJkMjYyYjY4NDU2N2I3MzViNTg2MmRjZDRjZjIwZGU4NWU1NjJhNTE0NmFmYzAzNjM4YThmZjNhNjkxODliNmEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_3b7f3a6cc50c45eba6aff5eb3cc967fb",
+      "statement": "packages/core is a pure TypeScript package exposing domain, algorithm, and economy modules without DOM, Next.js, or React Native dependencies.",
+      "evidence": [
+        {
+          "resource": "repo://packages/core/package.json#L5-L30",
+          "version": "repo-lines-v1:sha256:d0d06cb84bf7d0e7f16cbc8a99bdfb5e3d8160135b23238439403008e4a6cb67:eyJzZWxlY3RlZExpbmVDb3VudCI6MjYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU3YTcyMTRjZTM3ZDE2NTE5ZTQyOTk4ODdiZGUyYzVjOTk5YTMwYTljMjMzNDZlYjEzNTE0ZTU1MjNmNTljMjUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRkNWNkMmZiNGYzZGY4ODQ1MTUyNTViMzk1MjNmMmY4YjU0NzJiZWVhOWY1NjZmZmNhMjA0ZGI4MDI1NjEwNDEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjEzY2FkOWIxOWMzNzgyOWRiYzYxMjIxYjg5N2I0MTBmZWFjMTlmMTdmNjE5MDBhNzFmNDhkYjMwNzVhMDhlM2MiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQyYjE2YjI2ZDRmODI4NWZjMWE5ZmVmMDY3NzUzZmVkZmM2ZDA1ZThkMmE5N2UyYjcxNzNlMjIwOWEyMmFjZTUifQ"
+        },
+        {
+          "resource": "repo://packages/core/src/index.ts#L1-L19",
+          "version": "repo-lines-v1:sha256:e6528e069c5248705aff19867e8941f8bebe72e03849d2487c0fada7fc4b44c9:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ1MTQ4NWI4MmIyOWQwNzAxNmU5ZDMzNTlmMjcxNjIyOTY2YWNhOGVkZmM1OTY0OGExZDIzNjllNjQwNDEyM2QiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZmZmQwNDE1ZGNmODRiZDFkMTJmNGU5YTc2NDZiNDgzOWViOWU3ZWViMmZmMWI0ZmQzOGRlMDA1NDc2MTRlZjgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_9547244332c9444282d377fe899323fc",
+      "statement": "Learning progress is stored locally rather than uploaded, and AI capabilities are optional, user-triggered calls that depend on server-side provider keys.",
+      "evidence": [
+        {
+          "resource": "repo://SECURITY.md#L25-L32",
+          "version": "repo-lines-v1:sha256:61a7a28424d02fe684726866fa336c71fdf3379a84ee1b149bb69f2aab5c7123:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNjllMWY4ODIyZmY0MDdmNDVhNTZkNGJkN2M4NWFlMDE4ZmJkMzc0N2RkNTI2ZTJiYWE1ZTIzMGFkNWU5NmIwNSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNzMyYmJhZjU2NDZlZGMyZTJmOGM5MTAxYmI5ZTNkZmFlNjRkN2YwODMzNDAxZTIxYzAxODA1YzliY2MwNWJhOCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOTNmNmZkM2E0NjJjOTEwNDc0N2YwMDhhYmJkMTM2ZjUxMGI4MjZiNzY2YjlhNzQ1OTBhNzBlYTQ3Yjg1ZDI5NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNjMxMDJhMzZjNzM2ZGYzY2M2YzMxMjE3MzQ4ZWY0ZDg3OTY0NWQ5YzVkMWI5ZmJkNjE1MzNiYTUyNWUyZWZhZSJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.7.2",
+    "at": "2026-11-04T02:58:40.844Z"
+  }
+}

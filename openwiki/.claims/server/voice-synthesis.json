@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:7aabd3226d1fb91f6a1a0622bcd3630eeee9ffb7543d2aef0c04ff102a199590",
+  "claims": [
+    {
+      "id": "claim_d864e33d8b9d45b98620938603d03ec1",
+      "statement": "The product uses only project-owned voice sources and deliberately does not fall back to browser or operating-system speech synthesis; if both project tiers fail, playback is silent.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/lib/tts.ts#L163-L192",
+          "version": "repo-lines-v1:sha256:8b5269eb6cb8e1b1725018ddadf71794cdbc0c93fe432e75fb36cd084f701295:eyJzZWxlY3RlZExpbmVDb3VudCI6MzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjU1OGE0M2JkZDI0NmJmNjgyZWZhZmY3OTM1YWY4MzU1M2Q1YTUwZDY0Y2NjN2M3OTFkYzczYTMwNDFmZTJlMTEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://apps/web/src/lib/tts.ts#L3-L21",
+          "version": "repo-lines-v1:sha256:96c3efe2b4a5785e0f0ff69116b607a7b9ddd63ff24b2b0f6c81a0827179471a:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk3MmE0MjkzODJiMmUxNDcxOGUwZTM3YjA1NzBhOGExNzAyOTkxZmNkODQ5OGNkODQwNjBhOGJmNGYwNTAxN2IiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjoyLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjMxZTk4MjA2ZTJiZjBiYjQzMmQxNzk3NTc5ZDljYTU5MDgxZmZiNmM1MDRmMTI1NjM3NmUzMjA3MzgzZTdkNzgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQ4NTZmNWEyZmJiZWQyOWYyMmRjNDMyZGJhZjE1ZjU5NTRlZWY1ZWJlYWFhNTcwMDk1YWQ5NmFlNzZmZWFhNmYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_096fbe086a9e416287b860709bde3e71",
+      "statement": "Pre-generated audio is addressed by the SHA-1 of trimmed, whitespace-collapsed text and served from /audio/{first-two-hex}/{hash}.{opus|mp3|wav}, with paths injected only when the file exists.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/scripts/build-data.ts#L52-L118",
+          "version": "repo-lines-v1:sha256:ae7863486a4b1ed838c9deb600ebd688d6e9040572b7a1eaa04b17cb1c0f2481:eyJzZWxlY3RlZExpbmVDb3VudCI6NjcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVlYThkOTk4MWY2ZjFhNjM1ZjQyMzViYTg2NGFkMDE5OTIzNWJjMzhmY2JmOTM2YWVkNDNiMjZmNzQ3M2Y4ODUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA2NjBkYjc4N2YwNmNjNzJlYTg2Y2FlM2EyMGYzNjljNWZmMmQ3ZmFlMDg3NTM1ZWVkMjE3ZWI5YmRkYjJlYzAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjYzMjMzOTQ1MDkzNjEzODM1ZjE5M2NlYzBmMzhiM2IzNTQwMDI1ZjE3NzQ5MWEyNzI0YTI1Y2VjNWVlNWI3ODkifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_02b43c2614fb4e888af4db05f2f2820d",
+      "statement": "The TTS generation script hashes original normalized text exactly like build-data, cleans LaTeX separately for the spoken request, skips existing audio, and supports dry-run and limit controls.",
+      "evidence": [
+        {
+          "resource": "repo://scripts/tts/generate-audio.mjs#L20-L34",
+          "version": "repo-lines-v1:sha256:611952318190de6ae5734c91425317f5c4f6918e2129df6c0b7198110ed5a56c:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdmZDc3YzJjMzhhNzcyZDg5ZGE2ZDIzNjJkMmIwYWJjODFkZjdkMTRmZDVlZmZiY2JiMjE0MjU1MzQ0OTI2YmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk3MmE0MjkzODJiMmUxNDcxOGUwZTM3YjA1NzBhOGExNzAyOTkxZmNkODQ5OGNkODQwNjBhOGJmNGYwNTAxN2IiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImI2MTVmZTJlYmI0ZDQwNmUzY2MyMjJiYmRkODE0NTg5ODc2MmJhOTlkNDYxMjliYjY5MGU5MTUxMjc0OGZkMDUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjE0Mjc5NjcxZDRlNzU0NWVhZWM0OTIxMDE0NTVmN2VhNjUwNzgxMDEwYmJmNGEzNWNlMDQxZDI1NjhlY2Y4MmEifQ"
+        },
+        {
+          "resource": "repo://scripts/tts/generate-audio.mjs#L268-L363",
+          "version": "repo-lines-v1:sha256:08780b04f16302481817fdf197e05bb0ab97ac15af02854b848c84216cdd8855:eyJzZWxlY3RlZExpbmVDb3VudCI6OTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNlODIwMGViZDE3MDliNmE2NzViZWNiM2JlOWYzOWU1M2JiYWMwMmNjOTI3MjM0NjJjMDU0NjhlYjBkYTZhMTYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNiMTE1MWNjZWRkMzQ0ZTk3M2Q1NWQ0NTFmNjBlODZlMGQxYTU5YjgwOGQzODdkYjRhNzk4MTgxN2Q3MTkzYmUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjEwMzc1NDExZDBlNTU1YTdkYTRmZDcxNDM2Y2I0YmU5NGQyY2YzMWI2YzUzY2MzNGQxMThhNDNhNWNiYWNkODYifQ"
+        },
+        {
+          "resource": "repo://scripts/tts/generate-audio.mjs#L72-L78",
+          "version": "repo-lines-v1:sha256:ace3e2c20bca63b52a9202c974cbf37c45dd02ad70910a934d6c6342f8d61900:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNTdmZmMyMjUyNGMzNjZiZjQ0NWIwMGU1MGE1MzhjOTE0ZDIxZTE1MGYwMDAwZThhMGUyMTgyMzMzY2M4NTdlNSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNDEyY2EzNDVjY2Y3NWJmOWMwODA2YmNlNjk1YmU4ZGU4MDhiNzk5ODQyNTFhN2E1NGQyMDJjZjYxMDFkZDQ1MSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOGI0ODAxMTFlZWJiNmZkY2Y2N2UwYjJmMThlNDhlNWJjMzE5MTgyYzE2MmMwODQ2YTY2MWZhNDExYjQyZTQ0YyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYjVhMDdkZTZiZWUxZDRjN2I2MzU3MDY1MGQxYTY0OWIzMTI0OGUzYzg0OGIyZTcxNDllOGJkYmI2ZWFjZTIxOSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_651764f78b374a8ea4a7a1a9213e7761",
+      "statement": "Playback tries the pre-generated source first, falls back to the project TTS API on load failure or missing source, reuses a single audio element, and stops retrying online TTS after an availability probe or request failure.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/lib/tts.ts#L126-L192",
+          "version": "repo-lines-v1:sha256:f6a71ee5404118972defd2365c49f370b718feb3bbd19f90e0700f7fbdbdc90e:eyJzZWxlY3RlZExpbmVDb3VudCI6NjcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNkZDBkNDEzYmU0M2M0MTA4OWJmYTgwZDMyZDdiZDY1Y2Q1NTNlNGY2ZDE3ODZjNDc4ZTk3OWUxOTNmMGQwZWYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://apps/web/src/lib/tts.ts#L26-L60",
+          "version": "repo-lines-v1:sha256:f271003e0933b9f73bce20c8559f3817dafcabdb4d16c335bbfc6b4a174e10ab:eyJzZWxlY3RlZExpbmVDb3VudCI6MzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk1ODA2Njg1ZjhkMjZjYTNmMTlhMjExOThlZmIxNjY0YWRjZjdkNGIxNGYwZjJmYjYzOGQ0MmNjMWE0ZGU4MjMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImY0M2QxNWMwNTNmZWU1M2IzYWE2OTdmMGNhZDVlZTMwMDdmMDBlM2JiYTE5N2Q1YmNjOThhN2RjMzdkOTc2MTAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImYxZGNmZmNlZjhkYTE3ZDhlNTRiNGNlYjYxNWI2ZWU4NDFjYjZiNjljNGY5YzlkYmM1NGMxZTAyMGI4MTU1MmEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_695c2413ca684a49a1adb30e6c4c9819",
+      "statement": "The server prefers DashScope when DASHSCOPE_API_KEY is set, falls back to Edge TTS when enabled, and throws not-configured only when neither route is available.",
+      "evidence": [
+        {
+          "resource": "repo://apps/server/src/tts.ts#L80-L100",
+          "version": "repo-lines-v1:sha256:23e456b34e6f3a7aefdf5c7a5d375e32a8925d33de3790e86c21753909c26ca8:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBmMmQxN2Q4M2Y3ZDJjYzc2ZGI0MWQyOGY4NTczZmQ2MDY4Y2U1NGNmZGZkOWI4OTAyNTkzNTAxYjAwYjY2MWQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjBiZTliZTZkN2Y5NDc4ZmZkZjNiMGI2NGQzZTU5MTNlMTRjZDliZGFmY2M1YWRmMDBiYjNmNGVkZmJiYjFjYTciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_9cdb6298b7564787a1c1c17cbadcd339",
+      "statement": "DashScope synthesis uses the configured model and voice, requests mp3 at 24 kHz, decodes a base64 audio field, and returns the buffer with a provider content type.",
+      "evidence": [
+        {
+          "resource": "repo://apps/server/src/tts.ts#L21-L70",
+          "version": "repo-lines-v1:sha256:91d32618c17592ab9f35a692b0c1f64bb8a60d98ef76954ac427333ed7c27fbe:eyJzZWxlY3RlZExpbmVDb3VudCI6NTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImYyNTFmOWQ2NDBjMTUzMmM3NWNjY2JkNGUwNWZjN2NjM2Q3NWQ3Y2YyMmRkM2JkMTRkZGU1NWFjMGVhNDUzNzgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjJiZDRhMDEwZTI0ZjkxZGIyMjIwMjE5YzkxMjJlZjFlNjc1OTdmMjU0NmYwMTAzMjg1N2IyOWEwMjVjNzgyM2EiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjZiN2JkNTM4MmIyNzMyOWU1N2I3OGQ2ZGFhZmJlNjVjMDI3ZDZhNjNlZTlkY2M4M2UwY2VmZDA2Mzg4YzMyMzcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_ae6e4f6c7fcd4a559762aa932e748afb",
+      "statement": "Edge TTS connects to Microsoft's read-aloud WebSocket with a trusted client token, Sec-MS-GEC v2 token, pinned version, browser-like headers, and 24 kHz mono MP3 SSML output.",
+      "evidence": [
+        {
+          "resource": "repo://apps/server/src/edge-tts.ts#L19-L22",
+          "version": "repo-lines-v1:sha256:29992a6a407bf6d628359718073fbbb64cee684517331274dc2e71c5ade5d810:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZGFlNTA2Mjg1ODFmNTBmN2ExOGI2OTNmZmMxNzFhMTc1NzUyZWM2OTU4YThiNTE3ZGI5NzUzYzAzNDBjMTI3OCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYTZhMzdkYmFhYmY3Y2ViYjQ5MWRlY2VkMDZhM2I4MzE1NWZhZGZlNGRhZDc4ZjJjYmU4NzM2ZTNjNThlZTEwYiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMTk4ZmFjMGQwMmRiNTRmNmE2MDAzNGI0ZTQ5MWM2NGYyYjQ5YmQ1N2Q5NTgxMjE0NmFjN2FlOGRiYmI5YTU4ZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYmI5MzIwZGFiZThhMjBiZWUyY2NhOTQ3MWJjY2UxYmE0ZmM4Mjg1Y2M0NzNiNTBjODU3NzE4NmVjZGJmMTliMSJ9"
+        },
+        {
+          "resource": "repo://apps/server/src/edge-tts.ts#L59-L109",
+          "version": "repo-lines-v1:sha256:5789b38609b162059b17f2d2f631352781cdcc41110c3295270c9fab0826abbc:eyJzZWxlY3RlZExpbmVDb3VudCI6NTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM4NzBhMGY3OTkyOWZjOTgyMWQ4YTA1YmQ0OWQ2ZDg1NDgwZjE0NmZlMzUxOTdmZDQ1ZmNkOTE1Zjc0MWFhMzEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjExNmEzOTY4ZmE4NzZjNDA2ODMxZjVhODM1MmI4MmUwMTRmMDdiNDUwYmI1Njk1MDVkOTlkZjYzMTliNWMwOGMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImJmMjg1ZTIzMWIwODg4YjQwZWQwYTc5NWU1M2JmZWRhYWRiOThjYjc5MjkxZTE4OTU2YmRhN2ViN2I4OTMwMmEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg3ZjU2ZTk2YzBiOWE2ZGZiNTI5MzY4NTI0NWI2OGM3MzQwOWI5ZDc2YzcxYzlhMzM3NzU5NzI0ZDA1NDgxNTMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_b9291574e011474680e99544ffdd8371",
+      "statement": "Edge TTS extracts audio after the Path:audio marker, completes on turn.end, fails fast on non-success Path:response codes, times out after 30 seconds, and always closes the socket.",
+      "evidence": [
+        {
+          "resource": "repo://apps/server/src/edge-tts.ts#L111-L176",
+          "version": "repo-lines-v1:sha256:6514682522004ae6ddbc418fe80635fb8738c5ad2a1c2c4a1eb8a4ccd784312a:eyJzZWxlY3RlZExpbmVDb3VudCI6NjYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjhlZjUyNGM5NzIzYWI1Nzc0ZWRkYmFkZGRlNjU3MzI3MWE0YTEyMTMyMDc4ODVlMWEzNWU1MDc4NjQ0ZDZiYWIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNhM2U0NmY5NDI3NmI2ZjZmNGVkMWYwMmFmNzhiZWY2YTJlZTFjNDM5ZGQ1NTg0Yjk3Mzk0ODMxMzIxNGQyYjciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjMyZjEyZDJiM2U0ZDcyYTBmYmQxOGM4OTg3MTI5NTA4Zjg3YTIzMDlmNDdhNTVhYzkwYzhlNzRjMDVlZTNhOTYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_7be2b1f3b235424c89378c4c94b6af73",
+      "statement": "The Sec-MS-GEC v2 token derives from a 300-second-rounded Windows FILETIME timestamp plus the trusted client token, then applies a custom SHA-256 state and CS64 checksum to produce a two-part token.",
+      "evidence": [
+        {
+          "resource": "repo://apps/server/src/gec.ts#L16-L19",
+          "version": "repo-lines-v1:sha256:bef08a8ebcfc500d76a9777c767f9490c32ea87fd33bffc874c67d3a63d69311:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMjg5NTljZGI1ZjFlYTBkYjRjZjg0NTFiYjczYmMzOTkxMGEyMjg3OWZhM2FkYTIyNjA1YjljY2RhODkxZTZiNyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiODUwNDJlYjE3NTlkNzExN2ZkYTlkMWUzYjAyMTU5MTFiNDVjMzdhZGU2ZDJjMWQ0NDczYjczMDk5OGE4M2EyOCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiODQ2MjYzZDA5MDkwMTdmOTNhOWNhNDI3Zjg4ZDlhOTM1Yzc5OTQwOGU4NTg4YmM1NTc1MGFhM2I5MjgyNDhmYiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNmEwMjkwZjgyZDA1OGY5ZjY1ZGRhOGI5ZTYzYmYxMTM0ODFmMDhhODM1NDU3YjVmZGM2MWQ2YjE3OTI5MjNjNyJ9"
+        },
+        {
+          "resource": "repo://apps/server/src/gec.ts#L204-L216",
+          "version": "repo-lines-v1:sha256:df02300c51eddd1b53f34df29c7739a289d1c833a3cd9c99ec3c9458e6d19447:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA3OGM1NWE1ZWJlYjc3NGUzOTU3ZDg5NjA5NTE2NzQwNmRmOWUwMmQ4ODZmNjM2MDZjZjZkOWI3NDlkYmVmODgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_5a5e6677fcba4865a2b07a430b517e57",
+      "statement": "The health endpoint reports dashscope, edge, or none as the active TTS backend, which is the primary diagnostic for silent audio.",
+      "evidence": [
+        {
+          "resource": "repo://apps/server/src/index.ts#L127-L138",
+          "version": "repo-lines-v1:sha256:eedff6f6d073171d245b2edbf3370f8f94eee0649a4b1f889a34e9a74a73670a:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM0YWIxYTI4NTVhMWVjOGY2MTU3ZmIwMGY2ZmNmZGI2ODk5ZDQ2YjhmOTM4MTJmYmFmMGJjMmI1M2RiNzAxYTUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY2ZjViNDBiMTU4NDU3ZDE3ODY0ZjIxNzkwNzg2ZGQ1YTJlY2RiNjRiNjZhNjUxZjc4OGQ0ZTI1Y2QzMzAzZDIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjY2MTdmYjYzYWU5YjFmYmY4OTI0OTUwMjkyYjRlMGIzZmMyOGQ3YjNmMmE2NzU5YzgyMDkxYmM4YTU5YjdmMzQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjM2OTkxZjNhNmYwYjFkNzg0YjUzZDI4MTM3MDdiMTYwZTk4NjRmM2ExNjk3MDFlYjg3MmIxNGFmYTkzMmZjNjMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_b41e8329e2e5407fb681f86fe957c1cd",
+      "statement": "The TTS endpoint returns raw audio with an immutable one-year cache header and rejects missing or blank text with a 400 response.",
+      "evidence": [
+        {
+          "resource": "repo://apps/server/src/index.ts#L251-L265",
+          "version": "repo-lines-v1:sha256:4d5d93f3b132157d44a40a465e1b6171cf6b86a685471fdf320d484639bf6197:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRkMmJmMTI2N2I2YTRiYzc1MDcyNzNmN2UxYjliZDUxYzZjZjVkOTFiMDc2NTRmM2I2ZjRkYjNiYmVhNzYxY2QiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY2ZjViNDBiMTU4NDU3ZDE3ODY0ZjIxNzkwNzg2ZGQ1YTJlY2RiNjRiNjZhNjUxZjc4OGQ0ZTI1Y2QzMzAzZDIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImViMWVhMTVhMGY3YjFkNzc0MWMwOTJkZTgwMmQzOWZkYTQ0MzRlY2YwNWY5NDM1OGM2ZjM2OWNhOTExNmUyMmYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImE5ZTJmMmRkOWFmZDI3YjQzYWZmMTU1ODExY2MzYTVmN2Y3NmY2MTA0ZDBiMzI1NjcwZGRlYWE1NTNkMDAxZTgifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.7.2",
+    "at": "2026-11-04T02:58:40.844Z"
+  }
+}

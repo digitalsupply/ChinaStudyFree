@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:8dc93ffbaefebc56a1d2f6940c65aedd8268111901e3662231ffc3415d0d8b21",
+  "claims": [
+    {
+      "id": "claim_d5c0d4615f4340e78bb40b4429a0d476",
+      "statement": "Answer grading normalizes whitespace, case, and punctuation and applies type-specific rules for true/false polarity, choice letters versus option text, numeric tolerance, normalized text, word order, and matching sets.",
+      "evidence": [
+        {
+          "resource": "repo://packages/core/src/grade.ts#L9-L102",
+          "version": "repo-lines-v1:sha256:22d836d5cc67cb7d51af212506825f0202a8e97567d861abcf15514aca811d9a:eyJzZWxlY3RlZExpbmVDb3VudCI6OTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAzZjZhNjNmNzE5YWU3YWZkZTgzYWUzOTQ4ZGU0YTdiMzhkMTc4Yzc2NmYyODJjMzc4MjIzNDc5YmMzMjUyZTUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjJmMTQ3OTEwMmJiOGQyNmNjNjkxOTE5MzY0Y2Y5ZWMxZGJlMmIzYTdkN2I0MWQxZWM1YzNiYjc5ZjY1MDliMDYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhkOWE2ZWFkMmM4YjE1M2Y0NDEyMTI4MTRkZTZlNjkzNDMwNzgwZjM3OTRkYmVjNWQxODcxNGI3YzE2NzU2MTIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_f9a6e106945948e2a7b1aabe99fc0ad7",
+      "statement": "The SRS algorithm uses three boxes: a wrong answer resets to box 1 and schedules today, while correct answers advance 1→2 (tomorrow), 2→3 (three days), and stay in 3 (seven days).",
+      "evidence": [
+        {
+          "resource": "repo://packages/core/src/srs.ts#L83-L120",
+          "version": "repo-lines-v1:sha256:03d4c016502043817aa84ace054ccff2f68e71090661f0fcc4e7fc98802bb564:eyJzZWxlY3RlZExpbmVDb3VudCI6MzgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImI4MTA0YWE1NWQ0OWQxMjM1ZTJjODE0ZDBiMTViMWYxN2JhNzU0ZjQ5ODgzNjJlN2MxODkyYTQ0Yjk4YTkwMTciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjFjZDYwNWRjYTYzMjVlYmEzMWU0MWI5Zjk2MjFlYjczZWM3NjA0N2YyMzljZTM5MTY2N2I5ZmQ5MTdkMGE3ZjMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_dd17222717e64181844d4b2d86b9f1ed",
+      "statement": "SRS graduation is a derived predicate true for an explicit graduated flag or for box at least 3 with at least two correct answers, and the due queue filters on this predicate rather than only the flag.",
+      "evidence": [
+        {
+          "resource": "repo://packages/core/src/srs.ts#L122-L147",
+          "version": "repo-lines-v1:sha256:6704c37316aefe0e59a8e93d3c1eec6c009ef8399c263870e8371d80188ce2f4:eyJzZWxlY3RlZExpbmVDb3VudCI6MjYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijc0MjQ0NTg0MDEzY2E4ZmZjMjBiZWZhYWJjMzNmZTgyZDkxOTVkZDQyMjIxMjNiZTA0MDk2Mjk2YjVkZjY4ZDciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQwNmFiZTA4MDI0MjVhZWI2OTQ4YmI3M2M0YTk5ZDhjMWVlY2IxN2VhMTIwY2IxNjI4YjI3ZDg3NGE2NTk5MTUifQ"
+        },
+        {
+          "resource": "repo://packages/core/src/srs.ts#L38-L70",
+          "version": "repo-lines-v1:sha256:bf5877f878b8bc959d5c0c70947d6b1f6761ab6df566a39e4033bdcd9c8401b2:eyJzZWxlY3RlZExpbmVDb3VudCI6MzMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNlMzZjODVmYTVmMzg4ZWU2ZmE4ODU1ZGQ1OGNkNGE4YzBiZDY1YWViYmM2NmE3ODI5MTllMzBlZWZmMWU3OTIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjcxYWU4NjVhM2E1ZjhhNDRmMTY0M2Y5MTYyOThjNDIyZGExMjIxZmFhMzZmNTAzNDdjZjlmZWQ5YTAyNzBmNzIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImY3ZjQ0NDA5ZjE0Zjg3ZWY1YTE5NTkzNmZiODgzY2M4YjgwNDgwMzQ0MzE5MDE3ZWE5YjExNzRiNjE3MDNkM2MifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_fd6af7f6c1794498a51bbf10f9a56ba4",
+      "statement": "The jump-ahead sampler deduplicates questions within lessons, deterministically shuffles lessons and questions by seed, selects round-robin for even coverage, returns all questions when the pool is too small, and shuffles the final order.",
+      "evidence": [
+        {
+          "resource": "repo://packages/core/src/jump.ts#L56-L116",
+          "version": "repo-lines-v1:sha256:be426d8d363ba10ef6d38430bf3fdf6c3e559c5f83585280fe1f546b6726c420:eyJzZWxlY3RlZExpbmVDb3VudCI6NjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjVjZGY3YzMzZTkzOTZhYzUxNGZkNDZjOGU0MWUxNjMxMTQ3OTgwNGY1Njg3NGM0MjVjY2Q4ZjU3MjE1MWYzN2EiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_b24552bc869d4d1282974a24dccb3475",
+      "statement": "Jump-ahead defaults to 15 questions with a pass accuracy of 0.80, and changing the seed produces a different but deterministic question set.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/app/jump/JumpClient.tsx#L137-L145",
+          "version": "repo-lines-v1:sha256:70341dcc00402518881c02ba9d625616dad7c42927becc3923ba0ff9458fc28b:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMzVhYjk1N2MwNjc5ZDU5MDVhNGEyMGMyOWYxMzliMGRkYjg5N2VlM2MyM2JhZmMyNjM5NTIzZmE0ZDZkY2ZjNCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOTVlZjAxYmMwOGRiYzNiNjNlNGU3NWVhM2QyNmE1Yjk0MTg5MTg3N2UyN2FkODkxMzI5Yzg0MTFkN2Q4ZGM0ZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMGZiN2FiOTYwOWJkM2IwODJmNzAwNzlkNmM5MDMzY2M0YTY1MDM3Y2NjMGY4NjVhNmVkMzgxYjRjODhmZjA0NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZjg3N2RjN2Q3N2FhODc5OTViMDU2ZjJiYzZlOGZhN2NhOTIwMDFiMDI5NjhiNDgyNjIzOTNmNTMzNzM4ODZhOSJ9"
+        },
+        {
+          "resource": "repo://packages/core/src/jump.ts#L20-L23",
+          "version": "repo-lines-v1:sha256:a6c91265f07e874c52b4c88cd58ee778631ca9f522e6955b43dd51060e92cf28:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMzQ3YzI4M2YwOGU3MDc0YzY4MGNiOTQzODI2MTU5YzAxMWI0MWMzNDIwNTZkODY2ZGRkYWUyOTUxMzY3ZGEwZiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiY2RmZGU2ZWJlM2Y4Yjk0YTNlZmQ2OGYyMWMzYzdjOWRlOGY5MDY0OTEzMzY2ZThlZWI5ZTliMGJjMGJiZTY3NyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYTg2NWMyMjUxYmYyMTg3Y2I3ZDVhNjhjZTQ2ODg3Nzc0MTM0NjEyYmY2ODY5OWRlOWM5NmEyOTA0ZjE5NTA3YyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiN2I1ZTExZTE3MjFiNjVmNzQxMjU4ZWEwYTBlYjBhZDJjOGU2YjczOWMwMGNiNDk3MGJjM2Q3NTM0ZjZjM2Q2YyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_d3d455100eb14353bdd1230d92213cbd",
+      "statement": "A chest slot is inserted after every fifth lesson within a unit, using a stable id, with no chest added at the end of short units; chest rewards are rolled at 85% common, 10% rare, and 5% epic tiers.",
+      "evidence": [
+        {
+          "resource": "repo://packages/core/src/chestLogic.ts#L13-L73",
+          "version": "repo-lines-v1:sha256:8171210c4476c237be104e5fceb9486548ddd4b46f9e74e3bf89f48971578dbf:eyJzZWxlY3RlZExpbmVDb3VudCI6NjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI2YzU3NzE0MjZmMzdhYjE2NzMzMmFhM2UxYTFmNTQ0ZTg5MWFkNzFmMmU4NzAzZDdlM2FmZDMwNjZmN2U0NjciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU5NGFkNTg4ZTI2Mjg0YjgyM2I2M2M4MjcyMjRhNGQzN2Q5NjE4MDk3MzAyNmMwNWVmZTUwMjkzZGJiZTU2YWUifQ"
+        },
+        {
+          "resource": "repo://packages/core/src/chestLogic.ts#L75-L99",
+          "version": "repo-lines-v1:sha256:50e0435c280ca768465b0bb595ec8b57a32b9f2dfb2fb2846f5948210366bf9a:eyJzZWxlY3RlZExpbmVDb3VudCI6MjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjZiY2E2MjRmNWNhM2E3MGMzNTIxYWIyYjI4OWY0ZGE4OWYzYzAwOWU2MmQxNzFmYmYzMWU4ZmNiYWFlYTFjMWQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_c4e6227bac8d4ebea8cdd9f5a40ccedb",
+      "statement": "week.ts defines local-time YYYY-MM-DD keys, validates real calendar dates, starts weeks on Monday, and provides week keys, seven-day key lists, and day offsets without UTC conversion.",
+      "evidence": [
+        {
+          "resource": "repo://packages/core/src/week.ts#L17-L80",
+          "version": "repo-lines-v1:sha256:a31d7925c5cc0596e85e3d4a3c84c1dd67c6ed6109993de4add2dcc2c40a547e:eyJzZWxlY3RlZExpbmVDb3VudCI6NjQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU4NmNiYmEwNmRiNDJiNDE5ZTVmZDg2YjZkNDcwMjg4NDA0OTk3MWJmNDgwZjQ2Y2RmNDRiOGMyMWJkOWNlYmUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFhYTNiZTVhODY4OWYxNTJkOTVlZjUzODYzZDI1NjExNDQyM2RhM2UwYTE2NDAzMTU4ZTdkOGJjNDI3NWYwZmYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQxMmU2OGI4MDYwM2VkZDQwMGQxZDc5YzcyYjRmMGM3YjdlODA3YmE0N2YzZjMzNmQzYmU4YzYzYjZiZTFhOTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_dcd78dfae0794618b5b7f90e6b0ecbd7",
+      "statement": "The shared RNG provides UTF-8 djb2 hashing and a SplitMix64 finalizer with explicit 64-bit masking so TypeScript matches Swift unsigned 64-bit wrapping behavior.",
+      "evidence": [
+        {
+          "resource": "repo://packages/core/src/rng.ts#L11-L54",
+          "version": "repo-lines-v1:sha256:053b595702797e48d357dfe72b8aefaca78fc76d08d6750b3782ee82a5994935:eyJzZWxlY3RlZExpbmVDb3VudCI6NDQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRhOTMwNzJiNmJiZmIxMDY5Y2Q1MzQ1MjcwMGZhZGJjZmM4YTU5ZjlhZmMzMzMzZjBiYmFiM2VjYjE3MjAxYzgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjVlYWE1NDFhMTY3M2MyMjY5ZDM5MWI4Mzc3OGNmOGQyNDBkYzA2NDg0M2NkYjIwNTg0ZTA4NDYzMTc3OTkzZDMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.7.2",
+    "at": "2026-11-04T02:58:40.844Z"
+  }
+}

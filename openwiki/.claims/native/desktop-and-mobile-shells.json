@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:a889af15244176ba33a163c8aa801175a5c12690a46da67526b0424a48b9ef43",
+  "claims": [
+    {
+      "id": "claim_8bb990ef7d944f9d8860d77fe78f28f3",
+      "statement": "Tauri uses the shared web export as frontendDist and bundles the web export, server bundle, server package.json, environment template, and bin directory as application resources.",
+      "evidence": [
+        {
+          "resource": "repo://apps/desktop/src-tauri/tauri.conf.json#L28-L38",
+          "version": "repo-lines-v1:sha256:387ab0bed79b6069de7cbed4ddb08af28504b196110488c737c3686ef2fae90a:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRjMDcyNDlhZjgzOGY5NDg0OTM5YjM3ZGE3OGQ3MTIxZGM0ZTVkNGFjNTI2N2JkNzIzMDkwMGU3NGE4NjMzZDkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFmMGNkYjk3MmE3YmZiN2VkMjQ2ZjlmZjY3MjM4NWU1NWY0OTY4ZmMxMTA0M2RjNWI2ODRkNTFkZmEzMWRiY2IiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNkNDQ4YjVhYTFiYmY4MTdkYzBlMzdiMDA4OGU2MmQwM2MyYWE4MmVmZTAyOTIxNzUyMzY0MDQ5NjNmZTZiNzMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU2NWQ0M2I4ZmQ1ZmVmOWE4OTM0ZjNhNWU4OGYxMmY1MTJlYTQ4OTExYWIyYjk1ZTUwMTk5MWY1NjI1YThkMWYifQ"
+        },
+        {
+          "resource": "repo://apps/desktop/src-tauri/tauri.conf.json#L6-L10",
+          "version": "repo-lines-v1:sha256:7d9f5580857edad70084190be92ffb668d41f3f07748c4c89890d653873c56ac:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiN2IwNzIwMWJkYjZiYzA1OTIwODQ5NjM2ODE4NjFhNGZhMTRhZmRhNTkxYjZkNTY2MWI3NDU4ZDkyMWQ1ZDBlYiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYWIyNWU4ZjM5OGY1N2EwYWQwMWZhNjkwMjIxMWRhZGVkMjEwN2ZlOWQzM2U4MWExNDcyZWE2MjYwMjVlZjBlNCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiM2M5YzJjNDVmMDU3NzllZDIyZThkODM5YzRjZTNmNTQ1ZjE3YTk0NDc1ZjUwYjdlNjJmY2UwNmE0N2Y1NzVjZCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiN2I2NDE4ODE5ZTA5MTZjMTJmZjQ4ZjM5ZjhhYmJmZTU3YzA3MjFlNDc3OWM4YTNmNDUzY2M4MjY2ZmU0ZWRmZCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_648d0d69459c461283aa2bd2dac72ad4",
+      "statement": "The desktop setup resolves resources and logging, creates the tray first, then launches the AI server on a background thread so the main window does not block for the readiness wait.",
+      "evidence": [
+        {
+          "resource": "repo://apps/desktop/src-tauri/src/main.rs#L250-L262",
+          "version": "repo-lines-v1:sha256:d4494e547bfb06b136fef3905d054d92f490a35b77515bd6e734165532730ecc:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA4ZjFhNDdmZWQ3ZDQwNzZkM2RkODQ4YzcxZWQ5ZjZkOTkzOWE5YjdhNTgyODk4OTBjZmQxODQwMmJkNGI2ODAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjE5ZTc2MzU1Y2YxMTk5NDgwYzNmOTk4MzZiMTQ4NmM4NDFkODkxZmFhZDkwNGM2MDhlMDkzMDIyZDM3NTdhZWUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUxM2JmMmFmNDc0NzE1NzIyMzFhOWRmMTE4YmQ2MWRlMjEzMGI2MmNiN2U2NjY2N2M5M2RlNmQwODhlZTU5YzcifQ"
+        },
+        {
+          "resource": "repo://apps/desktop/src-tauri/src/main.rs#L356-L397",
+          "version": "repo-lines-v1:sha256:3a98132e00cd8702e137c018f7257fe68d6a65221761f938461b1bda95dfb8b2:eyJzZWxlY3RlZExpbmVDb3VudCI6NDIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAwYjllZWU5MWJjMGIxYTc3YjVmMjI0ZmQ2OTQ1ZjNkZWMyMzRlNTU5NmI5NDc1YzkwYzVhZWM5ZTZhZTIwYjUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY2YzIxNTA4YWJiMGI2MzNjZDc3NzI0YmRmMzYzZDM0ZjFiYjU0OGM4OWFlY2IwZDJlZDNiMDg0ZTJlOTQ2MTUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjM1ZjZmNDY2ZTU5Y2ZjMzA3MDNjNDVmNzJhZjY1ZGU1NGFjMzYzZDM1NGNjMWEzMzMwMzUwYWNkNDUyNDM0YzQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjNhZGZlYmVhYzc5ZTE4ZTIxZDMxNzhhN2E1MDE4MmJiMDYyZWFlMWFhNWFlODQ4MjFmNzgxYTVhZjM2ZGFlNGUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_d29047d600f34838a9193e4f78d94143",
+      "statement": "Before spawning the AI service the desktop shell probes /api/health on 127.0.0.1:8787 and reuses an existing healthy server, avoiding EADDRINUSE after a crash left an orphan process.",
+      "evidence": [
+        {
+          "resource": "repo://apps/desktop/src-tauri/src/main.rs#L139-L174",
+          "version": "repo-lines-v1:sha256:0d8f551940b67fa0526e873e29aaf748cc807b04a5aadffa67042931e1ab9e11:eyJzZWxlY3RlZExpbmVDb3VudCI6MzYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE5NWRjOGZhMmZhMWUyNjkxZjFmZjEzN2Q2MjA3YjFiNjM2NDAyOTMyMjcwMjQxZjAyZDZiNjM2NjdjZDdmNTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4OTNmNDBlMzc4MWViODk2YzgyZDA0NmEwODA2N2ExMWUzNWNkZjJmMWRmYWYyNmZlYTkwYjhkYjY2NzY0MTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjVkODhmMDk3ZWQzNzQyMjUxMmQ0ZmI1MTU5MzA5ZjMyNWQ1OTBiMzNjN2MyZjY5NWI1ZTdkNzhmZmM2Mzc0MjEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjEzNTdkNTY3YTg5MGVkZmVkNGQ3NTE2NDVhYTY2MWE0NzJmNDQ2YTczZDk0MDI5ZGViODY2ZTc0NDViYzAxNzMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_ad0bfa821d8344dfa67a5d36d2649fd3",
+      "statement": "The sidecar is launched with HOST=127.0.0.1, PORT=8787, STATIC_DIR pointing at the packaged web export, and CORS enabled, using the bundled Node binary when present.",
+      "evidence": [
+        {
+          "resource": "repo://apps/desktop/src-tauri/src/main.rs#L176-L235",
+          "version": "repo-lines-v1:sha256:b719e9673ecf92b678feef2cfad2f312c7b658b639ba466775d7c5c68e5946df:eyJzZWxlY3RlZExpbmVDb3VudCI6NjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVjMDFiMTQ1ZDA5NjBlYzlkMDUxOGJhYWQwOTg5MTE2Mzk3ZmNhNGE4ZTQ4ZmM5MzBhMjA0NjVlZDEzZWM3ZTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZjZjA2ZDYwOGE4MDNiMzRlZDQ4MzhhODBhYTE4ZjBkOWE5ZDU4NGYwMmVkNDQ5Y2M2YTA5ZjUyMTJhYmM3MjciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUxOGFmZGZhMjVkZmNhNjllNjY3MjIzMDk0YWIzOTZjZmNkNTYwYmNiNmFkYzllNDJiMDJkMDUyMjY4YThlMDkifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_891cf79ba6624e2ebef67b1f619a47dc",
+      "statement": "On Windows all child processes are created with CREATE_NO_WINDOW so launching the Node sidecar does not flash a console window.",
+      "evidence": [
+        {
+          "resource": "repo://apps/desktop/src-tauri/src/main.rs#L209-L218",
+          "version": "repo-lines-v1:sha256:5d448d23e9a6733a2347d455f13671db5324e1dec607de592f5248312b229b60:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRkMDFjODk5YTYwOWMwZWVjZWU5ZDZjZTdkN2RlN2Y3ZDJlZGNhNTMxYWNkYTZmMmZlM2FkNDY3OGI1ZWJkMzkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBjNjllMzkxOTEwYjMwMDczYWY2NzhkN2UxYTQ5MWUyOWY2Mzg2OWQ1ZmRmYzk5NGVkNTExYjJhMzEwYTdiNmMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImY5NDUzYTk3MjEzNDE5YjVlZjI3N2JkNTZhNzhkNDY5ZGFmNjA0ZjJjMWI0MmU4NjY2ZTE1MzlmN2JlMmVkNjEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQ3ZWUzYTA3ODljYTQ0MmRlOGNkYjRlYTQyYjVhZDliMzAxNDE3MjkzZTA4MGRlMDUzMmM2MWQ4MDQ0NDdhMDgifQ"
+        },
+        {
+          "resource": "repo://apps/desktop/src-tauri/src/main.rs#L48-L70",
+          "version": "repo-lines-v1:sha256:77185719ab96dfdaf709b5303e0cba3c0b7dacb965ecfbccc93a0d0328e3be18:eyJzZWxlY3RlZExpbmVDb3VudCI6MjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY1MzNhYmYxYWQwYzU4Yzc3YWE4ZjUyODZiOGE3YWFjZWY2ZmQyOWJiNDE1MmEyZmZjOTViNmFiY2I0MDFhY2EiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjVkYTExZjBjZTU3MWEyNTk0MDg5ZDNiYWNkNzZiOWE3NjNjMzJmZWY1NDU4YzIwNzM2ZDY1OGUyYmE5ZGZiOTciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzNjMzZDI3MDgwNThlODViMDU4MzA0Yjc0MzFmNWRiZTdiZjEzYjZjZTBlYTM5MTk2NmExMTU5MmQ1ZmU1MzUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_4ac2cbbd83154d708f248b22a42c9414",
+      "statement": "The tray supports show, open in browser, open log, and quit actions; left-click shows the window; closing the window hides it to the tray unless a quit is in progress; any exit path reaps the owned child process.",
+      "evidence": [
+        {
+          "resource": "repo://apps/desktop/src-tauri/src/main.rs#L297-L354",
+          "version": "repo-lines-v1:sha256:e79d011fd0d1186458b2ea8701d79f8218d5b3c46f0b486f9858ae725c62c6b1:eyJzZWxlY3RlZExpbmVDb3VudCI6NTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVmYWQ1MDMzMjA0MGZhYmE5NTBkZDhiNGJjM2NhMzE3MzFhYmEzMmY2OWI0NDg4YzkwZDkyNTliMDJhNmM4NWYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjE5ZTc2MzU1Y2YxMTk5NDgwYzNmOTk4MzZiMTQ4NmM4NDFkODkxZmFhZDkwNGM2MDhlMDkzMDIyZDM3NTdhZWUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImE4NzNjMDYzNDY5YTczNWY1MDgzYTQwOTFlYjQ1MTIwNjViZGIyZDZkY2Q4MmQ1NjMyZmQxYzBjOWRjZWYyZjcifQ"
+        },
+        {
+          "resource": "repo://apps/desktop/src-tauri/src/main.rs#L399-L421",
+          "version": "repo-lines-v1:sha256:923b1e3a63bcc0e7f2d475671640a28533a02f60d00ceff8536a84cb43806a0d:eyJzZWxlY3RlZExpbmVDb3VudCI6MjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZlYjQzZGQxMzBjNjU4ZmVlZmI3ZDE0YzIwYmUwZDIwZjgzMjQ1MDAxYjkzNTk1MzgwYWVlM2EzNzVlMmJmNmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU2YjA0NDkxNDY5NzIyZTgzNjNhOTRlNDA0NDUzOGUwMTNhMmEyMTdlMzZiMWU1NjhiYTYwYWNiN2I0YzhmMmUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImJiMDE2ZjE2M2NhYWFjM2YxMGVjNjg4ZjE4YTFjMjcyOTUyOTg1MDY3OGRhZmM0YjAwNzg4MWIyNjE2NjdlNDciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoyLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImNlYjE2Njk1YjAyMDhjN2JlYWEwZmY1OGNmN2EzMDcyNTViMWEwYWVkY2Y1NDY1MjNmZjEzNWM1NmQ4YTBjNGUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_44eeef94306e4374b99af5441f70e9d0",
+      "statement": "Desktop logs are written to a user-level directory with a resource-directory fallback so unprivileged installs can write and uninstall does not leave a log file blocking directory removal.",
+      "evidence": [
+        {
+          "resource": "repo://apps/desktop/src-tauri/src/main.rs#L101-L137",
+          "version": "repo-lines-v1:sha256:8905f25485dda2b06dba6d29e73956cab8e19ac38078fe4d25af2c3ed7acb551:eyJzZWxlY3RlZExpbmVDb3VudCI6MzcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImMyZjAxNTVjYjAzODMzNzZjMjFkNjI5YjQ3NThkNWY1Y2IzOTVmOTMwOGEwNDA2YThkNWJmMmZkMTYyZDVmOTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjE5ZTc2MzU1Y2YxMTk5NDgwYzNmOTk4MzZiMTQ4NmM4NDFkODkxZmFhZDkwNGM2MDhlMDkzMDIyZDM3NTdhZWUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU4NjlkNDcyMjJjNmNhZmMwZDNiOWY0YjdkZWYwMzMxMjU0ZTU1NDNlNWJkOWU0Mjk0NDRjZjIzYTIyMDcyNjcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_657e5f8111d9493ca0082ef8cae8a632",
+      "statement": "Capacitor packages the shared ../web/out directory and uses the https scheme on Android and iOS to avoid mixed-content restrictions; the AI base is supplied at build time or left empty for offline use.",
+      "evidence": [
+        {
+          "resource": "repo://apps/mobile/capacitor.config.ts#L16-L26",
+          "version": "repo-lines-v1:sha256:086e667ac60c706da3bdfa7b20ce0acc60b38e35599d0b39632762cf2e7ab18f:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxODFlMTk2ZWZhYjU2ODIyOTExZTIwNWU2ZmE5ZTJmMGM4YzNhODk0OTNiZmEwNzAyZDRkN2JmODgwNGQ5NGIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFhMWQxYTYzMzkwMjI5Yzc5ODM0N2U4M2EwNDA1NDQxYzk0MDAwMzUyODRhZDE2OGMxYmY2Y2RmMWQ3MGEzNzAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA2MGE2N2NjNmQzODY5NjVmZGUwZmJlZjlmNWQ1ZDc1ZGJkM2MxY2VhMTJkZmMyMjhjYTAzYjNhZmYxZWU3NTIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoyLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRhOTliNzQzMjBkYTRlYTRjODU0MjExMTJhN2RlNmZlM2JiMWIzNTRmN2FiMWNkODdiZTY4OGUxNzQ5YWEzNmQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_ec157172812246c6a835433652fae144",
+      "statement": "After the Next build, a post-processing script renames bracketed dynamic-route chunk directories and rewrites encoded and decoded references, preventing chunk 404s in native WebView asset loaders.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/package.json#L8-L8",
+          "version": "repo-lines-v1:sha256:bdd79883ad87b3004d9649914855d671e7abd9bfd4c872bbe2e376d594896af4:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYmRkNzk4ODNhZDg3YjMwMDRkOTY0OTkxNDg1NWQ2NzFlN2FiZDliZmQ0Yzg3MmJiZTJlMzc2ZDU5NDg5NmFmNCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYmRkNzk4ODNhZDg3YjMwMDRkOTY0OTkxNDg1NWQ2NzFlN2FiZDliZmQ0Yzg3MmJiZTJlMzc2ZDU5NDg5NmFmNCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYTk4MTEyZWI3ZTg1MDc2ZWI3NWI0NzkwZjA4NDAxODY3ZmVkMWQ4NDM5NzAxN2FmMzRjODc4YzEyM2Y4ZTc1OSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOGUwNDIyYzYyYjk1YmU2ZjgwNTFjNmQ5ZDNjZTQ3ZGNhZDgwYTFhZWZmZmQyODMwNTM4YTVjNmI3YWEwNDQ4YSJ9"
+        },
+        {
+          "resource": "repo://apps/web/scripts/fix-android-asset-paths.cjs#L1-L23",
+          "version": "repo-lines-v1:sha256:7d004587f410a31ac02cc5f0fa9e0ad9c037d4905cb289c665dd256c3b943096:eyJzZWxlY3RlZExpbmVDb3VudCI6MjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE1OWM0Nzg3MmI3MWYxMjU4OTk0Mjg5MjQ2NGU3NjRjMGRiMzUwYzIwYjcyMjI4NjQ1NjE1Y2MzNmUwYTA3MjUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk3MmE0MjkzODJiMmUxNDcxOGUwZTM3YjA1NzBhOGExNzAyOTkxZmNkODQ5OGNkODQwNjBhOGJmNGYwNTAxN2IiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijk5NzY1ZjA5N2NkMjA0M2JjOTRjMDc3NGJkYTJjZmNkOTYwZjU5MmQ1MjVjZDM0MjE2YWIwZGExMTg5OGE3OTgifQ"
+        },
+        {
+          "resource": "repo://apps/web/scripts/fix-android-asset-paths.cjs#L38-L117",
+          "version": "repo-lines-v1:sha256:c2a9fbf0ca39b961bf09ce8bf697700998df07a7a29c5eb7f4f62fb5b73c518c:eyJzZWxlY3RlZExpbmVDb3VudCI6ODAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImMzMWI2Yzk1ZDk0OWRlOGUxZjE1MjkyMmU0ZGFkOTk1MDJjOTM2ODljYjg5MDY1NTI5NjJiNWZiMDIyNTVjOTUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ5OTY3ZWMxZWQzODM2ZjhlYjE3YWZmMTcyYjViZmVmN2RlNjA0ODVhNDM5YzZjYTExYzU5MWUxNzU1NzM5YWUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImYyZjc5ZjFkMmQ1ZTA1MDA2NTQwOGNiYWJhMTU0Y2Q0MWQ0NTgyNjA4MzkxMGQ3NzQ0NGU4M2ViZmFjZDFjYTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.7.2",
+    "at": "2026-11-04T02:58:40.844Z"
+  }
+}

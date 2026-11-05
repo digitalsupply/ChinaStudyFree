@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:ac2296981b426e83c86eb1d09fdf17af235bd0b331f60b5cdff3f2643946fc5d",
+  "claims": [
+    {
+      "id": "claim_c094a80219704250b2a77c43053453fb",
+      "statement": "Learner state is held in one Zustand store persisted to localStorage under csf-progress-v1 at version 15, with components gating user-specific rendering until hydration.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/app/HomeClient.tsx#L40-L54",
+          "version": "repo-lines-v1:sha256:a4f3e415c7977e442c4e6642313f935dca8dd1ca64f082f3a5f40eb34552b964:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdhMWRlMWEyYTQ3N2Q1ZTljOGUyM2UwMDI2NGExNTU2ZGQ3ZTE0ZTAyYmU0YTA2YTg1ZmY5MmExMmFmZDgyYTUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM3YTI1ZDhmMmNhYWU1ODg3MzBiZmJiOGM5N2UyNTE2NjBlMmFmZTgxOGU5NGJkMWUxYThkMzkzMTgzYjkxNDkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjYwNTlkZDczNmFkZmYzYjY1NDU5NGI1ZjA3ZjBjNzdkZjk4NWI1YjIwNzA4NmNhN2NjN2YwYjRlZTQxNjViNDkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQ1MDM1NWYzYWE0MDUwOTM2YmJmMmRhZThkZWY1YzBmZTdiMTNkZDA3OWNhY2IzZDI4NGQ3YzVkMzRjMzU3NTUifQ"
+        },
+        {
+          "resource": "repo://apps/web/src/store/progress.ts#L1695-L1724",
+          "version": "repo-lines-v1:sha256:c1a943d4a9b6f3e627ff1f1ea5998cb8217600b62810bc41910ebfe2a53caf20:eyJzZWxlY3RlZExpbmVDb3VudCI6MzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY5Y2E4OTFiZmY3YWMxZjdjZWFhZTQwZWYwNTEwNjZiZTllZmU0N2I0ZTQyODFlODZjMzE5YmUyYzU1ZWJjZTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjlkMDE0OTlhNWY1NjhiNWFjNTljNmU4MDEyNmI0NjZlNjQyMThjNmYwM2U4YWVkYWZjMTI5MzBkMjEzM2MxZTUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImU0YzVjNDBiMDkwYTUzYWM5MzdiZmNmYTMzYjhmZDFhMTY3ZGU5ZGE4NTQ1MjI2ZWU2NjFlMzY4MzZmOWEzZjYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjZjOGUwNjEyZWI1MTg5YjA0ZjlhOWNmMjg0ODg5OGJmZWNmMmUxYTIxZDRmM2U4OGUwNzA2ZTgyYzczNWZmNjQifQ"
+        },
+        {
+          "resource": "repo://apps/web/src/store/progress.ts#L640-L642",
+          "version": "repo-lines-v1:sha256:47c9de1e686bb6fc224a57faf909bcdd1bd81b57411f88ae71892c7d7d5cfd3b:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMmE1ZDcxOWJiNDdhNWRmODljMDdmYzJjYjZiYzdhZWExZmNlYTg2N2VjMjUwMGI3ZDgwMzQ3MzExNzhjNDZhZSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYTQwNzM0MGNkNTFlY2UzYTBiNDNiMjQ1NTExZjViNDYxYjcxNGNiODNmZjE3NjIzMzU1OWZlNTAzNGZlYzBhZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTgxMzMzNTY1NTJiN2JjODEzNTJiZmExMmViNTE5MmY4OTIwMjg1Mjc5MGNhNGE1ZDczMDY2YThiMjYxNTE2NCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZDFiMjVjZTdlOTk2OWE0OTQxZmJkNjZmNzM3ZDFiNGQ5MWVkZWI0YzIzMTU4ZjY2Mzc5NmY0MmRhMDUzYjNkYyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_9f715a2303d2412c933c140715dc2273",
+      "statement": "recordLessonComplete performs the entire settlement in one atomic state update: stars, daily rollover, XP, gem drip, streak, milestones, best-score preservation, daily counts, and perfected lessons, returning an outcome snapshot for the UI.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/store/progress.ts#L1053-L1183",
+          "version": "repo-lines-v1:sha256:afa8cf55b1bf41633055db5bd77c5cb325f6faf2f657163c73acec7d30d72bfc:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMxLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJiNjBmMTQ5ZTNmMmNkYTAyYmQ5NmY2ZjViM2JmMmJjNDM3OTgzNjkzZjlmNTBjY2EyZTJmNjM1MzhmMjQ0MzFkIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJiOTc4ZTI1MDNiOGNmMzdhMDZmN2Q2ZjBhM2E2YjZmZTM1NjkxZmJjYWI1MGI4Nzc1Y2FiNmZhYmM3MWM1OTJiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI4ZDA5M2ZjNjEyNWQ3Mzk4N2QyMzY3OWEyYzhkYmRiODU5ZTc3NzI0YTk3MTIxZWY2YjAxMTk4ZGIzNzBlYzk2IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJhMmFhMjExODZmYmNlOGYwOGVmZDViMjMzZDgyODZhYzU5ZGU1MGNmZGQ4ZTY1YjUxNWUxMTg4N2JmOGU3ZDk5In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_72c220c853f142afb482aa698afe7b80",
+      "statement": "applyXpGain updates total and daily XP, prunes XP history to roughly 60 days, and awards the daily-goal gem bonus only on the first crossing; quest day rollover resets the three daily counters in the same patch.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/store/progress.ts#L520-L594",
+          "version": "repo-lines-v1:sha256:35bba200a8c0bdea9d1644f3b0266917a7892b3d6a38ed91e0f5f8b0aa3d559d:eyJzZWxlY3RlZExpbmVDb3VudCI6NzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM2YzhlYmMzYjk0MTI0MGYzYTNmOWIyMmEwY2E2MzJjZDQ5N2EzNDg2MTg1NTJhODFlODIzMTBhN2RlMjhlMmEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjVjYWFjMjdhNjJlODBmMjU3ZDNiYmZhMDA4Y2JhOTc2MmY0OTQ3OTVlZjZmZTMyMWIwZjE4M2VlYmRkYzIzODkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjcyMWZjZWFjOTY4NzVkODM3NjRjMGM5MjY4MmFhZGUwMGVhZjFlNGI2MDY1Zjg1ZDg0NmFmM2EwMDc2MTViNmQifQ"
+        },
+        {
+          "resource": "repo://apps/web/src/store/progress.ts#L534-L566",
+          "version": "repo-lines-v1:sha256:93b894f9f58745a7c61c94325cf1f0c1b0901812ba461433f91b58c107eb3d49:eyJzZWxlY3RlZExpbmVDb3VudCI6MzMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRiNmY2MjQ4NzljNjM3MTc5YzQ0MDRmMGEwMTA1MzY4YjI5ZGY5OTlkYTY4ODBjODc5YTlmYzcyYTg1Yzg3MzAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjY3NDYyNWU4MTM2ODU1ZGFkNmYwZGRmMmYzZWU3NzE5YjAzZDM1NTM2N2IyZmNlM2Y0NDQ1NjFiNzEwYmMxNDciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU3NTk0MTVjYjcwYTI5NDE0OWFkYzIyYjhlZGNlYzFmNGRjMjQ3ZDFiMjdlNDlkYmNhMjlkNmMxYWYzZWIwMDUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_08d51694a1e84b8bbfd863cf7c723fca",
+      "statement": "Reading completion is idempotent by canonical key existence, grants XP but no lesson gems or lesson record, increments the reading counter, and can trigger the daily goal bonus.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/store/progress.ts#L1185-L1221",
+          "version": "repo-lines-v1:sha256:98a12bfc45205935ddc730b72e463621a42fb54a4c210d48eaae7972aab0cfe0:eyJzZWxlY3RlZExpbmVDb3VudCI6MzcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM4ZWZkZmM4ODJmMmFhNTI0YmVjNWMzNDAzNjRkNDNhMmJjZTU1M2EzYjkzMzkzMjE1YTk1YmUxNGQ2NjUyZDUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNiMTY3YmE4YWNmYWJmZTE1M2I3MWNkNTA0M2Q0YjVlZWM1NzIzYjMyYzBkMzAzMTQwN2IyZGExNzcxNjU4ZDQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImU3NDY4NDI5ZmI2Y2I4YjFkMmQwOTFiZWNjZTFlMjc4OGMxNjkyNzVmNGEyNWMyYmFmMGUzZWY0NzNmZjI2ZGQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImJlNDRhNTE0YTQ5N2I5MmVlM2FjYjBlZjkwNDliNjJlM2YxZDMzNzEwYWEyMDFhNWJmZjhkMWYwMThmMjg1OGQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_5855cbc0cdca4493bc9f54f02e534051",
+      "statement": "Review mistake updates apply the core SRS transition, clear graduation on a wrong answer, and report newly graduated entries; review XP is awarded per first-attempt correct answer and also advances the streak and review counter.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/store/progress.ts#L1538-L1584",
+          "version": "repo-lines-v1:sha256:33eb3edcf59c98db33da31a2595c44acb868e08c87f33b06035a47fec2eb1ef0:eyJzZWxlY3RlZExpbmVDb3VudCI6NDcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVkOGU1YmU4YjUwMzI2NWY0NGRmNzliM2Y5ZmUzZjI1NTNkMGQxOWQxZDAyYTlkYzZlMWNiOTJiZDk3OGMzZjMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI5NzhlMjUwM2I4Y2YzN2EwNmY3ZDZmMGEzYTZiNmZlMzU2OTFmYmNhYjUwYjg3NzVjYWI2ZmFiYzcxYzU5MmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI0MjkwM2Q3MDc3NDk4OGFmZDI1N2EzODA0NWExZDExY2MyODVmNzBlNGUzOGJkZDFjM2EwZDgxYzYxOWI4NzYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImEwMGExMGQwNTJlZjZjNjJhNmE2MTlmZjljOTU4YTFjZWExZmFmNDk0YTgyMWVmNmVlNjVkMDY4NjUwMjAwMTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_d26bb9231cd04c27a77725cd52a89831",
+      "statement": "Heart regeneration derives all elapsed cycles, clears the timer at full health, and self-heals the invalid missing-hearts-without-timer state by seeding a new cycle.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/store/progress.ts#L1318-L1369",
+          "version": "repo-lines-v1:sha256:084608287677059b16a3fd6295fbecf0c4ae7ac040dd8effecf6269b560e8415:eyJzZWxlY3RlZExpbmVDb3VudCI6NTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc1ZjgyMTE0MjNjYjMyM2JmNjdmZmRhZDM5ZTMwYjBlMmY2ODg2MmUwODQxMjhlNDFiNWQ0MGU4OTY5ODY5MjMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI5NzhlMjUwM2I4Y2YzN2EwNmY3ZDZmMGEzYTZiNmZlMzU2OTFmYmNhYjUwYjg3NzVjYWI2ZmFiYzcxYzU5MmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIwMWVjNzZhM2ZjNjc2YzdjZGY3MDA0ZmQzMTVhYmUxN2UyZTk5ZWVmY2I4Mzc3NDRhYjA2MWU5YjMzNjBlYjMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg1Yzc2ZWUwYzMyZTc5OWNkMTFmM2VlNmQ3YjJjY2E2NTI0YTZmY2UyZGU3YTZiOGE2MzlhZTY2ODk5Mjk1MDcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_20b7530a42a8479695fe44bbea5cc9e5",
+      "statement": "Quest claims require a current quest id, met progress, and an unclaimed date-scoped ledger key; the ledger is trimmed to 60 entries, and achievement claims are idempotent through a permanent ledger.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/store/progress.ts#L1590-L1667",
+          "version": "repo-lines-v1:sha256:2f18f84530baed19e5d66cb33636e165dbe1d43e08d52121126ec7a509c4d517:eyJzZWxlY3RlZExpbmVDb3VudCI6NzgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRlM2QzMGI3NTVhNmNlMmQ2NDc3ZDgwOTU4MTQ4ODMxNzU1Mjk2MTNhMmNkODRmOWZkM2Q1NjZiZTVjODExYTkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI5NzhlMjUwM2I4Y2YzN2EwNmY3ZDZmMGEzYTZiNmZlMzU2OTFmYmNhYjUwYjg3NzVjYWI2ZmFiYzcxYzU5MmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjBlMmRhOWJmYmIzNDRiNjM1MmI3MDIzM2Q4ZWNiZTAxMTFlMzVjMmU4ZWZjMGFiZDI0ZTA4ODhhNGEzZWU5ZDgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImIxY2QzY2RlYTg3ZTcwNzdiYzMxZTcxY2NjZWJjN2FlZTNmZTQ1YzlhM2NhYjc2Mjg0NTJlM2U4NzUxM2QxMjYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_3bc9a29a18aa4ca5b07ae2bec2c8ff01",
+      "statement": "League settlement creates a device salt once, skips settlement while locked or in the first week, and otherwise settles the prior week's rank, tier, gems, and pending report.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/store/progress.ts#L742-L808",
+          "version": "repo-lines-v1:sha256:b9ca5513704dae068cc60912da5c884ac3c04933b7c644a72a694d64c3717e6b:eyJzZWxlY3RlZExpbmVDb3VudCI6NjcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjkwZmFkY2FmZTYxYjc0ODkxNTY3MDk1OGQ4YWJmZDMzNTA4MzRlZjZiOTFkOWI3Yzc3ODk5OGU1NTVjNjU1ODgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI5NzhlMjUwM2I4Y2YzN2EwNmY3ZDZmMGEzYTZiNmZlMzU2OTFmYmNhYjUwYjg3NzVjYWI2ZmFiYzcxYzU5MmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg4NDI5MDJhZDhkNzE0NjNiYmI1M2Y1OWI1OTY2NjUyNTg1MTI4NzZhY2U3NGQxYzMwNjYwODFhZDk0ZjhmYTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjBjZTRmNTcyNjU0ZTEwZjYxNWEzOWFiODUxNWY2NDVjYjkyYWIyYTY4Njg3MzI1ZDU2ZWViNmM2ODMwMjc4NTMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_29e68cc9c81b499a81063e003785d2f1",
+      "statement": "The version-15 migration moves historical passage/story pseudo-lessons into completed readings, normalizes reading keys, backfills the achievement ledger without retroactive rewards, performs a one-time shield top-up, and recovers lastStage from selectedStage or selectedGrade.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/store/progress.ts#L1725-L1864",
+          "version": "repo-lines-v1:sha256:9311f76b87c6ec27002005f390edf09281566be05992156213af085692238dab:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQwLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJmZDdmZWIwMjJkYzA1YjNkNWIwZWFiMWY2YjIwZGZlYjc1OTNhNjJhZTJlYWY3ZGIxYWU4ZjVjZTZiZmU3MmMxIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJmMmNiN2FjYjliNTliYzU2MWFjYjdmZmI3OWVmYTFkNjAwNWY2NGZjOTMyZmVmMTYxODg1ZTVmMzcxYzk5MmNjIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIyYThkNzVlYTA1Y2NlZWRmZDYyNjAwYjc0ZTg1ZWNkODhkZDJmNDI2Y2FhODAwZTQ1OGVmY2Y1MWM0ZTdmMmViIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiIyNTFmMGU1YmYzNGNlYjNhNjFmMjg1MTI3MWI4MGFkNjQ1MTc1OTJmZmE5ZDg3ODdkNGM1OTc4NTMzMDcxYmNmIn0"
+        }
+      ]
+    },
+    {
+      "id": "claim_967fabb7a64a40a3a71a081c7ce09b87",
+      "statement": "Backup import clamps hearts and starts a timer if not full, normalizes readings, prunes quest claims to today, keeps the local daily review-heart ledger and freeze-migration flag, and resets transient session, celebration, league, time, and daily counters.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/store/progress.ts#L917-L1036",
+          "version": "repo-lines-v1:sha256:693438803a1273c74ff1128e5a850d3ed7cedcb33a53dd06a9ea652cc999c17e:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIwLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI0YTE2MDdjMWY4ODU0ZTgyZTY0YWMxYzQzMmZjNWI5YWZhZDRjYTlkNTQzZmNjZTljMDVjNWIyM2Q4MTNkMzJmIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJiOTc4ZTI1MDNiOGNmMzdhMDZmN2Q2ZjBhM2E2YjZmZTM1NjkxZmJjYWI1MGI4Nzc1Y2FiNmZhYmM3MWM1OTJiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJkMGJkNWNiYjRhMDM3YWQxYTQ5OTI1YmIzYWM4ZTJmZGM1ODhlNGIwZTVjZDZmMTc4OTQ0MjlkNmFhNzVjYzQ2IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI5NjVhNDc2MzU2MWQwYzc2YTljZTdiYTgzMzg3N2Q2NWZlYjQwOGU4NDNhNWM3MzQwZmI4OGY5NDVjYThhMDlmIn0"
+        },
+        {
+          "resource": "repo://packages/core/src/backup.ts#L414-L510",
+          "version": "repo-lines-v1:sha256:efd356b12a67b34a4f4d71a4a8d57570adad85ab7534e117df7cf488ab21f317:eyJzZWxlY3RlZExpbmVDb3VudCI6OTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjkyMDQwZTA5NWE5NGUyYWRhNzRlNDIxZjM3MTg3NTFhOTFhODEwYmZkNjZmNDhmNGU5MzljN2I3NDgwZWI2NzAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_7110e67959314f1ba0f89fe6075da185",
+      "statement": "jumpAheadComplete marks incomplete lessons with one star and 0.8 accuracy without XP, gems, streak, or quest progress, and does not overwrite existing results.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/store/progress.ts#L814-L834",
+          "version": "repo-lines-v1:sha256:95aa565dcc73f0cf3950bcf25ceae3df3e22bde10f113903c2dc95c871674cb2:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMyZjc4ZDkxMmQ1MjMwZDFjMWYwNTVlNGZmNjdlMTZkN2I2MTNlOWY5ZmNjMTI1MjliNTBlMDg2OTY2NTU3ZjkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI5NzhlMjUwM2I4Y2YzN2EwNmY3ZDZmMGEzYTZiNmZlMzU2OTFmYmNhYjUwYjg3NzVjYWI2ZmFiYzcxYzU5MmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImM2ZTE0YWJjNDIyODc2NmJjZDJjYTRiZGQ1OGUyYTBhNjIxZGZhOWJhNTEwODY4MjdmYjk3ZTRlNzg4MzM2OGMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImY5MTI1ZWI3NzViY2U3NDhhY2Y5MzQ5NTk4Nzc3MWJiOGVhYTk0MGIwMTY2YzU2MzJiODUzMjI3YmE5Nzc1YzYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_e74ad80b19ea4c3d9ecc958208489f08",
+      "statement": "Question reports are stored locally with generated ids and timestamps and capped at 200 entries.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/store/progress.ts#L1042-L1051",
+          "version": "repo-lines-v1:sha256:7381743eb5a2366b51bfb1c319ac80b112ef33effa19cb177015311df728ac73:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE4NDYzZGJkMmViOTViNmRmZTE0Njc2M2Q4NzMxMzEzNDQzM2RkNjExNTkzNzk2Mjg1MWRhOTg4NWFhZDE2NjAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI5NzhlMjUwM2I4Y2YzN2EwNmY3ZDZmMGEzYTZiNmZlMzU2OTFmYmNhYjUwYjg3NzVjYWI2ZmFiYzcxYzU5MmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjBmNWZhZDVjMWE4OGEwODJkOGZiMjczMDQwNjJjYzgyYWRlNzM5ODQ5YzlhODA0NzhkZTU2NWU2ZmE3MTMzODMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImE1YmQwNmMyOGQ4MmE1ZDc0M2IwYzk4OTFmMTJiNDNkOGRmYjBmMjU2OWFjM2ExZjg5Yjg0YTU2Mjk4ZWIwYWEifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.7.2",
+    "at": "2026-11-04T02:58:40.844Z"
+  }
+}

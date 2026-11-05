@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:3584d3e8ebebac90c9540dccef4fd8fdd746993c1f9b4aaf289e98dc51d47301",
+  "claims": [
+    {
+      "id": "claim_e9eb14031c91424d9f1ef27d99a30de3",
+      "statement": "The review runner snapshots due SRS entries, uses the real question renderer and grader, drives SRS and XP only from first attempts, requeues wrong answers to the end, and does not consume hearts.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/app/review/runner/ReviewRunnerClient.tsx#L1-L15",
+          "version": "repo-lines-v1:sha256:d6dc251aebaa08b1da1496db2f3b57b205593de8ad029206c7eab33c1dc44b84:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ1ZmYzZTg1ZDY3MTVhN2E5ZDBmNmMxYjMyZjMwY2Q4Y2IxNDRjYzc5YzhhYmFlOTUzZWExMzc4ODlmYWUyZGUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk3MmE0MjkzODJiMmUxNDcxOGUwZTM3YjA1NzBhOGExNzAyOTkxZmNkODQ5OGNkODQwNjBhOGJmNGYwNTAxN2IiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQ2MTBhOTVmZTE1NWI0ZWFmZjJjYWYzYWU4NjdhY2YyYzU0ODYwYTgzMGM1YjU1YTkzMTgwM2Y2NzBjZWE5NjYifQ"
+        },
+        {
+          "resource": "repo://apps/web/src/app/review/runner/ReviewRunnerClient.tsx#L62-L184",
+          "version": "repo-lines-v1:sha256:5059fe563a7a341e9ae87b63e75d7f84dcb3c52a5a986d34099ccf4dae3ece3b:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIzLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIxZTBjZWQwODRlYTkyMTAyYTE2YmU5MDFiMzhiMjY2MGY2NTFiMWYxYjRjOTZjMDYzMGRlYzc2ZjBiZDY4MTk4IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIyN2U1Nzg4ZDVkOWQ3M2QyNGE4MWRiYzBhNWE3NGJmYTgyYzljM2IzYWY5OWU1MmFmNzk2ZTkwYjQ2OGE4YTNkIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJhNmE0NTQ1NzJhNzJiZDk2MzhkMWViZGQyMzI2ODUwMTRiMWNjMjZiMmU4YTNlYmZhY2E4NzIyZGNiMjc3NWRlIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJjMTg3ZTNjYWEyMWUxODdlNGJkNjU3OTc3ZjdiNWRiNmM3YzRhMjVmZmFjZDI2ODU4NDMwYzk1NzNmNTgyODM5In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_8b9c1b02a32e4667ae5f2c9ac7d5bb5c",
+      "statement": "A completed review round can award one heart only when the first-attempt correct count meets the threshold, and the store enforces a once-per-day ledger to prevent farming.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/store/progress.ts#L340-L350",
+          "version": "repo-lines-v1:sha256:c487766dc43755de3ed8778a650fdac72f85759b36647218bd088a145ac1e40f:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ0ZDI4NjY5NzEyM2NiYTgxZWI2YmFjNGZiMzdmNTE5MTkzYzdmOTY0NDU5MzlkMGZkNTcyZGY0M2FkZjBiM2YiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU3ZmUyMjFmNDYzMDIxMzAxYmJhNjE5ZjU4NThjOGNiZTI1ZmI4MGNmMDM5MmQxZjFmODRiY2Q1MTZkZjRhMDQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjU2YTJjMDZhMTUyYzJkMDZjMDk4NGY3M2YyNzE5NDI5OTI0ZThiMjFkNGYzY2U0NDRkZmJjM2I4YzUzNzAyNDciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU5M2U5ZThmMjcxNTNhMDQzZWIwMTAwZGVlNmQ4MDM5ZGZjYWRjMGQxNDg0MmFjNDgzZTJjYzVkMzA1NmRkNTUifQ"
+        },
+        {
+          "resource": "repo://packages/core/src/economy.ts#L131-L147",
+          "version": "repo-lines-v1:sha256:d72cde36d9d6f3dac5ea12d194d8baecc3fbb300cad3bb3164234e6eaa5bd5b9:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjliYzc2NTJlYzdjZTJjYzU2OTQ3YWNlMTI0Y2QyZWI0ZDU0YjJmMGU3MGU3ZGMzYWY2MzUwMDhiNGUzMDhjOWQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRhZDM5MzQxOTY5NDFlZTA4NjM1ZmJlMDc2OWUxYWQ4MWU3MzY2M2Q1YTAxZGMwMDI2YmM5M2ZhYmZkN2IyN2EifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_d18b206f814c4c5c97d498ce3323f716",
+      "statement": "Canonical reading ids use the form reading:{kind}:{rawId} for listen, followup, and story activities, and legacy platform-specific keys are normalized into that space.",
+      "evidence": [
+        {
+          "resource": "repo://packages/core/src/reading.ts#L22-L101",
+          "version": "repo-lines-v1:sha256:c3bf9c4095b746a48cf7939470105db91e2842840bf54e5d8f6aed3b3b377ca5:eyJzZWxlY3RlZExpbmVDb3VudCI6ODAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA4MzE4MjI3NGZkYjU5ZjQ0ZDIwNTI2MTQ5OTBjMmQxODI0ZjNjZGQxODcwNDZkZGUxYmRjNWIwNDQ0MDE1YTUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIxMDgyNDIyMjBmMmZiZDE2NWE5ZTMxNWU4MGQ2OTUwOTU1OTE0ZTc2MGUwZDVkYzk5ZjA4NGI0OTljZjFlNGQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImM4OTlmZjYxMDdlNjU4M2MzZDgwYzY4NjY3YjZmMzJjYjQyY2QyZjUwODQ2NTRlYWVmMDFjOWM1ZmE4NjFkNWEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_74f895a1b1b0451db27d6e20b5a37baf",
+      "statement": "Reading map normalization preserves the earlier completion date when keys collapse, replaces empty dates with an explicit unknown placeholder, and is idempotent; completion checks use key existence rather than value truthiness.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/store/progress.ts#L1185-L1196",
+          "version": "repo-lines-v1:sha256:70b34088ad3c001f70384be25b5e658898eaf26503bd64eda1deef09a05e96d0:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM4ZWZkZmM4ODJmMmFhNTI0YmVjNWMzNDAzNjRkNDNhMmJjZTU1M2EzYjkzMzkzMjE1YTk1YmUxNGQ2NjUyZDUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE0ZjA1MDc1NzlkMjIwZGFmYTZhNjk2MDQ2MDVlMjk2YjM4YWZkZTYzZGQ3N2NhMTc4Mzc2ZmU2NTEwNjY2ODkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImU3NDY4NDI5ZmI2Y2I4YjFkMmQwOTFiZWNjZTFlMjc4OGMxNjkyNzVmNGEyNWMyYmFmMGUzZWY0NzNmZjI2ZGQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImFiZmQyNDNhZjM4ZTE5N2U2Yzg3MzRmMzU5OTBhYTIyZDgxMWQzMzVjOGNlMWRiMzdiYjU5ZTc3YmIyNTkyMjIifQ"
+        },
+        {
+          "resource": "repo://packages/core/src/reading.ts#L103-L158",
+          "version": "repo-lines-v1:sha256:cd777e2214256e3fca0c0a2ca021cb089fd38d848f6794a38c64a2edac855e61:eyJzZWxlY3RlZExpbmVDb3VudCI6NTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjRmNDFmZWM0ZWMyNDQ0NzY0MzY2NWUyZDY3NmE2MTZmMDRjY2RmOWQ5MGUwZDE3YWE1MjY0Nzg1MmVhNDNiMjkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_d3c7e2d65634491d9feaf9fc03c7419c",
+      "statement": "The backup envelope uses schema cstf-backup with a positive version, platform, timestamp, and progress data, and deliberately excludes transient session, celebration, and timer state.",
+      "evidence": [
+        {
+          "resource": "repo://packages/core/src/backup.ts#L148-L194",
+          "version": "repo-lines-v1:sha256:6bb3ba39d9b7e3e78770ffee0a4d54528d272a8c7e843f4610634266fad0ae64:eyJzZWxlY3RlZExpbmVDb3VudCI6NDcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM1NjM2YjFkYjhmYTBmMzM1NTE3YmFjMmQ2MjM0YTNmMGNmNmYyMGZiMjgwYmUyZDU1N2MwZTczNjJjODU0YjEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjFiNWU0YTk3MGE5OWMyZWQ4MGI2MmI2Mjc2YjE1ODQ5ODZlNTUzNTNhNjcxMGFmYzU3NGMzODU4NTE0NzExOWMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc2NDA3NmE0NjEzMGIxY2YxNzdlMGMxNDY1Mzc0MDU2MDZiZDdmMWEwNjYwZTk5YjFkMjlmNGJmOWY3Y2JkODQifQ"
+        },
+        {
+          "resource": "repo://packages/core/src/backup.ts#L27-L134",
+          "version": "repo-lines-v1:sha256:e3d7cf7608a718eee9955b95db22468d425e59ad4dbad7addbec2fa72421fd56:eyJzZWxlY3RlZExpbmVDb3VudCI6MTA4LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIzZDE1YTAzMTFhMGI0MjgyYWRjMTBjYTE5ZDA3YmJkYmQwYTAzNDA4NDU4MDMzNTAzMjYyMDkxMjUxYjc3OWMzIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI0MTJjYTM0NWNjZjc1YmY5YzA4MDZiY2U2OTViZThkZTgwOGI3OTk4NDI1MWE3YTU0ZDIwMmNmNjEwMWRkNDUxIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI1MTQ1NzcyMGU1YTcxMDFiN2JjZWJjMGRkMjJiZWZiOTZiMmJiODdiNTI4ODA0OWVkMDY2MTkwOTU5ODRjMjdmIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJiMmJlNTNiMzg0OTRkYjllNTA4MmUxYWE5NWYwZTk0ODUyZmZlMzI2MmYxMjAwMjRkYjM3YjgxOTQ1ZWRlZWU3In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_026bcba08cdd4e96ad7a02891b1fddb4",
+      "statement": "Backup validation distinguishes fatal structural failures from repairable field errors: fatal inputs return ok=false, while repairable fields are replaced with defaults and reported in an errors log.",
+      "evidence": [
+        {
+          "resource": "repo://packages/core/src/backup.ts#L414-L510",
+          "version": "repo-lines-v1:sha256:efd356b12a67b34a4f4d71a4a8d57570adad85ab7534e117df7cf488ab21f317:eyJzZWxlY3RlZExpbmVDb3VudCI6OTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjkyMDQwZTA5NWE5NGUyYWRhNzRlNDIxZjM3MTg3NTFhOTFhODEwYmZkNjZmNDhmNGU5MzljN2I3NDgwZWI2NzAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_77af379ca3c1469ebe84f43e612c688c",
+      "statement": "Backup forward compatibility accepts versions greater than the current one, ignores unknown fields, reads known fields, and does not promise compatibility for version below one or non-integer versions.",
+      "evidence": [
+        {
+          "resource": "repo://packages/core/src/backup.ts#L414-L445",
+          "version": "repo-lines-v1:sha256:8be89a9575bce2decdac112a7be0077cabd68980f10e95ade37173a0919d6f9b:eyJzZWxlY3RlZExpbmVDb3VudCI6MzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjkyMDQwZTA5NWE5NGUyYWRhNzRlNDIxZjM3MTg3NTFhOTFhODEwYmZkNjZmNDhmNGU5MzljN2I3NDgwZWI2NzAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjIxYWE4M2UwNzk4ODIxOTg1OTEwMTdkYmM2NWRlZTc2ZDAyNmI1ZDhiOGMwMTBjZmY5YTczYmY3MmI4MWIyMTQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_fdb5f9c839d945edb1a443704fd9abc6",
+      "statement": "Backup import preserves the daily quest claim ledger for today, avoids importing the daily review-heart ledger, and keeps the freeze-migration flag local to prevent duplicate rewards.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/store/progress.ts#L1029-L1035",
+          "version": "repo-lines-v1:sha256:918cfbff399da6784aee6f205c23665dee6ebbaeaf9b6c429e2d2daaf23c40a3:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYzZkNjYxMDlkY2VjNjU5NWFmNTY0MDcyODE5MGIzNTU5ZGMyNjllY2NhMjMyYTQ1MWQ1NTY4NGVjZmI5ZDEwMyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNTljMTM1OTA2NjU2MzIzZDFjNWVhNDE2NTRlZTY2YWZiNTg1YWNkY2ZhZWFjYTEyMWQ1ZTMwYmYxOTNlZWRkNyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNWUxNmMzNTI5MDBlNjE3YmE1YzI2YjY0ZDA0Mjc5NDY3OTUzMmYxNzExZWI3ZGUzYTcyNWUxYWI1MDNiZTU3MSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOWU1OTU5MGNkMWFmMDFiYzQ5MWFmZGJkYzI5YzM5MGNiN2VhNGZiYTg1ZmM0YmZjNDMyMmNmYzFkMmM2ODUxNSJ9"
+        },
+        {
+          "resource": "repo://packages/core/src/backup.ts#L110-L126",
+          "version": "repo-lines-v1:sha256:d186e6ffc1df52782b4c368d146aedd7ebe501518204fe738679fd2bba3b4dbe:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRmMmEyZjk5NmYwOGU2ODBiZDI5MjEzNWE2ZmE0OTc4YmRhMjZlNjAyZDg0ZjMzY2IxZDU5NDc3NWQ0MzA0YjUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjY4YzlkYjA4ZmNkZTc0OTQ4N2U0YmY1MzNhZWVmOGEzZGJkMGI5NzYyZjczMTM4MDcyYWEwZDcyMmIwYzcyNGYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjcyMDFiN2NhMjUxYmZmZGVhODkxNmYzN2U0MjljNzg5MTI4ZDE2MDQ3ZGZiM2U0NDk3YzFmZWFjZDgyNGY3MjEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_12de102c53de46d9896b1167b89927c2",
+      "statement": "golden-vectors.json is the shared cross-platform conformance suite covering stars, XP, gem drip, streak advancement, SRS, daily rewards, quests, league, reading ids, and backups, and TypeScript tests assert it directly.",
+      "evidence": [
+        {
+          "resource": "repo://packages/core/spec/golden-vectors.json#L1-L60",
+          "version": "repo-lines-v1:sha256:18a28a8ab6bfc0cfdba3f453bdc257749a3d0995856a7410caa007e17d1419c7:eyJzZWxlY3RlZExpbmVDb3VudCI6NjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE2ZmIwOGZkYTFhY2I5NTdiNjExNmJkMzc4MTFhMWZlNDFhMDE2MTFjMDYzMWVkYmY3ODZkNjg4OWEyN2E1NWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVjNmZlNDA1OTg0ZjIzYjZhNGNjYTAyN2I2YjdhNjIxNmEwMjk3YjFmMzljYjE3YjM5M2MzODIyNWNlZGU0YjkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRkODNhODk3NjA4NGJhMzZkMDQ0NjFjYmZmNDdmYjgwMGM0MWY0OTJmYmQ2MDE1ZmU0MTM4ZTVlZGQ0MTNlMDMifQ"
+        },
+        {
+          "resource": "repo://packages/core/src/__tests__/goldenVectors.test.ts#L1-L44",
+          "version": "repo-lines-v1:sha256:beadd8eee4a50b7148c0cb94e90bd04ffa9e23ef4f323bd603440c9f839bfe68:eyJzZWxlY3RlZExpbmVDb3VudCI6NDQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImIzMTJmYTZkYjFlNGIwMmUzYjY1NTdkNWU2MTU1ZTlmYzE2MmZkYWE0MWE1NTMxMTZmMmU4NGE3YWU2ZmZmNjUifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.7.2",
+    "at": "2026-11-04T02:58:40.844Z"
+  }
+}

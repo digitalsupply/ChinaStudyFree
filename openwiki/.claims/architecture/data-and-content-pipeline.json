@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:9557e55c9a6e9f6edfc48706627bc14d2b7197fa57f16de4c36026ebcb03dc58",
+  "claims": [
+    {
+      "id": "claim_ac2e9e2bf4db441cacad3401ec62cf79",
+      "statement": "build-data removes the previous index.json and books directory before rebuilding but intentionally preserves other generated files such as textbook-catalog.json.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/scripts/build-data.ts#L830-L847",
+          "version": "repo-lines-v1:sha256:4578e570fe76b9060865e57a260684414ec3e98f6852d56897f08b06c3de057e:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNlODIwMGViZDE3MDliNmE2NzViZWNiM2JlOWYzOWU1M2JiYWMwMmNjOTI3MjM0NjJjMDU0NjhlYjBkYTZhMTYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFjZjExZDYwZDFlY2E1ZDg0ODgyZGJiODk4ODcyZTM3MTVkZTQyMWZhYjQ2NTg3MmM0MjBkODA3OWIzZWI5ZDQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZhYmI0ODcxNTg0MDE0NTY2ZDhmYmJmYjNiYjc5ODdiZTUwZDMwNGE1ZThjZmZjMTM3YzRhNGNjOGJkYjdjMjgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhkZDdmMTdjOTU4YzlkZDM1N2E4M2JiZjM2MmM0NWEwZWMyZmQ4MmY0MzMwM2NkNTM2MGNkMjI2NGMwNjZkOGYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_f7c0b77ff8e348ee8436e260f7ab2d2a",
+      "statement": "The builder defines an explicit table of twelve subjects with display names and default publishers, and skips subjects whose output directories do not exist.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/scripts/build-data.ts#L498-L519",
+          "version": "repo-lines-v1:sha256:bf17eab0559dfdcf5e0382dd557bb7e0bedb2d2561e59978d8c20fa796ddcdaf:eyJzZWxlY3RlZExpbmVDb3VudCI6MjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ3MjA3NmRlNDNjNGM0MDQ3MDM3NWU2YjgyYWNjZWQ0OWJkZDE3NjExOTM1YWEzMjgzYWMxMjA3MDhhYzBhYmEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIwMmQyYzBkNmRjNWU3NGQ5MmZhMTRiOTFkYmVhMjY0MDkwYmViMzVmZGI5MTg4ZDliMzQxMTgxZGNlOWY0Y2UiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg2MjZmMWRmZWRjODQ3OGFmMWQzNjBhMDBhNzI3ZmZkZTE5NWJmM2U1ODg0NGEyZDc0YzUyOTRjM2NkMTM4NGYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjNlNTM0NDQ3MzZhYTk2NWM5YmQ5ZmZlMzUyYjRjNTU3NDBmNmIxNThiZTY0ZTYyYjI0NDAyOTMyZGVkMjMwNTUifQ"
+        },
+        {
+          "resource": "repo://apps/web/scripts/build-data.ts#L853-L872",
+          "version": "repo-lines-v1:sha256:5e5726166d87a4281d2a719736edf4c0267346bd10785ee2f7f44cb5aeb54835:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ5YzZkOTQyZTgxYzMyOTY4ODZjY2EwNjk0MTYzM2ZjODBhNjU4ZDIwMDRmNWVjMGJhNzY5NjgxYjUwMWUzYTUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4OTNmNDBlMzc4MWViODk2YzgyZDA0NmEwODA2N2ExMWUzNWNkZjJmMWRmYWYyNmZlYTkwYjhkYjY2NzY0MTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjcyNjRiOTY5NGU5NjU0YjJiZjQ4YTE0Mjg5MjlhM2Y5YTBjYmQ0NTU4M2I1MmE0ZjNhZjU5NTM3ZjY2OTUzNzgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijk5NGYwNTVkZDlkMGRiYjViOTViMDAzZTQ4NjFjNGI2NzdmNTI2M2MyYWQ5ODY4ODdlOWQ4MjFhZDZkMjg5ZGMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_1ca568f1e811465da2982ad5dd8e3ba4",
+      "statement": "Book ids use the legacy math form g{grade}{semester}, prefix other subjects with the subject id, insert an ASCII publisher slug for non-default editions, and use an ASCII college course slug for grade 13 courses.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/scripts/build-data.ts#L560-L601",
+          "version": "repo-lines-v1:sha256:1f8c33d0d2ff3279304525f2d9a188b4159cc043167ac6647813851957e2fd3b:eyJzZWxlY3RlZExpbmVDb3VudCI6NDIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQyZmY3ZWQ2YWZjOWY1YTQ5ZmY4NGU0ZWNhMjNhYmE1YjBjZjdhYTBhMGQwMjk0MTg3NjMxZjU2ODMwNThlN2EiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImE4ODZmOGE3MGZiOGVhYTFlYjU5MDM0MDljMWY2ZjdkNTViMzhmNjliNjY5NWUxMGM3NDEwYjAwODdmZDZhYmEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU5ZjQ1OGM4MDkxODMzOTlkMzA1YzdhMzJjYzFjZWQ3M2IwMDYwNTRkNTM1NDdmMDdlZDExMGQ3OGM1MWMxYmQifQ"
+        },
+        {
+          "resource": "repo://apps/web/scripts/build-data.ts#L614-L644",
+          "version": "repo-lines-v1:sha256:51340619549c5396f6fcb94d8fc41a34e7f6f6c6493d9851972ce7d49400222d:eyJzZWxlY3RlZExpbmVDb3VudCI6MzEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJmYjNjMjVjZDQwODhhY2U4NWE1ZjE1YzY5ODg3NWUxMzJhZTczMTBjYzEzMjc5YzU2ODU2MTgyYzc3ZWE5MjMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijc4MWE3NmRkMDE5NTk2ZDVkMmRjMWU4MjNhMTYzNjBhZDRhOGQ3OWIzY2RhMmEwM2EwN2FhODk2MzE5Mzc2N2YiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjBjZDkyZTI3ZjVkZTg3NzM4NzQ1YjBhOTc3NWMyNzYzYjZiOTY2NDVkNTM3Y2E3NGU4Njc1Nzc3ZmVjZmUyNGEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_312061b310a24d7ab63618165db8260e",
+      "statement": "Questions are grouped by knowledge point into one lesson per non-empty group, with ids of the form {bookId}-u{unit}-kp{index}, and the emitted lesson indices are renumbered over the lessons that actually exist.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/scripts/build-data.ts#L690-L754",
+          "version": "repo-lines-v1:sha256:4c1f10bd06ba3c8f69a4c72f58fd9637a8913dac38fcfcce2b5c1d27a11b6f0a:eyJzZWxlY3RlZExpbmVDb3VudCI6NjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFkZmQ5ZjYwNGRkYjIwMDNiNTk3NGRlYzliMGQ5NDQwN2Y5ZjAxMDlmODhmNDIzNWI3MTAxZDI5ZmRmZjk2OTEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImE3YmE4ODE4OWRmMTlhNTEzNjllYjRjYTBkNGU3NjdjNGI0YWM4OWM2ZGUwZTc5NjdiZjNmNTk0MzRjYjdjNDMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjkzNjUyZjc0M2Y3ZWRjNDZhZTBiZTM5NjJhMDhlMzhmMzI3ZWY2ZjNlNzc4YzdiY2FkZTE2YmUwZDk0NGEzM2YifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_5a8a29dd5501480da80b1d56fc118627",
+      "statement": "A unit gets an optional exam lesson with id {bookId}-u{n}-exam only when it has ordinary lessons and at least four exam questions; up to fifteen questions are selected by uniform sampling and the unit metadata records the exam lesson id and count.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/scripts/build-data.ts#L148-L171",
+          "version": "repo-lines-v1:sha256:96c21f8a203508ae230729121ce13e031fc1e7b65f0a1eea88cadcbad160f06d:eyJzZWxlY3RlZExpbmVDb3VudCI6MjQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAzZjdlNDhhMTZiODhkM2RkNjIyOGFlZjU5OTg0MmQwOGEyM2U2MWE4NDFkZTY0MGQ3YjljOTA5Y2IwYzVhMmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg2YTE4NDE1M2ViMWRlMDRhNDVlYzdiZDcxNWFiNTJlMTI4ODRhZjk1ZjFjODE4ZTg2ZWY3OWI4NzAzMjA3OWEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImMwYTYwZTAzNDdmOTJlOWVlZWE3ZWM0ZmNmZjFmNzViNzU2ZWNjOGMxZDQ5Yzc4N2VlYmU0OTIzZDE4MzE2ODYifQ"
+        },
+        {
+          "resource": "repo://apps/web/scripts/build-data.ts#L732-L753",
+          "version": "repo-lines-v1:sha256:4472ee659e2297231fc872c7a31250a5492f11acfc652bb9562e0a5009f80605:eyJzZWxlY3RlZExpbmVDb3VudCI6MjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxZWFkNjFlZTA0MDdlOTMwODkyZWI4YWEzZTAzY2U1MmI0MTcyZjYyNGZhY2JjODE5YmEwNDNiYzlhZmE2OTYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4OTNmNDBlMzc4MWViODk2YzgyZDA0NmEwODA2N2ExMWUzNWNkZjJmMWRmYWYyNmZlYTkwYjhkYjY2NzY0MTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjhmYTAzNGZlNjAwMjg2ZGJmNDBkMGIzN2QyMDE3MTdmM2EwZWI3NjBiMWU0MjE2YWZjMjRlMjUwNjg0NjFkNDUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImE4M2FjYjNjNGYxZDI4NTAxODk5YzFjNTEyMTA3ZTBiYmFkMWU3NmZhMTA2ZGY3YzFiMTM4ZDk3ZWE2NDAxNzUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_19671f79bf5a462b952c981d449eba9e",
+      "statement": "fill_blank and calculation questions whose answers contain non-numeric characters are retyped to fill_blank_text so the text keyboard rather than the numeric keypad is used.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/scripts/build-data.ts#L124-L146",
+          "version": "repo-lines-v1:sha256:1b7c214d9cbe662b5c0296ea4eb2de00d3e0e6c18ab973359d248984292c0d10:eyJzZWxlY3RlZExpbmVDb3VudCI6MjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAzZjdlNDhhMTZiODhkM2RkNjIyOGFlZjU5OTg0MmQwOGEyM2U2MWE4NDFkZTY0MGQ3YjljOTA5Y2IwYzVhMmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImViMzRhNmRkNmVhYTlhYjAzZWI3ODhkNDIwZmQyYjJjN2MyNWRjMjM2MjUxODM5NmVmYTU4ODZkNjE3OGNiMjMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjlhNjBjN2MzZmVlYmI2NWI0NzgyOWVkNWFlMWYwMDBlY2U4ODFmYWE5YzZmNzczZWJlYjAzZWIyMGM3M2I5MzkifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_844955aed41040a880c3b0b83b6fbb66",
+      "statement": "Audio paths are content-addressed by the SHA-1 of trimmed, whitespace-collapsed text and injected only when a corresponding .opus, .mp3, or .wav file exists in the audio tree.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/scripts/build-data.ts#L173-L201",
+          "version": "repo-lines-v1:sha256:a10a7f4de0081f7040d391c2e8924a6384ebc5a1ab09f1df4c31cb3b283f642d:eyJzZWxlY3RlZExpbmVDb3VudCI6MjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg2MWFkOWEwZGFmZjBiNTZmMDI3MDliMWU0M2IxN2EwMDQ0MmU1Y2EzNDRhNTNmMDkxMzJmYjFiZjUwYzJjZGMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQyNzliNjgwNTIwZWQ1MjZkY2M0YzhhYTM3MzUyNzU5MGUyODE5NWU0MGZiZTYxMDdlMWU1YjQ5NWE0NTc3MzUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImNhYjc5OTJkYmFiNWExM2ViMjE1NDUzMDNmNGNhMDVkNDQ1NzI5ZDNmMGEyODg3YmVkYTlmNjhiNDViNzUwNjgifQ"
+        },
+        {
+          "resource": "repo://apps/web/scripts/build-data.ts#L64-L118",
+          "version": "repo-lines-v1:sha256:69a93d4e9a22773eda8ceaa8bbfd1a9bd76c4e8e1594add54954ddb210e9beac:eyJzZWxlY3RlZExpbmVDb3VudCI6NTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM4MzJmNDA0YWM1NjhkYmE5MTE1YjM5NmJiMzAyNjIyYTdkY2FlMmVhMzRmYWZiZTU0NmUyNGM4YTZiZjc4ZDQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImVmOTQyZGZhNWM2MTExOGJlNTllNTdjN2E0MmVjMzJmZTMxZTQ0YzUwMjQ3MmExNDYxMTY4OTU2OGQzMTc3MzkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjYzMjMzOTQ1MDkzNjEzODM1ZjE5M2NlYzBmMzhiM2IzNTQwMDI1ZjE3NzQ5MWEyNzI0YTI1Y2VjNWVlNWI3ODkifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_270b9b76b22748e9b4ccf7ece3c01501",
+      "statement": "Passages are built from non-draft JSON under data/passages, enriched with audio and optional textbook page images from public/textbook-pages/{bookId}/pages.json, and written to books/{bookId}/passages.json.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/scripts/build-data.ts#L247-L360",
+          "version": "repo-lines-v1:sha256:82b25cf901fec9217d750703203bff1a0fab1e399553a87aa27ff4a2d7d92871:eyJzZWxlY3RlZExpbmVDb3VudCI6MTE0LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJkMmMwNDJkYjA1OGE0MGYwNTM2MDhiMThjNTdhNzBiMWY4ZjMwYzc4Mzc5ODhiMmJiNzAyMGRlYjRjZDgyNWRlIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI0MTJjYTM0NWNjZjc1YmY5YzA4MDZiY2U2OTViZThkZTgwOGI3OTk4NDI1MWE3YTU0ZDIwMmNmNjEwMWRkNDUxIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJmYjU4MGU5NjRmODNhNDczZjQzZDQ0Mzg0NjI5NDlkNjhiNTYwMGZkYTc4N2YxNjM3NDVkMDBkZTg5Y2JmMzZhIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiIxMjU1YTVlNzFmMjBkNzgyMWEwOGIzZmM0Zjg1ZTU3ZjU5NDRkMDA4NmMwNWRiZTM4MDRjOTk3NTIwOWI4YzY3In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_6577d6918cdd4484b9bc9994188c93fc",
+      "statement": "Stories are built from data/stories, audio-decorated, optionally illustrated from public/story-images, and written to books/{bookId}/stories.json; the builder records which books have passages or stories for the site index.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/scripts/build-data.ts#L382-L492",
+          "version": "repo-lines-v1:sha256:f937647c3bbcc601b242b8ad4414a9c3fad3ffc380aa2e2445e68f3f923b63a6:eyJzZWxlY3RlZExpbmVDb3VudCI6MTExLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI4MWYxYTc0ZGIxZTMwZWRiYTdmMzc3OTAzNDJjZmM3Nzk2MjNhMjkwMTBiYTY0N2ExNDQ3YjJhZWI3NzcwMzM1IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI0MTJjYTM0NWNjZjc1YmY5YzA4MDZiY2U2OTViZThkZTgwOGI3OTk4NDI1MWE3YTU0ZDIwMmNmNjEwMWRkNDUxIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI4NmExODQxNTNlYjFkZTA0YTQ1ZWM3YmQ3MTVhYjUyZTEyODg0YWY5NWYxYzgxOGU4NmVmNzliODcwMzIwNzlhIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJkNmY0MDVhZjhmMTkxYWU1YTJiMDdhMDEzNjVhNjRhOWYyMWFjMzU5NWJhNGU5NjdlYjZhNjBmYzllZmQxMzBlIn0"
+        },
+        {
+          "resource": "repo://apps/web/scripts/build-data.ts#L879-L884",
+          "version": "repo-lines-v1:sha256:f68b86539bd86716fcd3889dbe793040973b53b1562e1a1364b13dfe93f17587:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZjg0OWI2NDM1MmMxMmE2YjZkMDQ3YThjYzllYWU5YmNkYTYyMDIxYjEzZDk5MWYyOTBmZjc3NDJiYTZjMTA3NCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOWI2MmY2MGQ4NTkwYTU3OWNmNDZmOGQ2NzM3OGM0YzU3MmI5NjJjZWNjZGI5MGM3YTVmN2I0MmI5NjA3ODJhNCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYWNlOWIwZjE3YTc1ZDc5NjY1MTIyZGQ3N2UxYTI0YTJmNDE5NTgwOWQwZDA2YTA1MTgzOWNmY2VmOTc3YmE5OSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZWJlYWZlMTc3ZTBlY2FjNzZlODcwMDVmNjY5OTA5YjA1MTBlMzg3ZmJkZjI1MDVkYjViZTQ2YjQ5MGI3YmIxYSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_6d1bcdd9218c492b92171058d29e7791",
+      "statement": "The emitted site index contains sorted book metadata, generation time, total lessons, and total questions, and is consumed by pages for routing and static parameter generation.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/scripts/build-data.ts#L894-L936",
+          "version": "repo-lines-v1:sha256:3629a3d61ef09eca13bcd32b592d0430d7d53e5bd3e6a9ae5e625410165343f1:eyJzZWxlY3RlZExpbmVDb3VudCI6NDMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ2ZDdlMmEzMzM4MGRiNzAwM2FiZDcxMzZjNTI2Y2RlZTZjNjM1NzdiNGZhN2U4Njc1YzAyNDRjMWRkYWJjOTMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUyOWI0ZThhOWEyYTk5MjUxODNiMzE3NDBlNmRjNjAwYjFlYjhlNmEyMTU1ZGUxZDZmNWI3ZTc0NDFkMzVjYzkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk3ZDg2MzJlNTRlOTI5OGFiYjk1ODcyN2UyZDUxNDA4YWJhZjEzNjYwMzUzNzkxMDE0MGFiZjY1YjMwYWI2MTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc4ZDAyYjVjNDFjOTliZmYzZjNkMGU3YWE1NGI0MTc2ZDcxNjRhZDdlZDJiN2U0MzE2YmY1MTg2YjVlNWVmY2UifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.7.2",
+    "at": "2026-11-04T02:58:40.844Z"
+  }
+}

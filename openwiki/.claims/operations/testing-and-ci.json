@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:65dbca4ce0aa1b0931c3af595b3073a0c6749b4a2945b919e0553bb28b0d3230",
+  "claims": [
+    {
+      "id": "claim_a94efbbe96034183996540f7e2678fc9",
+      "statement": "The core package uses Vitest for pure unit tests, with suites covering backups, golden vectors, jump sampling, league, quests, reading ids, and week calculations.",
+      "evidence": [
+        {
+          "resource": "repo://packages/core/package.json#L31-L34",
+          "version": "repo-lines-v1:sha256:54fdf12bb86adf9fd390ebf284fff390d4383cb31cb91fc35be6b3e89f096739:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMzQ4MzNkNTk0OWMwM2E0MGNhOTUyNDkxNjEwYTY2NTk2NDRiM2FhNDY2MzYyZjc5OTAyMGRiZjE5ODE1NDdkYiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNGQ1Y2QyZmI0ZjNkZjg4NDUxNTI1NWIzOTUyM2YyZjhiNTQ3MmJlZWE5ZjU2NmZmY2EyMDRkYjgwMjU2MTA0MSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZmZiMDMxYjJmMjA1MmE0MDAyYzNhODBhMjcyYmFkZjhlY2JlNzMwMmQ1MTZjM2MwNjEwNTM4OGVkZjM3ZWZkMSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNjQ3MjBhMWQ2MWU3NWFkYTc2NzVkZGFmNjY3NGE2NzRmNzgzZDFmZmJhNzVmMTQwOThjYWIxMTc2OWY4NzQxMyJ9"
+        },
+        {
+          "resource": "repo://packages/core/src/__tests__/goldenVectors.test.ts#L1-L44",
+          "version": "repo-lines-v1:sha256:beadd8eee4a50b7148c0cb94e90bd04ffa9e23ef4f323bd603440c9f839bfe68:eyJzZWxlY3RlZExpbmVDb3VudCI6NDQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImIzMTJmYTZkYjFlNGIwMmUzYjY1NTdkNWU2MTU1ZTlmYzE2MmZkYWE0MWE1NTMxMTZmMmU4NGE3YWU2ZmZmNjUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_73ec12efde334a14bf3917eaa5c70ce6",
+      "statement": "Golden vectors pin stars, XP, gem drip, streak advancement, SRS review and graduation, daily rewards, quests, exam XP, league bots, and chest slots, and the TypeScript tests assert each group directly.",
+      "evidence": [
+        {
+          "resource": "repo://packages/core/spec/golden-vectors.json#L1-L131",
+          "version": "repo-lines-v1:sha256:42d40286f777753afa0cf6c5e726a66b7d9aca1d714ffe00080a94e31497a9db:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMxLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJhNmZiMDhmZGExYWNiOTU3YjYxMTZiZDM3ODExYTFmZTQxYTAxNjExYzA2MzFlZGJmNzg2ZDY4ODlhMjdhNTVjIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIzMDY0OGY3N2ZkNWE5YzYzYjNjZGQwYWY0OWRhYTEyOTkyMjBiNzU0MWU4OGNhMTdlZmUxYTZhMTE0YjlmZjJhIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MCwicHJlY2VkaW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MSwiZm9sbG93aW5nQ29udGV4dEhhc2giOiI0MTJjYTM0NWNjZjc1YmY5YzA4MDZiY2U2OTViZThkZTgwOGI3OTk4NDI1MWE3YTU0ZDIwMmNmNjEwMWRkNDUxIn0"
+        },
+        {
+          "resource": "repo://packages/core/src/__tests__/goldenVectors.test.ts#L45-L140",
+          "version": "repo-lines-v1:sha256:c46093b6fae5a67640aa551ef85d529930d499622c05b7fca3a03eaff3d1c83d:eyJzZWxlY3RlZExpbmVDb3VudCI6OTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAzZjdlNDhhMTZiODhkM2RkNjIyOGFlZjU5OTg0MmQwOGEyM2U2MWE4NDFkZTY0MGQ3YjljOTA5Y2IwYzVhMmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI4MGYzZTk2ZDc3ZGIwOGE0ODIwZWE4ZWIyOWE0MDQzZDgwNGM4ZTcwNjBiOWE4YjJmMjNiOWJkOTA0YmRhZWIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNiZTU3OWU0YzgxZjk3NWI1NzkzYjhmZjMwNmVjZjFhMjM3NWU1ZjJhYzY1NDhiYWZjYTE1YWRhZDZiZWUzZDciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImYwNjhlZTNiNTg3MzgyMmZkZThiZjI4NjE4OGFmNDQyYzQ5YTVlZDI3MTI3ZmM1ZjQxZmNmNWJlNjUyYjQ4ZTEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_bee0b115c28448d1bcf4761c94f44147",
+      "statement": "CI quality runs core tests, all-workspace type-checking, and web lint on pushes and pull requests to main with Node 22.",
+      "evidence": [
+        {
+          "resource": "repo://.github/workflows/ci.yml#L13-L33",
+          "version": "repo-lines-v1:sha256:882d71c64cc92e5e8fd040f2902e72d5ce6033f32bc23253eb76ed9767e9b9c5:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjEwYTU5NGYzNGI3ZjBlYTU3M2RhNzg3MDNlMjc0OTMwZGI3MThjOTQyY2FmM2MwNDI1MTc1NWY2MjNjNjBkNWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImFlMmM3MjFiM2RjMjBmZjczNGQ5N2NmNWI5OWU1NWU4ZDRjNzJmOThiZWYzYjk5ZjkwM2NjMWYyYzRjZGM2ZGYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImI5NDg3MjRmNzJmMjIxYjg0ZWE0NTJmMWVlNmY1ZTgxOWY0MGUwMTBhNDhjZTVlNDhmNjBmNzRlOWQ5YTg0MWYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_cfbcf788f4d6433d81bd797ec32619b8",
+      "statement": "CI data-build regenerates frontend data from output and then validates the quiz contract, while audit is non-blocking and secret scanning is blocking.",
+      "evidence": [
+        {
+          "resource": "repo://.github/workflows/ci.yml#L34-L74",
+          "version": "repo-lines-v1:sha256:c082719f81b17d5c6bf3c540d766980e3ef9096483f71bc8f356e0dfda38634e:eyJzZWxlY3RlZExpbmVDb3VudCI6NDEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk2ZGRiZDJmMTJkNWQwMDI4MTUzMjllZjY3Yjk5MjdmZTUxNDZjMDdkNzg5ZGNlNzNmZmYzMzNmZjdmOTIxMjQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI3NmMzZDI2OWY2NjU5NGJlZTNjMTA2MGFiY2I3MjA0YjY1YmI4MzFjNzhlNjY0NzliNzdiYmQ2YTIwZGI3MmEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjM0NGExY2RhNmY2ZjI5MGYwZGE0NzAyZjgxZjA5ZGYxMTE5ZTZlMzJjODQ0Nzk0ZDVlM2MwZmYzYjk5NzhhNmMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_74cc3e63780f4b5ba10002ce0cb98062",
+      "statement": "Quiz validation enforces answer membership, non-duplicated options, legal true/false values, non-empty question and explanation text, and non-empty fill-in answers, exiting non-zero on failure.",
+      "evidence": [
+        {
+          "resource": "repo://scripts/validate-quizzes.mjs#L19-L59",
+          "version": "repo-lines-v1:sha256:b90a37cabc953c3c6cc80619bd23ab08c7ab119006b9d02dca79028e40a2490e:eyJzZWxlY3RlZExpbmVDb3VudCI6NDEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM4NDFkZjhiY2MxMDY5N2MxYTZiMmExMDIyNDk4ZWEyMjc3MjFlMjc5ZDU5ZmM5OGQzNDAzMTMyN2EzYzlhNjEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZlYTY0NDUwYTI3YzdjYjFiOTVjYWI0ODhlYmFmYTY4MWM1ZjkzNzRhZmY1MDk5OWI2NDMxNDNiYmFhNGY5ZWIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_ac68737f4d744edd95c71673d76340eb",
+      "statement": "The coverage report is a manual tool that prints a stage-by-grade-by-subject matrix and a detailed book listing rather than a CI gate.",
+      "evidence": [
+        {
+          "resource": "repo://scripts/coverage-report.mjs#L1-L58",
+          "version": "repo-lines-v1:sha256:38c561578426282a30d0d41b378b33f5188893c5cd42f035b229b86bc3b46710:eyJzZWxlY3RlZExpbmVDb3VudCI6NTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_7e173fce740c4a33b5c9c6956c2afd92",
+      "statement": "check-data-quality audits Chinese, English, and science books for outline/lesson consistency, lesson counts, book-id mismatches, empty questions, missing knowledge cards, invalid choice answers, and bad true/false values.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/scripts/check-data-quality.mjs#L1-L108",
+          "version": "repo-lines-v1:sha256:5fb87a24cec1bc3cb214012e980b649b1cc83c3ffefbdbcabd2dd1d285c9251e:eyJzZWxlY3RlZExpbmVDb3VudCI6MTA4LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJmOTU0YTEyODRhZmNiZjg0NjEyNzkwYWVjZjllY2ZmMmUzMDRiOWE3YTdhNDRmNTAxMzk1MWVlYzQ0N2JlOGFkIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI0MmEyY2IyNWExMjJiNDQyMjFhNjIzNGVjNjYwYTdiNWZiN2Y5YmRlN2IzYjllMmIzYzU1OWEwZDk2ZmFjNzM5IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MCwicHJlY2VkaW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiIxNTEzOGIzMDdlNjA5MWRlNTI1MjRkNDRlODk5M2JlZjQwYWVjYmM5ZmUxNTA4Y2U0ZDQ2OTcxZmVmNzcxODJiIn0"
+        }
+      ]
+    },
+    {
+      "id": "claim_c1d0244e25e1414eb637c9d1453cd812",
+      "statement": "The release workflow is separate from CI, runs on version tags or manual dispatch, builds a shared web artifact, and then produces Windows, Linux, Android, iOS, and Docker artifacts on platform-specific runners.",
+      "evidence": [
+        {
+          "resource": "repo://.github/workflows/build-installers.yml#L10-L42",
+          "version": "repo-lines-v1:sha256:c95ab68d0d4d76728fe56b70c9af1e3e255b3b3077776dced857324ea3a7b093:eyJzZWxlY3RlZExpbmVDb3VudCI6MzMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU5NmRjNDgxNDlmNWE4M2QxZWQ2ZGJiMzliYmM3ZTJiOTAyYWEzZDM0ZDZiZDVhZTRiMjkxYjY4ZGYwY2E3OWEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjliZjQ1ZDJiYzIxMDg5NWU2N2JkMWQyMGRhYWFjMWI1OTgyYTc2NjQwODI5ZmQxZjFiYjRhNjk5NTUyOTI5NDIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjVmNGVjZTRmNDk0MzlhMmFhZTg4ZDFkYzdiYzU4MWIwOWUzMWIwOTlmYjc1NmIxNDViYTI1MDBhNjQ2Y2JiY2IiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImIxNmY2NGJmNmNiYzE3ZDVmMTUxNDVhZGM4YTdkODMwMDEwMjE1OGMxMjQ1OGY0NjIxZTJiYWVmZDhmYjk3YzIifQ"
+        },
+        {
+          "resource": "repo://.github/workflows/build-installers.yml#L44-L232",
+          "version": "repo-lines-v1:sha256:b809128b9da0e877da64e5c5c5bea36fd6c3cca64c97342d0c883a8564a9c09c:eyJzZWxlY3RlZExpbmVDb3VudCI6MTg5LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJiZjFiNzJiNmIxNjcxZGZmOGRhYWU4MjRlMjA5ZGExYTU0ZTlhYTllYmFlNWIyYTEzMzk5NWZjOTQ4ZTJkYmQ5IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI4ZDMyYWMyMDgwYTEzNDVjNjQ2OGQwZTBlMDlhNDkzMjAxNTE3Njc0M2Y5MmE1MjUzNTVjZmRmZDU4OTdjZmQzIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJlYWUzNTczYTgzZTc3YmFmM2MxZjFkNjg2OTJmZGViY2Y1MGYxYWZkZWM4ODljNDc5MWQ5NzM2NWJhOTJjYjVhIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_e456cad874474a1baafe6ebcf3249330",
+      "statement": "The repository does not include browser end-to-end tests, web component tests, or live provider integration tests; the iOS golden-vector suite lives with the separate iOS client.",
+      "evidence": [
+        {
+          "resource": "repo://.github/workflows/ci.yml#L16-L74",
+          "version": "repo-lines-v1:sha256:b9dae9fb4ca7c557cab83e5fde95a134c9486fbc397366960939aabfc02d373a:eyJzZWxlY3RlZExpbmVDb3VudCI6NTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU5ZDgwMTU0ZWQ0MmZjNWM3NzliMTMzMTU3OGI1OGI4OWM4MDFlYWNlNzRmMjRjZDQ4ZWI0YTIzNTc5NDBhOTUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI3NmMzZDI2OWY2NjU5NGJlZTNjMTA2MGFiY2I3MjA0YjY1YmI4MzFjNzhlNjY0NzliNzdiYmQ2YTIwZGI3MmEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA0NzEzYTViYjU1Yjg5MGRlMDQwNjIwZDJiNjNiNzNjMzZjM2QxYTA3NDQyMmNhZWI4YWZmMGVkMmQzNjMwYjAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://CONTRIBUTING.md#L50-L54",
+          "version": "repo-lines-v1:sha256:9fff12e1b423ec3343250da30d1409ec3f7c7415272f37a0eb1f245ccd3211f6:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZTlkY2YzM2QxZTU2MjQwMzZhMTZhZmEyOGI1MGMwYTkyNTIzODAxZmEzNTdjNjAzNWE0ZWM3M2E1ZGY0YmM4YyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZjk5NDYwMWVjNGZiZTJhYWM3NjJhZDU5NzhmNGQzZmFmMWU3ZjFlYTk0YWQwM2RlYzlhOGFlMDQwNGI1MTY1OSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZjE4NTYyZTRiYmQwMTQ0MTc5NGY3MTE1M2IwMDYwNTVkMDA5YzAzNzZkNDJiOWM5M2FhOTg3MmVkMmMzNmUxNiJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.7.2",
+    "at": "2026-11-04T02:58:40.844Z"
+  }
+}

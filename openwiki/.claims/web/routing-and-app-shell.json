@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:fcfa102a0568f3105a0563d8d715bd9a842840dfebf9b0ea283b31f78230c276",
+  "claims": [
+    {
+      "id": "claim_1f14afab114242c49ea3fcf5a2ab0427",
+      "statement": "The web app is a static Next export with trailing slashes and unoptimized images, so every dynamic route must be enumerated at build time and read pre-built data from disk.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/next.config.mjs#L1-L7",
+          "version": "repo-lines-v1:sha256:725304cadefc7ec8fd025c867ef051358a6c1729f1f4b4709b59d7e3016cca30:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNjNiMDA0MWYzYzUzZjIxYzljY2U5ZjBhYWM4YjU2N2Q4NjU2NzI0MDVmYjllOTYwNDVmZDljMmMxZWQ5MjI3ZiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYWExZDFhNjMzOTAyMjljNzk4MzQ3ZTgzYTA0MDU0NDFjOTQwMDAzNTI4NGFkMTY4YzFiZjZjZGYxZDcwYTM3MCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjIsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZDMxM2I3OWNmZjc4OTc2YmRjYWY0N2Q0YzhjODQ0YjQwZTEzMTEzNTdkMGYyOWRjZDJjMjJmNjBkNTYzOTQ5OSJ9"
+        },
+        {
+          "resource": "repo://apps/web/src/app/grade/%5Bgrade%5D/page.tsx#L15-L19",
+          "version": "repo-lines-v1:sha256:0183f5ef30bafac11335316b08ff25fcd924fe50bb85a20de59c8e5aa3b8547f:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMTZhZTAwZDkwNWNiNDQ3MmY2N2YzMjM1ZmFhMWUwN2ZmN2EzZWMyMGE1ZTllYzBmNTdjOGE5MGE1YzQzYjhmMiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNDEyY2EzNDVjY2Y3NWJmOWMwODA2YmNlNjk1YmU4ZGU4MDhiNzk5ODQyNTFhN2E1NGQyMDJjZjYxMDFkZDQ1MSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNTJmMDRiZTFjZmQxNDlkYmIxYmViZDJlYjgwMGZhYmY2NzBhOWQyMzNjYWY2NDA4OGIzZTkzMmZiN2Y0ODk2ZCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMzNlMTE0MWZlYTYwMWY4ZDRlY2EyYzIwMTkzNTYwYmI1MGYwZjdiODcwYTc3OTBjMWQ3ODBkZTcxMDUwOGFmNCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_c2d269279d9f4eb39e421be4233e4cc1",
+      "statement": "Interactive routes flatten nested parameters into composite keys such as {bookId}__{lessonId}, {bookId}__{passageId}, {bookId}__{storyId}, and {bookId}__{unitNumber}.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/app/guide/%5BbookUnit%5D/page.tsx#L43-L64",
+          "version": "repo-lines-v1:sha256:f52e5e764c35fdd0aae51cb8610f30571c77b8374124868732b56d59bbb359b7:eyJzZWxlY3RlZExpbmVDb3VudCI6MjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUyZmEyZjE1ZDIwNjViNmMyOTZkNDdjNWRjMTNhMWE3MjUzNzY1NjFhN2IxN2I1M2FjZDQ0YWQ1ZTVhZWZmNjIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFlZmI4YWJlYmJmNThlN2VjODEzMzZkMDE5NjQ5YmYxYWVkNzA3MGUwOWMzNGYzMTk5NDNkY2UyOTliNmI5NzkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQyNzliNjgwNTIwZWQ1MjZkY2M0YzhhYTM3MzUyNzU5MGUyODE5NWU0MGZiZTYxMDdlMWU1YjQ5NWE0NTc3MzUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjFlY2VkYTk2OTU4NzcxYWQ0ZTc0MzI0MzUzZTkzNjc1YTcwYjMxNmRjYjMxZWQ0Nzk2YzQ5NGU2YzY1OGZkMjYifQ"
+        },
+        {
+          "resource": "repo://apps/web/src/app/lesson/%5Blesson%5D/page.tsx#L29-L58",
+          "version": "repo-lines-v1:sha256:ef3f7ec79fd12f97d1a686f8efd2cc2f3c3345ace3a13572ec97e268eb00c591:eyJzZWxlY3RlZExpbmVDb3VudCI6MzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMwNTNmYmIxM2FlY2YzYjYwMjI2MWMxMzVkMDA0Mjg2ZDBiZTcyNTI4YzA1ZjMzNjJjNGUxZWYzNTNmNDY4OTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFmOWRiYzdmMmYyNGI1Mjg0MzU3Zjk4NjMwNmZlZjA0MTdjYzZmODFhODNhMDJiZjgxNTBmNzExMmY4ODNiMDkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjUyZjA0YmUxY2ZkMTQ5ZGJiMWJlYmQyZWI4MDBmYWJmNjcwYTlkMjMzY2FmNjQwODhiM2U5MzJmYjdmNDg5NmQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc4NzAxOTY2YWY4YTI5YTg5YmE3MWZiNjk0OGFjMDM1MTYzNWQ1N2JmZTI2ZDkyYTg5ZDdiMzFiZmNjZWRhODkifQ"
+        },
+        {
+          "resource": "repo://apps/web/src/app/passage/%5Bpassage%5D/page.tsx#L21-L47",
+          "version": "repo-lines-v1:sha256:e9b1c293a4d58c1bffa5ed2e5f431bcc56ab1e5389b96e37bd2417fcebb3c2b3:eyJzZWxlY3RlZExpbmVDb3VudCI6MjcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJlN2VkMWYzYzMyMDEzOTg1OTIyYTJjYzc5MmZmNmVhNWVlNzZlZDY2YWRlMjU4ODI3ZmNiYWRlMjZmZmQ2MWYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQzNWMwOWFlNTlhMzNhYTVhMGZhMzgxOGEzZWNhZWFlYWUzNDQzM2UxNjA4NDk0NjM1OTIyZGYxY2I5NjVhMTgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZiNTgwZTk2NGY4M2E0NzNmNDNkNDQzODQ2Mjk0OWQ2OGI1NjAwZmRhNzg3ZjE2Mzc0NWQwMGRlODljYmYzNmEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEifQ"
+        },
+        {
+          "resource": "repo://apps/web/src/app/story/%5Bstory%5D/page.tsx#L21-L47",
+          "version": "repo-lines-v1:sha256:ad04bc4756edc3f2a347295b26c7bee3a3c171b15af08710db5ea14d1c8abb19:eyJzZWxlY3RlZExpbmVDb3VudCI6MjcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM4OGQ1M2ZhMmExOGQ5ZWNkZDM3YjE3NGEzZjdmM2E3ZmUzMWZhNjQ4NjQwOTQxZThiZjM0Y2I2NTNlMjQ2NTEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM5M2U1MzdlN2E5MGMwY2ExNGVkNTkwMDc1OWJmMmU3M2Q2MDgxYzc0ZGZmMmMxNGJlMzEzOGQ1OGU3ZGJlYzEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZiNTgwZTk2NGY4M2E0NzNmNDNkNDQzODQ2Mjk0OWQ2OGI1NjAwZmRhNzg3ZjE2Mzc0NWQwMGRlODljYmYzNmEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_30ec726f95754c9b849e9318eceaab01",
+      "statement": "Reading and story routes inject a placeholder static parameter when no content exists so the export succeeds, and the placeholder path resolves to a 404 at runtime.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/app/reading/%5Bbook%5D/page.tsx#L32-L39",
+          "version": "repo-lines-v1:sha256:a7cf8326859a6015e1d7470ea271d2d1f41c084d8d58beee2731f05d2459d6ae:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMTZhZTAwZDkwNWNiNDQ3MmY2N2YzMjM1ZmFhMWUwN2ZmN2EzZWMyMGE1ZTllYzBmNTdjOGE5MGE1YzQzYjhmMiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNDEyY2EzNDVjY2Y3NWJmOWMwODA2YmNlNjk1YmU4ZGU4MDhiNzk5ODQyNTFhN2E1NGQyMDJjZjYxMDFkZDQ1MSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZmI1ODBlOTY0ZjgzYTQ3M2Y0M2Q0NDM4NDYyOTQ5ZDY4YjU2MDBmZGE3ODdmMTYzNzQ1ZDAwZGU4OWNiZjM2YSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMDM5ZDJkYmFhNjBhYzUzOTExMTllYTIwYTQ0ZWE5MmVhN2NlMzU2YzhjNWE1MjZlOGMwZDdjZjg4MTU5NDMxYyJ9"
+        },
+        {
+          "resource": "repo://apps/web/src/app/stories/%5Bbook%5D/page.tsx#L31-L37",
+          "version": "repo-lines-v1:sha256:737718b9d883e670164651884fe0af0e665d5b4402a771b9f321803634d4a994:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMTZhZTAwZDkwNWNiNDQ3MmY2N2YzMjM1ZmFhMWUwN2ZmN2EzZWMyMGE1ZTllYzBmNTdjOGE5MGE1YzQzYjhmMiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNDEyY2EzNDVjY2Y3NWJmOWMwODA2YmNlNjk1YmU4ZGU4MDhiNzk5ODQyNTFhN2E1NGQyMDJjZjYxMDFkZDQ1MSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZmI1ODBlOTY0ZjgzYTQ3M2Y0M2Q0NDM4NDYyOTQ5ZDY4YjU2MDBmZGE3ODdmMTYzNzQ1ZDAwZGU4OWNiZjM2YSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOWRkNDcxNTFhM2M5MTAxYjFhYWFhNWEzYTc1YTEwMGEyN2JkZDZjYWE2MjU1YmM4MzQwMGQzNGFmMzRhMzM0YiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_f4c1159d2ed4438da92755ac4c7ff323",
+      "statement": "The app deliberately uses hard navigation rather than client-side router transitions because soft navigation has produced 404s in static-export native webviews, especially on Android.",
+      "evidence": [
+        {
+          "resource": "repo://CONTRIBUTING.md#L55-L57",
+          "version": "repo-lines-v1:sha256:f18562e4bbd01441794f71153b006055d009c0376d42b9c93aa9872ed2c36e16:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNWJlOWJlNzMyYzcwZjk0MDY5YTZkMzUyMzhmNzkyY2NlMDJiMmJkZTM4NGRmY2IxZDJiZTkxNTIzNzMyMTI4YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZmVmNWU0NzJhNjBmMWNhYWFiMWJkMDJjNjdmYjg0NGIyODU4NDkzNzRlYjQwYWE5NWUzNGU5OGI2ODJkZjAwNiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNGE1MWE5OTVhNDNkN2UwZTQzODdlOGM2ZjllNjgzNDBhMzFiYzQ2NDFiOWUyNjljODRhYmZkMDAwNzVkZTM4MiJ9"
+        },
+        {
+          "resource": "repo://apps/web/src/app/HomeClient.tsx#L56-L77",
+          "version": "repo-lines-v1:sha256:be1969fe1edadb44d9b0881ed2ccdc0879512497bb41741ff25546363586b8ca:eyJzZWxlY3RlZExpbmVDb3VudCI6MjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI0ODNkOGQzNWZiMDBiZGRkZDE1M2VlYTQzODA2ZmUxYjM5NTZmMzc4NTBlMzAzNDFhZWNiMGQ0MDc0MTA1M2UiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE0MTlhNmRjYzA0ZTIxM2EzYzdhNzdhNDU2YjAxZTc2ZDFlZjc4Y2QwMGJiZWMxZDhmODE0NThmZTkzZWRjNTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjY3N2M0ZDE1ODg3YmMyNGY2OWY2MmVlZWY5NmMwMjc0NTkxOGU4MmEyMTQzZjJhNjg1MmIyZmRiODE1MTc0ZDYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImI5MzFlZjQ1NjZjMTcyZjc4YzA3Y2U0ODM2YjM2YTJlMWIxNTc0NTFjYWY2OTQwMzFlMmVjZmQ4MjQ5ZjM4MTgifQ"
+        },
+        {
+          "resource": "repo://apps/web/src/components/StagePicker.tsx#L38-L46",
+          "version": "repo-lines-v1:sha256:c6088024b09d54d56d76c7aeb49ee558d2a656fd18d26b0e941579689d6ade40:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNTRjY2VmYzg5MmJiMTM4ODlmNWVjZjUxZTZiZTAxN2YzMmEzMTNiYjk5MGE1MDk3N2QyMzA0OTQyZGVjMTExOCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNDg5M2Y0MGUzNzgxZWI4OTZjODJkMDQ2YTA4MDY3YTExZTM1Y2RmMmYxZGZhZjI2ZmVhOTBiOGRiNjY3NjQxMyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOTFjYjA3NjljODkzNzY2OGQzOTM1MTIwMjBlMGE2MzE4ZGFjOTNiMjA5OGI2YjM4YmFiZjQ1YjBhNzk1MDNjMiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNjMzMDJmYjk0MTFjNTg0ZWUwZTAwMDcwOWE3NjMwNjM1OTQzZGY4YTFjMzgyNjMwYWQ2MjUzOThhMDI0YmM5NCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_1df338740b824d9fb5bfd1f372e25ed0",
+      "statement": "The root layout installs metadata, viewport colors, an inline pre-hydration theme and service-worker boot script, error/theme/toast providers, three global watchers, page content, and bottom navigation.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/app/layout.tsx#L19-L122",
+          "version": "repo-lines-v1:sha256:3ec174db20ca68bd701160fe3db4c75d1332647189d23cd2e9b8ae6450669881:eyJzZWxlY3RlZExpbmVDb3VudCI6MTA0LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJmOGQ5Njc4OTc2NWZlMzA4N2M5M2Y0ZDNhMGE2N2I5NTU1YmM4NThiMGYzY2Q0ZGViMDRiMzllMTZiZmJjMGMxIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI0MTJjYTM0NWNjZjc1YmY5YzA4MDZiY2U2OTViZThkZTgwOGI3OTk4NDI1MWE3YTU0ZDIwMmNmNjEwMWRkNDUxIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI0ODMxNTQ1YjJhY2Y2YzRjZDZkYjY0MmNmZDY5MjhmNThmNDA0ZDljNDcxYmViYjEwZmU0N2U1MDczZjkwNjUyIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_0003e4ad36f84cbba32acdb9a8fb868a",
+      "statement": "The inline boot script applies the persisted dark theme before paint and registers the service worker only on ordinary web hosts, while native hosts unregister workers and clear caches.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/app/layout.tsx#L41-L97",
+          "version": "repo-lines-v1:sha256:ec016914437afda5c83680c6f75266f7777c02ed68d79441e2996985eff6a423:eyJzZWxlY3RlZExpbmVDb3VudCI6NTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRhZDI5NTI1MzZmYzYwMDBhZDkxNTY2YmQ5NTNmMjViYzk1OTYxMGU4MTFhNTI5YTliZWY4YjRmMDdjMWM4Y2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjE5NDY5NjY1ZjkxYjg0N2E4YzZlNWU0MDQ4NWNiNGJiMTlkYmNhMDJiYmU4ZWE3YWJjZTAyYjMyMWY4MDliMzEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImE3YzM5ODg1ZGQ4ZWQwMjRjYTQ5ZGY3ZTNhNWU3OTQwZDQ5OWNlMmE1MDhkMGQ1MzA3Y2ZmYzE5YWM2ZDA4OTgifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_3ebbb91c6ec84f4a8dd50b9a8b37a479",
+      "statement": "AppShell uses one responsive tree: mobile single column, md icon-only side nav, and lg side nav plus center plus right rail, with children mounted only once.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/components/layout/AppShell.tsx#L31-L63",
+          "version": "repo-lines-v1:sha256:3436280066596a54c05cdf3d09297a84d1e356b8dc5eb677080aaffcde25341d:eyJzZWxlY3RlZExpbmVDb3VudCI6MzMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY4OGMwOGM0ODdiMzE4ODU1YTM3ODA1NDBlYTI2OGZlM2Y3OThhNGJjYjY2YzU4ZTIzOGU5ZTFhNzkxYmVkZTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjE0MWZhYmY1M2I2NWIxNWZlMzNhMjE5ZDBhZDBjZGViZWNhNTY5OTcyMGQyYmZjNWYyY2JlM2UwMjdkNzU0MzEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_92911947037e449da58dc7aaa2aeb332",
+      "statement": "Side and bottom navigation expose learning, league, review, shop, profile, and textbooks, with learning active across stage, grade, book, lesson, reading, and story routes.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/components/BottomNav.tsx#L46-L111",
+          "version": "repo-lines-v1:sha256:fd21e4993ef45491d8f7366d88bdeb7afa7d7e95c270644513eae7e6a93ac362:eyJzZWxlY3RlZExpbmVDb3VudCI6NjYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE4ZDg2YzMzNzYxMzM5NzY4Y2IzNDJmN2RkN2ZmZDk5NGZlN2QwMjMxMjIzNDlhOTQwODk2YWUyZTk1YTE0OTkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA0MGJkMmU4ZGJmY2RkMjBlYzg1NDI4NWRlOTE4ZjQwOGZmODljMzNiMmVlY2I0MGMzYzU1MzViNjZiMWZjMDMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImY3ZjQ0NDA5ZjE0Zjg3ZWY1YTE5NTkzNmZiODgzY2M4YjgwNDgwMzQ0MzE5MDE3ZWE5YjExNzRiNjE3MDNkM2MifQ"
+        },
+        {
+          "resource": "repo://apps/web/src/components/layout/SideNav.tsx#L44-L68",
+          "version": "repo-lines-v1:sha256:15e25326fbefd5ab5f4e3527241b190c7ad0fa53c7d80234f5320c7baa819dd6:eyJzZWxlY3RlZExpbmVDb3VudCI6MjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM2ZDYxYmUyMmNiMTEzZGQ0MThkOThjNDliNDMwNzYzZjY0NjZhNWY5NmQwYWFhMjE1YWY3YzNiMjNiNjE4NGYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZkY2E3YTIyZDUyZmQ2MmU3YjY1YmNlMGVjMWJiZGZlZmY3NzIxNDYxMjJiZGU4M2ZkNGZkODg3OTYyN2E1ZjIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImY5Y2I3ZTE4MmFlZjllZDI5OTBjOGQ5Nzg0MGU0MjEzNjI3ZWY0MjI3NGIxOTc5NjdkODNhYjUwNDcwYmY0MGUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_eb7ac3b56d2a485f86d357c4b5355011",
+      "statement": "Immersive routes include the lesson runner, jump test, review runner, passage reader, and story reader; they hide bottom navigation and defer global watcher celebrations.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/components/AchievementWatcher.tsx#L12-L38",
+          "version": "repo-lines-v1:sha256:b0a3d267e4df8f3ae1874aa42301dd41a5e93d299656d09540b6a62dedc92849:eyJzZWxlY3RlZExpbmVDb3VudCI6MjcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA1ZTMyMjgyZmI0N2I2YzViMzE4ZDQ0NDgwNjQyYTlkZDQwMmRmMDFmMzdmNjY0OGZjZjVlYTZjZjFkN2Y3OTciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA3YjdhNzNmNjM5MDBhMTcxNDcxOWVjZTMyN2MwNzY0NjM4ZDUxODQ1OTlkZTE2ZThlNzllOWJlZmY1NzMzYTAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjZmNzVmMjZmYmQ3ZjA3NDQyYmI2NDM5ODUzMGFhNmM4MTRhNTQ2YzBlZTQwNWJhMjU2Mjg4YmI5NzhhMDE0YjUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQ0NjBkZTViN2ZhNTUxNmU3ZTZhZDhjOTQ3MGJiNWNkZWYxZjU4YjVlY2YyM2Q5ZjAxYWU2MTE3NmUyY2UyMTkifQ"
+        },
+        {
+          "resource": "repo://apps/web/src/lib/immersiveRoutes.ts#L14-L32",
+          "version": "repo-lines-v1:sha256:4c2145601c93aaf802940f1f986027f760374f4c3c8daa84913a47cd08ece358:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg0N2QzMWYyNTZkODJkYWJlYjA4NTY0MWNjZjc0ZmY2MGE2ZDM3MmRkNzZhNDEzZGMwNzRkZDc4MTFkMGUzNDAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZlNmI4Zjk3ZjYyYjE5ZGM5NTg5MjhiNjNiNjczMTMyYjJlMWJlZTliMzJkODVkNTNiMGMxODE2MjdmMDQyYmIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_4d56615781ad425c8ded22845f5c8306",
+      "statement": "The PWA manifest defines a standalone Chinese portrait app with maskable SVG/PNG icons, and the service worker uses network-first shell navigation, stale-while-revalidate for data and audio, and cache-first for content-addressed static chunks.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/public/sw.js#L26-L113",
+          "version": "repo-lines-v1:sha256:1bc29a6896803f94fc9e099d76a0905c5aa21091e52b25e1af35bf9dec8bebb5:eyJzZWxlY3RlZExpbmVDb3VudCI6ODgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJiZTFjNDgyMjJjMzk0OWI5MDQxZTg3MGQ4Mzc2ZTJlNDlkYjVhN2M2MWU0YzgxYWY2ODE1ODRlMDRkZWU3Y2UiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY2ZjViNDBiMTU4NDU3ZDE3ODY0ZjIxNzkwNzg2ZGQ1YTJlY2RiNjRiNjZhNjUxZjc4OGQ0ZTI1Y2QzMzAzZDIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZjNDZiN2IwNDg4OGM2NTNmM2FhMzc1YzhlY2ZhMDllMjE2ZjA0ZmRiZjE3MmZjMTIzMGJmMTI4NTUwZmI1MzciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://apps/web/src/app/manifest.ts#L12-L57",
+          "version": "repo-lines-v1:sha256:c04183a8dc0f8edda760cab98f4d63fcc46dc79de9970225854a3159fe3d7aaa:eyJzZWxlY3RlZExpbmVDb3VudCI6NDYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ5NzYwOTE5YmY4N2QzOTI2YWQxMWU2MzBmZTI3OGZjYjhiZTY1MGU3N2Q4NmQ0YWY1MTFkNGIxZTUzMjQyNzciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQyYTJjYjI1YTEyMmI0NDIyMWE2MjM0ZWM2NjBhN2I1ZmI3ZjliZGU3YjNiOWUyYjNjNTU5YTBkOTZmYWM3MzkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA0NDQ2MjM3ZmFkODdiNTc3N2ExNmFkYWRkOGRlZWIyZDVkZTdiMzAzZjBlNjlhMmFlM2Q5Y2M3ZWRiYzMyYjkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.7.2",
+    "at": "2026-11-04T02:58:40.844Z"
+  }
+}

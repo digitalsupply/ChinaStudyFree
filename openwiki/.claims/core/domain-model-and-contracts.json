@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:7732d955ecc9f8da9e10b692d98802a1e631ad376a67bfa47053456676e5cd8b",
+  "claims": [
+    {
+      "id": "claim_735aa9e639fb4090b21eb1080efad6aa",
+      "statement": "packages/core is a pure TypeScript package with no DOM, Next.js, or React Native dependencies and exposes narrow subpath exports for its domain, algorithm, and economy modules.",
+      "evidence": [
+        {
+          "resource": "repo://packages/core/package.json#L5-L30",
+          "version": "repo-lines-v1:sha256:d0d06cb84bf7d0e7f16cbc8a99bdfb5e3d8160135b23238439403008e4a6cb67:eyJzZWxlY3RlZExpbmVDb3VudCI6MjYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU3YTcyMTRjZTM3ZDE2NTE5ZTQyOTk4ODdiZGUyYzVjOTk5YTMwYTljMjMzNDZlYjEzNTE0ZTU1MjNmNTljMjUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRkNWNkMmZiNGYzZGY4ODQ1MTUyNTViMzk1MjNmMmY4YjU0NzJiZWVhOWY1NjZmZmNhMjA0ZGI4MDI1NjEwNDEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjEzY2FkOWIxOWMzNzgyOWRiYzYxMjIxYjg5N2I0MTBmZWFjMTlmMTdmNjE5MDBhNzFmNDhkYjMwNzVhMDhlM2MiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQyYjE2YjI2ZDRmODI4NWZjMWE5ZmVmMDY3NzUzZmVkZmM2ZDA1ZThkMmE5N2UyYjcxNzNlMjIwOWEyMmFjZTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_23374685b9514235b6a2dabb49a4d21e",
+      "statement": "Questions carry type, score, difficulty, knowledge point, prompt, options, a canonical string answer, explanation, and optional per-part audio; the type determines rendering and grading behavior.",
+      "evidence": [
+        {
+          "resource": "repo://packages/core/src/types.ts#L9-L35",
+          "version": "repo-lines-v1:sha256:f4c04b8e01271521e3f64eb07965be0b666e63a914beaa0b72da33b4771139f7:eyJzZWxlY3RlZExpbmVDb3VudCI6MjcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY3MjhiYTExOTBiZWRkOTE3NjhiZWI3YzYzODJmYTFiZGFiMGE0MGZkYjM4YjMzZGI5ZTk2NTI5ODMxMDdkN2QiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImM4YmQwN2Y2YzJkMmZiMzk3ZmQ2MTMwZDhlYTQ4OTdmMDBjODdiYjRkNTYyYTJmYjQxM2U2ZGVlYzcxM2E0YzIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRjZDQwOWU3OWI5MzRmN2NhMjk3MDNiMDcyNDg5YTUxYWYyNzVjYTFhYTIwM2UyNGRkY2VhZGI5ODM2ZDQ4NjYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_15476f8b59d346fba32fc89b53b06106",
+      "statement": "Lessons are identified as {bookId}-u{unit}-kp{index} and carry questions plus an optional knowledge summary, while outlines contain units with optional exam lesson metadata.",
+      "evidence": [
+        {
+          "resource": "repo://packages/core/src/types.ts#L41-L110",
+          "version": "repo-lines-v1:sha256:5ab15053be224b94cf350eefdcfb8334a9f6a7bfe29abf4a60edc5d200d7a28d:eyJzZWxlY3RlZExpbmVDb3VudCI6NzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE1YTY4YWI2ZjJhZTg3ZjM0ODk2ZDYyNGY5OGU2N2NiZGZkMTQ2YzAyM2VkNGM3NGJkMmU3NjdjYmE2ZWRmNDEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjYyY2E0MzQ5NGRhOGM1NjgxNGE2YTYxMDZkZjQ1ZDcwYTZiNWU4NzU2OTMxYmIxNzJlMTcwOTIyOWJmYjgzMTAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjIyNzAzNTRjZDNmZTZlYmRmYTY1ZTZkYjlmMjA3ZTFhNTY1YjE0YTI0MmJiM2E0OGVjYWNiYzNjN2ZkZTQzYzEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_5b44a53154c84adeb808ebce96aa35c4",
+      "statement": "Books optionally carry subject and publisher metadata, use grade 13 for college courses, and include stage and passage/story flags derived by the data build.",
+      "evidence": [
+        {
+          "resource": "repo://packages/core/src/types.ts#L130-L152",
+          "version": "repo-lines-v1:sha256:3e452cee3f8085b2fe6f368ddab8827168a5707757f964604b6a93082113e332:eyJzZWxlY3RlZExpbmVDb3VudCI6MjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZjZmJhOGQzYThiMTA3ZGJkZjgwZWM4YmE0NjY2ZmQ2NTgyM2QzYWZjYmRlNTgzMzdkMzFkYzg0ZWE5MTY5ZTEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIzNzJkNjVkNjU3MWZmNzVlOGYyZjcxMzA4MjAwZDc4YjFmY2IxZTRkZDMxYTg2OTZiM2EyNWNiOGYxMDgyNDQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImMxMGNjZDVhZGMwOGRjMDFmODVkMzI0ZGRhNjhjZDY1YWI3ZGQ2Mjc0OGNjNzdkZTI1YjAzMDQxMTRiYjM5MDQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_7cb767b1c43b489385b43bc63cb6960a",
+      "statement": "The stage table defines primary grades 1-6, middle 7-9, high 10-12, and college with no grades; stageOfGrade maps zero and out-of-range grades to college.",
+      "evidence": [
+        {
+          "resource": "repo://packages/core/src/stage.ts#L13-L81",
+          "version": "repo-lines-v1:sha256:6b5bbc59524ba87dbf599c541b7028a4a1c7c3ecb22bb554b5dd7a874edb5d5c:eyJzZWxlY3RlZExpbmVDb3VudCI6NjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBiYTQxZDlhMzk2MWI0ZjBkMmZlNTQ1OTc3YzgxZTZjZmY0MjgyZTIzM2FkZTA4NDY5ODE0MzA2NTViMDFiM2EiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjAwYWMyYjgxMWE3ODE2MGI4NDdkYjE1NTFmOWVkMjgxNjg1NzVkNjkyMjlhZTdlZDVlYjRjYjg5ZGRlNzExNTIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjAxZDg3ODk4ZGU2ZTRiMmZlMWJmYWIxN2YwN2MxYWMyYjA4ODIwMzgzZjBhNTAwZjA3OTE2OTBkMjE4MDZmNzEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_bc6ec7ab7b194e2f93833b267575d0e9",
+      "statement": "Grade labels map 10-12 to 高一/高二/高三 and 13 to 大学, and gradeFullName appends 年级 except for college.",
+      "evidence": [
+        {
+          "resource": "repo://packages/core/src/stage.ts#L83-L119",
+          "version": "repo-lines-v1:sha256:0785b034e3c74e8d8736f520c4b53e1f225dc1a798b9b65e7dd8b910265bb3a7:eyJzZWxlY3RlZExpbmVDb3VudCI6MzcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjgwNDdiMDg4MGNmNTZjNDgzMWYzY2Q5ODEzMDViM2NhNGVmYmIxZjBlOGZjN2I1Y2I5YTZhNTg1Mzc1NjY0NDQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_1f4a216df4bc4e19b5bc2e6dcd6f52f4",
+      "statement": "The subject registry covers twelve subjects with labels, badge classes, and accent colors, and resolveSubject defaults missing subject fields to math for backward compatibility.",
+      "evidence": [
+        {
+          "resource": "repo://packages/core/src/subjects.ts#L8-L97",
+          "version": "repo-lines-v1:sha256:102d1e6b235a339b012be6f938628079baa8b651b1a41048f1d782ce05e8d3c8:eyJzZWxlY3RlZExpbmVDb3VudCI6OTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQwZDBjMGExYjFiODFiZmUzMWNmMjk2MDllMzllNTAyYTZiNTk4NzcyOWExNTZlMGY2YmJkYjMzNTg2ZmZhNWIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZlOTM2YmNmODRjMWNlZWZlNTM0NmM4ZWZiMjM2YmFjZGYzOWVhMTI4MjhlZTBlMzQ2ZTlkZTQwM2QxYWJkZjEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://packages/core/src/types.ts#L130-L152",
+          "version": "repo-lines-v1:sha256:3e452cee3f8085b2fe6f368ddab8827168a5707757f964604b6a93082113e332:eyJzZWxlY3RlZExpbmVDb3VudCI6MjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZjZmJhOGQzYThiMTA3ZGJkZjgwZWM4YmE0NjY2ZmQ2NTgyM2QzYWZjYmRlNTgzMzdkMzFkYzg0ZWE5MTY5ZTEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIzNzJkNjVkNjU3MWZmNzVlOGYyZjcxMzA4MjAwZDc4YjFmY2IxZTRkZDMxYTg2OTZiM2EyNWNiOGYxMDgyNDQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImMxMGNjZDVhZGMwOGRjMDFmODVkMzI0ZGRhNjhjZDY1YWI3ZGQ2Mjc0OGNjNzdkZTI1YjAzMDQxMTRiYjM5MDQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_d15efeb694f34864ba2d89b4042fe13d",
+      "statement": "Compatibility conventions treat a missing publisher as the subject default, keep the default edition's book id free of a publisher segment, and allow optional audio and exam fields to be absent.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/scripts/build-data.ts#L630-L640",
+          "version": "repo-lines-v1:sha256:0758820939482db1e41c26c1d2083f840dee7e4632b13f0c8f6a9c9018fede60:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNkNjQ3MmYzMGM1NjIxODAyM2Q3ODkzYmUwYjk1YjkwY2I1NzI5ZDFlMWMxZTM1NjQyNGQ0YmZhNmQzNGQxY2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjM1MDQ2ZDMyZTg5NjhlMDAyYWM4YmE5MzUyNzUxYmU4ZTQyNzFhNGQ2MTBkYTJhOWMyODRjMjYwZTNmYTM2N2QiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImYyYTZlNjNlYjVjYzQ5OTYwNzNkZGQ1ZTM2ZDEzM2JhYzkwMTMwZTM0NmU3ZWE0ZGVhODZiMjg1MTg3ZTg0YjMifQ"
+        },
+        {
+          "resource": "repo://packages/core/src/publishers.ts#L51-L63",
+          "version": "repo-lines-v1:sha256:85156054a0715981bba189f418a64f2e9534f43e21a662aaa37d22cd42260fb7:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVlNTdhMjk5MmQzNzJiZWY1N2NhZjJhZWI0MGMzMWJmNjM4YzgzMWRlYWQ0MzFlOGU2ZjYwZWY5MGE1YzFlYzYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQzZDg4NjljYmEyMjJlMDAwM2IwZjI1YmExODMxM2I1Nzc3YTU1MDkxZDdmZjE4NjA5OTZkODg3NzY1OTI0ODgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQ3MDkxMDJjOGFlZWU4YmZjZTJjYTNkNzg2MjNlMmUwZDlmMDcxZGM2MzA0MzhlY2VjZThlMzdjMzlkMGMwYTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjM3OTI5ZTkxZTBmOTljM2U4MjVkZTY5YjQzNWZiNjQ4NGQxYjBhMWRmMmY0NjU2MWFiZjFhMjlmMDQxODhiODgifQ"
+        },
+        {
+          "resource": "repo://packages/core/src/types.ts#L93-L105",
+          "version": "repo-lines-v1:sha256:3dbd0b339ac4456fb32d532d9ff028bbb982ff9629cdf19bc2ae2143c846a280:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc5YzlhNTY2N2UwMGIyZWYyMTA5ODFhYWFiNWFhMzEyNDEwZDA1OGMwZGM2NTQzNmJhMTkzOWJhYjA4ZGQ0YWQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjRjYzk1Mjg5MDQwMDg4YmZjYjJhM2M1YjMzYWI1YTJjNmIxYjMwNWE5MDRiZGFlYTE3Y2RmZjBiMGJiZmE0ZTkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjliYmI0YWY3MmRmODY2Nzk4ZmM5MTUwMmFkZTk1NzhjODEzMDE2ZWEwNDNjMDk5NDhiODQ3ZDI1YjI4ZjQ1MzQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_b869bd9588dc48038408c9984c970a79",
+      "statement": "Answer grading is type-specific and tolerant of punctuation, whitespace, full-width characters, numeric formatting, option letters versus option text, and true/false vocabulary.",
+      "evidence": [
+        {
+          "resource": "repo://packages/core/src/grade.ts#L9-L102",
+          "version": "repo-lines-v1:sha256:22d836d5cc67cb7d51af212506825f0202a8e97567d861abcf15514aca811d9a:eyJzZWxlY3RlZExpbmVDb3VudCI6OTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAzZjZhNjNmNzE5YWU3YWZkZTgzYWUzOTQ4ZGU0YTdiMzhkMTc4Yzc2NmYyODJjMzc4MjIzNDc5YmMzMjUyZTUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjJmMTQ3OTEwMmJiOGQyNmNjNjkxOTE5MzY0Y2Y5ZWMxZGJlMmIzYTdkN2I0MWQxZWM1YzNiYjc5ZjY1MDliMDYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhkOWE2ZWFkMmM4YjE1M2Y0NDEyMTI4MTRkZTZlNjkzNDMwNzgwZjM3OTRkYmVjNWQxODcxNGI3YzE2NzU2MTIifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.7.2",
+    "at": "2026-11-04T02:58:40.844Z"
+  }
+}

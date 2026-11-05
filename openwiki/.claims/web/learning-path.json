@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:4d327ec1fbbc009b4bed97a67b25f92aa4dffd92ef25fbd623d93ade15a7966f",
+  "claims": [
+    {
+      "id": "claim_e5e1c8af3ab348478d2f42bcaeff4bf7",
+      "statement": "First-run stage selection writes selectedStage and lastStage, sends college directly to grade 13, and sends other stages to the publisher-version page before grade selection, using hard navigation.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/components/StagePicker.tsx#L23-L47",
+          "version": "repo-lines-v1:sha256:98cd77cd887f2673779cc82413feda044bf2067df5a1ff7f10abcd582ddd36c8:eyJzZWxlY3RlZExpbmVDb3VudCI6MjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk3NjA0ZGZhZWRiODJlMzNkY2U1OWM1NGEwZGUwY2YzNDYzM2E0ODM4YTgyMTIyOTY5ZmRkOTA3MDZiMDc4YzQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjIxM2ZhZWU5N2YyOWVkYzJiNTllZWI2NjU0ZmU0ZDYyNDQ5NjEzMjIzODY5YzcwYjMxOWRlMTE2ZGQwNTEyMDYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjBhZThjOTQwZDIyZGUzZjZkMmFhZmRlZWE4YWY0NjlhZDM4NTBjZWNhYThiMTdkZmI5ZTExNzZkZTlmNDMzMzkifQ"
+        },
+        {
+          "resource": "repo://apps/web/src/store/progress.ts#L694-L704",
+          "version": "repo-lines-v1:sha256:382b741a1dd0ea6c87a67d7207a6187db7a5dba182f09fac383ba2f3ebb6a434:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE5NmY4ZWM0YTIxZWM2NDcxNTg4MGI0ZGU0NDEyNGMwZmY3NjVlN2U0YjU5OTVmMGRjNjJiM2I5ZGNiNWI3NjMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk0MzNkMGVhOWVjZjJmMzljOWE1MDQwNzM5NWVlNDExNzJmZTY4MmM5Yzg4NWEzNTA4Zjc1YmRlZTE1MWVmZmYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjExZDQyMmE3Y2QxYjFmYmFlNmY2NzlhODY1NTYwNmE2MGFhY2MwM2VkZWYzYmJmNmY5ZTgzYWNhNTBiZjIwMGEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjViZDg1MzcxOTM4ZjIwODkyZWIxZmNiZTQ0MDMxMjE2ZTM5NDRmMDI3MGQ0YTUzMDQyMWY0NTcxODA4M2Q2ZGIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_5654fed3609b4c2f8002bd7e5b708cc0",
+      "statement": "Home routing recovers the effective stage from selectedStage, then lastStage, then stageOfGrade(selectedGrade), so a missing field does not force the learner back into onboarding.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/app/HomeClient.tsx#L35-L78",
+          "version": "repo-lines-v1:sha256:7bc3d1f1740ce7f7ba4de15b021e0407cdbc879f2864b126752a00505d4ecaae:eyJzZWxlY3RlZExpbmVDb3VudCI6NDQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ2NzNmMGQwYzUwNjQwNmQxMjJlYjQxMWJiODRlNTk1M2U2N2QxZjYzYzliMWNhZjU2OGYwYTA0YjY4YjJhYzQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjIxYjRmY2EyYmNhMDhkZTU1OWMzZTkwMGE0MmZmNGUzMjc4YzhlNGJiN2IxYWVkZjgzNTI1NzUxYTdjMDY1MGYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjMxYTdmNTBjMGY4OTMxNzVkOTNiZTliYTRhMzJlYjRhOWI4ZDc3MTYzY2E0MGM5MmJjYTI1M2U3YmQzYzA2ZmEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU2ZTYxZjExYTcwNjM3N2NiOTJmMjFiZGJmMTYyMzkwNjJmNWJhZjQzYmUxNDQ0OWE1ZmViNzk1MWI1NTZmN2YifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_0d8bf58f0a31464bb1bee19dc0f13b6e",
+      "statement": "Home validates a remembered active book against the build's real book ids before navigating; an invalid id falls back to the grade page rather than a 404.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/app/HomeClient.tsx#L67-L77",
+          "version": "repo-lines-v1:sha256:b0f8a58fe918e86bceca0a8be9d806731d98a03789531f97b1d4d03fb7aa9ab5:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZhNjNlYTIzY2VkM2Q4NTlhMzgwYmNmM2FhODFlMzM5ZjA5NmU1Y2IxODQ3YTJmMGRhNjk0MTAyMWJkNDE3NjgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE0MTlhNmRjYzA0ZTIxM2EzYzdhNzdhNDU2YjAxZTc2ZDFlZjc4Y2QwMGJiZWMxZDhmODE0NThmZTkzZWRjNTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjNmNjEwNTZiNzRhMmNkZGY0M2FjM2Y1MjgwMTZkNWViZGExMGExNDEyZjE5ODdkNjU3NzI0MmFkYTNmNWQ1YmQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImI5MzFlZjQ1NjZjMTcyZjc4YzA3Y2U0ODM2YjM2YTJlMWIxNTc0NTFjYWY2OTQwMzFlMmVjZmQ4MjQ5ZjM4MTgifQ"
+        },
+        {
+          "resource": "repo://apps/web/src/app/page.tsx#L24-L32",
+          "version": "repo-lines-v1:sha256:7d1a9da666569943c2e243f22a3fda3002f0bed939ccae4509991deca0561f6d:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZTcyMTZlOGU5YzBhMWE2OGQwNmMyZmJhYTVmZDIxMzk0ODJiOGVmZDBhMTkzMTViOTE1ZTZjY2U4NDlkODlkYyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNzdhZDZhN2JhYWRiNzA4MDM0NTc0ZWUwNDBjYjhmMDVlNzk5NWNlNTA0OTRlMjJmNTIwNmU5YTBhMTY3ZmJkZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMGNlMzVlNzEwNTkxOTI5NTE0MzY2YmJmMmU4YTY4Mzk2OWY1MDVhNTc4ODNhOWE4YWU3YzY5MGU3ODdmOTI2NiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjIsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiN2I4YjYwMGE1YjQ0OGIxZTRkMDJkZjA5NzQ2ZWQzY2EzMTcyZjc1YzRhYWJiMDFkZGUwODBlMzZjYWIwNzRiNCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_d81532978a41438bb3db5a53c6f32855",
+      "statement": "The grade route pre-renders grades 1 through 13 so every static link target exists, and grades without books show an empty state linking to the textbook center.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/app/grade/%5Bgrade%5D/page.tsx#L15-L66",
+          "version": "repo-lines-v1:sha256:81ffa2a2ce4f49d64cd5ec1219154ce18d758b05e0778f0a7cbdf806260c91b2:eyJzZWxlY3RlZExpbmVDb3VudCI6NTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE2YWUwMGQ5MDVjYjQ0NzJmNjdmMzIzNWZhYTFlMDdmZjdhM2VjMjBhNWU5ZWMwZjU3YzhhOTBhNWM0M2I4ZjIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ3YjhjMTA4NWY5NWExYWZhYmU1ZDE1MmFkNThkYjlkYzI2MzM2YzEyMThlMmI4NDBhZTdhZDgyNmEwZDU3NDgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjUyZjA0YmUxY2ZkMTQ5ZGJiMWJlYmQyZWI4MDBmYWJmNjcwYTlkMjMzY2FmNjQwODhiM2U5MzJmYjdmNDg5NmQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjJhNDgzMDVhMDhhODVjMGEyZGEzZDI0MmJiY2IwNDQzZDdkZmMzMDRkYjdlNWM4YjMyYTE3YTViYWI5NjdkZDMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_e956bbfbe06a4a5a98c1617b8c0766e4",
+      "statement": "Grade pages group books by subject and show publisher version chips; the chosen version is sorted first and badged while other editions remain visible.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/components/GradeSubjectGroups.tsx#L89-L160",
+          "version": "repo-lines-v1:sha256:a2d38bc5aa23c90bb16335572f90021a187a2c497eb050576a64662f6be0a0f8:eyJzZWxlY3RlZExpbmVDb3VudCI6NzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU3MjE2ZThlOWMwYTFhNjhkMDZjMmZiYWE1ZmQyMTM5NDgyYjhlZmQwYTE5MzE1YjkxNWU2Y2NlODQ5ZDg5ZGMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZhMWUyZDU2ZjJhOTFlNDE4NmJkMmQ1Y2IyNmM2NzhhODgzNTdiM2YzOTUzMTc5NDM0ZmQ1N2QyM2Q5ZTliNGMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA2OGU4MWQyNDk2YTM3NzQ0YTdkOWQ0NzVlMTQ0YzRmN2Y4MmJhNTFjNzc5NDQ1NTFkZjBhZDFjZjllOWFkNmYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImYzZDkzOTYyYjI1MzlhNDJjZDQxNDRkYWQzMDJlMmMwZjcwNDIyYjI2NzBjODEyYjUyNjlmMjhkZWMyNTg4NmQifQ"
+        },
+        {
+          "resource": "repo://apps/web/src/lib/versions.ts#L118-L132",
+          "version": "repo-lines-v1:sha256:c67c203d0be715fa19d04d4ab8f7133271e6e1a65e39a36a71eaeb507c5b60eb:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImI3NDYwYzMzMzY0ODMzNDVmZmJjZmEzNzM2NmRjN2Q2YjA1ODE1Nzk0MTFlMzFmNzcxOTQwOTE1N2RkYzY1MTYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_5f68583ceca74689a0a4e5d988f2be63",
+      "statement": "Opening a book syncs activeBookId and selectedGrade, and the book page exposes continue-learning, reading/story entries, and the path map.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/app/book/%5Bbook%5D/page.tsx#L40-L106",
+          "version": "repo-lines-v1:sha256:8fff52ceea36eedfd9d7b128b30b5ab22f6e3e9c77df426bccb4d4c3e64f75cc:eyJzZWxlY3RlZExpbmVDb3VudCI6NjcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU3MjE2ZThlOWMwYTFhNjhkMDZjMmZiYWE1ZmQyMTM5NDgyYjhlZmQwYTE5MzE1YjkxNWU2Y2NlODQ5ZDg5ZGMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE1MjBhMGFlYzVjZTA4OTFmNzFmYTkzYWRkOWU4ZDc4NWRlNjg3N2ZjNGY1MmE2YjUwZDAyYTFjNGY5MTE3ZTAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjUzZTUzN2Y2MDcxYTk0OGQ0YTkyNzdjZWMxOGQ1MGU5NTlmNDUyNzAyYjZiNzM4MmQzMGQwMWNjNGI1NThiNGQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjFmN2Q4ZTEyOTcxZjBjY2FlOTc1YjRjMjg1MzVhNWFmNzdhMzBmZDA3OTI5NTRhYmZlNDM4N2E1ZDJjNzEzMjAifQ"
+        },
+        {
+          "resource": "repo://apps/web/src/components/ContinueLearningCard.tsx#L115-L125",
+          "version": "repo-lines-v1:sha256:2ff1ff123cbcbec7b83f5ead2a7f043b2514ebc420f07500176feb5dfbce2988:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdkODA4YTZiZmEwMGI5ZWZiOWIxZWQ4MTMzYzY5ZWFmYjMwNDYzNzY5NTkyN2ZiMGJlYzNiZDYzM2U4Yjk0NTYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjU2ZWNmZDEzMjE4OWNhNDkzNmQ4ZDVkMDVlYThkNDdhNGQ0ZjMxNWQxOWY2ZjI1NzdiMmJkMGZkMGY3NTk4NjAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhiZjc1ZGYyNGUwMjE4NTMxOTIzNWZjOGYzYmQ1MGU1ZDU2MjA0M2M0ZjM0ZGYzYmY3YjMzODk1NGUyMWE4MmQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_19f262bc1bf04d8698d8caa7bbf8c410",
+      "statement": "Ordinary lessons unlock linearly: completed lessons are marked completed, the first incomplete lesson is current, and all later lessons are locked.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/app/book/%5Bbook%5D/BookPathView.tsx#L52-L69",
+          "version": "repo-lines-v1:sha256:fe7f2a204f1e52a1638ff1817a614079c90d70c48649d737885295e76455e608:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI2NjkzNzMzMmEyMTM1YWRlN2RiNjQwYWMzNmQxOTFlNGQwNmRmNzA2YjM0YjhjNDFkOWNhZjIzZTE0NjVkNTYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjU0NDNlMjE3YWVlZWZkNDc0ZWU2ZTEzZjRkYTFlYzliNmZkZTY3MDg2MDUwZTY0NzczOWFkODBkMjdmNjdiNzAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQzZjQ4NGFlNTg1ZWZlMzcyNTYxY2E5ZDZlNmRhNjUxZDExNjMwMDIyN2I3MTE0ZThkMTM0YjM4NGY1NDAwN2MifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_5a432335c9db4089af2af891fd203e3d",
+      "statement": "Chest slots appear after every fifth lesson within a unit, use stable ids, and claiming is idempotent through the claimedChests ledger.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/store/progress.ts#L1448-L1453",
+          "version": "repo-lines-v1:sha256:4ebe1b4c3d82db7a532202b218ec773cd9e49bf8af24e5ff9afca730550d9b97:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMTllNzVkZTUxZmNiNjJlYzY3YmZlODJkYjY5NDdhZTA2MTMwZTBlY2M2YTViNmVmNjViYzVlN2Q2ZDhjODBhMCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYjk3OGUyNTAzYjhjZjM3YTA2ZjdkNmYwYTNhNmI2ZmUzNTY5MWZiY2FiNTBiODc3NWNhYjZmYWJjNzFjNTkyYiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNmUxNzVmYzFlZjY3ZjBhZmZmZjNiNzA2NzBlYmIwMTI5NGNiNmJkMWVmMmY1NTE0NDljZjM1ZDJjNjk2MTY3NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNGRmZjFlMjgzN2Q3MDljYWNmMWI1ODFhYjE2MjA4Y2U4NmMwOTJjZWRmNWEyNmYzZjgzODRkNzMyMzQzYjY4ZiJ9"
+        },
+        {
+          "resource": "repo://packages/core/src/chestLogic.ts#L13-L73",
+          "version": "repo-lines-v1:sha256:8171210c4476c237be104e5fceb9486548ddd4b46f9e74e3bf89f48971578dbf:eyJzZWxlY3RlZExpbmVDb3VudCI6NjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhZjIyY2YwNzMyNTkyYzI0NzE0MWNiZTYxZWZhMTEwMTI2MTJmNWEzMTIyYjlhZjliYmFmNTJmNTcyNGQxOTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI2YzU3NzE0MjZmMzdhYjE2NzMzMmFhM2UxYTFmNTQ0ZTg5MWFkNzFmMmU4NzAzZDdlM2FmZDMwNjZmN2U0NjciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU5NGFkNTg4ZTI2Mjg0YjgyM2I2M2M4MjcyMjRhNGQzN2Q5NjE4MDk3MzAyNmMwNWVmZTUwMjkzZGJiZTU2YWUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_df2be38152de4ca6a6ec0be720660c53",
+      "statement": "An exam node unlocks only when all ordinary lessons in its unit are complete, is independent of later units, and counts as conquered at accuracy 0.8 or higher.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/app/book/%5Bbook%5D/BookPathView.tsx#L71-L91",
+          "version": "repo-lines-v1:sha256:981ec35c4f3f642fb1053f8f85d498cf62e0e76548b109acaca3d9a1f2a3ba94:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI4NmE5NDM4YzllYzk3ZDZhZWEwYzk4ZjNlYTZhOWMwNDE3ZDNkMzVhYjg5YTkxZjgzMTRlNjE2Nzg1YTdhZmUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk3ZDg2MzJlNTRlOTI5OGFiYjk1ODcyN2UyZDUxNDA4YWJhZjEzNjYwMzUzNzkxMDE0MGFiZjY1YjMwYWI2MTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg1NDgwNGU5ZjY1NTM5MTJlNGU5OWRkYTg1NDAyZDc0NzlhODRjMGNhZmY0MTQ3ODQ3MmU4Y2ExY2ZjMGE4OWIifQ"
+        },
+        {
+          "resource": "repo://apps/web/src/lib/exam.ts#L9-L14",
+          "version": "repo-lines-v1:sha256:f777e5357b0f0d84e6315e57148e52f8c2477682007f3ebe293cc3ecccb61f03:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZmQzODMxMDE5OWJhMWRhNGZmMzBjNWFlYzVjYjgyNGVjMmViMDlkMWQ0NGUzNGJiNGQ2MTk1ZjczYjI2MDFlNiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOGE1ODFjMzU0Mjg4MWMwMzQzMjIwMGFiNzlkMDJjOWMwNDViNDc5MDc2MzdlNjk1YTM5NDFkOWVjY2VmMTkzMSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZmIxMzMxNzkwNGM2NDY1ZmIxMGRkZGJhMzNmZDRhMzA2YTc0NmU1Y2Q3ZTcxZmQ3ODc1MDQzNDcwN2UwZGUwMCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjEsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNDEyY2EzNDVjY2Y3NWJmOWMwODA2YmNlNjk1YmU4ZGU4MDhiNzk5ODQyNTFhN2E1NGQyMDJjZjYxMDFkZDQ1MSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_b2c36edae8814cc198ef1389fcb1e10e",
+      "statement": "Jump-ahead loads earlier units, samples up to 15 questions, passes at 0.8 accuracy by marking prior incomplete lessons completed with one star and 0.8 accuracy without XP or gems, and costs a heart on failure with a new-seed retry.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/app/jump/JumpClient.tsx#L206-L239",
+          "version": "repo-lines-v1:sha256:c17dbdbbbaf8692dee782cd22ce2758cf197d8dc4eca69e89c37748cd899f72a:eyJzZWxlY3RlZExpbmVDb3VudCI6MzQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM3NGVlZTA1MjQyYWRkNjA4ZGUzNmNmZmM1ZDliNjczNTI0MTk3MGY3NGFjMTJjM2E3ZWJjYTVhMmRmN2I2MGQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjVkNDRmNjdjNmY3ZGFhZjE1YzYxOTkxMTA3ZDUxYjY5ZWRkY2VmMTNjMjU3NWVhMDk5MDFlMGNiNGQxODdjMzEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjdlZjE3NWE1ZmY4YmFjMWVhOGE0N2Q0MWExZmY1ZjIzNDZlZWY0OWM2MGU1ZDE1NWNiMGFmNjQ5OTBkMGE0MTMifQ"
+        },
+        {
+          "resource": "repo://apps/web/src/app/jump/JumpClient.tsx#L64-L145",
+          "version": "repo-lines-v1:sha256:1f8b35e8c81f45565c425e802bef7e4bfd87dbda9eae7aa51ba576b56e7c945b:eyJzZWxlY3RlZExpbmVDb3VudCI6ODIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRlYTZkOTk5NzVlMDEzN2Y0Mzk0ZDU1ZmI5ZmJkMjIyMWIwNmViYTQxMjEyYzMxNTIxMmYwNDI4MzM3NTFhNWEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk1ZWYwMWJjMDhkYmMzYjYzZTRlNzVlYTNkMjZhNWI5NDE4OTE4NzdlMjdhZDg5MTMyOWM4NDExZDdkOGRjNGQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjBmMzE4MzMzMmI1MjhlY2VmNjVlNjFmOTg3YjU4ODQzZDdhZTNjNTFmOTE2YmNlNTNlOGY0MTJhMGNmY2JjMWIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImY4NzdkYzdkNzdhYTg3OTk1YjA1NmYyYmM2ZThmYTdjYTkyMDAxYjAyOTY4YjQ4MjYyMzkzZjUzMzczODg2YTkifQ"
+        },
+        {
+          "resource": "repo://apps/web/src/store/progress.ts#L814-L834",
+          "version": "repo-lines-v1:sha256:95aa565dcc73f0cf3950bcf25ceae3df3e22bde10f113903c2dc95c871674cb2:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMyZjc4ZDkxMmQ1MjMwZDFjMWYwNTVlNGZmNjdlMTZkN2I2MTNlOWY5ZmNjMTI1MjliNTBlMDg2OTY2NTU3ZjkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI5NzhlMjUwM2I4Y2YzN2EwNmY3ZDZmMGEzYTZiNmZlMzU2OTFmYmNhYjUwYjg3NzVjYWI2ZmFiYzcxYzU5MmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImM2ZTE0YWJjNDIyODc2NmJjZDJjYTRiZGQ1OGUyYTBhNjIxZGZhOWJhNTEwODY4MjdmYjk3ZTRlNzg4MzM2OGMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImY5MTI1ZWI3NzViY2U3NDhhY2Y5MzQ5NTk4Nzc3MWJiOGVhYTk0MGIwMTY2YzU2MzJiODUzMjI3YmE5Nzc1YzYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_4fee376c5a964bb0be18a19572451e81",
+      "statement": "The lesson start modal disables new lessons at zero hearts or when the daily time limit is reached, but allows resuming an already-started lesson, and computes the displayed XP with exam and weekend multipliers.",
+      "evidence": [
+        {
+          "resource": "repo://apps/web/src/components/LessonStartModal.tsx#L75-L117",
+          "version": "repo-lines-v1:sha256:84b45b0d19dff77beb60b9047190ba24de749435ad8560de22edc0f87aac31e9:eyJzZWxlY3RlZExpbmVDb3VudCI6NDMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY0ZjYwMmMxMTBiNzk3OGU2NGZhNDE2YWVlNzYwYzZhNjI5NWJjMWQ4NGNkZWM2ZjA2NzNhYWMwNjAwNmY3OTkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg0OTE3MmQ0MGM3ZGQ2YWVjYTZjMDkwMWY0NDJmYmZmN2FlNjAxMzM0NjcxZjlhM2IyZjllNzkxYTU5OWU1OGUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImIyNGQ5NGU4Y2E4YmFmYTg0ODM1OWY5YTgyMTE1Mjk0YmRkOTJlNDg4MTUzYTVjMTI2N2JlMjA1YmI2NjRjNjQifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.7.2",
+    "at": "2026-11-04T02:58:40.844Z"
+  }
+}
