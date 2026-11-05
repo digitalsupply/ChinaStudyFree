@@ -1,0 +1,461 @@
+{
+  "textbook": "K12知识图谱 · 物理八年级上册",
+  "unit": "第四章 光现象",
+  "unit_number": 4,
+  "unit_test": {
+    "title": "第四章 光现象 · K12知识图谱练习",
+    "total_score": 60,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "true_false",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "反射光路作图",
+        "question": "作光的反射光路图时，法线应过入射点并与反射面垂直，通常画成虚线。",
+        "options": [],
+        "answer": "对",
+        "explanation": "法线是过入射点且垂直于反射面的辅助线，作图时通常画成虚线，所有入射角和反射角都以法线为基准量取；若法线不垂直界面，角度关系就会画错。",
+        "meta": {
+          "cognitive_level": "理解",
+          "steam_dimensions": [],
+          "steam_context": "学科内核心概念",
+          "misconception_target": "作图时未画法线或法线不垂直界面",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "e6d9aa8c-4a43-45d8-be26-303cb9888ae5",
+          "source_kp_name": "反射光路作图",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:49:20.920Z",
+          "source_key": "e6d9aa8c-4a43-45d8-be26-303cb9888ae5#q1",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "反射光路作图",
+        "question": "一束激光射到平面镜上，入射光线与镜面的夹角为30°。按反射定律作图，反射光线与法线的夹角应为（ ）",
+        "options": [
+          "30°",
+          "60°",
+          "90°",
+          "120°"
+        ],
+        "answer": "60°",
+        "explanation": "入射光线与镜面夹角为30°，则入射光线与法线的夹角即入射角为90°-30°=60°。反射角等于入射角，所以反射光线与法线夹角也是60°；不能误把30°当作入射角。",
+        "meta": {
+          "cognitive_level": "应用",
+          "steam_dimensions": [],
+          "steam_context": "学科内核心概念",
+          "misconception_target": "以界面为基准量角，误把与镜面的夹角当作入射角",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "e6d9aa8c-4a43-45d8-be26-303cb9888ae5",
+          "source_kp_name": "反射光路作图",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:49:20.920Z",
+          "source_key": "e6d9aa8c-4a43-45d8-be26-303cb9888ae5#q2",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 3,
+        "type": "calculation",
+        "score": 5,
+        "difficulty": 3,
+        "knowledge_point": "反射光路作图",
+        "question": "一束光斜射到平面镜上，入射光线与镜面的夹角为20°。请按反射定律求反射光线与入射光线之间的夹角。___°",
+        "options": [],
+        "answer": "140",
+        "explanation": "入射光线与镜面夹角为20°，所以入射角为90°-20°=70°。反射角等于入射角，也为70°。入射光线和反射光线分居法线两侧，它们之间的夹角为70°+70°=140°。",
+        "meta": {
+          "cognitive_level": "应用",
+          "steam_dimensions": [],
+          "steam_context": "学科内核心概念",
+          "misconception_target": "把入射光线与镜面的夹角误当入射角",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "e6d9aa8c-4a43-45d8-be26-303cb9888ae5",
+          "source_kp_name": "反射光路作图",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:49:20.920Z",
+          "source_key": "e6d9aa8c-4a43-45d8-be26-303cb9888ae5#q3",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 4,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 4,
+        "knowledge_point": "反射光路作图",
+        "question": "自行车尾灯内部装有一组相互垂直的平面镜。夜间，汽车灯光从后方射到尾灯上，经过两个镜面依次反射后返回，使司机更容易看见自行车。若一束光在垂直于两镜交线的平面内依次经这两个平面镜反射，则最后的反射光线与最初入射光线的关系是（ ）",
+        "options": [
+          "平行且方向相反",
+          "平行且方向相同",
+          "互相垂直",
+          "无法确定，取决于入射角"
+        ],
+        "answer": "平行且方向相反",
+        "explanation": "两个平面镜互相垂直，光线依次反射两次后，方向总共改变180°，因此最后的反射光线与最初入射光线平行且方向相反，这也是自行车尾灯能“回反射”的原因。分析时不能只考虑第一次反射。",
+        "meta": {
+          "cognitive_level": "分析",
+          "steam_dimensions": [
+            "S"
+          ],
+          "steam_context": "自行车尾灯利用相互垂直的平面镜实现回反射，属于交通安全装置中的光学应用。",
+          "misconception_target": "忽略光路可逆性或多步反射，只按一次反射判断方向",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "e6d9aa8c-4a43-45d8-be26-303cb9888ae5",
+          "source_kp_name": "反射光路作图",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:49:20.920Z",
+          "source_key": "e6d9aa8c-4a43-45d8-be26-303cb9888ae5#q4",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 5,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "光速数值与光年概念",
+        "question": "真空中的光速约为下列哪一个数值？",
+        "options": [
+          "$3\\times10^8\\ \\mathrm{m/s}$",
+          "$3\\times10^8\\ \\mathrm{km/s}$",
+          "$3\\times10^5\\ \\mathrm{m/s}$",
+          "$340\\ \\mathrm{m/s}$"
+        ],
+        "answer": "$3\\times10^8\\ \\mathrm{m/s}$",
+        "explanation": "真空中光速用 $c$ 表示，约为 $3\\times10^8\\ \\mathrm{m/s}$，也就是 $3\\times10^5\\ \\mathrm{km/s}$。选项中单位不同，不能把 $3\\times10^8\\ \\mathrm{km/s}$ 当作光速。",
+        "meta": {
+          "cognitive_level": "记忆",
+          "steam_dimensions": [],
+          "steam_context": "学科内核心概念",
+          "misconception_target": "混淆光速数值的单位，把 m/s 与 km/s 混用",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "f4d01b0c-fbf0-4f90-a8ed-f2eeaa8c9cc7",
+          "source_kp_name": "光速数值与光年概念",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:52:59.809Z",
+          "source_key": "f4d01b0c-fbf0-4f90-a8ed-f2eeaa8c9cc7#q1",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 6,
+        "type": "true_false",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "光速数值与光年概念",
+        "question": "光年是时间单位，表示光在真空中传播一年所用的时间。",
+        "options": [],
+        "answer": "错",
+        "explanation": "光年是长度单位，不是时间单位。它表示光在真空中传播一年所经过的距离，常用来量度天体之间的遥远距离。",
+        "meta": {
+          "cognitive_level": "理解",
+          "steam_dimensions": [],
+          "steam_context": "学科内核心概念",
+          "misconception_target": "把光年误认为时间单位",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "f4d01b0c-fbf0-4f90-a8ed-f2eeaa8c9cc7",
+          "source_kp_name": "光速数值与光年概念",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:52:59.809Z",
+          "source_key": "f4d01b0c-fbf0-4f90-a8ed-f2eeaa8c9cc7#q2",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 7,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 3,
+        "knowledge_point": "光速数值与光年概念",
+        "question": "光在空气、水、玻璃中的传播速度分别记为 $v_{\\text{空气}}$、$v_{\\text{水}}$、$v_{\\text{玻璃}}$。下列关系正确的是（ ）",
+        "options": [
+          "$v_{\\text{空气}} \\approx c > v_{\\text{水}} > v_{\\text{玻璃}}$",
+          "$v_{\\text{空气}} < v_{\\text{水}} < v_{\\text{玻璃}}$",
+          "$v_{\\text{空气}} = v_{\\text{水}} = v_{\\text{玻璃}}$",
+          "$v_{\\text{水}} > v_{\\text{空气}} > v_{\\text{玻璃}}$"
+        ],
+        "answer": "$v_{\\text{空气}} \\approx c > v_{\\text{水}} > v_{\\text{玻璃}}$",
+        "explanation": "光在真空中的速度最大；在空气中非常接近真空光速，进入水、玻璃等介质后速度变小，且光在水中的速度大于在玻璃中的速度。因此关系为 $v_{\\text{空气}}\\approx c>v_{\\text{水}}>v_{\\text{玻璃}}$。",
+        "meta": {
+          "cognitive_level": "理解",
+          "steam_dimensions": [],
+          "steam_context": "学科内核心概念",
+          "misconception_target": "认为光速在所有介质中都相同",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "f4d01b0c-fbf0-4f90-a8ed-f2eeaa8c9cc7",
+          "source_kp_name": "光速数值与光年概念",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:52:59.809Z",
+          "source_key": "f4d01b0c-fbf0-4f90-a8ed-f2eeaa8c9cc7#q3",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 8,
+        "type": "calculation",
+        "score": 5,
+        "difficulty": 4,
+        "knowledge_point": "光速数值与光年概念",
+        "question": "比邻星距离地球约 $4.2$ 光年。若一艘飞船以 $0.1c$（$c$ 为真空中的光速）的速度匀速飞行，按路程与速度的关系计算，从地球到比邻星大约需要 ___ 年。",
+        "options": [],
+        "answer": "42",
+        "explanation": "$4.2$ 光年表示光以速度 $c$ 走 $4.2$ 年所经过的距离。飞船速度为 $0.1c$，所需时间 $t=\\frac{4.2c\\cdot 1\\,\\text{年}}{0.1c}=42\\,\\text{年}$。这里光年是距离单位，不是时间单位。",
+        "meta": {
+          "cognitive_level": "应用",
+          "steam_dimensions": [
+            "M"
+          ],
+          "steam_context": "以比邻星距离为真实天文情境，使用光年作距离单位并结合飞船速度进行时间计算。",
+          "misconception_target": "把光年当作时间单位，或不会把光年表示的距离与速度、时间联系起来",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "f4d01b0c-fbf0-4f90-a8ed-f2eeaa8c9cc7",
+          "source_kp_name": "光速数值与光年概念",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:52:59.809Z",
+          "source_key": "f4d01b0c-fbf0-4f90-a8ed-f2eeaa8c9cc7#q4",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 9,
+        "type": "true_false",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "平面镜成像对称作图法",
+        "question": "用对称法作平面镜中的像时，应把镜面所在的直线作为对称轴，而不是把镜面边框或镜面与桌面的交界线作为对称轴。",
+        "options": [],
+        "answer": "对",
+        "explanation": "平面镜成像时，物点和像点关于镜面所在直线对称。镜面边框或镜面与桌面的交界线只是边缘，不是反射面所在直线，若拿它作对称轴会画错像的位置。",
+        "meta": {
+          "cognitive_level": "记忆",
+          "steam_dimensions": [],
+          "steam_context": "学科内核心概念",
+          "misconception_target": "以界面或镜面边框为对称轴，而不是以镜面所在直线为对称轴。",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "a5c354fb-5020-4e92-a440-22a95436b30b",
+          "source_kp_name": "平面镜成像对称作图法",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:51:26.003Z",
+          "source_key": "a5c354fb-5020-4e92-a440-22a95436b30b#q1",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 10,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "平面镜成像对称作图法",
+        "question": "在平面镜成像作图中，平面镜所在直线为 $x=2$，物点 $A$ 的坐标为 $(1,3)$。按对称法作出的像点 $A'$ 的坐标是（ ）",
+        "options": [
+          "(3,3)",
+          "(2,3)",
+          "(1,2)",
+          "(-1,3)"
+        ],
+        "answer": "(3,3)",
+        "explanation": "镜面所在直线为 $x=2$，物点与像点关于它对称。$A(1,3)$ 到镜面的水平距离为 1，像点应在镜面右侧同样距离处，即横坐标为 3，纵坐标不变，所以 $A'$ 为 $(3,3)$。",
+        "meta": {
+          "cognitive_level": "理解",
+          "steam_dimensions": [
+            "M"
+          ],
+          "steam_context": "用坐标平面表示镜面直线并作对称点",
+          "misconception_target": "把像点取在镜面上，或沿水平方向错误翻转。",
+          "figure": null,
+          "resource_needs": [
+            "坐标对称"
+          ],
+          "source_kp_id": "a5c354fb-5020-4e92-a440-22a95436b30b",
+          "source_kp_name": "平面镜成像对称作图法",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:51:26.003Z",
+          "source_key": "a5c354fb-5020-4e92-a440-22a95436b30b#q2",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 11,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 3,
+        "knowledge_point": "平面镜成像对称作图法",
+        "question": "在简易潜望镜中，上方平面镜 $M_1$ 与下方平面镜 $M_2$ 平行，且都与水平方向成 45°。物体上一点 $S$ 发出的光先经 $M_1$ 反射，再经 $M_2$ 反射进入人眼。用对称法确定 $S$ 经 $M_1$ 第一次成的像 $S_1$ 时，下列做法正确的是（ ）",
+        "options": [
+          "以 $M_1$ 所在直线为对称轴，作 $S$ 的对称点 $S_1$，$S_1$ 是虚像",
+          "以 $M_2$ 所在直线为对称轴，作 $S$ 的对称点 $S_1$，$S_1$ 是实像",
+          "以镜筒中轴线为对称轴，作 $S$ 的对称点 $S_1$，$S_1$ 是虚像",
+          "连接 $S$ 与人眼，取连线与 $M_1$ 的交点作为 $S_1$"
+        ],
+        "answer": "以 $M_1$ 所在直线为对称轴，作 $S$ 的对称点 $S_1$，$S_1$ 是虚像",
+        "explanation": "平面镜成像中，物点与像点关于反射面所在直线对称。第一次反射只由上方镜 $M_1$ 决定，所以应以 $M_1$ 所在直线为对称轴；平面镜成的是虚像。$M_2$ 和镜筒中轴线都不是第一次反射的对称轴。",
+        "meta": {
+          "cognitive_level": "应用",
+          "steam_dimensions": [
+            "S"
+          ],
+          "steam_context": "潜望镜中平面镜成像的对称作图",
+          "misconception_target": "以 $M_2$ 或镜筒中轴线为对称轴，误把虚像说成实像。",
+          "figure": null,
+          "resource_needs": [
+            "几何作图"
+          ],
+          "source_kp_id": "a5c354fb-5020-4e92-a440-22a95436b30b",
+          "source_kp_name": "平面镜成像对称作图法",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:51:26.003Z",
+          "source_key": "a5c354fb-5020-4e92-a440-22a95436b30b#q3",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 12,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 4,
+        "knowledge_point": "平面镜成像对称作图法",
+        "question": "用两块平行平面镜制作潜望镜：物体上一点 $S$ 的光先射到上方镜 $M_1$，再射到下方镜 $M_2$，最后进入眼睛 $E$。用连续对称法作这条两次反射光路时，下列步骤顺序正确的是（ ）",
+        "options": [
+          "先作 $S$ 关于 $M_1$ 的对称点 $S_1$，再作 $S_1$ 关于 $M_2$ 的对称点 $S_2$；连接 $E$ 与 $S_2$ 交 $M_2$ 于 $O_2$，连接 $O_2$ 与 $S_1$ 交 $M_1$ 于 $O_1$，最后连接 $S$ 与 $O_1$",
+          "先作 $S$ 关于 $M_1$ 的对称点 $S_1$；直接连接 $E$ 与 $S_1$ 交 $M_2$ 于 $O_2$，连接 $O_2$ 与 $S$ 交 $M_1$ 于 $O_1$",
+          "先作 $S$ 关于两镜中轴线的对称点 $S_1$；连接 $E$ 与 $S_1$ 交 $M_2$ 于 $O_2$，连接 $O_2$ 与 $S$ 交 $M_1$ 于 $O_1$",
+          "先作 $E$ 关于 $M_2$ 的对称点 $E_1$；连接 $S$ 与 $E_1$ 交 $M_1$ 于 $O_1$，连接 $O_1$ 与 $E$ 交 $M_2$ 于 $O_2$"
+        ],
+        "answer": "先作 $S$ 关于 $M_1$ 的对称点 $S_1$，再作 $S_1$ 关于 $M_2$ 的对称点 $S_2$；连接 $E$ 与 $S_2$ 交 $M_2$ 于 $O_2$，连接 $O_2$ 与 $S_1$ 交 $M_1$ 于 $O_1$，最后连接 $S$ 与 $O_1$",
+        "explanation": "连续对称法要依次作出两次镜像：先得 $S_1$ 关于 $M_1$，再得 $S_2$ 关于 $M_2$。最终出射光线的反向延长线过 $S_2$，故用眼睛与 $S_2$ 的连线确定第二反射点，再借 $S_1$ 确定第一反射点。只作一次对称或选错对称轴都不能同时满足两次反射定律。",
+        "meta": {
+          "cognitive_level": "综合",
+          "steam_dimensions": [
+            "S",
+            "E",
+            "M"
+          ],
+          "steam_context": "潜望镜两次反射光路的连续对称作图",
+          "misconception_target": "只作一次对称，或把两镜中轴线当作对称轴。",
+          "figure": null,
+          "resource_needs": [
+            "几何作图"
+          ],
+          "source_kp_id": "a5c354fb-5020-4e92-a440-22a95436b30b",
+          "source_kp_name": "平面镜成像对称作图法",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:51:26.003Z",
+          "source_key": "a5c354fb-5020-4e92-a440-22a95436b30b#q4",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "反射光路作图",
+      "core_concept": "能规范画出法线（过入射点且垂直于界面）；能依据反射定律准确作出反射光线（保证∠r = ∠i）",
+      "key_formula": "",
+      "common_mistakes": [
+        "作图时未画法线或法线不垂直界面",
+        "用量角器测量时误以界面为基准而非法线",
+        "忽略光路可逆性导致多步反射作图错误"
+      ],
+      "tips": "对应章节：第四章 光现象。先判断物理量、单位和条件，再作答。"
+    },
+    {
+      "point": "光速数值与光年概念",
+      "core_concept": "记住真空中的光速近似值c=3×10⁸ m/s；理解光年是长度单位，等于光在真空中1年传播的距离",
+      "key_formula": "",
+      "common_mistakes": [
+        "光年是时间单位",
+        "光速在所有介质中都相同",
+        "光年仅用于科幻，非科学单位"
+      ],
+      "tips": "对应章节：第四章 光现象。先判断物理量、单位和条件，再作答。"
+    },
+    {
+      "point": "平面镜成像对称作图法",
+      "core_concept": "能依据物点和镜面位置，用尺规作图法作出对应像点；能在给定物与镜面时，准确画出像的位置和大小",
+      "key_formula": "",
+      "common_mistakes": [
+        "作图时以界面为对称轴而非镜面所在直线",
+        "误将入射角/反射角测量基准设为镜面而非法线",
+        "忽略虚像点必须标为虚线或带撇符号"
+      ],
+      "tips": "对应章节：第四章 光现象。先判断物理量、单位和条件，再作答。"
+    }
+  ],
+  "_meta": {
+    "source": "k12-knowledge-points",
+    "generated_from": "k12/generated/physics-g8",
+    "imported_at": "2026-11-05T13:21:55.520Z"
+  }
+}

@@ -1,0 +1,472 @@
+{
+  "textbook": "K12知识图谱 · 物理八年级下册",
+  "unit": "第十一章 功和机械能",
+  "unit_number": 5,
+  "unit_test": {
+    "title": "第十一章 功和机械能 · K12知识图谱练习",
+    "total_score": 65,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "功的计算（W=Fs）与单位",
+        "question": "小明用 10 N 的水平推力推一个箱子，箱子沿推力方向移动了 2 m。推力对箱子做的功是（ ）",
+        "options": [
+          "20 J",
+          "5 J",
+          "0.2 J",
+          "20 W"
+        ],
+        "answer": "20 J",
+        "explanation": "根据功的公式 $W=Fs$，力为 10 N，沿力方向的位移为 2 m，所以 $W=10×2=20$ J。注意功的单位是焦耳，不能写成瓦特。",
+        "meta": {
+          "cognitive_level": "应用",
+          "steam_dimensions": [
+            "M"
+          ],
+          "steam_context": "用生活化推箱子情境进行功的定量计算和单位判断。",
+          "misconception_target": "把功的单位误写为瓦特，或把乘法误算成除法。",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "fb8d097a-9b23-4d96-8c61-2dd52e697e67",
+          "source_kp_name": "功的计算（W=Fs）与单位",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:46:51.961Z",
+          "source_key": "fb8d097a-9b23-4d96-8c61-2dd52e697e67#q1",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 2,
+        "type": "true_false",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "功的计算（W=Fs）与单位",
+        "question": "在公式 $W=Fs$ 中，$s$ 可以取物体运动的任意一段路程，不必考虑它是否沿力的方向。",
+        "options": [],
+        "answer": "错",
+        "explanation": "公式中的 $s$ 是物体沿力的方向移动的距离。若位移方向与力的方向不一致，不能把任意路程直接代入 $W=Fs$。因此该说法错误。",
+        "meta": {
+          "cognitive_level": "理解",
+          "steam_dimensions": [],
+          "steam_context": "学科内核心概念",
+          "misconception_target": "认为 $s$ 可取任意方向的路程，忽略力与位移方向的一致性。",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "fb8d097a-9b23-4d96-8c61-2dd52e697e67",
+          "source_kp_name": "功的计算（W=Fs）与单位",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:46:51.961Z",
+          "source_key": "fb8d097a-9b23-4d96-8c61-2dd52e697e67#q2",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 3,
+        "type": "calculation",
+        "score": 10,
+        "difficulty": 3,
+        "knowledge_point": "功的计算（W=Fs）与单位",
+        "question": "建筑工地上，起重机将质量为 1.5 t 的货物匀速竖直提升 2 m。取 $g=10$ N/kg，起重机对货物做的功是多少焦？___ J",
+        "options": [],
+        "answer": "30000",
+        "explanation": "先将质量换算为 $1.5$ t $=1500$ kg，货物重力 $G=mg=1500×10=15000$ N。匀速提升时拉力与重力平衡，$F=G=15000$ N，再由 $W=Fs=15000×2=30000$ J。",
+        "meta": {
+          "cognitive_level": "应用",
+          "steam_dimensions": [
+            "M"
+          ],
+          "steam_context": "建筑工地起重机匀速提升货物的真实情境，进行质量单位换算和功的计算。",
+          "misconception_target": "忘记把吨换算成千克，或忽略匀速提升时拉力大小等于重力。",
+          "figure": null,
+          "resource_needs": [
+            "formula",
+            "unit_conversion"
+          ],
+          "source_kp_id": "fb8d097a-9b23-4d96-8c61-2dd52e697e67",
+          "source_kp_name": "功的计算（W=Fs）与单位",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:46:51.961Z",
+          "source_key": "fb8d097a-9b23-4d96-8c61-2dd52e697e67#q3",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 4,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 4,
+        "knowledge_point": "功的计算（W=Fs）与单位",
+        "question": "体育课上，小华用 50 N 的水平拉力拉着一个轮胎沿水平跑道前进 4 m，然后松手，轮胎又滑行 2 m 才停下。松手前小华的拉力对轮胎做的功是（ ）",
+        "options": [
+          "200 J",
+          "300 J",
+          "100 J",
+          "0 J"
+        ],
+        "answer": "200 J",
+        "explanation": "拉力只在有拉力作用的阶段做功，作用期间轮胎沿拉力方向移动 4 m，所以 $W=Fs=50×4=200$ J。松手后拉力为 0，轮胎继续滑行的 2 m 不能算作拉力做的功。",
+        "meta": {
+          "cognitive_level": "分析",
+          "steam_dimensions": [
+            "M"
+          ],
+          "steam_context": "体育课拉轮胎的真实情境，区分有拉力作用阶段和撤去拉力后的惯性滑行阶段。",
+          "misconception_target": "把撤去拉力后物体继续滑行的距离也代入 $W=Fs$ 计算。",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "fb8d097a-9b23-4d96-8c61-2dd52e697e67",
+          "source_kp_name": "功的计算（W=Fs）与单位",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:46:51.961Z",
+          "source_key": "fb8d097a-9b23-4d96-8c61-2dd52e697e67#q4",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 5,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "功的计算公式 W=Fs",
+        "question": "在功的计算公式 $W=Fs$ 中，$s$ 表示（ ）。",
+        "options": [
+          "物体运动的总路程",
+          "物体在力的方向上通过的距离",
+          "物体运动的时间",
+          "力与距离的比值"
+        ],
+        "answer": "物体在力的方向上通过的距离",
+        "explanation": "在 $W=Fs$ 中，$F$ 是作用在物体上的力，$s$ 是物体沿力的方向通过的距离，不是任意路径长度。若位移方向与力垂直，该力不做功。公式中 $s$ 的单位是米。",
+        "meta": {
+          "cognitive_level": "理解",
+          "steam_dimensions": [],
+          "steam_context": "学科内核心概念",
+          "misconception_target": "误认为 $s$ 可以是任意路径长度，不必限定在力的方向上",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "0942b9b2-b23d-4599-a787-e73de2f40cd1",
+          "source_kp_name": "功的计算公式 W=Fs",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:45:41.742Z",
+          "source_key": "0942b9b2-b23d-4599-a787-e73de2f40cd1#q1",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 6,
+        "type": "calculation",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "功的计算公式 W=Fs",
+        "question": "在校园劳动中，小丽用 20 N 的水平推力推一箱书，使箱子沿推力方向移动了 3 m。推力对箱子做的功是 ___ J。",
+        "options": [],
+        "answer": "60",
+        "explanation": "推力和箱子移动方向相同，符合 $W=Fs$ 的适用条件。代入得 20 N×3 m=60 J，因此推力做功为 60 J。注意力的单位用牛、距离的单位用米。",
+        "meta": {
+          "cognitive_level": "应用",
+          "steam_dimensions": [
+            "M"
+          ],
+          "steam_context": "校园劳动中的推箱任务，用公式进行力与沿力方向位移的乘积计算",
+          "misconception_target": "无，主要训练公式的直接代入与单位对应",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "0942b9b2-b23d-4599-a787-e73de2f40cd1",
+          "source_kp_name": "功的计算公式 W=Fs",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:45:41.742Z",
+          "source_key": "0942b9b2-b23d-4599-a787-e73de2f40cd1#q2",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 7,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 3,
+        "knowledge_point": "功的计算公式 W=Fs",
+        "question": "小明用 50 N 的力竖直向上提一桶水，水桶沿水平方向移动了 2 m，同时竖直上升了 0.5 m。提力对水桶做的功是（ ）。",
+        "options": [
+          "100 J",
+          "125 J",
+          "25 J",
+          "0 J"
+        ],
+        "answer": "25 J",
+        "explanation": "提力竖直向上，只有竖直上升的 0.5 m 是沿提力方向的位移；水平移动 2 m 与提力垂直，提力不做功。由 $W=Fs$ 得 50 N×0.5 m=25 J，所以提力做功为 25 J。",
+        "meta": {
+          "cognitive_level": "分析",
+          "steam_dimensions": [],
+          "steam_context": "学科内核心概念",
+          "misconception_target": "不检查方向一致性，把水平路程 2 m 或总路程 2.5 m 代入公式",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "0942b9b2-b23d-4599-a787-e73de2f40cd1",
+          "source_kp_name": "功的计算公式 W=Fs",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:45:41.742Z",
+          "source_key": "0942b9b2-b23d-4599-a787-e73de2f40cd1#q3",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 8,
+        "type": "calculation",
+        "score": 5,
+        "difficulty": 4,
+        "knowledge_point": "功的计算公式 W=Fs",
+        "question": "在社区志愿服务中，小华用 100 N 的水平拉力拉小车沿水平路面前进 5 m，然后松开手，小车又前进了 2 m 才停下。拉力对小车做的功是 ___ J。",
+        "options": [],
+        "answer": "500",
+        "explanation": "拉力只在拉车前进的 5 m 内作用，松手后小车继续前进的 2 m 没有拉力作用，不能计入拉力的位移。由 $W=Fs$ 得 100 N×5 m=500 J，所以拉力做功为 500 J。",
+        "meta": {
+          "cognitive_level": "分析",
+          "steam_dimensions": [
+            "M"
+          ],
+          "steam_context": "社区志愿服务中的拉车任务，用公式计算有拉力作用阶段的功",
+          "misconception_target": "把撤去拉力后的路程也算作拉力的位移，错误用 7 m 计算",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "0942b9b2-b23d-4599-a787-e73de2f40cd1",
+          "source_kp_name": "功的计算公式 W=Fs",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:45:41.742Z",
+          "source_key": "0942b9b2-b23d-4599-a787-e73de2f40cd1#q4",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 9,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "功率的定义与计算（P=W/t）",
+        "question": "关于功率，下列说法正确的是",
+        "options": [
+          "功率是表示做功快慢的物理量",
+          "功率是表示做功多少的物理量",
+          "做功越多，功率一定越大",
+          "功率的单位是焦耳，符号是 J"
+        ],
+        "answer": "功率是表示做功快慢的物理量",
+        "explanation": "功率的定义是功与做功所用时间之比，即 P=W/t，它反映的是做功的快慢，而不是做功的多少。做功多但用时很长，功率可能很小；功率的单位是瓦特（W），焦耳是功的单位。故选“功率是表示做功快慢的物理量”。",
+        "meta": {
+          "cognitive_level": "理解",
+          "steam_dimensions": [],
+          "steam_context": "学科内核心概念",
+          "misconception_target": "混淆功率与功，误以为做功多功率就大",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "e6d69556-6a53-40df-8c43-3893a430461c",
+          "source_kp_name": "功率的定义与计算（P=W/t）",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:52:25.880Z",
+          "source_key": "e6d69556-6a53-40df-8c43-3893a430461c#q1",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 10,
+        "type": "fill_blank",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "功率的定义与计算（P=W/t）",
+        "question": "某同学用 50 N 的水平推力，在 4 s 内把一箱书沿推力方向匀速推动了 8 m。他推书时做功的功率是 ___ W。",
+        "options": [],
+        "answer": "100",
+        "explanation": "先由 W=Fs 求功：W=50 N×8 m=400 J；再由 P=W/t 求功率：P=400 J÷4 s=100 W。注意力与移动距离必须沿同一方向，且时间单位用秒，代入时不要漏掉任何一个量。",
+        "meta": {
+          "cognitive_level": "应用",
+          "steam_dimensions": [
+            "M"
+          ],
+          "steam_context": "用公式与单位换算定量描述日常劳动中的做功快慢",
+          "misconception_target": "只算功不除以时间，或把力的数值直接当作功率",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "e6d69556-6a53-40df-8c43-3893a430461c",
+          "source_kp_name": "功率的定义与计算（P=W/t）",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:52:25.880Z",
+          "source_key": "e6d69556-6a53-40df-8c43-3893a430461c#q2",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 11,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 3,
+        "knowledge_point": "功率的定义与计算（P=W/t）",
+        "question": "甲用 100 N 的力，在 10 s 内使物体沿力的方向移动 2 m；乙用 50 N 的力，在 2 s 内使物体沿力的方向移动 2 m。比较两人做功的功率，正确的是",
+        "options": [
+          "甲施加的力大，所以甲的功率大",
+          "甲做功多，所以甲的功率大",
+          "乙的功率大，因为乙做功用的时间短，做功更快",
+          "两人做功的功率相同，因为物体移动的距离相同"
+        ],
+        "answer": "乙的功率大，因为乙做功用的时间短，做功更快",
+        "explanation": "先算功：W甲=100 N×2 m=200 J，W乙=50 N×2 m=100 J；再算功率：P甲=200 J÷10 s=20 W，P乙=100 J÷2 s=50 W。可见甲虽然力大、做功多，但用时更长，功率反而小。比较功率必须同时考虑功和时间，不能只看力的大小或做功多少。",
+        "meta": {
+          "cognitive_level": "分析",
+          "steam_dimensions": [
+            "M"
+          ],
+          "steam_context": "用比例关系与定量计算比较两种做功过程的快慢",
+          "misconception_target": "认为力越大功率越大、做功越多功率越大",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "e6d69556-6a53-40df-8c43-3893a430461c",
+          "source_kp_name": "功率的定义与计算（P=W/t）",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:52:25.880Z",
+          "source_key": "e6d69556-6a53-40df-8c43-3893a430461c#q3",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 12,
+        "type": "calculation",
+        "score": 5,
+        "difficulty": 4,
+        "knowledge_point": "功率的定义与计算（P=W/t）",
+        "question": "学校举行“爬楼梯健身”活动：小明质量 50 kg，用 20 s 从一楼走到四楼。已知教学楼每层高 3 m，从一楼到四楼共上升了 3 层楼的高度，g 取 10 N/kg。小明克服自身重力做功的功率是 ___ W。",
+        "options": [],
+        "answer": "225",
+        "explanation": "上升高度 h=3×3 m=9 m，克服重力做的功 W=Gh=mgh=50 kg×10 N/kg×9 m=4500 J；功率 P=W/t=4500 J÷20 s=225 W。关键是把“从一楼到四楼”换算成实际上升的高度，再用 P=W/t 求做功快慢，而不是直接用质量或楼层数比较。",
+        "meta": {
+          "cognitive_level": "综合应用",
+          "steam_dimensions": [
+            "S",
+            "M"
+          ],
+          "steam_context": "以校园爬楼梯健身活动为真实情境，用质量、楼层高度和时间数据定量比较做功快慢",
+          "misconception_target": "把“到四楼”误当作上升 4 层，或忘记用时间去除功",
+          "figure": null,
+          "resource_needs": [
+            "formula",
+            "calculator"
+          ],
+          "source_kp_id": "e6d69556-6a53-40df-8c43-3893a430461c",
+          "source_kp_name": "功率的定义与计算（P=W/t）",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:52:25.880Z",
+          "source_key": "e6d69556-6a53-40df-8c43-3893a430461c#q4",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "功的计算（W=Fs）与单位",
+      "core_concept": "会用W=Fs进行功的定量计算；能正确代入力F（单位：N）和沿力方向位移s（单位：m）",
+      "key_formula": "",
+      "common_mistakes": [
+        "W=Fs中s可取任意方向的位移",
+        "单位用错（如写成N/m或J/s）",
+        "忽略力与位移方向一致性而直接套公式"
+      ],
+      "tips": "对应章节：第十一章 功和机械能。先判断物理量、单位和条件，再作答。"
+    },
+    {
+      "point": "功的计算公式 W=Fs",
+      "core_concept": "能写出功的公式W=Fs并说明各物理量含义及单位；能根据已知力F和沿力方向的位移s代入公式计算功",
+      "key_formula": "",
+      "common_mistakes": [
+        "只要知道F和s就能套用W=Fs，不检查方向一致性",
+        "s可以是任意路径长度，不必限定在力的方向上"
+      ],
+      "tips": "对应章节：第十一章 功和机械能。先判断物理量、单位和条件，再作答。"
+    },
+    {
+      "point": "功率的定义与计算（P=W/t）",
+      "core_concept": "理解功率是描述做功快慢的物理量；能用P=W/t进行定量计算",
+      "key_formula": "",
+      "common_mistakes": [
+        "认为施加的力越大，功率就一定越大",
+        "混淆功率与功的概念，误以为做功多就一定功率大",
+        "忽略时间因素，仅凭做功多少判断做功快慢"
+      ],
+      "tips": "对应章节：第十一章 功和机械能。先判断物理量、单位和条件，再作答。"
+    }
+  ],
+  "_meta": {
+    "source": "k12-knowledge-points",
+    "generated_from": "k12/generated/physics-g8",
+    "imported_at": "2026-11-05T13:21:55.523Z"
+  }
+}

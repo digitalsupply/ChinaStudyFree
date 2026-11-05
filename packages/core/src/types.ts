@@ -16,6 +16,27 @@ export type QuestionType =
   | "matching"          // 连线配对（语文 / 英语）
   | "word_problem";     // 历史保留
 
+/**
+ * 题目溯源 / 质量元数据。App 不依赖这些字段作答，但后台修正、
+ * 学习分析和题目反馈需要稳定的来源键。
+ */
+export interface QuestionMeta {
+  /** 稳定来源键，如 `{source_kp_id}#q1`；后台修正以它定位题目 */
+  source_key?: string;
+  source_kp_id?: string;
+  source_kp_name?: string;
+  cognitive_level?: string;
+  steam_dimensions?: string[];
+  steam_context?: string;
+  misconception_target?: string;
+  /** 结构化图示：{ type, alt, spec }，由前端渲染，不依赖外部图片 */
+  figure?: Record<string, unknown> | null;
+  resource_needs?: string[];
+  model?: string;
+  prompt_version?: string;
+  [key: string]: unknown;
+}
+
 export interface Question {
   id: number;
   type: QuestionType;
@@ -32,6 +53,8 @@ export interface Question {
     options?: (string | null)[];
     explanation?: string;
   };
+  /** K12 生成题的溯源与质量信息；普通题库题可缺省 */
+  meta?: QuestionMeta;
 }
 
 // ============================================================

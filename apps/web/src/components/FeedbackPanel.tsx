@@ -59,6 +59,8 @@ const REPORT_OPTIONS: Array<{ kind: ReportKind; emoji: string }> = [
   { kind: "question_wrong", emoji: "✏️" },
   { kind: "answer_should_count", emoji: "✅" },
   { kind: "audio_issue", emoji: "🔊" },
+  { kind: "formula_issue", emoji: "🧮" },
+  { kind: "figure_issue", emoji: "📊" },
 ];
 
 export function FeedbackPanel({
@@ -98,6 +100,7 @@ export function FeedbackPanel({
       questionText: reportContext.question.question.slice(0, 80),
       kind,
       answerGiven: reportContext.userAnswer || undefined,
+      sourceKey: reportContext.question.meta?.source_key,
     });
     setReported(true);
     setSheetOpen(false);

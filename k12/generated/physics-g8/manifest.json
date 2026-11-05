@@ -20,8 +20,8 @@
   },
   "errors": 0,
   "warnings": 0,
-  "note": "轻量版本：仅提交 36 个知识点 × 4 题及审核材料；完整 dataset/curated 与 prompts 保留在本地 data/。",
-  "status": "staging-pending-teacher-review",
+  "note": "已自动接受并导入 output；后续通过答题反馈 + k12/corrections 后台修正/删除。",
+  "status": "accepted-auto-imported",
   "stage": "middle",
   "subject": "physics",
   "grade": 8,
@@ -31,6 +31,13 @@
     "review.csv",
     "plan.json",
     "validation.json",
-    "REPORT.md"
-  ]
+    "REPORT.md",
+    "corrections/physics-g8.json"
+  ],
+  "importedBooks": [
+    "physics-k12-g8up",
+    "physics-k12-g8down"
+  ],
+  "correctionsFile": "k12/corrections/physics-g8.json",
+  "importedOutput": "output/physics (K12知识图谱 · 物理八年级上/下册)"
 }

@@ -53,17 +53,19 @@
 - 已包含真实情境：浮力实验、校园科技节、购物车、吊灯、光在介质中的传播等。
 - 图示统一为 `meta.figure = { type, alt, spec }`，可交给前端 SVG/表格渲染。
 
-## 5. 待审核
+## 5. 状态：已自动接受并导入
 
-教师审核表：`review.csv`
+本批不再等待 CSV 逐题审核，已导入为独立的 K12 知识图谱版本：
 
-建议重点看：
+- `physics-k12-g8up`：八年级上册 6 个单元 / 18 节课
+- `physics-k12-g8down`：八年级下册 6 个单元 / 18 节课
+- 原人教版八年级物理保持不变
 
-1. 物理表述是否严谨（尤其浮力、压强、透镜、功）。
-2. 选择题干扰项是否对应真实迷思。
-3. 难度 4 是否适合八年级。
-4. 图示题的 `figure.spec` 是否可渲染。
-5. 下一批是否需要增加难度 5 的迁移题。
+后续在答题过程中点小旗子 🚩 反馈；报告会带 `sourceKey`。运营/教研在
+`k12/corrections/physics-g8.json` 中写 `delete` / `replace` / `patch`，
+再运行 `npm run k12:apply-corrections -- --write` 和 `npm run build:data`。
+
+`review.csv` 保留作为人工抽检参考，不再是阻塞项。
 
 ## 6. 文件
 

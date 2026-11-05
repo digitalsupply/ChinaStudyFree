@@ -14,7 +14,8 @@
 | 题量 | 36 × 4 = 144 道 |
 | 模型 | `deepseek-v4.1-flash`（OpenCode Go） |
 | 自动校验 | 0 error / 0 warning |
-| 状态 | **staging-pending-teacher-review** |
+| 状态 | **accepted-auto-imported** |
+| 导入结果 | `output/physics` → `physics-k12-g8up` / `physics-k12-g8down` |
 
 文件：
 
@@ -48,8 +49,52 @@ npm run k12:validate -- --file data/k12-generated/physics-g8-ds/questions.jsonl
 
 完整 dataset、curated 数据和原始提示词不进入 Git，保留在本地 `data/`。
 
-## 审核后再接入
+## 自动接受与导入
 
-审核通过后，需要把题目映射到 `output/physics/` 的具体教材/单元，
-再运行 `npm run build:data` 和 `npm run validate:quizzes`。不要直接手改
-`apps/web/public/data/`，它是构建产物。
+本批已自动接受，不再等待 CSV 逐题审核：
+
+```bash
+npm run k12:import-output -- --write
+npm run build:data
+npm run validate:quizzes
+```
+
+导入为独立版本，不覆盖原教材：
+
+- bookId：`physics-k12-g8up` / `physics-k12-g8down`
+- 出版社：`K12知识图谱`
+- 12 个单元 / 36 节课 / 144 道题
+- 原人教版八年级物理保持不变
+
+`K12知识图谱` 会出现在八年级物理的教材版本选择中。
+
+## 答题反馈与后台修正/删除
+
+答题后点小旗子 🚩 可以报告：
+
+- 题目有误
+- 我的答案应该算对
+- 音频有问题
+- 公式/符号有问题
+- 图示/表格有问题
+
+报告保存在本机，可在「我的 → 已报告的问题」导出。每条 K12 题目报告带有
+`sourceKey`（如 `{source_kp_id}#q1`），用于定位正式题库中的题目。
+
+后台处理：
+
+```bash
+# 1. 编辑 k12/corrections/physics-g8.json
+# 2. 先 dry-run
+npm run k12:apply-corrections
+# 3. 确认后写入
+npm run k12:apply-corrections -- --write
+# 4. 重建
+npm run build:data
+npm run validate:quizzes
+```
+
+支持 `delete`、`replace`、`patch` 三种动作，详见
+`k12/corrections/README.md`。
+
+不要直接手改 `apps/web/public/data/`，它是构建产物。

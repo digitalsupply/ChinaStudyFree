@@ -24,6 +24,8 @@
     "k12:prompt": "node scripts/k12/generate-questions.mjs --dry-run",
     "k12:generate": "node scripts/k12/generate-questions.mjs",
     "k12:validate": "node scripts/k12/validate-questions.mjs",
+    "k12:import-output": "node scripts/k12/import-to-output.mjs",
+    "k12:apply-corrections": "node scripts/k12/apply-corrections.mjs",
     "coverage": "node scripts/coverage-report.mjs",
     "validate:quizzes": "node scripts/validate-quizzes.mjs",
     "tts:audio": "node scripts/tts/generate-audio.mjs",

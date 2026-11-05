@@ -1,0 +1,225 @@
+{
+  "textbook": "K12知识图谱 · 物理八年级下册",
+  "units": [
+    {
+      "unit_number": 1,
+      "title": "第七章 力",
+      "knowledge_points": [
+        {
+          "name": "力的三要素及作用效果",
+          "description": "能列举力的三要素：大小、方向、作用点",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "判断"
+          ]
+        },
+        {
+          "name": "力的示意图规范画法",
+          "description": "能在受力物体上正确标出力的作用点",
+          "difficulty": 2,
+          "question_types": [
+            "判断",
+            "选择",
+            "计算"
+          ]
+        },
+        {
+          "name": "重力大小计算（G = mg）",
+          "description": "会用G = mg进行正向计算（已知m求G）",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 2,
+      "title": "第八章 运动和力",
+      "knowledge_points": [
+        {
+          "name": "二力平衡的四个条件",
+          "description": "能复述二力平衡的四个条件：作用在同一物体上、大小相等、方向相反、作用在同一直线上",
+          "difficulty": 3,
+          "question_types": [
+            "判断",
+            "选择",
+            "文字填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "平衡力与相互作用力的辨析",
+          "description": "能指出平衡力与相互作用力在作用对象（同一物体vs两个物体）上的根本区别",
+          "difficulty": 3,
+          "question_types": [
+            "选择",
+            "判断",
+            "文字填空"
+          ]
+        },
+        {
+          "name": "运用二力平衡求解未知力",
+          "description": "能在物体静止或匀速直线运动的情境中，根据已知力反推另一平衡力的大小和方向",
+          "difficulty": 3,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 3,
+      "title": "第九章 压强",
+      "knowledge_points": [
+        {
+          "name": "压强公式 p=F/S 及帕斯卡单位",
+          "description": "会写出压强定义式p=F/S，并说明各物理量含义及国际单位",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "液体压强公式 p=ρgh 及定量计算",
+          "description": "能复述p=ρgh公式的推导逻辑：以液柱为模型→F=G=ρShg→p=F/S=ρgh",
+          "difficulty": 3,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "增大与减小压强的方法及实例",
+          "description": "能复述增大压强的两种方法：增大压力、减小受力面积",
+          "difficulty": 2,
+          "question_types": [
+            "判断",
+            "选择"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 4,
+      "title": "第十章 浮力",
+      "knowledge_points": [
+        {
+          "name": "称重法测浮力",
+          "description": "会用弹簧测力计分步测量物体重力G和浸没时拉力F拉",
+          "difficulty": 3,
+          "question_types": [
+            "判断",
+            "选择",
+            "计算"
+          ]
+        },
+        {
+          "name": "浮力综合计算（多物理量联立）",
+          "description": "能综合运用G=mg、F浮=ρ液gV排、F浮=G（漂浮/悬浮）等公式求解未知量",
+          "difficulty": 4,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "基于阿基米德原理的浮力定量计算",
+          "description": "能按步骤完成F_浮=ρ液gV排的数值计算（含单位统一、科学记数法）",
+          "difficulty": 3,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 5,
+      "title": "第十一章 功和机械能",
+      "knowledge_points": [
+        {
+          "name": "功的计算（W=Fs）与单位",
+          "description": "会用W=Fs进行功的定量计算",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "判断",
+            "计算"
+          ]
+        },
+        {
+          "name": "功的计算公式 W=Fs",
+          "description": "能写出功的公式W=Fs并说明各物理量含义及单位",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "计算"
+          ]
+        },
+        {
+          "name": "功率的定义与计算（P=W/t）",
+          "description": "理解功率是描述做功快慢的物理量",
+          "difficulty": 3,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 6,
+      "title": "第十二章 简单机械",
+      "knowledge_points": [
+        {
+          "name": "杠杆平衡条件推导与定量计算",
+          "description": "能复述杠杆平衡的实验探究思路（控制变量法）",
+          "difficulty": 3,
+          "question_types": [
+            "判断",
+            "填空",
+            "选择",
+            "计算"
+          ]
+        },
+        {
+          "name": "杠杆平衡条件推导与应用",
+          "description": "理解杠杆平衡指静止或匀速转动状态",
+          "difficulty": 3,
+          "question_types": [
+            "判断",
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "机械效率的定义与计算",
+          "description": "能复述机械效率的定义并写出公式η=W有用/W总",
+          "difficulty": 4,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        }
+      ]
+    }
+  ],
+  "_meta": {
+    "source": "k12-knowledge-points",
+    "generated_from": "k12/generated/physics-g8",
+    "imported_at": "2026-11-05T13:21:55.523Z"
+  }
+}

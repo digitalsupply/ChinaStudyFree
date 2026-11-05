@@ -1,0 +1,457 @@
+{
+  "textbook": "K12知识图谱 · 物理八年级上册",
+  "unit": "第六章 质量与密度",
+  "unit_number": 6,
+  "unit_test": {
+    "title": "第六章 质量与密度 · K12知识图谱练习",
+    "total_score": 60,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "密度的单位及换算（kg/m³与g/cm³）",
+        "question": "下列单位换算关系正确的是（　　）",
+        "options": [
+          "$1\\ \\mathrm{g/cm^3}=1\\ \\mathrm{kg/m^3}$",
+          "$1\\ \\mathrm{g/cm^3}=10^2\\ \\mathrm{kg/m^3}$",
+          "$1\\ \\mathrm{g/cm^3}=10^3\\ \\mathrm{kg/m^3}$",
+          "$1\\ \\mathrm{g/cm^3}=10^6\\ \\mathrm{kg/m^3}$"
+        ],
+        "answer": "$1\\ \\mathrm{g/cm^3}=10^3\\ \\mathrm{kg/m^3}$",
+        "explanation": "因为 $1\\ \\mathrm{g}=10^{-3}\\ \\mathrm{kg}$，$1\\ \\mathrm{cm^3}=10^{-6}\\ \\mathrm{m^3}$，所以 $1\\ \\mathrm{g/cm^3}=\\frac{10^{-3}\\ \\mathrm{kg}}{10^{-6}\\ \\mathrm{m^3}}=10^3\\ \\mathrm{kg/m^3}$。注意体积是立方关系，不能误用 $10^2$ 或 $10^6$。",
+        "meta": {
+          "cognitive_level": "理解",
+          "steam_dimensions": [],
+          "steam_context": "学科内核心概念",
+          "misconception_target": "认为 $1\\ \\mathrm{g/cm^3}=1\\ \\mathrm{kg/m^3}$，或忽略立方关系把系数误为 $10^2$、$10^6$",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "e65391e4-b726-4af5-8e37-98e4399af90c",
+          "source_kp_name": "密度的单位及换算（kg/m³与g/cm³）",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:47:15.087Z",
+          "source_key": "e65391e4-b726-4af5-8e37-98e4399af90c#q1",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 2,
+        "type": "fill_blank",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "密度的单位及换算（kg/m³与g/cm³）",
+        "question": "厨房里某种食用油的密度约为 $0.8\\ \\mathrm{g/cm^3}$，用国际单位表示是 ___ $\\mathrm{kg/m^3}$。",
+        "options": [],
+        "answer": "800",
+        "explanation": "由 $1\\ \\mathrm{g/cm^3}=10^3\\ \\mathrm{kg/m^3}$ 可知，$0.8\\ \\mathrm{g/cm^3}=0.8\\times10^3\\ \\mathrm{kg/m^3}=800\\ \\mathrm{kg/m^3}$。换算时要把质量的 $10^{-3}$ 和体积的 $10^{-6}$ 一起考虑，不能只乘 $100$。",
+        "meta": {
+          "cognitive_level": "应用",
+          "steam_dimensions": [
+            "M"
+          ],
+          "steam_context": "使用厨房中食用油的密度数据完成单位换算",
+          "misconception_target": "忽略立方关系导致换算系数误为 $10^2$ 或 $10^6$",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "e65391e4-b726-4af5-8e37-98e4399af90c",
+          "source_kp_name": "密度的单位及换算（kg/m³与g/cm³）",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:47:15.087Z",
+          "source_key": "e65391e4-b726-4af5-8e37-98e4399af90c#q2",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 3,
+        "type": "calculation",
+        "score": 5,
+        "difficulty": 3,
+        "knowledge_point": "密度的单位及换算（kg/m³与g/cm³）",
+        "question": "校园科技节上，小明测得一个金属零件质量为 $27\\ \\mathrm{g}$，体积为 $10\\ \\mathrm{cm^3}$。该零件的密度是多少 $\\mathrm{kg/m^3}$？___",
+        "options": [],
+        "answer": "2700",
+        "explanation": "先由密度公式得 $\\rho=\\frac{m}{V}=\\frac{27\\ \\mathrm{g}}{10\\ \\mathrm{cm^3}}=2.7\\ \\mathrm{g/cm^3}$，再统一为国际单位：$2.7\\ \\mathrm{g/cm^3}=2.7\\times10^3\\ \\mathrm{kg/m^3}=2700\\ \\mathrm{kg/m^3}$。计算时要注意最终单位要求，不能直接写 $2.7$。",
+        "meta": {
+          "cognitive_level": "应用",
+          "steam_dimensions": [
+            "S",
+            "M"
+          ],
+          "steam_context": "校园科技节中测量金属零件并处理密度数据",
+          "misconception_target": "在公式计算中不进行单位统一，直接把 $\\mathrm{g/cm^3}$ 的数值当作 $\\mathrm{kg/m^3}$",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "e65391e4-b726-4af5-8e37-98e4399af90c",
+          "source_kp_name": "密度的单位及换算（kg/m³与g/cm³）",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:47:15.087Z",
+          "source_key": "e65391e4-b726-4af5-8e37-98e4399af90c#q3",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 4,
+        "type": "calculation",
+        "score": 5,
+        "difficulty": 4,
+        "knowledge_point": "密度的单位及换算（kg/m³与g/cm³）",
+        "question": "社区回收站收到一块长方体金属块，长 $20\\ \\mathrm{cm}$、宽 $10\\ \\mathrm{cm}$、高 $5\\ \\mathrm{cm}$，质量为 $2.7\\ \\mathrm{kg}$。工作人员想通过密度初步判断它是否为铝（铝的密度约为 $2.7\\times10^3\\ \\mathrm{kg/m^3}$）。请计算该金属块的密度（单位：$\\mathrm{kg/m^3}$）。___",
+        "options": [],
+        "answer": "2700",
+        "explanation": "金属块体积 $V=20\\ \\mathrm{cm}\\times10\\ \\mathrm{cm}\\times5\\ \\mathrm{cm}=1000\\ \\mathrm{cm^3}=1.0\\times10^{-3}\\ \\mathrm{m^3}$，密度 $\\rho=\\frac{m}{V}=\\frac{2.7\\ \\mathrm{kg}}{1.0\\times10^{-3}\\ \\mathrm{m^3}}=2.7\\times10^3\\ \\mathrm{kg/m^3}=2700\\ \\mathrm{kg/m^3}$。计算时必须把 $\\mathrm{cm^3}$ 换算成 $\\mathrm{m^3}$，再与质量的 $\\mathrm{kg}$ 配套。",
+        "meta": {
+          "cognitive_level": "综合",
+          "steam_dimensions": [
+            "S",
+            "M"
+          ],
+          "steam_context": "社区回收站利用密度数据初步鉴别金属材料",
+          "misconception_target": "体积单位换算错误，未把 $\\mathrm{cm^3}$ 换算成 $\\mathrm{m^3}$ 就代入计算",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "e65391e4-b726-4af5-8e37-98e4399af90c",
+          "source_kp_name": "密度的单位及换算（kg/m³与g/cm³）",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:47:15.087Z",
+          "source_key": "e65391e4-b726-4af5-8e37-98e4399af90c#q4",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 5,
+        "type": "true_false",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "天平调零与操作步骤规范",
+        "question": "用托盘天平称量物体质量的过程中，如果发现指针偏向分度盘左侧，可以调节平衡螺母使横梁重新平衡。",
+        "options": [],
+        "answer": "错",
+        "explanation": "称量过程中不能调节平衡螺母。调零完成后，平衡螺母的位置就应保持不动；称量时指针偏左说明左盘物体质量大于右盘砝码与游码示数之和，应通过加减砝码或移动游码使横梁重新平衡。",
+        "meta": {
+          "cognitive_level": "理解",
+          "steam_dimensions": [],
+          "steam_context": "学科内核心概念",
+          "misconception_target": "误认为称量过程中可以用平衡螺母调平衡",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "fd51efe6-709b-4879-90f5-d227659b8c04",
+          "source_kp_name": "天平调零与操作步骤规范",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:50:28.528Z",
+          "source_key": "fd51efe6-709b-4879-90f5-d227659b8c04#q1",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 6,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "天平调零与操作步骤规范",
+        "question": "在学校的实验课上，小华用托盘天平测量一包食盐的质量。他把天平放在水平桌面上后，调节横梁平衡的正确做法是（ ）",
+        "options": [
+          "先把游码移到标尺左端的零刻度线处，再调节平衡螺母，使指针指在分度盘中央",
+          "先调节平衡螺母使指针指在分度盘中央，再把游码移到标尺左端的零刻度线处",
+          "先把食盐放在左盘，再调节平衡螺母使指针指在分度盘中央",
+          "先在右盘放上砝码，再调节平衡螺母使指针指在分度盘中央"
+        ],
+        "answer": "先把游码移到标尺左端的零刻度线处，再调节平衡螺母，使指针指在分度盘中央",
+        "explanation": "天平调零要按“水平放置→游码归零→调平衡螺母”的顺序进行。若游码不在零刻度线处就调平衡螺母，天平的零点就不准确，后续读数会产生偏差；称量过程中也不能再调节平衡螺母。",
+        "meta": {
+          "cognitive_level": "理解",
+          "steam_dimensions": [],
+          "steam_context": "校园实验课上称量食盐的真实操作情境",
+          "misconception_target": "调零时先调平衡螺母后移游码，或在称量中调平衡螺母",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "fd51efe6-709b-4879-90f5-d227659b8c04",
+          "source_kp_name": "天平调零与操作步骤规范",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:50:28.528Z",
+          "source_key": "fd51efe6-709b-4879-90f5-d227659b8c04#q2",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 7,
+        "type": "fill_blank",
+        "score": 5,
+        "difficulty": 3,
+        "knowledge_point": "天平调零与操作步骤规范",
+        "question": "某托盘天平平衡时，右盘砝码的总质量为 45 g。该天平标尺上 1 g 之间有 5 个小格，游码左端停在 2 g 刻度线右侧第 3 个小格处。则被测物体的质量是 ___ g。",
+        "options": [],
+        "answer": "47.6",
+        "explanation": "标尺上 1 g 分为 5 个小格，每小格代表 0.2 g，游码左端读数为 2 g + 3×0.2 g = 2.6 g。物体质量等于砝码总质量与游码示数之和，即 45 g + 2.6 g = 47.6 g。读游码时应看左端所对的刻度，不能看右端或中间。",
+        "meta": {
+          "cognitive_level": "应用",
+          "steam_dimensions": [
+            "M"
+          ],
+          "steam_context": "标尺分度值换算与测量数据相加的真实数据处理",
+          "misconception_target": "游码读数看右端或中间，以及漏加砝码总质量",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "fd51efe6-709b-4879-90f5-d227659b8c04",
+          "source_kp_name": "天平调零与操作步骤规范",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:50:28.528Z",
+          "source_key": "fd51efe6-709b-4879-90f5-d227659b8c04#q3",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 8,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 4,
+        "knowledge_point": "天平调零与操作步骤规范",
+        "question": "小明用托盘天平测一枚小石块的质量，操作如下：①把天平放在水平桌面上；②把游码移到标尺左端零刻度线处；③调节平衡螺母，使指针指在分度盘中央；④把石块放在右盘，在左盘加减砝码；⑤用手直接拿取砝码；⑥读数时读出游码右端对应的刻度。其中操作正确的步骤有（ ）",
+        "options": [
+          "①②③",
+          "①②③④",
+          "①②③⑤",
+          "②③④⑥"
+        ],
+        "answer": "①②③",
+        "explanation": "调零三步是水平放置、游码归零、调节平衡螺母，所以①②③正确。称量时应左盘放物体、右盘放砝码，④错误；砝码要用镊子夹取，不能用手直接拿，⑤错误；游码应读左端所对的刻度，⑥错误。因此只有①②③正确。",
+        "meta": {
+          "cognitive_level": "评价",
+          "steam_dimensions": [],
+          "steam_context": "实验室称量小石块的操作纠错情境",
+          "misconception_target": "左物右砝颠倒、用手拿砝码、游码读右端刻度",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "fd51efe6-709b-4879-90f5-d227659b8c04",
+          "source_kp_name": "天平调零与操作步骤规范",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:50:28.528Z",
+          "source_key": "fd51efe6-709b-4879-90f5-d227659b8c04#q4",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 9,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "质量单位与进率换算",
+        "question": "在国际单位制中，质量的基本单位是下列哪一个？",
+        "options": [
+          "千克（kg）",
+          "克（g）",
+          "吨（t）",
+          "毫克（mg）"
+        ],
+        "answer": "千克（kg）",
+        "explanation": "国际单位制中质量的基本单位是千克，符号为 kg。克、吨、毫克都是质量的常用单位，但它们不是基本单位，其中吨是比千克大的单位，毫克是比克小的单位。",
+        "meta": {
+          "cognitive_level": "记忆",
+          "steam_dimensions": [],
+          "steam_context": "学科内核心概念",
+          "misconception_target": "误认为克或吨是质量的基本单位",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "1831f576-d18c-46f6-bb30-7303a5cd2ba5",
+          "source_kp_name": "质量单位与进率换算",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:46:23.389Z",
+          "source_key": "1831f576-d18c-46f6-bb30-7303a5cd2ba5#q1",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 10,
+        "type": "true_false",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "质量单位与进率换算",
+        "question": "因为 1 kg = 1000 g，所以 0.5 kg = 500 g。",
+        "options": [],
+        "answer": "对",
+        "explanation": "千克与克之间是 1000 的进率，即 1 kg = 1000 g。把 0.5 kg 换算成克，用 0.5 乘 1000 得 500，所以 0.5 kg = 500 g，该说法正确。注意不要误用 1 kg = 100 g。",
+        "meta": {
+          "cognitive_level": "理解",
+          "steam_dimensions": [
+            "M"
+          ],
+          "steam_context": "用单位进率进行量的换算",
+          "misconception_target": "误认为 1 kg = 100 g",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "1831f576-d18c-46f6-bb30-7303a5cd2ba5",
+          "source_kp_name": "质量单位与进率换算",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:46:23.389Z",
+          "source_key": "1831f576-d18c-46f6-bb30-7303a5cd2ba5#q2",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 11,
+        "type": "fill_blank",
+        "score": 5,
+        "difficulty": 3,
+        "knowledge_point": "质量单位与进率换算",
+        "question": "学校食堂购进一批大米，包装标签上写着总质量 2.5 t。这批大米的质量合 ___ kg。",
+        "options": [],
+        "answer": "2500",
+        "explanation": "吨与千克之间的进率是 1000，即 1 t = 1000 kg。把 2.5 t 换算成千克，用 2.5 乘 1000 得 2500，所以这批大米的质量为 2500 kg。换算时要注意吨到千克是乘 1000，而不是除以 1000。",
+        "meta": {
+          "cognitive_level": "应用",
+          "steam_dimensions": [
+            "M"
+          ],
+          "steam_context": "用食堂采购大米的包装标签质量进行单位换算",
+          "misconception_target": "吨与千克换算时乘除方向混淆或漏写数量级",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "1831f576-d18c-46f6-bb30-7303a5cd2ba5",
+          "source_kp_name": "质量单位与进率换算",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:46:23.389Z",
+          "source_key": "1831f576-d18c-46f6-bb30-7303a5cd2ba5#q3",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 12,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 4,
+        "knowledge_point": "质量单位与进率换算",
+        "question": "超市货架上四种食品包装上标注的净含量如下，其中净含量最小的是哪一个？",
+        "options": [
+          "一袋食盐：500 g",
+          "一袋白砂糖：0.45 kg",
+          "一盒饼干：$4\\times10^{5}$ mg",
+          "一袋面粉：0.0003 t"
+        ],
+        "answer": "一袋面粉：0.0003 t",
+        "explanation": "先统一换算成克再比较：500 g = 500 g；0.45 kg = 0.45×1000 g = 450 g；$4\\times10^{5}$ mg = $4\\times10^{5}\\div1000$ g = 400 g；0.0003 t = 0.0003×1000 kg = 0.3 kg = 300 g。比较可知 300 g 最小，即一袋面粉的净含量最小。换算时要注意 mg 到 g 是除以 1000，t 到 kg 是乘 1000，不能忽略数量级。",
+        "meta": {
+          "cognitive_level": "分析",
+          "steam_dimensions": [
+            "M"
+          ],
+          "steam_context": "阅读超市食品包装上的净含量标注并比较大小",
+          "misconception_target": "换算时忽略数量级，误认为 mg 数值大就质量大",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "1831f576-d18c-46f6-bb30-7303a5cd2ba5",
+          "source_kp_name": "质量单位与进率换算",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:46:23.389Z",
+          "source_key": "1831f576-d18c-46f6-bb30-7303a5cd2ba5#q4",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "密度的单位及换算（kg/m³与g/cm³）",
+      "core_concept": "能正确书写密度国际单位kg/m³及其符号；能正确书写常用单位g/cm³及其符号",
+      "key_formula": "",
+      "common_mistakes": [
+        "认为1 g/cm³ = 1 kg/m³",
+        "忽略单位换算中的立方关系导致系数误为10²或10⁶",
+        "在公式计算中不进行单位统一直接代入数值"
+      ],
+      "tips": "对应章节：第六章 质量与密度。先判断物理量、单位和条件，再作答。"
+    },
+    {
+      "point": "天平调零与操作步骤规范",
+      "core_concept": "能按三步法完成调零（水平放置→游码归零→调平衡螺母）；能严格执行左盘放物、右盘放砝码规则",
+      "key_formula": "",
+      "common_mistakes": [
+        "调零只需移动游码",
+        "砝码可用手拿取",
+        "游码读数看右端或中间"
+      ],
+      "tips": "对应章节：第六章 质量与密度。先判断物理量、单位和条件，再作答。"
+    },
+    {
+      "point": "质量单位与进率换算",
+      "core_concept": "熟记国际单位制中质量基本单位为千克（kg）；掌握t→kg→g→mg相邻单位间1000进率",
+      "key_formula": "",
+      "common_mistakes": [
+        "1kg=100g",
+        "mg是比g更大的单位",
+        "换算时忽略指数符号导致数量级错误"
+      ],
+      "tips": "对应章节：第六章 质量与密度。先判断物理量、单位和条件，再作答。"
+    }
+  ],
+  "_meta": {
+    "source": "k12-knowledge-points",
+    "generated_from": "k12/generated/physics-g8",
+    "imported_at": "2026-11-05T13:21:55.520Z"
+  }
+}

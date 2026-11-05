@@ -1,0 +1,442 @@
+{
+  "textbook": "K12知识图谱 · 物理八年级上册",
+  "unit": "第二章 声现象",
+  "unit_number": 2,
+  "unit_test": {
+    "title": "第二章 声现象 · K12知识图谱练习",
+    "total_score": 60,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "true_false",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "频率单位赫兹与人耳可听范围",
+        "question": "频率的单位是赫兹，符号是 Hz；某物体每秒振动 1 次，其振动频率就是 1 Hz。",
+        "options": [],
+        "answer": "对",
+        "explanation": "赫兹是频率的单位，1 Hz 表示每秒振动 1 次。题目中物体每秒振动 1 次，正好对应 1 Hz，因此说法正确。要注意 Hz 不是速度单位。",
+        "meta": {
+          "cognitive_level": "识记",
+          "steam_dimensions": [],
+          "steam_context": "学科内核心概念",
+          "misconception_target": "认为 Hz 是速度单位",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "c5053e9a-6d63-4d39-a90a-9b11ba83b5cc",
+          "source_kp_name": "频率单位赫兹与人耳可听范围",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:49:26.126Z",
+          "source_key": "c5053e9a-6d63-4d39-a90a-9b11ba83b5cc#q1",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "频率单位赫兹与人耳可听范围",
+        "question": "人耳能听到的声音频率范围大约是多少？",
+        "options": [
+          "0～20000 Hz",
+          "20～2000 Hz",
+          "20～20000 Hz",
+          "200～20000 Hz"
+        ],
+        "answer": "20～20000 Hz",
+        "explanation": "人耳听觉频率范围约为 20 Hz 到 20000 Hz。低于 20 Hz 的声波是次声波，高于 20000 Hz 的声波是超声波，人耳一般听不到。0～20000 Hz、20～2000 Hz 等都是常见误记。",
+        "meta": {
+          "cognitive_level": "识记",
+          "steam_dimensions": [],
+          "steam_context": "学科内核心概念",
+          "misconception_target": "误记人耳范围为 0～20000 Hz 或 20～2000 Hz",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "c5053e9a-6d63-4d39-a90a-9b11ba83b5cc",
+          "source_kp_name": "频率单位赫兹与人耳可听范围",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:49:26.126Z",
+          "source_key": "c5053e9a-6d63-4d39-a90a-9b11ba83b5cc#q2",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 3,
+        "knowledge_point": "频率单位赫兹与人耳可听范围",
+        "question": "某款超声波清洗机工作时产生频率约为 40000 Hz 的声波。关于这种声波，下列说法正确的是（　　）",
+        "options": [
+          "人耳能听到，因为频率高于 20000 Hz",
+          "人耳不能听到，因为它是超声波",
+          "人耳不能听到，因为它是次声波",
+          "人耳能听到，因为频率在 20～20000 Hz 之间"
+        ],
+        "answer": "人耳不能听到，因为它是超声波",
+        "explanation": "人耳可听频率范围约为 20～20000 Hz。40000 Hz 高于 20000 Hz 的人耳听觉上限，所以人耳一般听不到，这种声波按频率边界称为超声波。它不是次声波，也不能因为频率高就认为人耳能听到。",
+        "meta": {
+          "cognitive_level": "应用",
+          "steam_dimensions": [],
+          "steam_context": "以家用超声波清洗机的工作频率为真实情境，判断声波是否在人耳可听范围内",
+          "misconception_target": "将超声波误解为人耳听不到的任何声音，或把超声波与次声波混淆",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "c5053e9a-6d63-4d39-a90a-9b11ba83b5cc",
+          "source_kp_name": "频率单位赫兹与人耳可听范围",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:49:26.126Z",
+          "source_key": "c5053e9a-6d63-4d39-a90a-9b11ba83b5cc#q3",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 4,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 4,
+        "knowledge_point": "频率单位赫兹与人耳可听范围",
+        "question": "已知人、猫、狗、蝙蝠能听到声音的频率范围分别约为 20～20000 Hz、60～65000 Hz、15～45000 Hz、1000～120000 Hz。若某声源发出频率为 30000 Hz 的声波，且响度足够，下列判断正确的是（　　）",
+        "options": [
+          "猫、狗和蝙蝠都能听到",
+          "只有猫和蝙蝠能听到",
+          "只有狗和蝙蝠能听到",
+          "人和蝙蝠都能听到"
+        ],
+        "answer": "猫、狗和蝙蝠都能听到",
+        "explanation": "从给出的频率范围看，30000 Hz 位于猫、狗、蝙蝠的听觉范围内，但高于人的听觉上限 20000 Hz，因此人听不到，猫、狗和蝙蝠能听到。判断时要同时比较频率与各范围的上、下限。",
+        "meta": {
+          "cognitive_level": "分析",
+          "steam_dimensions": [
+            "M"
+          ],
+          "steam_context": "用人和三种动物的听觉频率范围数据进行数值比较，判断 30000 Hz 声波能否被听到",
+          "misconception_target": "只记住人的可听范围，不会把频率与动物听觉范围的上下限进行比较",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "c5053e9a-6d63-4d39-a90a-9b11ba83b5cc",
+          "source_kp_name": "频率单位赫兹与人耳可听范围",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:49:26.126Z",
+          "source_key": "c5053e9a-6d63-4d39-a90a-9b11ba83b5cc#q4",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 5,
+        "type": "true_false",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "声音传播需要介质（固液气均可，真空不传声）",
+        "question": "声音只能在空气中传播，在水中和固体中都不能传播。",
+        "options": [],
+        "answer": "错",
+        "explanation": "声音的传播需要介质，固体、液体和气体都可以作为传声介质。例如水中的鱼能被岸上的声音惊动，耳朵贴在桌面上能听到敲桌声，都说明声音不只靠空气传播。",
+        "meta": {
+          "cognitive_level": "记忆",
+          "steam_dimensions": [],
+          "steam_context": "学科内核心概念",
+          "misconception_target": "只有空气能传声，其他物质不能有效传声",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "a26929f3-2764-4640-b416-805ac0bf8072",
+          "source_kp_name": "声音传播需要介质（固液气均可，真空不传声）",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:47:34.526Z",
+          "source_key": "a26929f3-2764-4640-b416-805ac0bf8072#q1",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 6,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "声音传播需要介质（固液气均可，真空不传声）",
+        "question": "两名航天员在空间站外进行太空行走时，即使相距很近，也必须借助无线电通话。其主要原因是（ ）",
+        "options": [
+          "太空中没有空气，声音缺少传播介质",
+          "太空中噪声太大，说话声被淹没",
+          "无线电信号传播不需要时间",
+          "宇航服太厚，完全挡住了声波"
+        ],
+        "answer": "太空中没有空气，声音缺少传播介质",
+        "explanation": "声音传播需要介质，真空不能传声。太空中接近真空，没有空气作为传声介质，所以航天员之间不能直接通过声波交谈，必须使用无线电。",
+        "meta": {
+          "cognitive_level": "理解",
+          "steam_dimensions": [],
+          "steam_context": "航天员在太空用无线电交流的真实情境",
+          "misconception_target": "声音可以在真空中自然传播",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "a26929f3-2764-4640-b416-805ac0bf8072",
+          "source_kp_name": "声音传播需要介质（固液气均可，真空不传声）",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:47:34.526Z",
+          "source_key": "a26929f3-2764-4640-b416-805ac0bf8072#q2",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 7,
+        "type": "fill_blank_text",
+        "score": 5,
+        "difficulty": 3,
+        "knowledge_point": "声音传播需要介质（固液气均可，真空不传声）",
+        "question": "把正在发声的闹钟放入玻璃罩内，逐渐抽出罩内的空气，听到闹钟声越来越弱；再让空气逐渐进入罩内，声音又变强。这个实验说明声音的传播需要___。",
+        "options": [],
+        "answer": "介质",
+        "explanation": "抽气使罩内空气减少，声音变弱；进气后声音恢复，说明空气是传声介质。进一步推理可知，若罩内成为真空，声音将无法传播。",
+        "meta": {
+          "cognitive_level": "理解",
+          "steam_dimensions": [
+            "S"
+          ],
+          "steam_context": "玻璃罩抽气实验的现象观察与推理",
+          "misconception_target": "声音传播不需要物质",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "a26929f3-2764-4640-b416-805ac0bf8072",
+          "source_kp_name": "声音传播需要介质（固液气均可，真空不传声）",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:47:34.526Z",
+          "source_key": "a26929f3-2764-4640-b416-805ac0bf8072#q3",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 8,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 4,
+        "knowledge_point": "声音传播需要介质（固液气均可，真空不传声）",
+        "question": "小明把耳朵贴在长桌面的一端，同学在另一端轻轻敲击桌面，小明能听到清晰的敲击声；若小明把耳朵离开桌面，同样的敲击声就弱得多。下列解释正确的是（ ）",
+        "options": [
+          "桌面传声能力比空气强，固体可以作为传声介质",
+          "声音在真空中也能传播，只是桌面使声音更集中",
+          "敲击桌面时，声音只沿桌面传播，不进入空气",
+          "耳朵贴桌面时，声音直接变成了无线电波"
+        ],
+        "answer": "桌面传声能力比空气强，固体可以作为传声介质",
+        "explanation": "耳朵贴桌面时，敲击声主要通过桌面（固体）传到耳朵，固体传声效果较好；离开桌面后，声音主要靠空气传播，听到的声音较弱。这说明固体也能传声，且传声效果与介质有关。",
+        "meta": {
+          "cognitive_level": "分析",
+          "steam_dimensions": [
+            "S"
+          ],
+          "steam_context": "课堂桌面传声实验的证据分析",
+          "misconception_target": "只有空气能传声；声音在真空中也能传播",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "a26929f3-2764-4640-b416-805ac0bf8072",
+          "source_kp_name": "声音传播需要介质（固液气均可，真空不传声）",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:47:34.526Z",
+          "source_key": "a26929f3-2764-4640-b416-805ac0bf8072#q4",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 9,
+        "type": "true_false",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "声音传播需要介质（固液气可传声，真空不传声）",
+        "question": "声音可以在真空中传播。",
+        "options": [],
+        "answer": "错",
+        "explanation": "声音的传播需要介质，固体、液体和气体都可以传声，但真空没有可以传声的介质，因此声音不能在真空中传播。",
+        "meta": {
+          "cognitive_level": "记忆",
+          "steam_dimensions": [],
+          "steam_context": "学科内核心概念",
+          "misconception_target": "认为真空也能传声，或认为声音在真空中只是变小而不会消失",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "2353cd6b-5094-4be4-aa53-3ba61baf84af",
+          "source_kp_name": "声音传播需要介质（固液气可传声，真空不传声）",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:49:48.353Z",
+          "source_key": "2353cd6b-5094-4be4-aa53-3ba61baf84af#q1",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 10,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "声音传播需要介质（固液气可传声，真空不传声）",
+        "question": "在游泳池边，岸上的同学能听到水中运动员敲击池壁发出的声音。这个现象主要说明（ ）",
+        "options": [
+          "水可以传播声音",
+          "声音只能在空气中传播",
+          "声音在真空中也能传播",
+          "声音的传播不需要任何介质"
+        ],
+        "answer": "水可以传播声音",
+        "explanation": "运动员敲击池壁产生的声音经过水传到岸上同学的耳中，说明液体也能传声。声音传播需要介质，不是只能在空气中传播，也不能在真空中传播。",
+        "meta": {
+          "cognitive_level": "理解",
+          "steam_dimensions": [],
+          "steam_context": "校园游泳池中的真实听声现象",
+          "misconception_target": "认为只有空气能传声",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "2353cd6b-5094-4be4-aa53-3ba61baf84af",
+          "source_kp_name": "声音传播需要介质（固液气可传声，真空不传声）",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:49:48.353Z",
+          "source_key": "2353cd6b-5094-4be4-aa53-3ba61baf84af#q2",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 11,
+        "type": "fill_blank_text",
+        "score": 5,
+        "difficulty": 3,
+        "knowledge_point": "声音传播需要介质（固液气可传声，真空不传声）",
+        "question": "把正在响铃的闹钟放入玻璃罩中，用抽气机逐渐抽出罩内空气，听到铃声逐渐变弱；再让空气逐渐进入玻璃罩，听到铃声又逐渐变强。这个实验说明：声音的传播需要___，真空不能传声。",
+        "options": [],
+        "answer": "介质",
+        "explanation": "抽气使玻璃罩内空气减少，传声介质减少，铃声变弱；空气重新进入后传声介质增多，铃声变强。由此归纳出声音传播需要介质，真空不能传声。",
+        "meta": {
+          "cognitive_level": "分析",
+          "steam_dimensions": [
+            "S"
+          ],
+          "steam_context": "玻璃罩抽气实验的现象观察与实验证据归纳",
+          "misconception_target": "认为真空里声音会变小但不会消失",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "2353cd6b-5094-4be4-aa53-3ba61baf84af",
+          "source_kp_name": "声音传播需要介质（固液气可传声，真空不传声）",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:49:48.353Z",
+          "source_key": "2353cd6b-5094-4be4-aa53-3ba61baf84af#q3",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 12,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 4,
+        "knowledge_point": "声音传播需要介质（固液气可传声，真空不传声）",
+        "question": "两名宇航员在太空舱外进行活动时，不能像在地面上一样直接对话，而要通过无线电设备交流。其主要原因是（ ）",
+        "options": [
+          "太空中没有空气，声音不能在真空中传播",
+          "太空中噪声太大，会盖住说话声",
+          "宇航员在太空中声带无法振动",
+          "无线电传输声音的速度比声速慢"
+        ],
+        "answer": "太空中没有空气，声音不能在真空中传播",
+        "explanation": "声音传播需要介质，太空舱外接近真空，缺乏传声介质，所以声带振动产生的声音不能传到对方耳中；无线电信号不依赖空气传播。声带仍可振动，噪声和速度不是主要原因。",
+        "meta": {
+          "cognitive_level": "应用",
+          "steam_dimensions": [],
+          "steam_context": "宇航员太空舱外交流的真实情境",
+          "misconception_target": "认为真空里声音只是变小而不会消失，或认为声音传播靠空气流动",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "2353cd6b-5094-4be4-aa53-3ba61baf84af",
+          "source_kp_name": "声音传播需要介质（固液气可传声，真空不传声）",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:49:48.353Z",
+          "source_key": "2353cd6b-5094-4be4-aa53-3ba61baf84af#q4",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "频率单位赫兹与人耳可听范围",
+      "core_concept": "能准确说出频率单位名称、符号及定义（1Hz=1次/秒）；能背诵人耳可听频率范围20~20000Hz",
+      "key_formula": "",
+      "common_mistakes": [
+        "认为Hz是速度单位",
+        "误记人耳范围为0~20000Hz或20~2000Hz",
+        "将超声波/次声波误解为‘人耳听不到的任何声音’而非特指频率边界"
+      ],
+      "tips": "对应章节：第二章 声现象。先判断物理量、单位和条件，再作答。"
+    },
+    {
+      "point": "声音传播需要介质（固液气均可，真空不传声）",
+      "core_concept": "能描述玻璃罩抽气实验的现象与结论（空气减少→声音减弱→真空不传声）；能通过桌面传声、水中听音等实验证据，归纳出固体、液体、气体均可作为传声介质",
+      "key_formula": "",
+      "common_mistakes": [
+        "声音传播不需要物质，可以在真空中自然传播",
+        "只有空气能传声，其他物质不能有效传声"
+      ],
+      "tips": "对应章节：第二章 声现象。先判断物理量、单位和条件，再作答。"
+    },
+    {
+      "point": "声音传播需要介质（固液气可传声，真空不传声）",
+      "core_concept": "能描述玻璃罩抽气实验的现象与结论；能列举固体（桌子）、液体（水）、气体（空气）传声的实例",
+      "key_formula": "",
+      "common_mistakes": [
+        "声音传播靠空气‘流动’而非介质振动",
+        "真空里声音会变小但不会消失",
+        "只有空气能传声"
+      ],
+      "tips": "对应章节：第二章 声现象。先判断物理量、单位和条件，再作答。"
+    }
+  ],
+  "_meta": {
+    "source": "k12-knowledge-points",
+    "generated_from": "k12/generated/physics-g8",
+    "imported_at": "2026-11-05T13:21:55.520Z"
+  }
+}

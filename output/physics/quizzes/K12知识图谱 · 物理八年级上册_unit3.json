@@ -1,0 +1,564 @@
+{
+  "textbook": "K12知识图谱 · 物理八年级上册",
+  "unit": "第三章 物态变化",
+  "unit_number": 3,
+  "unit_test": {
+    "title": "第三章 物态变化 · K12知识图谱练习",
+    "total_score": 58,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "汽化吸热与液化放热的能量特征",
+        "question": "下列现象中，主要属于汽化且需要吸收热量的是（ ）",
+        "options": [
+          "湿衣服在阳光下晾干",
+          "清晨草叶上出现露珠",
+          "冬天窗玻璃内侧出现冰花",
+          "水缸里的水结成冰"
+        ],
+        "answer": "湿衣服在阳光下晾干",
+        "explanation": "湿衣服晾干是水由液态变成气态，属于汽化，汽化过程需要吸热。露珠是水蒸气液化放热形成的，冰花是水蒸气凝华放热形成的，水结冰是凝固放热，它们都不是汽化吸热。",
+        "meta": {
+          "cognitive_level": "理解",
+          "steam_dimensions": [],
+          "steam_context": "学科内核心概念",
+          "misconception_target": "认为汽化会放热，或把液化、凝华、凝固的吸放热情况与汽化混淆",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "c5bf2439-6ed8-484d-9a8a-08b674c227d9",
+          "source_kp_name": "汽化吸热与液化放热的能量特征",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:47:42.675Z",
+          "source_key": "c5bf2439-6ed8-484d-9a8a-08b674c227d9#q1",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 2,
+        "type": "true_false",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "汽化吸热与液化放热的能量特征",
+        "question": "被100 ℃的水蒸气烫伤往往比被100 ℃的开水烫伤更严重，是因为水蒸气在皮肤表面液化时会放出热量。",
+        "options": [],
+        "answer": "对",
+        "explanation": "100 ℃的水蒸气遇到温度较低的皮肤会液化成100 ℃的水，液化过程要放出热量；因此水蒸气烫伤时，除了随后水降温放热外，还多放出了液化热，所以往往更严重。",
+        "meta": {
+          "cognitive_level": "理解",
+          "steam_dimensions": [],
+          "steam_context": "学科内核心概念",
+          "misconception_target": "认为温度相同烫伤程度就一定相同，忽略液化放热",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "c5bf2439-6ed8-484d-9a8a-08b674c227d9",
+          "source_kp_name": "汽化吸热与液化放热的能量特征",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:47:42.675Z",
+          "source_key": "c5bf2439-6ed8-484d-9a8a-08b674c227d9#q2",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 3,
+        "knowledge_point": "汽化吸热与液化放热的能量特征",
+        "question": "夏天午后，校园地面洒水后，同学走过感到比较凉爽。其主要原因是（ ）",
+        "options": [
+          "水汽化时从周围吸热，使环境温度降低",
+          "水液化时向周围放热，使环境温度升高",
+          "水的温度总低于气温，只靠热传递降温",
+          "水凝固时吸热，使地面温度降低"
+        ],
+        "answer": "水汽化时从周围吸热，使环境温度降低",
+        "explanation": "洒在地面的水会蒸发，蒸发属于汽化，汽化需要吸收热量，这些热量来自地面和周围空气，从而使周围温度降低，人感觉凉爽。液化是放热过程，凝固也是放热过程，不能解释该降温现象。",
+        "meta": {
+          "cognitive_level": "应用",
+          "steam_dimensions": [
+            "S"
+          ],
+          "steam_context": "校园地面洒水后变凉爽的真实现象观察，用汽化吸热解释环境降温",
+          "misconception_target": "把汽化吸热误解为水自身变冷，或误认为液化放热导致降温",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "c5bf2439-6ed8-484d-9a8a-08b674c227d9",
+          "source_kp_name": "汽化吸热与液化放热的能量特征",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:47:42.675Z",
+          "source_key": "c5bf2439-6ed8-484d-9a8a-08b674c227d9#q3",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 4,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 4,
+        "knowledge_point": "汽化吸热与液化放热的能量特征",
+        "question": "电冰箱工作时，制冷剂在蒸发器内由液态变为气态，在冷凝器内由气态变为液态。关于这一循环中的吸、放热，下列说法正确的是（ ）",
+        "options": [
+          "制冷剂在蒸发器内汽化吸热，使冰箱内温度降低；在冷凝器内液化放热，把热量传给外界",
+          "制冷剂在蒸发器内液化放热，使冰箱内温度降低；在冷凝器内汽化吸热，把热量传给外界",
+          "制冷剂在蒸发器内汽化放热，在冷凝器内液化吸热",
+          "电冰箱能把冰箱内的热量消灭掉，所以不需要向外界放热"
+        ],
+        "answer": "制冷剂在蒸发器内汽化吸热，使冰箱内温度降低；在冷凝器内液化放热，把热量传给外界",
+        "explanation": "电冰箱利用制冷剂在蒸发器内汽化吸热，从冰箱内部吸收热量；再在冷凝器内液化放热，把热量排放到外界空气中。冰箱并没有消灭热量，而是通过汽化和液化把热量从内部搬运到外部。",
+        "meta": {
+          "cognitive_level": "分析",
+          "steam_dimensions": [
+            "E"
+          ],
+          "steam_context": "电冰箱制冷循环中蒸发器与冷凝器的工程装置，用汽化吸热和液化放热解释热量搬运过程",
+          "misconception_target": "误认为冰箱靠产生冷量或消灭热量，或把蒸发器与冷凝器的吸放热过程弄反",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "c5bf2439-6ed8-484d-9a8a-08b674c227d9",
+          "source_kp_name": "汽化吸热与液化放热的能量特征",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:47:42.675Z",
+          "source_key": "c5bf2439-6ed8-484d-9a8a-08b674c227d9#q4",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 5,
+        "type": "true_false",
+        "score": 3,
+        "difficulty": 1,
+        "knowledge_point": "熔化/凝固温度-时间图像分析",
+        "question": "晶体熔化时，温度—时间图像上会出现一段水平线，这段水平线表示物质在这段时间内仍在继续吸热，但温度保持不变。",
+        "options": [],
+        "answer": "对",
+        "explanation": "晶体熔化过程中吸收的热量用于破坏晶体的规则结构，使固态逐渐变为液态，温度保持在熔点不变，因此在温度—时间图像上表现为水平段。水平段并不表示停止加热，这是常见的错误认识。",
+        "meta": {
+          "cognitive_level": "理解",
+          "steam_dimensions": [
+            "S"
+          ],
+          "steam_context": "用图像记录并解读熔化过程中的实验证据",
+          "misconception_target": "图像水平段表示停止加热",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "875684a1-60ad-47b4-a32b-806d1a4940af",
+          "source_kp_name": "熔化/凝固温度-时间图像分析",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:46:45.737Z",
+          "source_key": "875684a1-60ad-47b4-a32b-806d1a4940af#q1",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 6,
+        "type": "fill_blank",
+        "score": 4,
+        "difficulty": 2,
+        "knowledge_point": "熔化/凝固温度-时间图像分析",
+        "question": "某同学用温度传感器记录一种晶体加热时温度随时间的变化，画出的温度—时间图像为：温度先从 20 ℃ 升高到 80 ℃，然后在 80 ℃ 保持不变一段时间，最后又继续升高。这种晶体的熔点是 ___ ℃。",
+        "options": [],
+        "answer": "80",
+        "explanation": "晶体熔化时温度保持不变，图像中温度保持不变的平台段所对应的温度就是熔点。图像先在 80 ℃ 保持一段时间，说明晶体在 80 ℃ 时熔化，因此熔点为 80 ℃；20 ℃ 只是加热的起始温度，不是熔点。",
+        "meta": {
+          "cognitive_level": "理解",
+          "steam_dimensions": [
+            "S",
+            "T",
+            "M"
+          ],
+          "steam_context": "温度传感器采集数据并绘制温度—时间图像，从图像中读取熔点",
+          "misconception_target": "把图像的起始温度误认为熔点",
+          "figure": {
+            "type": "line_chart",
+            "x_axis": {
+              "label": "时间",
+              "unit": "min"
+            },
+            "y_axis": {
+              "label": "温度",
+              "unit": "℃"
+            },
+            "description": "温度由20℃上升至80℃后出现一段水平线，随后温度继续上升",
+            "alt": "温度由20℃上升至80℃后出现一段水平线，随后温度继续上升",
+            "spec": {
+              "x_axis": {
+                "label": "时间",
+                "unit": "min"
+              },
+              "y_axis": {
+                "label": "温度",
+                "unit": "℃"
+              },
+              "description": "温度由20℃上升至80℃后出现一段水平线，随后温度继续上升"
+            }
+          },
+          "resource_needs": [],
+          "source_kp_id": "875684a1-60ad-47b4-a32b-806d1a4940af",
+          "source_kp_name": "熔化/凝固温度-时间图像分析",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:46:45.737Z",
+          "source_key": "875684a1-60ad-47b4-a32b-806d1a4940af#q2",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 7,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 3,
+        "knowledge_point": "熔化/凝固温度-时间图像分析",
+        "question": "某小组用相同的加热装置分别加热质量相等的甲、乙两种固体，根据温度传感器记录的数据画出温度—时间图像：甲的温度升高到 80 ℃ 后保持不变，持续一段时间后又继续升高；乙的温度始终升高，只是升温先快后慢，没有出现温度保持不变的过程。下列判断正确的是",
+        "options": [
+          "甲是非晶体，乙是晶体",
+          "甲是晶体，乙是非晶体",
+          "甲、乙都是晶体，只是甲的熔点更高",
+          "乙升温变慢说明乙在这段时间内没有吸热"
+        ],
+        "answer": "甲是晶体，乙是非晶体",
+        "explanation": "晶体有固定的熔点，熔化过程中温度保持不变，图像上出现水平段，因此甲是晶体；非晶体没有固定熔点，熔化过程中温度持续升高，图像上没有水平段，因此乙是非晶体。乙升温变慢是因为它仍在吸热，只是温度升高得较慢，不能说乙没有吸热。",
+        "meta": {
+          "cognitive_level": "分析",
+          "steam_dimensions": [
+            "S",
+            "M"
+          ],
+          "steam_context": "用相同加热装置做对照实验，比较两种物质的温度—时间图像特征",
+          "misconception_target": "把升温变慢当成不吸热，忽略非晶体无水平段的特征",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "875684a1-60ad-47b4-a32b-806d1a4940af",
+          "source_kp_name": "熔化/凝固温度-时间图像分析",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:46:45.737Z",
+          "source_key": "875684a1-60ad-47b4-a32b-806d1a4940af#q3",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 8,
+        "type": "choice",
+        "score": 6,
+        "difficulty": 4,
+        "knowledge_point": "熔化/凝固温度-时间图像分析",
+        "question": "把某种晶体完全熔化后让它自然冷却凝固，用温度传感器记录温度随时间的变化：液态时温度从 30 ℃ 开始下降，第 4 min 降到 0 ℃，此后 4 min 内温度保持 0 ℃ 不变，第 8 min 后温度又继续下降。下列判断正确的是",
+        "options": [
+          "该物质的凝固点是 0 ℃，第 4～8 min 内物质处于固液共存态，并不断向外放热",
+          "第 4～8 min 内温度保持不变，说明物质在这段时间内没有放热",
+          "该物质是非晶体，因为冷却过程中它的温度最终会下降",
+          "第 8 min 后温度才开始下降，说明物质从第 8 min 起才开始放热"
+        ],
+        "answer": "该物质的凝固点是 0 ℃，第 4～8 min 内物质处于固液共存态，并不断向外放热",
+        "explanation": "晶体凝固时温度保持在凝固点不变，图像中 4～8 min 的水平段对应的温度 0 ℃ 就是凝固点；此时物质一边放热一边由液态变为固态，处于固液共存态。温度不变并不表示不放热，而是放出的热量用于完成凝固；第 8 min 前物质也一直在放热，只是温度未变。",
+        "meta": {
+          "cognitive_level": "分析",
+          "steam_dimensions": [
+            "S",
+            "M"
+          ],
+          "steam_context": "用温度传感器记录晶体自然冷却凝固的全过程，解读凝固图像的水平段",
+          "misconception_target": "认为温度不变就不放热、温度下降才开始放热",
+          "figure": {
+            "type": "line_chart",
+            "x_axis": {
+              "label": "时间",
+              "unit": "min"
+            },
+            "y_axis": {
+              "label": "温度",
+              "unit": "℃"
+            },
+            "description": "温度由30℃下降至0℃后，在0℃保持4min的水平线，随后温度继续下降",
+            "alt": "温度由30℃下降至0℃后，在0℃保持4min的水平线，随后温度继续下降",
+            "spec": {
+              "x_axis": {
+                "label": "时间",
+                "unit": "min"
+              },
+              "y_axis": {
+                "label": "温度",
+                "unit": "℃"
+              },
+              "description": "温度由30℃下降至0℃后，在0℃保持4min的水平线，随后温度继续下降"
+            }
+          },
+          "resource_needs": [],
+          "source_kp_id": "875684a1-60ad-47b4-a32b-806d1a4940af",
+          "source_kp_name": "熔化/凝固温度-时间图像分析",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:46:45.737Z",
+          "source_key": "875684a1-60ad-47b4-a32b-806d1a4940af#q4",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 9,
+        "type": "true_false",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "水沸腾实验的图像特征与物理解释",
+        "question": "在气压不变的情况下，水沸腾时继续加热，温度-时间图像会出现一段温度保持不变的水平段。",
+        "options": [],
+        "answer": "对",
+        "explanation": "水沸腾后继续吸热，但吸收的热量用于水汽化，温度保持在沸点不变，因此温度-时间图像上会出现水平段。这一现象说明沸腾过程中吸热但温度不变，不能误认为水停止吸热。",
+        "meta": {
+          "cognitive_level": "识记",
+          "steam_dimensions": [],
+          "steam_context": "学科内核心概念",
+          "misconception_target": "认为沸腾时温度会继续升高",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "8554355b-4f32-4d48-99c4-15aa7b3c2a42",
+          "source_kp_name": "水沸腾实验的图像特征与物理解释",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:48:21.914Z",
+          "source_key": "8554355b-4f32-4d48-99c4-15aa7b3c2a42#q1",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 10,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "水沸腾实验的图像特征与物理解释",
+        "question": "某学校实验小组用酒精灯给水加热，每隔1 min记录一次温度，数据如下表。根据数据判断，下列说法正确的是",
+        "options": [
+          "第0～3 min水温不断升高，水尚未沸腾",
+          "第4～6 min水不再吸收热量",
+          "水在第5 min时的温度高于第4 min时的温度",
+          "水开始沸腾时的温度为96℃"
+        ],
+        "answer": "第0～3 min水温不断升高，水尚未沸腾",
+        "explanation": "表中第0～3 min水温由90℃升高到96℃，尚未出现温度不变的水平段，说明水还未沸腾；第4～6 min温度保持98℃不变，说明水已沸腾，且沸腾时继续吸热但温度不变。水开始沸腾时的温度应为98℃，不是96℃。",
+        "meta": {
+          "cognitive_level": "理解",
+          "steam_dimensions": [
+            "S",
+            "M"
+          ],
+          "steam_context": "学校实验小组记录水温数据，并通过表格数据判断沸腾前后的温度变化特征。",
+          "misconception_target": "误认为平台段水不再吸热，或把96℃误读为沸点",
+          "figure": {
+            "type": "table",
+            "caption": "水沸腾实验温度记录表",
+            "columns": [
+              "时间/min",
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6"
+            ],
+            "rows": [
+              [
+                "温度/℃",
+                "90",
+                "92",
+                "94",
+                "96",
+                "98",
+                "98",
+                "98"
+              ]
+            ],
+            "alt": "水沸腾实验温度记录表",
+            "spec": {
+              "caption": "水沸腾实验温度记录表",
+              "columns": [
+                "时间/min",
+                "0",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+              ],
+              "rows": [
+                [
+                  "温度/℃",
+                  "90",
+                  "92",
+                  "94",
+                  "96",
+                  "98",
+                  "98",
+                  "98"
+                ]
+              ]
+            }
+          },
+          "resource_needs": [
+            "table"
+          ],
+          "source_kp_id": "8554355b-4f32-4d48-99c4-15aa7b3c2a42",
+          "source_kp_name": "水沸腾实验的图像特征与物理解释",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:48:21.914Z",
+          "source_key": "8554355b-4f32-4d48-99c4-15aa7b3c2a42#q2",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 11,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 3,
+        "knowledge_point": "水沸腾实验的图像特征与物理解释",
+        "question": "在“观察水的沸腾”实验中，水沸腾后仍用酒精灯持续加热，温度-时间图像上出现一段水平线。下列解释正确的是",
+        "options": [
+          "水不再吸收热量，所以温度不变",
+          "水继续吸热，吸收的热量用于水汽化，温度不变",
+          "水在沸腾时放出热量，温度保持不变",
+          "温度计示数不变是因为温度计坏了"
+        ],
+        "answer": "水继续吸热，吸收的热量用于水汽化，温度不变",
+        "explanation": "水沸腾时酒精灯仍在持续加热，水并没有停止吸热，而是把吸收的热量用于汽化，使水变成水蒸气，因此温度保持在沸点不变。水平段表示温度不变，不表示热量停止传递或水不再吸热。",
+        "meta": {
+          "cognitive_level": "分析",
+          "steam_dimensions": [
+            "S"
+          ],
+          "steam_context": "基于沸腾实验现象和温度-时间图像进行证据解释。",
+          "misconception_target": "认为图像中平台段表示热量停止传递或水不再吸热",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "8554355b-4f32-4d48-99c4-15aa7b3c2a42",
+          "source_kp_name": "水沸腾实验的图像特征与物理解释",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:48:21.914Z",
+          "source_key": "8554355b-4f32-4d48-99c4-15aa7b3c2a42#q3",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 12,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 4,
+        "knowledge_point": "水沸腾实验的图像特征与物理解释",
+        "question": "两个小组用相同的酒精灯和烧杯做“观察水的沸腾”实验，水量不同。他们绘制的温度-时间图像中，水温都从20℃升高到98℃后出现水平段；甲组用时8 min，乙组用时12 min。若忽略热量损失差异，下列判断正确的是",
+        "options": [
+          "甲组水量较少",
+          "乙组水量较少",
+          "甲组水的沸点较高",
+          "乙组水的沸点较高"
+        ],
+        "answer": "甲组水量较少",
+        "explanation": "使用相同酒精灯时，单位时间内供给的热量相近。水量越多，升高相同温度需要的热量越多，加热时间就越长。乙组从20℃升到98℃用时更长，说明乙组水量较多，甲组水量较少；两组都加热到98℃后出现水平段，说明沸点相同。",
+        "meta": {
+          "cognitive_level": "应用",
+          "steam_dimensions": [
+            "S",
+            "M"
+          ],
+          "steam_context": "比较两组水沸腾实验的图像和用时数据，推断水量与加热时间的关系。",
+          "misconception_target": "把加热时间长短误认为沸点高低，或忽略水量对升温时间的影响",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "8554355b-4f32-4d48-99c4-15aa7b3c2a42",
+          "source_kp_name": "水沸腾实验的图像特征与物理解释",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:48:21.914Z",
+          "source_key": "8554355b-4f32-4d48-99c4-15aa7b3c2a42#q4",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "汽化吸热与液化放热的能量特征",
+      "core_concept": "能概括汽化过程吸热、液化过程放热；能用该原理解释酒精擦手发凉、水蒸气烫伤更严重、夏天洒水降温等现象",
+      "key_formula": "",
+      "common_mistakes": [
+        "认为只有温度变化才伴随吸放热",
+        "误以为液化放热会使环境明显升温（忽略散热效率）",
+        "将'汽化吸热'等同于'物体变冷'，忽视系统边界（如酒精蒸发带走皮肤热量）"
+      ],
+      "tips": "对应章节：第三章 物态变化。先判断物理量、单位和条件，再作答。"
+    },
+    {
+      "point": "熔化/凝固温度-时间图像分析",
+      "core_concept": "能根据图像横纵轴识别熔化/凝固过程的时间与温度变量；能在图像中标出熔化开始点、结束点、平台段（固液共存）及各状态区间",
+      "key_formula": "",
+      "common_mistakes": [
+        "图像水平段表示停止加热",
+        "平台段长度代表物质质量大小",
+        "凝固图像只是熔化图像的简单倒置（忽略过冷等实际偏差）",
+        "图像中温度下降段一定在放热（未考虑环境热交换干扰）"
+      ],
+      "tips": "对应章节：第三章 物态变化。先判断物理量、单位和条件，再作答。"
+    },
+    {
+      "point": "水沸腾实验的图像特征与物理解释",
+      "core_concept": "能根据实验数据绘制水沸腾前后温度-时间图像；能从图像识别沸腾前升温、沸腾时温度不变的特征",
+      "key_formula": "",
+      "common_mistakes": [
+        "认为图像中平台段表示热量停止传递",
+        "误将气泡变大归因于水温继续升高",
+        "忽略酒精灯持续加热与温度不变的矛盾需用吸热相变解释"
+      ],
+      "tips": "对应章节：第三章 物态变化。先判断物理量、单位和条件，再作答。"
+    }
+  ],
+  "_meta": {
+    "source": "k12-knowledge-points",
+    "generated_from": "k12/generated/physics-g8",
+    "imported_at": "2026-11-05T13:21:55.520Z"
+  }
+}

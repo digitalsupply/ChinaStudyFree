@@ -1,0 +1,457 @@
+{
+  "textbook": "K12知识图谱 · 物理八年级下册",
+  "unit": "第七章 力",
+  "unit_number": 1,
+  "unit_test": {
+    "title": "第七章 力 · K12知识图谱练习",
+    "total_score": 60,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "力的三要素及作用效果",
+        "question": "下列关于力的三要素的说法中，正确的是（　）",
+        "options": [
+          "力的大小、方向、作用点",
+          "力的大小、方向、作用时间",
+          "力的大小、作用点、物体的质量",
+          "力的方向、作用点、物体运动的速度"
+        ],
+        "answer": "力的大小、方向、作用点",
+        "explanation": "力的三要素是力的大小、方向和作用点，它们共同影响力的作用效果。作用时间、质量、速度都不是力的要素，因此其余三个选项错误。这是本节最基本的识记内容。",
+        "meta": {
+          "cognitive_level": "记忆",
+          "steam_dimensions": [],
+          "steam_context": "学科内核心概念",
+          "misconception_target": "把作用时间、质量、速度等误当作力的要素",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "29a43a78-26df-4176-ad82-202cbc70983b",
+          "source_kp_name": "力的三要素及作用效果",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:48:45.257Z",
+          "source_key": "29a43a78-26df-4176-ad82-202cbc70983b#q1",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 2,
+        "type": "true_false",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "力的三要素及作用效果",
+        "question": "物体运动状态发生改变，只可能是速度大小发生变化，与速度方向是否改变无关。",
+        "options": [],
+        "answer": "错",
+        "explanation": "运动状态的改变包括速度大小的改变和速度方向的改变两种情况。物体沿弧线匀速转弯时，速度大小不变但方向不断改变，运动状态仍然发生了改变，因此原说法错误。",
+        "meta": {
+          "cognitive_level": "理解",
+          "steam_dimensions": [],
+          "steam_context": "学科内核心概念",
+          "misconception_target": "认为运动状态改变只指速度大小变化，忽略方向变化",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "29a43a78-26df-4176-ad82-202cbc70983b",
+          "source_kp_name": "力的三要素及作用效果",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:48:45.257Z",
+          "source_key": "29a43a78-26df-4176-ad82-202cbc70983b#q2",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 3,
+        "knowledge_point": "力的三要素及作用效果",
+        "question": "教室里有一扇门，小明用同样大小的力、沿相同的方向推门：第一次推在离门轴较远的门把手上，门很容易被推开；第二次推在靠近门轴的位置，门几乎不动。这一现象主要说明（　）",
+        "options": [
+          "力的作用效果与力的作用点有关",
+          "力的作用效果与力的大小有关",
+          "力的作用效果与力的方向有关",
+          "力的作用效果只与门的质量有关"
+        ],
+        "answer": "力的作用效果与力的作用点有关",
+        "explanation": "两次实验中力的大小和方向都相同，唯一改变的是力的作用点位置。门被推开的效果差别很大，说明作用点不同，力的作用效果不同，这正是力的三要素中作用点的影响。由于大小和方向已控制相同，不能选与大小或方向有关的选项。",
+        "meta": {
+          "cognitive_level": "理解",
+          "steam_dimensions": [
+            "S"
+          ],
+          "steam_context": "以教室推门这一真实现象为情境，用“同大小、同方向、不同作用点”的对比观察作为证据归纳结论",
+          "misconception_target": "忽略作用点，误以为力的效果只由大小或方向决定",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "29a43a78-26df-4176-ad82-202cbc70983b",
+          "source_kp_name": "力的三要素及作用效果",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:48:45.257Z",
+          "source_key": "29a43a78-26df-4176-ad82-202cbc70983b#q3",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 4,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 4,
+        "knowledge_point": "力的三要素及作用效果",
+        "question": "小明做了四个小实验：①用力压弹簧，弹簧变短；②用力捏橡皮泥，橡皮泥变扁；③用磁铁靠近静止在水平桌面上的小车，小车由静止开始运动；④用手挡住正在运动的小车，小车停下来。下列对这四个实验作用效果的分类，正确的是（　）",
+        "options": [
+          "①②属于使物体发生形变，③④属于改变物体的运动状态",
+          "①③属于使物体发生形变，②④属于改变物体的运动状态",
+          "①②③属于使物体发生形变，④属于改变物体的运动状态",
+          "①属于使物体发生形变，②③④属于改变物体的运动状态"
+        ],
+        "answer": "①②属于使物体发生形变，③④属于改变物体的运动状态",
+        "explanation": "压弹簧变短、捏橡皮泥变扁，都是物体形状发生改变，属于力的作用效果之一是使物体发生形变（压缩也属于形变，不只看弯曲）。小车由静止变为运动、由运动变为静止，都是速度大小发生变化，属于改变物体的运动状态。因此①②一类、③④一类，其余分类都把两类效果混淆了。",
+        "meta": {
+          "cognitive_level": "分析",
+          "steam_dimensions": [
+            "S"
+          ],
+          "steam_context": "通过四个可操作的简单小实验现象进行观察与分类归纳",
+          "misconception_target": "认为形变只指明显可见的弯曲，以及认为力的作用效果只有让物体动起来一种",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "29a43a78-26df-4176-ad82-202cbc70983b",
+          "source_kp_name": "力的三要素及作用效果",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:48:45.257Z",
+          "source_key": "29a43a78-26df-4176-ad82-202cbc70983b#q4",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 5,
+        "type": "true_false",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "力的示意图规范画法",
+        "question": "在力的示意图中，线段的起点（箭尾）表示力的作用点，线段末端的箭头表示力的方向。",
+        "options": [],
+        "answer": "对",
+        "explanation": "力的示意图用一条带箭头的线段把力的三要素表示出来：线段的起点（箭尾）标在受力物体上，表示力的作用点；线段沿力的方向画出，末端画箭头，箭头指向表示力的方向；线段的长短按比例表示力的大小。因此这句话是正确的。",
+        "meta": {
+          "cognitive_level": "记忆",
+          "steam_dimensions": [],
+          "steam_context": "学科内核心概念",
+          "misconception_target": "箭头画在中间也可表示方向",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "1c39316a-0d0e-49b1-aaac-f7e91390eb1b",
+          "source_kp_name": "力的示意图规范画法",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:49:09.506Z",
+          "source_key": "1c39316a-0d0e-49b1-aaac-f7e91390eb1b#q1",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 6,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "力的示意图规范画法",
+        "question": "用一条带箭头的线段表示力时，下列做法正确的是（　　）",
+        "options": [
+          "线段的长短可以随意画，只要能看出方向就行",
+          "箭头应画在线段的末端，箭头所指的方向表示力的方向",
+          "力的作用点一定画在物体的几何中心上",
+          "力的示意图中只要写出力的符号即可，不必标注数值"
+        ],
+        "answer": "箭头应画在线段的末端，箭头所指的方向表示力的方向",
+        "explanation": "规范画法要求：作用点画在受力物体上，线段沿力的方向画出，箭头画在线段末端并用箭头指向表示力的方向；线段长短要按同一标度反映力的大小；同时要标注力的符号和数值，如 $F=20\\ \\text{N}$。所以把箭头画在中间、随意定线段长度、只写符号不写数值都是错误的。作用点应画在力的实际作用位置，不一定在几何中心。",
+        "meta": {
+          "cognitive_level": "理解",
+          "steam_dimensions": [],
+          "steam_context": "学科内核心概念",
+          "misconception_target": "箭头画在中间也可表示方向；作用点必须画在物体几何中心；线段长度无需反映相对大小",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "1c39316a-0d0e-49b1-aaac-f7e91390eb1b",
+          "source_kp_name": "力的示意图规范画法",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:49:09.506Z",
+          "source_key": "1c39316a-0d0e-49b1-aaac-f7e91390eb1b#q2",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 7,
+        "type": "calculation",
+        "score": 5,
+        "difficulty": 3,
+        "knowledge_point": "力的示意图规范画法",
+        "question": "物理课上，同学们用同一标度画力的示意图：规定 1 cm 长的线段表示 2 N 的力。小华已经把 6 N 的拉力画成了 3 cm 长的线段。如果要用这个标度表示 15 N 的力，线段应画多长？请将结果填在横线上（单位：cm）：___ cm",
+        "options": [],
+        "answer": "7.5",
+        "explanation": "同一幅图中标度必须统一：由 1 cm 表示 2 N 可得每牛顿对应 0.5 cm。15 N 的力对应线段长度为 $15\\ \\text{N} \\div 2\\ \\text{N/cm}=7.5\\ \\text{cm}$。若把 15 N 画成 15 cm，就丢掉了标度，导致同一图中线段长短无法比较力的大小。",
+        "meta": {
+          "cognitive_level": "应用",
+          "steam_dimensions": [
+            "M"
+          ],
+          "steam_context": "用统一标度把力的大小按比例转换为线段长度，属于数学比例与单位换算在物理作图中的应用",
+          "misconception_target": "线段长度无需反映相对大小",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "1c39316a-0d0e-49b1-aaac-f7e91390eb1b",
+          "source_kp_name": "力的示意图规范画法",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:49:09.506Z",
+          "source_key": "1c39316a-0d0e-49b1-aaac-f7e91390eb1b#q3",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 8,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 4,
+        "knowledge_point": "力的示意图规范画法",
+        "question": "校园劳动实践时，小明用 20 N 的力沿着水平方向向右推放在水平地面上的木箱，作用点位于木箱左侧表面。要求按“1 cm 长的线段表示 5 N 的力”这一标度画出推力的示意图。下列画法描述正确的是（　　）",
+        "options": [
+          "作用点画在木箱左侧表面，沿水平方向向右画 4 cm 长的线段，线段末端画箭头，并标注 $F=20\\ \\text{N}$",
+          "作用点画在木箱左侧表面，沿水平方向向右画 20 cm 长的线段，线段末端画箭头，并标注 $F=20\\ \\text{N}$",
+          "作用点画在木箱左侧表面，沿水平方向向左画 4 cm 长的线段，线段末端画箭头，并标注 $F=20\\ \\text{N}$",
+          "作用点画在木箱左侧表面，沿水平方向向右画 4 cm 长的线段，在线段中点画箭头，并标注 $F=20\\ \\text{N}$"
+        ],
+        "answer": "作用点画在木箱左侧表面，沿水平方向向右画 4 cm 长的线段，线段末端画箭头，并标注 $F=20\\ \\text{N}$",
+        "explanation": "推力水平向右，因此线段必须沿水平向右画出，箭头画在线段末端表示方向；由标度 1 cm 表示 5 N 可得线段长度 $20\\ \\text{N} \\div 5\\ \\text{N/cm}=4\\ \\text{cm}$；作用点画在木箱左侧表面（力的实际作用位置），并在箭头旁标注 $F=20\\ \\text{N}$。第二项没有按标度取长度，第三项方向画反，第四项把箭头画在中点，均不符合规范。",
+        "meta": {
+          "cognitive_level": "应用",
+          "steam_dimensions": [
+            "M",
+            "A"
+          ],
+          "steam_context": "校园劳动推木箱的真实情境中，需要用标度做比例换算，并用规范、可读的示意图把力的三要素准确表达给他人",
+          "misconception_target": "箭头画在中间也可表示方向；线段长度无需反映相对大小",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "1c39316a-0d0e-49b1-aaac-f7e91390eb1b",
+          "source_kp_name": "力的示意图规范画法",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:49:09.506Z",
+          "source_key": "1c39316a-0d0e-49b1-aaac-f7e91390eb1b#q4",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 9,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "重力大小计算（G = mg）",
+        "question": "某同学的质量为 50 kg，取 g = 10 N/kg，他受到的重力是多少？",
+        "options": [
+          "500 N",
+          "50 N",
+          "5 N",
+          "500 kg"
+        ],
+        "answer": "500 N",
+        "explanation": "根据 $G=mg$，质量 50 kg、g=10 N/kg，代入得 G=50×10=500 N。重力的单位是 N，不能写成 kg；g 是重力与质量的比值，不是重力本身。",
+        "meta": {
+          "cognitive_level": "应用",
+          "steam_dimensions": [],
+          "steam_context": "学科内核心概念：重力与质量关系公式及单位辨析。",
+          "misconception_target": "把重力单位误写为 kg，或把 g 当作重力。",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "e79a1e01-614c-455a-9e68-0d9446940ab1",
+          "source_kp_name": "重力大小计算（G = mg）",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:45:36.058Z",
+          "source_key": "e79a1e01-614c-455a-9e68-0d9446940ab1#q1",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 10,
+        "type": "calculation",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "重力大小计算（G = mg）",
+        "question": "校园义卖活动中，一箱书的质量为 12 kg。取 g = 10 N/kg，这箱书受到的重力是 ___ N。",
+        "options": [],
+        "answer": "120",
+        "explanation": "根据 $G=mg$，质量 m=12 kg，g=10 N/kg，所以 G=12×10=120 N。计算时要注意质量用 kg、重力用 N，不能把质量数值直接当作重力。",
+        "meta": {
+          "cognitive_level": "应用",
+          "steam_dimensions": [
+            "M"
+          ],
+          "steam_context": "校园义卖搬运书箱的真实情境，使用质量数据与公式计算重力。",
+          "misconception_target": "漏乘 g，或把质量直接当作重力。",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "e79a1e01-614c-455a-9e68-0d9446940ab1",
+          "source_kp_name": "重力大小计算（G = mg）",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:45:36.058Z",
+          "source_key": "e79a1e01-614c-455a-9e68-0d9446940ab1#q2",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 11,
+        "type": "calculation",
+        "score": 5,
+        "difficulty": 3,
+        "knowledge_point": "重力大小计算（G = mg）",
+        "question": "小明的书包质量为 1.2 kg，他又装入质量为 800 g 的书本。取 g = 10 N/kg，书包和书本受到的总重力是 ___ N。",
+        "options": [],
+        "answer": "20",
+        "explanation": "先把 800 g 换算成 0.8 kg，总质量 m=1.2 kg+0.8 kg=2 kg。由 $G=mg$ 得 G=2×10=20 N。若忽略单位换算，容易把 800 g 直接代入而得到错误结果。",
+        "meta": {
+          "cognitive_level": "应用",
+          "steam_dimensions": [
+            "M"
+          ],
+          "steam_context": "家庭学习情境中的书包与书本质量换算和重力计算。",
+          "misconception_target": "未统一质量单位，把 800 g 直接按 800 kg 代入。",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "e79a1e01-614c-455a-9e68-0d9446940ab1",
+          "source_kp_name": "重力大小计算（G = mg）",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:45:36.058Z",
+          "source_key": "e79a1e01-614c-455a-9e68-0d9446940ab1#q3",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 12,
+        "type": "calculation",
+        "score": 5,
+        "difficulty": 4,
+        "knowledge_point": "重力大小计算（G = mg）",
+        "question": "在同一地点，甲、乙两物体的质量之比为 3∶2。用弹簧测力计测得甲受到的重力为 60 N，取 g = 10 N/kg，则乙受到的重力为 ___ N。",
+        "options": [],
+        "answer": "40",
+        "explanation": "同一地点 g 相同，由 $G=mg$ 可知重力与质量成正比。甲、乙质量之比为 3∶2，则重力之比也为 3∶2。甲重 60 N，所以乙重为 60 N×(2/3)=40 N。",
+        "meta": {
+          "cognitive_level": "分析",
+          "steam_dimensions": [
+            "M"
+          ],
+          "steam_context": "同一地点比较不同物体重力与质量的比例关系，使用比值推理。",
+          "misconception_target": "把重力之比与质量之比说反，或计算时单位混用。",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "e79a1e01-614c-455a-9e68-0d9446940ab1",
+          "source_kp_name": "重力大小计算（G = mg）",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:45:36.058Z",
+          "source_key": "e79a1e01-614c-455a-9e68-0d9446940ab1#q4",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "力的三要素及作用效果",
+      "core_concept": "能列举力的三要素：大小、方向、作用点；能通过实验现象归纳力的两类作用效果：改变运动状态、使物体发生形变",
+      "key_formula": "",
+      "common_mistakes": [
+        "力的作用效果只有‘让物体动起来’一种",
+        "形变仅指明显可见的弯曲（忽略压缩、拉伸、扭转）",
+        "运动状态改变仅指速度大小变化（忽略方向变化）"
+      ],
+      "tips": "对应章节：第七章 力。先判断物理量、单位和条件，再作答。"
+    },
+    {
+      "point": "力的示意图规范画法",
+      "core_concept": "能在受力物体上正确标出力的作用点；能沿力的方向画带箭头的线段表示力的方向",
+      "key_formula": "",
+      "common_mistakes": [
+        "箭头画在中间也可表示方向",
+        "作用点必须画在物体几何中心",
+        "线段长度无需反映相对大小"
+      ],
+      "tips": "对应章节：第七章 力。先判断物理量、单位和条件，再作答。"
+    },
+    {
+      "point": "重力大小计算（G = mg）",
+      "core_concept": "会用G = mg进行正向计算（已知m求G）；会用m = G/g进行逆向计算（已知G求m）",
+      "key_formula": "",
+      "common_mistakes": [
+        "g是重力，单位是N",
+        "g随物体质量变化",
+        "公式中G和m可任意代入非标准单位"
+      ],
+      "tips": "对应章节：第七章 力。先判断物理量、单位和条件，再作答。"
+    }
+  ],
+  "_meta": {
+    "source": "k12-knowledge-points",
+    "generated_from": "k12/generated/physics-g8",
+    "imported_at": "2026-11-05T13:21:55.522Z"
+  }
+}

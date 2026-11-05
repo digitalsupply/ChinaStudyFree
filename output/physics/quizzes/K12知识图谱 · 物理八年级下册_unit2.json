@@ -1,0 +1,454 @@
+{
+  "textbook": "K12知识图谱 · 物理八年级下册",
+  "unit": "第八章 运动和力",
+  "unit_number": 2,
+  "unit_test": {
+    "title": "第八章 运动和力 · K12知识图谱练习",
+    "total_score": 60,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "true_false",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "二力平衡的四个条件",
+        "question": "判断：二力平衡的条件是：两个力作用在同一物体上、大小相等、方向相反、作用在同一直线上。",
+        "options": [],
+        "answer": "对",
+        "explanation": "这就是二力平衡的四个条件，通常概括为“同体、等大、反向、共线”。四个条件必须同时满足，缺少其中任何一个，两个力都不是平衡力，物体在非平衡力作用下运动状态会发生改变。",
+        "meta": {
+          "cognitive_level": "识记",
+          "steam_dimensions": [],
+          "steam_context": "学科内核心概念",
+          "misconception_target": "无",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "5031d1e7-efe9-48c5-b2da-b6660cab0e4c",
+          "source_kp_name": "二力平衡的四个条件",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:46:37.420Z",
+          "source_key": "5031d1e7-efe9-48c5-b2da-b6660cab0e4c#q1",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "二力平衡的四个条件",
+        "question": "一本书静止放在水平桌面上。下列各对力中，属于一对平衡力的是",
+        "options": [
+          "书受到的重力和书对桌面的压力",
+          "书受到的重力和桌面对书的支持力",
+          "书对桌面的压力和桌面对书的支持力",
+          "书受到的重力和桌面受到的重力"
+        ],
+        "answer": "书受到的重力和桌面对书的支持力",
+        "explanation": "平衡力必须同时满足同体、等大、反向、共线。书受到的重力和桌面对书的支持力都作用在书上，大小相等（都等于书的重力），方向相反，且都在竖直方向上，因此是一对平衡力。第一对力分别作用在书和桌面上，且方向都向下；第三对力是书与桌面间的相互作用力，分别作用在两个物体上；第四对力作用在不同物体上且大小不同，都不满足“同体”等条件。",
+        "meta": {
+          "cognitive_level": "理解",
+          "steam_dimensions": [],
+          "steam_context": "以书本静置于桌面这一可观察的生活情境，考查对“同体”等条件的辨析",
+          "misconception_target": "忽略“同体”条件，把作用在两个物体上的力（尤其相互作用力）当成平衡力",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "5031d1e7-efe9-48c5-b2da-b6660cab0e4c",
+          "source_kp_name": "二力平衡的四个条件",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:46:37.420Z",
+          "source_key": "5031d1e7-efe9-48c5-b2da-b6660cab0e4c#q2",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 3,
+        "type": "fill_blank_text",
+        "score": 5,
+        "difficulty": 3,
+        "knowledge_point": "二力平衡的四个条件",
+        "question": "某小组用教材图 8.2-3 的装置探究二力平衡的条件：把小车放在光滑的水平桌面上，两侧细线绕过定滑轮后各挂质量相同的钩码，小车静止。接着他们把小车在水平面内扭转一个角度，使两侧细线不再在同一直线上，松手后小车会转动，直到两侧细线重新回到同一直线上才再次静止。这一现象说明：要使两个力彼此平衡，这两个力还必须______。",
+        "options": [],
+        "answer": "作用在同一直线上",
+        "explanation": "扭转小车后，两侧拉力的大小仍然相等、方向仍然相反、也都作用在小车上，只是不再沿同一直线，小车就不能保持静止，说明“共线”是二力平衡不可缺少的条件。当细线重新在同一直线上时，小车又恢复静止。注意“共线”不等于“平行”，两个力必须沿同一条直线，而不是任意两条平行线。",
+        "meta": {
+          "cognitive_level": "分析",
+          "steam_dimensions": [
+            "S"
+          ],
+          "steam_context": "依据小车扭转后运动状态改变的真实实验现象，反推二力平衡缺失“共线”条件时的结果",
+          "misconception_target": "把“共线”等同于“平行”，忽视两个力必须沿同一直线",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "5031d1e7-efe9-48c5-b2da-b6660cab0e4c",
+          "source_kp_name": "二力平衡的四个条件",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:46:37.420Z",
+          "source_key": "5031d1e7-efe9-48c5-b2da-b6660cab0e4c#q3",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 4,
+        "type": "calculation",
+        "score": 5,
+        "difficulty": 4,
+        "knowledge_point": "二力平衡的四个条件",
+        "question": "建筑工地上，起重机用钢绳吊着质量为 300 kg 的货物，使货物以 0.2 m/s 的速度匀速竖直上升。取 $g=10\\ \\text{N/kg}$，不计空气阻力，钢绳对货物的拉力为 ___ N。",
+        "options": [],
+        "answer": "3000",
+        "explanation": "货物做匀速直线运动，处于平衡状态。货物只受竖直向下的重力 $G$ 和钢绳竖直向上的拉力 $F$ 这两个力，它们作用在同一物体上、方向相反且在同一直线上，满足二力平衡条件，因此大小相等。$G=mg=300\\ \\text{kg}\\times 10\\ \\text{N/kg}=3000\\ \\text{N}$，所以 $F=G=3000\\ \\text{N}$。上升速度 0.2 m/s 只是运动快慢的信息，不影响拉力大小，不能把速度代入计算。",
+        "meta": {
+          "cognitive_level": "应用",
+          "steam_dimensions": [
+            "M"
+          ],
+          "steam_context": "以工地起重机匀速吊运货物为真实工程情境，用二力平衡条件和重力公式计算拉力数值",
+          "misconception_target": "误认为速度越大拉力越大，或忘记先由匀速直线运动判断出平衡状态",
+          "figure": null,
+          "resource_needs": [
+            "formula",
+            "calculator"
+          ],
+          "source_kp_id": "5031d1e7-efe9-48c5-b2da-b6660cab0e4c",
+          "source_kp_name": "二力平衡的四个条件",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:46:37.420Z",
+          "source_key": "5031d1e7-efe9-48c5-b2da-b6660cab0e4c#q4",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 5,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "平衡力与相互作用力的辨析",
+        "question": "一本书静止在水平桌面上。下列各对力中，属于一对平衡力的是（　）",
+        "options": [
+          "书受到的重力与桌面对书的支持力",
+          "书对桌面的压力与桌面对书的支持力",
+          "书受到的重力与书对桌面的压力",
+          "桌面受到的重力与桌面对书的支持力"
+        ],
+        "answer": "书受到的重力与桌面对书的支持力",
+        "explanation": "书处于静止状态，它受到的重力和桌面对它的支持力都作用在书这一同一物体上，大小相等、方向相反且在同一直线上，所以是一对平衡力。书对桌面的压力与桌面对书的支持力分别作用在桌面和书上，是相互作用力，不是平衡力。",
+        "meta": {
+          "cognitive_level": "理解",
+          "steam_dimensions": [
+            "S"
+          ],
+          "steam_context": "以教室内静止书本的真实观察情境进行受力分析",
+          "misconception_target": "把作用在两个不同物体上的相互作用力误认为平衡力",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "a3746154-e265-496c-9f91-28a60217d0de",
+          "source_kp_name": "平衡力与相互作用力的辨析",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:50:04.969Z",
+          "source_key": "a3746154-e265-496c-9f91-28a60217d0de#q1",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 6,
+        "type": "true_false",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "平衡力与相互作用力的辨析",
+        "question": "两个力只要大小相等、方向相反，就一定是一对平衡力。",
+        "options": [],
+        "answer": "错",
+        "explanation": "平衡力还必须同时作用在同一个物体上，并且作用在同一直线上。大小相等、方向相反的两个力也可能分别作用在两个物体上，例如书对桌面的压力与桌面对书的支持力，它们是相互作用力，而不是平衡力。",
+        "meta": {
+          "cognitive_level": "理解",
+          "steam_dimensions": [],
+          "steam_context": "学科内核心概念",
+          "misconception_target": "认为大小相等、方向相反的两个力一定平衡，忽视“同体”条件",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "a3746154-e265-496c-9f91-28a60217d0de",
+          "source_kp_name": "平衡力与相互作用力的辨析",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:50:04.969Z",
+          "source_key": "a3746154-e265-496c-9f91-28a60217d0de#q2",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 7,
+        "type": "fill_blank_text",
+        "score": 5,
+        "difficulty": 3,
+        "knowledge_point": "平衡力与相互作用力的辨析",
+        "question": "用弹簧测力计竖直悬挂一个重物并保持静止。弹簧测力计对重物的拉力与重物对弹簧测力计的拉力是一对___。",
+        "options": [],
+        "answer": "相互作用力",
+        "explanation": "弹簧测力计对重物的拉力和重物对弹簧测力计的拉力分别作用在重物和弹簧测力计两个不同物体上，二者同时产生、同时消失，性质相同，属于相互作用力。重物受到的重力与弹簧测力计对重物的拉力才是一对平衡力。",
+        "meta": {
+          "cognitive_level": "分析",
+          "steam_dimensions": [],
+          "steam_context": "弹簧测力计测重力的实验情境",
+          "misconception_target": "把弹簧测力计对物体的拉力与物体对弹簧测力计的拉力误当作平衡力",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "a3746154-e265-496c-9f91-28a60217d0de",
+          "source_kp_name": "平衡力与相互作用力的辨析",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:50:04.969Z",
+          "source_key": "a3746154-e265-496c-9f91-28a60217d0de#q3",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 8,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 4,
+        "knowledge_point": "平衡力与相互作用力的辨析",
+        "question": "跳伞运动员打开降落伞后，在一段时间内沿竖直方向匀速下落。若把运动员和伞看作一个整体，忽略其他影响，下列说法正确的是（　）",
+        "options": [
+          "运动员和伞所受的总重力与空气阻力是一对平衡力",
+          "运动员对伞的拉力与伞对运动员的拉力是一对平衡力",
+          "运动员和伞所受的总重力与空气阻力是一对相互作用力",
+          "空气阻力与伞对空气的推力是一对平衡力"
+        ],
+        "answer": "运动员和伞所受的总重力与空气阻力是一对平衡力",
+        "explanation": "运动员和伞整体匀速下落，处于平衡状态，所受合力为零。把整体作为研究对象时，总重力与空气阻力都作用在这个整体上，大小相等、方向相反且在同一直线上，因此是一对平衡力。运动员对伞的拉力与伞对运动员的拉力分别作用在两个物体上，是相互作用力；总重力与空气阻力也不是相互作用力。",
+        "meta": {
+          "cognitive_level": "应用",
+          "steam_dimensions": [
+            "S"
+          ],
+          "steam_context": "跳伞匀速下落的真实运动情境，用于分析整体受力",
+          "misconception_target": "混淆同一研究对象受到的平衡力与两个物体间的相互作用力",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "a3746154-e265-496c-9f91-28a60217d0de",
+          "source_kp_name": "平衡力与相互作用力的辨析",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:50:04.969Z",
+          "source_key": "a3746154-e265-496c-9f91-28a60217d0de#q4",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 9,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "运用二力平衡求解未知力",
+        "question": "一本书静止在水平桌面上，书受到的重力为 8 N。桌面对书的支持力大小是（ ）",
+        "options": [
+          "8 N",
+          "0 N",
+          "4 N",
+          "大于 8 N"
+        ],
+        "answer": "8 N",
+        "explanation": "书在水平桌面上静止，处于平衡状态。竖直方向只受重力和桌面支持力，二者是一对平衡力，所以支持力与重力大小相等，为 8 N，方向竖直向上。易错点是误认为静止物体不受支持力或支持力一定大于重力。",
+        "meta": {
+          "cognitive_level": "理解",
+          "steam_dimensions": [],
+          "steam_context": "学科内核心概念",
+          "misconception_target": "误认为静止物体受到的支持力为零或大于重力",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "48d2f3f5-e3f4-473d-8db3-61299b686230",
+          "source_kp_name": "运用二力平衡求解未知力",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:52:44.457Z",
+          "source_key": "48d2f3f5-e3f4-473d-8db3-61299b686230#q1",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 10,
+        "type": "fill_blank",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "运用二力平衡求解未知力",
+        "question": "小华用弹簧测力计沿水平方向拉着一个木块，在水平桌面上做匀速直线运动，测力计的示数为 3.6 N。木块运动过程中受到的滑动摩擦力大小为 ___ N。",
+        "options": [],
+        "answer": "3.6",
+        "explanation": "木块在水平桌面上做匀速直线运动，处于平衡状态。水平方向受到的拉力和滑动摩擦力是一对平衡力，因此滑动摩擦力大小等于拉力大小，即 3.6 N，方向与拉力方向相反。不能因为木块在运动就认为摩擦力一定小于或大于拉力。",
+        "meta": {
+          "cognitive_level": "应用",
+          "steam_dimensions": [],
+          "steam_context": "学科内核心概念",
+          "misconception_target": "把匀速运动误认为需要剩余力，错判摩擦力大于或小于拉力",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "48d2f3f5-e3f4-473d-8db3-61299b686230",
+          "source_kp_name": "运用二力平衡求解未知力",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:52:44.457Z",
+          "source_key": "48d2f3f5-e3f4-473d-8db3-61299b686230#q2",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 11,
+        "type": "calculation",
+        "score": 5,
+        "difficulty": 3,
+        "knowledge_point": "运用二力平衡求解未知力",
+        "question": "电梯以 1 m/s 的速度匀速竖直上升，电梯内乘客的质量为 60 kg，$g$ 取 10 N/kg。电梯地板对乘客的支持力为 ___ N。",
+        "options": [],
+        "answer": "600",
+        "explanation": "乘客随电梯匀速竖直上升，处于平衡状态。竖直方向受到的重力和电梯地板支持力是一对平衡力，所以支持力大小等于重力，$F=G=mg=60\\text{ kg}\\times 10\\text{ N/kg}=600\\text{ N}$。易错点是认为上升需要支持力大于重力。",
+        "meta": {
+          "cognitive_level": "应用",
+          "steam_dimensions": [
+            "M"
+          ],
+          "steam_context": "电梯匀速上升的真实生活情境，用重力公式和二力平衡求支持力",
+          "misconception_target": "认为匀速上升时支持力应大于重力",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "48d2f3f5-e3f4-473d-8db3-61299b686230",
+          "source_kp_name": "运用二力平衡求解未知力",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:52:44.457Z",
+          "source_key": "48d2f3f5-e3f4-473d-8db3-61299b686230#q3",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 12,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 4,
+        "knowledge_point": "运用二力平衡求解未知力",
+        "question": "在水平地面上，小明用 15 N 的水平推力向右推一辆图书馆送书车，送书车沿水平地面做匀速直线运动。若不计空气阻力，则送书车受到的摩擦力（ ）",
+        "options": [
+          "大小为 15 N，方向水平向左",
+          "大小为 15 N，方向水平向右",
+          "大小大于 15 N，方向水平向左",
+          "大小为 0 N"
+        ],
+        "answer": "大小为 15 N，方向水平向左",
+        "explanation": "送书车做匀速直线运动，处于平衡状态。水平方向只受推力和摩擦力，二者是一对平衡力，所以摩擦力大小等于推力，为 15 N；方向与推力方向相反，即水平向左。易错点是把摩擦力方向画成与运动方向相同，或认为匀速运动时推力必须大于摩擦力。",
+        "meta": {
+          "cognitive_level": "分析",
+          "steam_dimensions": [
+            "S"
+          ],
+          "steam_context": "校园图书馆送书车的真实运动情境，以匀速直线运动作为平衡状态的证据",
+          "misconception_target": "忽略摩擦力方向应与相对运动方向相反，或认为匀速时推力大于摩擦力",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "48d2f3f5-e3f4-473d-8db3-61299b686230",
+          "source_kp_name": "运用二力平衡求解未知力",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:52:44.457Z",
+          "source_key": "48d2f3f5-e3f4-473d-8db3-61299b686230#q4",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "二力平衡的四个条件",
+      "core_concept": "能复述二力平衡的四个条件：作用在同一物体上、大小相等、方向相反、作用在同一直线上；能在实验现象（图8.2-3及表格）中对应验证每个条件缺失时小车运动状态改变",
+      "key_formula": "",
+      "common_mistakes": [
+        "忽略‘同体’条件，误将作用于不同物体的力当作平衡力",
+        "认为只要合力为零就满足二力平衡（未限定仅两个力）",
+        "将‘共线’等同于‘平行’，忽视必须在同一直线上"
+      ],
+      "tips": "对应章节：第八章 运动和力。先判断物理量、单位和条件，再作答。"
+    },
+    {
+      "point": "平衡力与相互作用力的辨析",
+      "core_concept": "能指出平衡力与相互作用力在作用对象（同一物体vs两个物体）上的根本区别；能区分二者在力的性质（可不同vs必相同）和依存关系（可独立存在vs同时产生同时消失）上的差异",
+      "key_formula": "",
+      "common_mistakes": [
+        "认为平衡力一定是同种性质的力（如都是弹力）",
+        "误将绳对灯的拉力与灯对绳的拉力当作一对平衡力",
+        "认为相互作用力可以平衡，因二者等大反向"
+      ],
+      "tips": "对应章节：第八章 运动和力。先判断物理量、单位和条件，再作答。"
+    },
+    {
+      "point": "运用二力平衡求解未知力",
+      "core_concept": "能在物体静止或匀速直线运动的情境中，根据已知力反推另一平衡力的大小和方向；能规范画出受力示意图（作用点在重心、箭头表方向、标力符号）",
+      "key_formula": "",
+      "common_mistakes": [
+        "在非平衡情境（如加速推车）错误套用二力平衡求力",
+        "忽略力的方向性，仅计算大小",
+        "将阻力方向画成与运动方向相同"
+      ],
+      "tips": "对应章节：第八章 运动和力。先判断物理量、单位和条件，再作答。"
+    }
+  ],
+  "_meta": {
+    "source": "k12-knowledge-points",
+    "generated_from": "k12/generated/physics-g8",
+    "imported_at": "2026-11-05T13:21:55.522Z"
+  }
+}

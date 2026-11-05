@@ -541,6 +541,7 @@ function ReportsSection() {
               </div>
               <div className="text-[10px] text-ink-softer mt-1">
                 课程 {r.lessonId} · 题目 #{r.questionId}
+                {r.sourceKey ? ` · 来源 ${r.sourceKey}` : ""}
                 {r.answerGiven ? ` · 当时作答：${r.answerGiven.slice(0, 24)}` : ""}
               </div>
             </li>

@@ -277,11 +277,35 @@ node scripts/k12/validate-questions.mjs
 
 ## 7. 接入正式题库的路径
 
+八年级物理批次已经自动接受并导入：
+
+```bash
+npm run k12:import-output -- --write
+npm run build:data
+npm run validate:quizzes
+npm run build:web
+```
+
+导入会生成独立的 `K12知识图谱` 版本（`physics-k12-g8up` / `physics-k12-g8down`），
+不覆盖原教材。
+
+后台修正 / 删除：
+
+```bash
+# 编辑 k12/corrections/physics-g8.json
+npm run k12:apply-corrections            # dry-run
+npm run k12:apply-corrections -- --write
+npm run build:data
+npm run validate:quizzes
+```
+
+题目通过 `meta.source_key` 定位；答题反馈导出中的 `sourceKey` 与它一致。
+
 当前 staging 格式与 App `Question` 基本兼容，但还需要一步映射：
 
 ```text
 data/k12-generated/latest/questions.jsonl
-  → 人工/教师审核
+  → 自动接受 / 抽检
   → 按 source_kp_id 映射到 output/{subject}/outlines|quizzes
   → npm run build:data
   → npm run validate:quizzes

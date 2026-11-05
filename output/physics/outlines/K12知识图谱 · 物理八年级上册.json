@@ -1,0 +1,220 @@
+{
+  "textbook": "K12知识图谱 · 物理八年级上册",
+  "units": [
+    {
+      "unit_number": 1,
+      "title": "第一章 机械运动",
+      "knowledge_points": [
+        {
+          "name": "参照物的选取与判断",
+          "description": "能在具体情境中明确指出所选参照物",
+          "difficulty": 2,
+          "question_types": [
+            "判断",
+            "选择"
+          ]
+        },
+        {
+          "name": "测量误差与精确度",
+          "description": "能区分误差（不可避免）与错误（可避免）的本质差异",
+          "difficulty": 2,
+          "question_types": [
+            "判断",
+            "选择",
+            "填空"
+          ]
+        },
+        {
+          "name": "运动与静止的相对性",
+          "description": "理解‘运动与静止取决于参照物选择’这一核心结论",
+          "difficulty": 2,
+          "question_types": [
+            "判断",
+            "选择",
+            "文字填空"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 2,
+      "title": "第二章 声现象",
+      "knowledge_points": [
+        {
+          "name": "频率单位赫兹与人耳可听范围",
+          "description": "能准确说出频率单位名称、符号及定义（1Hz=1次/秒）",
+          "difficulty": 2,
+          "question_types": [
+            "判断",
+            "选择"
+          ]
+        },
+        {
+          "name": "声音传播需要介质（固液气均可，真空不传声）",
+          "description": "能描述玻璃罩抽气实验的现象与结论（空气减少→声音减弱→真空不传声）",
+          "difficulty": 2,
+          "question_types": [
+            "判断",
+            "选择",
+            "文字填空"
+          ]
+        },
+        {
+          "name": "声音传播需要介质（固液气可传声，真空不传声）",
+          "description": "能描述玻璃罩抽气实验的现象与结论",
+          "difficulty": 2,
+          "question_types": [
+            "判断",
+            "选择",
+            "文字填空"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 3,
+      "title": "第三章 物态变化",
+      "knowledge_points": [
+        {
+          "name": "汽化吸热与液化放热的能量特征",
+          "description": "能概括汽化过程吸热、液化过程放热",
+          "difficulty": 3,
+          "question_types": [
+            "选择",
+            "判断"
+          ]
+        },
+        {
+          "name": "熔化/凝固温度-时间图像分析",
+          "description": "能根据图像横纵轴识别熔化/凝固过程的时间与温度变量",
+          "difficulty": 3,
+          "question_types": [
+            "判断",
+            "填空",
+            "选择"
+          ]
+        },
+        {
+          "name": "水沸腾实验的图像特征与物理解释",
+          "description": "能根据实验数据绘制水沸腾前后温度-时间图像",
+          "difficulty": 3,
+          "question_types": [
+            "判断",
+            "选择"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 4,
+      "title": "第四章 光现象",
+      "knowledge_points": [
+        {
+          "name": "反射光路作图",
+          "description": "能规范画出法线（过入射点且垂直于界面）",
+          "difficulty": 2,
+          "question_types": [
+            "判断",
+            "选择",
+            "计算"
+          ]
+        },
+        {
+          "name": "光速数值与光年概念",
+          "description": "记住真空中的光速近似值c=3×10⁸ m/s",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "判断",
+            "计算"
+          ]
+        },
+        {
+          "name": "平面镜成像对称作图法",
+          "description": "能依据物点和镜面位置，用尺规作图法作出对应像点",
+          "difficulty": 2,
+          "question_types": [
+            "判断",
+            "选择"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 5,
+      "title": "第五章 透镜及其应用",
+      "knowledge_points": [
+        {
+          "name": "实像与虚像的判断依据",
+          "description": "能用'是否能在光屏上承接'判断实像或虚像",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "判断"
+          ]
+        },
+        {
+          "name": "凸透镜成像五种物距情形的规律归纳",
+          "description": "能准确复述u>2f时成倒立缩小实像",
+          "difficulty": 3,
+          "question_types": [
+            "选择",
+            "文字填空",
+            "判断"
+          ]
+        },
+        {
+          "name": "凸透镜会聚作用与凹透镜发散作用的实验现象归纳",
+          "description": "能描述图5.1-5中凸透镜使平行光会聚于一点的现象",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "判断",
+            "文字填空"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 6,
+      "title": "第六章 质量与密度",
+      "knowledge_points": [
+        {
+          "name": "密度的单位及换算（kg/m³与g/cm³）",
+          "description": "能正确书写密度国际单位kg/m³及其符号",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "填空",
+            "计算"
+          ]
+        },
+        {
+          "name": "天平调零与操作步骤规范",
+          "description": "能按三步法完成调零（水平放置→游码归零→调平衡螺母）",
+          "difficulty": 2,
+          "question_types": [
+            "判断",
+            "选择",
+            "填空"
+          ]
+        },
+        {
+          "name": "质量单位与进率换算",
+          "description": "熟记国际单位制中质量基本单位为千克（kg）",
+          "difficulty": 2,
+          "question_types": [
+            "选择",
+            "判断",
+            "填空"
+          ]
+        }
+      ]
+    }
+  ],
+  "_meta": {
+    "source": "k12-knowledge-points",
+    "generated_from": "k12/generated/physics-g8",
+    "imported_at": "2026-11-05T13:21:55.520Z"
+  }
+}

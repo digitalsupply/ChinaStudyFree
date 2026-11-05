@@ -1,0 +1,466 @@
+{
+  "textbook": "K12知识图谱 · 物理八年级下册",
+  "unit": "第十二章 简单机械",
+  "unit_number": 6,
+  "unit_test": {
+    "title": "第十二章 简单机械 · K12知识图谱练习",
+    "total_score": 66,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "true_false",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "杠杆平衡条件推导与定量计算",
+        "question": "杠杆平衡时，动力与动力臂的乘积一定等于阻力与阻力臂的乘积。",
+        "options": [],
+        "answer": "对",
+        "explanation": "杠杆平衡条件为 $F_1l_1=F_2l_2$，即动力与动力臂的乘积等于阻力与阻力臂的乘积。这里的平衡指杠杆处于静止或匀速转动状态，因此该说法正确。",
+        "meta": {
+          "cognitive_level": "识记",
+          "steam_dimensions": [],
+          "steam_context": "学科内核心概念",
+          "misconception_target": "无",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "282913ab-1859-4868-af84-a727863f814c",
+          "source_kp_name": "杠杆平衡条件推导与定量计算",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:47:19.172Z",
+          "source_key": "282913ab-1859-4868-af84-a727863f814c#q1",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 2,
+        "type": "fill_blank",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "杠杆平衡条件推导与定量计算",
+        "question": "一根轻质杠杆在水平位置平衡，动力臂为0.4 m，阻力臂为0.2 m，阻力为60 N，则动力为___ N。",
+        "options": [],
+        "answer": "30",
+        "explanation": "根据杠杆平衡条件 $F_1l_1=F_2l_2$，可得 $F_1=F_2l_2/l_1=60×0.2/0.4=30$ N。计算时要注意动力对应动力臂、阻力对应阻力臂，不能把两个力臂的位置颠倒。",
+        "meta": {
+          "cognitive_level": "应用",
+          "steam_dimensions": [
+            "M"
+          ],
+          "steam_context": "使用杠杆平衡公式进行比例运算和单位一致的数值计算。",
+          "misconception_target": "公式倒置或混淆动力臂与阻力臂的对应关系",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "282913ab-1859-4868-af84-a727863f814c",
+          "source_kp_name": "杠杆平衡条件推导与定量计算",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:47:19.172Z",
+          "source_key": "282913ab-1859-4868-af84-a727863f814c#q2",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 3,
+        "knowledge_point": "杠杆平衡条件推导与定量计算",
+        "question": "工人用一根撬棒撬石头，撬棒在水平位置平衡。已知动力臂为1.2 m，阻力臂为0.2 m，石头对撬棒的阻力为600 N。工人所用的动力为（ ）",
+        "options": [
+          "100 N",
+          "3600 N",
+          "600 N",
+          "720 N"
+        ],
+        "answer": "100 N",
+        "explanation": "根据杠杆平衡条件 $F_1l_1=F_2l_2$，动力 $F_1=F_2l_2/l_1=600×0.2/1.2=100$ N。若把公式写反会得到3600 N，若误认为动力等于阻力会得到600 N，因此应选100 N。",
+        "meta": {
+          "cognitive_level": "应用",
+          "steam_dimensions": [
+            "E",
+            "M"
+          ],
+          "steam_context": "以撬棒撬石头这一真实简单机械情境，运用杠杆平衡条件计算省力工具所需的动力。",
+          "misconception_target": "公式倒置，或把杠杆长度直接当作力臂使用",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "282913ab-1859-4868-af84-a727863f814c",
+          "source_kp_name": "杠杆平衡条件推导与定量计算",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:47:19.172Z",
+          "source_key": "282913ab-1859-4868-af84-a727863f814c#q3",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 4,
+        "type": "calculation",
+        "score": 5,
+        "difficulty": 4,
+        "knowledge_point": "杠杆平衡条件推导与定量计算",
+        "question": "一根长1.2 m的轻质杠杆，左端挂40 N的物体，右端挂10 N的物体。要使杠杆在水平位置平衡，支点应距左端___ m。",
+        "options": [],
+        "answer": "0.24",
+        "explanation": "设支点距左端 $x$ m，则左侧力臂为 $x$，右侧力臂为 $1.2-x$。由杠杆平衡条件 $40x=10(1.2-x)$，解得 $x=0.24$ m。这里力臂是支点到力的作用线的距离，不能把杠杆总长直接代入公式。",
+        "meta": {
+          "cognitive_level": "分析",
+          "steam_dimensions": [
+            "M"
+          ],
+          "steam_context": "通过建立力臂与杠杆长度关系的方程，定量确定杠杆平衡时支点的位置。",
+          "misconception_target": "忽略力臂是支点到力的作用线的距离，直接套用杠杆总长度",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "282913ab-1859-4868-af84-a727863f814c",
+          "source_kp_name": "杠杆平衡条件推导与定量计算",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:47:19.172Z",
+          "source_key": "282913ab-1859-4868-af84-a727863f814c#q4",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 5,
+        "type": "true_false",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "杠杆平衡条件推导与应用",
+        "question": "杠杆平衡是指杠杆处于静止状态或匀速转动状态，此时杠杆满足 $F_1 l_1 = F_2 l_2$。",
+        "options": [],
+        "answer": "对",
+        "explanation": "杠杆平衡包括静止和匀速转动两种状态，平衡时动力与动力臂的乘积等于阻力与阻力臂的乘积，即 $F_1 l_1 = F_2 l_2$。判断杠杆是否平衡不能只看力的大小，还必须同时考虑力臂。",
+        "meta": {
+          "cognitive_level": "理解",
+          "steam_dimensions": [],
+          "steam_context": "学科内核心概念",
+          "misconception_target": "认为杠杆平衡只需要 $F_1 = F_2$，忽略力臂参与平衡",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "c68716ee-2697-4827-b5fe-cda6eba66f11",
+          "source_kp_name": "杠杆平衡条件推导与应用",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:49:44.503Z",
+          "source_key": "c68716ee-2697-4827-b5fe-cda6eba66f11#q1",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 6,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "杠杆平衡条件推导与应用",
+        "question": "在探究杠杆平衡条件的实验中，保持杠杆左侧钩码对杠杆的力和力臂不变，只改变右侧钩码的个数和悬挂位置，测得多组数据后归纳出杠杆的平衡条件。下列各式中，正确的是哪一个？",
+        "options": [
+          "$F_1 l_1 = F_2 l_2$",
+          "$F_1 = F_2$",
+          "$F_1 / l_1 = F_2 / l_2$",
+          "$F_1 l_2 = F_2 l_1$"
+        ],
+        "answer": "$F_1 l_1 = F_2 l_2$",
+        "explanation": "实验中对一侧的力和力臂保持不变、只改变另一侧，属于控制变量法；由多组数据归纳可知，杠杆平衡时动力与动力臂的乘积等于阻力与阻力臂的乘积，即 $F_1 l_1 = F_2 l_2$。$F_1 = F_2$ 忽略了力臂的作用，$F_1/l_1 = F_2/l_2$ 与 $F_1 l_2 = F_2 l_1$ 都把力与力臂的关系写错了。",
+        "meta": {
+          "cognitive_level": "理解",
+          "steam_dimensions": [],
+          "steam_context": "学科内核心概念",
+          "misconception_target": "误认为平衡只需 $F_1 = F_2$，或把公式写成 $F_1/l_1 = F_2/l_2$",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "c68716ee-2697-4827-b5fe-cda6eba66f11",
+          "source_kp_name": "杠杆平衡条件推导与应用",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:49:44.503Z",
+          "source_key": "c68716ee-2697-4827-b5fe-cda6eba66f11#q2",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 7,
+        "type": "fill_blank",
+        "score": 5,
+        "difficulty": 3,
+        "knowledge_point": "杠杆平衡条件推导与应用",
+        "question": "某同学在杠杆平衡实验中，使杠杆在水平位置平衡。测得阻力 $F_2 = 200\\ \\text{N}$，阻力臂 $l_2 = 0.1\\ \\text{m}$，动力臂 $l_1 = 0.4\\ \\text{m}$，则动力 $F_1$ 为 ___ $\\text{N}$。",
+        "options": [],
+        "answer": "50",
+        "explanation": "由杠杆平衡条件 $F_1 l_1 = F_2 l_2$ 可得 $F_1 = \\dfrac{F_2 l_2}{l_1} = \\dfrac{200\\ \\text{N} \\times 0.1\\ \\text{m}}{0.4\\ \\text{m}} = 50\\ \\text{N}$。动力臂是阻力臂的 4 倍，所以动力是阻力的四分之一，这正是一个省力杠杆，结果与公式一致。",
+        "meta": {
+          "cognitive_level": "应用",
+          "steam_dimensions": [
+            "M"
+          ],
+          "steam_context": "运用公式进行比例运算，由已知的力与力臂求未知量",
+          "misconception_target": "忽略力臂参与平衡，直接用 $F_1 = F_2$ 得出 200 N",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "c68716ee-2697-4827-b5fe-cda6eba66f11",
+          "source_kp_name": "杠杆平衡条件推导与应用",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:49:44.503Z",
+          "source_key": "c68716ee-2697-4827-b5fe-cda6eba66f11#q3",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 8,
+        "type": "calculation",
+        "score": 5,
+        "difficulty": 4,
+        "knowledge_point": "杠杆平衡条件推导与应用",
+        "question": "工地上的独轮车可看成杠杆：车斗和货物总重 $G = 900\\ \\text{N}$，其重心到车轮轴的水平距离（阻力臂）为 $0.25\\ \\text{m}$。工人沿竖直方向向上提车把，手的作用点原先到车轮轴的水平距离为 $1.25\\ \\text{m}$，后来为了省空间，手移到距车轮轴水平距离 $0.75\\ \\text{m}$ 处。求手移到新位置后，竖直向上提车把所需的力 $F$ 为多少牛？请写出计算过程，结果填 ___ $\\text{N}$。",
+        "options": [],
+        "answer": "300",
+        "explanation": "竖直向上提车把时，动力臂就是手到车轮轴的水平距离，阻力和阻力臂保持不变。由 $F l_1 = G l_2$ 得 $F = \\dfrac{G l_2}{l_1} = \\dfrac{900\\ \\text{N} \\times 0.25\\ \\text{m}}{0.75\\ \\text{m}} = 300\\ \\text{N}$。（原来在 $1.25\\ \\text{m}$ 处时只需 $180\\ \\text{N}$，手离轮轴越近，动力臂越小，就越费力。）",
+        "meta": {
+          "cognitive_level": "分析",
+          "steam_dimensions": [
+            "M",
+            "E"
+          ],
+          "steam_context": "以独轮车这一真实搬运工具为对象，分析杠杆的力臂变化对所需推力的影响，并进行比例计算",
+          "misconception_target": "误以为提力只由物重决定，忽视动力臂变小会使所需力变大",
+          "figure": null,
+          "resource_needs": [
+            "formula",
+            "calculator"
+          ],
+          "source_kp_id": "c68716ee-2697-4827-b5fe-cda6eba66f11",
+          "source_kp_name": "杠杆平衡条件推导与应用",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:49:44.503Z",
+          "source_key": "c68716ee-2697-4827-b5fe-cda6eba66f11#q4",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 9,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "机械效率的定义与计算",
+        "question": "关于机械效率，下列说法正确的是（ ）。",
+        "options": [
+          "机械效率是有用功与总功的比值",
+          "机械效率是总功与有用功的比值",
+          "机械效率可以大于1",
+          "机械效率越高，机械一定越省力"
+        ],
+        "answer": "机械效率是有用功与总功的比值",
+        "explanation": "机械效率定义为有用功跟总功的比值，即 $η=W_{有用}/W_{总}$，通常用百分数表示。由于实际机械总要克服摩擦、自重等做额外功，所以机械效率一般小于1；机械效率高低反映能量利用程度，不能直接说明机械是否省力。",
+        "meta": {
+          "cognitive_level": "理解",
+          "steam_dimensions": [],
+          "steam_context": "学科内核心概念",
+          "misconception_target": "针对“机械效率可大于1”和“机械效率与省力程度等同”的常见错误。",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "257626c9-365d-4f4c-bac9-d2a06f9ac8eb",
+          "source_kp_name": "机械效率的定义与计算",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:48:14.864Z",
+          "source_key": "257626c9-365d-4f4c-bac9-d2a06f9ac8eb#q1",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 10,
+        "type": "fill_blank",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "机械效率的定义与计算",
+        "question": "学校科技小组用滑轮组提升重物时，测得有用功为 240 J，总功为 300 J，则该滑轮组的机械效率为 ___%。",
+        "options": [],
+        "answer": "80",
+        "explanation": "根据机械效率公式 $η=W_{有用}/W_{总}$，代入数据得 $η=240\\text{ J}/300\\text{ J}=0.8$，化成百分数为 80%。计算时有用功与总功单位相同，直接相比即可，注意结果应小于1。",
+        "meta": {
+          "cognitive_level": "应用",
+          "steam_dimensions": [
+            "M"
+          ],
+          "steam_context": "使用机械效率公式进行数据代入和百分数表达。",
+          "misconception_target": "针对有用功与总功位置颠倒、百分数表达错误等常见问题。",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "257626c9-365d-4f4c-bac9-d2a06f9ac8eb",
+          "source_kp_name": "机械效率的定义与计算",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:48:14.864Z",
+          "source_key": "257626c9-365d-4f4c-bac9-d2a06f9ac8eb#q2",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 11,
+        "type": "calculation",
+        "score": 8,
+        "difficulty": 3,
+        "knowledge_point": "机械效率的定义与计算",
+        "question": "建筑工地上，一台起重机将质量为 300 kg 的货物匀速提升 2 m，卷扬机做的总功为 8000 J。取 $g=10\\text{ N/kg}$，求起重机的机械效率为 ___%。",
+        "options": [],
+        "answer": "75",
+        "explanation": "起重机提升货物时，有用功是克服货物重力做的功：$W_{有用}=Gh=mgh=300\\text{ kg}×10\\text{ N/kg}×2\\text{ m}=6000\\text{ J}$。总功为 8000 J，所以 $η=W_{有用}/W_{总}=6000\\text{ J}/8000\\text{ J}=0.75=75\\%$。计算时要先求出有用功，再与总功相比，不能把总功放在分子上。",
+        "meta": {
+          "cognitive_level": "应用",
+          "steam_dimensions": [
+            "E",
+            "M"
+          ],
+          "steam_context": "建筑起重机提升货物的真实工程情境，体现机械效率与能量利用、节能约束的联系。",
+          "misconception_target": "针对忽略有用功计算、总功与有用功位置颠倒导致错误结果的问题。",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "257626c9-365d-4f4c-bac9-d2a06f9ac8eb",
+          "source_kp_name": "机械效率的定义与计算",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:48:14.864Z",
+          "source_key": "257626c9-365d-4f4c-bac9-d2a06f9ac8eb#q3",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 12,
+        "type": "choice",
+        "score": 8,
+        "difficulty": 4,
+        "knowledge_point": "机械效率的定义与计算",
+        "question": "甲、乙两台起重机把同样重的货物提升相同高度。甲的机械效率为 60%，乙的机械效率为 75%。下列说法正确的是（ ）。",
+        "options": [
+          "甲做的有用功比乙多",
+          "乙做的总功比甲少",
+          "甲比乙更省力",
+          "甲额外功占总功的比例比乙小"
+        ],
+        "answer": "乙做的总功比甲少",
+        "explanation": "两台起重机提升同样重的货物到相同高度，有用功相同。由 $η=W_{有用}/W_{总}$ 得 $W_{总}=W_{有用}/η$，乙的机械效率较高，所以乙做的总功较少。机械效率高低不能直接说明省力程度；甲效率较低，说明甲额外功占总功的比例较大，而不是较小。",
+        "meta": {
+          "cognitive_level": "分析",
+          "steam_dimensions": [
+            "E",
+            "M"
+          ],
+          "steam_context": "比较两台工程起重机的机械效率，分析能量利用与总功、额外功的关系。",
+          "misconception_target": "针对“机械效率高就更省力”和“效率高做的功一定多”等常见错误概念。",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "257626c9-365d-4f4c-bac9-d2a06f9ac8eb",
+          "source_kp_name": "机械效率的定义与计算",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:48:14.864Z",
+          "source_key": "257626c9-365d-4f4c-bac9-d2a06f9ac8eb#q4",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "杠杆平衡条件推导与定量计算",
+      "core_concept": "能复述杠杆平衡的实验探究思路（控制变量法）；能根据实验数据归纳得出F₁l₁＝F₂l₂",
+      "key_formula": "",
+      "common_mistakes": [
+        "认为只要F₁＝F₂杠杆就平衡",
+        "忽略力臂是点到线的距离，直接套用杠杆长度",
+        "在计算中混淆l₁与l₂的物理意义导致公式倒置",
+        "误以为杠杆平衡时动力一定小于阻力"
+      ],
+      "tips": "对应章节：第十二章 简单机械。先判断物理量、单位和条件，再作答。"
+    },
+    {
+      "point": "杠杆平衡条件推导与应用",
+      "core_concept": "理解杠杆平衡指静止或匀速转动状态；能复述实验探究思路（控制变量法）",
+      "key_formula": "",
+      "common_mistakes": [
+        "认为平衡只需F₁ = F₂",
+        "忽略力臂参与平衡，仅比较力大小",
+        "误将公式写成F₁/l₁ = F₂/l₂"
+      ],
+      "tips": "对应章节：第十二章 简单机械。先判断物理量、单位和条件，再作答。"
+    },
+    {
+      "point": "机械效率的定义与计算",
+      "core_concept": "能复述机械效率的定义并写出公式η=W有用/W总；能结合具体情境（如起重机、滑轮组）代入数据完成两步以上计算",
+      "key_formula": "",
+      "common_mistakes": [
+        "认为机械效率可大于1或等于1",
+        "将机械效率与省力程度直接等同",
+        "忽略单位统一或数值代入错误导致η>1的伪结果"
+      ],
+      "tips": "对应章节：第十二章 简单机械。先判断物理量、单位和条件，再作答。"
+    }
+  ],
+  "_meta": {
+    "source": "k12-knowledge-points",
+    "generated_from": "k12/generated/physics-g8",
+    "imported_at": "2026-11-05T13:21:55.523Z"
+  }
+}

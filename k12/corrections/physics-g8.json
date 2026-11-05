@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "batch": "physics-g8",
+  "note": "K12 八年级物理后台修正/删除队列。source_key 来自题目 meta.source_key；运行 node scripts/k12/apply-corrections.mjs --write 后重新 build:data。",
+  "corrections": []
+}

@@ -36,6 +36,7 @@ export const PUBLISHERS: PublisherConfig[] = [
   { id: "yilin", label: "译林版", slug: "yilin", color: "#FFC800", patterns: [/译林版/] },
   { id: "zhejiao", label: "浙教版", slug: "zhejiao", color: "#FF7A45", patterns: [/浙教版/] },
   { id: "jiaoke", label: "教科版", slug: "jiaoke", color: "#FFC800", patterns: [/教科版/] },
+  { id: "k12", label: "K12知识图谱", slug: "k12", color: "#0EA5E9", patterns: [/K12知识图谱/] },
   { id: "renjiao", label: "人教版", slug: "renjiao", color: "#58CC02", patterns: [/人教版/] },
   // 大学公共课主流出版社
   { id: "heps", label: "高教社", slug: "heps", color: "#2B70C9", patterns: [/高教社/, /高等教育出版社/] },

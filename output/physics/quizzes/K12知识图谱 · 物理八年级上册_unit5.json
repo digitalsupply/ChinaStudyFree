@@ -1,0 +1,501 @@
+{
+  "textbook": "K12知识图谱 · 物理八年级上册",
+  "unit": "第五章 透镜及其应用",
+  "unit_number": 5,
+  "unit_test": {
+    "title": "第五章 透镜及其应用 · K12知识图谱练习",
+    "total_score": 64,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "实像与虚像的判断依据",
+        "question": "在初中物理中，判断一个像是实像还是虚像，最可靠的依据是（ ）。",
+        "options": [
+          "像是否能用光屏承接",
+          "像是否能被眼睛看到",
+          "像是否正立",
+          "像是否放大"
+        ],
+        "answer": "像是否能用光屏承接",
+        "explanation": "实像由实际光线会聚形成，能用光屏承接；虚像由实际光线的反向延长线相交形成，不能用光屏承接。眼睛既能看见实像也能看见虚像，正立或放大都不是判断实像与虚像的本质依据。",
+        "meta": {
+          "cognitive_level": "理解",
+          "steam_dimensions": [],
+          "steam_context": "学科内核心概念",
+          "misconception_target": "误认为眼睛能看到的就是实像",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "fa36538c-15c1-45e7-94d9-a322ba42142f",
+          "source_kp_name": "实像与虚像的判断依据",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:46:12.289Z",
+          "source_key": "fa36538c-15c1-45e7-94d9-a322ba42142f#q1",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 2,
+        "type": "true_false",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "实像与虚像的判断依据",
+        "question": "小明用放大镜看到字被放大，因为眼睛能看到这个像，所以它是实像。",
+        "options": [],
+        "answer": "错",
+        "explanation": "放大镜成的是正立、放大的虚像，它由实际光线的反向延长线相交形成，不能用光屏承接。眼睛能看到虚像，所以“眼睛能看到”不能作为判断实像的依据。",
+        "meta": {
+          "cognitive_level": "理解",
+          "steam_dimensions": [],
+          "steam_context": "学科内核心概念",
+          "misconception_target": "眼睛看到的就是实像",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "fa36538c-15c1-45e7-94d9-a322ba42142f",
+          "source_kp_name": "实像与虚像的判断依据",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:46:12.289Z",
+          "source_key": "fa36538c-15c1-45e7-94d9-a322ba42142f#q2",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 3,
+        "knowledge_point": "实像与虚像的判断依据",
+        "question": "下列生活中的像，属于实像的是（ ）。",
+        "options": [
+          "电影幕布上放映出的画面",
+          "平静湖面中山的倒影",
+          "放大镜中放大的邮票",
+          "平面镜中自己的像"
+        ],
+        "answer": "电影幕布上放映出的画面",
+        "explanation": "电影幕布上的画面是放映机镜头（相当于凸透镜）成的实像，实际光线会聚在幕布上，能被光屏承接。湖面倒影和平面镜中的像都是光的反射形成的虚像，放大镜中的像是凸透镜成的虚像，它们都不能用光屏承接。",
+        "meta": {
+          "cognitive_level": "应用",
+          "steam_dimensions": [
+            "S"
+          ],
+          "steam_context": "观察生活中的成像现象，并用“能否用光屏承接”判断实像与虚像",
+          "misconception_target": "把平面镜、水面倒影等虚像误认为实像",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "fa36538c-15c1-45e7-94d9-a322ba42142f",
+          "source_kp_name": "实像与虚像的判断依据",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:46:12.289Z",
+          "source_key": "fa36538c-15c1-45e7-94d9-a322ba42142f#q3",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 4,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 4,
+        "knowledge_point": "实像与虚像的判断依据",
+        "question": "在“探究凸透镜成像规律”实验中，把蜡烛放在凸透镜前某一位置，在透镜另一侧移动光屏，光屏上得到一个清晰的像。下列关于该像的判断，正确的是（ ）。",
+        "options": [
+          "该像一定是虚像，因为眼睛也能直接看到",
+          "该像是实像，因为光屏上能承接到，且像与蜡烛分居透镜两侧",
+          "该像是虚像，因为像与蜡烛在透镜同侧",
+          "移去光屏后，该像立即消失，说明它不是实际光线形成的"
+        ],
+        "answer": "该像是实像，因为光屏上能承接到，且像与蜡烛分居透镜两侧",
+        "explanation": "光屏上能承接到清晰的像，说明实际光线会聚在光屏上，因此是实像；凸透镜成实像时，像与物分居透镜两侧。眼睛能看到实像也能看到虚像，不能据此判断；移去光屏后实际光线仍会相交于原处，只是没有光屏承接，像不会因此变成虚像。",
+        "meta": {
+          "cognitive_level": "分析",
+          "steam_dimensions": [
+            "S"
+          ],
+          "steam_context": "通过凸透镜成像实验中的光屏承接现象，分析实像由实际光线会聚形成",
+          "misconception_target": "误认为眼睛看到的就是实像；误认为移去光屏像就消失",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "fa36538c-15c1-45e7-94d9-a322ba42142f",
+          "source_kp_name": "实像与虚像的判断依据",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:46:12.289Z",
+          "source_key": "fa36538c-15c1-45e7-94d9-a322ba42142f#q4",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 5,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "凸透镜成像五种物距情形的规律归纳",
+        "question": "把点燃的蜡烛放在焦距为 $f$ 的凸透镜前，当物距 $u>2f$ 时，在透镜另一侧的光屏上观察到的像是（　）",
+        "options": [
+          "倒立、缩小的实像",
+          "倒立、放大的实像",
+          "正立、放大的虚像",
+          "倒立、等大的实像"
+        ],
+        "answer": "倒立、缩小的实像",
+        "explanation": "物体在二倍焦距以外时，折射光线会聚在透镜另一侧一倍焦距与二倍焦距之间，形成倒立、缩小的实像，照相机就是这一规律的应用。倒立、放大的实像对应 $f<u<2f$，倒立、等大的实像对应 $u=2f$，正立、放大的虚像对应 $u<f$。",
+        "meta": {
+          "cognitive_level": "记忆",
+          "steam_dimensions": [],
+          "steam_context": "学科内核心概念",
+          "misconception_target": "混淆 $u>2f$ 与 $f<u<2f$ 的成像大小关系",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "b6632942-22ba-4d65-88f5-b449c5065dd8",
+          "source_kp_name": "凸透镜成像五种物距情形的规律归纳",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:45:47.385Z",
+          "source_key": "b6632942-22ba-4d65-88f5-b449c5065dd8#q1",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 6,
+        "type": "fill_blank_text",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "凸透镜成像五种物距情形的规律归纳",
+        "question": "在光具座上用焦距为 $f$ 的凸透镜做实验，当光屏上得到倒立、等大的实像时，物距 $u$ 与焦距 $f$ 的关系是 $u=$ ___（用含 $f$ 的式子表示）。",
+        "options": [],
+        "answer": "2f",
+        "explanation": "凸透镜成像中，倒立、等大的实像只出现在物距等于二倍焦距这一特殊位置，即 $u=2f$。此时像距也等于 $2f$。二倍焦距是像由缩小变为放大的分界点，而不是实像与虚像的分界点，实像与虚像的分界点是焦点。",
+        "meta": {
+          "cognitive_level": "理解",
+          "steam_dimensions": [],
+          "steam_context": "学科内核心概念",
+          "misconception_target": "误认为 $u=2f$ 是实像与虚像的分界点",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "b6632942-22ba-4d65-88f5-b449c5065dd8",
+          "source_kp_name": "凸透镜成像五种物距情形的规律归纳",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:45:47.385Z",
+          "source_key": "b6632942-22ba-4d65-88f5-b449c5065dd8#q2",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 7,
+        "type": "true_false",
+        "score": 6,
+        "difficulty": 3,
+        "knowledge_point": "凸透镜成像五种物距情形的规律归纳",
+        "question": "把物体放在凸透镜的焦点上（$u=f$），光屏上接收不到像，说明此时凸透镜成的是正立、放大的虚像。",
+        "options": [],
+        "answer": "错",
+        "explanation": "物体位于焦点上时，经透镜折射后的光线平行射出，既不会聚也不发散，因此不能成像——既不成实像，也不成虚像，光屏上自然接收不到像。正立、放大的虚像只在 $u<f$ 时才出现，把“光屏上接收不到像”直接等同于“成虚像”是常见错误。",
+        "meta": {
+          "cognitive_level": "分析",
+          "steam_dimensions": [],
+          "steam_context": "学科内核心概念",
+          "misconception_target": "把 $u=f$ 不成像误判为成虚像，混淆 $u=f$ 与 $u<f$",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "b6632942-22ba-4d65-88f5-b449c5065dd8",
+          "source_kp_name": "凸透镜成像五种物距情形的规律归纳",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:45:47.385Z",
+          "source_key": "b6632942-22ba-4d65-88f5-b449c5065dd8#q3",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 8,
+        "type": "choice",
+        "score": 8,
+        "difficulty": 4,
+        "knowledge_point": "凸透镜成像五种物距情形的规律归纳",
+        "question": "学校科技节上，小明用焦距为 $10\\,\\mathrm{cm}$ 的凸透镜当投影镜头，要把画有图案的透明胶片投到屏幕上，得到清晰、放大的像。胶片到凸透镜的距离应满足（　）",
+        "options": [
+          "小于 $10\\,\\mathrm{cm}$",
+          "等于 $10\\,\\mathrm{cm}$",
+          "大于 $10\\,\\mathrm{cm}$ 且小于 $20\\,\\mathrm{cm}$",
+          "大于 $20\\,\\mathrm{cm}$"
+        ],
+        "answer": "大于 $10\\,\\mathrm{cm}$ 且小于 $20\\,\\mathrm{cm}$",
+        "explanation": "投影仪要在屏幕上得到放大的像，属于倒立、放大的实像，按凸透镜成像规律必须满足 $f<u<2f$。已知 $f=10\\,\\mathrm{cm}$，所以胶片到镜头的距离应大于 $10\\,\\mathrm{cm}$ 且小于 $20\\,\\mathrm{cm}$。若 $u<f$，成的是正立、放大的虚像，屏幕接不到；若 $u>2f$，成的是缩小的实像，投不出放大的画面。",
+        "meta": {
+          "cognitive_level": "应用",
+          "steam_dimensions": [
+            "S",
+            "E",
+            "M"
+          ],
+          "steam_context": "以校园科技节的投影装置为真实任务，把 $f<u<2f$ 的成像规律用于确定镜头与胶片的距离范围，体现工程约束下的参数选择",
+          "misconception_target": "把“成放大的像”简单等同于 $u<f$ 成虚像，忽略实像与虚像的分界在焦点",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "b6632942-22ba-4d65-88f5-b449c5065dd8",
+          "source_kp_name": "凸透镜成像五种物距情形的规律归纳",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:45:47.385Z",
+          "source_key": "b6632942-22ba-4d65-88f5-b449c5065dd8#q4",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 9,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "凸透镜会聚作用与凹透镜发散作用的实验现象归纳",
+        "question": "把凸透镜正对太阳光，在透镜下方的白纸上得到一个很小很亮的光斑。这个现象说明（ ）",
+        "options": [
+          "凸透镜对太阳光有会聚作用",
+          "凸透镜对太阳光有发散作用",
+          "凹透镜对太阳光有会聚作用",
+          "太阳光通过凸透镜后消失了"
+        ],
+        "answer": "凸透镜对太阳光有会聚作用",
+        "explanation": "太阳光可近似看作平行光，通过凸透镜后向主光轴靠拢并会聚成小亮斑，说明凸透镜是会聚透镜；光并没有消失，也不是凹透镜的作用。",
+        "meta": {
+          "cognitive_level": "知道",
+          "steam_dimensions": [
+            "S"
+          ],
+          "steam_context": "利用太阳光和白纸进行观察，依据光斑现象获得证据。",
+          "misconception_target": "针对把凸透镜的会聚现象误认为光消失或误归因于凹透镜的错误。",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "f6f1efeb-d685-4eb7-bdae-3c8932b84901",
+          "source_kp_name": "凸透镜会聚作用与凹透镜发散作用的实验现象归纳",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:50:31.662Z",
+          "source_key": "f6f1efeb-d685-4eb7-bdae-3c8932b84901#q1",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 10,
+        "type": "true_false",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "凸透镜会聚作用与凹透镜发散作用的实验现象归纳",
+        "question": "一束平行光经过凹透镜后，在透镜后面的光屏上形成的光斑比不放透镜时更大，这表明凹透镜对光有发散作用。",
+        "options": [],
+        "answer": "对",
+        "explanation": "凹透镜使平行光向外散开，光束横截面积变大，所以光屏上光斑变大；光斑变大是发散作用的证据，不是光线消失或会聚。",
+        "meta": {
+          "cognitive_level": "理解",
+          "steam_dimensions": [],
+          "steam_context": "学科内核心概念",
+          "misconception_target": "针对“光斑变大就是会聚”或“发散是光变弱消失”的错误认识。",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "f6f1efeb-d685-4eb7-bdae-3c8932b84901",
+          "source_kp_name": "凸透镜会聚作用与凹透镜发散作用的实验现象归纳",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:50:31.662Z",
+          "source_key": "f6f1efeb-d685-4eb7-bdae-3c8932b84901#q2",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 11,
+        "type": "fill_blank_text",
+        "score": 5,
+        "difficulty": 3,
+        "knowledge_point": "凸透镜会聚作用与凹透镜发散作用的实验现象归纳",
+        "question": "在探究透镜对光的作用时，把凹透镜正对一束平行光，在透镜后方移动光屏，发现光斑面积逐渐变大。这个现象说明凹透镜对光有___作用；光斑变大并不是因为光消失了，而是因为光线之间的距离变___。",
+        "options": [],
+        "answer": "发散；大",
+        "explanation": "平行光经凹透镜后偏离主光轴，光线间距离增大，光屏上光斑面积变大，体现凹透镜的发散作用；光线仍然存在，只是分布范围变大。",
+        "meta": {
+          "cognitive_level": "理解",
+          "steam_dimensions": [],
+          "steam_context": "学科内核心概念",
+          "misconception_target": "针对把“发散”误解为光线消失或减弱，以及只看到光斑变大却不会判断透镜作用的错误。",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "f6f1efeb-d685-4eb7-bdae-3c8932b84901",
+          "source_kp_name": "凸透镜会聚作用与凹透镜发散作用的实验现象归纳",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:50:31.662Z",
+          "source_key": "f6f1efeb-d685-4eb7-bdae-3c8932b84901#q3",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 12,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 4,
+        "knowledge_point": "凸透镜会聚作用与凹透镜发散作用的实验现象归纳",
+        "question": "用一束平行光分别照射甲、乙两个透镜，在透镜后方不同距离处放置光屏，测得光斑直径如下表。根据表中数据，下列判断正确的是（ ）",
+        "options": [
+          "甲是凸透镜，乙是凹透镜",
+          "甲是凹透镜，乙是凸透镜",
+          "甲、乙都是凸透镜",
+          "甲、乙都是凹透镜"
+        ],
+        "answer": "甲是凸透镜，乙是凹透镜",
+        "explanation": "甲透镜后光斑直径先变小后变大，说明平行光先会聚到一点再散开，甲是凸透镜；乙透镜后光斑直径随距离增大而增大，说明光一直被发散，乙是凹透镜。",
+        "meta": {
+          "cognitive_level": "分析",
+          "steam_dimensions": [
+            "S",
+            "M"
+          ],
+          "steam_context": "通过表格中的光斑直径数据进行比较和归纳，用实验证据判断透镜类型。",
+          "misconception_target": "针对只根据光斑变大或变小的单一现象作判断，忽略凸透镜会聚后又会再发散的错误。",
+          "figure": {
+            "type": "table",
+            "description": "平行光通过甲、乙透镜后，在距透镜不同距离处测得的光斑直径",
+            "columns": [
+              "透镜",
+              "5 cm处光斑直径/cm",
+              "10 cm处光斑直径/cm",
+              "15 cm处光斑直径/cm"
+            ],
+            "rows": [
+              [
+                "甲",
+                "3.0",
+                "1.0",
+                "3.0"
+              ],
+              [
+                "乙",
+                "2.0",
+                "3.0",
+                "4.0"
+              ]
+            ],
+            "alt": "平行光通过甲、乙透镜后，在距透镜不同距离处测得的光斑直径",
+            "spec": {
+              "description": "平行光通过甲、乙透镜后，在距透镜不同距离处测得的光斑直径",
+              "columns": [
+                "透镜",
+                "5 cm处光斑直径/cm",
+                "10 cm处光斑直径/cm",
+                "15 cm处光斑直径/cm"
+              ],
+              "rows": [
+                [
+                  "甲",
+                  "3.0",
+                  "1.0",
+                  "3.0"
+                ],
+                [
+                  "乙",
+                  "2.0",
+                  "3.0",
+                  "4.0"
+                ]
+              ]
+            }
+          },
+          "resource_needs": [],
+          "source_kp_id": "f6f1efeb-d685-4eb7-bdae-3c8932b84901",
+          "source_kp_name": "凸透镜会聚作用与凹透镜发散作用的实验现象归纳",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:50:31.662Z",
+          "source_key": "f6f1efeb-d685-4eb7-bdae-3c8932b84901#q4",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "实像与虚像的判断依据",
+      "core_concept": "能用'是否能在光屏上承接'判断实像或虚像；能用'光线是否实际会聚'解释成像本质",
+      "key_formula": "",
+      "common_mistakes": [
+        "实像一定倒立、虚像一定正立（忽略凹透镜成像情形，但本节不涉及故暂不列）",
+        "眼睛看到的就是实像"
+      ],
+      "tips": "对应章节：第五章 透镜及其应用。先判断物理量、单位和条件，再作答。"
+    },
+    {
+      "point": "凸透镜成像五种物距情形的规律归纳",
+      "core_concept": "能准确复述u>2f时成倒立缩小实像；能准确复述u=2f时成倒立等大实像",
+      "key_formula": "",
+      "common_mistakes": [
+        "认为u=2f是虚像分界点",
+        "混淆u=f与u<f的成像性质，误以为u=f可成虚像",
+        "将'正立'等同于'虚像'而忽略u<f是唯一正立成像情形"
+      ],
+      "tips": "对应章节：第五章 透镜及其应用。先判断物理量、单位和条件，再作答。"
+    },
+    {
+      "point": "凸透镜会聚作用与凹透镜发散作用的实验现象归纳",
+      "core_concept": "能描述图5.1-5中凸透镜使平行光会聚于一点的现象；能描述图5.1-6中凹透镜使平行光向外发散的现象",
+      "key_formula": "",
+      "common_mistakes": [
+        "认为凹透镜也能会聚光（仅因看到光斑变大）",
+        "将‘发散’误解为光线消失或减弱"
+      ],
+      "tips": "对应章节：第五章 透镜及其应用。先判断物理量、单位和条件，再作答。"
+    }
+  ],
+  "_meta": {
+    "source": "k12-knowledge-points",
+    "generated_from": "k12/generated/physics-g8",
+    "imported_at": "2026-11-05T13:21:55.520Z"
+  }
+}

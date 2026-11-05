@@ -1,0 +1,474 @@
+{
+  "textbook": "K12知识图谱 · 物理八年级下册",
+  "unit": "第十章 浮力",
+  "unit_number": 4,
+  "unit_test": {
+    "title": "第十章 浮力 · K12知识图谱练习",
+    "total_score": 78,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "true_false",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "称重法测浮力",
+        "question": "用弹簧测力计测浮力时，物体在空气中静止时示数为 4 N，浸没在水中且未接触容器底、静止时示数为 3 N，则物体受到的浮力为 1 N。",
+        "options": [],
+        "answer": "对",
+        "explanation": "根据称重法 $F_{浮}=G-F_{拉}$，物体重力 G=4 N，浸没时测力计示数 F拉=3 N，所以浮力为 4 N-3 N=1 N。示数减小说明水对物体有向上的浮力。",
+        "meta": {
+          "cognitive_level": "理解",
+          "steam_dimensions": [
+            "S",
+            "M"
+          ],
+          "steam_context": "弹簧测力计测量与差值计算，属于实验观察和数学运算的真实使用。",
+          "misconception_target": "针对把水中视重当作浮力，或误用 $F_{浮}=G+F_{拉}$ 的错误。",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "20e2869f-9193-4d87-95a9-c93b16567f5d",
+          "source_kp_name": "称重法测浮力",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:48:26.322Z",
+          "source_key": "20e2869f-9193-4d87-95a9-c93b16567f5d#q1",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "称重法测浮力",
+        "question": "某物体在空气中用弹簧测力计称得重力为 8 N，浸没在水中且未接触容器底、静止时弹簧测力计示数为 5 N。该物体受到的浮力大小是（ ）。",
+        "options": [
+          "3 N",
+          "5 N",
+          "13 N",
+          "8 N"
+        ],
+        "answer": "3 N",
+        "explanation": "称重法测浮力时，$F_{浮}=G-F_{拉}=8 N-5 N=3 N$。5 N 是物体在水中的视重，不是浮力；13 N 是把重力与拉力相加，8 N 是物体重力，都不符合称重法。",
+        "meta": {
+          "cognitive_level": "应用",
+          "steam_dimensions": [
+            "S",
+            "M"
+          ],
+          "steam_context": "弹簧测力计测重力与水中视重，并通过差值计算浮力。",
+          "misconception_target": "针对“浮力等于水中视重”或“$F_{浮}=G+F_{拉}$”的常见错误。",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "20e2869f-9193-4d87-95a9-c93b16567f5d",
+          "source_kp_name": "称重法测浮力",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:48:26.322Z",
+          "source_key": "20e2869f-9193-4d87-95a9-c93b16567f5d#q2",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 3,
+        "type": "calculation",
+        "score": 5,
+        "difficulty": 3,
+        "knowledge_point": "称重法测浮力",
+        "question": "校园科技小组用弹簧测力计测量一块矿石所受浮力。矿石在空气中静止时，测力计示数为 6.4 N；把矿石完全浸没在水中且未接触容器底、静止时，测力计示数为 3.8 N。矿石完全浸没时受到的浮力为 ___ N。",
+        "options": [],
+        "answer": "2.6",
+        "explanation": "矿石在空气中静止时示数等于重力 G=6.4 N，完全浸没在水中静止时示数 F拉=3.8 N。由称重法 $F_{浮}=G-F_{拉}=6.4 N-3.8 N=2.6 N$。注意不能把水中示数 3.8 N 直接当作浮力。",
+        "meta": {
+          "cognitive_level": "应用",
+          "steam_dimensions": [
+            "S",
+            "M"
+          ],
+          "steam_context": "校园科技小组测量矿石浮力的真实实验情境，涉及测量数据与差值计算。",
+          "misconception_target": "针对把水中视重当作浮力，或计算时加减混淆的错误。",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "20e2869f-9193-4d87-95a9-c93b16567f5d",
+          "source_kp_name": "称重法测浮力",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:48:26.322Z",
+          "source_key": "20e2869f-9193-4d87-95a9-c93b16567f5d#q3",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 4,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 4,
+        "knowledge_point": "称重法测浮力",
+        "question": "某小组用弹簧测力计悬挂同一金属块，金属块在空气中静止时示数为 5.0 N。将金属块浸没在水中后，分别处于 4 cm、8 cm、12 cm 的不同深度（均未接触容器底），测力计示数均为 3.0 N。下列分析正确的是（ ）。",
+        "options": [
+          "金属块浸没在水中所受浮力为 5.0 N",
+          "金属块浸没在水中所受浮力为 3.0 N，且随深度增加而增大",
+          "金属块浸没在水中所受浮力为 2.0 N，且与浸没深度无关",
+          "弹簧测力计示数越小，说明金属块受到的浮力越小"
+        ],
+        "answer": "金属块浸没在水中所受浮力为 2.0 N，且与浸没深度无关",
+        "explanation": "由称重法 $F_{浮}=G-F_{拉}=5.0 N-3.0 N=2.0 N$。金属块浸没后在不同深度处测力计示数都为 3.0 N，说明浮力不变，因此浮力与浸没深度无关。示数越小表示浮力越大，不能把示数本身当作浮力。",
+        "meta": {
+          "cognitive_level": "分析",
+          "steam_dimensions": [
+            "S",
+            "M"
+          ],
+          "steam_context": "实验数据记录、比较和差值计算，用证据判断浮力与浸没深度的关系。",
+          "misconception_target": "针对“浸没越深浮力越大”或“把弹簧测力计示数当作浮力”的错误。",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "20e2869f-9193-4d87-95a9-c93b16567f5d",
+          "source_kp_name": "称重法测浮力",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:48:26.322Z",
+          "source_key": "20e2869f-9193-4d87-95a9-c93b16567f5d#q4",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 5,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "浮力综合计算（多物理量联立）",
+        "question": "一个重 5 N 的小木块静止漂浮在水面上，它受到的浮力大小是（　）",
+        "options": [
+          "5 N",
+          "0 N",
+          "大于 5 N",
+          "无法确定"
+        ],
+        "answer": "5 N",
+        "explanation": "木块漂浮时处于平衡状态，在竖直方向上只受重力 G 和浮力 F浮 两个力，由二力平衡条件可知 F浮=G=5 N。漂浮不等于浮力一定大于重力，只有在上浮过程中浮力才大于重力；木块静止后两者相等。",
+        "meta": {
+          "cognitive_level": "理解",
+          "steam_dimensions": [],
+          "steam_context": "学科内核心概念",
+          "misconception_target": "误认为漂浮时浮力大于重力，或没有先判断浮沉状态就乱套公式",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "e17c5243-96d8-475c-a054-d0788f6f9734",
+          "source_kp_name": "浮力综合计算（多物理量联立）",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:47:15.775Z",
+          "source_key": "e17c5243-96d8-475c-a054-d0788f6f9734#q1",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 6,
+        "type": "fill_blank",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "浮力综合计算（多物理量联立）",
+        "question": "把体积为 200 cm³ 的实心铝块完全浸没在水中（ρ水=1.0×10³ kg/m³，g 取 10 N/kg），铝块受到的浮力是 ___ N。",
+        "options": [],
+        "answer": "2",
+        "explanation": "铝块完全浸没时排开水的体积等于铝块自身体积，V排=V物=200 cm³=200×10⁻⁶ m³=2×10⁻⁴ m³。由阿基米德原理得 F浮=ρ水gV排=1.0×10³ kg/m³×10 N/kg×2×10⁻⁴ m³=2 N。浮力只与液体密度和排开液体的体积有关，与铝块自身密度无关。",
+        "meta": {
+          "cognitive_level": "应用",
+          "steam_dimensions": [
+            "M"
+          ],
+          "steam_context": "学科内核心概念，涉及 cm³ 与 m³ 的单位换算",
+          "misconception_target": "忘记把 cm³ 换算成 m³，或误以为浮力与物体自身密度有关",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "e17c5243-96d8-475c-a054-d0788f6f9734",
+          "source_kp_name": "浮力综合计算（多物理量联立）",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:47:15.775Z",
+          "source_key": "e17c5243-96d8-475c-a054-d0788f6f9734#q2",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 7,
+        "type": "calculation",
+        "score": 10,
+        "difficulty": 3,
+        "knowledge_point": "浮力综合计算（多物理量联立）",
+        "question": "一块体积为 1000 cm³ 的长方体木块放入水中，静止后有 400 cm³ 的体积露出水面。已知 ρ水=1.0×10³ kg/m³，g 取 10 N/kg。求木块的密度（单位 kg/m³）。答：___ kg/m³。",
+        "options": [],
+        "answer": "600",
+        "explanation": "木块漂浮，由 F浮=G 求解。排开水的体积 V排=1000 cm³-400 cm³=600 cm³=6×10⁻⁴ m³；F浮=ρ水gV排=1.0×10³×10×6×10⁻⁴ N=6 N，所以 G=6 N，m=G/g=0.6 kg；木块总体积 V=1000 cm³=1×10⁻³ m³，则 ρ=m/V=0.6 kg÷1×10⁻³ m³=600 kg/m³。易错点：把露出水面的 400 cm³ 当成 V排，或漏做 cm³ 到 m³ 的换算。",
+        "meta": {
+          "cognitive_level": "分析",
+          "steam_dimensions": [
+            "M"
+          ],
+          "steam_context": "用排开液体体积与浮沉条件联立求解密度，体现模型建构与单位换算",
+          "misconception_target": "把露出水面的体积误当作排开液体的体积，或未判断漂浮状态就套用其他公式",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "e17c5243-96d8-475c-a054-d0788f6f9734",
+          "source_kp_name": "浮力综合计算（多物理量联立）",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:47:15.775Z",
+          "source_key": "e17c5243-96d8-475c-a054-d0788f6f9734#q3",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 8,
+        "type": "calculation",
+        "score": 10,
+        "difficulty": 4,
+        "knowledge_point": "浮力综合计算（多物理量联立）",
+        "question": "维修车间里，一个体积为 200 cm³ 的实心铁质零件沉在盛水容器的底部。已知铁的密度为 7.9×10³ kg/m³，ρ水=1.0×10³ kg/m³，g 取 10 N/kg。求容器底对零件的支持力。答：___ N。",
+        "options": [],
+        "answer": "13.8",
+        "explanation": "先求零件重力：m=ρ铁V=7.9×10³ kg/m³×2×10⁻⁴ m³=1.58 kg，G=mg=1.58 kg×10 N/kg=15.8 N；再求浮力：零件完全浸没，V排=V=2×10⁻⁴ m³，F浮=ρ水gV排=1.0×10³×10×2×10⁻⁴ N=2 N。零件沉底静止，受到重力、浮力和支持力三力平衡，N=G-F浮=15.8 N-2 N=13.8 N。易错点：忽略支持力而错写成 F浮=G，或忘记 cm³ 与 m³ 的换算。",
+        "meta": {
+          "cognitive_level": "分析",
+          "steam_dimensions": [
+            "S",
+            "M"
+          ],
+          "steam_context": "以车间零件沉在水槽底部为真实情境，需要对下沉物体做三力平衡的受力分析",
+          "misconception_target": "对下沉物体受力分析不完整，漏掉支持力而盲目使用 F浮=G",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "e17c5243-96d8-475c-a054-d0788f6f9734",
+          "source_kp_name": "浮力综合计算（多物理量联立）",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:47:15.775Z",
+          "source_key": "e17c5243-96d8-475c-a054-d0788f6f9734#q4",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 9,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "基于阿基米德原理的浮力定量计算",
+        "question": "某物体完全浸没在水中，排开水的体积为 $2\\times10^{-4}\\ \\mathrm{m^3}$。已知水的密度 $\\rho_水=1.0\\times10^{3}\\ \\mathrm{kg/m^3}$，$g$ 取 $10\\ \\mathrm{N/kg}$。该物体受到的浮力是（　）",
+        "options": [
+          "2 N",
+          "0.2 N",
+          "20 N",
+          "$2\\times10^{-6}\\ \\mathrm{N}$"
+        ],
+        "answer": "2 N",
+        "explanation": "根据阿基米德原理 $F_浮=\\rho_液 gV_排$，代入得 $F_浮=1.0\\times10^{3}\\times10\\times2\\times10^{-4}\\ \\mathrm{N}=2\\ \\mathrm{N}$。若漏乘 $g$ 会得到 0.2 N，属于常见错误；体积和密度单位需统一为国际单位。",
+        "meta": {
+          "cognitive_level": "理解",
+          "steam_dimensions": [],
+          "steam_context": "学科内核心概念",
+          "misconception_target": "漏乘 g 或密度、体积单位不统一",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "5829bb0c-1504-4d51-8322-f535bab88692",
+          "source_kp_name": "基于阿基米德原理的浮力定量计算",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:45:31.553Z",
+          "source_key": "5829bb0c-1504-4d51-8322-f535bab88692#q1",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 10,
+        "type": "fill_blank",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "基于阿基米德原理的浮力定量计算",
+        "question": "校园科技节的浮力实验展台上，小组把一块金属块完全浸没在盛水的量筒中，测得它排开水的体积为 $150\\ \\mathrm{cm^3}$。已知 $\\rho_水=1.0\\times10^{3}\\ \\mathrm{kg/m^3}$，$g$ 取 $10\\ \\mathrm{N/kg}$。金属块受到的浮力为 ___ $\\mathrm{N}$。",
+        "options": [],
+        "answer": "1.5",
+        "explanation": "先统一单位：$150\\ \\mathrm{cm^3}=150\\times10^{-6}\\ \\mathrm{m^3}=1.5\\times10^{-4}\\ \\mathrm{m^3}$。再由 $F_浮=\\rho_水 gV_排$ 得 $F_浮=1.0\\times10^{3}\\times10\\times1.5\\times10^{-4}\\ \\mathrm{N}=1.5\\ \\mathrm{N}$。常见错误是直接把 $150\\ \\mathrm{cm^3}$ 当作 $150\\ \\mathrm{m^3}$ 代入，导致结果严重偏大。",
+        "meta": {
+          "cognitive_level": "应用",
+          "steam_dimensions": [
+            "S",
+            "M"
+          ],
+          "steam_context": "校园科技节浮力实验中的排水体积测量与单位换算",
+          "misconception_target": "未把 cm³ 换算成 m³ 就代入公式",
+          "figure": null,
+          "resource_needs": [
+            "formula",
+            "unit_conversion"
+          ],
+          "source_kp_id": "5829bb0c-1504-4d51-8322-f535bab88692",
+          "source_kp_name": "基于阿基米德原理的浮力定量计算",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:45:31.553Z",
+          "source_key": "5829bb0c-1504-4d51-8322-f535bab88692#q2",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 11,
+        "type": "calculation",
+        "score": 8,
+        "difficulty": 3,
+        "knowledge_point": "基于阿基米德原理的浮力定量计算",
+        "question": "小明用弹簧测力计悬挂一金属块，金属块静止在空气中时测力计示数为 $7.9\\ \\mathrm{N}$；将金属块完全浸没在水中后，测力计示数为 $6.9\\ \\mathrm{N}$。已知 $\\rho_水=1.0\\times10^{3}\\ \\mathrm{kg/m^3}$，$g$ 取 $10\\ \\mathrm{N/kg}$。求该金属块的体积（结果用 $\\mathrm{m^3}$ 表示）。金属块的体积为 ___ $\\mathrm{m^3}$。",
+        "options": [],
+        "answer": "0.0001",
+        "explanation": "先由称重法求浮力：$F_浮=G-F_拉=7.9\\ \\mathrm{N}-6.9\\ \\mathrm{N}=1.0\\ \\mathrm{N}$。金属块完全浸没，故 $V_物=V_排$；由 $F_浮=\\rho_水 gV_排$ 得 $V_排=\\frac{F_浮}{\\rho_水 g}=\\frac{1.0}{1.0\\times10^{3}\\times10}\\ \\mathrm{m^3}=1.0\\times10^{-4}\\ \\mathrm{m^3}$，即 $0.0001\\ \\mathrm{m^3}$。易错点是误把重力 $7.9\\ \\mathrm{N}$ 直接用于求体积。",
+        "meta": {
+          "cognitive_level": "应用",
+          "steam_dimensions": [
+            "S",
+            "M"
+          ],
+          "steam_context": "用弹簧测力计测量空气中与浸没水中的示数，结合称重法和阿基米德原理求体积",
+          "misconception_target": "混淆物体重力与浮力，或忘记浸没时 V排=V物",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "5829bb0c-1504-4d51-8322-f535bab88692",
+          "source_kp_name": "基于阿基米德原理的浮力定量计算",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:45:31.553Z",
+          "source_key": "5829bb0c-1504-4d51-8322-f535bab88692#q3",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 12,
+        "type": "calculation",
+        "score": 10,
+        "difficulty": 4,
+        "knowledge_point": "基于阿基米德原理的浮力定量计算",
+        "question": "社区游泳池边，小明把一块体积为 $200\\ \\mathrm{cm^3}$ 的木块轻轻放入水中，木块漂浮在水面上，露出水面的体积为木块总体积的 $\\frac{1}{5}$。已知 $\\rho_水=1.0\\times10^{3}\\ \\mathrm{kg/m^3}$，$g$ 取 $10\\ \\mathrm{N/kg}$。求木块受到的浮力。木块受到的浮力为 ___ $\\mathrm{N}$。",
+        "options": [],
+        "answer": "1.6",
+        "explanation": "木块漂浮时排开水的体积为浸入水中的体积：$V_排=200\\ \\mathrm{cm^3}\\times\\left(1-\\frac{1}{5}\\right)=160\\ \\mathrm{cm^3}=1.6\\times10^{-4}\\ \\mathrm{m^3}$。由阿基米德原理得 $F_浮=\\rho_水 gV_排=1.0\\times10^{3}\\times10\\times1.6\\times10^{-4}\\ \\mathrm{N}=1.6\\ \\mathrm{N}$。常见错误是把木块总体积 $200\\ \\mathrm{cm^3}$ 直接当作 $V_排$，或忘记进行单位换算。",
+        "meta": {
+          "cognitive_level": "分析",
+          "steam_dimensions": [
+            "S",
+            "M"
+          ],
+          "steam_context": "游泳池中木块漂浮现象，需先由露出比例求浸入体积再计算浮力",
+          "misconception_target": "把物体总体积误当作排开液体体积，或忽略 cm³ 与 m³ 的换算",
+          "figure": null,
+          "resource_needs": [
+            "formula",
+            "unit_conversion"
+          ],
+          "source_kp_id": "5829bb0c-1504-4d51-8322-f535bab88692",
+          "source_kp_name": "基于阿基米德原理的浮力定量计算",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:45:31.553Z",
+          "source_key": "5829bb0c-1504-4d51-8322-f535bab88692#q4",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "称重法测浮力",
+      "core_concept": "会用弹簧测力计分步测量物体重力G和浸没时拉力F拉；能根据F浮 = G - F拉计算浮力大小",
+      "key_formula": "",
+      "common_mistakes": [
+        "浮力等于物体在水中的视重（F拉）",
+        "F浮 = G + F拉",
+        "浸没越深浮力越大"
+      ],
+      "tips": "对应章节：第十章 浮力。先判断物理量、单位和条件，再作答。"
+    },
+    {
+      "point": "浮力综合计算（多物理量联立）",
+      "core_concept": "能综合运用G=mg、F浮=ρ液gV排、F浮=G（漂浮/悬浮）等公式求解未知量；能根据浮沉状态选择恰当平衡方程（如漂浮用F浮=G，下沉用F浮<G+支持力）",
+      "key_formula": "",
+      "common_mistakes": [
+        "未判断状态即盲目套用F浮=G",
+        "混淆排水量（质量）与排开体积，漏乘ρ液",
+        "忽略支持力存在导致下沉物体受力分析错误"
+      ],
+      "tips": "对应章节：第十章 浮力。先判断物理量、单位和条件，再作答。"
+    },
+    {
+      "point": "基于阿基米德原理的浮力定量计算",
+      "core_concept": "能按步骤完成F_浮=ρ液gV排的数值计算（含单位统一、科学记数法）；能结合称重法（F_浮=G−F_拉）与阿基米德原理联立求解未知量（如练习题3、4）",
+      "key_formula": "",
+      "common_mistakes": [
+        "在计算中遗漏g或错误代入g=9.8N/kg而题干指定g=10N/kg",
+        "未统一单位（如ρ用g/cm³、V用cm³却未换算）",
+        "将F_浮=G_排机械套用，忽视G_排需通过ρ液gV排计算"
+      ],
+      "tips": "对应章节：第十章 浮力。先判断物理量、单位和条件，再作答。"
+    }
+  ],
+  "_meta": {
+    "source": "k12-knowledge-points",
+    "generated_from": "k12/generated/physics-g8",
+    "imported_at": "2026-11-05T13:21:55.523Z"
+  }
+}

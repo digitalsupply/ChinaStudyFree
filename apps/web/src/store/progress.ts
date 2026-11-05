@@ -102,14 +102,21 @@ export interface ActiveLessonSession {
   sessionXp?: number;
 }
 
-/** 🚩 题目报错类型（E2：小旗子三选） */
-export type ReportKind = "question_wrong" | "answer_should_count" | "audio_issue";
+/** 🚩 题目报错类型（E2：小旗子；K12 增加公式/图示问题） */
+export type ReportKind =
+  | "question_wrong"
+  | "answer_should_count"
+  | "audio_issue"
+  | "formula_issue"
+  | "figure_issue";
 
 /** 报错类型 → 儿童友好中文标签（UI 单一事实源） */
 export const REPORT_KIND_LABELS: Record<ReportKind, string> = {
   question_wrong: "题目有误",
   answer_should_count: "我的答案应该算对",
   audio_issue: "音频有问题",
+  formula_issue: "公式/符号有问题",
+  figure_issue: "图示/表格有问题",
 };
 
 /**
@@ -126,6 +133,11 @@ export interface QuestionReport {
   createdAt: string; // ISO
   /** 当次作答（可选，「我的答案应该算对」时最有用） */
   answerGiven?: string;
+  /**
+   * K12 生成题的稳定来源键（如 `{source_kp_id}#q1`）。
+   * 后台 scripts/k12/apply-corrections.mjs 用它定位并修正/删除题目。
+   */
+  sourceKey?: string;
 }
 
 /**

@@ -1,0 +1,456 @@
+{
+  "textbook": "K12知识图谱 · 物理八年级上册",
+  "unit": "第一章 机械运动",
+  "unit_number": 1,
+  "unit_test": {
+    "title": "第一章 机械运动 · K12知识图谱练习",
+    "total_score": 60,
+    "time_minutes": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "true_false",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "参照物的选取与判断",
+        "question": "描述一个物体的运动情况时，必须先选定参照物；参照物不同，得出的运动或静止结论可能不同。",
+        "options": [],
+        "answer": "对",
+        "explanation": "判断物体是运动还是静止，要看物体相对于所选参照物的位置是否发生变化。因此描述运动前必须选定参照物；参照物可以任选，不一定是静止的物体，地面也不是唯一合法的参照物。",
+        "meta": {
+          "cognitive_level": "理解",
+          "steam_dimensions": [],
+          "steam_context": "学科内核心概念",
+          "misconception_target": "认为不选参照物也能判断运动状态，或默认地面是唯一合法参照物",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "898a5f97-307b-4ee8-99a3-691af95b2c8d",
+          "source_kp_name": "参照物的选取与判断",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:48:52.233Z",
+          "source_key": "898a5f97-307b-4ee8-99a3-691af95b2c8d#q1",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "参照物的选取与判断",
+        "question": "小明坐在沿平直公路行驶的公交车上，看到路旁的树木向后退。小明选择的参照物是（ ）。",
+        "options": [
+          "路旁树木",
+          "地面",
+          "公交车",
+          "太阳"
+        ],
+        "answer": "公交车",
+        "explanation": "树木相对于公交车的位置不断变化，以公交车为参照物时树木向后退；若以地面为参照物，树木是静止的。常见错误是认为地面一定是参照物，或把观察者所在位置与参照物混淆。",
+        "meta": {
+          "cognitive_level": "应用",
+          "steam_dimensions": [
+            "S"
+          ],
+          "steam_context": "乘坐公交车出行的真实情境，通过观察路旁树木的相对位置变化判断参照物",
+          "misconception_target": "默认地面是唯一合法参照物；混淆参照物与观察者位置",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "898a5f97-307b-4ee8-99a3-691af95b2c8d",
+          "source_kp_name": "参照物的选取与判断",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:48:52.233Z",
+          "source_key": "898a5f97-307b-4ee8-99a3-691af95b2c8d#q2",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 3,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 3,
+        "knowledge_point": "参照物的选取与判断",
+        "question": "在一条平直轨道上，甲车向东行驶。甲车中的乘客看到乙车向西运动。若以地面为参照物，乙车的运动情况是（ ）。",
+        "options": [
+          "一定向东运动",
+          "一定向西运动",
+          "一定静止",
+          "可能向东、向西或静止，无法确定"
+        ],
+        "answer": "可能向东、向西或静止，无法确定",
+        "explanation": "以甲车为参照物乙车向西运动，说明乙车相对甲车向后。若乙车也向东但比甲车慢，或乙车静止，或乙车向西运动，都能出现这一现象，因此仅凭该描述不能确定乙车相对地面的运动方向。易错点是把相对运动方向直接当成绝对运动方向。",
+        "meta": {
+          "cognitive_level": "分析",
+          "steam_dimensions": [
+            "S"
+          ],
+          "steam_context": "轨道列车相对运动情境，根据相对运动现象反推隐含参照物和可能的运动状态",
+          "misconception_target": "把相对运动方向当成绝对运动方向，认为看到向西就一定向西运动",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "898a5f97-307b-4ee8-99a3-691af95b2c8d",
+          "source_kp_name": "参照物的选取与判断",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:48:52.233Z",
+          "source_key": "898a5f97-307b-4ee8-99a3-691af95b2c8d#q3",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 4,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 4,
+        "knowledge_point": "参照物的选取与判断",
+        "question": "甲、乙、丙三辆汽车在平直公路上同向行驶。坐在甲车中的乘客看到乙车静止，看到丙车向后运动。若三车都向前行驶，则三车速度大小关系是（ ）。",
+        "options": [
+          "甲、乙速度相等，且大于丙的速度",
+          "甲速度最大，乙次之，丙最小",
+          "甲、乙速度相等，且小于丙的速度",
+          "甲速度最小，乙、丙速度相等"
+        ],
+        "answer": "甲、乙速度相等，且大于丙的速度",
+        "explanation": "以甲车为参照物乙车静止，说明甲、乙两车速度相同；以甲车为参照物丙车向后运动，说明丙车比甲车慢。三车同向行驶，所以甲、乙速度相等且大于丙的速度。易错点是认为“向后运动”一定表示运动方向相反。",
+        "meta": {
+          "cognitive_level": "分析",
+          "steam_dimensions": [
+            "S",
+            "M"
+          ],
+          "steam_context": "公路行车情境，用相对运动现象比较三车速度大小，建立速度关系模型",
+          "misconception_target": "认为“向后运动”一定表示运动方向相反，忽略同向慢行也会相对后退",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "898a5f97-307b-4ee8-99a3-691af95b2c8d",
+          "source_kp_name": "参照物的选取与判断",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:48:52.233Z",
+          "source_key": "898a5f97-307b-4ee8-99a3-691af95b2c8d#q4",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 5,
+        "type": "true_false",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "测量误差与精确度",
+        "question": "测量误差是不可避免的，而测量中出现的错误是可以避免的。",
+        "options": [],
+        "answer": "对",
+        "explanation": "误差是测量值与真实值之间的差异，由仪器分度值的限制、测量方法的局限等因素造成，任何测量都存在误差，只能设法减小而不能消除；错误则是违反操作规范或粗心造成的，例如读数时视线没有正对刻度线、记录数据时写错数字，只要按规范操作就可以避免。因此该说法正确。",
+        "meta": {
+          "cognitive_level": "了解",
+          "steam_dimensions": [],
+          "steam_context": "学科内核心概念",
+          "misconception_target": "把误差与错误混为一谈，认为误差可以消除",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "acf6f887-9f22-44e0-aea3-c4f60f2fe221",
+          "source_kp_name": "测量误差与精确度",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:46:00.790Z",
+          "source_key": "acf6f887-9f22-44e0-aea3-c4f60f2fe221#q1",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 6,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "测量误差与精确度",
+        "question": "甲、乙两把刻度尺的量程相同，甲的分度值是 1 mm，乙的分度值是 1 cm。用它们分别按规范操作测量同一本物理课本的厚度，下列说法正确的是",
+        "options": [
+          "甲尺测出的结果更精确，因为它的分度值更小",
+          "乙尺测出的结果更精确，因为它的分度值更大",
+          "两把尺的分度值虽然不同，但测量结果的精确程度一定相同",
+          "只要操作规范，两把尺的测量结果一定完全相同"
+        ],
+        "answer": "甲尺测出的结果更精确，因为它的分度值更小",
+        "explanation": "测量结果的精确程度由刻度尺的分度值决定，分度值越小，读数时可以估读到更小的一位，测量结果就越精确。甲尺分度值 1 mm 小于乙尺的 1 cm，所以甲尺测得更精确。操作规范只能避免错误，不能使两把尺的精确程度相同，也不能使它们的读数完全相同。",
+        "meta": {
+          "cognitive_level": "理解",
+          "steam_dimensions": [],
+          "steam_context": "学科内核心概念",
+          "misconception_target": "误认为分度值越大或测量结果位数越多就越精确",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "acf6f887-9f22-44e0-aea3-c4f60f2fe221",
+          "source_kp_name": "测量误差与精确度",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:46:00.790Z",
+          "source_key": "acf6f887-9f22-44e0-aea3-c4f60f2fe221#q2",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 7,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 3,
+        "knowledge_point": "测量误差与精确度",
+        "question": "小华用分度值为 1 mm 的刻度尺测量物理课本的宽度，三次按规范操作得到的数据分别为 18.42 cm、18.44 cm、18.43 cm。下列分析正确的是",
+        "options": [
+          "三次结果不同，说明小华的三次测量中一定存在错误",
+          "三次结果不同是误差造成的，求平均值可以减小误差",
+          "这三个数据的平均值是 18.43 cm，说明该结果已经没有误差",
+          "只要换用分度值更大的刻度尺，就能减小测量误差"
+        ],
+        "answer": "三次结果不同是误差造成的，求平均值可以减小误差",
+        "explanation": "在规范操作的前提下，三次读数略有差异是误差造成的，误差不可避免；多次测量取平均值可以减小误差，使结果更接近真实值。计算结果为 (18.42 cm+18.44 cm+18.43 cm)/3=18.43 cm，但平均值仍然存在误差，不能说“没有误差”。换用分度值更大的刻度尺会降低精确程度，反而使误差可能增大。",
+        "meta": {
+          "cognitive_level": "分析",
+          "steam_dimensions": [
+            "S",
+            "M"
+          ],
+          "steam_context": "以规范测量得到的多组数据为证据，用求平均值的方法处理数据并分析误差",
+          "misconception_target": "认为多次测量取平均值可以消除误差；把正常的数据差异当成错误",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "acf6f887-9f22-44e0-aea3-c4f60f2fe221",
+          "source_kp_name": "测量误差与精确度",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:46:00.790Z",
+          "source_key": "acf6f887-9f22-44e0-aea3-c4f60f2fe221#q3",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 8,
+        "type": "fill_blank",
+        "score": 5,
+        "difficulty": 4,
+        "knowledge_point": "测量误差与精确度",
+        "question": "学校科技小组用同一把刻度尺测量课桌的长度，四次记录分别为 60.25 cm、60.24 cm、60.26 cm、60.62 cm。经检查，60.62 cm 是记录时把 60.26 误写成了 60.62。剔除这一错误数据后，其余三次测量的平均值是 ___ cm（结果保留两位小数）。",
+        "options": [],
+        "answer": "60.25",
+        "explanation": "60.62 cm 与其他数据相差明显，并且已经查明是记录时写错数字，属于可以避免的错误，不是误差，不能参与求平均值；误差只能减小、不能消除。剔除该数据后，平均值为 (60.25 cm+60.24 cm+60.26 cm)/3=60.25 cm，结果保留两位小数与原记录的位数一致。",
+        "meta": {
+          "cognitive_level": "应用",
+          "steam_dimensions": [
+            "S",
+            "M"
+          ],
+          "steam_context": "在校园测量任务中辨别错误数据，并用平均值处理有效测量数据",
+          "misconception_target": "把记录错误当作误差计入平均值；认为求平均值可以消除误差",
+          "figure": null,
+          "resource_needs": [
+            "formula"
+          ],
+          "source_kp_id": "acf6f887-9f22-44e0-aea3-c4f60f2fe221",
+          "source_kp_name": "测量误差与精确度",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:46:00.790Z",
+          "source_key": "acf6f887-9f22-44e0-aea3-c4f60f2fe221#q4",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 9,
+        "type": "true_false",
+        "score": 5,
+        "difficulty": 1,
+        "knowledge_point": "运动与静止的相对性",
+        "question": "判断：一个物体是运动还是静止，取决于所选的参照物，运动状态不是物体本身固有的属性。",
+        "options": [],
+        "answer": "对",
+        "explanation": "运动与静止是相对而言的。选择不同参照物，同一物体的位置变化情况可能不同，因此不能脱离参照物说物体一定运动或一定静止；运动状态不是物体本身固有的属性。",
+        "meta": {
+          "cognitive_level": "理解",
+          "steam_dimensions": [],
+          "steam_context": "学科内核心概念",
+          "misconception_target": "认为运动状态是物体固有属性，与参照物无关",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "16ca7d52-3c96-409a-89fc-939436df3c96",
+          "source_kp_name": "运动与静止的相对性",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:50:15.167Z",
+          "source_key": "16ca7d52-3c96-409a-89fc-939436df3c96#q1",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 10,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 2,
+        "knowledge_point": "运动与静止的相对性",
+        "question": "校园运动会上，两名同学并排同速跑步。下列说法正确的是（　　）",
+        "options": [
+          "以地面为参照物，两名同学都是静止的",
+          "以其中一名同学为参照物，另一名同学是静止的",
+          "两名同学相对静止，说明他们绝对不动",
+          "运动状态由物体本身决定，与参照物选择无关"
+        ],
+        "answer": "以其中一名同学为参照物，另一名同学是静止的",
+        "explanation": "两名同学并排同速跑步，他们之间的位置不随时间改变，所以以其中一名同学为参照物，另一名同学是静止的。以地面为参照物，两名同学的位置都在改变，都是运动的；相对静止并不等于绝对不动。",
+        "meta": {
+          "cognitive_level": "理解",
+          "steam_dimensions": [
+            "S"
+          ],
+          "steam_context": "用校园运动会中并排同速跑步的真实情境，观察并判断不同参照物下的运动状态",
+          "misconception_target": "误认为相对静止就是绝对不动，或认为运动状态与参照物无关",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "16ca7d52-3c96-409a-89fc-939436df3c96",
+          "source_kp_name": "运动与静止的相对性",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:50:15.167Z",
+          "source_key": "16ca7d52-3c96-409a-89fc-939436df3c96#q2",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 11,
+        "type": "fill_blank_text",
+        "score": 5,
+        "difficulty": 3,
+        "knowledge_point": "运动与静止的相对性",
+        "question": "鲁迅在《社戏》中写“淡黑的起伏的连山，仿佛是踊跃的铁的兽脊似的，都远远地向船尾跑去了”。从物理学看，作者是以行驶的___为参照物，才觉得山在向后运动。",
+        "options": [],
+        "answer": "船",
+        "explanation": "以行驶的船为参照物，山相对于船的位置不断向后改变，因此会观察到山“向船尾跑去”。这说明同一物体的运动或静止情况与参照物的选择有关，体现了运动与静止的相对性。",
+        "meta": {
+          "cognitive_level": "应用",
+          "steam_dimensions": [],
+          "steam_context": "用文学作品中真实的乘船观景描述，分析参照物与运动描述的关系",
+          "misconception_target": "认为山在向后运动是山本身的固有运动状态，忽视参照物选择",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "16ca7d52-3c96-409a-89fc-939436df3c96",
+          "source_kp_name": "运动与静止的相对性",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:50:15.167Z",
+          "source_key": "16ca7d52-3c96-409a-89fc-939436df3c96#q3",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      },
+      {
+        "id": 12,
+        "type": "choice",
+        "score": 5,
+        "difficulty": 4,
+        "knowledge_point": "运动与静止的相对性",
+        "question": "商场自动扶梯匀速上行，小明站在扶梯上不动，小红从扶梯底端沿扶梯向上行走。下列说法正确的是（　　）",
+        "options": [
+          "以小明为参照物，小红一定是静止的",
+          "以扶梯为参照物，小明是运动的",
+          "以地面为参照物，小明是运动的",
+          "以小红为参照物，小明一定是静止的"
+        ],
+        "answer": "以地面为参照物，小明是运动的",
+        "explanation": "小明站在向上运行的扶梯上，以地面为参照物，他的位置不断升高，所以是运动的；以扶梯为参照物，小明的位置不变，是静止的。小红沿扶梯向上行走，她相对于小明的位置在改变，因此以小明为参照物小红不是静止的；以小红为参照物小明也不是一定静止。",
+        "meta": {
+          "cognitive_level": "分析",
+          "steam_dimensions": [
+            "S"
+          ],
+          "steam_context": "用商场自动扶梯上不同乘客的运动状态判断，分析同一物体相对不同参照物的运动情况",
+          "misconception_target": "混淆相对静止与绝对不动，不能根据参照物变化判断运动状态",
+          "figure": null,
+          "resource_needs": [],
+          "source_kp_id": "16ca7d52-3c96-409a-89fc-939436df3c96",
+          "source_kp_name": "运动与静止的相对性",
+          "stage": "middle",
+          "subject_id": "physics",
+          "grade_band": "初中",
+          "prompt_version": "k12-steam-v1",
+          "model": "deepseek-v4.1-flash",
+          "generated_at": "2026-11-05T12:50:15.167Z",
+          "source_key": "16ca7d52-3c96-409a-89fc-939436df3c96#q4",
+          "imported_from": "k12/generated/physics-g8"
+        }
+      }
+    ]
+  },
+  "knowledge_summary": [
+    {
+      "point": "参照物的选取与判断",
+      "core_concept": "能在具体情境中明确指出所选参照物；能根据给定参照物判断某物体是运动还是静止",
+      "key_formula": "",
+      "common_mistakes": [
+        "认为参照物必须是静止的物体",
+        "默认地面是唯一合法参照物",
+        "混淆参照物与观察者位置"
+      ],
+      "tips": "对应章节：第一章 机械运动。先判断物理量、单位和条件，再作答。"
+    },
+    {
+      "point": "测量误差与精确度",
+      "core_concept": "能区分误差（不可避免）与错误（可避免）的本质差异；能举例说明误差来源（仪器限制、方法局限）",
+      "key_formula": "",
+      "common_mistakes": [
+        "认为多次测量取平均值可消除误差",
+        "将‘读数偏大’等操作失误归类为误差而非错误"
+      ],
+      "tips": "对应章节：第一章 机械运动。先判断物理量、单位和条件，再作答。"
+    },
+    {
+      "point": "运动与静止的相对性",
+      "core_concept": "理解‘运动与静止取决于参照物选择’这一核心结论；能解释‘同向同速两物体互为静止’等相对性现象",
+      "key_formula": "",
+      "common_mistakes": [
+        "认为运动状态是物体固有属性，与参照物无关",
+        "误以为‘相对静止’意味着绝对不动"
+      ],
+      "tips": "对应章节：第一章 机械运动。先判断物理量、单位和条件，再作答。"
+    }
+  ],
+  "_meta": {
+    "source": "k12-knowledge-points",
+    "generated_from": "k12/generated/physics-g8",
+    "imported_at": "2026-11-05T13:21:55.519Z"
+  }
+}
