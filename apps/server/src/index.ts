@@ -76,7 +76,16 @@ const STATIC_DIR = resolveStaticDir();
 // 目录结构：ASSETS_DIR/audio、ASSETS_DIR/textbook-pages、ASSETS_DIR/story-images。
 const ASSETS_DIR = process.env.ASSETS_DIR ? path.resolve(process.env.ASSETS_DIR) : "";
 const ASSET_PREFIXES = ["audio", "textbook-pages", "story-images"] as const;
-const ASSETS_READY = Boolean(ASSETS_DIR) && fs.existsSync(ASSETS_DIR);
+// 至少有一个资源目录非空才算就绪；避免 PVC 刚挂载、Job 还没复制完时误报 true。
+const ASSETS_READY =
+  Boolean(ASSETS_DIR) &&
+  ASSET_PREFIXES.some(prefix => {
+    try {
+      return fs.readdirSync(path.join(ASSETS_DIR, prefix)).length > 0;
+    } catch {
+      return false;
+    }
+  });
 
 /** .opus 不一定被 express 的 mime 表识别，显式声明避免浏览器把音频当二进制拒绝。 */
 function setStaticHeaders(

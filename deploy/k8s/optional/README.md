@@ -21,8 +21,8 @@
 
 ## 大资源加载 Job
 
-`assets-loader-job.yaml` 把 `china-study-free/assets:<tag>` 镜像里的音频、课本原页、
-故事配图复制到 PVC `china-study-free-assets`。它是一次性 Job，不放进
-kustomization，避免 Argo 每次同步重复执行。
+`assets-loader-job.yaml` 已移到 `deploy/k8s/base/`，并作为 Argo CD `PostSync`
+hook 自动执行。它把 `china-study-free/assets:<tag>` 镜像里的音频、课本原页、
+故事配图复制到 PVC `china-study-free-assets`；marker 存在时立即退出，不会重复复制。
 
 完整步骤见 [docs/deploy/assets-pvc.md](../../../docs/deploy/assets-pvc.md)。

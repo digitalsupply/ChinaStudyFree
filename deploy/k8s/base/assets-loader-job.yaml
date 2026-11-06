@@ -9,16 +9,20 @@
 #        docker push 192.168.67.202:8443/china-study-free/assets:v1.4.0
 #   3. 手动 apply：
 #        kubectl --kubeconfig /root/.kube/deeptutor-config -n china-study-free \
-#          apply -f deploy/k8s/optional/assets-loader-job.yaml
+#          apply -f deploy/k8s/base/assets-loader-job.yaml
 #
-# 这个 Job 不放进 kustomization，避免 Argo 每次同步都重新跑。
-# 资源更新时改镜像 tag 和 marker 后重新 apply。
+# 该 Job 作为 Argo CD PostSync hook 运行；marker 存在时直接退出。
+# 资源更新时修改镜像 tag 和 marker，提交 GitOps 后 Argo 会自动重跑。
 apiVersion: batch/v1
 kind: Job
 metadata:
   name: china-study-free-assets-loader
   labels:
     app: china-study-free-assets-loader
+  annotations:
+    # Argo CD 每次同步后运行一次；marker 存在时立即退出，不会重复复制。
+    argocd.argoproj.io/hook: PostSync
+    argocd.argoproj.io/hook-delete-policy: BeforeHookCreation
 spec:
   backoffLimit: 1
   activeDeadlineSeconds: 1800

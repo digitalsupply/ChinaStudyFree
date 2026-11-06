@@ -69,11 +69,12 @@ kubectl --kubeconfig /root/.kube/deeptutor-config \
   -n china-study-free get pvc china-study-free-assets
 ```
 
-3. 执行一次性加载 Job：
+3. Job 已作为 Argo CD `PostSync` hook 放进 base，Argo 同步后会自动执行。
+   也可以手动触发：
 
 ```bash
 kubectl --kubeconfig /root/.kube/deeptutor-config \
-  -n china-study-free apply -f deploy/k8s/optional/assets-loader-job.yaml
+  -n china-study-free apply -f deploy/k8s/base/assets-loader-job.yaml
 
 kubectl --kubeconfig /root/.kube/deeptutor-config \
   -n china-study-free logs job/china-study-free-assets-loader -f
@@ -96,12 +97,13 @@ curl -k --resolve studyfree.xyz:443:10.0.0.252 \
 1. 重新下载/生成资源；
 2. 运行 `npm run sync:media-manifests` 并提交清单；
 3. 构建新的 `assets:<tag>` 镜像；
-4. 修改 `deploy/k8s/optional/assets-loader-job.yaml` 的镜像 tag 和 marker；
-5. 删除旧 Job 后重新 apply：
+4. 修改 `deploy/k8s/base/assets-loader-job.yaml` 的镜像 tag 和 marker；
+5. 提交并推送 GitOps；Argo 同步后 PostSync hook 会自动重跑。
+   如需手动重跑：
 
 ```bash
 kubectl -n china-study-free delete job china-study-free-assets-loader --ignore-not-found
-kubectl -n china-study-free apply -f deploy/k8s/optional/assets-loader-job.yaml
+kubectl -n china-study-free apply -f deploy/k8s/base/assets-loader-job.yaml
 ```
 
 ## 6. 注意事项

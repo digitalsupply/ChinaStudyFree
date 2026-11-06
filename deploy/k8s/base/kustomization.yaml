@@ -7,6 +7,7 @@ resources:
   - configmap.yaml
   - pvc.yaml
   - assets-pvc.yaml
+  - assets-loader-job.yaml
   - deployment.yaml
   - service.yaml
   - traefik-middleware.yaml

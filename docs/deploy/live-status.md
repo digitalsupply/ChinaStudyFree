@@ -220,5 +220,5 @@ curl -k --resolve studyfree.xyz:443:10.0.0.252 -o /dev/null -w '%{http_code}\n' 
 - [ ] LLM / TTS / Gemini Key（当前未配置）
 - [ ] 如果要多副本：反馈迁移 Postgres
 - [ ] 如果公网访问：边界端口映射/公网 IP
-- [ ] 集群 API 恢复后同步 GitOps，并执行 `deploy/k8s/optional/assets-loader-job.yaml`
+- [ ] 集群 API 恢复后同步 GitOps；Argo PostSync 会自动执行 `deploy/k8s/base/assets-loader-job.yaml`
 - [ ] 验证 `/api/health` 的 `"assets": true` 及音频/课本页/故事图 200
