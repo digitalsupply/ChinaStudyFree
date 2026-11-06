@@ -1,0 +1,295 @@
+{
+  "bookId": "english-g6down",
+  "pdf_total_pages": 78,
+  "detected_offset": 0,
+  "offset_applied": 0,
+  "offset_samples": 25,
+  "passages": [
+    {
+      "passage_id": "english-g6down-p1",
+      "title": "Unit One",
+      "page_hint": 7,
+      "pdf_page": 7,
+      "pages": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "passage_id": "english-g6down-p2",
+      "title": "How tall are you?",
+      "page_hint": 8,
+      "pdf_page": 8,
+      "pages": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "passage_id": "english-g6down-p3",
+      "title": "Let's talk",
+      "page_hint": 9,
+      "pdf_page": 9,
+      "pages": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "passage_id": "english-g6down-p4",
+      "title": "Let's learn",
+      "page_hint": 12,
+      "pdf_page": 12,
+      "pages": [
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "passage_id": "english-g6down-p5",
+      "title": "Read and write",
+      "page_hint": 13,
+      "pdf_page": 13,
+      "pages": [
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "passage_id": "english-g6down-p6",
+      "title": "Story time",
+      "page_hint": 16,
+      "pdf_page": 16,
+      "pages": [
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "passage_id": "english-g6down-p7",
+      "title": "Last weekend",
+      "page_hint": 18,
+      "pdf_page": 18,
+      "pages": [
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "passage_id": "english-g6down-p8",
+      "title": "Story time",
+      "page_hint": 26,
+      "pdf_page": 26,
+      "pages": [
+        25,
+        26,
+        27
+      ]
+    },
+    {
+      "passage_id": "english-g6down-p9",
+      "title": "Unit Three",
+      "page_hint": 27,
+      "pdf_page": 27,
+      "pages": [
+        26,
+        27,
+        28
+      ]
+    },
+    {
+      "passage_id": "english-g6down-p10",
+      "title": "Where did you go?",
+      "page_hint": 28,
+      "pdf_page": 28,
+      "pages": [
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "passage_id": "english-g6down-p11",
+      "title": "Read and write",
+      "page_hint": 33,
+      "pdf_page": 33,
+      "pages": [
+        32,
+        33,
+        34
+      ]
+    },
+    {
+      "passage_id": "english-g6down-p12",
+      "title": "Then and now",
+      "page_hint": 38,
+      "pdf_page": 38,
+      "pages": [
+        37,
+        38,
+        39
+      ]
+    },
+    {
+      "passage_id": "english-g6down-p13",
+      "title": "What a dream!",
+      "page_hint": 43,
+      "pdf_page": 43,
+      "pages": [
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "passage_id": "english-g6down-p14",
+      "title": "Let's check",
+      "page_hint": 44,
+      "pdf_page": 44,
+      "pages": [
+        43,
+        44,
+        45
+      ]
+    },
+    {
+      "passage_id": "english-g6down-p15",
+      "title": "Mike’s happy days",
+      "page_hint": 50,
+      "pdf_page": 50,
+      "pages": [
+        49,
+        50,
+        51
+      ]
+    },
+    {
+      "passage_id": "english-g6down-p16",
+      "title": "Mike and Bill’s game",
+      "page_hint": 50,
+      "pdf_page": 50,
+      "pages": [
+        49,
+        50,
+        51
+      ]
+    },
+    {
+      "passage_id": "english-g6down-p17",
+      "title": "Day 5 Mike and his new friends: Part 1",
+      "page_hint": 51,
+      "pdf_page": 51,
+      "pages": [
+        50,
+        51,
+        52
+      ]
+    },
+    {
+      "passage_id": "english-g6down-p18",
+      "title": "Day 7 Mike’s surprise",
+      "page_hint": 53,
+      "pdf_page": 53,
+      "pages": [
+        52,
+        53,
+        54
+      ]
+    },
+    {
+      "passage_id": "english-g6down-p19",
+      "title": "Read the chant.",
+      "page_hint": 55,
+      "pdf_page": 55,
+      "pages": [
+        54,
+        55,
+        56
+      ]
+    },
+    {
+      "passage_id": "english-g6down-p20",
+      "title": "My small cat",
+      "page_hint": 57,
+      "pdf_page": 57,
+      "pages": [
+        56,
+        57,
+        58
+      ]
+    },
+    {
+      "passage_id": "english-g6down-p21",
+      "title": "Last weekend",
+      "page_hint": 57,
+      "pdf_page": 57,
+      "pages": [
+        56,
+        57,
+        58
+      ]
+    },
+    {
+      "passage_id": "english-g6down-p22",
+      "title": "Tell me about your holiday",
+      "page_hint": 58,
+      "pdf_page": 58,
+      "pages": [
+        57,
+        58,
+        59
+      ]
+    },
+    {
+      "passage_id": "english-g6down-p23",
+      "title": "Changes in me",
+      "page_hint": 58,
+      "pdf_page": 58,
+      "pages": [
+        57,
+        58,
+        59
+      ]
+    },
+    {
+      "passage_id": "english-g6down-p24",
+      "title": "The three little pigs",
+      "page_hint": 67,
+      "pdf_page": 67,
+      "pages": [
+        66,
+        67,
+        68
+      ]
+    },
+    {
+      "passage_id": "english-g6down-p25",
+      "title": "Little Red-Cap",
+      "page_hint": 70,
+      "pdf_page": 70,
+      "pages": [
+        69,
+        70,
+        71
+      ]
+    },
+    {
+      "passage_id": "english-g6down-p26",
+      "title": "Little Red-Cap",
+      "page_hint": 71,
+      "pdf_page": 71,
+      "pages": [
+        70,
+        71,
+        72
+      ]
+    }
+  ]
+}

@@ -1,0 +1,537 @@
+{
+  "bookId": "chinese-g1down",
+  "pdf_total_pages": 131,
+  "detected_offset": 0,
+  "offset_applied": 0,
+  "offset_samples": 2,
+  "passages": [
+    {
+      "passage_id": "chinese-g1down-p1",
+      "title": "春夏秋冬",
+      "page_hint": 7,
+      "pdf_page": 7,
+      "pages": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "passage_id": "chinese-g1down-p2",
+      "title": "姓氏歌",
+      "page_hint": 9,
+      "pdf_page": 9,
+      "pages": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "passage_id": "chinese-g1down-p3",
+      "title": "小青蛙",
+      "page_hint": 11,
+      "pdf_page": 11,
+      "pages": [
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "passage_id": "chinese-g1down-p4",
+      "title": "猜字谜",
+      "page_hint": 13,
+      "pdf_page": 13,
+      "pages": [
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "passage_id": "chinese-g1down-p5",
+      "title": "祖国多么广大",
+      "page_hint": 17,
+      "pdf_page": 17,
+      "pages": [
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "passage_id": "chinese-g1down-p6",
+      "title": "谁和谁好",
+      "page_hint": 19,
+      "pdf_page": 19,
+      "pages": [
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "passage_id": "chinese-g1down-p7",
+      "title": "摇摇船",
+      "page_hint": 21,
+      "pdf_page": 21,
+      "pages": [
+        20,
+        21,
+        22
+      ]
+    },
+    {
+      "passage_id": "chinese-g1down-p8",
+      "title": "小刺猬理发",
+      "page_hint": 21,
+      "pdf_page": 21,
+      "pages": [
+        20,
+        21,
+        22
+      ]
+    },
+    {
+      "passage_id": "chinese-g1down-p9",
+      "title": "吃水不忘挖井人",
+      "page_hint": 22,
+      "pdf_page": 22,
+      "pages": [
+        21,
+        22,
+        23
+      ]
+    },
+    {
+      "passage_id": "chinese-g1down-p10",
+      "title": "我多想去看看",
+      "page_hint": 24,
+      "pdf_page": 24,
+      "pages": [
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "passage_id": "chinese-g1down-p11",
+      "title": "一个接一个",
+      "page_hint": 26,
+      "pdf_page": 26,
+      "pages": [
+        25,
+        26,
+        27
+      ]
+    },
+    {
+      "passage_id": "chinese-g1down-p12",
+      "title": "四个太阳",
+      "page_hint": 29,
+      "pdf_page": 29,
+      "pages": [
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "passage_id": "chinese-g1down-p13",
+      "title": "春晓",
+      "page_hint": 32,
+      "pdf_page": 32,
+      "pages": [
+        31,
+        32,
+        33
+      ]
+    },
+    {
+      "passage_id": "chinese-g1down-p14",
+      "title": "阳光",
+      "page_hint": 33,
+      "pdf_page": 33,
+      "pages": [
+        32,
+        33,
+        34
+      ]
+    },
+    {
+      "passage_id": "chinese-g1down-p15",
+      "title": "小公鸡和小鸭子",
+      "page_hint": 34,
+      "pdf_page": 34,
+      "pages": [
+        33,
+        34,
+        35
+      ]
+    },
+    {
+      "passage_id": "chinese-g1down-p16",
+      "title": "树和喜鹊",
+      "page_hint": 37,
+      "pdf_page": 37,
+      "pages": [
+        36,
+        37,
+        38
+      ]
+    },
+    {
+      "passage_id": "chinese-g1down-p17",
+      "title": "怎么都快乐",
+      "page_hint": 40,
+      "pdf_page": 40,
+      "pages": [
+        39,
+        40,
+        41
+      ]
+    },
+    {
+      "passage_id": "chinese-g1down-p18",
+      "title": "三个全人玩，很好！",
+      "page_hint": 41,
+      "pdf_page": 41,
+      "pages": [
+        40,
+        41,
+        42
+      ]
+    },
+    {
+      "passage_id": "chinese-g1down-p19",
+      "title": "赠汪伦",
+      "page_hint": 45,
+      "pdf_page": 45,
+      "pages": [
+        44,
+        45,
+        46
+      ]
+    },
+    {
+      "passage_id": "chinese-g1down-p20",
+      "title": "胖乎乎的小手",
+      "page_hint": 46,
+      "pdf_page": 46,
+      "pages": [
+        45,
+        46,
+        47
+      ]
+    },
+    {
+      "passage_id": "chinese-g1down-p21",
+      "title": "静夜思",
+      "page_hint": 48,
+      "pdf_page": 48,
+      "pages": [
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "passage_id": "chinese-g1down-p22",
+      "title": "夜色",
+      "page_hint": 49,
+      "pdf_page": 49,
+      "pages": [
+        48,
+        49,
+        50
+      ]
+    },
+    {
+      "passage_id": "chinese-g1down-p23",
+      "title": "端午粽",
+      "page_hint": 51,
+      "pdf_page": 51,
+      "pages": [
+        50,
+        51,
+        52
+      ]
+    },
+    {
+      "passage_id": "chinese-g1down-p24",
+      "title": "彩虹",
+      "page_hint": 53,
+      "pdf_page": 53,
+      "pages": [
+        52,
+        53,
+        54
+      ]
+    },
+    {
+      "passage_id": "chinese-g1down-p25",
+      "title": "寻隐者不遇",
+      "page_hint": 57,
+      "pdf_page": 57,
+      "pages": [
+        56,
+        57,
+        58
+      ]
+    },
+    {
+      "passage_id": "chinese-g1down-p26",
+      "title": "妞妞赶牛",
+      "page_hint": 58,
+      "pdf_page": 58,
+      "pages": [
+        57,
+        58,
+        59
+      ]
+    },
+    {
+      "passage_id": "chinese-g1down-p27",
+      "title": "动物儿歌",
+      "page_hint": 59,
+      "pdf_page": 59,
+      "pages": [
+        58,
+        59,
+        60
+      ]
+    },
+    {
+      "passage_id": "chinese-g1down-p28",
+      "title": "古对今",
+      "page_hint": 61,
+      "pdf_page": 61,
+      "pages": [
+        60,
+        61,
+        62
+      ]
+    },
+    {
+      "passage_id": "chinese-g1down-p29",
+      "title": "操场上",
+      "page_hint": 63,
+      "pdf_page": 63,
+      "pages": [
+        62,
+        63,
+        64
+      ]
+    },
+    {
+      "passage_id": "chinese-g1down-p30",
+      "title": "人之初",
+      "page_hint": 65,
+      "pdf_page": 65,
+      "pages": [
+        64,
+        65,
+        66
+      ]
+    },
+    {
+      "passage_id": "chinese-g1down-p31",
+      "title": "识字加油站",
+      "page_hint": 68,
+      "pdf_page": 68,
+      "pages": [
+        67,
+        68,
+        69
+      ]
+    },
+    {
+      "passage_id": "chinese-g1down-p32",
+      "title": "狐狸和乌鸦",
+      "page_hint": 70,
+      "pdf_page": 70,
+      "pages": [
+        69,
+        70,
+        71
+      ]
+    },
+    {
+      "passage_id": "chinese-g1down-p33",
+      "title": "池上",
+      "page_hint": 72,
+      "pdf_page": 72,
+      "pages": [
+        71,
+        72,
+        73
+      ]
+    },
+    {
+      "passage_id": "chinese-g1down-p34",
+      "title": "小池",
+      "page_hint": 73,
+      "pdf_page": 73,
+      "pages": [
+        72,
+        73,
+        74
+      ]
+    },
+    {
+      "passage_id": "chinese-g1down-p35",
+      "title": "荷叶圆圆",
+      "page_hint": 75,
+      "pdf_page": 75,
+      "pages": [
+        74,
+        75,
+        76
+      ]
+    },
+    {
+      "passage_id": "chinese-g1down-p36",
+      "title": "要下雨了",
+      "page_hint": 78,
+      "pdf_page": 78,
+      "pages": [
+        77,
+        78,
+        79
+      ]
+    },
+    {
+      "passage_id": "chinese-g1down-p37",
+      "title": "夏夜多美",
+      "page_hint": 84,
+      "pdf_page": 84,
+      "pages": [
+        83,
+        84,
+        85
+      ]
+    },
+    {
+      "passage_id": "chinese-g1down-p38",
+      "title": "文具的家",
+      "page_hint": 87,
+      "pdf_page": 87,
+      "pages": [
+        86,
+        87,
+        88
+      ]
+    },
+    {
+      "passage_id": "chinese-g1down-p39",
+      "title": "一分钟",
+      "page_hint": 90,
+      "pdf_page": 90,
+      "pages": [
+        89,
+        90,
+        91
+      ]
+    },
+    {
+      "passage_id": "chinese-g1down-p40",
+      "title": "动物王国开大会",
+      "page_hint": 93,
+      "pdf_page": 93,
+      "pages": [
+        92,
+        93,
+        94
+      ]
+    },
+    {
+      "passage_id": "chinese-g1down-p41",
+      "title": "小猴子下山",
+      "page_hint": 99,
+      "pdf_page": 99,
+      "pages": [
+        98,
+        99,
+        100
+      ]
+    },
+    {
+      "passage_id": "chinese-g1down-p42",
+      "title": "一、一起做游戏",
+      "page_hint": 102,
+      "pdf_page": 102,
+      "pages": [
+        101,
+        102,
+        103
+      ]
+    },
+    {
+      "passage_id": "chinese-g1down-p43",
+      "title": "孙悟空打妖怪",
+      "page_hint": 105,
+      "pdf_page": 105,
+      "pages": [
+        104,
+        105,
+        106
+      ]
+    },
+    {
+      "passage_id": "chinese-g1down-p44",
+      "title": "棉花姑娘",
+      "page_hint": 107,
+      "pdf_page": 107,
+      "pages": [
+        106,
+        107,
+        108
+      ]
+    },
+    {
+      "passage_id": "chinese-g1down-p45",
+      "title": "咕咚",
+      "page_hint": 111,
+      "pdf_page": 111,
+      "pages": [
+        110,
+        111,
+        112
+      ]
+    },
+    {
+      "passage_id": "chinese-g1down-p46",
+      "title": "小壁虎借尾巴",
+      "page_hint": 114,
+      "pdf_page": 114,
+      "pages": [
+        113,
+        114,
+        115
+      ]
+    },
+    {
+      "passage_id": "chinese-g1down-p47",
+      "title": "画鸡",
+      "page_hint": 119,
+      "pdf_page": 119,
+      "pages": [
+        118,
+        119,
+        120
+      ]
+    },
+    {
+      "passage_id": "chinese-g1down-p48",
+      "title": "小熊住山洞",
+      "page_hint": 120,
+      "pdf_page": 120,
+      "pages": [
+        119,
+        120,
+        121
+      ]
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+# 一次性把 assets 镜像里的资源复制到 PVC。
+#
+# 使用前提：
+#   1. PVC china-study-free-assets 已创建（Argo 同步 base/assets-pvc.yaml）。
+#   2. 已构建并推送匹配的资源镜像：
+#        docker build -f docker/assets.Dockerfile \
+#          -t 192.168.67.202:8443/china-study-free/assets:v1.4.0 \
+#          apps/web/public
+#        docker push 192.168.67.202:8443/china-study-free/assets:v1.4.0
+#   3. 手动 apply：
+#        kubectl --kubeconfig /root/.kube/deeptutor-config -n china-study-free \
+#          apply -f deploy/k8s/optional/assets-loader-job.yaml
+#
+# 这个 Job 不放进 kustomization，避免 Argo 每次同步都重新跑。
+# 资源更新时改镜像 tag 和 marker 后重新 apply。
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: china-study-free-assets-loader
+  labels:
+    app: china-study-free-assets-loader
+spec:
+  backoffLimit: 1
+  activeDeadlineSeconds: 1800
+  ttlSecondsAfterFinished: 86400
+  template:
+    metadata:
+      labels:
+        app: china-study-free-assets-loader
+    spec:
+      restartPolicy: OnFailure
+      imagePullSecrets:
+        - name: harbor-auth
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 1000
+        runAsGroup: 1000
+        fsGroup: 1000
+      containers:
+        - name: loader
+          image: 192.168.67.202:8443/china-study-free/assets:v1.4.0
+          imagePullPolicy: IfNotPresent
+          command:
+            - /bin/sh
+            - -c
+            - |
+              set -eu
+              MARKER=/assets/.assets-v1.4.0
+              if [ -f "$MARKER" ]; then
+                echo "assets already loaded: $MARKER"
+                exit 0
+              fi
+              mkdir -p /assets
+              for d in audio textbook-pages story-images; do
+                if [ -d "/src/$d" ]; then
+                  echo "copying $d ..."
+                  mkdir -p "/assets/$d"
+                  tar -C "/src/$d" -cf - . | tar -C "/assets/$d" -xf -
+                fi
+              done
+              touch "$MARKER"
+              echo "assets loaded"
+          volumeMounts:
+            - name: assets
+              mountPath: /assets
+          resources:
+            requests:
+              cpu: 200m
+              memory: 256Mi
+            limits:
+              cpu: "1"
+              memory: 1Gi
+          securityContext:
+            allowPrivilegeEscalation: false
+            capabilities:
+              drop: ["ALL"]
+      volumes:
+        - name: assets
+          persistentVolumeClaim:
+            claimName: china-study-free-assets

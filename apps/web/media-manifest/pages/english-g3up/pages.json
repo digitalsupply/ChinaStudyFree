@@ -1,0 +1,262 @@
+{
+  "bookId": "english-g3up",
+  "pdf_total_pages": 82,
+  "detected_offset": 0,
+  "offset_applied": 0,
+  "offset_samples": 18,
+  "passages": [
+    {
+      "passage_id": "english-g3up-p1",
+      "title": "Unit One",
+      "page_hint": 7,
+      "pdf_page": 7,
+      "pages": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "passage_id": "english-g3up-p2",
+      "title": "Hello!",
+      "page_hint": 8,
+      "pdf_page": 8,
+      "pages": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "passage_id": "english-g3up-p3",
+      "title": "Let's talk",
+      "page_hint": 9,
+      "pdf_page": 9,
+      "pages": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "passage_id": "english-g3up-p4",
+      "title": "Let's chant",
+      "page_hint": 10,
+      "pdf_page": 10,
+      "pages": [
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "passage_id": "english-g3up-p5",
+      "title": "A B C song",
+      "page_hint": 11,
+      "pdf_page": 11,
+      "pages": [
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "passage_id": "english-g3up-p6",
+      "title": "Story time",
+      "page_hint": 16,
+      "pdf_page": 16,
+      "pages": [
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "passage_id": "english-g3up-p7",
+      "title": "Unit Two",
+      "page_hint": 17,
+      "pdf_page": 17,
+      "pages": [
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "passage_id": "english-g3up-p8",
+      "title": "Colours",
+      "page_hint": 18,
+      "pdf_page": 18,
+      "pages": [
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "passage_id": "english-g3up-p9",
+      "title": "Hello!",
+      "page_hint": 15,
+      "pdf_page": 15,
+      "pages": [
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "passage_id": "english-g3up-p10",
+      "title": "Let's do",
+      "page_hint": 23,
+      "pdf_page": 23,
+      "pages": [
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "passage_id": "english-g3up-p11",
+      "title": "Let's sing",
+      "page_hint": 25,
+      "pdf_page": 25,
+      "pages": [
+        24,
+        25,
+        26
+      ]
+    },
+    {
+      "passage_id": "english-g3up-p12",
+      "title": "Letters and sounds",
+      "page_hint": 31,
+      "pdf_page": 31,
+      "pages": [
+        30,
+        31,
+        32
+      ]
+    },
+    {
+      "passage_id": "english-g3up-p13",
+      "title": "Recycle 1",
+      "page_hint": 37,
+      "pdf_page": 37,
+      "pages": [
+        36,
+        37,
+        38
+      ]
+    },
+    {
+      "passage_id": "english-g3up-p14",
+      "title": "How are you?",
+      "page_hint": 40,
+      "pdf_page": 40,
+      "pages": [
+        39,
+        40,
+        41
+      ]
+    },
+    {
+      "passage_id": "english-g3up-p15",
+      "title": "Let's chant",
+      "page_hint": 44,
+      "pdf_page": 44,
+      "pages": [
+        43,
+        44,
+        45
+      ]
+    },
+    {
+      "passage_id": "english-g3up-p16",
+      "title": "Old MacDonald",
+      "page_hint": 49,
+      "pdf_page": 49,
+      "pages": [
+        48,
+        49,
+        50
+      ]
+    },
+    {
+      "passage_id": "english-g3up-p17",
+      "title": "Unit Five Let's eat!",
+      "page_hint": 51,
+      "pdf_page": 51,
+      "pages": [
+        50,
+        51,
+        52
+      ]
+    },
+    {
+      "passage_id": "english-g3up-p18",
+      "title": "Let's eat!",
+      "page_hint": 52,
+      "pdf_page": 52,
+      "pages": [
+        51,
+        52,
+        53
+      ]
+    },
+    {
+      "passage_id": "english-g3up-p19",
+      "title": "Let's eat!",
+      "page_hint": 59,
+      "pdf_page": 59,
+      "pages": [
+        58,
+        59,
+        60
+      ]
+    },
+    {
+      "passage_id": "english-g3up-p20",
+      "title": "Let’s talk",
+      "page_hint": 63,
+      "pdf_page": 63,
+      "pages": [
+        62,
+        63,
+        64
+      ]
+    },
+    {
+      "passage_id": "english-g3up-p21",
+      "title": "Let’s chant",
+      "page_hint": 64,
+      "pdf_page": 64,
+      "pages": [
+        63,
+        64,
+        65
+      ]
+    },
+    {
+      "passage_id": "english-g3up-p22",
+      "title": "Ten little candles",
+      "page_hint": 69,
+      "pdf_page": 69,
+      "pages": [
+        68,
+        69,
+        70
+      ]
+    },
+    {
+      "passage_id": "english-g3up-p23",
+      "title": "Recycle 2",
+      "page_hint": 71,
+      "pdf_page": 71,
+      "pages": [
+        70,
+        71,
+        72
+      ]
+    }
+  ]
+}

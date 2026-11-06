@@ -1,0 +1,559 @@
+{
+  "bookId": "chinese-g6down",
+  "pdf_total_pages": 130,
+  "detected_offset": 0,
+  "offset_applied": 0,
+  "offset_samples": 37,
+  "passages": [
+    {
+      "passage_id": "chinese-g6down-p1",
+      "title": "北京的春节",
+      "page_hint": 7,
+      "pdf_page": 7,
+      "pages": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p2",
+      "title": "除夕",
+      "page_hint": 12,
+      "pdf_page": 12,
+      "pages": [
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p3",
+      "title": "腊八粥",
+      "page_hint": 13,
+      "pdf_page": 13,
+      "pages": [
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p4",
+      "title": "寒食",
+      "page_hint": 16,
+      "pdf_page": 16,
+      "pages": [
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p5",
+      "title": "迢迢牵牛星",
+      "page_hint": 16,
+      "pdf_page": 16,
+      "pages": [
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p6",
+      "title": "十五夜望月",
+      "page_hint": 17,
+      "pdf_page": 17,
+      "pages": [
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p7",
+      "title": "藏戏",
+      "page_hint": 18,
+      "pdf_page": 18,
+      "pages": [
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p8",
+      "title": "长歌行",
+      "page_hint": 23,
+      "pdf_page": 23,
+      "pages": [
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p9",
+      "title": "鲁滨逊漂流记（节选）",
+      "page_hint": 25,
+      "pdf_page": 25,
+      "pages": [
+        24,
+        25,
+        26
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p10",
+      "title": "骑鹅旅行记（节选）",
+      "page_hint": 32,
+      "pdf_page": 32,
+      "pages": [
+        31,
+        32,
+        33
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p11",
+      "title": "汤姆·索亚历险记（节选）",
+      "page_hint": 38,
+      "pdf_page": 38,
+      "pages": [
+        37,
+        38,
+        39
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p12",
+      "title": "日积月累",
+      "page_hint": 45,
+      "pdf_page": 45,
+      "pages": [
+        44,
+        45,
+        46
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p13",
+      "title": "匆匆",
+      "page_hint": 49,
+      "pdf_page": 49,
+      "pages": [
+        48,
+        49,
+        50
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p14",
+      "title": "那个星期天",
+      "page_hint": 51,
+      "pdf_page": 51,
+      "pages": [
+        50,
+        51,
+        52
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p15",
+      "title": "别了，语文课",
+      "page_hint": 56,
+      "pdf_page": 56,
+      "pages": [
+        55,
+        56,
+        57
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p16",
+      "title": "阳光的两种用法",
+      "page_hint": 59,
+      "pdf_page": 59,
+      "pages": [
+        58,
+        59,
+        60
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p17",
+      "title": "马诗",
+      "page_hint": 63,
+      "pdf_page": 63,
+      "pages": [
+        62,
+        63,
+        64
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p18",
+      "title": "石灰吟",
+      "page_hint": 63,
+      "pdf_page": 63,
+      "pages": [
+        62,
+        63,
+        64
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p19",
+      "title": "竹石",
+      "page_hint": 64,
+      "pdf_page": 64,
+      "pages": [
+        63,
+        64,
+        65
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p20",
+      "title": "十六年前的回忆",
+      "page_hint": 65,
+      "pdf_page": 65,
+      "pages": [
+        64,
+        65,
+        66
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p21",
+      "title": "为人民服务",
+      "page_hint": 69,
+      "pdf_page": 69,
+      "pages": [
+        68,
+        69,
+        70
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p22",
+      "title": "董存瑞舍身炸暗堡",
+      "page_hint": 71,
+      "pdf_page": 71,
+      "pages": [
+        70,
+        71,
+        72
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p23",
+      "title": "毛主席在花山",
+      "page_hint": 75,
+      "pdf_page": 75,
+      "pages": [
+        74,
+        75,
+        76
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p24",
+      "title": "十里长街送总理",
+      "page_hint": 76,
+      "pdf_page": 76,
+      "pages": [
+        75,
+        76,
+        77
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p25",
+      "title": "飞夺泸定桥",
+      "page_hint": 77,
+      "pdf_page": 77,
+      "pages": [
+        76,
+        77,
+        78
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p26",
+      "title": "狱中联欢",
+      "page_hint": 79,
+      "pdf_page": 79,
+      "pages": [
+        78,
+        79,
+        80
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p27",
+      "title": "伟大的友谊",
+      "page_hint": 79,
+      "pdf_page": 79,
+      "pages": [
+        78,
+        79,
+        80
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p28",
+      "title": "囚歌",
+      "page_hint": 80,
+      "pdf_page": 80,
+      "pages": [
+        79,
+        80,
+        81
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p29",
+      "title": "春天的故事",
+      "page_hint": 81,
+      "pdf_page": 81,
+      "pages": [
+        80,
+        81,
+        82
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p30",
+      "title": "学弈",
+      "page_hint": 85,
+      "pdf_page": 85,
+      "pages": [
+        84,
+        85,
+        86
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p31",
+      "title": "两小儿辩日",
+      "page_hint": 86,
+      "pdf_page": 86,
+      "pages": [
+        85,
+        86,
+        87
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p32",
+      "title": "真理诞生于一百个问号之后",
+      "page_hint": 87,
+      "pdf_page": 87,
+      "pages": [
+        86,
+        87,
+        88
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p33",
+      "title": "詹天佑",
+      "page_hint": 90,
+      "pdf_page": 90,
+      "pages": [
+        89,
+        90,
+        91
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p34",
+      "title": "表里的生物",
+      "page_hint": 92,
+      "pdf_page": 92,
+      "pages": [
+        91,
+        92,
+        93
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p35",
+      "title": "他们那时候多有趣啊",
+      "page_hint": 95,
+      "pdf_page": 95,
+      "pages": [
+        94,
+        95,
+        96
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p36",
+      "title": "老师领进门",
+      "page_hint": 105,
+      "pdf_page": 105,
+      "pages": [
+        104,
+        105,
+        106
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p37",
+      "title": "作文上的红双圈",
+      "page_hint": 107,
+      "pdf_page": 107,
+      "pages": [
+        106,
+        107,
+        108
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p38",
+      "title": "我为少男少女们歌唱",
+      "page_hint": 112,
+      "pdf_page": 112,
+      "pages": [
+        111,
+        112,
+        113
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p39",
+      "title": "聪明在于学习，天才在于积累",
+      "page_hint": 113,
+      "pdf_page": 113,
+      "pages": [
+        112,
+        113,
+        114
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p40",
+      "title": "给老师的一封信",
+      "page_hint": 114,
+      "pdf_page": 114,
+      "pages": [
+        113,
+        114,
+        115
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p41",
+      "title": "采薇（节选）",
+      "page_hint": 116,
+      "pdf_page": 116,
+      "pages": [
+        115,
+        116,
+        117
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p42",
+      "title": "送元二使安西",
+      "page_hint": 117,
+      "pdf_page": 117,
+      "pages": [
+        116,
+        117,
+        118
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p43",
+      "title": "春夜喜雨",
+      "page_hint": 118,
+      "pdf_page": 118,
+      "pages": [
+        117,
+        118,
+        119
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p44",
+      "title": "早春呈水部张十八员外",
+      "page_hint": 119,
+      "pdf_page": 119,
+      "pages": [
+        118,
+        119,
+        120
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p45",
+      "title": "江上渔者",
+      "page_hint": 120,
+      "pdf_page": 120,
+      "pages": [
+        119,
+        120,
+        121
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p46",
+      "title": "泊船瓜洲",
+      "page_hint": 121,
+      "pdf_page": 121,
+      "pages": [
+        120,
+        121,
+        122
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p47",
+      "title": "游园不值",
+      "page_hint": 122,
+      "pdf_page": 122,
+      "pages": [
+        121,
+        122,
+        123
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p48",
+      "title": "卜算子·送鲍浩然之浙东",
+      "page_hint": 123,
+      "pdf_page": 123,
+      "pages": [
+        122,
+        123,
+        124
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p49",
+      "title": "浣溪沙",
+      "page_hint": 124,
+      "pdf_page": 124,
+      "pages": [
+        123,
+        124,
+        125
+      ]
+    },
+    {
+      "passage_id": "chinese-g6down-p50",
+      "title": "清平乐",
+      "page_hint": 125,
+      "pdf_page": 125,
+      "pages": [
+        124,
+        125,
+        126
+      ]
+    }
+  ]
+}

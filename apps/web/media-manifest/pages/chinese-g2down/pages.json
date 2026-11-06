@@ -1,0 +1,493 @@
+{
+  "bookId": "chinese-g2down",
+  "pdf_total_pages": 131,
+  "detected_offset": 1,
+  "offset_applied": 0,
+  "offset_samples": 11,
+  "passages": [
+    {
+      "passage_id": "chinese-g2down-p1",
+      "title": "村居",
+      "page_hint": 6,
+      "pdf_page": 6,
+      "pages": [
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "passage_id": "chinese-g2down-p2",
+      "title": "咏柳",
+      "page_hint": 7,
+      "pdf_page": 7,
+      "pages": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "passage_id": "chinese-g2down-p3",
+      "title": "找春天",
+      "page_hint": 9,
+      "pdf_page": 9,
+      "pages": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "passage_id": "chinese-g2down-p4",
+      "title": "开满鲜花的小路",
+      "page_hint": 11,
+      "pdf_page": 11,
+      "pages": [
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "passage_id": "chinese-g2down-p5",
+      "title": "邓小平爷爷植树",
+      "page_hint": 14,
+      "pdf_page": 14,
+      "pages": [
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "passage_id": "chinese-g2down-p6",
+      "title": "赋得古原草送别（节选）",
+      "page_hint": 18,
+      "pdf_page": 18,
+      "pages": [
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "passage_id": "chinese-g2down-p7",
+      "title": "笋芽儿",
+      "page_hint": 19,
+      "pdf_page": 19,
+      "pages": [
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "passage_id": "chinese-g2down-p8",
+      "title": "雷锋叔叔，你在哪里",
+      "page_hint": 21,
+      "pdf_page": 21,
+      "pages": [
+        20,
+        21,
+        22
+      ]
+    },
+    {
+      "passage_id": "chinese-g2down-p9",
+      "title": "千人糕",
+      "page_hint": 24,
+      "pdf_page": 24,
+      "pages": [
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "passage_id": "chinese-g2down-p10",
+      "title": "一匹出色的马",
+      "page_hint": 27,
+      "pdf_page": 27,
+      "pages": [
+        26,
+        27,
+        28
+      ]
+    },
+    {
+      "passage_id": "chinese-g2down-p11",
+      "title": "一株紫丁香",
+      "page_hint": 32,
+      "pdf_page": 32,
+      "pages": [
+        31,
+        32,
+        33
+      ]
+    },
+    {
+      "passage_id": "chinese-g2down-p12",
+      "title": "神州谣",
+      "page_hint": 34,
+      "pdf_page": 34,
+      "pages": [
+        33,
+        34,
+        35
+      ]
+    },
+    {
+      "passage_id": "chinese-g2down-p13",
+      "title": "传统节日",
+      "page_hint": 36,
+      "pdf_page": 36,
+      "pages": [
+        35,
+        36,
+        37
+      ]
+    },
+    {
+      "passage_id": "chinese-g2down-p14",
+      "title": "“贝”的故事",
+      "page_hint": 38,
+      "pdf_page": 38,
+      "pages": [
+        37,
+        38,
+        39
+      ]
+    },
+    {
+      "passage_id": "chinese-g2down-p15",
+      "title": "中国美食",
+      "page_hint": 40,
+      "pdf_page": 40,
+      "pages": [
+        39,
+        40,
+        41
+      ]
+    },
+    {
+      "passage_id": "chinese-g2down-p16",
+      "title": "小柳树和小枣树",
+      "page_hint": 45,
+      "pdf_page": 45,
+      "pages": [
+        44,
+        45,
+        46
+      ]
+    },
+    {
+      "passage_id": "chinese-g2down-p17",
+      "title": "彩色的梦",
+      "page_hint": 47,
+      "pdf_page": 47,
+      "pages": [
+        46,
+        47,
+        48
+      ]
+    },
+    {
+      "passage_id": "chinese-g2down-p18",
+      "title": "枫树上的喜鹊",
+      "page_hint": 50,
+      "pdf_page": 50,
+      "pages": [
+        49,
+        50,
+        51
+      ]
+    },
+    {
+      "passage_id": "chinese-g2down-p19",
+      "title": "10 沙滩上的童话",
+      "page_hint": 53,
+      "pdf_page": 53,
+      "pages": [
+        52,
+        53,
+        54
+      ]
+    },
+    {
+      "passage_id": "chinese-g2down-p20",
+      "title": "11 我是一只小虫子",
+      "page_hint": 56,
+      "pdf_page": 56,
+      "pages": [
+        55,
+        56,
+        57
+      ]
+    },
+    {
+      "passage_id": "chinese-g2down-p21",
+      "title": "手影戏",
+      "page_hint": 60,
+      "pdf_page": 60,
+      "pages": [
+        59,
+        60,
+        61
+      ]
+    },
+    {
+      "passage_id": "chinese-g2down-p22",
+      "title": "亡羊补牢",
+      "page_hint": 62,
+      "pdf_page": 62,
+      "pages": [
+        61,
+        62,
+        63
+      ]
+    },
+    {
+      "passage_id": "chinese-g2down-p23",
+      "title": "揠苗助长",
+      "page_hint": 63,
+      "pdf_page": 63,
+      "pages": [
+        62,
+        63,
+        64
+      ]
+    },
+    {
+      "passage_id": "chinese-g2down-p24",
+      "title": "画杨桃",
+      "page_hint": 65,
+      "pdf_page": 65,
+      "pages": [
+        64,
+        65,
+        66
+      ]
+    },
+    {
+      "passage_id": "chinese-g2down-p25",
+      "title": "小马过河",
+      "page_hint": 68,
+      "pdf_page": 68,
+      "pages": [
+        67,
+        68,
+        69
+      ]
+    },
+    {
+      "passage_id": "chinese-g2down-p26",
+      "title": "好天气和坏天气",
+      "page_hint": 74,
+      "pdf_page": 74,
+      "pages": [
+        73,
+        74,
+        75
+      ]
+    },
+    {
+      "passage_id": "chinese-g2down-p27",
+      "title": "晓出净慈寺送林子方",
+      "page_hint": 76,
+      "pdf_page": 76,
+      "pages": [
+        75,
+        76,
+        77
+      ]
+    },
+    {
+      "passage_id": "chinese-g2down-p28",
+      "title": "绝句",
+      "page_hint": 77,
+      "pdf_page": 77,
+      "pages": [
+        76,
+        77,
+        78
+      ]
+    },
+    {
+      "passage_id": "chinese-g2down-p29",
+      "title": "雷雨",
+      "page_hint": 79,
+      "pdf_page": 79,
+      "pages": [
+        78,
+        79,
+        80
+      ]
+    },
+    {
+      "passage_id": "chinese-g2down-p30",
+      "title": "要是你在野外迷了路",
+      "page_hint": 81,
+      "pdf_page": 81,
+      "pages": [
+        80,
+        81,
+        82
+      ]
+    },
+    {
+      "passage_id": "chinese-g2down-p31",
+      "title": "太空生活趣事多",
+      "page_hint": 84,
+      "pdf_page": 84,
+      "pages": [
+        83,
+        84,
+        85
+      ]
+    },
+    {
+      "passage_id": "chinese-g2down-p32",
+      "title": "悯农（其一）",
+      "page_hint": 88,
+      "pdf_page": 88,
+      "pages": [
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "passage_id": "chinese-g2down-p33",
+      "title": "最大的“书”",
+      "page_hint": 89,
+      "pdf_page": 89,
+      "pages": [
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "passage_id": "chinese-g2down-p34",
+      "title": "大象的耳朵",
+      "page_hint": 91,
+      "pdf_page": 91,
+      "pages": [
+        90,
+        91,
+        92
+      ]
+    },
+    {
+      "passage_id": "chinese-g2down-p35",
+      "title": "蜘蛛开店",
+      "page_hint": 94,
+      "pdf_page": 94,
+      "pages": [
+        93,
+        94,
+        95
+      ]
+    },
+    {
+      "passage_id": "chinese-g2down-p36",
+      "title": "青蛙卖泥塘",
+      "page_hint": 97,
+      "pdf_page": 97,
+      "pages": [
+        96,
+        97,
+        98
+      ]
+    },
+    {
+      "passage_id": "chinese-g2down-p37",
+      "title": "小毛虫",
+      "page_hint": 101,
+      "pdf_page": 101,
+      "pages": [
+        100,
+        101,
+        102
+      ]
+    },
+    {
+      "passage_id": "chinese-g2down-p38",
+      "title": "月亮姑娘做衣裳",
+      "page_hint": 106,
+      "pdf_page": 106,
+      "pages": [
+        105,
+        106,
+        107
+      ]
+    },
+    {
+      "passage_id": "chinese-g2down-p39",
+      "title": "祖先的摇篮",
+      "page_hint": 107,
+      "pdf_page": 107,
+      "pages": [
+        106,
+        107,
+        108
+      ]
+    },
+    {
+      "passage_id": "chinese-g2down-p40",
+      "title": "二十四节气歌",
+      "page_hint": 105,
+      "pdf_page": 105,
+      "pages": [
+        104,
+        105,
+        106
+      ]
+    },
+    {
+      "passage_id": "chinese-g2down-p41",
+      "title": "当世界年纪还小的时候",
+      "page_hint": 110,
+      "pdf_page": 110,
+      "pages": [
+        109,
+        110,
+        111
+      ]
+    },
+    {
+      "passage_id": "chinese-g2down-p42",
+      "title": "羿射九日",
+      "page_hint": 113,
+      "pdf_page": 113,
+      "pages": [
+        112,
+        113,
+        114
+      ]
+    },
+    {
+      "passage_id": "chinese-g2down-p43",
+      "title": "舟夜书所见",
+      "page_hint": 118,
+      "pdf_page": 118,
+      "pages": [
+        117,
+        118,
+        119
+      ]
+    },
+    {
+      "passage_id": "chinese-g2down-p44",
+      "title": "李时珍",
+      "page_hint": 119,
+      "pdf_page": 119,
+      "pages": [
+        118,
+        119,
+        120
+      ]
+    }
+  ]
+}

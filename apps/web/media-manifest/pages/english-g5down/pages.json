@@ -1,0 +1,405 @@
+{
+  "bookId": "english-g5down",
+  "pdf_total_pages": 87,
+  "detected_offset": 0,
+  "offset_applied": 0,
+  "offset_samples": 32,
+  "passages": [
+    {
+      "passage_id": "english-g5down-p1",
+      "title": "Unit One",
+      "page_hint": 7,
+      "pdf_page": 7,
+      "pages": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "passage_id": "english-g5down-p2",
+      "title": "My day",
+      "page_hint": 8,
+      "pdf_page": 8,
+      "pages": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "passage_id": "english-g5down-p3",
+      "title": "Let's talk",
+      "page_hint": 9,
+      "pdf_page": 9,
+      "pages": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "passage_id": "english-g5down-p4",
+      "title": "Robin’s play",
+      "page_hint": 14,
+      "pdf_page": 14,
+      "pages": [
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "passage_id": "english-g5down-p5",
+      "title": "Story time",
+      "page_hint": 16,
+      "pdf_page": 16,
+      "pages": [
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "passage_id": "english-g5down-p6",
+      "title": "Read and match",
+      "page_hint": 20,
+      "pdf_page": 20,
+      "pages": [
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "passage_id": "english-g5down-p7",
+      "title": "Let’s talk",
+      "page_hint": 22,
+      "pdf_page": 22,
+      "pages": [
+        21,
+        22,
+        23
+      ]
+    },
+    {
+      "passage_id": "english-g5down-p8",
+      "title": "Read and write",
+      "page_hint": 24,
+      "pdf_page": 24,
+      "pages": [
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "passage_id": "english-g5down-p9",
+      "title": "Story time",
+      "page_hint": 26,
+      "pdf_page": 26,
+      "pages": [
+        25,
+        26,
+        27
+      ]
+    },
+    {
+      "passage_id": "english-g5down-p10",
+      "title": "Let's learn",
+      "page_hint": 33,
+      "pdf_page": 33,
+      "pages": [
+        32,
+        33,
+        34
+      ]
+    },
+    {
+      "passage_id": "english-g5down-p11",
+      "title": "English Party",
+      "page_hint": 34,
+      "pdf_page": 34,
+      "pages": [
+        33,
+        34,
+        35
+      ]
+    },
+    {
+      "passage_id": "english-g5down-p12",
+      "title": "Sarah’s weekend",
+      "page_hint": 37,
+      "pdf_page": 37,
+      "pages": [
+        36,
+        37,
+        38
+      ]
+    },
+    {
+      "passage_id": "english-g5down-p13",
+      "title": "Recycle 1",
+      "page_hint": 38,
+      "pdf_page": 38,
+      "pages": [
+        37,
+        38,
+        39
+      ]
+    },
+    {
+      "passage_id": "english-g5down-p14",
+      "title": "Stella's reply",
+      "page_hint": 39,
+      "pdf_page": 39,
+      "pages": [
+        38,
+        39,
+        40
+      ]
+    },
+    {
+      "passage_id": "english-g5down-p15",
+      "title": "Bed in Summer",
+      "page_hint": 40,
+      "pdf_page": 40,
+      "pages": [
+        39,
+        40,
+        41
+      ]
+    },
+    {
+      "passage_id": "english-g5down-p16",
+      "title": "Let’s spell",
+      "page_hint": 45,
+      "pdf_page": 45,
+      "pages": [
+        44,
+        45,
+        46
+      ]
+    },
+    {
+      "passage_id": "english-g5down-p17",
+      "title": "Two new kittens",
+      "page_hint": 48,
+      "pdf_page": 48,
+      "pages": [
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "passage_id": "english-g5down-p18",
+      "title": "Unit Five",
+      "page_hint": 51,
+      "pdf_page": 51,
+      "pages": [
+        50,
+        51,
+        52
+      ]
+    },
+    {
+      "passage_id": "english-g5down-p19",
+      "title": "Whose dog is it?",
+      "page_hint": 52,
+      "pdf_page": 52,
+      "pages": [
+        51,
+        52,
+        53
+      ]
+    },
+    {
+      "passage_id": "english-g5down-p20",
+      "title": "Robin at the zoo",
+      "page_hint": 58,
+      "pdf_page": 58,
+      "pages": [
+        57,
+        58,
+        59
+      ]
+    },
+    {
+      "passage_id": "english-g5down-p21",
+      "title": "Unit Six",
+      "page_hint": 61,
+      "pdf_page": 61,
+      "pages": [
+        60,
+        61,
+        62
+      ]
+    },
+    {
+      "passage_id": "english-g5down-p22",
+      "title": "Work quietly!",
+      "page_hint": 62,
+      "pdf_page": 62,
+      "pages": [
+        61,
+        62,
+        63
+      ]
+    },
+    {
+      "passage_id": "english-g5down-p23",
+      "title": "The world robot exhibition",
+      "page_hint": 68,
+      "pdf_page": 68,
+      "pages": [
+        67,
+        68,
+        69
+      ]
+    },
+    {
+      "passage_id": "english-g5down-p24",
+      "title": "Mike's summer camp",
+      "page_hint": 71,
+      "pdf_page": 71,
+      "pages": [
+        70,
+        71,
+        72
+      ]
+    },
+    {
+      "passage_id": "english-g5down-p25",
+      "title": "Read the chant",
+      "page_hint": 72,
+      "pdf_page": 72,
+      "pages": [
+        71,
+        72,
+        73
+      ]
+    },
+    {
+      "passage_id": "english-g5down-p26",
+      "title": "A game: Animals and dates",
+      "page_hint": 72,
+      "pdf_page": 72,
+      "pages": [
+        71,
+        72,
+        73
+      ]
+    },
+    {
+      "passage_id": "english-g5down-p27",
+      "title": "I’m in the picture",
+      "page_hint": 73,
+      "pdf_page": 73,
+      "pages": [
+        72,
+        73,
+        74
+      ]
+    },
+    {
+      "passage_id": "english-g5down-p28",
+      "title": "Zip and Zoom",
+      "page_hint": 74,
+      "pdf_page": 74,
+      "pages": [
+        73,
+        74,
+        75
+      ]
+    },
+    {
+      "passage_id": "english-g5down-p29",
+      "title": "Read the sentences",
+      "page_hint": 74,
+      "pdf_page": 74,
+      "pages": [
+        73,
+        74,
+        75
+      ]
+    },
+    {
+      "passage_id": "english-g5down-p30",
+      "title": "My weekend",
+      "page_hint": 75,
+      "pdf_page": 75,
+      "pages": [
+        74,
+        75,
+        76
+      ]
+    },
+    {
+      "passage_id": "english-g5down-p31",
+      "title": "What’s your favourite season?",
+      "page_hint": 75,
+      "pdf_page": 75,
+      "pages": [
+        74,
+        75,
+        76
+      ]
+    },
+    {
+      "passage_id": "english-g5down-p32",
+      "title": "The twelve months",
+      "page_hint": 75,
+      "pdf_page": 75,
+      "pages": [
+        74,
+        75,
+        76
+      ]
+    },
+    {
+      "passage_id": "english-g5down-p33",
+      "title": "When is your birthday?",
+      "page_hint": 76,
+      "pdf_page": 76,
+      "pages": [
+        75,
+        76,
+        77
+      ]
+    },
+    {
+      "passage_id": "english-g5down-p34",
+      "title": "Animals, animals are everywhere",
+      "page_hint": 76,
+      "pdf_page": 76,
+      "pages": [
+        75,
+        76,
+        77
+      ]
+    },
+    {
+      "passage_id": "english-g5down-p35",
+      "title": "School days",
+      "page_hint": 76,
+      "pdf_page": 76,
+      "pages": [
+        75,
+        76,
+        77
+      ]
+    },
+    {
+      "passage_id": "english-g5down-p36",
+      "title": "Proverbs",
+      "page_hint": 85,
+      "pdf_page": 85,
+      "pages": [
+        84,
+        85,
+        86
+      ]
+    }
+  ]
+}

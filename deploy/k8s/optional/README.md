@@ -18,3 +18,11 @@
 
 当前只有 `/api/health`，没有 Prometheus 指标端点。需要时再接入
 `prom-client` 或 OpenTelemetry，不要凭空创建无效的 ServiceMonitor。
+
+## 大资源加载 Job
+
+`assets-loader-job.yaml` 把 `china-study-free/assets:<tag>` 镜像里的音频、课本原页、
+故事配图复制到 PVC `china-study-free-assets`。它是一次性 Job，不放进
+kustomization，避免 Argo 每次同步重复执行。
+
+完整步骤见 [docs/deploy/assets-pvc.md](../../../docs/deploy/assets-pvc.md)。

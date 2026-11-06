@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: china-study-free-assets
+spec:
+  # DeepTutor 集群使用 nfs-sc；多副本时确认该 StorageClass 支持 RWX。
+  storageClassName: nfs-sc

@@ -1,0 +1,295 @@
+{
+  "bookId": "english-g4up",
+  "pdf_total_pages": 82,
+  "detected_offset": 0,
+  "offset_applied": 0,
+  "offset_samples": 21,
+  "passages": [
+    {
+      "passage_id": "english-g4up-p1",
+      "title": "Unit One",
+      "page_hint": 7,
+      "pdf_page": 7,
+      "pages": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "passage_id": "english-g4up-p2",
+      "title": "My classroom",
+      "page_hint": 8,
+      "pdf_page": 8,
+      "pages": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "passage_id": "english-g4up-p3",
+      "title": "Let’s talk",
+      "page_hint": 9,
+      "pdf_page": 9,
+      "pages": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "passage_id": "english-g4up-p4",
+      "title": "Let's spell",
+      "page_hint": 11,
+      "pdf_page": 11,
+      "pages": [
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "passage_id": "english-g4up-p5",
+      "title": "Let's talk",
+      "page_hint": 12,
+      "pdf_page": 12,
+      "pages": [
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "passage_id": "english-g4up-p6",
+      "title": "Let's sing",
+      "page_hint": 15,
+      "pdf_page": 15,
+      "pages": [
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "passage_id": "english-g4up-p7",
+      "title": "Story time",
+      "page_hint": 16,
+      "pdf_page": 16,
+      "pages": [
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "passage_id": "english-g4up-p8",
+      "title": "Unit Two",
+      "page_hint": 17,
+      "pdf_page": 17,
+      "pages": [
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "passage_id": "english-g4up-p9",
+      "title": "My schoolbag",
+      "page_hint": 18,
+      "pdf_page": 18,
+      "pages": [
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "passage_id": "english-g4up-p10",
+      "title": "My schoolbag",
+      "page_hint": 25,
+      "pdf_page": 25,
+      "pages": [
+        24,
+        25,
+        26
+      ]
+    },
+    {
+      "passage_id": "english-g4up-p11",
+      "title": "Let’s chant",
+      "page_hint": 30,
+      "pdf_page": 30,
+      "pages": [
+        29,
+        30,
+        31
+      ]
+    },
+    {
+      "passage_id": "english-g4up-p12",
+      "title": "My friends",
+      "page_hint": 32,
+      "pdf_page": 32,
+      "pages": [
+        31,
+        32,
+        33
+      ]
+    },
+    {
+      "passage_id": "english-g4up-p13",
+      "title": "Read and write",
+      "page_hint": 34,
+      "pdf_page": 34,
+      "pages": [
+        33,
+        34,
+        35
+      ]
+    },
+    {
+      "passage_id": "english-g4up-p14",
+      "title": "Friends",
+      "page_hint": 35,
+      "pdf_page": 35,
+      "pages": [
+        34,
+        35,
+        36
+      ]
+    },
+    {
+      "passage_id": "english-g4up-p15",
+      "title": "Recycle 1",
+      "page_hint": 37,
+      "pdf_page": 37,
+      "pages": [
+        36,
+        37,
+        38
+      ]
+    },
+    {
+      "passage_id": "english-g4up-p16",
+      "title": "Read aloud and match the pictures.",
+      "page_hint": 39,
+      "pdf_page": 39,
+      "pages": [
+        38,
+        39,
+        40
+      ]
+    },
+    {
+      "passage_id": "english-g4up-p17",
+      "title": "Let's do",
+      "page_hint": 44,
+      "pdf_page": 44,
+      "pages": [
+        43,
+        44,
+        45
+      ]
+    },
+    {
+      "passage_id": "english-g4up-p18",
+      "title": "My home",
+      "page_hint": 49,
+      "pdf_page": 49,
+      "pages": [
+        48,
+        49,
+        50
+      ]
+    },
+    {
+      "passage_id": "english-g4up-p19",
+      "title": "Unit Six",
+      "page_hint": 61,
+      "pdf_page": 61,
+      "pages": [
+        60,
+        61,
+        62
+      ]
+    },
+    {
+      "passage_id": "english-g4up-p20",
+      "title": "Meet my family!",
+      "page_hint": 62,
+      "pdf_page": 62,
+      "pages": [
+        61,
+        62,
+        63
+      ]
+    },
+    {
+      "passage_id": "english-g4up-p21",
+      "title": "Listen and chant.",
+      "page_hint": 65,
+      "pdf_page": 65,
+      "pages": [
+        64,
+        65,
+        66
+      ]
+    },
+    {
+      "passage_id": "english-g4up-p22",
+      "title": "Look and match.",
+      "page_hint": 69,
+      "pdf_page": 69,
+      "pages": [
+        68,
+        69,
+        70
+      ]
+    },
+    {
+      "passage_id": "english-g4up-p23",
+      "title": "My family",
+      "page_hint": 69,
+      "pdf_page": 69,
+      "pages": [
+        68,
+        69,
+        70
+      ]
+    },
+    {
+      "passage_id": "english-g4up-p24",
+      "title": "Recycle 2",
+      "page_hint": 71,
+      "pdf_page": 71,
+      "pages": [
+        70,
+        71,
+        72
+      ]
+    },
+    {
+      "passage_id": "english-g4up-p25",
+      "title": "Look, listen and write.",
+      "page_hint": 72,
+      "pdf_page": 72,
+      "pages": [
+        71,
+        72,
+        73
+      ]
+    },
+    {
+      "passage_id": "english-g4up-p26",
+      "title": "We wish you a merry Christmas",
+      "page_hint": 73,
+      "pdf_page": 73,
+      "pages": [
+        72,
+        73,
+        74
+      ]
+    }
+  ]
+}

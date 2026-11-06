@@ -1,0 +1,284 @@
+{
+  "bookId": "english-g3down",
+  "pdf_total_pages": 82,
+  "detected_offset": 0,
+  "offset_applied": 0,
+  "offset_samples": 21,
+  "passages": [
+    {
+      "passage_id": "english-g3down-p1",
+      "title": "Unit One",
+      "page_hint": 7,
+      "pdf_page": 7,
+      "pages": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "passage_id": "english-g3down-p2",
+      "title": "Welcome back to school!",
+      "page_hint": 8,
+      "pdf_page": 8,
+      "pages": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "passage_id": "english-g3down-p3",
+      "title": "Let’s talk",
+      "page_hint": 9,
+      "pdf_page": 9,
+      "pages": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "passage_id": "english-g3down-p4",
+      "title": "Let’s chant",
+      "page_hint": 10,
+      "pdf_page": 10,
+      "pages": [
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "passage_id": "english-g3down-p5",
+      "title": "Let's talk",
+      "page_hint": 12,
+      "pdf_page": 12,
+      "pages": [
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "passage_id": "english-g3down-p6",
+      "title": "Let's chant",
+      "page_hint": 13,
+      "pdf_page": 13,
+      "pages": [
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "passage_id": "english-g3down-p7",
+      "title": "Let's sing",
+      "page_hint": 15,
+      "pdf_page": 15,
+      "pages": [
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "passage_id": "english-g3down-p8",
+      "title": "Story time",
+      "page_hint": 16,
+      "pdf_page": 16,
+      "pages": [
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "passage_id": "english-g3down-p9",
+      "title": "Let's chant",
+      "page_hint": 23,
+      "pdf_page": 23,
+      "pages": [
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "passage_id": "english-g3down-p10",
+      "title": "Start to read",
+      "page_hint": 24,
+      "pdf_page": 24,
+      "pages": [
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "passage_id": "english-g3down-p11",
+      "title": "I love my family",
+      "page_hint": 25,
+      "pdf_page": 25,
+      "pages": [
+        24,
+        25,
+        26
+      ]
+    },
+    {
+      "passage_id": "english-g3down-p12",
+      "title": "Unit Three",
+      "page_hint": 27,
+      "pdf_page": 27,
+      "pages": [
+        26,
+        27,
+        28
+      ]
+    },
+    {
+      "passage_id": "english-g3down-p13",
+      "title": "At the zoo",
+      "page_hint": 28,
+      "pdf_page": 28,
+      "pages": [
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "passage_id": "english-g3down-p14",
+      "title": "Make a monster",
+      "page_hint": 32,
+      "pdf_page": 32,
+      "pages": [
+        31,
+        32,
+        33
+      ]
+    },
+    {
+      "passage_id": "english-g3down-p15",
+      "title": "Let's do",
+      "page_hint": 33,
+      "pdf_page": 33,
+      "pages": [
+        32,
+        33,
+        34
+      ]
+    },
+    {
+      "passage_id": "english-g3down-p16",
+      "title": "Story time",
+      "page_hint": 36,
+      "pdf_page": 36,
+      "pages": [
+        35,
+        36,
+        37
+      ]
+    },
+    {
+      "passage_id": "english-g3down-p17",
+      "title": "Recycle 1",
+      "page_hint": 37,
+      "pdf_page": 37,
+      "pages": [
+        36,
+        37,
+        38
+      ]
+    },
+    {
+      "passage_id": "english-g3down-p18",
+      "title": "Listen and chant",
+      "page_hint": 38,
+      "pdf_page": 38,
+      "pages": [
+        37,
+        38,
+        39
+      ]
+    },
+    {
+      "passage_id": "english-g3down-p19",
+      "title": "The cat is from the UK",
+      "page_hint": 40,
+      "pdf_page": 40,
+      "pages": [
+        39,
+        40,
+        41
+      ]
+    },
+    {
+      "passage_id": "english-g3down-p20",
+      "title": "Where is the toy car?",
+      "page_hint": 49,
+      "pdf_page": 49,
+      "pages": [
+        48,
+        49,
+        50
+      ]
+    },
+    {
+      "passage_id": "english-g3down-p21",
+      "title": "An apple a day",
+      "page_hint": 59,
+      "pdf_page": 59,
+      "pages": [
+        58,
+        59,
+        60
+      ]
+    },
+    {
+      "passage_id": "english-g3down-p22",
+      "title": "Let's spell",
+      "page_hint": 65,
+      "pdf_page": 65,
+      "pages": [
+        64,
+        65,
+        66
+      ]
+    },
+    {
+      "passage_id": "english-g3down-p23",
+      "title": "One, two, three, four, five",
+      "page_hint": 69,
+      "pdf_page": 69,
+      "pages": [
+        68,
+        69,
+        70
+      ]
+    },
+    {
+      "passage_id": "english-g3down-p24",
+      "title": "Recycle 2",
+      "page_hint": 71,
+      "pdf_page": 71,
+      "pages": [
+        70,
+        71,
+        72
+      ]
+    },
+    {
+      "passage_id": "english-g3down-p25",
+      "title": "Short vowel song",
+      "page_hint": 74,
+      "pdf_page": 74,
+      "pages": [
+        73,
+        74,
+        75
+      ]
+    }
+  ]
+}

@@ -25,6 +25,7 @@ ChinaStudyFree 适合部署到 K8s：
 | [手动部署](manual-deploy.md) | 不用 GitOps，从构建镜像到 apply 的完整步骤 |
 | [运维清单](operations-checklist.md) | 日常/周/月检查、告警、故障处理、回滚 |
 | [当前部署状态](live-status.md) | 已部署对象、地址、DNS/TLS/AI 状态、未完成项 |
+| [大资源 PVC](assets-pvc.md) | 音频/课本页/故事图走 PVC 的目录、清单、加载 Job 与影响评估 |
 
 ## 仓库内文件
 
@@ -33,7 +34,7 @@ deploy/
 ├── k8s/
 │   ├── base/                 # Deployment / Service / Ingress / PVC / NetworkPolicy
 │   ├── overlays/prod/        # 生产差异：域名、StorageClass、CORS、镜像 tag
-│   └── optional/             # 多副本/HPA 的前提说明
+│   └── optional/             # 多副本/HPA 前提、大资源加载 Job
 ├── tekton/                   # 自动构建 + 推送 Harbor + 更新 GitOps
 ├── gitops/                   # GitOps 仓库模板 + Argo CD Application
 └── scripts/                  # 渲染 / promote 辅助脚本
@@ -42,7 +43,9 @@ docs/deploy/
 ├── README.md
 ├── gitops-k8s.md
 ├── manual-deploy.md
-└── operations-checklist.md
+├── operations-checklist.md
+├── assets-pvc.md
+└── live-status.md
 ```
 
 ## 快速检查

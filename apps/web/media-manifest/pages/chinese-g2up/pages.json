@@ -1,0 +1,482 @@
+{
+  "bookId": "chinese-g2up",
+  "pdf_total_pages": 127,
+  "detected_offset": 2,
+  "offset_applied": 0,
+  "offset_samples": 5,
+  "passages": [
+    {
+      "passage_id": "chinese-g2up-p1",
+      "title": "小蝌蚪找妈妈",
+      "page_hint": 6,
+      "pdf_page": 6,
+      "pages": [
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "passage_id": "chinese-g2up-p2",
+      "title": "我是什么",
+      "page_hint": 10,
+      "pdf_page": 10,
+      "pages": [
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "passage_id": "chinese-g2up-p3",
+      "title": "植物妈妈有办法",
+      "page_hint": 13,
+      "pdf_page": 13,
+      "pages": [
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "passage_id": "chinese-g2up-p4",
+      "title": "梅花",
+      "page_hint": 18,
+      "pdf_page": 18,
+      "pages": [
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "passage_id": "chinese-g2up-p5",
+      "title": "企鹅寄冰",
+      "page_hint": 19,
+      "pdf_page": 19,
+      "pages": [
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "passage_id": "chinese-g2up-p6",
+      "title": "场景歌",
+      "page_hint": 21,
+      "pdf_page": 21,
+      "pages": [
+        20,
+        21,
+        22
+      ]
+    },
+    {
+      "passage_id": "chinese-g2up-p7",
+      "title": "树之歌",
+      "page_hint": 23,
+      "pdf_page": 23,
+      "pages": [
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "passage_id": "chinese-g2up-p8",
+      "title": "拍手歌",
+      "page_hint": 25,
+      "pdf_page": 25,
+      "pages": [
+        24,
+        25,
+        26
+      ]
+    },
+    {
+      "passage_id": "chinese-g2up-p9",
+      "title": "田家四季歌",
+      "page_hint": 28,
+      "pdf_page": 28,
+      "pages": [
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "passage_id": "chinese-g2up-p10",
+      "title": "十二月花名歌",
+      "page_hint": 32,
+      "pdf_page": 32,
+      "pages": [
+        31,
+        32,
+        33
+      ]
+    },
+    {
+      "passage_id": "chinese-g2up-p11",
+      "title": "曹冲称象",
+      "page_hint": 33,
+      "pdf_page": 33,
+      "pages": [
+        32,
+        33,
+        34
+      ]
+    },
+    {
+      "passage_id": "chinese-g2up-p12",
+      "title": "玲玲的画",
+      "page_hint": 36,
+      "pdf_page": 36,
+      "pages": [
+        35,
+        36,
+        37
+      ]
+    },
+    {
+      "passage_id": "chinese-g2up-p13",
+      "title": "一封信",
+      "page_hint": 38,
+      "pdf_page": 38,
+      "pages": [
+        37,
+        38,
+        39
+      ]
+    },
+    {
+      "passage_id": "chinese-g2up-p14",
+      "title": "妈妈睡了",
+      "page_hint": 41,
+      "pdf_page": 41,
+      "pages": [
+        40,
+        41,
+        42
+      ]
+    },
+    {
+      "passage_id": "chinese-g2up-p15",
+      "title": "小儿垂钓",
+      "page_hint": 46,
+      "pdf_page": 46,
+      "pages": [
+        45,
+        46,
+        47
+      ]
+    },
+    {
+      "passage_id": "chinese-g2up-p16",
+      "title": "王二小",
+      "page_hint": 47,
+      "pdf_page": 47,
+      "pages": [
+        46,
+        47,
+        48
+      ]
+    },
+    {
+      "passage_id": "chinese-g2up-p17",
+      "title": "登鹳雀楼",
+      "page_hint": 48,
+      "pdf_page": 48,
+      "pages": [
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "passage_id": "chinese-g2up-p18",
+      "title": "望庐山瀑布",
+      "page_hint": 49,
+      "pdf_page": 49,
+      "pages": [
+        48,
+        49,
+        50
+      ]
+    },
+    {
+      "passage_id": "chinese-g2up-p19",
+      "title": "黄山奇石",
+      "page_hint": 51,
+      "pdf_page": 51,
+      "pages": [
+        50,
+        51,
+        52
+      ]
+    },
+    {
+      "passage_id": "chinese-g2up-p20",
+      "title": "日月潭",
+      "page_hint": 54,
+      "pdf_page": 54,
+      "pages": [
+        53,
+        54,
+        55
+      ]
+    },
+    {
+      "passage_id": "chinese-g2up-p21",
+      "title": "葡萄沟",
+      "page_hint": 56,
+      "pdf_page": 56,
+      "pages": [
+        55,
+        56,
+        57
+      ]
+    },
+    {
+      "passage_id": "chinese-g2up-p22",
+      "title": "画家乡",
+      "page_hint": 61,
+      "pdf_page": 61,
+      "pages": [
+        60,
+        61,
+        62
+      ]
+    },
+    {
+      "passage_id": "chinese-g2up-p23",
+      "title": "日积月累",
+      "page_hint": 61,
+      "pdf_page": 61,
+      "pages": [
+        60,
+        61,
+        62
+      ]
+    },
+    {
+      "passage_id": "chinese-g2up-p24",
+      "title": "坐井观天",
+      "page_hint": 63,
+      "pdf_page": 63,
+      "pages": [
+        62,
+        63,
+        64
+      ]
+    },
+    {
+      "passage_id": "chinese-g2up-p25",
+      "title": "寒号鸟",
+      "page_hint": 65,
+      "pdf_page": 65,
+      "pages": [
+        64,
+        65,
+        66
+      ]
+    },
+    {
+      "passage_id": "chinese-g2up-p26",
+      "title": "我要的是葫芦",
+      "page_hint": 69,
+      "pdf_page": 69,
+      "pages": [
+        68,
+        69,
+        70
+      ]
+    },
+    {
+      "passage_id": "chinese-g2up-p27",
+      "title": "刻舟求剑",
+      "page_hint": 75,
+      "pdf_page": 75,
+      "pages": [
+        74,
+        75,
+        76
+      ]
+    },
+    {
+      "passage_id": "chinese-g2up-p28",
+      "title": "江雪",
+      "page_hint": 74,
+      "pdf_page": 74,
+      "pages": [
+        73,
+        74,
+        75
+      ]
+    },
+    {
+      "passage_id": "chinese-g2up-p29",
+      "title": "八角楼上",
+      "page_hint": 76,
+      "pdf_page": 76,
+      "pages": [
+        75,
+        76,
+        77
+      ]
+    },
+    {
+      "passage_id": "chinese-g2up-p30",
+      "title": "朱德的扁担",
+      "page_hint": 78,
+      "pdf_page": 78,
+      "pages": [
+        77,
+        78,
+        79
+      ]
+    },
+    {
+      "passage_id": "chinese-g2up-p31",
+      "title": "难忘的泼水节",
+      "page_hint": 80,
+      "pdf_page": 80,
+      "pages": [
+        79,
+        80,
+        81
+      ]
+    },
+    {
+      "passage_id": "chinese-g2up-p32",
+      "title": "刘胡兰",
+      "page_hint": 83,
+      "pdf_page": 83,
+      "pages": [
+        82,
+        83,
+        84
+      ]
+    },
+    {
+      "passage_id": "chinese-g2up-p33",
+      "title": "大禹治水",
+      "page_hint": 89,
+      "pdf_page": 89,
+      "pages": [
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "passage_id": "chinese-g2up-p34",
+      "title": "夜宿山寺",
+      "page_hint": 90,
+      "pdf_page": 90,
+      "pages": [
+        89,
+        90,
+        91
+      ]
+    },
+    {
+      "passage_id": "chinese-g2up-p35",
+      "title": "敕勒歌",
+      "page_hint": 91,
+      "pdf_page": 91,
+      "pages": [
+        90,
+        91,
+        92
+      ]
+    },
+    {
+      "passage_id": "chinese-g2up-p36",
+      "title": "雾在哪里",
+      "page_hint": 93,
+      "pdf_page": 93,
+      "pages": [
+        92,
+        93,
+        94
+      ]
+    },
+    {
+      "passage_id": "chinese-g2up-p37",
+      "title": "雪孩子",
+      "page_hint": 96,
+      "pdf_page": 96,
+      "pages": [
+        95,
+        96,
+        97
+      ]
+    },
+    {
+      "passage_id": "chinese-g2up-p38",
+      "title": "数九歌",
+      "page_hint": 102,
+      "pdf_page": 102,
+      "pages": [
+        101,
+        102,
+        103
+      ]
+    },
+    {
+      "passage_id": "chinese-g2up-p39",
+      "title": "分不清是鸭还是霞",
+      "page_hint": 103,
+      "pdf_page": 103,
+      "pages": [
+        102,
+        103,
+        104
+      ]
+    },
+    {
+      "passage_id": "chinese-g2up-p40",
+      "title": "狐假虎威",
+      "page_hint": 104,
+      "pdf_page": 104,
+      "pages": [
+        103,
+        104,
+        105
+      ]
+    },
+    {
+      "passage_id": "chinese-g2up-p41",
+      "title": "纸船和风筝",
+      "page_hint": 107,
+      "pdf_page": 107,
+      "pages": [
+        106,
+        107,
+        108
+      ]
+    },
+    {
+      "passage_id": "chinese-g2up-p42",
+      "title": "风娃娃",
+      "page_hint": 110,
+      "pdf_page": 110,
+      "pages": [
+        109,
+        110,
+        111
+      ]
+    },
+    {
+      "passage_id": "chinese-g2up-p43",
+      "title": "称赞",
+      "page_hint": 114,
+      "pdf_page": 114,
+      "pages": [
+        113,
+        114,
+        115
+      ]
+    }
+  ]
+}

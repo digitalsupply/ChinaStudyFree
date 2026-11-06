@@ -1,0 +1,452 @@
+{
+  "bookId": "chinese-g3up",
+  "pdf_total_pages": 130,
+  "detected_offset": 0,
+  "offset_applied": 0,
+  "offset_samples": 11,
+  "passages": [
+    {
+      "passage_id": "chinese-g3up-p1",
+      "title": "大青树下的小学",
+      "page_hint": 7,
+      "pdf_page": 7,
+      "pages": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "passage_id": "chinese-g3up-p2",
+      "title": "花的学校",
+      "page_hint": 10,
+      "pdf_page": 10,
+      "pages": [
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "passage_id": "chinese-g3up-p3",
+      "title": "不懂就要问",
+      "page_hint": 12,
+      "pdf_page": 12,
+      "pages": [
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "passage_id": "chinese-g3up-p4",
+      "title": "所见",
+      "page_hint": 17,
+      "pdf_page": 17,
+      "pages": [
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "passage_id": "chinese-g3up-p5",
+      "title": "山行",
+      "page_hint": 19,
+      "pdf_page": 19,
+      "pages": [
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "passage_id": "chinese-g3up-p6",
+      "title": "赠刘景文",
+      "page_hint": 19,
+      "pdf_page": 19,
+      "pages": [
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "passage_id": "chinese-g3up-p7",
+      "title": "夜书所见",
+      "page_hint": 20,
+      "pdf_page": 20,
+      "pages": [
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "passage_id": "chinese-g3up-p8",
+      "title": "铺满金色巴掌的水泥道",
+      "page_hint": 21,
+      "pdf_page": 21,
+      "pages": [
+        20,
+        21,
+        22
+      ]
+    },
+    {
+      "passage_id": "chinese-g3up-p9",
+      "title": "阅读链接",
+      "page_hint": 23,
+      "pdf_page": 23,
+      "pages": [
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "passage_id": "chinese-g3up-p10",
+      "title": "秋天的雨",
+      "page_hint": 24,
+      "pdf_page": 24,
+      "pages": [
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "passage_id": "chinese-g3up-p11",
+      "title": "听听，秋的声音",
+      "page_hint": 27,
+      "pdf_page": 27,
+      "pages": [
+        26,
+        27,
+        28
+      ]
+    },
+    {
+      "passage_id": "chinese-g3up-p12",
+      "title": "卖火柴的小女孩",
+      "page_hint": 33,
+      "pdf_page": 33,
+      "pages": [
+        32,
+        33,
+        34
+      ]
+    },
+    {
+      "passage_id": "chinese-g3up-p13",
+      "title": "那一定会很好",
+      "page_hint": 38,
+      "pdf_page": 38,
+      "pages": [
+        37,
+        38,
+        39
+      ]
+    },
+    {
+      "passage_id": "chinese-g3up-p14",
+      "title": "在牛肚子里旅行",
+      "page_hint": 40,
+      "pdf_page": 40,
+      "pages": [
+        39,
+        40,
+        41
+      ]
+    },
+    {
+      "passage_id": "chinese-g3up-p15",
+      "title": "一块奶酪",
+      "page_hint": 43,
+      "pdf_page": 43,
+      "pages": [
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "passage_id": "chinese-g3up-p16",
+      "title": "总也倒不了的老屋",
+      "page_hint": 51,
+      "pdf_page": 51,
+      "pages": [
+        50,
+        51,
+        52
+      ]
+    },
+    {
+      "passage_id": "chinese-g3up-p17",
+      "title": "胡萝卜先生的长胡子",
+      "page_hint": 55,
+      "pdf_page": 55,
+      "pages": [
+        54,
+        55,
+        56
+      ]
+    },
+    {
+      "passage_id": "chinese-g3up-p18",
+      "title": "小狗学叫",
+      "page_hint": 58,
+      "pdf_page": 58,
+      "pages": [
+        58,
+        59,
+        60,
+        61,
+        62,
+        63
+      ]
+    },
+    {
+      "passage_id": "chinese-g3up-p19",
+      "title": "搭船的鸟",
+      "page_hint": 69,
+      "pdf_page": 69,
+      "pages": [
+        68,
+        69,
+        70
+      ]
+    },
+    {
+      "passage_id": "chinese-g3up-p20",
+      "title": "金色的草地",
+      "page_hint": 71,
+      "pdf_page": 71,
+      "pages": [
+        70,
+        71,
+        72
+      ]
+    },
+    {
+      "passage_id": "chinese-g3up-p21",
+      "title": "雨停了",
+      "page_hint": 73,
+      "pdf_page": 73,
+      "pages": [
+        72,
+        73,
+        74
+      ]
+    },
+    {
+      "passage_id": "chinese-g3up-p22",
+      "title": "表姐送给我一个芒果",
+      "page_hint": 73,
+      "pdf_page": 73,
+      "pages": [
+        72,
+        73,
+        74
+      ]
+    },
+    {
+      "passage_id": "chinese-g3up-p23",
+      "title": "我家的小狗",
+      "page_hint": 74,
+      "pdf_page": 74,
+      "pages": [
+        73,
+        74,
+        75
+      ]
+    },
+    {
+      "passage_id": "chinese-g3up-p24",
+      "title": "我爱故乡的杨梅",
+      "page_hint": 75,
+      "pdf_page": 75,
+      "pages": [
+        74,
+        75,
+        76
+      ]
+    },
+    {
+      "passage_id": "chinese-g3up-p25",
+      "title": "望天门山",
+      "page_hint": 79,
+      "pdf_page": 79,
+      "pages": [
+        78,
+        79,
+        80
+      ]
+    },
+    {
+      "passage_id": "chinese-g3up-p26",
+      "title": "饮湖上初晴后雨",
+      "page_hint": 79,
+      "pdf_page": 79,
+      "pages": [
+        78,
+        79,
+        80
+      ]
+    },
+    {
+      "passage_id": "chinese-g3up-p27",
+      "title": "望洞庭",
+      "page_hint": 80,
+      "pdf_page": 80,
+      "pages": [
+        79,
+        80,
+        81
+      ]
+    },
+    {
+      "passage_id": "chinese-g3up-p28",
+      "title": "富饶的西沙群岛",
+      "page_hint": 81,
+      "pdf_page": 81,
+      "pages": [
+        80,
+        81,
+        82
+      ]
+    },
+    {
+      "passage_id": "chinese-g3up-p29",
+      "title": "海滨小城",
+      "page_hint": 84,
+      "pdf_page": 84,
+      "pages": [
+        83,
+        84,
+        85
+      ]
+    },
+    {
+      "passage_id": "chinese-g3up-p30",
+      "title": "美丽的小兴安岭",
+      "page_hint": 86,
+      "pdf_page": 86,
+      "pages": [
+        85,
+        86,
+        87
+      ]
+    },
+    {
+      "passage_id": "chinese-g3up-p31",
+      "title": "早发白帝城",
+      "page_hint": 91,
+      "pdf_page": 91,
+      "pages": [
+        90,
+        91,
+        92
+      ]
+    },
+    {
+      "passage_id": "chinese-g3up-p32",
+      "title": "大自然的声音",
+      "page_hint": 93,
+      "pdf_page": 93,
+      "pages": [
+        92,
+        93,
+        94
+      ]
+    },
+    {
+      "passage_id": "chinese-g3up-p33",
+      "title": "瀑布",
+      "page_hint": 95,
+      "pdf_page": 95,
+      "pages": [
+        94,
+        95,
+        96
+      ]
+    },
+    {
+      "passage_id": "chinese-g3up-p34",
+      "title": "读不完的大书",
+      "page_hint": 96,
+      "pdf_page": 96,
+      "pages": [
+        95,
+        96,
+        97
+      ]
+    },
+    {
+      "passage_id": "chinese-g3up-p35",
+      "title": "父亲、树林和鸟",
+      "page_hint": 99,
+      "pdf_page": 99,
+      "pages": [
+        98,
+        99,
+        100
+      ]
+    },
+    {
+      "passage_id": "chinese-g3up-p36",
+      "title": "司马光",
+      "page_hint": 107,
+      "pdf_page": 107,
+      "pages": [
+        106,
+        107,
+        108
+      ]
+    },
+    {
+      "passage_id": "chinese-g3up-p37",
+      "title": "灰雀",
+      "page_hint": 108,
+      "pdf_page": 108,
+      "pages": [
+        107,
+        108,
+        109
+      ]
+    },
+    {
+      "passage_id": "chinese-g3up-p38",
+      "title": "手术台就是阵地",
+      "page_hint": 110,
+      "pdf_page": 110,
+      "pages": [
+        109,
+        110,
+        111
+      ]
+    },
+    {
+      "passage_id": "chinese-g3up-p39",
+      "title": "采莲曲",
+      "page_hint": 105,
+      "pdf_page": 105,
+      "pages": [
+        104,
+        105,
+        106
+      ]
+    },
+    {
+      "passage_id": "chinese-g3up-p40",
+      "title": "一个粗瓷大碗",
+      "page_hint": 113,
+      "pdf_page": 113,
+      "pages": [
+        112,
+        113,
+        114
+      ]
+    }
+  ]
+}

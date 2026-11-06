@@ -1,6 +1,11 @@
 node_modules
 .git
 upstream
+
+# 大资源走 PVC / CDN，不进入应用镜像（资源清单在 apps/web/media-manifest/）
+apps/web/public/audio
+apps/web/public/textbook-pages
+apps/web/public/story-images
 **/.next
 **/out
 **/dist

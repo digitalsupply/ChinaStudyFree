@@ -48,6 +48,14 @@ const AUDIO_ROOT = path.resolve(ROOT, "public", "audio");
 const PAGES_ROOT = path.resolve(ROOT, "public", "textbook-pages");
 const STORY_IMAGES_ROOT = path.resolve(ROOT, "public", "story-images");
 
+// 大资源可能走 PVC / CDN，不在构建上下文里。这里保留一份“资源存在性清单”，
+// 让 CI 在没有 audio/ textbook-pages/ story-images/ 时也能生成正确的媒体 URL。
+// 清单由 `npm run sync:media-manifests` 生成。
+const MEDIA_MANIFEST_ROOT = path.resolve(ROOT, "media-manifest");
+const PAGES_MANIFEST_ROOT = path.resolve(MEDIA_MANIFEST_ROOT, "pages");
+const AUDIO_MANIFEST = path.resolve(MEDIA_MANIFEST_ROOT, "audio-index.txt");
+const STORY_IMAGES_MANIFEST = path.resolve(MEDIA_MANIFEST_ROOT, "story-images.json");
+
 // ============================================================
 // TTS 音频映射：与 scripts/tts/generate-audio.mjs 的 hash 规则保持一致
 //   - normalize: trim + 折叠空白
@@ -57,8 +65,8 @@ const STORY_IMAGES_ROOT = path.resolve(ROOT, "public", "story-images");
 //
 // 扩展名不写死：生成脚本默认产 .opus，也可产 .mp3 / .wav
 // （见 AUDIO_EXTS，按优先级取第一个实际存在的）。
-// 若 public/audio 整个缺失（未生成），所有 audioFor() 返回 undefined，
-// 前端会降级到「在线合成 → 浏览器 speechSynthesis」，仍有声音（见 lib/tts.ts）。
+// 本地有 public/audio 时扫描目录；没有时读取 media-manifest/audio-index.txt。
+// 两份都没有则返回 undefined，前端仍可用题目文本走在线 TTS 兜底。
 // ============================================================
 
 /** 支持的音频扩展名，按优先级排列（opus 体积最小，优先）。 */
@@ -83,10 +91,19 @@ let audioIndex: Set<string> | null = null;
 async function buildAudioIndex(): Promise<Set<string>> {
   if (audioIndex) return audioIndex;
   const set = new Set<string>();
+
+  // 没有本地音频目录（CI / 精简构建）时，读提交进仓库的资源清单。
   if (!existsSync(AUDIO_ROOT)) {
+    if (existsSync(AUDIO_MANIFEST)) {
+      for (const line of (await fs.readFile(AUDIO_MANIFEST, "utf-8")).split("\n")) {
+        const key = line.trim();
+        if (key) set.add(key);
+      }
+    }
     audioIndex = set;
     return set;
   }
+
   const buckets = await fs.readdir(AUDIO_ROOT);
   for (const b of buckets) {
     const dir = path.join(AUDIO_ROOT, b);
@@ -98,7 +115,8 @@ async function buildAudioIndex(): Promise<Set<string>> {
     }
     for (const f of entries) {
       const ext = AUDIO_EXTS.find(e => f.endsWith(e));
-      if (ext) set.add(`${b}/${f.slice(0, f.length - ext.length)}`);
+      // key 带扩展名：<bucket>/<hash>.opus
+      if (ext) set.add(`${b}/${f}`);
     }
   }
   audioIndex = set;
@@ -229,8 +247,13 @@ interface PagesInfo {
 }
 
 async function loadPagesMapping(bookId: string): Promise<Map<string, PagesInfo>> {
-  const file = path.join(PAGES_ROOT, bookId, "pages.json");
-  if (!existsSync(file)) return new Map();
+  // 本地完整资源优先；CI / 精简镜像回退到提交进仓库的 pages 清单。
+  const candidates = [
+    path.join(PAGES_ROOT, bookId, "pages.json"),
+    path.join(PAGES_MANIFEST_ROOT, bookId, "pages.json"),
+  ];
+  const file = candidates.find(p => existsSync(p));
+  if (!file) return new Map();
   try {
     const doc = JSON.parse(await fs.readFile(file, "utf-8")) as PagesMapping;
     return new Map(
@@ -379,12 +402,45 @@ function decorateStoryQuestion(q: StoryQuestion): StoryQuestion {
   return q;
 }
 
+let storyImageIndex: Set<string> | null = null;
+
+async function buildStoryImageIndex(): Promise<Set<string>> {
+  if (storyImageIndex) return storyImageIndex;
+  const set = new Set<string>();
+
+  if (existsSync(STORY_IMAGES_ROOT)) {
+    for (const book of await fs.readdir(STORY_IMAGES_ROOT)) {
+      const dir = path.join(STORY_IMAGES_ROOT, book);
+      let entries: string[];
+      try {
+        entries = await fs.readdir(dir);
+      } catch {
+        continue;
+      }
+      for (const f of entries) {
+        if (f.endsWith(".jpg")) set.add(`${book}/${f.slice(0, -4)}`);
+      }
+    }
+  } else if (existsSync(STORY_IMAGES_MANIFEST)) {
+    try {
+      const items = JSON.parse(await fs.readFile(STORY_IMAGES_MANIFEST, "utf-8")) as string[];
+      for (const item of items) set.add(item);
+    } catch {
+      /* 清单损坏时按没有配图处理 */
+    }
+  }
+
+  storyImageIndex = set;
+  return set;
+}
+
 async function buildStories(): Promise<Set<string>> {
   const withStories = new Set<string>();
   if (!existsSync(STORIES_SRC)) {
     console.log("  [跳过] data/stories/ 不存在，无故事数据");
     return withStories;
   }
+  const storyImages = await buildStoryImageIndex();
   const subjectDirs = await fs.readdir(STORIES_SRC);
   let totalBooks = 0;
   let totalStories = 0;
@@ -441,9 +497,10 @@ async function buildStories(): Promise<Set<string>> {
         // decorate questions
         s.questions.forEach(decorateStoryQuestion);
 
-        // check for story image
-        const imgPath = path.join(STORY_IMAGES_ROOT, bookId, `${s.id}.jpg`);
-        const image = existsSync(imgPath) ? `/story-images/${bookId}/${s.id}.jpg` : undefined;
+        // 本地有资源时扫描目录，没有时使用 media-manifest 清单。
+        const image = storyImages.has(`${bookId}/${s.id}`)
+          ? `/story-images/${bookId}/${s.id}.jpg`
+          : undefined;
 
         return {
           id: s.id,

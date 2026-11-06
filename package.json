@@ -15,6 +15,7 @@
     "dev:server": "npm run dev --workspace=china-study-free-server",
     "type-check": "npm run type-check --workspaces --if-present",
     "download-assets": "bash scripts/download-assets.sh",
+    "sync:media-manifests": "node scripts/sync-media-manifests.mjs",
     "sync:textbooks": "node scripts/sync-textbooks.mjs",
     "gen:content": "node scripts/gen-stage-content.mjs && node scripts/gen-version-content.mjs && node scripts/gen-coverage-content.mjs",
     "gen:version": "node scripts/gen-version-content.mjs",

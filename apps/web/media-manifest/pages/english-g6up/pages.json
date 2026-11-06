@@ -1,0 +1,383 @@
+{
+  "bookId": "english-g6up",
+  "pdf_total_pages": 87,
+  "detected_offset": 0,
+  "offset_applied": 0,
+  "offset_samples": 31,
+  "passages": [
+    {
+      "passage_id": "english-g6up-p1",
+      "title": "Unit One",
+      "page_hint": 7,
+      "pdf_page": 7,
+      "pages": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "passage_id": "english-g6up-p2",
+      "title": "How can I get there?",
+      "page_hint": 8,
+      "pdf_page": 8,
+      "pages": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "passage_id": "english-g6up-p3",
+      "title": "Let’s talk",
+      "page_hint": 9,
+      "pdf_page": 9,
+      "pages": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "passage_id": "english-g6up-p4",
+      "title": "Let's talk",
+      "page_hint": 11,
+      "pdf_page": 11,
+      "pages": [
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "passage_id": "english-g6up-p5",
+      "title": "Let's learn",
+      "page_hint": 12,
+      "pdf_page": 12,
+      "pages": [
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "passage_id": "english-g6up-p6",
+      "title": "Read and write",
+      "page_hint": 13,
+      "pdf_page": 13,
+      "pages": [
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "passage_id": "english-g6up-p7",
+      "title": "Story time",
+      "page_hint": 16,
+      "pdf_page": 16,
+      "pages": [
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "passage_id": "english-g6up-p8",
+      "title": "Ways to go to school",
+      "page_hint": 18,
+      "pdf_page": 18,
+      "pages": [
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "passage_id": "english-g6up-p9",
+      "title": "Different ways to go to school",
+      "page_hint": 23,
+      "pdf_page": 23,
+      "pages": [
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "passage_id": "english-g6up-p10",
+      "title": "Story time",
+      "page_hint": 26,
+      "pdf_page": 26,
+      "pages": [
+        25,
+        26,
+        27
+      ]
+    },
+    {
+      "passage_id": "english-g6up-p11",
+      "title": "Role-play",
+      "page_hint": 32,
+      "pdf_page": 32,
+      "pages": [
+        31,
+        32,
+        33
+      ]
+    },
+    {
+      "passage_id": "english-g6up-p12",
+      "title": "Read and write",
+      "page_hint": 33,
+      "pdf_page": 33,
+      "pages": [
+        32,
+        33,
+        34
+      ]
+    },
+    {
+      "passage_id": "english-g6up-p13",
+      "title": "This is our poem",
+      "page_hint": 33,
+      "pdf_page": 33,
+      "pages": [
+        32,
+        33,
+        34
+      ]
+    },
+    {
+      "passage_id": "english-g6up-p14",
+      "title": "Hush, little boy",
+      "page_hint": 39,
+      "pdf_page": 39,
+      "pages": [
+        38,
+        39,
+        40
+      ]
+    },
+    {
+      "passage_id": "english-g6up-p15",
+      "title": "Listen and read aloud",
+      "page_hint": 40,
+      "pdf_page": 40,
+      "pages": [
+        39,
+        40,
+        41
+      ]
+    },
+    {
+      "passage_id": "english-g6up-p16",
+      "title": "Unit Four",
+      "page_hint": 41,
+      "pdf_page": 41,
+      "pages": [
+        40,
+        41,
+        42
+      ]
+    },
+    {
+      "passage_id": "english-g6up-p17",
+      "title": "I have a pen pal",
+      "page_hint": 42,
+      "pdf_page": 42,
+      "pages": [
+        41,
+        42,
+        43
+      ]
+    },
+    {
+      "passage_id": "english-g6up-p18",
+      "title": "Let’s learn",
+      "page_hint": 44,
+      "pdf_page": 44,
+      "pages": [
+        43,
+        44,
+        45
+      ]
+    },
+    {
+      "passage_id": "english-g6up-p19",
+      "title": "NOTICE BOARD",
+      "page_hint": 47,
+      "pdf_page": 47,
+      "pages": [
+        46,
+        47,
+        48
+      ]
+    },
+    {
+      "passage_id": "english-g6up-p20",
+      "title": "Let’s wrap it up",
+      "page_hint": 49,
+      "pdf_page": 49,
+      "pages": [
+        48,
+        49,
+        50
+      ]
+    },
+    {
+      "passage_id": "english-g6up-p21",
+      "title": "Unit Five",
+      "page_hint": 51,
+      "pdf_page": 51,
+      "pages": [
+        50,
+        51,
+        52
+      ]
+    },
+    {
+      "passage_id": "english-g6up-p22",
+      "title": "What does he do?",
+      "page_hint": 52,
+      "pdf_page": 52,
+      "pages": [
+        51,
+        52,
+        53
+      ]
+    },
+    {
+      "passage_id": "english-g6up-p23",
+      "title": "(Title)",
+      "page_hint": 57,
+      "pdf_page": 57,
+      "pages": [
+        56,
+        57,
+        58
+      ]
+    },
+    {
+      "passage_id": "english-g6up-p24",
+      "title": "Unit Six",
+      "page_hint": 61,
+      "pdf_page": 61,
+      "pages": [
+        60,
+        61,
+        62
+      ]
+    },
+    {
+      "passage_id": "english-g6up-p25",
+      "title": "How do you feel?",
+      "page_hint": 62,
+      "pdf_page": 62,
+      "pages": [
+        61,
+        62,
+        63
+      ]
+    },
+    {
+      "passage_id": "english-g6up-p26",
+      "title": "Robin and the Ant",
+      "page_hint": 67,
+      "pdf_page": 67,
+      "pages": [
+        66,
+        67,
+        68
+      ]
+    },
+    {
+      "passage_id": "english-g6up-p27",
+      "title": "Recycle 2 Visiting an old friend",
+      "page_hint": 71,
+      "pdf_page": 71,
+      "pages": [
+        70,
+        71,
+        72
+      ]
+    },
+    {
+      "passage_id": "english-g6up-p28",
+      "title": "Where is the hospital?",
+      "page_hint": 75,
+      "pdf_page": 75,
+      "pages": [
+        74,
+        75,
+        76
+      ]
+    },
+    {
+      "passage_id": "english-g6up-p29",
+      "title": "How do you get there?",
+      "page_hint": 75,
+      "pdf_page": 75,
+      "pages": [
+        74,
+        75,
+        76
+      ]
+    },
+    {
+      "passage_id": "english-g6up-p30",
+      "title": "What are you going to do?",
+      "page_hint": 75,
+      "pdf_page": 75,
+      "pages": [
+        74,
+        75,
+        76
+      ]
+    },
+    {
+      "passage_id": "english-g6up-p31",
+      "title": "My new pen pal",
+      "page_hint": 76,
+      "pdf_page": 76,
+      "pages": [
+        75,
+        76,
+        77
+      ]
+    },
+    {
+      "passage_id": "english-g6up-p32",
+      "title": "What do you want to do?",
+      "page_hint": 76,
+      "pdf_page": 76,
+      "pages": [
+        75,
+        76,
+        77
+      ]
+    },
+    {
+      "passage_id": "english-g6up-p33",
+      "title": "If you’re happy, clap your hands",
+      "page_hint": 76,
+      "pdf_page": 76,
+      "pages": [
+        75,
+        76,
+        77
+      ]
+    },
+    {
+      "passage_id": "english-g6up-p34",
+      "title": "Proverbs 谚语",
+      "page_hint": 85,
+      "pdf_page": 85,
+      "pages": [
+        84,
+        85,
+        86
+      ]
+    }
+  ]
+}

@@ -1,0 +1,515 @@
+{
+  "bookId": "chinese-g4up",
+  "pdf_total_pages": 138,
+  "detected_offset": 0,
+  "offset_applied": 0,
+  "offset_samples": 27,
+  "passages": [
+    {
+      "passage_id": "chinese-g4up-p1",
+      "title": "观潮",
+      "page_hint": 7,
+      "pdf_page": 7,
+      "pages": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "passage_id": "chinese-g4up-p2",
+      "title": "浪淘沙（其七）",
+      "page_hint": 9,
+      "pdf_page": 9,
+      "pages": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "passage_id": "chinese-g4up-p3",
+      "title": "走月亮",
+      "page_hint": 10,
+      "pdf_page": 10,
+      "pages": [
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "passage_id": "chinese-g4up-p4",
+      "title": "秋晚的江上",
+      "page_hint": 13,
+      "pdf_page": 13,
+      "pages": [
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "passage_id": "chinese-g4up-p5",
+      "title": "花牛歌",
+      "page_hint": 14,
+      "pdf_page": 14,
+      "pages": [
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "passage_id": "chinese-g4up-p6",
+      "title": "繁星",
+      "page_hint": 15,
+      "pdf_page": 15,
+      "pages": [
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "passage_id": "chinese-g4up-p7",
+      "title": "鹿柴",
+      "page_hint": 19,
+      "pdf_page": 19,
+      "pages": [
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "passage_id": "chinese-g4up-p8",
+      "title": "一个豆荚里的五粒豆",
+      "page_hint": 21,
+      "pdf_page": 21,
+      "pages": [
+        20,
+        21,
+        22
+      ]
+    },
+    {
+      "passage_id": "chinese-g4up-p9",
+      "title": "夜间飞行的秘密",
+      "page_hint": 26,
+      "pdf_page": 26,
+      "pages": [
+        25,
+        26,
+        27
+      ]
+    },
+    {
+      "passage_id": "chinese-g4up-p10",
+      "title": "呼风唤雨的世纪",
+      "page_hint": 30,
+      "pdf_page": 30,
+      "pages": [
+        29,
+        30,
+        31
+      ]
+    },
+    {
+      "passage_id": "chinese-g4up-p11",
+      "title": "蝴蝶的家",
+      "page_hint": 33,
+      "pdf_page": 33,
+      "pages": [
+        32,
+        33,
+        34
+      ]
+    },
+    {
+      "passage_id": "chinese-g4up-p12",
+      "title": "暮江吟",
+      "page_hint": 39,
+      "pdf_page": 39,
+      "pages": [
+        38,
+        39,
+        40
+      ]
+    },
+    {
+      "passage_id": "chinese-g4up-p13",
+      "title": "题西林壁",
+      "page_hint": 39,
+      "pdf_page": 39,
+      "pages": [
+        38,
+        39,
+        40
+      ]
+    },
+    {
+      "passage_id": "chinese-g4up-p14",
+      "title": "雪梅",
+      "page_hint": 40,
+      "pdf_page": 40,
+      "pages": [
+        39,
+        40,
+        41
+      ]
+    },
+    {
+      "passage_id": "chinese-g4up-p15",
+      "title": "爬山虎的脚",
+      "page_hint": 41,
+      "pdf_page": 41,
+      "pages": [
+        40,
+        41,
+        42
+      ]
+    },
+    {
+      "passage_id": "chinese-g4up-p16",
+      "title": "蟋蟀的住宅",
+      "page_hint": 44,
+      "pdf_page": 44,
+      "pages": [
+        43,
+        44,
+        45
+      ]
+    },
+    {
+      "passage_id": "chinese-g4up-p17",
+      "title": "燕子窝",
+      "page_hint": 47,
+      "pdf_page": 47,
+      "pages": [
+        46,
+        47,
+        48
+      ]
+    },
+    {
+      "passage_id": "chinese-g4up-p18",
+      "title": "日积月累",
+      "page_hint": 51,
+      "pdf_page": 51,
+      "pages": [
+        50,
+        51,
+        52
+      ]
+    },
+    {
+      "passage_id": "chinese-g4up-p19",
+      "title": "盘古开天地",
+      "page_hint": 53,
+      "pdf_page": 53,
+      "pages": [
+        52,
+        53,
+        54
+      ]
+    },
+    {
+      "passage_id": "chinese-g4up-p20",
+      "title": "精卫填海",
+      "page_hint": 55,
+      "pdf_page": 55,
+      "pages": [
+        54,
+        55,
+        56
+      ]
+    },
+    {
+      "passage_id": "chinese-g4up-p21",
+      "title": "普罗米修斯",
+      "page_hint": 56,
+      "pdf_page": 56,
+      "pages": [
+        55,
+        56,
+        57
+      ]
+    },
+    {
+      "passage_id": "chinese-g4up-p22",
+      "title": "阅读链接",
+      "page_hint": 58,
+      "pdf_page": 58,
+      "pages": [
+        57,
+        58,
+        59
+      ]
+    },
+    {
+      "passage_id": "chinese-g4up-p23",
+      "title": "女娲补天",
+      "page_hint": 59,
+      "pdf_page": 59,
+      "pages": [
+        58,
+        59,
+        60
+      ]
+    },
+    {
+      "passage_id": "chinese-g4up-p24",
+      "title": "嫦娥",
+      "page_hint": 63,
+      "pdf_page": 63,
+      "pages": [
+        62,
+        63,
+        64
+      ]
+    },
+    {
+      "passage_id": "chinese-g4up-p25",
+      "title": "麻雀",
+      "page_hint": 67,
+      "pdf_page": 67,
+      "pages": [
+        66,
+        67,
+        68
+      ]
+    },
+    {
+      "passage_id": "chinese-g4up-p26",
+      "title": "爬天都峰",
+      "page_hint": 70,
+      "pdf_page": 70,
+      "pages": [
+        69,
+        70,
+        71
+      ]
+    },
+    {
+      "passage_id": "chinese-g4up-p27",
+      "title": "我家的杏熟了",
+      "page_hint": 73,
+      "pdf_page": 73,
+      "pages": [
+        72,
+        73,
+        74
+      ]
+    },
+    {
+      "passage_id": "chinese-g4up-p28",
+      "title": "小木船",
+      "page_hint": 75,
+      "pdf_page": 75,
+      "pages": [
+        74,
+        75,
+        76
+      ]
+    },
+    {
+      "passage_id": "chinese-g4up-p29",
+      "title": "牛和鹅",
+      "page_hint": 79,
+      "pdf_page": 79,
+      "pages": [
+        78,
+        79,
+        80
+      ]
+    },
+    {
+      "passage_id": "chinese-g4up-p30",
+      "title": "阅读链接",
+      "page_hint": 83,
+      "pdf_page": 83,
+      "pages": [
+        82,
+        83,
+        84
+      ]
+    },
+    {
+      "passage_id": "chinese-g4up-p31",
+      "title": "一只窝囊的大老虎",
+      "page_hint": 84,
+      "pdf_page": 84,
+      "pages": [
+        83,
+        84,
+        85
+      ]
+    },
+    {
+      "passage_id": "chinese-g4up-p32",
+      "title": "陀螺",
+      "page_hint": 89,
+      "pdf_page": 89,
+      "pages": [
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "passage_id": "chinese-g4up-p33",
+      "title": "出塞",
+      "page_hint": 99,
+      "pdf_page": 99,
+      "pages": [
+        98,
+        99,
+        100
+      ]
+    },
+    {
+      "passage_id": "chinese-g4up-p34",
+      "title": "凉州词",
+      "page_hint": 99,
+      "pdf_page": 99,
+      "pages": [
+        98,
+        99,
+        100
+      ]
+    },
+    {
+      "passage_id": "chinese-g4up-p35",
+      "title": "夏日绝句",
+      "page_hint": 100,
+      "pdf_page": 100,
+      "pages": [
+        99,
+        100,
+        101
+      ]
+    },
+    {
+      "passage_id": "chinese-g4up-p36",
+      "title": "为中华之崛起而读书",
+      "page_hint": 101,
+      "pdf_page": 101,
+      "pages": [
+        100,
+        101,
+        102
+      ]
+    },
+    {
+      "passage_id": "chinese-g4up-p37",
+      "title": "大江歌罢掉头东",
+      "page_hint": 103,
+      "pdf_page": 103,
+      "pages": [
+        102,
+        103,
+        104
+      ]
+    },
+    {
+      "passage_id": "chinese-g4up-p38",
+      "title": "梅兰芳蓄须",
+      "page_hint": 104,
+      "pdf_page": 104,
+      "pages": [
+        103,
+        104,
+        105
+      ]
+    },
+    {
+      "passage_id": "chinese-g4up-p39",
+      "title": "难忘的一课",
+      "page_hint": 107,
+      "pdf_page": 107,
+      "pages": [
+        106,
+        107,
+        108
+      ]
+    },
+    {
+      "passage_id": "chinese-g4up-p40",
+      "title": "延安，我把你追寻",
+      "page_hint": 109,
+      "pdf_page": 109,
+      "pages": [
+        108,
+        109,
+        110
+      ]
+    },
+    {
+      "passage_id": "chinese-g4up-p41",
+      "title": "别董大",
+      "page_hint": 113,
+      "pdf_page": 113,
+      "pages": [
+        112,
+        113,
+        114
+      ]
+    },
+    {
+      "passage_id": "chinese-g4up-p42",
+      "title": "王戎不取道旁李",
+      "page_hint": 115,
+      "pdf_page": 115,
+      "pages": [
+        114,
+        115,
+        116
+      ]
+    },
+    {
+      "passage_id": "chinese-g4up-p43",
+      "title": "西门豹治邺",
+      "page_hint": 116,
+      "pdf_page": 116,
+      "pages": [
+        115,
+        116,
+        117
+      ]
+    },
+    {
+      "passage_id": "chinese-g4up-p44",
+      "title": "西门豹治邺",
+      "page_hint": 119,
+      "pdf_page": 119,
+      "pages": [
+        118,
+        119,
+        120
+      ]
+    },
+    {
+      "passage_id": "chinese-g4up-p45",
+      "title": "扁鹊治病",
+      "page_hint": 120,
+      "pdf_page": 120,
+      "pages": [
+        119,
+        120,
+        121
+      ]
+    },
+    {
+      "passage_id": "chinese-g4up-p46",
+      "title": "纪昌学射",
+      "page_hint": 121,
+      "pdf_page": 121,
+      "pages": [
+        120,
+        121,
+        122
+      ]
+    }
+  ]
+}

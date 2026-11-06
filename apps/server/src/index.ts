@@ -72,6 +72,22 @@ function resolveStaticDir(): string {
 
 const STATIC_DIR = resolveStaticDir();
 
+// 大资源（音频 / 课本原页 / 故事配图）默认走 PVC 挂载，不打进应用镜像。
+// 目录结构：ASSETS_DIR/audio、ASSETS_DIR/textbook-pages、ASSETS_DIR/story-images。
+const ASSETS_DIR = process.env.ASSETS_DIR ? path.resolve(process.env.ASSETS_DIR) : "";
+const ASSET_PREFIXES = ["audio", "textbook-pages", "story-images"] as const;
+const ASSETS_READY = Boolean(ASSETS_DIR) && fs.existsSync(ASSETS_DIR);
+
+/** .opus 不一定被 express 的 mime 表识别，显式声明避免浏览器把音频当二进制拒绝。 */
+function setStaticHeaders(
+  res: { setHeader(name: string, value: string): void },
+  filePath: string,
+) {
+  if (filePath.endsWith(".opus")) {
+    res.setHeader("Content-Type", "audio/ogg");
+  }
+}
+
 const app = express();
 app.use(express.json({ limit: "2mb" }));
 
@@ -159,6 +175,7 @@ app.get("/api/health", (_req, res) => {
     ttsBackend: process.env.DASHSCOPE_API_KEY ? "dashscope" : edgeEnabled ? "edge" : "none",
     image: !!process.env.GEMINI_API_KEY,
     reports: REPORTS_ENABLED,
+    assets: ASSETS_READY,
   });
 });
 
@@ -314,9 +331,43 @@ app.post("/api/ai/tts", async (req: Request, res: Response) => {
   }
 });
 
-// ===== 静态资源托管（Next.js 导出产物）=====
+// ===== 静态资源托管（Next.js 导出产物 + 可选大资源 PVC）=====
+// 大资源走独立目录，避免把 2GB+ 音频/图片打进镜像。
+// 必须放在 SPA 回退之前：缺失的 .opus/.jpg 应返回 404，而不是 index.html。
+if (ASSETS_READY) {
+  for (const prefix of ASSET_PREFIXES) {
+    app.use(
+      `/${prefix}`,
+      express.static(path.join(ASSETS_DIR, prefix), {
+        maxAge: "365d",
+        immutable: true,
+        fallthrough: true,
+        setHeaders: setStaticHeaders,
+      }),
+    );
+  }
+  console.log(`   大资源目录: ${ASSETS_DIR} (PVC/CDN)`);
+} else if (ASSETS_DIR) {
+  console.warn(`[ai-server] ASSETS_DIR 不存在: ${ASSETS_DIR}（音频/课本页/故事图不可用）`);
+}
+
 if (fs.existsSync(STATIC_DIR)) {
-  app.use(express.static(STATIC_DIR, { extensions: ["html"] }));
+  app.use(
+    express.static(STATIC_DIR, {
+      extensions: ["html"],
+      setHeaders: setStaticHeaders,
+    }),
+  );
+}
+
+// 资源前缀缺失时明确 404，避免被下面的 SPA 回退成 index.html。
+for (const prefix of ASSET_PREFIXES) {
+  app.use(`/${prefix}`, (_req, res) => {
+    res.status(404).type("text/plain").send("Not found");
+  });
+}
+
+if (fs.existsSync(STATIC_DIR)) {
   // SPA / 深链回退
   app.get(/^\/(?!api\/).*/, (_req, res) => {
     const idx = path.join(STATIC_DIR, "index.html");

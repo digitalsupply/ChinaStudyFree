@@ -49,6 +49,10 @@ spec:
           volumeMounts:
             - name: reports
               mountPath: /app/data/reports
+            # 音频 / 课本原页 / 故事配图走 PVC，不打进镜像。
+            - name: assets
+              mountPath: /app/assets
+              readOnly: true
           startupProbe:
             httpGet:
               path: /api/health
@@ -89,3 +93,6 @@ spec:
         - name: reports
           persistentVolumeClaim:
             claimName: china-study-free-reports
+        - name: assets
+          persistentVolumeClaim:
+            claimName: china-study-free-assets

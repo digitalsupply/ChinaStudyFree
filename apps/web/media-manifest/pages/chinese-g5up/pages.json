@@ -1,0 +1,504 @@
+{
+  "bookId": "chinese-g5up",
+  "pdf_total_pages": 133,
+  "detected_offset": 0,
+  "offset_applied": 0,
+  "offset_samples": 25,
+  "passages": [
+    {
+      "passage_id": "chinese-g5up-p1",
+      "title": "白鹭",
+      "page_hint": 7,
+      "pdf_page": 7,
+      "pages": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "passage_id": "chinese-g5up-p2",
+      "title": "落花生",
+      "page_hint": 9,
+      "pdf_page": 9,
+      "pages": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "passage_id": "chinese-g5up-p3",
+      "title": "桂花雨",
+      "page_hint": 11,
+      "pdf_page": 11,
+      "pages": [
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "passage_id": "chinese-g5up-p4",
+      "title": "珍珠鸟",
+      "page_hint": 14,
+      "pdf_page": 14,
+      "pages": [
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "passage_id": "chinese-g5up-p5",
+      "title": "蝉",
+      "page_hint": 19,
+      "pdf_page": 19,
+      "pages": [
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "passage_id": "chinese-g5up-p6",
+      "title": "搭石",
+      "page_hint": 21,
+      "pdf_page": 21,
+      "pages": [
+        20,
+        21,
+        22
+      ]
+    },
+    {
+      "passage_id": "chinese-g5up-p7",
+      "title": "将相和",
+      "page_hint": 23,
+      "pdf_page": 23,
+      "pages": [
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "passage_id": "chinese-g5up-p8",
+      "title": "什么比猎豹的速度更快",
+      "page_hint": 27,
+      "pdf_page": 27,
+      "pages": [
+        26,
+        27,
+        28
+      ]
+    },
+    {
+      "passage_id": "chinese-g5up-p9",
+      "title": "冀中的地道战",
+      "page_hint": 30,
+      "pdf_page": 30,
+      "pages": [
+        29,
+        30,
+        31
+      ]
+    },
+    {
+      "passage_id": "chinese-g5up-p10",
+      "title": "地道战（续）",
+      "page_hint": 31,
+      "pdf_page": 31,
+      "pages": [
+        30,
+        31,
+        32
+      ]
+    },
+    {
+      "passage_id": "chinese-g5up-p11",
+      "title": "猎人海力布",
+      "page_hint": 37,
+      "pdf_page": 37,
+      "pages": [
+        36,
+        37,
+        38
+      ]
+    },
+    {
+      "passage_id": "chinese-g5up-p12",
+      "title": "猎人海力布（续）",
+      "page_hint": 38,
+      "pdf_page": 38,
+      "pages": [
+        37,
+        38,
+        39
+      ]
+    },
+    {
+      "passage_id": "chinese-g5up-p13",
+      "title": "牛郎织女（一）",
+      "page_hint": 40,
+      "pdf_page": 40,
+      "pages": [
+        39,
+        40,
+        41
+      ]
+    },
+    {
+      "passage_id": "chinese-g5up-p14",
+      "title": "牛郎织女（二）",
+      "page_hint": 45,
+      "pdf_page": 45,
+      "pages": [
+        44,
+        45,
+        46
+      ]
+    },
+    {
+      "passage_id": "chinese-g5up-p15",
+      "title": "小羊和狼",
+      "page_hint": 51,
+      "pdf_page": 51,
+      "pages": [
+        50,
+        51,
+        52
+      ]
+    },
+    {
+      "passage_id": "chinese-g5up-p16",
+      "title": "乞巧",
+      "page_hint": 51,
+      "pdf_page": 51,
+      "pages": [
+        50,
+        51,
+        52
+      ]
+    },
+    {
+      "passage_id": "chinese-g5up-p17",
+      "title": "从前有座山",
+      "page_hint": 52,
+      "pdf_page": 52,
+      "pages": [
+        51,
+        52,
+        53
+      ]
+    },
+    {
+      "passage_id": "chinese-g5up-p18",
+      "title": "田螺姑娘",
+      "page_hint": 52,
+      "pdf_page": 52,
+      "pages": [
+        51,
+        52,
+        53
+      ]
+    },
+    {
+      "passage_id": "chinese-g5up-p19",
+      "title": "示儿",
+      "page_hint": 55,
+      "pdf_page": 55,
+      "pages": [
+        54,
+        55,
+        56
+      ]
+    },
+    {
+      "passage_id": "chinese-g5up-p20",
+      "title": "题临安邸",
+      "page_hint": 55,
+      "pdf_page": 55,
+      "pages": [
+        54,
+        55,
+        56
+      ]
+    },
+    {
+      "passage_id": "chinese-g5up-p21",
+      "title": "己亥杂诗",
+      "page_hint": 56,
+      "pdf_page": 56,
+      "pages": [
+        55,
+        56,
+        57
+      ]
+    },
+    {
+      "passage_id": "chinese-g5up-p22",
+      "title": "少年中国说（节选）",
+      "page_hint": 57,
+      "pdf_page": 57,
+      "pages": [
+        56,
+        57,
+        58
+      ]
+    },
+    {
+      "passage_id": "chinese-g5up-p23",
+      "title": "圆明园的毁灭",
+      "page_hint": 59,
+      "pdf_page": 59,
+      "pages": [
+        58,
+        59,
+        60
+      ]
+    },
+    {
+      "passage_id": "chinese-g5up-p24",
+      "title": "七子之歌（节选）",
+      "page_hint": 61,
+      "pdf_page": 61,
+      "pages": [
+        60,
+        61,
+        62
+      ]
+    },
+    {
+      "passage_id": "chinese-g5up-p25",
+      "title": "香 港",
+      "page_hint": 62,
+      "pdf_page": 62,
+      "pages": [
+        61,
+        62,
+        63
+      ]
+    },
+    {
+      "passage_id": "chinese-g5up-p26",
+      "title": "和平宣言（节选）",
+      "page_hint": 62,
+      "pdf_page": 62,
+      "pages": [
+        61,
+        62,
+        63
+      ]
+    },
+    {
+      "passage_id": "chinese-g5up-p27",
+      "title": "小岛",
+      "page_hint": 63,
+      "pdf_page": 63,
+      "pages": [
+        62,
+        63,
+        64
+      ]
+    },
+    {
+      "passage_id": "chinese-g5up-p28",
+      "title": "太阳",
+      "page_hint": 71,
+      "pdf_page": 71,
+      "pages": [
+        70,
+        71,
+        72
+      ]
+    },
+    {
+      "passage_id": "chinese-g5up-p29",
+      "title": "松鼠",
+      "page_hint": 73,
+      "pdf_page": 73,
+      "pages": [
+        72,
+        73,
+        74
+      ]
+    },
+    {
+      "passage_id": "chinese-g5up-p30",
+      "title": "鲸",
+      "page_hint": 76,
+      "pdf_page": 76,
+      "pages": [
+        75,
+        76,
+        77
+      ]
+    },
+    {
+      "passage_id": "chinese-g5up-p31",
+      "title": "风向袋的制作",
+      "page_hint": 78,
+      "pdf_page": 78,
+      "pages": [
+        77,
+        78,
+        79
+      ]
+    },
+    {
+      "passage_id": "chinese-g5up-p32",
+      "title": "慈母情深",
+      "page_hint": 81,
+      "pdf_page": 81,
+      "pages": [
+        80,
+        81,
+        82
+      ]
+    },
+    {
+      "passage_id": "chinese-g5up-p33",
+      "title": "父爱之舟",
+      "page_hint": 85,
+      "pdf_page": 85,
+      "pages": [
+        84,
+        85,
+        86
+      ]
+    },
+    {
+      "passage_id": "chinese-g5up-p34",
+      "title": "“精彩极了”和“糟糕透了”",
+      "page_hint": 89,
+      "pdf_page": 89,
+      "pages": [
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "passage_id": "chinese-g5up-p35",
+      "title": "山居秋暝",
+      "page_hint": 97,
+      "pdf_page": 97,
+      "pages": [
+        96,
+        97,
+        98
+      ]
+    },
+    {
+      "passage_id": "chinese-g5up-p36",
+      "title": "枫桥夜泊",
+      "page_hint": 97,
+      "pdf_page": 97,
+      "pages": [
+        96,
+        97,
+        98
+      ]
+    },
+    {
+      "passage_id": "chinese-g5up-p37",
+      "title": "长相思",
+      "page_hint": 98,
+      "pdf_page": 98,
+      "pages": [
+        97,
+        98,
+        99
+      ]
+    },
+    {
+      "passage_id": "chinese-g5up-p38",
+      "title": "四季之美",
+      "page_hint": 99,
+      "pdf_page": 99,
+      "pages": [
+        98,
+        99,
+        100
+      ]
+    },
+    {
+      "passage_id": "chinese-g5up-p39",
+      "title": "鸟的天堂",
+      "page_hint": 101,
+      "pdf_page": 101,
+      "pages": [
+        100,
+        101,
+        102
+      ]
+    },
+    {
+      "passage_id": "chinese-g5up-p40",
+      "title": "月迹",
+      "page_hint": 104,
+      "pdf_page": 104,
+      "pages": [
+        103,
+        104,
+        105
+      ]
+    },
+    {
+      "passage_id": "chinese-g5up-p41",
+      "title": "渔歌子",
+      "page_hint": 109,
+      "pdf_page": 109,
+      "pages": [
+        108,
+        109,
+        110
+      ]
+    },
+    {
+      "passage_id": "chinese-g5up-p42",
+      "title": "古人谈读书",
+      "page_hint": 111,
+      "pdf_page": 111,
+      "pages": [
+        110,
+        111,
+        112
+      ]
+    },
+    {
+      "passage_id": "chinese-g5up-p43",
+      "title": "忆读书",
+      "page_hint": 113,
+      "pdf_page": 113,
+      "pages": [
+        112,
+        113,
+        114
+      ]
+    },
+    {
+      "passage_id": "chinese-g5up-p44",
+      "title": "我的“长生果”",
+      "page_hint": 116,
+      "pdf_page": 116,
+      "pages": [
+        115,
+        116,
+        117
+      ]
+    },
+    {
+      "passage_id": "chinese-g5up-p45",
+      "title": "观书有感",
+      "page_hint": 123,
+      "pdf_page": 123,
+      "pages": [
+        122,
+        123,
+        124
+      ]
+    }
+  ]
+}

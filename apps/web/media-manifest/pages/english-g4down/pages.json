@@ -1,0 +1,306 @@
+{
+  "bookId": "english-g4down",
+  "pdf_total_pages": 83,
+  "detected_offset": 0,
+  "offset_applied": 0,
+  "offset_samples": 22,
+  "passages": [
+    {
+      "passage_id": "english-g4down-p1",
+      "title": "Unit One",
+      "page_hint": 7,
+      "pdf_page": 7,
+      "pages": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "passage_id": "english-g4down-p2",
+      "title": "My school",
+      "page_hint": 8,
+      "pdf_page": 8,
+      "pages": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "passage_id": "english-g4down-p3",
+      "title": "Let’s talk",
+      "page_hint": 9,
+      "pdf_page": 9,
+      "pages": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "passage_id": "english-g4down-p4",
+      "title": "Let's talk",
+      "page_hint": 12,
+      "pdf_page": 12,
+      "pages": [
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "passage_id": "english-g4down-p5",
+      "title": "Read and write",
+      "page_hint": 14,
+      "pdf_page": 14,
+      "pages": [
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "passage_id": "english-g4down-p6",
+      "title": "Our school",
+      "page_hint": 15,
+      "pdf_page": 15,
+      "pages": [
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "passage_id": "english-g4down-p7",
+      "title": "Story time",
+      "page_hint": 16,
+      "pdf_page": 16,
+      "pages": [
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "passage_id": "english-g4down-p8",
+      "title": "Read and write",
+      "page_hint": 24,
+      "pdf_page": 24,
+      "pages": [
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "passage_id": "english-g4down-p9",
+      "title": "It’s twelve o’clock",
+      "page_hint": 25,
+      "pdf_page": 25,
+      "pages": [
+        24,
+        25,
+        26
+      ]
+    },
+    {
+      "passage_id": "english-g4down-p10",
+      "title": "Let's chant",
+      "page_hint": 30,
+      "pdf_page": 30,
+      "pages": [
+        29,
+        30,
+        31
+      ]
+    },
+    {
+      "passage_id": "english-g4down-p11",
+      "title": "Read and write",
+      "page_hint": 34,
+      "pdf_page": 34,
+      "pages": [
+        33,
+        34,
+        35
+      ]
+    },
+    {
+      "passage_id": "english-g4down-p12",
+      "title": "Thunder",
+      "page_hint": 35,
+      "pdf_page": 35,
+      "pages": [
+        34,
+        35,
+        36
+      ]
+    },
+    {
+      "passage_id": "english-g4down-p13",
+      "title": "Read aloud",
+      "page_hint": 37,
+      "pdf_page": 37,
+      "pages": [
+        36,
+        37,
+        38
+      ]
+    },
+    {
+      "passage_id": "english-g4down-p14",
+      "title": "Read and circle",
+      "page_hint": 40,
+      "pdf_page": 40,
+      "pages": [
+        39,
+        40,
+        41
+      ]
+    },
+    {
+      "passage_id": "english-g4down-p15",
+      "title": "Unit Four At the farm",
+      "page_hint": 41,
+      "pdf_page": 41,
+      "pages": [
+        40,
+        41,
+        42
+      ]
+    },
+    {
+      "passage_id": "english-g4down-p16",
+      "title": "Let's chant",
+      "page_hint": 44,
+      "pdf_page": 44,
+      "pages": [
+        43,
+        44,
+        45
+      ]
+    },
+    {
+      "passage_id": "english-g4down-p17",
+      "title": "Mary has a little lamb",
+      "page_hint": 49,
+      "pdf_page": 49,
+      "pages": [
+        48,
+        49,
+        50
+      ]
+    },
+    {
+      "passage_id": "english-g4down-p18",
+      "title": "Unit Five My clothes",
+      "page_hint": 51,
+      "pdf_page": 51,
+      "pages": [
+        50,
+        51,
+        52
+      ]
+    },
+    {
+      "passage_id": "english-g4down-p19",
+      "title": "My clothes",
+      "page_hint": 52,
+      "pdf_page": 52,
+      "pages": [
+        51,
+        52,
+        53
+      ]
+    },
+    {
+      "passage_id": "english-g4down-p20",
+      "title": "This old hat",
+      "page_hint": 59,
+      "pdf_page": 59,
+      "pages": [
+        58,
+        59,
+        60
+      ]
+    },
+    {
+      "passage_id": "english-g4down-p21",
+      "title": "Listen and chant",
+      "page_hint": 65,
+      "pdf_page": 65,
+      "pages": [
+        64,
+        65,
+        66
+      ]
+    },
+    {
+      "passage_id": "english-g4down-p22",
+      "title": "How much is that doggie in the window?",
+      "page_hint": 69,
+      "pdf_page": 69,
+      "pages": [
+        68,
+        69,
+        70
+      ]
+    },
+    {
+      "passage_id": "english-g4down-p23",
+      "title": "Recycle 2",
+      "page_hint": 71,
+      "pdf_page": 71,
+      "pages": [
+        70,
+        71,
+        72
+      ]
+    },
+    {
+      "passage_id": "english-g4down-p24",
+      "title": "Read and tick (√) or cross (×).",
+      "page_hint": 74,
+      "pdf_page": 74,
+      "pages": [
+        73,
+        74,
+        75
+      ]
+    },
+    {
+      "passage_id": "english-g4down-p25",
+      "title": "Unit 4",
+      "page_hint": 81,
+      "pdf_page": 81,
+      "pages": [
+        80,
+        81,
+        82
+      ]
+    },
+    {
+      "passage_id": "english-g4down-p26",
+      "title": "Unit 5",
+      "page_hint": 81,
+      "pdf_page": 81,
+      "pages": [
+        80,
+        81,
+        82
+      ]
+    },
+    {
+      "passage_id": "english-g4down-p27",
+      "title": "Unit 6",
+      "page_hint": 81,
+      "pdf_page": 81,
+      "pages": [
+        80,
+        81,
+        82
+      ]
+    }
+  ]
+}

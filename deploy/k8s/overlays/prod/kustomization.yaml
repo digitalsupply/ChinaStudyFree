@@ -10,6 +10,7 @@ images:
     newTag: REPLACE_ME
 patches:
   - path: pvc-patch.yaml
+  - path: assets-pvc-patch.yaml
   - path: configmap-patch.yaml
   - target:
       kind: Ingress

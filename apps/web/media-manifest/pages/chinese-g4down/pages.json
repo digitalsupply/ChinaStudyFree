@@ -1,0 +1,515 @@
+{
+  "bookId": "chinese-g4down",
+  "pdf_total_pages": 151,
+  "detected_offset": 0,
+  "offset_applied": 0,
+  "offset_samples": 28,
+  "passages": [
+    {
+      "passage_id": "chinese-g4down-p1",
+      "title": "四时田园杂兴（其二十五）",
+      "page_hint": 7,
+      "pdf_page": 7,
+      "pages": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "passage_id": "chinese-g4down-p2",
+      "title": "宿新市徐公店",
+      "page_hint": 7,
+      "pdf_page": 7,
+      "pages": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "passage_id": "chinese-g4down-p3",
+      "title": "清平乐·村居",
+      "page_hint": 8,
+      "pdf_page": 8,
+      "pages": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "passage_id": "chinese-g4down-p4",
+      "title": "乡下人家",
+      "page_hint": 9,
+      "pdf_page": 9,
+      "pages": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "passage_id": "chinese-g4down-p5",
+      "title": "天窗",
+      "page_hint": 12,
+      "pdf_page": 12,
+      "pages": [
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "passage_id": "chinese-g4down-p6",
+      "title": "三月桃花水",
+      "page_hint": 15,
+      "pdf_page": 15,
+      "pages": [
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "passage_id": "chinese-g4down-p7",
+      "title": "卜算子·咏梅",
+      "page_hint": 19,
+      "pdf_page": 19,
+      "pages": [
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "passage_id": "chinese-g4down-p8",
+      "title": "琥珀",
+      "page_hint": 21,
+      "pdf_page": 21,
+      "pages": [
+        20,
+        21,
+        22
+      ]
+    },
+    {
+      "passage_id": "chinese-g4down-p9",
+      "title": "飞向蓝天的恐龙",
+      "page_hint": 25,
+      "pdf_page": 25,
+      "pages": [
+        24,
+        25,
+        26
+      ]
+    },
+    {
+      "passage_id": "chinese-g4down-p10",
+      "title": "纳米技术就在我们身边",
+      "page_hint": 29,
+      "pdf_page": 29,
+      "pages": [
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "passage_id": "chinese-g4down-p11",
+      "title": "千年梦圆在今朝",
+      "page_hint": 31,
+      "pdf_page": 31,
+      "pages": [
+        30,
+        31,
+        32
+      ]
+    },
+    {
+      "passage_id": "chinese-g4down-p12",
+      "title": "江畔独步寻花",
+      "page_hint": 37,
+      "pdf_page": 37,
+      "pages": [
+        36,
+        37,
+        38
+      ]
+    },
+    {
+      "passage_id": "chinese-g4down-p13",
+      "title": "繁 星（七一）",
+      "page_hint": 41,
+      "pdf_page": 41,
+      "pages": [
+        40,
+        41,
+        42
+      ]
+    },
+    {
+      "passage_id": "chinese-g4down-p14",
+      "title": "繁 星（一三一）",
+      "page_hint": 41,
+      "pdf_page": 41,
+      "pages": [
+        40,
+        41,
+        42
+      ]
+    },
+    {
+      "passage_id": "chinese-g4down-p15",
+      "title": "繁 星（一五九）",
+      "page_hint": 42,
+      "pdf_page": 42,
+      "pages": [
+        41,
+        42,
+        43
+      ]
+    },
+    {
+      "passage_id": "chinese-g4down-p16",
+      "title": "绿",
+      "page_hint": 43,
+      "pdf_page": 43,
+      "pages": [
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "passage_id": "chinese-g4down-p17",
+      "title": "西湖漫笔",
+      "page_hint": 44,
+      "pdf_page": 44,
+      "pages": [
+        43,
+        44,
+        45
+      ]
+    },
+    {
+      "passage_id": "chinese-g4down-p18",
+      "title": "白 桦",
+      "page_hint": 45,
+      "pdf_page": 45,
+      "pages": [
+        44,
+        45,
+        46
+      ]
+    },
+    {
+      "passage_id": "chinese-g4down-p19",
+      "title": "在天晴了的时候",
+      "page_hint": 47,
+      "pdf_page": 47,
+      "pages": [
+        46,
+        47,
+        48
+      ]
+    },
+    {
+      "passage_id": "chinese-g4down-p20",
+      "title": "猫",
+      "page_hint": 53,
+      "pdf_page": 53,
+      "pages": [
+        52,
+        53,
+        54
+      ]
+    },
+    {
+      "passage_id": "chinese-g4down-p21",
+      "title": "母鸡",
+      "page_hint": 56,
+      "pdf_page": 56,
+      "pages": [
+        55,
+        56,
+        57
+      ]
+    },
+    {
+      "passage_id": "chinese-g4down-p22",
+      "title": "白鹅",
+      "page_hint": 59,
+      "pdf_page": 59,
+      "pages": [
+        58,
+        59,
+        60
+      ]
+    },
+    {
+      "passage_id": "chinese-g4down-p23",
+      "title": "白公鹅",
+      "page_hint": 62,
+      "pdf_page": 62,
+      "pages": [
+        61,
+        62,
+        63
+      ]
+    },
+    {
+      "passage_id": "chinese-g4down-p24",
+      "title": "蜂",
+      "page_hint": 67,
+      "pdf_page": 67,
+      "pages": [
+        66,
+        67,
+        68
+      ]
+    },
+    {
+      "passage_id": "chinese-g4down-p25",
+      "title": "海上日出",
+      "page_hint": 69,
+      "pdf_page": 69,
+      "pages": [
+        68,
+        69,
+        70
+      ]
+    },
+    {
+      "passage_id": "chinese-g4down-p26",
+      "title": "记金华的双龙洞",
+      "page_hint": 71,
+      "pdf_page": 71,
+      "pages": [
+        70,
+        71,
+        72
+      ]
+    },
+    {
+      "passage_id": "chinese-g4down-p27",
+      "title": "颐和园",
+      "page_hint": 75,
+      "pdf_page": 75,
+      "pages": [
+        74,
+        75,
+        76
+      ]
+    },
+    {
+      "passage_id": "chinese-g4down-p28",
+      "title": "七月的天山",
+      "page_hint": 77,
+      "pdf_page": 77,
+      "pages": [
+        76,
+        77,
+        78
+      ]
+    },
+    {
+      "passage_id": "chinese-g4down-p29",
+      "title": "囊萤夜读",
+      "page_hint": 81,
+      "pdf_page": 81,
+      "pages": [
+        80,
+        81,
+        82
+      ]
+    },
+    {
+      "passage_id": "chinese-g4down-p30",
+      "title": "铁杵成针",
+      "page_hint": 82,
+      "pdf_page": 82,
+      "pages": [
+        81,
+        82,
+        83
+      ]
+    },
+    {
+      "passage_id": "chinese-g4down-p31",
+      "title": "小英雄雨来（节选）",
+      "page_hint": 83,
+      "pdf_page": 83,
+      "pages": [
+        82,
+        83,
+        84
+      ]
+    },
+    {
+      "passage_id": "chinese-g4down-p32",
+      "title": "小英雄雨来",
+      "page_hint": 91,
+      "pdf_page": 91,
+      "pages": [
+        90,
+        91,
+        92
+      ]
+    },
+    {
+      "passage_id": "chinese-g4down-p33",
+      "title": "我们家的男子汉",
+      "page_hint": 92,
+      "pdf_page": 92,
+      "pages": [
+        91,
+        92,
+        93
+      ]
+    },
+    {
+      "passage_id": "chinese-g4down-p34",
+      "title": "芦花鞋",
+      "page_hint": 96,
+      "pdf_page": 96,
+      "pages": [
+        95,
+        96,
+        97
+      ]
+    },
+    {
+      "passage_id": "chinese-g4down-p35",
+      "title": "独坐敬亭山",
+      "page_hint": 105,
+      "pdf_page": 105,
+      "pages": [
+        104,
+        105,
+        106
+      ]
+    },
+    {
+      "passage_id": "chinese-g4down-p36",
+      "title": "芙蓉楼送辛渐",
+      "page_hint": 107,
+      "pdf_page": 107,
+      "pages": [
+        106,
+        107,
+        108
+      ]
+    },
+    {
+      "passage_id": "chinese-g4down-p37",
+      "title": "塞下曲",
+      "page_hint": 107,
+      "pdf_page": 107,
+      "pages": [
+        106,
+        107,
+        108
+      ]
+    },
+    {
+      "passage_id": "chinese-g4down-p38",
+      "title": "墨梅",
+      "page_hint": 108,
+      "pdf_page": 108,
+      "pages": [
+        107,
+        108,
+        109
+      ]
+    },
+    {
+      "passage_id": "chinese-g4down-p39",
+      "title": "“诺曼底号”遇难记",
+      "page_hint": 109,
+      "pdf_page": 109,
+      "pages": [
+        108,
+        109,
+        110
+      ]
+    },
+    {
+      "passage_id": "chinese-g4down-p40",
+      "title": "黄继光",
+      "page_hint": 114,
+      "pdf_page": 114,
+      "pages": [
+        113,
+        114,
+        115
+      ]
+    },
+    {
+      "passage_id": "chinese-g4down-p41",
+      "title": "祖国，我终于回来了",
+      "page_hint": 116,
+      "pdf_page": 116,
+      "pages": [
+        115,
+        116,
+        117
+      ]
+    },
+    {
+      "passage_id": "chinese-g4down-p42",
+      "title": "挑山工",
+      "page_hint": 118,
+      "pdf_page": 118,
+      "pages": [
+        117,
+        118,
+        119
+      ]
+    },
+    {
+      "passage_id": "chinese-g4down-p43",
+      "title": "宝葫芦的秘密（节选）",
+      "page_hint": 127,
+      "pdf_page": 127,
+      "pages": [
+        126,
+        127,
+        128
+      ]
+    },
+    {
+      "passage_id": "chinese-g4down-p44",
+      "title": "巨人的花园",
+      "page_hint": 130,
+      "pdf_page": 130,
+      "pages": [
+        129,
+        130,
+        131
+      ]
+    },
+    {
+      "passage_id": "chinese-g4down-p45",
+      "title": "海的女儿",
+      "page_hint": 134,
+      "pdf_page": 134,
+      "pages": [
+        133,
+        134,
+        135
+      ]
+    },
+    {
+      "passage_id": "chinese-g4down-p46",
+      "title": "日积月累",
+      "page_hint": 141,
+      "pdf_page": 141,
+      "pages": [
+        140,
+        141,
+        142
+      ]
+    }
+  ]
+}
