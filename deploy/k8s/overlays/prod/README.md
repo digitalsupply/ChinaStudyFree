@@ -6,7 +6,8 @@
 2. 两个 Ingress 的 host：
    - `studyfree.xyz` → 你的正式域名
    - `admin.studyfree.xyz` → 内网域名
-3. `pvc-patch.yaml` 的 `storageClassName`（DeepTutor 集群通常是 `nfs-sc`）。
+3. `pvc-patch.yaml` / `assets-pvc-patch.yaml` 的 `storageClassName`（DeepTutor 集群通常是 `nfs-sc`）。
+   大资源 PVC 的首次填充见 `deploy/k8s/optional/assets-loader-job.yaml`。
 4. `configmap-patch.yaml` 的 `CORS_ORIGIN`。
 5. 在 `china-study-free` namespace 创建 Secret：
    `china-study-free-secrets`（参考 `base/secret.example.yaml`）。

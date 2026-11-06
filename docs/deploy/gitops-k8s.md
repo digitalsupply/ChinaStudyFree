@@ -175,6 +175,18 @@ traefik.ingress.kubernetes.io/router.entrypoints: web,websecure
 镜像内；`/api/admin` 保持原路径。管理域名和公网 host 的 `/api/admin` 都绑定
 同一个 `ipAllowList` Middleware。
 
+### 3.7 大资源 PVC
+
+音频、课本原页、故事配图约 2.4GB，不打进应用镜像，统一挂载到
+`/app/assets`。应用镜像只保留 `public/data` 课程 JSON。
+
+```text
+PVC: china-study-free-assets (8Gi, nfs-sc)
+镜像: china-study-free/assets:v1.4.0（一次性加载 Job 使用）
+```
+
+首次加载、更新和影响评估见 [assets-pvc.md](assets-pvc.md)。
+
 ## 4. GitOps 仓库初始化
 
 建仓库：

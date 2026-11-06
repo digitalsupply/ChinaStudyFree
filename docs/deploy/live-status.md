@@ -10,15 +10,17 @@
 |---|---|
 | namespace | `china-study-free` |
 | Argo CD Application | `argocd/china-study-free` |
-| Argo 状态 | `Synced / Healthy` |
+| Argo 状态 | 最近确认 `Synced / Healthy`；2026-11-06 集群 API 不可达，新版本待同步 |
 | GitOps 仓库 | `http://192.168.67.201/digitalsupply/china-study-free-gitops.git` |
-| GitOps revision | `6cbd068def6d1b9ef06571c106181dce5722c90d` |
-| 镜像 | `192.168.67.202:8443/china-study-free/web:cc14be144f480c52f2b4c60ddd7675eac3d33ab4` |
+| GitOps revision | `1598d57`（含大资源 PVC，待集群恢复后同步） |
+| 镜像 | `192.168.67.202:8443/china-study-free/web:4bfb618` |
 | Deployment | `china-study-free`，1 副本 |
 | Service | `china-study-free`，ClusterIP 80 → 8787 |
 | IngressClass | `traefik` |
 | Traefik LB | `10.0.0.252` |
 | PVC | `china-study-free-reports`，1Gi，`nfs-sc` |
+| 大资源 PVC | `china-study-free-assets`，8Gi，`nfs-sc`（已写入 GitOps，待同步） |
+| 大资源镜像 | `192.168.67.202:8443/china-study-free/assets:v1.4.0` |
 | TLS Secret | `studyfree-xyz-tls`（自签，含两个域名 + 10.0.0.252） |
 | 反馈存储 | `/app/data/reports/reports.jsonl`（PVC） |
 
@@ -183,15 +185,19 @@ kubectl -n china-study-free create secret tls studyfree-xyz-tls \
 
 ### 大资源
 
-镜像当前包含 `output/` 生成的课程数据，但不包含未入库的：
+`data/passages` / `data/stories` 已随仓库发布，用于生成阅读和故事 JSON。
+音频、课本原页、故事配图不再打进应用镜像，改为 PVC：
 
-- `data/passages`
-- `data/stories`
-- `public/audio`
-- `textbook-pages`
-- `story-images`
+```text
+PVC: china-study-free-assets
+挂载: /app/assets (readOnly)
+目录: audio/ textbook-pages/ story-images/
+```
 
-需要完整离线资源时，另做对象存储或构建时注入。
+应用镜像只保留课程 JSON。完整步骤见 [assets-pvc.md](assets-pvc.md)。
+
+当前状态：资源镜像已推送到 Harbor，PVC/Deployment 清单已写入 GitOps；
+一次性加载 Job 等待集群 API 恢复后执行。
 
 ## 6. 常用验证
 
@@ -214,3 +220,5 @@ curl -k --resolve studyfree.xyz:443:10.0.0.252 -o /dev/null -w '%{http_code}\n' 
 - [ ] LLM / TTS / Gemini Key（当前未配置）
 - [ ] 如果要多副本：反馈迁移 Postgres
 - [ ] 如果公网访问：边界端口映射/公网 IP
+- [ ] 集群 API 恢复后同步 GitOps，并执行 `deploy/k8s/optional/assets-loader-job.yaml`
+- [ ] 验证 `/api/health` 的 `"assets": true` 及音频/课本页/故事图 200
