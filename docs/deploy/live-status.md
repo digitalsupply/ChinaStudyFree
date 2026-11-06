@@ -12,8 +12,8 @@
 | Argo CD Application | `argocd/china-study-free` |
 | Argo 状态 | 最近确认 `Synced / Healthy`；2026-11-06 集群 API 不可达，新版本待同步 |
 | GitOps 仓库 | `http://192.168.67.201/digitalsupply/china-study-free-gitops.git` |
-| GitOps revision | `1598d57`（含大资源 PVC，待集群恢复后同步） |
-| 镜像 | `192.168.67.202:8443/china-study-free/web:4bfb618` |
+| GitOps revision | `d215d57`（含大资源 PVC + PostSync 加载 Job，待集群恢复后同步） |
+| 镜像 | `192.168.67.202:8443/china-study-free/web:66ebfef` |
 | Deployment | `china-study-free`，1 副本 |
 | Service | `china-study-free`，ClusterIP 80 → 8787 |
 | IngressClass | `traefik` |
@@ -197,7 +197,7 @@ PVC: china-study-free-assets
 应用镜像只保留课程 JSON。完整步骤见 [assets-pvc.md](assets-pvc.md)。
 
 当前状态：资源镜像已推送到 Harbor，PVC/Deployment 清单已写入 GitOps；
-一次性加载 Job 等待集群 API 恢复后执行。
+资源加载 Job 已作为 Argo CD PostSync hook；集群 API 恢复后 Argo 同步会自动执行。
 
 ## 6. 常用验证
 
