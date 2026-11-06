@@ -55,7 +55,7 @@ spec:
                 exit 0
               fi
               mkdir -p /assets
-              for d in audio textbook-pages story-images; do
+              for d in story-images textbook-pages audio; do
                 if [ -d "/src/$d" ]; then
                   echo "copying $d ..."
                   mkdir -p "/assets/$d"
