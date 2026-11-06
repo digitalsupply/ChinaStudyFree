@@ -8,7 +8,10 @@ apps/web/public/audio/
 apps/web/public/story-images/
 apps/web/public/textbook-pages/
 apps/web/public/data/
-data/
+# 阅读/故事源 JSON 很小，随仓库发布；反馈和导出数据仍忽略。
+data/*
+!data/passages/
+!data/stories/
 
 # Server build
 apps/server/dist/

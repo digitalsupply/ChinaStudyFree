@@ -11,7 +11,10 @@ apps/web/public/story-images
 **/dist
 apps/desktop
 apps/mobile
-data
+# 只把阅读/故事源 JSON 带进构建；反馈与本地导出不进入镜像。
+data/*
+!data/passages
+!data/stories
 .env
 .env.*
 *.local
