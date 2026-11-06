@@ -12,7 +12,7 @@
 | Argo CD Application | `argocd/china-study-free` |
 | Argo 状态 | 最近确认 `Synced / Healthy`；2026-11-06 集群 API 不可达，新版本待同步 |
 | GitOps 仓库 | `http://192.168.67.201/digitalsupply/china-study-free-gitops.git` |
-| GitOps revision | `655ba73`（含动态资源路由 + SW v2，待集群恢复后同步） |
+| GitOps revision | `5b3f986`（含动态资源路由 + SW v2，待集群恢复后同步） |
 | 镜像 | `192.168.67.202:8443/china-study-free/web:694f79f` |
 | Deployment | `china-study-free`，1 副本 |
 | Service | `china-study-free`，ClusterIP 80 → 8787 |
