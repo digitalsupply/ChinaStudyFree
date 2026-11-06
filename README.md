@@ -14,6 +14,96 @@
 
 ---
 
+## 本仓库相对上游的增强
+
+> 上游参考：[tanle-mtr/ChinaStudyFree](https://github.com/tanle-mtr/ChinaStudyFree)。
+>
+> 本仓库保留原项目“免费、公益、离线优先”的定位，重点补齐生产化交付、K12 内容闭环、
+> 反馈闭环和大资源架构。
+
+| 能力 | 上游原版 | 当前仓库 |
+| --- | --- | --- |
+| 部署 | 本地 / Docker 运行 | K8s + Traefik + Tekton + Harbor + GitOps + Argo CD 全链路 |
+| 媒体资源 | 跟代码或本地资源放在一起 | 应用镜像约 664MB；音频/课本页/故事图约 2.4GB 走 PVC |
+| K12 内容 | 以小学为主 | 初中/高中/大学扩展 + K12 知识图谱生产线 |
+| 题目反馈 | 只保存在本机 | 本地优先队列 + 可选服务端回收 + 只读管理台 |
+| 运维文档 | README 为主 | live-status / 手动部署 / 运维清单 / 大资源 PVC 全套 |
+| 架构记忆 | README + 代码 | OpenWiki 主题页 + Claims + `AGENTS.md` 按需检索 |
+
+### 1. 生产化 GitOps 交付
+
+- `deploy/k8s/base` + `overlays/prod`：Deployment / Service / Ingress / PVC / NetworkPolicy
+- Traefik 标准 Ingress，管理域名与 `/api/admin` 都绑定 IP 白名单
+- Tekton：GitLab push → BuildKit → Harbor → 更新 GitOps → Argo CD 自动同步
+- 镜像使用 Git SHA 作为不可变 tag，回滚就是改回上一个 SHA
+- 文档类提交通过真实 `git diff` 判断并跳过镜像构建，失败时 fail-open
+- 实测链路和当前对象见 [docs/deploy/live-status.md](docs/deploy/live-status.md)
+
+### 2. 大资源不再进应用镜像
+
+- `.dockerignore` 排除 `audio` / `textbook-pages` / `story-images`
+- `apps/web/media-manifest/` 保存 84,376 个音频、20 本课本页映射、472 张故事图索引
+- CI 没有大资源时读清单，仍能生成正确的 `/audio`、`/textbook-pages`、`/story-images` URL
+- PVC `china-study-free-assets`（8Gi）+ Argo CD `PostSync` Job 自动填充
+- 资源路由动态挂载，PVC 后填充也能立即生效；缺失资源明确 404，不被 SPA 回退成 HTML
+- `.opus` 显式返回 `audio/ogg`；Service Worker v2 只缓存正确的媒体类型
+
+这套方案把应用镜像从 2.4GB 级别降到 **664MB**，同时修掉了原版
+`buildAudioIndex()` 扩展名不一致导致音频 URL 不注入的问题。
+
+### 3. K12 内容生产闭环
+
+`scripts/k12/` 提供完整生产线：
+
+```text
+知识点导入 → 批次计划 → 提示词 → 题目生成 → 自动校验 → 导入 output/
+```
+
+已实际跑通八年级物理试点：
+
+- 36 个知识点 × 4 题 = 144 道
+- 模型 `deepseek-v4.1-flash`
+- 自动校验 0 error / 0 warning
+- 独立教材 `physics-k12-g8up` / `physics-k12-g8down`，不覆盖原人教版
+- 题目带 `sourceKey`，可追溯到知识点；后续通过 `k12/corrections` 修正/删除
+
+详见 [k12/README.md](k12/README.md)。
+
+### 4. 题目反馈闭环
+
+- `POST /api/reports`：JSONL 追加写、按 id 去重、不保存学生身份信息
+- 客户端离线先入队，联网自动补传；不阻塞答题
+- 新增 `formula_issue` / `figure_issue` 反馈类型
+- 管理接口：`GET /api/admin/reports`、`GET /api/admin/reports/summary`
+- 管理页 `admin.studyfree.xyz/`：查看汇总、最新反馈和 sourceKey 聚合
+- 管理域名与公网 `/api/admin` 均受 Traefik IPAllowList + `ADMIN_TOKEN` 保护
+- 修正/删除仍走 CLI，不在线改题
+
+### 5. OpenWiki 架构记忆
+
+- `openwiki/` 包含 20 个主题页、28 个 Markdown 文件和 20 组 Claims
+- `AGENTS.md` 要求按需检索，不在任务开始时全量预加载
+- 适合这种多端、多脚本、多部署方式的项目，降低新人和 AI 的进入成本
+
+### 6. 其他工程修复
+
+- 用 `@fontsource/nunito` 本地打包字体，避免 `next/font/google` 构建期联网
+- 修复 admin 域名根路径 404：Traefik `replacePathRegex` + 管理页
+- 修复 Service Worker 旧缓存把 404/HTML 当图片缓存的问题
+- `data/passages` / `data/stories` 随仓库发布，CI 也能生成阅读/故事数据
+- `/api/health` 增加 `reports` 和 `assets` 状态
+
+### 7. 当前边界
+
+- 反馈 JSONL 是单机文件，当前固定 1 副本；多副本需迁 Postgres/对象存储
+- 大资源 PVC 当前 `ReadWriteOnce`；多副本需 `ReadWriteMany` 或对象存储/CDN
+- 管理台是只读汇总，题目修正仍走 CLI
+- AI Key 尚未配置，TLS 仍为自签证书
+
+> 部署、运维和排障入口见 [docs/deploy/README.md](docs/deploy/README.md)。
+
+---
+
 ## 一、学段与教材中心（本次新增）
 
 原项目只覆盖 **小学 1-6 年级**。本次引入「学段」概念：
