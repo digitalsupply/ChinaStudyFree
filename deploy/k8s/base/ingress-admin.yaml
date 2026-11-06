@@ -4,7 +4,8 @@ metadata:
   name: china-study-free-admin
   annotations:
     traefik.ingress.kubernetes.io/router.entrypoints: web,websecure
-    traefik.ingress.kubernetes.io/router.middlewares: china-study-free-china-study-free-admin-allow@kubernetescrd
+    # 先校验内网来源，再把根路径重写到静态管理页。
+    traefik.ingress.kubernetes.io/router.middlewares: china-study-free-china-study-free-admin-allow@kubernetescrd,china-study-free-china-study-free-admin-root@kubernetescrd
 spec:
   ingressClassName: traefik
   tls:
@@ -15,6 +16,15 @@ spec:
     - host: admin.studyfree.xyz
       http:
         paths:
+          # 管理页和静态资源。根路径 `/` 由 admin-root middleware 重写到 /admin/。
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: china-study-free
+                port:
+                  name: http
+          # 更长前缀优先，管理 API 不会被根路径重写影响。
           - path: /api/admin
             pathType: Prefix
             backend:

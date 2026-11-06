@@ -11,3 +11,14 @@ spec:
       - 10.0.0.0/8
       - 172.16.0.0/12
       - 192.168.0.0/16
+---
+# admin 域名根路径没有独立静态页；把 `/` 重写到 `/admin/`，
+# 复用 Next.js 静态导出里的管理页。只匹配根路径，不影响 /api/admin。
+apiVersion: traefik.io/v1alpha1
+kind: Middleware
+metadata:
+  name: china-study-free-admin-root
+spec:
+  replacePathRegex:
+    regex: ^/$
+    replacement: /admin/

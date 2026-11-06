@@ -147,7 +147,7 @@ Pod 需要访问：
 
 ```text
 https://studyfree.xyz          → Web
-https://admin.studyfree.xyz    → 管理接口
+https://admin.studyfree.xyz    → 管理页 + 管理接口
 ```
 
 TLS Secret：
@@ -171,8 +171,9 @@ DNS:admin.studyfree.xyz
 traefik.ingress.kubernetes.io/router.entrypoints: web,websecure
 ```
 
-管理接口通过 Traefik Middleware 的 `ipAllowList` 限制内网；公网 host 的
-`/api/admin` 也单独绑定同一个 Middleware。
+管理域名根路径通过 `replacePathRegex` 重写到 `/admin/`，管理页静态文件在 Web
+镜像内；`/api/admin` 保持原路径。管理域名和公网 host 的 `/api/admin` 都绑定
+同一个 `ipAllowList` Middleware。
 
 ## 4. GitOps 仓库初始化
 

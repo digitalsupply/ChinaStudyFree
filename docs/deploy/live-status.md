@@ -31,6 +31,9 @@ Health:   https://studyfree.xyz/api/health
 Admin API:https://admin.studyfree.xyz/api/admin/reports/summary
 ```
 
+管理页由 Traefik `replacePathRegex` 把 admin 域名根路径 `/` 重写到 `/admin/`，
+页面内嵌在 Web 镜像中，输入 `ADMIN_TOKEN` 后读取反馈汇总。
+
 **当前 DNS 尚未配置**：
 
 ```text
@@ -55,6 +58,10 @@ curl -k --resolve studyfree.xyz:443:10.0.0.252 https://studyfree.xyz/api/health
 curl -k --resolve admin.studyfree.xyz:443:10.0.0.252 \
   -H "x-admin-token: $ADMIN_TOKEN" \
   https://admin.studyfree.xyz/api/admin/reports/summary
+
+# 管理页（浏览器打开 admin.studyfree.xyz 即可，需内网来源）
+curl -k -o /dev/null -w '%{http_code}\n' --resolve admin.studyfree.xyz:443:10.0.0.252 \
+  https://admin.studyfree.xyz/
 ```
 
 ## 3. GitOps 自动发布链路
