@@ -115,4 +115,8 @@ kubectl -n china-study-free apply -f deploy/k8s/base/assets-loader-job.yaml
 - 缺失资源必须返回 404，不能落到 SPA 的 `index.html`；服务端已对
   `/audio`、`/textbook-pages`、`/story-images` 做专门处理。
 - `.opus` 由服务端显式返回 `audio/ogg`，避免浏览器因 MIME 类型拒绝播放。
+- 资源路由在进程启动时就挂载，不依赖启动时目录是否为空；PostSync Job 后续复制完成后
+  无需重启 Pod，`/api/health` 的 `assets` 会动态变为 `true`。
+- Service Worker 已升级到 v2：清理旧缓存，课本页/故事图使用网络优先且只缓存
+  `image/*`，避免把旧的 SPA `index.html` 当成图片缓存。
 - 如果后续要多副本，优先把音频/图片迁到对象存储 + CDN；PVC 只适合当前单副本。

@@ -76,16 +76,18 @@ const STATIC_DIR = resolveStaticDir();
 // 目录结构：ASSETS_DIR/audio、ASSETS_DIR/textbook-pages、ASSETS_DIR/story-images。
 const ASSETS_DIR = process.env.ASSETS_DIR ? path.resolve(process.env.ASSETS_DIR) : "";
 const ASSET_PREFIXES = ["audio", "textbook-pages", "story-images"] as const;
-// 至少有一个资源目录非空才算就绪；避免 PVC 刚挂载、Job 还没复制完时误报 true。
-const ASSETS_READY =
-  Boolean(ASSETS_DIR) &&
-  ASSET_PREFIXES.some(prefix => {
+// 每次请求时判断，不能在进程启动时算一次：PVC 初始为空，PostSync Job 复制完
+// 资源后，运行中的 Pod 必须立即开始提供这些文件，无需重启。
+function assetsReady(): boolean {
+  if (!ASSETS_DIR) return false;
+  return ASSET_PREFIXES.some(prefix => {
     try {
       return fs.readdirSync(path.join(ASSETS_DIR, prefix)).length > 0;
     } catch {
       return false;
     }
   });
+}
 
 /** .opus 不一定被 express 的 mime 表识别，显式声明避免浏览器把音频当二进制拒绝。 */
 function setStaticHeaders(
@@ -94,6 +96,10 @@ function setStaticHeaders(
 ) {
   if (filePath.endsWith(".opus")) {
     res.setHeader("Content-Type", "audio/ogg");
+  }
+  // Service Worker 必须尽快更新；否则旧缓存策略会继续把资源请求当页面缓存。
+  if (filePath.endsWith("sw.js")) {
+    res.setHeader("Cache-Control", "no-cache");
   }
 }
 
@@ -184,7 +190,7 @@ app.get("/api/health", (_req, res) => {
     ttsBackend: process.env.DASHSCOPE_API_KEY ? "dashscope" : edgeEnabled ? "edge" : "none",
     image: !!process.env.GEMINI_API_KEY,
     reports: REPORTS_ENABLED,
-    assets: ASSETS_READY,
+    assets: assetsReady(),
   });
 });
 
@@ -343,7 +349,7 @@ app.post("/api/ai/tts", async (req: Request, res: Response) => {
 // ===== 静态资源托管（Next.js 导出产物 + 可选大资源 PVC）=====
 // 大资源走独立目录，避免把 2GB+ 音频/图片打进镜像。
 // 必须放在 SPA 回退之前：缺失的 .opus/.jpg 应返回 404，而不是 index.html。
-if (ASSETS_READY) {
+if (ASSETS_DIR) {
   for (const prefix of ASSET_PREFIXES) {
     app.use(
       `/${prefix}`,
@@ -355,9 +361,8 @@ if (ASSETS_READY) {
       }),
     );
   }
-  console.log(`   大资源目录: ${ASSETS_DIR} (PVC/CDN)`);
-} else if (ASSETS_DIR) {
-  console.warn(`[ai-server] ASSETS_DIR 不存在: ${ASSETS_DIR}（音频/课本页/故事图不可用）`);
+  // 目录初始可能不存在/为空（PVC 由 PostSync Job 填充），但路由必须一直挂着。
+  console.log(`   大资源目录: ${ASSETS_DIR} (PVC/CDN，文件可后到)`);
 }
 
 if (fs.existsSync(STATIC_DIR)) {

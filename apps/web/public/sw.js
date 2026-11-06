@@ -10,10 +10,11 @@
  * next 静态导出（output: "export"）下手写注册即可，注册脚本在 layout.tsx。
  */
 
-const VERSION = "v1";
+const VERSION = "v2";
 const SHELL_CACHE = `ctsf-shell-${VERSION}`;
 const DATA_CACHE = `ctsf-data-${VERSION}`;
 const STATIC_CACHE = `ctsf-static-${VERSION}`;
+const MEDIA_CACHE = `ctsf-media-${VERSION}`;
 
 const SHELL_PRECACHE = [
   "/",
@@ -34,7 +35,7 @@ self.addEventListener("install", event => {
 });
 
 self.addEventListener("activate", event => {
-  const keep = new Set([SHELL_CACHE, DATA_CACHE, STATIC_CACHE]);
+  const keep = new Set([SHELL_CACHE, DATA_CACHE, STATIC_CACHE, MEDIA_CACHE]);
   event.waitUntil(
     caches
       .keys()
@@ -43,17 +44,35 @@ self.addEventListener("activate", event => {
   );
 });
 
-/** stale-while-revalidate：缓存秒回 + 后台刷新 */
-async function staleWhileRevalidate(cacheName, request) {
+/** stale-while-revalidate：缓存秒回 + 后台刷新。只缓存期望类型，避免把 404/HTML 当成音频。 */
+async function staleWhileRevalidate(cacheName, request, expectedType) {
   const cache = await caches.open(cacheName);
   const cached = await cache.match(request);
   const network = fetch(request)
     .then(res => {
-      if (res && res.ok) cache.put(request, res.clone());
+      const type = res.headers.get("content-type") || "";
+      if (res && res.ok && (!expectedType || type.startsWith(expectedType))) {
+        cache.put(request, res.clone());
+      }
       return res;
     })
     .catch(() => undefined);
   return cached || (await network) || Response.error();
+}
+
+/** 课本页/故事图：网络优先，只缓存 image/*，避免旧版本 SPA 回退的 HTML 被当成图片缓存。 */
+async function imageNetworkFirst(cacheName, request) {
+  const cache = await caches.open(cacheName);
+  try {
+    const res = await fetch(request);
+    const type = res.headers.get("content-type") || "";
+    if (res && res.ok && type.startsWith("image/")) {
+      cache.put(request, res.clone());
+    }
+    return res;
+  } catch {
+    return (await cache.match(request)) || Response.error();
+  }
 }
 
 /** 网络优先，失败回缓存（导航壳层） */
@@ -90,9 +109,19 @@ self.addEventListener("fetch", event => {
   const url = new URL(request.url);
   if (url.origin !== self.location.origin) return;
 
-  // 课程 JSON 与音频：stale-while-revalidate
-  if (url.pathname.startsWith("/data/") || url.pathname.startsWith("/audio/")) {
-    event.respondWith(staleWhileRevalidate(DATA_CACHE, request));
+  // 课程 JSON 与音频：stale-while-revalidate（校验类型，防止旧 404 页面污染缓存）
+  if (url.pathname.startsWith("/data/")) {
+    event.respondWith(staleWhileRevalidate(DATA_CACHE, request, "application/json"));
+    return;
+  }
+  if (url.pathname.startsWith("/audio/")) {
+    event.respondWith(staleWhileRevalidate(DATA_CACHE, request, "audio/"));
+    return;
+  }
+
+  // 课本原页 / 故事配图：网络优先，只缓存真正的图片
+  if (url.pathname.startsWith("/textbook-pages/") || url.pathname.startsWith("/story-images/")) {
+    event.respondWith(imageNetworkFirst(MEDIA_CACHE, request));
     return;
   }
 
