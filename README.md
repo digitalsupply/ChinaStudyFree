@@ -243,6 +243,7 @@ kubectl kustomize deploy/k8s/overlays/prod >/tmp/china-study-free.yaml
 | `GEMINI_API_KEY` | Google Gemini（课本配图） | — |
 | `PORT` | 服务端口 | 8787 |
 | `STATIC_DIR` | 托管的静态目录（指到 `apps/web/out`） | 自动探测 |
+| `ASSETS_DIR` | 大资源目录（audio / textbook-pages / story-images） | 空（使用镜像内资源） |
 
 未配置 Key 时，相关接口返回 `501` + 错误码（`LLM_NOT_CONFIGURED` / `TTS_NOT_CONFIGURED` / `IMAGE_NOT_CONFIGURED`），前端优雅降级。
 
