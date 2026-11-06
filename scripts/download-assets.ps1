@@ -2,10 +2,13 @@
 #
 # 用法:
 #   powershell -ExecutionPolicy Bypass -File scripts\download-assets.ps1
-#   powershell -ExecutionPolicy Bypass -File scripts\download-assets.ps1 -Tag v1.1.0-assets
+#   powershell -ExecutionPolicy Bypass -File scripts\download-assets.ps1 -Tag v1.2.0-assets
+#
+# 默认固定到 v1.4.0-content。GitHub 的 latest (v1.8.x) 只有安装器文件，
+# 不再提供 audio.tar.gz。
 
 param(
-    [string]$Tag = "latest"
+    [string]$Tag = "v1.4.0-content"
 )
 
 $ErrorActionPreference = "Stop"

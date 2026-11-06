@@ -19,7 +19,7 @@ spec:
       default: source
     - name: docs-patterns
       type: string
-      default: "*.md docs/* openwiki/* deploy/* .github/* AGENTS.md k12/*"
+      default: "*.md docs/* openwiki/* deploy/* .github/* AGENTS.md k12/* scripts/download-assets.*"
   results:
     - name: need-build
     - name: reason
