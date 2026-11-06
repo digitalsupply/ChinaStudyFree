@@ -1,6 +1,6 @@
 # 当前集群部署状态
 
-> 记录时间：2026-11-05  
+> 记录时间：2026-11-06  
 > 集群 kubeconfig：`/root/.kube/deeptutor-config`  
 > context：`kubernetes-admin@kubernetes`
 
@@ -12,8 +12,8 @@
 | Argo CD Application | `argocd/china-study-free` |
 | Argo 状态 | `Synced / Healthy` |
 | GitOps 仓库 | `http://192.168.67.201/digitalsupply/china-study-free-gitops.git` |
-| GitOps revision | `68eaf5a91541583c018b5c0aed2621511b2ff402` |
-| 镜像 | `192.168.67.202:8443/china-study-free/web:8ca29b1287eafd87b4b48f5e92669c59b0e981c6` |
+| GitOps revision | `6cbd068def6d1b9ef06571c106181dce5722c90d` |
+| 镜像 | `192.168.67.202:8443/china-study-free/web:cc14be144f480c52f2b4c60ddd7675eac3d33ab4` |
 | Deployment | `china-study-free`，1 副本 |
 | Service | `china-study-free`，ClusterIP 80 → 8787 |
 | IngressClass | `traefik` |
@@ -25,23 +25,19 @@
 ## 2. 地址
 
 ```text
-Web:      https://studyfree.xyz
-Admin:    https://admin.studyfree.xyz
-Health:   https://studyfree.xyz/api/health
-Admin API:https://admin.studyfree.xyz/api/admin/reports/summary
+Web:       https://studyfree.xyz
+Admin UI:  https://admin.studyfree.xyz/
+Admin API: https://admin.studyfree.xyz/api/admin/reports/summary
+Health:    https://studyfree.xyz/api/health
 ```
 
 管理页由 Traefik `replacePathRegex` 把 admin 域名根路径 `/` 重写到 `/admin/`，
 页面内嵌在 Web 镜像中，输入 `ADMIN_TOKEN` 后读取反馈汇总。
 
-**当前 DNS 尚未配置**：
+域名到 `10.0.0.252` 的映射由部署侧 DNS 配置；当前执行环境（容器 DNS）
+仍解析不到这两个域名，因此本文验证命令统一用 `--resolve` 指向 Traefik。
 
-```text
-studyfree.xyz       NXDOMAIN
-admin.studyfree.xyz NXDOMAIN
-```
-
-需要在 DNS 中添加：
+需要保证的 DNS 记录：
 
 ```text
 A  studyfree.xyz        10.0.0.252
